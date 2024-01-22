@@ -69,13 +69,11 @@ WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _8
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Serving Opps'))
 
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h4_Bryants Demo Serving Opp'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h4_Bryants Demo Serving Opp'))
 
 WebUI.verifyElementText(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb2'), 'Bryant\'s Demo Event')
 
 WebUI.verifyElementText(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb3'), 'Bryant\'s Demo Serving Opp')
-
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h4_Bryants Demo Serving Opp'))
 
 'Go back to the Event via the Breadcrumb'
 WebUI.click(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb2'))
