@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h2_Description</name>
+   <tag></tag>
+   <elementGuidId>d3d34c7a-6a0f-4a56-945e-0c9dec9040d4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='settings--form']/main/div/section/div/div/div/div/div/h2</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h2.MuiTypography-root.MuiTypography-h2.MuiTypography-gutterBottom</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h2</value>
+      <webElementGuid>07e70db8-e00d-42b0-9d74-2c55a0b66b8c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom</value>
+      <webElementGuid>ca3745a9-6b80-4d51-8d98-328828e6a86d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Description</value>
+      <webElementGuid>bc916b7c-ae1c-463c-9f28-dd428913c405</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;settings--form&quot;)/main[@class=&quot;ui page jss1343 jss1791 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss1353 ui page--container jss1352&quot;]/section[@class=&quot;cmui content jss1356 ui page--content jss1787 jss1355&quot;]/div[@class=&quot;jss1789&quot;]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss68&quot;]/div[@class=&quot;MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded&quot;]/div[@class=&quot;MuiCardContent-root&quot;]/h2[@class=&quot;MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom&quot;]</value>
+      <webElementGuid>0a56d325-f861-4f00-a67b-7967a37a308a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='settings--form']/main/div/section/div/div/div/div/div/h2</value>
+      <webElementGuid>6ffaa6ea-9234-4721-9edf-14130874a9e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/h2</value>
+      <webElementGuid>cf12d2a5-4188-482e-abcd-9e71911bb0c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h2[(text() = 'Description' or . = 'Description')]</value>
+      <webElementGuid>6e709bae-5053-443d-a553-3351fbe2057f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

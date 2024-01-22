@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Entries</name>
+   <tag></tag>
+   <elementGuidId>58cdc84b-b2d1-4f70-a1d1-61d6dede1a8d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss416.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>9236603e-eefa-4e94-95ad-8d5ff1fcecfb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root jss416 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
+      <webElementGuid>bc7572f1-51c4-4d49-86a3-62a3352b4eaa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Entries</value>
+      <webElementGuid>9cd877a9-65fc-4670-8db7-5ab9ade299e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss416 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
+      <webElementGuid>7fe9cbb6-cf5e-489b-b35c-56b563b3b434</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
+      <webElementGuid>a9f280d4-c768-49ce-b34a-4e5593771b1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/span</value>
+      <webElementGuid>ddabf53d-394f-409a-9bc2-159c6c89cd50</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Entries' or . = 'Entries')]</value>
+      <webElementGuid>23bb018b-ebd5-41dc-943f-a38ee0cde5c4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

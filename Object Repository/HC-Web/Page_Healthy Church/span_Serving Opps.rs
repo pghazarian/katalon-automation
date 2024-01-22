@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Serving Opps</name>
+   <tag></tag>
+   <elementGuidId>ff4509f0-7913-4332-ad4b-39bb445d95c4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='tab-navigation_tab--key-item-4']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tab-navigation_tab--key-item-4 > span.MuiTypography-root.jss518.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e124273c-fe94-458e-865f-d2ac6ecf06d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root jss518 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
+      <webElementGuid>dc6b9cc2-ed64-4f2b-afc0-ae4a5323fc61</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Serving Opps</value>
+      <webElementGuid>4194556a-bfb8-402f-8140-7b14e2166907</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab-navigation_tab--key-item-4&quot;)/span[@class=&quot;MuiTypography-root jss518 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
+      <webElementGuid>c8e48ad1-97b6-40cd-b968-51a2037daebc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='tab-navigation_tab--key-item-4']/span</value>
+      <webElementGuid>1680f869-2b3b-4b4a-95b4-1454b5d5bb00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[5]/span</value>
+      <webElementGuid>cd6e90d3-b7f8-4791-b6ba-fdbfcea710aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Serving Opps' or . = 'Serving Opps')]</value>
+      <webElementGuid>73640a22-b914-4ee3-a6f3-fcbf43acdd76</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='tab-navigation_tab--key-item-2']/span</value>
+      <webElementGuid>b8330090-14a2-4f44-bb95-ec4ed6f84f63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[3]/span</value>
+      <webElementGuid>9481ccc9-8785-4709-8050-1d4220124f09</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

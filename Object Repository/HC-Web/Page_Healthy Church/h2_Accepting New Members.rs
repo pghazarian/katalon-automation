@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h2_Accepting New Members</name>
+   <tag></tag>
+   <elementGuidId>1693d96f-dede-4f88-b153-3ae6c6618ef8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='settings--form']/main/div/section/div/div/div/div/div/h2</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h2.MuiTypography-root.jss1881.MuiTypography-h2</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h2</value>
+      <webElementGuid>0f9761c3-71c4-47e2-9c5e-28086ebafa51</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root jss1881 MuiTypography-h2</value>
+      <webElementGuid>fd537a52-bc63-4757-afe5-d3f7776ba130</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Accepting New Members</value>
+      <webElementGuid>1aeb4cbf-aefd-46b1-af02-be438f3a6855</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;settings--form&quot;)/main[@class=&quot;ui page jss1343 jss1871 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss1353 ui page--container jss1352&quot;]/section[@class=&quot;cmui content jss1356 ui page--content jss1787 jss1355&quot;]/div[@class=&quot;jss1789&quot;]/div[@class=&quot;cmui grid jss7 jss1883 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss68&quot;]/div[@class=&quot;MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded&quot;]/div[@class=&quot;MuiCardContent-root&quot;]/h2[@class=&quot;MuiTypography-root jss1881 MuiTypography-h2&quot;]</value>
+      <webElementGuid>42e835f5-6627-46fb-930d-a378775879ae</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='settings--form']/main/div/section/div/div/div/div/div/h2</value>
+      <webElementGuid>8eeac41d-491d-4532-86ee-e1426e43e070</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/h2</value>
+      <webElementGuid>6b62ac9e-6dea-4d4c-abac-2c4f7be4b63a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h2[(text() = 'Accepting New Members' or . = 'Accepting New Members')]</value>
+      <webElementGuid>bd88002d-44da-4f64-9bb6-06c452e79953</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

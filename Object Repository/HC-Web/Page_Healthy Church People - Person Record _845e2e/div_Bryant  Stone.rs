@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Bryant  Stone</name>
+   <tag></tag>
+   <elementGuidId>aa7cf913-79d2-4cb7-989c-4c69ce87be27</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//section/div/div/div/div[2]/div/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.person_record--details_window_person_info_full_name</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7359a108-91ad-42ae-ac0f-3d321cb31e65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>person_record--details_window_person_info_full_name</value>
+      <webElementGuid>ca442b77-4be2-4bf3-b423-67ec30fecd56</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Bryant  Stone </value>
+      <webElementGuid>d21493b7-34be-49ea-b464-df01aa72c034</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 person_record_drawer jss881 drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/div[@class=&quot;person_record jss1292 jss1293 drawer--has_action_bar ui person_record--drawer person_record-size_496_plus person_record-size_768_plus person_record--desktop&quot;]/div[@class=&quot;person_record--transition_container&quot;]/div[@class=&quot;person_record--page_container&quot;]/section[@class=&quot;ui jss1297 drawer--content person_record--page_content&quot;]/div[@class=&quot;ui drawer--details_window person_record--details_window person_record--details_window-gender_adult_male drawer--details_window-bleed&quot;]/div[@class=&quot;ui info-bar&quot;]/div[@class=&quot;drawer--details_window_columns_container&quot;]/div[@class=&quot;drawer--details_window_column&quot;]/div[@class=&quot;drawer--details_window_column_accessor font-size-small font-weight-bold&quot;]/div[@class=&quot;person_record--details_window_person_info&quot;]/div[@class=&quot;person_record--details_window_person_info_row_first&quot;]/div[@class=&quot;person_record--details_window_person_info_full_name&quot;]</value>
+      <webElementGuid>eb3b6d5b-ada2-4070-81d4-9c43c2bc0505</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div/div/div[2]/div/div/div/div</value>
+      <webElementGuid>dcedac66-4b24-45dc-966d-8eb760fdf633</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Bryant  Stone ' or . = 'Bryant  Stone ')]</value>
+      <webElementGuid>3774f238-ee9e-4e16-992a-50317ff46220</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

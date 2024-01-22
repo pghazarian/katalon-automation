@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h3_Email Statistics</name>
+   <tag></tag>
+   <elementGuidId>e0e912ca-6dd8-4169-bbdc-346c122a66af</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/div/div/div/div/div/div/h3</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h3.MuiTypography-root.MuiTypography-h3</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>e3a36105-81ca-45e3-b9e4-b139f9aaac60</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root MuiTypography-h3</value>
+      <webElementGuid>a358a4a8-9be6-4fb2-b877-0b5b31a675a0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Email Statistics</value>
+      <webElementGuid>a7b80d34-9a4c-42cd-8fa2-d420a190d50a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss1343 jss1749 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss1353 ui page--container jss1352&quot;]/section[@class=&quot;cmui content jss1356 ui page--content jss1355&quot;]/div[@class=&quot;jss1748&quot;]/div[@class=&quot;cmui grid jss7 jss34&quot;]/div[@class=&quot;cmui grid--column jss45 jss68&quot;]/div[@class=&quot;ui card jss375 card-nest&quot;]/div[@class=&quot;card-content&quot;]/div[1]/div[1]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss68 jss70&quot;]/h3[@class=&quot;MuiTypography-root MuiTypography-h3&quot;]</value>
+      <webElementGuid>c6f58432-6cf1-4c33-a054-32dee4592746</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/div/div/div/div/div/div/h3</value>
+      <webElementGuid>4e22cfd9-8f2c-49e0-841f-083f53e9ddb2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h3</value>
+      <webElementGuid>5b9f44b8-dd9e-4b92-af4c-70e6f3651680</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[(text() = 'Email Statistics' or . = 'Email Statistics')]</value>
+      <webElementGuid>d35be75e-70b5-488d-9e8e-7a972cc86dd9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

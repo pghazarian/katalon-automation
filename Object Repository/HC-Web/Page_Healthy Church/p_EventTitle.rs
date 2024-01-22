@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_EventTitle</name>
+   <tag></tag>
+   <elementGuidId>09e4fa13-6be2-47fb-bf26-071c0fc215ef</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div/main/section/div/div/div/h1/div/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.jss460 > p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>49721b1c-750e-46ee-967b-1961a2544038</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Test Ministry for Paid Events</value>
+      <webElementGuid>fea91096-f9d1-4fb2-81f4-92e19fffb7c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss496 jss463 page-has_action_bar&quot;]/section[@class=&quot;cmui content jss519 ui page--content jss518&quot;]/div[1]/div[@class=&quot;overlayed-image overlay blue&quot;]/div[@class=&quot;overlay-details&quot;]/h1[@class=&quot;ui header&quot;]/div[@class=&quot;jss460&quot;]/p[1]</value>
+      <webElementGuid>82f760e2-f2ae-48e1-ba34-2fe26d39abce</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/section/div/div/div/h1/div/p</value>
+      <webElementGuid>d8f00b27-b647-4aa7-92fe-b96cac9ad69e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1/div/p</value>
+      <webElementGuid>abc70a54-892f-47bb-a8c9-fe0adf046248</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Test Ministry for Paid Events' or . = 'Test Ministry for Paid Events')]</value>
+      <webElementGuid>6f287e23-18bf-4936-8e7e-c7c214fea7d5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

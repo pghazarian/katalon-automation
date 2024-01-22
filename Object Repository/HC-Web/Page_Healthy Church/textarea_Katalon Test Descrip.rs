@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>textarea_Katalon Test Descrip</name>
+   <tag></tag>
+   <elementGuidId>b98e8582-9ba0-4cb4-95e4-03d32689e90e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//textarea[@id='journeys_list_page--description']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#journeys_list_page--description</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>48a75f69-bc55-4a0b-a3cb-67429bd71da5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>journeys_list_page--description</value>
+      <webElementGuid>4204b75b-3c3c-40ba-98bb-2a1f994fa777</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Katalon Test Descrip</value>
+      <webElementGuid>16400c02-dbaf-4954-959c-acca4a109940</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;journeys_list_page--description&quot;)</value>
+      <webElementGuid>381e6bb4-6134-4183-aa4b-7bb88b08cf34</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//textarea[@id='journeys_list_page--description']</value>
+      <webElementGuid>79c8a7df-6ac4-4fbd-91bf-aa0bb9b42a98</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//textarea</value>
+      <webElementGuid>d54435ac-7e55-46ee-9579-217b9dab3899</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[@id = 'journeys_list_page--description' and (text() = 'Katalon Test Descrip' or . = 'Katalon Test Descrip')]</value>
+      <webElementGuid>fe94f582-aa07-446a-9d95-7947e95470dd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

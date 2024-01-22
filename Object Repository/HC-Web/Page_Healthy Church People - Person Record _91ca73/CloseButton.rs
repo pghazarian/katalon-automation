@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CloseButton</name>
+   <tag></tag>
+   <elementGuidId>51722e12-e797-4c86-be6c-ec9d5e1332d5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;close-button&quot;]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>/html/body/div[4]/div/div[1]/div[1]/div[1]/div/header/div/div[2]/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

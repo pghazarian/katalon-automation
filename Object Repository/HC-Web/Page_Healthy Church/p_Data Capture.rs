@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Data Capture</name>
+   <tag></tag>
+   <elementGuidId>1a6adad6-cd3d-40be-9f3e-08142ab7a12f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>bac299aa-ada1-4435-bd14-38bce7ea432a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root section-label MuiTypography-body1</value>
+      <webElementGuid>21b3a4f0-70e5-4808-ad88-bb5cc69dc36f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Data Capture</value>
+      <webElementGuid>f5d184dc-5ed2-488d-a9d4-1921e1358c5d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss273&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]/p[@class=&quot;MuiTypography-root section-label MuiTypography-body1&quot;]</value>
+      <webElementGuid>6ab49efe-578c-4707-920d-96343a9e8068</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
+      <webElementGuid>d56e90cd-6bed-4dec-abac-684dbdc2867f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[9]/div/p</value>
+      <webElementGuid>49c7c5db-0740-47a3-a58c-df5885397bf1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Data Capture' or . = 'Data Capture')]</value>
+      <webElementGuid>29272f08-c485-4b9d-b280-4bd0d99d9d36</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
