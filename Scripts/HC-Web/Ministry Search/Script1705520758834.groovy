@@ -17,48 +17,51 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://hc-stage.saddleback.com')
+WebUI.openBrowser(HostUrl)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), 'crisf@saddleback.com')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), UserName)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), 
-    'Z8nazMpc16177aX9xH8qZQ==')
+WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), Password)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Ministries Central'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/input_text'), 'accounting')
+'Search for Ministry'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/input_text'), SearchTerm)
 
+'Initiate search'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Page_Healthy Church/input_text'), Keys.chord(Keys.ENTER))
 
+'Click Enter twice because of bug in the page'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Page_Healthy Church/input_text'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Accounting2Accounting2Accounting2Accounting2'))
+WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Search/MinistryRow1_MinistryName'), MinistryName)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h2_Accounting2Accounting2Accounting2Accounting2'), 
-    'Accounting2Accounting2Accounting2Accounting2')
+'Open Ministry'
+WebUI.click(findTestObject('HC-Web/Ministry/Search/MinistryRow1_MinistryName'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/td_Lake Forest'))
+WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h2_Accounting2Accounting2Accounting2Account_8aa1dd'), 
-    'Accounting2Accounting2Accounting2Accounting2 / Lake Forest')
+WebUI.click(findTestObject('HC-Web/Page_Healthy Church/td_Lake Forest'))
+
+WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/Drawer2Header'), MinistryLocationName)
 
 WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_ViewDashboard'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Accounting2Accounting2Accounting2Accounting2'), 
-    'Accounting2Accounting2Accounting2Accounting2')
+WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Details/BreadCrumbMinistryName'), MinistryName)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Bella (Bella) Alsop'))
+WebUI.click(findTestObject('HC-Web/Ministry/Members/MemberTableRow1'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church People - Person Record _615a46/div_Bella (Bella) Alsop'), 
-    'Bella (Bella) Alsop')
+WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Members/MemberTableRow1FullName'), MemberName1)
 
 WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _615a46/CloseButton'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Interested'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Nikhilesh  Walwatkar'))
+WebUI.click(findTestObject('HC-Web/Ministry/Members/MemberTableRow1'))
+
+WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Members/MemberTableRow1FullName'), InterestedName1)
 
 WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _99d737/CloseButton'))
 
@@ -78,8 +81,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Ch
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Membership Settings'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h2_Accepting New Members'), 
-    'Accepting New Members')
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h2_Accepting New Members'), 'Accepting New Members')
 
 WebUI.closeBrowser()
 

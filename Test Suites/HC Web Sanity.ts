@@ -24,6 +24,54 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/HC-Web/Ministry Search</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5375c838-c981-4fe3-be61-7c43e5ea1aef</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7dd511c0-60cd-48f5-a519-fe8328504ade</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9b242a8e-3fbd-4f4a-ad1d-238d02154c0d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ea3f6664-74fb-4cd9-8db4-ee2d2b8e6962</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0f88196d-616a-4b28-b6d9-c9fead0b8ae8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>40c47604-74d5-495f-9f06-f5794528b4e4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bbe3d360-b751-48ad-bd20-f475e4bd858c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8837e34b-942c-4ae4-bc62-5fde1803aa6d</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>a412901c-3827-4d64-9652-00c7f7fa2e68</guid>
