@@ -21,16 +21,16 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : HostUrl, ('UserName') : UserName, ('Password') : Password], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Ministries Central'))
+WebUI.click(findTestObject('HC-Web/Navigation/MinistriesCentral'))
 
 'Search for Ministry'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/input_text'), SearchTerm)
+WebUI.setText(findTestObject('HC-Web/Ministry/Search/SearchInput'), SearchTerm)
 
 'Initiate search'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Page_Healthy Church/input_text'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
-'Click Enter twice because of bug in the page'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Page_Healthy Church/input_text'), Keys.chord(Keys.ENTER))
+'Initiate search'
+WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Search/MinistryRow1_MinistryName'), MinistryName)
 
@@ -58,7 +58,8 @@ WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_V
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Details/BreadCrumbMinistryName'), MinistryName)
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'dashboard-activity-list')]/div/div/div/table/tbody/tr/td/span/div/div[normalize-space(.) = '" + MemberName1 + "']")
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div[normalize-space(.) = \'' + 
+    MemberName1) + '\']')
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
 
@@ -71,7 +72,8 @@ WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_Interested'))
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'dashboard-activity-list')]/div/div/div/table/tbody/tr/td/span/div/div[normalize-space(.) = '" + InterestedName1 + "']")
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div[normalize-space(.) = \'' + 
+    InterestedName1) + '\']')
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
 
