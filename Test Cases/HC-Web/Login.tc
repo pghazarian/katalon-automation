@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2872d71a-535b-4b5b-acb5-322021b79e88</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d880eb8f-ef17-4e4e-8038-39e223026d6f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b26bd963-8b39-44d8-bc1a-6f6dc4ae01d9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>02acebe1-40e6-416b-b1a0-eea15b86bcc0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'https://hc-dev.saddleback.com'</defaultValue>
+      <description></description>
+      <id>d880eb8f-ef17-4e4e-8038-39e223026d6f</id>
+      <masked>false</masked>
+      <name>HostUrl</name>
+   </variable>
+   <variable>
+      <defaultValue>'crisf@saddleback.com'</defaultValue>
+      <description></description>
+      <id>b26bd963-8b39-44d8-bc1a-6f6dc4ae01d9</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Z8nazMpc16177aX9xH8qZQ=='</defaultValue>
+      <description></description>
+      <id>02acebe1-40e6-416b-b1a0-eea15b86bcc0</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>

@@ -17,13 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://hc-stage2.saddleback.com/')
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), 'crisf@saddleback.com')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), 'Z8nazMpc16177aX9xH8qZQ==')
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : HostUrl, ('UserName') : UserName, ('Password') : Password], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_People'))
 
