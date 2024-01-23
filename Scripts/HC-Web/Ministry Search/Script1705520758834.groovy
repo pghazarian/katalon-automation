@@ -62,23 +62,23 @@ WebUI.click(findTestObject('HC-Web/Ministry/Members/MemberTableRow1'))
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Members/MemberTableRow1FullName'), MemberName1)
 
-WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _615a46/CloseButton'))
+WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Interested'))
+WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_Interested'))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/MemberTableRow1'))
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Members/MemberTableRow1FullName'), InterestedName1)
 
-WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _99d737/CloseButton'))
+WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Serving Opps'))
+WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_ServingOpps'))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_Communications'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h3_Email Statistics'), 'Email Statistics')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Settings'))
+WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_ServingOpps'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h2_Description'), 'Description')
 

@@ -85,7 +85,7 @@
       <name>LastName</name>
    </variable>
    <variable>
-      <defaultValue>'https://hc-dev.saddleback.com'</defaultValue>
+      <defaultValue>'https://hc-stage.saddleback.com'</defaultValue>
       <description></description>
       <id>74dc1664-ddfd-43f3-a4b5-2c62766771f9</id>
       <masked>false</masked>
