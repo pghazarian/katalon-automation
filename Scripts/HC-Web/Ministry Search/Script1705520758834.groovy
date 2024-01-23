@@ -17,13 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(HostUrl)
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), UserName)
-
-WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), Password)
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : HostUrl, ('UserName') : UserName, ('Password') : Password], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Ministries Central'))
 
@@ -43,7 +39,18 @@ WebUI.click(findTestObject('HC-Web/Ministry/Search/MinistryRow1_MinistryName'))
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
-WebUI.click(findTestObject('HC-Web/Page_Healthy Church/td_Lake Forest'))
+LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(((('//div[@class=\'drawer-children\']/table/tbody/tr/td[(text() = \'' + 
+    LocationName) + '\' or . = \'') + LocationName) + '\')]')
+
+LocationValue = WebUI.getAttribute(LocationRowObject, 'innerText')
+
+'Verify the location value'
+WebUI.verifyEqual(LocationValue, LocationName)
+
+'Open the Location'
+WebUI.click(LocationRowObject)
+
+MinistryLocationName = ((MinistryName + ' / ') + LocationName)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/Drawer2Header'), MinistryLocationName)
 
@@ -67,7 +74,7 @@ WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _9
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Serving Opps'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Communications'))
+WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_Communications'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h3_Email Statistics'), 'Email Statistics')
 

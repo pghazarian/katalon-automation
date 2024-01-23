@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='tab-navigation_tab--key-item-5']/span</value>
+         <value>//div[@class='sectional-tabs-container']/div/div/button/span[(text() = 'Communications' or . = 'Communications')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>7789f6e1-1d46-4803-b24e-13063123e3a5</webElementGuid>
+      <webElementGuid>967c8729-d548-4e3e-9f0d-420a20bc4473</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiTypography-root jss423 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>49947dd0-47f5-480c-b24c-aff6b9599e5a</webElementGuid>
+      <webElementGuid>c1f1c03d-d53f-46d6-bfb4-e392ac4037da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Communications</value>
-      <webElementGuid>42f056d6-9396-421b-9fa7-9a0e8b61e814</webElementGuid>
+      <webElementGuid>7be2c036-399a-4fad-a55c-f03a152a02f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab-navigation_tab--key-item-5&quot;)/span[@class=&quot;MuiTypography-root jss423 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>84bdc7d7-ad29-43e0-99ed-83c4f4b3db2d</webElementGuid>
+      <webElementGuid>8fe6a216-c121-4a99-90ac-12cd5bb5c7c4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='tab-navigation_tab--key-item-5']/span</value>
-      <webElementGuid>65c0385d-527e-47bc-bc46-23259439a01a</webElementGuid>
+      <webElementGuid>28b443c7-9f25-41df-ae13-d372d1e79594</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[6]/span</value>
-      <webElementGuid>d133312e-a7df-48e5-9637-b207d1265614</webElementGuid>
+      <webElementGuid>7ab2905a-b6e2-4c0c-beac-7823b0b1c7ec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Communications' or . = 'Communications')]</value>
-      <webElementGuid>f462b6d2-e5fb-4c87-a578-bc920653be86</webElementGuid>
+      <webElementGuid>b65ba9d9-c4e3-490d-a89d-87e5182b343b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='tab-navigation_tab--key-item-3']/span</value>
-      <webElementGuid>871bd5a1-91c3-4180-994a-9c2324c5db46</webElementGuid>
+      <webElementGuid>9061cb0f-1a9f-444d-87ca-fe7acc312776</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[4]/span</value>
-      <webElementGuid>0649f057-f4d0-4a6a-b02d-3b6980e11241</webElementGuid>
+      <webElementGuid>a8ed7a4f-dd11-4a67-ba1b-fd7b779c8e02</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
