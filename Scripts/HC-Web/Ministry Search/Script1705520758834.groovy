@@ -58,17 +58,27 @@ WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_V
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Details/BreadCrumbMinistryName'), MinistryName)
 
-WebUI.click(findTestObject('HC-Web/Ministry/Members/MemberTableRow1'))
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'dashboard-activity-list')]/div/div/div/table/tbody/tr/td/span/div/div[normalize-space(.) = '" + MemberName1 + "']")
 
-WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Members/MemberTableRow1FullName'), MemberName1)
+PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
+
+'Verify the member person\'s name in the table'
+WebUI.verifyEqual(PersonName, MemberName1)
+
+WebUI.click(PersonTableCellObject)
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_Interested'))
 
-WebUI.click(findTestObject('HC-Web/Ministry/Members/MemberTableRow1'))
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'dashboard-activity-list')]/div/div/div/table/tbody/tr/td/span/div/div[normalize-space(.) = '" + InterestedName1 + "']")
 
-WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Members/MemberTableRow1FullName'), InterestedName1)
+PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
+
+'Verify the interested person\'s name in the table'
+WebUI.verifyEqual(PersonName, InterestedName1)
+
+WebUI.click(PersonTableCellObject)
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 

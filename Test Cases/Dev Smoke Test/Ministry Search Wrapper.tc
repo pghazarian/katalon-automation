@@ -1,111 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Ministry Search</name>
+   <name>Ministry Search Wrapper</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>624a9365-ddd8-495b-af52-f18a8d44eea7</testCaseGuid>
+   <testCaseGuid>22e5afd9-647f-4df9-aa7d-9f3f2a0031f6</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9b242a8e-3fbd-4f4a-ad1d-238d02154c0d</variableId>
+      <variableId>431e80e7-3b97-45c1-a252-59c71c1f6930</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ea3f6664-74fb-4cd9-8db4-ee2d2b8e6962</variableId>
+      <variableId>7e1b6024-a94e-412b-874a-7fe43a42ae02</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0f88196d-616a-4b28-b6d9-c9fead0b8ae8</variableId>
+      <variableId>7e0e4242-3d09-4307-b12d-2882dfba0fda</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7dd511c0-60cd-48f5-a519-fe8328504ade</variableId>
+      <variableId>2859ab47-983e-4434-9484-5e26502e2968</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>5375c838-c981-4fe3-be61-7c43e5ea1aef</variableId>
+      <variableId>8bac76c7-baa8-46a2-8864-18adb6ebf2d4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>693a1173-6038-4b12-b3e3-feec3bb6d235</variableId>
+      <variableId>553056ff-010b-4449-a381-29d65c744ff6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bbe3d360-b751-48ad-bd20-f475e4bd858c</variableId>
+      <variableId>01d7fccc-9395-42d2-acf3-6e97e31a7937</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8837e34b-942c-4ae4-bc62-5fde1803aa6d</variableId>
+      <variableId>96e4f4a7-bd88-4381-8356-7f2ab3fe176c</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'https://hc-stage.saddleback.com'</defaultValue>
+      <defaultValue>'https://hc-dev.saddleback.com'</defaultValue>
       <description></description>
-      <id>9b242a8e-3fbd-4f4a-ad1d-238d02154c0d</id>
+      <id>431e80e7-3b97-45c1-a252-59c71c1f6930</id>
       <masked>false</masked>
       <name>HostUrl</name>
    </variable>
    <variable>
       <defaultValue>'crisf@saddleback.com'</defaultValue>
       <description></description>
-      <id>ea3f6664-74fb-4cd9-8db4-ee2d2b8e6962</id>
+      <id>7e1b6024-a94e-412b-874a-7fe43a42ae02</id>
       <masked>false</masked>
       <name>UserName</name>
    </variable>
    <variable>
       <defaultValue>'Z8nazMpc16177aX9xH8qZQ=='</defaultValue>
       <description></description>
-      <id>0f88196d-616a-4b28-b6d9-c9fead0b8ae8</id>
+      <id>7e0e4242-3d09-4307-b12d-2882dfba0fda</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>
    <variable>
       <defaultValue>'accounting'</defaultValue>
       <description></description>
-      <id>7dd511c0-60cd-48f5-a519-fe8328504ade</id>
+      <id>2859ab47-983e-4434-9484-5e26502e2968</id>
       <masked>false</masked>
       <name>SearchTerm</name>
    </variable>
    <variable>
       <defaultValue>'Accounting'</defaultValue>
       <description></description>
-      <id>5375c838-c981-4fe3-be61-7c43e5ea1aef</id>
+      <id>8bac76c7-baa8-46a2-8864-18adb6ebf2d4</id>
       <masked>false</masked>
       <name>MinistryName</name>
    </variable>
    <variable>
       <defaultValue>'Lake Forest'</defaultValue>
       <description></description>
-      <id>693a1173-6038-4b12-b3e3-feec3bb6d235</id>
+      <id>553056ff-010b-4449-a381-29d65c744ff6</id>
       <masked>false</masked>
       <name>LocationName</name>
    </variable>
    <variable>
-      <defaultValue>'Jack (Jack) Alsop'</defaultValue>
+      <defaultValue>'Carol Anderson'</defaultValue>
       <description></description>
-      <id>bbe3d360-b751-48ad-bd20-f475e4bd858c</id>
+      <id>01d7fccc-9395-42d2-acf3-6e97e31a7937</id>
       <masked>false</masked>
       <name>MemberName1</name>
    </variable>
    <variable>
-      <defaultValue>'Nikhilesh Walwatkar'</defaultValue>
+      <defaultValue>'John Smith'</defaultValue>
       <description></description>
-      <id>8837e34b-942c-4ae4-bc62-5fde1803aa6d</id>
+      <id>96e4f4a7-bd88-4381-8356-7f2ab3fe176c</id>
       <masked>false</masked>
       <name>InterestedName1</name>
    </variable>
