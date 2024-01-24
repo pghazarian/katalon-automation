@@ -1,73 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Connection Form Public Authenticated Public</name>
+   <name>Connection Form Public Authenticated Wrapper</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f3a18071-b8f3-4220-a017-6b1abc70c0fb</testCaseGuid>
+   <testCaseGuid>5df1573c-e584-4b61-a431-283c2c28020e</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0d7149dd-4e4a-4fec-92e4-2d6a81290d5a</variableId>
+      <variableId>b961c56e-dadb-4117-a307-f00b6e940be2</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b5b9f49d-0a6f-4c73-b5e0-63147f5d3f8c</variableId>
+      <variableId>8eef187c-f476-436c-9378-d263b332f5b9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>2b2e1916-6ad5-45f4-b776-c774f530d461</variableId>
+      <variableId>7dc7e93d-c6ba-4710-b4aa-b44e2b9bae1e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d981d612-2733-4eb4-8c5a-9a17b661bb4b</variableId>
+      <variableId>b4d11f51-db7b-4266-87c8-2756076b3f63</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>07acc44e-2dc9-4086-97bb-f48f8ee784c1</variableId>
+      <variableId>1d3d2715-40fc-42b0-b236-ffbe44fac803</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>df895b5c-5293-4499-88a4-5b02386c0ec3</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'https://hc.saddleback.com'</defaultValue>
       <description></description>
-      <id>0d7149dd-4e4a-4fec-92e4-2d6a81290d5a</id>
+      <id>b961c56e-dadb-4117-a307-f00b6e940be2</id>
       <masked>false</masked>
       <name>HostUrl</name>
    </variable>
    <variable>
       <defaultValue>'crisf@saddleback.com'</defaultValue>
       <description></description>
-      <id>b5b9f49d-0a6f-4c73-b5e0-63147f5d3f8c</id>
+      <id>8eef187c-f476-436c-9378-d263b332f5b9</id>
       <masked>false</masked>
       <name>UserName</name>
    </variable>
    <variable>
       <defaultValue>'QyKAW1zkijel+aLNsYRCJQ=='</defaultValue>
       <description></description>
-      <id>2b2e1916-6ad5-45f4-b776-c774f530d461</id>
+      <id>7dc7e93d-c6ba-4710-b4aa-b44e2b9bae1e</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>
    <variable>
       <defaultValue>'/public/connection-form/22/zztest'</defaultValue>
       <description></description>
-      <id>d981d612-2733-4eb4-8c5a-9a17b661bb4b</id>
+      <id>b4d11f51-db7b-4266-87c8-2756076b3f63</id>
       <masked>false</masked>
       <name>PublicConnectionFormPath</name>
    </variable>
    <variable>
       <defaultValue>'/data-capture/connection-forms/22/overview'</defaultValue>
       <description></description>
-      <id>07acc44e-2dc9-4086-97bb-f48f8ee784c1</id>
+      <id>1d3d2715-40fc-42b0-b236-ffbe44fac803</id>
       <masked>false</masked>
       <name>ConnectionFormManagementPath</name>
+   </variable>
+   <variable>
+      <defaultValue>'//textarea[@id=\'connection_form_public--question_field_34414\']'</defaultValue>
+      <description></description>
+      <id>df895b5c-5293-4499-88a4-5b02386c0ec3</id>
+      <masked>false</masked>
+      <name>FormInputFieldXPath</name>
    </variable>
 </TestCaseEntity>
