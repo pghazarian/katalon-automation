@@ -29,6 +29,12 @@
       <value></value>
       <variableId>b06834cc-4bfe-4778-96a2-47021adc4153</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1509d933-8280-475f-a59b-8341f842b6c3</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'https://hc-stage.saddleback.com'</defaultValue>
       <description></description>
@@ -56,5 +62,12 @@
       <id>b06834cc-4bfe-4778-96a2-47021adc4153</id>
       <masked>false</masked>
       <name>PublicConnectionFormPath</name>
+   </variable>
+   <variable>
+      <defaultValue>'/data-capture/connection-forms/72/overview'</defaultValue>
+      <description></description>
+      <id>1509d933-8280-475f-a59b-8341f842b6c3</id>
+      <masked>false</masked>
+      <name>ConnectionFormManagementPath</name>
    </variable>
 </TestCaseEntity>

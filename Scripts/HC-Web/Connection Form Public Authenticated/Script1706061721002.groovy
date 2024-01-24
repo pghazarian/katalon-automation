@@ -16,11 +16,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
+import java.text.SimpleDateFormat as SimpleDateFormat
+
 def date = new Date()
-def sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
+
+def sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+
 def CurrentDateTime = sdf.format(date)
+
 def FormPath = HostUrl + PublicConnectionFormPath
+
+def AdminFormPath = HostUrl + ConnectionFormManagementPath
 
 WebUI.openBrowser(HostUrl)
 
@@ -28,7 +34,23 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity 
 
 WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), Password)
 
+'Login'
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
+
+'Go to the Connection Form Admin screen'
+WebUI.navigateToUrl(AdminFormPath)
+
+'Check that the form is unpublished'
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Publish'), 'Publish')
+
+'Publish the connection form (to make it publicly available)'
+WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Publish'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Yes'))
+
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/a_View Page'))
+
+not_run: WebUI.switchToWindowTitle('Healthy Church')
 
 WebUI.navigateToUrl(FormPath)
 
@@ -56,10 +78,8 @@ WebUI.verifyNotEqual(inputValue, '')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/label_Did you complete Class 101check'))
 
-println sdf.format(date)
-
 WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputconnection_form_public--question_field_21225'), 
-    'Romans 8:28' + ' - ' + CurrentDateTime)
+    ('Romans 8:28' + ' - ') + CurrentDateTime)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Submit'))
 
@@ -70,6 +90,20 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Page_Healthy
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Your form has been received'), 
     'Your form has been received')
+
+'Go to the Connection Form Admin screen'
+WebUI.navigateToUrl(AdminFormPath)
+
+'Check that the form is published'
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Unpublish'), 'Unpublish')
+
+'Unpublish the form'
+WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Unpublish'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Yes'))
+
+'Verify that the form is not published '
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Publish'), 'Publish')
 
 WebUI.closeBrowser()
 
