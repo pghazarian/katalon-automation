@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.Select.is-focused.is-open.Select--multi > div.Select-control > span.Select-arrow-zone > div > div.cmui.ui.icon.icon-chevron-down.icon-align-left.icon-color-primary.icon-compact > svg > g > use.icon-use-path</value>
+         <value>use.icon-use-path</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>use</value>
-      <webElementGuid>29f47379-5af8-4d4b-aef0-f46e95d79a18</webElementGuid>
+      <webElementGuid>969f68c9-81f1-40f8-b02b-4e667e90b591</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,22 +30,22 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-use-path</value>
-      <webElementGuid>68f4d1ad-14a8-44b4-ab21-822b8d68a0a3</webElementGuid>
+      <webElementGuid>88eb1773-ea77-4208-81d1-fdb2c47615a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xlink:href</name>
       <type>Main</type>
-      <value>#icon-svg-path-chevron-down-5231951073</value>
-      <webElementGuid>5d083505-80aa-404d-9c89-109e1f4809f2</webElementGuid>
+      <value>#icon-svg-path-check-00650263</value>
+      <webElementGuid>a9b68a02-6b02-46bc-83f1-bcc4c04fdadd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;journeys_list_page--field_tags&quot;)/div[@class=&quot;Select is-focused is-open Select--multi&quot;]/div[@class=&quot;Select-control&quot;]/span[@class=&quot;Select-arrow-zone&quot;]/div[1]/div[@class=&quot;cmui ui icon icon-chevron-down icon-align-left icon-color-primary icon-compact&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
-      <webElementGuid>2177192e-640a-4c0f-82f2-613df8d8ffce</webElementGuid>
+      <value>id(&quot;page-content&quot;)/div[1]/div[@class=&quot;jss535 jss540&quot;]/div[@class=&quot;jss539&quot;]/div[@class=&quot;cmui ui icon icon-check jss536 icon-align-left icon-color-success&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
+      <webElementGuid>39fc8c72-8178-45d6-8752-98b7549e1d89</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
