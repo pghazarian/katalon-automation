@@ -76,16 +76,12 @@ inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/Em
 'Verify the email field value is not blank'
 WebUI.verifyNotEqual(inputValue, '')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/label_Did you complete Class 101check'))
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputconnection_form_public--question_field_21225'), 
+WebUI.setText(findTestObject('HC-Web/Connection Form Public/textarea_Comments_connection_form_public--question_field_34414'), 
     ('Romans 8:28' + ' - ') + CurrentDateTime)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Submit'))
 
-WebUI.delay(2)
-
-not_run: WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Success'), 0)
+WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Success'), 0)
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Success'), 'Success')
 
@@ -106,10 +102,8 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Un
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Yes'))
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form/Overview/Unpublished'), 2)
-
-'Verify that the form is not published'
-WebUI.verifyElementText(findTestObject('HC-Web/Connection Form/Overview/Unpublished'), 'Unpublished')
+'Verify that the form is not published '
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Publish'), 'Publish')
 
 WebUI.closeBrowser()
 
