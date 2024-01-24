@@ -16,6 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+def date = new Date()
+def sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
+def CurrentDateTime = sdf.format(date)
+def FormPath = HostUrl + PublicConnectionFormPath
 
 WebUI.openBrowser(HostUrl)
 
@@ -25,7 +30,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback 
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
 
-WebUI.navigateToUrl('https://hc-stage.saddleback.com/public/connection-form/72/cris-test-connection-form')
+WebUI.navigateToUrl(FormPath)
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputconnection_form_public--personal_form__2f23c0'), 
     '')
@@ -51,8 +56,10 @@ WebUI.verifyNotEqual(inputValue, '')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/label_Did you complete Class 101check'))
 
+println sdf.format(date)
+
 WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputconnection_form_public--question_field_21225'), 
-    'Romans 8:28')
+    'Romans 8:28' + ' - ' + CurrentDateTime)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Submit'))
 

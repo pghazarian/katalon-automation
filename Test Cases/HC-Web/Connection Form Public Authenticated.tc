@@ -23,6 +23,12 @@
       <value></value>
       <variableId>30f10b0c-9f31-4689-a481-96bf3398570d</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b06834cc-4bfe-4778-96a2-47021adc4153</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'https://hc-stage.saddleback.com'</defaultValue>
       <description></description>
@@ -43,5 +49,12 @@
       <id>30f10b0c-9f31-4689-a481-96bf3398570d</id>
       <masked>false</masked>
       <name>Password</name>
+   </variable>
+   <variable>
+      <defaultValue>'/public/connection-form/72/cris-test-connection-form'</defaultValue>
+      <description></description>
+      <id>b06834cc-4bfe-4778-96a2-47021adc4153</id>
+      <masked>false</masked>
+      <name>PublicConnectionFormPath</name>
    </variable>
 </TestCaseEntity>
