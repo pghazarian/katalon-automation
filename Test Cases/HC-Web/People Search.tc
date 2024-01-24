@@ -7,53 +7,62 @@
    <testCaseGuid>b37f7a59-fae3-46a5-9576-5b38f74fc230</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
-      <id>68a736ab-c5bb-47c5-86f8-beea435bbe1c</id>
+      <id>c55d64a3-cbc3-4c14-9682-1816d90ca731</id>
       <iterationEntity>
-         <iterationType>ALL</iterationType>
-         <value></value>
+         <iterationType>RANGE</iterationType>
+         <value>1-1</value>
       </iterationEntity>
-      <testDataId>Data Files/Person/PersonSearch</testDataId>
+      <testDataId>Data Files/Person/PersonSearch-Stage</testDataId>
+   </testDataLinks>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>82ebbdcd-ed92-4140-8470-b88c45532f3b</id>
+      <iterationEntity>
+         <iterationType>RANGE</iterationType>
+         <value>2-2</value>
+      </iterationEntity>
+      <testDataId>Data Files/Person/PersonSearch-Prod</testDataId>
    </testDataLinks>
    <variableLinks>
-      <testDataLinkId>68a736ab-c5bb-47c5-86f8-beea435bbe1c</testDataLinkId>
+      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>SearchTerm</value>
       <variableId>c26ce4b9-ff1a-41a2-bbcf-7d07d375db81</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>68a736ab-c5bb-47c5-86f8-beea435bbe1c</testDataLinkId>
+      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>VerificationName</value>
       <variableId>535d2097-cdd3-47c6-b508-8cef521a0a7b</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>68a736ab-c5bb-47c5-86f8-beea435bbe1c</testDataLinkId>
+      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>FirstName</value>
       <variableId>82b2d77e-024c-4719-88e1-9e8fdcdcedf9</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>68a736ab-c5bb-47c5-86f8-beea435bbe1c</testDataLinkId>
+      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>LastName</value>
       <variableId>80ed7adf-9029-49e4-adef-b8aafd501455</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>HostUrl</value>
       <variableId>74dc1664-ddfd-43f3-a4b5-2c62766771f9</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>UserName</value>
       <variableId>7295db1c-c085-41ef-a1d2-0f1b10c7607e</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Password</value>
       <variableId>6b777545-d34b-4056-b262-c64fc8cc7c52</variableId>
    </variableLinks>
    <variable>
@@ -85,21 +94,21 @@
       <name>LastName</name>
    </variable>
    <variable>
-      <defaultValue>'https://hc-stage.saddleback.com'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>74dc1664-ddfd-43f3-a4b5-2c62766771f9</id>
       <masked>false</masked>
       <name>HostUrl</name>
    </variable>
    <variable>
-      <defaultValue>'crisf@saddleback.com'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>7295db1c-c085-41ef-a1d2-0f1b10c7607e</id>
       <masked>false</masked>
       <name>UserName</name>
    </variable>
    <variable>
-      <defaultValue>'Z8nazMpc16177aX9xH8qZQ=='</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>6b777545-d34b-4056-b262-c64fc8cc7c52</id>
       <masked>false</masked>
