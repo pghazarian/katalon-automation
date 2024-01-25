@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>HC-Stage</name>
+   <name>HC-QA</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://hc-stage.saddleback.com'</initValue>
+      <initValue>'https://hc-qa.saddleback.com'</initValue>
       <name>HC_HostUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

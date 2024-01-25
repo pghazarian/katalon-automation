@@ -9,7 +9,7 @@
       <combinationType>ONE</combinationType>
       <id>c55d64a3-cbc3-4c14-9682-1816d90ca731</id>
       <iterationEntity>
-         <iterationType>ALL</iterationType>
+         <iterationType>RANGE</iterationType>
          <value>1-1</value>
       </iterationEntity>
       <testDataId>Data Files/Person/PersonSearch-Stage</testDataId>
