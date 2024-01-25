@@ -18,8 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : HostUrl, ('UserName') : UserName, ('Password') : Password], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_Ministries CentralMinistries Central'))
 
@@ -41,11 +41,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/td_What  Why')
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputui-input--so_name'), 'Katalon Test SO')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputui-input--so_short_description'), 
-    'Katalon Test SO')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputui-input--so_short_description'), 'Katalon Test SO')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/textarea_SO Created for Katalon Testing'), 
-    'SO Created for Katalon Testing')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/textarea_SO Created for Katalon Testing'), 'SO Created for Katalon Testing')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Add Contactplus'))
 
@@ -59,8 +57,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-p
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Nextchevron-wh-right'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputschedule_capacity_drawer--input'), 
-    '10')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputschedule_capacity_drawer--input'), '10')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_pencilEdit Custom Questions'))
 
@@ -68,8 +65,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_New Que
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/h5_CheckboxCheckbox'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_title_input--1'), 
-    'Test Question')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_title_input--1'), 'Test Question')
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_placeholder_input--1'), 
     'Check This Box')
@@ -100,11 +96,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_To This Oc
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/span_Person Search'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputperson_search_form--search_input'), 
-    'Garrett Clover')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputperson_search_form--search_input'), 'Garrett Clover')
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Serving Opps/inputperson_search_form--search_input'), 
-    Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Serving Opps/inputperson_search_form--search_input'), Keys.chord(
+        Keys.ENTER))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_GC Garrett  Clover Male  Lake ForestId 7801492'))
 
@@ -116,8 +111,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-p
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Save_1_2'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Serving Opps/p_Garrett Clover'), 
-    0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Serving Opps/p_Garrett Clover'), 0)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/svg_check'))
 

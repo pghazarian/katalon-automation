@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Creates a Serving Op with one custom question, signs up a user, then removes user and closes serving op</description>
+   <description>Creates a Serving Op with one custom question, signs up a user, then removes user and closes serving op&#xd;
+&#xd;
+Approved for Stage</description>
    <name>SO Creation and Sign Up</name>
-   <tag></tag>
+   <tag>Stage</tag>
    <comment></comment>
    <testCaseGuid>531fed3c-ae9d-4e80-b51f-01e4d1118f13</testCaseGuid>
 </TestCaseEntity>
