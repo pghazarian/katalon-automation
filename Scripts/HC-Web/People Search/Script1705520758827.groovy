@@ -23,23 +23,27 @@ WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : GlobalVariable.H
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_People'))
 
-WebUI.clearText(findTestObject('HC-Web/Page_Healthy Church/inputperson_search--action_bar--search_input'))
+WebUI.clearText(findTestObject('HC-Web/Person/Search/SearchInput'))
 
 'Type Search term'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputperson_search--action_bar--search_input'), 
+WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), 
     SearchTerm)
 
 'Initiate Search'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputperson_search--action_bar--search_input'), 
+WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), 
     Keys.chord(Keys.ENTER))
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Search/TableRowOne'), 0)
 
-'Verify the first row contains the expected name'
-WebUI.verifyElementText(findTestObject('HC-Web/Person/Search/TableRowOne-PersonName'), VerificationName)
+SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("(//div[@data-testid='person-personal-info']/div[normalize-space(.) = '" + VerificationName + "'])[1]")
+
+PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
+
+'Verify a row contains the expected name'
+WebUI.verifyElementText(SearchTableCellObject, VerificationName)
 
 'Open the person record from the search results'
-WebUI.click(findTestObject('HC-Web/Person/Search/TableRowOne-PersonName'))
+WebUI.click(SearchTableCellObject)
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/PersonName'), 0)
 

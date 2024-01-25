@@ -19,4 +19,24 @@
       <initValue>'QyKAW1zkijel+aLNsYRCJQ=='</initValue>
       <name>Admin_Password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Ryan Carson'</initValue>
+      <name>PeopleSearch_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Ryan (Ryan-man) Carson'</initValue>
+      <name>PeopleSearch_VerificationName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Ryan'</initValue>
+      <name>PeopleSearch_FirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Carson'</initValue>
+      <name>PeopleSearch_LastName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
