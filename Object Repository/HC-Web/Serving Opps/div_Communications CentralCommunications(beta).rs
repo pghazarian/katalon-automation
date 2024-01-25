@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Communications CentralCommunications(beta)</name>
+   <tag></tag>
+   <elementGuidId>d5017d05-65ba-4e5f-86f7-40f3a22490cd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7e3dd9fa-d8fe-4d0a-8568-7ac9aa6c2a65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>section-label-container</value>
+      <webElementGuid>10ac7d22-7a7d-4f44-99d2-308ef21bd917</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Communications CentralCommunications(beta)</value>
+      <webElementGuid>1faeaa2b-d8ed-4795-8cf5-735403be0cad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss273&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]</value>
+      <webElementGuid>7eec5ee9-264c-4df0-a183-72cf0472e90e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div</value>
+      <webElementGuid>0753225a-87d1-4170-83c0-eaba5c125e31</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[5]/div</value>
+      <webElementGuid>fd0752b4-30e6-4ba0-952e-52759450525f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Communications CentralCommunications(beta)' or . = 'Communications CentralCommunications(beta)')]</value>
+      <webElementGuid>752682bb-8db8-4d74-9273-a1055e348432</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

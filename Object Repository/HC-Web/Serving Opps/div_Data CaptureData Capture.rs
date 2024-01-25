@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Data CaptureData Capture</name>
+   <tag></tag>
+   <elementGuidId>23f91817-c8ee-42cb-a4e7-ea988ef8d842</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[8]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>8e648594-ace6-4988-b6a1-34e062456a6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>section-label-container</value>
+      <webElementGuid>61621d72-e6f2-4bb4-8cee-f36a9cceeb89</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Data CaptureData Capture</value>
+      <webElementGuid>90b6d721-56cb-48b8-9cb3-b380d1957eab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss273&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]</value>
+      <webElementGuid>3a30d44d-a66f-4249-b45d-b67ccd6e96ac</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[8]/div</value>
+      <webElementGuid>301c12e6-eb14-44df-bf9a-dc522c426ef4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[8]/div</value>
+      <webElementGuid>3714f9b4-d707-4037-8109-79bedc6148bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Data CaptureData Capture' or . = 'Data CaptureData Capture')]</value>
+      <webElementGuid>bbfe03be-a53d-42c3-8bb6-f011516bda1f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

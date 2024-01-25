@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Add Contactplus</name>
+   <tag></tag>
+   <elementGuidId>e0d9ac77-0fca-4e80-858f-96f7ff1f7b00</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='ui-button--add_contact']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-button--add_contact</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>5007b05f-0e44-43e1-9afa-50dc6ec64d81</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss1035 jss255</value>
+      <webElementGuid>bbab0a52-ba72-438f-a13d-79a6a1bc15a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-button--add_contact</value>
+      <webElementGuid>4b581d46-0131-49fd-a22a-c33fb60d8a4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Add Contactplus</value>
+      <webElementGuid>95535a49-c2e4-4591-92b8-873ad180c48d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-button--add_contact&quot;)</value>
+      <webElementGuid>d1d67e89-08c0-4569-a921-bbaaad4354d5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='ui-button--add_contact']</value>
+      <webElementGuid>40a2a152-2781-4177-a484-4950bf8df4cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[7]/div/div/div/div/div/div/div/button</value>
+      <webElementGuid>202b03df-b307-4d25-874c-47f9de0c540d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'ui-button--add_contact' and (text() = 'Add Contactplus' or . = 'Add Contactplus')]</value>
+      <webElementGuid>1ed833a9-ac29-43de-ad1c-3558990e63e0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_check</name>
+   <tag></tag>
+   <elementGuidId>896e2dc5-c11e-4b19-a75a-23b4f5bca5eb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='ui-schedule--grid-checkbox']/ancestor::td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-schedule--grid-checkbox > label.checkbox-label > div.cmui.ui.icon.icon-check.icon-align-left.icon-color-primary.icon-compact.icon-inverse > svg</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>a2b11084-3d31-4557-b035-8d1818b2259f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 24 24</value>
+      <webElementGuid>b32255f0-3aa1-47f9-929e-cd7faac530ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>check</value>
+      <webElementGuid>a867d324-1907-4087-8ae0-e81b24b5699e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-schedule--grid-checkbox&quot;)/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;cmui ui icon icon-check icon-align-left icon-color-primary icon-compact icon-inverse&quot;]/svg[1]</value>
+      <webElementGuid>12a27741-708c-4eb5-a444-727534c45209</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//svg[(text() = 'check' or . = 'check')]</value>
+      <webElementGuid>1d7d70d4-db34-48be-9cdc-73029116c2d6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

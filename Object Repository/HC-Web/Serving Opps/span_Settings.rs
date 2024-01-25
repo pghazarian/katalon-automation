@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Settings</name>
+   <tag></tag>
+   <elementGuidId>2955acdc-1a6a-4b25-939b-8cb21a96a042</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='tab-navigation_tab--key-item-3']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tab-navigation_tab--key-item-3 > span.MuiTypography-root.jss399.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6b24cd20-61bc-4f35-a182-97c5206df9e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root jss399 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
+      <webElementGuid>90c1640f-8a4b-4019-adfa-854d18d15c08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Settings</value>
+      <webElementGuid>f85b4c24-6121-4e10-b03a-b969c3433c3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab-navigation_tab--key-item-3&quot;)/span[@class=&quot;MuiTypography-root jss399 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
+      <webElementGuid>e86c7b8d-4f9e-4360-b508-a03c4c7139ee</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='tab-navigation_tab--key-item-3']/span</value>
+      <webElementGuid>fbe4270a-b5c1-459b-9272-0c8a63f012ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[4]/span</value>
+      <webElementGuid>59c60334-03a0-4df9-accc-b779a86e91b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Settings' or . = 'Settings')]</value>
+      <webElementGuid>8e4af81a-4f9b-4641-8c10-685d000d2b46</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

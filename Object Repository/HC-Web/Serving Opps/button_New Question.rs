@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_New Question</name>
+   <tag></tag>
+   <elementGuidId>a8e49efb-bea3-4c55-aaea-5ac4c0c20379</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='custom_question--add_button']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#custom_question--add_button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>7bc88936-6d2b-4512-b9a0-325cbc507c5a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss1154 jss255 jss262</value>
+      <webElementGuid>fff8946a-6d07-4e9e-a442-23a3a4f1b8e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>custom_question--add_button</value>
+      <webElementGuid>bce964ca-6796-4f77-973f-9f9ac7260474</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>New Question</value>
+      <webElementGuid>cc01fb2d-618d-4dd0-b2e5-3bad2480abe6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;custom_question--add_button&quot;)</value>
+      <webElementGuid>15444e0b-c6b7-4675-9a21-cbfb257053ff</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='custom_question--add_button']</value>
+      <webElementGuid>7e48c508-2865-4d77-9ad9-db7e71be2e4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div[2]/button</value>
+      <webElementGuid>f76f3e8f-5f9b-437d-b884-3998963c7913</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'custom_question--add_button' and (text() = 'New Question' or . = 'New Question')]</value>
+      <webElementGuid>31df8eed-47d8-4e21-9a2d-d6161d070200</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
