@@ -16,8 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('HC-Web/People Search'), [('SearchTerm') : SearchTerm, ('VerificationName') : VerificationName
-        , ('FirstName') : FirstName, ('LastName') : LastName, ('HostUrl') : HostUrl, ('UserName') : UserName, ('Password') : Password], 
+WebUI.callTestCase(findTestCase('HC-Web/Connection Form Public Authenticated'), [('HostUrl') : HostUrl, ('UserName') : UserName
+        , ('Password') : Password, ('PublicConnectionFormPath') : PublicConnectionFormPath
+        , ('ConnectionFormManagementPath') : ConnectionFormManagementPath, ('FormInputFieldXPath') : FormInputFieldXPath], 
     FailureHandling.STOP_ON_FAILURE)
 

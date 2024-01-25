@@ -17,6 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('HC-Web/Login'), [('UserName') : 'crisf@saddleback.com', ('HostUrl') : 'https://hc-qa.saddleback.com'
-        , ('Password') : 'Z8nazMpc16177aX9xH8qZQ=='], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser(GlobalVariable.Admin_Password)
 

@@ -28,6 +28,8 @@ def FormPath = HostUrl + PublicConnectionFormPath
 
 def AdminFormPath = HostUrl + ConnectionFormManagementPath
 
+def MessageText = 'Romans 8:28' + ' - ' + CurrentDateTime
+
 WebUI.openBrowser(HostUrl)
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), UserName)
@@ -76,12 +78,17 @@ inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/Em
 'Verify the email field value is not blank'
 WebUI.verifyNotEqual(inputValue, '')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/label_Did you complete Class 101check'))
+//WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/label_Did you complete Class 101check'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputconnection_form_public--question_field_21225'), 
-    ('Romans 8:28' + ' - ') + CurrentDateTime)
+TextFieldObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(FormInputFieldXPath)
+
+WebUI.setText(TextFieldObject, MessageText)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Submit'))
+
+WebUI.delay(2)
+
+not_run: WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Success'), 0)
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Success'), 'Success')
 
@@ -102,8 +109,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Un
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Yes'))
 
-'Verify that the form is not published '
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Publish'), 'Publish')
+WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form/Overview/Unpublished'), 2)
+
+'Verify that the form is not published'
+WebUI.verifyElementText(findTestObject('HC-Web/Connection Form/Overview/Unpublished'), 'Unpublished')
 
 WebUI.closeBrowser()
 

@@ -24,21 +24,21 @@
       <variableId>02acebe1-40e6-416b-b1a0-eea15b86bcc0</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'https://hc-dev.saddleback.com'</defaultValue>
+      <defaultValue>GlobalVariable.HC_HostUrl</defaultValue>
       <description></description>
       <id>d880eb8f-ef17-4e4e-8038-39e223026d6f</id>
       <masked>false</masked>
       <name>HostUrl</name>
    </variable>
    <variable>
-      <defaultValue>'crisf@saddleback.com'</defaultValue>
+      <defaultValue>GlobalVariable.Admin_UserName</defaultValue>
       <description></description>
       <id>b26bd963-8b39-44d8-bc1a-6f6dc4ae01d9</id>
       <masked>false</masked>
       <name>UserName</name>
    </variable>
    <variable>
-      <defaultValue>'Z8nazMpc16177aX9xH8qZQ=='</defaultValue>
+      <defaultValue>GlobalVariable.Admin_Password</defaultValue>
       <description></description>
       <id>02acebe1-40e6-416b-b1a0-eea15b86bcc0</id>
       <masked>false</masked>

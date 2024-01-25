@@ -18,8 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : HostUrl, ('UserName') : UserName, ('Password') : Password], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('HC-Web/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HC-Web/Navigation/MinistriesCentral'))
 

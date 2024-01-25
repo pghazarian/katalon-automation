@@ -1,99 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Person Search Wrapper</name>
+   <name>Connection Form Public Authenticated Wrapper</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>62de5af9-c3ef-4629-a839-01e7825395fd</testCaseGuid>
+   <testCaseGuid>5df1573c-e584-4b61-a431-283c2c28020e</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>1ca49e1b-d58e-4be9-b649-bc9ee1836367</variableId>
+      <variableId>b961c56e-dadb-4117-a307-f00b6e940be2</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8871f574-5093-4983-8d80-ff97919cb5df</variableId>
+      <variableId>8eef187c-f476-436c-9378-d263b332f5b9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>4687c21c-34b4-4fb6-857a-01fde72b6027</variableId>
+      <variableId>7dc7e93d-c6ba-4710-b4aa-b44e2b9bae1e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>51031198-268e-40bc-94aa-7ad6575e3a5a</variableId>
+      <variableId>b4d11f51-db7b-4266-87c8-2756076b3f63</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b8668031-629d-4dc4-9f7d-9e6478294407</variableId>
+      <variableId>1d3d2715-40fc-42b0-b236-ffbe44fac803</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>933a53f1-cc97-4535-bed9-9f7c7baae71d</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>f7ec1daa-205f-4ea0-ae94-5a682de69205</variableId>
+      <variableId>df895b5c-5293-4499-88a4-5b02386c0ec3</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'https://hc.saddleback.com'</defaultValue>
       <description></description>
-      <id>1ca49e1b-d58e-4be9-b649-bc9ee1836367</id>
+      <id>b961c56e-dadb-4117-a307-f00b6e940be2</id>
       <masked>false</masked>
       <name>HostUrl</name>
    </variable>
    <variable>
       <defaultValue>'crisf@saddleback.com'</defaultValue>
       <description></description>
-      <id>8871f574-5093-4983-8d80-ff97919cb5df</id>
+      <id>8eef187c-f476-436c-9378-d263b332f5b9</id>
       <masked>false</masked>
       <name>UserName</name>
    </variable>
    <variable>
       <defaultValue>'QyKAW1zkijel+aLNsYRCJQ=='</defaultValue>
       <description></description>
-      <id>4687c21c-34b4-4fb6-857a-01fde72b6027</id>
+      <id>7dc7e93d-c6ba-4710-b4aa-b44e2b9bae1e</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>
    <variable>
-      <defaultValue>'email:ryanc@saddleback.com'</defaultValue>
+      <defaultValue>'/public/connection-form/22/zztest'</defaultValue>
       <description></description>
-      <id>51031198-268e-40bc-94aa-7ad6575e3a5a</id>
+      <id>b4d11f51-db7b-4266-87c8-2756076b3f63</id>
       <masked>false</masked>
-      <name>SearchTerm</name>
+      <name>PublicConnectionFormPath</name>
    </variable>
    <variable>
-      <defaultValue>'Ryan (Ryan-man) Carson'</defaultValue>
+      <defaultValue>'/data-capture/connection-forms/22/overview'</defaultValue>
       <description></description>
-      <id>b8668031-629d-4dc4-9f7d-9e6478294407</id>
+      <id>1d3d2715-40fc-42b0-b236-ffbe44fac803</id>
       <masked>false</masked>
-      <name>VerificationName</name>
+      <name>ConnectionFormManagementPath</name>
    </variable>
    <variable>
-      <defaultValue>'Ryan'</defaultValue>
+      <defaultValue>'//textarea[@id=\'connection_form_public--question_field_34414\']'</defaultValue>
       <description></description>
-      <id>933a53f1-cc97-4535-bed9-9f7c7baae71d</id>
+      <id>df895b5c-5293-4499-88a4-5b02386c0ec3</id>
       <masked>false</masked>
-      <name>FirstName</name>
-   </variable>
-   <variable>
-      <defaultValue>'Carson'</defaultValue>
-      <description></description>
-      <id>f7ec1daa-205f-4ea0-ae94-5a682de69205</id>
-      <masked>false</masked>
-      <name>LastName</name>
+      <name>FormInputFieldXPath</name>
    </variable>
 </TestCaseEntity>

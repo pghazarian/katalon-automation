@@ -3,15 +3,5 @@
    <description></description>
    <name>default</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'WgE7rcLyrNq$'</initValue>
-      <name>ProdPassword</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Saddleback123!'</initValue>
-      <name>DevPassword</name>
-   </GlobalVariableEntity>
+   <defaultProfile>false</defaultProfile>
 </GlobalVariableEntities>

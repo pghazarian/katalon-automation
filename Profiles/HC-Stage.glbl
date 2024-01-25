@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>HC-Stage</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://hc-stage.saddleback.com'</initValue>
+      <name>HC_HostUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'crisf@saddleback.com'</initValue>
+      <name>Admin_UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Z8nazMpc16177aX9xH8qZQ=='</initValue>
+      <name>Admin_Password</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
