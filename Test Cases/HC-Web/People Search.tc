@@ -9,19 +9,10 @@
       <combinationType>ONE</combinationType>
       <id>c55d64a3-cbc3-4c14-9682-1816d90ca731</id>
       <iterationEntity>
-         <iterationType>RANGE</iterationType>
+         <iterationType>ALL</iterationType>
          <value>1-1</value>
       </iterationEntity>
       <testDataId>Data Files/Person/PersonSearch-Stage</testDataId>
-   </testDataLinks>
-   <testDataLinks>
-      <combinationType>ONE</combinationType>
-      <id>82ebbdcd-ed92-4140-8470-b88c45532f3b</id>
-      <iterationEntity>
-         <iterationType>RANGE</iterationType>
-         <value>2-2</value>
-      </iterationEntity>
-      <testDataId>Data Files/Person/PersonSearch-Prod</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
@@ -46,24 +37,6 @@
       <type>DATA_COLUMN</type>
       <value>LastName</value>
       <variableId>80ed7adf-9029-49e4-adef-b8aafd501455</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>HostUrl</value>
-      <variableId>74dc1664-ddfd-43f3-a4b5-2c62766771f9</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>UserName</value>
-      <variableId>7295db1c-c085-41ef-a1d2-0f1b10c7607e</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>c55d64a3-cbc3-4c14-9682-1816d90ca731</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>Password</value>
-      <variableId>6b777545-d34b-4056-b262-c64fc8cc7c52</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -92,26 +65,5 @@
       <id>80ed7adf-9029-49e4-adef-b8aafd501455</id>
       <masked>false</masked>
       <name>LastName</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>74dc1664-ddfd-43f3-a4b5-2c62766771f9</id>
-      <masked>false</masked>
-      <name>HostUrl</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>7295db1c-c085-41ef-a1d2-0f1b10c7607e</id>
-      <masked>false</masked>
-      <name>UserName</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>6b777545-d34b-4056-b262-c64fc8cc7c52</id>
-      <masked>false</masked>
-      <name>Password</name>
    </variable>
 </TestCaseEntity>

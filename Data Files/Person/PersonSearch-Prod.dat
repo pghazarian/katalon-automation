@@ -7,9 +7,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>487a5f21-2178-45ab-874a-bd422993b143</dataFileGUID>
-   <dataSourceUrl>/Users/crisfrancisco/Documents/GitHub/katalon-automation/Data Files Source/DataSet-PersonSearch - Prod.csv</dataSourceUrl>
+   <dataSourceUrl>Data Files Source/DataSet-PersonSearch - Prod.csv</dataSourceUrl>
    <driver>CSV</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>

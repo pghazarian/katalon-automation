@@ -17,7 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('HC-Web/People Search'), [('SearchTerm') : SearchTerm, ('VerificationName') : VerificationName
-        , ('FirstName') : FirstName, ('LastName') : LastName, ('HostUrl') : HostUrl, ('UserName') : UserName, ('Password') : Password], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser(GlobalVariable.Admin_Password)
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>HC-Production</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://hc.saddleback.com'</initValue>
+      <name>HC_HostUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'crisf@saddleback.com'</initValue>
+      <name>Admin_UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QyKAW1zkijel+aLNsYRCJQ=='</initValue>
+      <name>Admin_Password</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
