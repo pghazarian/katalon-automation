@@ -17,26 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://hc-stage.saddleback.com/public/connection-form/72/cris-test-connection-form')
+def FormPath = GlobalVariable.HC_HostUrl + GlobalVariable.ConnectionForm_PublicFormPath
 
-WebUI.verifyElementText(findTestObject('HC-Web/Connection Form Public/FirstNameField'), '')
+WebUI.openBrowser(FormPath)
 
-inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/FirstNameField'), 'value')
+WebUI.verifyElementText(findTestObject('HC-Web/Connection Form Public/FormClosed_Title'), 'Form Closed')
 
-'Verify the first name field value is blank'
-WebUI.verifyEqual(inputValue, '')
+DescriptionObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text() = 'This form has been closed and is no longer accepting submissions. If you think it has been closed in error, please contact the form’s owner.']")
 
-WebUI.verifyElementText(findTestObject('HC-Web/Connection Form Public/LastNameField'), '')
-
-inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/LastNameField'), 'value')
-
-'Verify the last name field value is blank'
-WebUI.verifyEqual(inputValue, '')
-
-inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/EmailField'), 'value')
-
-'Verify the email field value is blank'
-WebUI.verifyEqual(inputValue, '')
+WebUI.verifyElementPresent(DescriptionObject, 0)
 
 WebUI.closeBrowser()
 
