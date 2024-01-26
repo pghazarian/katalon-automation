@@ -40,8 +40,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'),
 
 //LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(((('//div[@class=\'drawer-children\']/table/tbody/tr/td[(text() = \'' + 
 //    LocationName) + '\' or . = \'') + LocationName) + '\')]')
-
-LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-children\']/table/tbody/tr/td', LocationName, 1)
+LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-children\']/table/tbody/tr/td', 
+    LocationName, 1)
 
 LocationValue = WebUI.getAttribute(LocationRowObject, 'innerText')
 
@@ -59,12 +59,13 @@ WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_V
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Details/BreadCrumbMinistryName'), MinistryName)
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', MemberName1, 1)
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', 
+    MemberName, 1)
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
 
 'Verify the member person\'s name in the table'
-WebUI.verifyEqual(PersonName, MemberName1)
+WebUI.verifyEqual(PersonName, MemberName)
 
 WebUI.click(PersonTableCellObject)
 
@@ -72,12 +73,13 @@ WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_Interested'))
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', InterestedName1, 1)
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', 
+    InterestedName, 1)
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
 
 'Verify the interested person\'s name in the table'
-WebUI.verifyEqual(PersonName, InterestedName1)
+WebUI.verifyEqual(PersonName, InterestedName)
 
 WebUI.click(PersonTableCellObject)
 

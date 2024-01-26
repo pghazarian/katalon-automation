@@ -39,4 +39,29 @@
       <initValue>'Carson'</initValue>
       <name>PeopleSearch_LastName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'hc product ministry'</initValue>
+      <name>MinistrySearch_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'HC Product Ministry'</initValue>
+      <name>MinistrySearch_MinistryName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lake Forest'</initValue>
+      <name>MinistrySearch_LocationName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Arturo Aguilar'</initValue>
+      <name>MinistrySearch_MemberName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Gregory (Greg) Ortega'</initValue>
+      <name>MinistrySearch_InterestedName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

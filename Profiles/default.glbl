@@ -29,4 +29,29 @@
       <initValue>'Hamilton'</initValue>
       <name>PeopleSearch_LastName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'accounting'</initValue>
+      <name>MinistrySearch_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Accounting'</initValue>
+      <name>MinistrySearch_MinistryName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lake Forest'</initValue>
+      <name>MinistrySearch_LocationName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Jack (Jack) Alsop'</initValue>
+      <name>MinistrySearch_MemberName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Nikhilesh Walwatkar'</initValue>
+      <name>MinistrySearch_InterestedName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

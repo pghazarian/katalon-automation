@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Ministry Search</name>
-   <tag></tag>
+   <tag>Production,Stage</tag>
    <comment></comment>
    <testCaseGuid>624a9365-ddd8-495b-af52-f18a8d44eea7</testCaseGuid>
    <variableLinks>
@@ -36,38 +36,38 @@
       <variableId>8837e34b-942c-4ae4-bc62-5fde1803aa6d</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'accounting'</defaultValue>
+      <defaultValue>GlobalVariable.MinistrySearch_SearchTerm</defaultValue>
       <description></description>
       <id>7dd511c0-60cd-48f5-a519-fe8328504ade</id>
       <masked>false</masked>
       <name>SearchTerm</name>
    </variable>
    <variable>
-      <defaultValue>'Accounting'</defaultValue>
+      <defaultValue>GlobalVariable.MinistrySearch_MinistryName</defaultValue>
       <description></description>
       <id>5375c838-c981-4fe3-be61-7c43e5ea1aef</id>
       <masked>false</masked>
       <name>MinistryName</name>
    </variable>
    <variable>
-      <defaultValue>'Lake Forest'</defaultValue>
+      <defaultValue>GlobalVariable.MinistrySearch_LocationName</defaultValue>
       <description></description>
       <id>693a1173-6038-4b12-b3e3-feec3bb6d235</id>
       <masked>false</masked>
       <name>LocationName</name>
    </variable>
    <variable>
-      <defaultValue>'Jack (Jack) Alsop'</defaultValue>
+      <defaultValue>GlobalVariable.MinistrySearch_MemberName</defaultValue>
       <description></description>
       <id>bbe3d360-b751-48ad-bd20-f475e4bd858c</id>
       <masked>false</masked>
-      <name>MemberName1</name>
+      <name>MemberName</name>
    </variable>
    <variable>
-      <defaultValue>'Nikhilesh Walwatkar'</defaultValue>
+      <defaultValue>GlobalVariable.MinistrySearch_InterestedName</defaultValue>
       <description></description>
       <id>8837e34b-942c-4ae4-bc62-5fde1803aa6d</id>
       <masked>false</masked>
-      <name>InterestedName1</name>
+      <name>InterestedName</name>
    </variable>
 </TestCaseEntity>
