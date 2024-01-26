@@ -51,13 +51,23 @@ class TestObjectHelper {
 	}
 
 	/**
-	 * Refresh browser
+	 * Get a TestObject given a xpath
 	 */
 	@Keyword
 	def TestObject getTestObjectWithXpath(String xpath) {
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 		KeywordUtil.markPassed("Refresh successfully")
+	}
+	
+	/**
+	 * Get a TestObject given a xpath, text string to match, and the index for which one to get
+	 */
+	@Keyword
+	def TestObject getTestObjectWithXpathTextMatch(String xpath, String textToMatch, int index = 1) {
+		xpath = "(" + xpath + "[normalize-space(.) = '" + textToMatch + "'])[" + index + "]"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
 
 	/**

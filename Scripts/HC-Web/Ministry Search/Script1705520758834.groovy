@@ -38,8 +38,10 @@ WebUI.click(findTestObject('HC-Web/Ministry/Search/MinistryRow1_MinistryName'))
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
-LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(((('//div[@class=\'drawer-children\']/table/tbody/tr/td[(text() = \'' + 
-    LocationName) + '\' or . = \'') + LocationName) + '\')]')
+//LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(((('//div[@class=\'drawer-children\']/table/tbody/tr/td[(text() = \'' + 
+//    LocationName) + '\' or . = \'') + LocationName) + '\')]')
+
+LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-children\']/table/tbody/tr/td', LocationName, 1)
 
 LocationValue = WebUI.getAttribute(LocationRowObject, 'innerText')
 
@@ -57,8 +59,7 @@ WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_V
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Details/BreadCrumbMinistryName'), MinistryName)
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div[normalize-space(.) = \'' + 
-    MemberName1) + '\']')
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', MemberName1, 1)
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
 
@@ -71,8 +72,7 @@ WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Details/Subnav_Interested'))
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div[normalize-space(.) = \'' + 
-    InterestedName1) + '\']')
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', InterestedName1, 1)
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
 

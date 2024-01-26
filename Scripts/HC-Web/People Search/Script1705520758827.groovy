@@ -35,7 +35,7 @@ WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'),
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Search/TableRowOne'), 0)
 
-SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("(//div[@data-testid='person-personal-info']/div[normalize-space(.) = '" + VerificationName + "'])[1]")
+SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'("//div[@data-testid='person-personal-info']/div", VerificationName, 1)
 
 PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
 
