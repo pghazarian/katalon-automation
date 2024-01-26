@@ -31,7 +31,7 @@ def AdminFormPath = GlobalVariable.HC_HostUrl + ConnectionFormManagementPath
 def MessageText = ('Romans 8:28' + ' - ') + CurrentDateTime
 
 'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 'Go to the Connection Form Admin screen'

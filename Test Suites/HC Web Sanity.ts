@@ -15,14 +15,14 @@
       <guid>3a789c60-9616-4f97-b514-d5eb2fc5f2d5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Event Search</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Event/Event Search</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d6419847-5f5b-457a-bd68-15618f47b537</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Ministry Search</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Ministry/Ministry Search</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -59,7 +59,7 @@
       <guid>a412901c-3827-4d64-9652-00c7f7fa2e68</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/People Search</testCaseId>
+      <testCaseId>Test Cases/HC-Web/People/People Search</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -90,7 +90,7 @@
       <guid>fcfc041b-e378-452c-9ce6-e8c99e06f2d9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Data Capture Connection Forms</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Connection Form/Data Capture Connection Forms</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
