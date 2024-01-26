@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_What  Why</name>
+   <tag></tag>
+   <elementGuidId>2a5b9ac8-2237-4fef-b449-73f303bc68fc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[3]/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.table-cell</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>1c9dc7ee-d6cb-4d8e-9e52-a9916bc98239</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>table-cell</value>
+      <webElementGuid>a90ecc9b-f167-48e7-8b30-0f64d9da4022</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>What &amp; Why</value>
+      <webElementGuid>207b8fc2-6ed2-400d-8aba-93b1eb5a3e72</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-deprecated-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer deprecated jss709 drawer-is_modal&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/div[@class=&quot;drawer-children&quot;]/div[@class=&quot;new-serving-ops-drawer&quot;]/div[3]/table[@class=&quot;ui jss1000 table table-basic&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell&quot;]</value>
+      <webElementGuid>2537695e-45be-48fa-a465-42587e1880b8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr/td</value>
+      <webElementGuid>6061b3ce-2ad2-4a12-96e1-4eeb72472370</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'What &amp; Why' or . = 'What &amp; Why')]</value>
+      <webElementGuid>9b1bd02b-70b0-4765-bab4-aa51df1d827e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

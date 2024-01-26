@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>use_icon-use-path</name>
+   <tag></tag>
+   <elementGuidId>1f8ec700-cf5f-45e0-b3ae-a654b6dede6c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#select_venue--select_venue_908 > label.checkbox-label > div.cmui.ui.icon.icon-check.icon-align-left.icon-color-primary.icon-compact.icon-inverse > svg > g > use.icon-use-path</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>use</value>
+      <webElementGuid>cefc52e6-e580-41e6-abfc-5f94b05a16f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-use-path</value>
+      <webElementGuid>e579878f-f8af-4dba-90b7-58c046b7e587</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xlink:href</name>
+      <type>Main</type>
+      <value>#icon-svg-path-check-5130865680</value>
+      <webElementGuid>b4166010-1620-4ce1-a918-5cac03f7167a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;new_serving_opportunity_when_and_where--where&quot;)/div[5]/table[@class=&quot;ui jss1000 table table-basic table-font-size-xsmall table-selectable&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@id=&quot;select_venue--select_venue_908&quot;]/td[@class=&quot;table-cell&quot;]/div[@id=&quot;select_venue--select_venue_908&quot;]/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;cmui ui icon icon-check icon-align-left icon-color-primary icon-compact icon-inverse&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
+      <webElementGuid>1e22d993-c68a-46cf-8091-10479a262fee</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
