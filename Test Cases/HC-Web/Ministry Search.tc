@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Search for a ministry and open a given location and verify that every page is able to open successfully</description>
    <name>Ministry Search</name>
    <tag>Production,Stage</tag>
    <comment></comment>

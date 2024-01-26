@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Login</description>
    <name>Login</name>
-   <tag></tag>
+   <tag>QA,Dev,Stage2,Production,Stage</tag>
    <comment></comment>
    <testCaseGuid>2872d71a-535b-4b5b-acb5-322021b79e88</testCaseGuid>
    <variableLinks>

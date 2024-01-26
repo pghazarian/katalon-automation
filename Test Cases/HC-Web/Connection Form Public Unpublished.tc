@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verify that an unpublished Connection Form is not rendered</description>
    <name>Connection Form Public Unpublished</name>
    <tag>Production,Stage</tag>
    <comment></comment>

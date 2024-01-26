@@ -20,7 +20,7 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 
 def date = new Date()
 
-def sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+def sdf = new SimpleDateFormat('yyyy-MM-dd HH:mm:ss')
 
 def CurrentDateTime = sdf.format(date)
 
