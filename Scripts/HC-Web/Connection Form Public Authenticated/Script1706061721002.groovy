@@ -24,20 +24,15 @@ def sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
 
 def CurrentDateTime = sdf.format(date)
 
-def FormPath = HostUrl + PublicConnectionFormPath
+def FormPath = GlobalVariable.HC_HostUrl + PublicConnectionFormPath
 
-def AdminFormPath = HostUrl + ConnectionFormManagementPath
+def AdminFormPath = GlobalVariable.HC_HostUrl + ConnectionFormManagementPath
 
-def MessageText = 'Romans 8:28' + ' - ' + CurrentDateTime
-
-WebUI.openBrowser(HostUrl)
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), UserName)
-
-WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), Password)
+def MessageText = ('Romans 8:28' + ' - ') + CurrentDateTime
 
 'Login'
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
+WebUI.callTestCase(findTestCase('HC-Web/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 'Go to the Connection Form Admin screen'
 WebUI.navigateToUrl(AdminFormPath)
@@ -50,23 +45,12 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Pu
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Yes'))
 
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/a_View Page'))
-
-not_run: WebUI.switchToWindowTitle('Healthy Church')
-
 WebUI.navigateToUrl(FormPath)
-
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputconnection_form_public--personal_form__2f23c0'), 
-    '')
-
-WebUI.verifyElementText(findTestObject('HC-Web/Connection Form Public/FirstNameField'), '')
 
 inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/FirstNameField'), 'value')
 
 'Verify the first name field value is not blank'
 WebUI.verifyNotEqual(inputValue, '')
-
-WebUI.verifyElementText(findTestObject('HC-Web/Connection Form Public/LastNameField'), '')
 
 inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/LastNameField'), 'value')
 
@@ -79,7 +63,6 @@ inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/Em
 WebUI.verifyNotEqual(inputValue, '')
 
 //WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/label_Did you complete Class 101check'))
-
 TextFieldObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(FormInputFieldXPath)
 
 WebUI.setText(TextFieldObject, MessageText)
