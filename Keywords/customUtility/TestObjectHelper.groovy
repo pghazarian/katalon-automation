@@ -59,13 +59,33 @@ class TestObjectHelper {
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 		KeywordUtil.markPassed("Refresh successfully")
 	}
-	
+
 	/**
 	 * Get a TestObject given a xpath, text string to match, and the index for which one to get
 	 */
 	@Keyword
 	def TestObject getTestObjectWithXpathTextMatch(String xpath, String textToMatch, int index = 1) {
 		xpath = "(" + xpath + "[normalize-space(.) = '" + textToMatch + "'])[" + index + "]"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+	}
+
+	/**
+	 * Get a TestObject input element by ID
+	 */
+	@Keyword
+	def TestObject getInputById(String id) {
+		def xpath = "//input[@id='${id}']"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+	}
+
+	/**
+	 * Get a TestObject textarea element by ID
+	 */
+	@Keyword
+	def TestObject getTextAreaById(String id) {
+		def xpath = "//textarea[@id='${id}']"
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}

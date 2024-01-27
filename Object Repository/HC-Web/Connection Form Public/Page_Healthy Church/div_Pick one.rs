@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Pick one</name>
+   <tag></tag>
+   <elementGuidId>f4229e39-b53c-405c-ba9d-4ff39b51e0d6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='react-select-12--value']/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#react-select-12--value > div.Select-placeholder</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ba352aa0-f3c3-49b0-9f72-e195c6b97ba0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Select-placeholder</value>
+      <webElementGuid>df7b3bf9-4719-447a-8a64-07564a6d4203</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pick one</value>
+      <webElementGuid>77f8c455-4c56-4ca7-b4b3-f467ac657b69</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;react-select-12--value&quot;)/div[@class=&quot;Select-placeholder&quot;]</value>
+      <webElementGuid>c435a1dc-e17e-4988-ae81-9d04eccb8c62</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='react-select-12--value']/div</value>
+      <webElementGuid>a58cde55-cad7-42d4-82aa-787036d5370c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[10]/div/div/div/div/div[2]/div/div</value>
+      <webElementGuid>d86debfe-82f9-4658-af68-dc9ac2969ed8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Pick one' or . = 'Pick one')]</value>
+      <webElementGuid>44c0b24a-67ea-4312-b209-fd1ef3117cf8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

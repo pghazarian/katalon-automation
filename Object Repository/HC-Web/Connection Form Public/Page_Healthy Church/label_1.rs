@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_1</name>
+   <tag></tag>
+   <elementGuidId>7746a57a-16fa-4906-bb58-ae7a59542e9f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='page-content']/div/div/div[9]/div/div/div[2]/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.ui.radio.jss483.jss494.jss478.radio-full-width > label.label.jss481</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>5099cf41-7a1e-43a2-942c-e78df07b3011</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>label jss481</value>
+      <webElementGuid>ab921d7e-1a80-442d-b8fd-66d8129f73d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>26813db6-16d7-475e-8332-8610700af554</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-content&quot;)/div[1]/div[@class=&quot;jss3&quot;]/div[@class=&quot;jss484&quot;]/div[1]/div[@class=&quot;cmui grid--column jss309 jss487 jss332&quot;]/div[@class=&quot;ui radio jss483 jss494 jss478 radio-full-width&quot;]/label[@class=&quot;label jss481&quot;]</value>
+      <webElementGuid>9e1ce2c4-f59c-467c-b0fa-70a1588245f8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-content']/div/div/div[9]/div/div/div[2]/label</value>
+      <webElementGuid>c1541af1-9183-4ef5-be8f-553b7be62616</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/label</value>
+      <webElementGuid>d03922de-2fa5-4dfb-893d-04bbe01bc118</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = '1' or . = '1')]</value>
+      <webElementGuid>515cd686-1dfd-4cd1-8d4c-e26ab6b06554</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
