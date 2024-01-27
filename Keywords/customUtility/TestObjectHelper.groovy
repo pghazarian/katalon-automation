@@ -16,7 +16,8 @@ import com.kms.katalon.core.testdata.TestDataFactory
 import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.Keys as Keys
 
 import internal.GlobalVariable
 
@@ -88,6 +89,29 @@ class TestObjectHelper {
 		def xpath = "//textarea[@id='${id}']"
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+	}
+
+	/**
+	 * Select Drop Down Value
+	 */
+	@Keyword
+	def TestObject selectDropDownValue(String id, String value) {
+
+		def xpath = "//div[@id='${id}']"
+
+		def dropdown = getTestObjectWithXpath(xpath)
+
+		WebUI.click(dropdown)
+
+		xpath = xpath + "/descendant::input"
+
+		def dropdownInput = getTestObjectWithXpath(xpath)
+
+		// Type Dropdown value
+		WebUI.sendKeys(dropdownInput, value)
+
+		// Press <Enter> to select the value
+		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
 	}
 
 	/**

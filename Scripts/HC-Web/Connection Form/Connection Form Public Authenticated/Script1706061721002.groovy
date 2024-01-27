@@ -119,30 +119,32 @@ not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTe
 
 not_run: WebUI.click(TargetTestObject)
 
-'Select value in a Drop Down List'
-CustomFormDropDownFieldXPath = '//div[@id=\'connection_form_public--question_field_21254\']/div/div[@class=\'Select-control\']/div/div'
+CustomKeywords.'customUtility.TestObjectHelper.selectDropDownValue'('connection_form_public--question_field_21254', '2')
 
-CustomFormDropDownFieldXPath = '//div[@id=\'connection_form_public--question_field_21254\']/div/div[@class=\'Select-control\']/div'
-
-//CustomFormDropDownFieldXPath = "//div[@id='connection_form_public--question_field_21254']/div/div[@class='Select-control']"
-//CustomFormDropDownFieldXPath = "//div[@id='connection_form_public--question_field_21254']/div"
+//
+//'Select value in a Drop Down List'
+//CustomFormDropDownFieldXPath = '//div[@id=\'connection_form_public--question_field_21254\']/div/div[@class=\'Select-control\']/div/div'
+//
+//CustomFormDropDownFieldXPath = '//div[@id=\'connection_form_public--question_field_21254\']/div/div[@class=\'Select-control\']/div'
+//
 //CustomFormDropDownFieldXPath = "//div[@id='connection_form_public--question_field_21254']"
-DropDownValue = '3'
-
-TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormDropDownFieldXPath)
-
-WebUI.click(TargetTestObject)
-
-CustomFormDropDownFieldInputXPath = "//div[@id='connection_form_public--question_field_21254']/div/div[@class='Select-control']/div/div/input"
-//CustomFormDropDownFieldInputXPath = "div[@id='connection_form_public--question_field_21254']/div/div[@class='Select-control']/div/descendant::input"
-
-TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormDropDownFieldInputXPath)
-
-'Type Dropdown value'
-WebUI.sendKeys(TargetTestObject, DropDownValue)
-
-'Select the value'
-WebUI.sendKeys(TargetTestObject, Keys.chord(Keys.ENTER))
+//DropDownValue = '3'
+//
+//TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormDropDownFieldXPath)
+//
+//WebUI.click(TargetTestObject)
+//
+////CustomFormDropDownFieldInputXPath = "//div[@id='connection_form_public--question_field_21254']/div/div[@class='Select-control']/div/div/input"
+//CustomFormDropDownFieldInputXPath = "//div[@id='connection_form_public--question_field_21254']/div/div[@class='Select-control']/div/descendant::input"
+//CustomFormDropDownFieldInputXPath = "//div[@id='connection_form_public--question_field_21254']/descendant::input"
+//
+//TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormDropDownFieldInputXPath)
+//
+//'Type Dropdown value'
+//WebUI.sendKeys(TargetTestObject, DropDownValue)
+//
+//'Select the value'
+//WebUI.sendKeys(TargetTestObject, Keys.chord(Keys.ENTER))
 
 CustomDateFieldXpath = '//div[@id=\'connection_form_public--question_field_21255\']/div/div/input'
 

@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "212208821D80442989B2F0BDAA9223AA",
+  "keywordFileContentHash": "C654ED0E5FB09E259248F24AC9D03F3C",
   "keywordClasses": [
     {
       "name": "customUtility.TestObjectHelper",
@@ -110,6 +110,38 @@
             }
           ],
           "javadoc": "/**\n\t * Get a TestObject textarea element by ID\n\t */"
+        },
+        {
+          "name": "selectDropDownValue",
+          "parameters": [
+            {
+              "name": "id",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "value",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Select Drop Down Value\n\t */"
         },
         {
           "name": "clickElement",
