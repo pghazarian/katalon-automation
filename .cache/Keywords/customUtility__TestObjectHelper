@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "1891C892C4BC2EC265B5C5318DB0ABC7",
+  "keywordFileContentHash": "A1F989517B27B97AFF31C732BC56622B",
   "keywordClasses": [
     {
       "name": "customUtility.TestObjectHelper",
@@ -247,7 +247,7 @@
               }
             },
             {
-              "name": "value",
+              "name": "values",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

@@ -85,8 +85,7 @@ CustomFormParagraphFieldXPath = 'connection_form_public--question_field_21248'
 CustomKeywords.'customUtility.TestObjectHelper.setMultilineTextfieldValue'(CustomFormParagraphFieldXPath, ParagraphTextValue)
 
 'Check item(s) in the group checkbox list'
-CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '3')
-CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '4')
+CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '4, 2, 3, 1')
 
 'Select the multiple choice (radio button) value'
 CustomKeywords.'customUtility.TestObjectHelper.setMultipleChoiceControlValue'('Multiple Choice', '3')

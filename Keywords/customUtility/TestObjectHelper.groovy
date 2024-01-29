@@ -143,10 +143,7 @@ class TestObjectHelper {
 	@Keyword
 	def TestObject setMultipleChoiceControlValue(String controlLabel, String value) {
 		
-		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/div/div/label/span[text() = '$value']/parent::label"
-		xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
-		
-		KeywordUtil.logInfo("searching for xpath: ${xpath}")
+		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
 
 		def label = getTestObjectWithXpath(xpath)
 		
@@ -157,16 +154,17 @@ class TestObjectHelper {
 	 * Check item(s) in the group checkbox list
 	 */
 	@Keyword
-	def TestObject setGroupCheckboxValue(String controlLabel, String value) {
+	def TestObject setGroupCheckboxValue(String controlLabel, String values) {
 		
-		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/div/div/div/label/span[text() = '$value']/parent::label"
-		xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
+		def valueList = (new StringHelper()).parseItems(values)
 		
-		KeywordUtil.logInfo("searching for xpath: ${xpath}")
-
-		def label = getTestObjectWithXpath(xpath)
-		
-		WebUI.click(label)
+		for (value in valueList) {
+			def xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
+	
+			def label = getTestObjectWithXpath(xpath)
+			
+			WebUI.click(label)
+		}
 	}
 	
 	/**
@@ -176,14 +174,12 @@ class TestObjectHelper {
 	def TestObject setDateFieldValue(String id, Date value) {
 
 		def xpath = "//div[@id='${id}']/descendant::input"
-		
-		KeywordUtil.logInfo("searching for xpath: ${xpath}")
 
 		def dateField = getTestObjectWithXpath(xpath)
 		
-		def DateToSelect = getFormattedDateForControl(value)
+		def dateToSelect = getFormattedDateForControl(value)
 		
-		WebUI.setText(dateField, DateToSelect)
+		WebUI.setText(dateField, dateToSelect)
 		
 		WebUI.sendKeys(dateField, Keys.chord(Keys.ENTER))
 	}
