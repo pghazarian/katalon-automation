@@ -74,88 +74,30 @@ not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTe
 
 not_run: WebUI.setText(TargetTestObject, MessageText)
 
-not_run: CustomFormInputFieldXPath = 'connection_form_public--question_field_21247'
+CustomFormInputFieldXPath = 'connection_form_public--question_field_21247'
 
 'Update the Single Line Text field'
-not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getInputById'(CustomFormInputFieldXPath)
+CustomKeywords.'customUtility.TestObjectHelper.setTextfieldValue'(CustomFormInputFieldXPath, SingleTextValue)
 
-not_run: WebUI.setText(TargetTestObject, SingleTextValue)
-
-not_run: CustomFormParagraphFieldXPath = 'connection_form_public--question_field_21248'
+CustomFormParagraphFieldXPath = 'connection_form_public--question_field_21248'
 
 'Update the Paragraph Text field'
-not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTextAreaById'(CustomFormParagraphFieldXPath)
-
-not_run: WebUI.setText(TargetTestObject, ParagraphTextValue)
-
-not_run: GroupCheckboxLabel = 'Group checkbox'
-
-not_run: GroupCheckboxValue = 3
+CustomKeywords.'customUtility.TestObjectHelper.setMultilineTextfieldValue'(CustomFormParagraphFieldXPath, ParagraphTextValue)
 
 'Check item(s) in the group checkbox list'
-not_run: CustomFormGroupCheckboxFieldXPath = "//h3[text()='$GroupCheckboxLabel']/following-sibling::div/div/div/div/label/span[text() = '$GroupCheckboxValue']/parent::label"
+CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '3')
+CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '4')
 
-not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormGroupCheckboxFieldXPath)
+'Select the multiple choice (radio button) value'
+CustomKeywords.'customUtility.TestObjectHelper.setMultipleChoiceControlValue'('Multiple Choice', '3')
 
-not_run: WebUI.click(TargetTestObject)
+'Select the drop down value'
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('connection_form_public--question_field_21254', '2')
 
-not_run: GroupCheckboxValue = 4
+'Set the date control value'
+date = new Date().plus(3)
 
-'Check item(s) in the group checkbox list'
-not_run: CustomFormGroupCheckboxFieldXPath = "//h3[text()='$GroupCheckboxLabel']/following-sibling::div/div/div/div/label/span[text() = '$GroupCheckboxValue']/parent::label"
-
-not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormGroupCheckboxFieldXPath)
-
-not_run: WebUI.click(TargetTestObject)
-
-not_run: MultipleChoiceLabel = 'Multiple Choice'
-
-not_run: MultipleChoiceValue = 3
-
-'Check item(s) in the Multiple Choice list'
-not_run: CustomFormMultipleChoiceFieldXPath = "//h3[text()='$MultipleChoiceLabel']/following-sibling::div/div/div/label/span[text() = '$MultipleChoiceValue']/parent::label"
-
-not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormMultipleChoiceFieldXPath)
-
-not_run: WebUI.click(TargetTestObject)
-
-CustomKeywords.'customUtility.TestObjectHelper.selectDropDownValue'('connection_form_public--question_field_21254', '2')
-
-//
-//'Select value in a Drop Down List'
-//CustomFormDropDownFieldXPath = '//div[@id=\'connection_form_public--question_field_21254\']/div/div[@class=\'Select-control\']/div/div'
-//
-//CustomFormDropDownFieldXPath = '//div[@id=\'connection_form_public--question_field_21254\']/div/div[@class=\'Select-control\']/div'
-//
-//CustomFormDropDownFieldXPath = "//div[@id='connection_form_public--question_field_21254']"
-//DropDownValue = '3'
-//
-//TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormDropDownFieldXPath)
-//
-//WebUI.click(TargetTestObject)
-//
-////CustomFormDropDownFieldInputXPath = "//div[@id='connection_form_public--question_field_21254']/div/div[@class='Select-control']/div/div/input"
-//CustomFormDropDownFieldInputXPath = "//div[@id='connection_form_public--question_field_21254']/div/div[@class='Select-control']/div/descendant::input"
-//CustomFormDropDownFieldInputXPath = "//div[@id='connection_form_public--question_field_21254']/descendant::input"
-//
-//TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomFormDropDownFieldInputXPath)
-//
-//'Type Dropdown value'
-//WebUI.sendKeys(TargetTestObject, DropDownValue)
-//
-//'Select the value'
-//WebUI.sendKeys(TargetTestObject, Keys.chord(Keys.ENTER))
-
-CustomDateFieldXpath = '//div[@id=\'connection_form_public--question_field_21255\']/div/div/input'
-
-DateToSelect = '01/31/2024'
-
-TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(CustomDateFieldXpath)
-
-WebUI.setText(TargetTestObject, DateToSelect)
-
-'Select the date'
-WebUI.sendKeys(TargetTestObject, Keys.chord(Keys.ENTER))
+CustomKeywords.'customUtility.TestObjectHelper.setDateFieldValue'('connection_form_public--question_field_21255', date)
 
 not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Submit'))
 

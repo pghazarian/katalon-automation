@@ -1,4 +1,5 @@
 package customUtility
+
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -38,6 +39,8 @@ import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
+import java.text.SimpleDateFormat 
+import java.util.Date
 
 class TestObjectHelper {
 	/**
@@ -90,12 +93,32 @@ class TestObjectHelper {
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
-
+	
 	/**
-	 * Select Drop Down Value
+	 * Set value for Text field (single line) (e.g. input type="text" element)
 	 */
 	@Keyword
-	def TestObject selectDropDownValue(String id, String value) {
+	def TestObject setTextfieldValue(String id, String value) {
+
+		def field = getInputById(id)
+		WebUI.setText(field, value)
+	}
+	
+	/**
+	 * Set value for Text field (multi-line) (e.g. textarea element)
+	 */
+	@Keyword
+	def TestObject setMultilineTextfieldValue(String id, String value) {
+
+		def field = getTextAreaById(id)
+		WebUI.setText(field, value)
+	}
+
+	/**
+	 * Set value for Drop Down component
+	 */
+	@Keyword
+	def TestObject setDropDownValue(String id, String value) {
 
 		def xpath = "//div[@id='${id}']"
 
@@ -113,7 +136,69 @@ class TestObjectHelper {
 		// Press <Enter> to select the value
 		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
 	}
+	
+	/**
+	 * Set Radio button control (a.k.a multiple choice control)
+	 */
+	@Keyword
+	def TestObject setMultipleChoiceControlValue(String controlLabel, String value) {
+		
+		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/div/div/label/span[text() = '$value']/parent::label"
+		xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
+		
+		KeywordUtil.logInfo("searching for xpath: ${xpath}")
 
+		def label = getTestObjectWithXpath(xpath)
+		
+		WebUI.click(label)
+	}
+	
+	/**
+	 * Check item(s) in the group checkbox list
+	 */
+	@Keyword
+	def TestObject setGroupCheckboxValue(String controlLabel, String value) {
+		
+		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/div/div/div/label/span[text() = '$value']/parent::label"
+		xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
+		
+		KeywordUtil.logInfo("searching for xpath: ${xpath}")
+
+		def label = getTestObjectWithXpath(xpath)
+		
+		WebUI.click(label)
+	}
+	
+	/**
+	 * Set Date Field Value
+	 */
+	@Keyword
+	def TestObject setDateFieldValue(String id, Date value) {
+
+		def xpath = "//div[@id='${id}']/descendant::input"
+		
+		KeywordUtil.logInfo("searching for xpath: ${xpath}")
+
+		def dateField = getTestObjectWithXpath(xpath)
+		
+		def DateToSelect = getFormattedDateForControl(value)
+		
+		WebUI.setText(dateField, DateToSelect)
+		
+		WebUI.sendKeys(dateField, Keys.chord(Keys.ENTER))
+	}
+	
+	/**
+	 * Get formatted date string for given Date object
+	 */
+	@Keyword
+	def String getFormattedDateForControl(Date date) {
+
+		def sdf = new SimpleDateFormat('MM/dd/yyyy')
+		
+		return sdf.format(date)
+	}
+	
 	/**
 	 * Click element
 	 * @param to Katalon test object
