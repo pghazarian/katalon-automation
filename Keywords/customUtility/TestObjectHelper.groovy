@@ -164,6 +164,27 @@ class TestObjectHelper {
 	}
 
 	/**
+	 * Set value for Drop Down component
+	 */
+	@Keyword
+	def TestObject setDropDownValueByXPath(String xpath, String value) {
+
+		def dropdown = getTestObjectWithXpath(xpath)
+
+		WebUI.click(dropdown)
+
+		xpath = xpath + "/descendant::input"
+
+		def dropdownInput = getTestObjectWithXpath(xpath)
+
+		// Type Dropdown value
+		WebUI.sendKeys(dropdownInput, value)
+
+		// Press <Enter> to select the value
+		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
+	}
+
+	/**
 	 * Set Radio button control (a.k.a multiple choice control)
 	 */
 	@Keyword
@@ -240,7 +261,7 @@ class TestObjectHelper {
 		// verify the field value'
 		WebUI.verifyEqual(value, valueToCompare)
 	}
-	
+
 	/**
 	 * Click element
 	 * @param to Katalon test object

@@ -27,38 +27,17 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_N
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Create New Event'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Select Campus'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Anaheim'))
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', 'Anaheim')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/label_Campus Event'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputevent_details_basic_info--event_name'), 
     'Katalon Test Event')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Select Category'))
-
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('', '')
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_123'))
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
+    'Baptism')
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/Event Description Textbox'), 'Test Event for Katalon Automation')
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Remove'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Yes'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Organizer'))
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputuser_search_drawer--action_bar_search'), 
-    'qa automation admin')
-
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputuser_search_drawer--action_bar_search'), 
-    Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_sbchcqagmail.com'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Add'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Add Venue(s) from this Campus'))
 
@@ -79,7 +58,7 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/inpu
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputperson_search_form--search_input'), Keys.chord(
         Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_GC Garrett  Clover Male  Lake ForestId 7801492'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Person Record Result'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/button_Select'))
 
