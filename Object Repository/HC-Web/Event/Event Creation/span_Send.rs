@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Send</name>
+   <tag></tag>
+   <elementGuidId>a7416764-3726-4e33-9941-ece70690e243</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.ui.button.jss243.jss1741.jss255 > span.button-inner-container.jss244 > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//header/div/div/div/div/div/div/button/span/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>0de492ca-c108-4ada-a6c4-c5c28d797ce9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Send</value>
+      <webElementGuid>4ec3713e-9b08-44ff-b405-1193fb91262a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;design-v1 drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/div[@class=&quot;jss1697 attendee-email-drawer&quot;]/div[1]/header[@class=&quot;ui drawer--action_bar action_bar drawer--action_bar&quot;]/div[1]/div[@class=&quot;cmui grid jss7 jss35 jss17 jss1739 jss20&quot;]/div[@class=&quot;cmui grid--row jss1662&quot;]/div[@class=&quot;cmui grid--column jss45&quot;]/div[@class=&quot;ui prompt jss1635 prompt-inline&quot;]/div[1]/button[@class=&quot;ui button jss243 jss1741 jss255&quot;]/span[@class=&quot;button-inner-container jss244&quot;]/span[1]</value>
+      <webElementGuid>e7d395fb-5850-4b3e-a030-c133b95daf41</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//header/div/div/div/div/div/div/button/span/span</value>
+      <webElementGuid>4ffd1456-f4b6-468e-859d-5fe7dbb712ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Send' or . = 'Send')]</value>
+      <webElementGuid>6acaa652-7d34-4036-99a9-85b376f7b0c9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -84,11 +84,11 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Members
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Serving Opps'))
 
-WebUI.click(findTestObject('HC-Web/Serving Opps/List View Serving Ops'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/List View Serving Ops'))
 
-WebUI.click(findTestObject('HC-Web/Serving Opps/Upcoming Radio Option Serving Opps'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Upcoming Radio Option Serving Opps'))
 
-WebUI.click(findTestObject('HC-Web/Serving Opps/Table Row Serving Opp'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Table Row Serving Opp'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_plusAdd VolunteerTo This OccurrenceT_6a52af'))
 
@@ -128,4 +128,6 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/span_Actions')
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/span_Close OpportunityClose Opportunity'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/span_Yes'))
+
+WebUI.closeBrowser()
 

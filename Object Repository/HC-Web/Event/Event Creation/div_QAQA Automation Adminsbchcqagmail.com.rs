@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_QAQA Automation Adminsbchcqagmail.com</name>
+   <tag></tag>
+   <elementGuidId>b02b6832-2ffd-4ced-9bd1-f2125ee027a6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.jss525</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='data_grid--table_user_search_drawer--data_grid_cell_base-2_0']/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f4e424b4-261d-4ff1-822c-e1979cae0d06</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jss525</value>
+      <webElementGuid>ca5e20ff-6167-49bf-b79c-4d778741f1c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>QAQA Automation Adminsbchcqa@gmail.com</value>
+      <webElementGuid>afc5c9f3-bcd7-4753-9210-652beaf48fad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;data_grid--table_user_search_drawer--data_grid_cell_base-2_0&quot;)/div[@class=&quot;jss522&quot;]/div[@class=&quot;jss525&quot;]</value>
+      <webElementGuid>b980af15-1b99-4d1e-81a0-899638980df4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='data_grid--table_user_search_drawer--data_grid_cell_base-2_0']/div/div</value>
+      <webElementGuid>3d2bb268-542a-4f87-a203-2312a4bd0d6c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/div</value>
+      <webElementGuid>c61a58b2-dc1c-4afb-bb55-8121cc28010e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'QAQA Automation Adminsbchcqa@gmail.com' or . = 'QAQA Automation Adminsbchcqa@gmail.com')]</value>
+      <webElementGuid>a62b8537-559b-4d75-90d2-b34f0b79ccf3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
