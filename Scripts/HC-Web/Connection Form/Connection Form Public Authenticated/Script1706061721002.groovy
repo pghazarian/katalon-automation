@@ -69,10 +69,10 @@ not_run: inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form 
 'Verify the email field value is not blank'
 not_run: WebUI.verifyNotEqual(inputValue, '')
 
-'Update the Input field'
-not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(FormInputFieldXPath)
+FormInputFieldXPath = 'connection_form_public--question_field_21225'
 
-not_run: WebUI.setText(TargetTestObject, MessageText)
+'Update the Input field'
+CustomKeywords.'customUtility.TestObjectHelper.setTextfieldValue'(FormInputFieldXPath, MessageText)
 
 CustomFormInputFieldXPath = 'connection_form_public--question_field_21247'
 

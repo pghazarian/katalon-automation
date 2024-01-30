@@ -39,7 +39,7 @@ import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
-import java.text.SimpleDateFormat 
+import java.text.SimpleDateFormat
 import java.util.Date
 
 class TestObjectHelper {
@@ -84,6 +84,25 @@ class TestObjectHelper {
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
 
+	@Keyword
+	def TestObject getTextInputByLabel(String label) {
+		def xpath = "//h3[text()='${label}' or . = '${label}']/following-sibling::div/descendant::input[@type='text']"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+	}
+
+	//h3[text()='Single Text' or . = 'Single Text']/following-sibling::div/descendant::input
+
+	//h3[text()='Multiple Choice' or . = 'Multiple Choice']/following-sibling::div/descendant::input/parent::div[contains(@class, 'radio-is-checked')]/descendant::label/span
+
+	@Keyword
+	def TestObject getRadioInputSelectionByLabel(String label) {
+		def xpath = "//h3[text()='${label}' or . = '${label}']/following-sibling::div/descendant::input[@type='text']"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		def input = new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+		return input.properties["innerText"]
+	}
+
 	/**
 	 * Get a TestObject textarea element by ID
 	 */
@@ -93,7 +112,15 @@ class TestObjectHelper {
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
-	
+
+	@Keyword
+	def TestObject getTextAreaByLabel(String label) {
+		def xpath = "//h3[text()='${label}' or . = '${label}']/following-sibling::div/descendant::textarea]"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+	}
+
+
 	/**
 	 * Set value for Text field (single line) (e.g. input type="text" element)
 	 */
@@ -103,7 +130,7 @@ class TestObjectHelper {
 		def field = getInputById(id)
 		WebUI.setText(field, value)
 	}
-	
+
 	/**
 	 * Set value for Text field (multi-line) (e.g. textarea element)
 	 */
@@ -136,37 +163,37 @@ class TestObjectHelper {
 		// Press <Enter> to select the value
 		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
 	}
-	
+
 	/**
 	 * Set Radio button control (a.k.a multiple choice control)
 	 */
 	@Keyword
 	def TestObject setMultipleChoiceControlValue(String controlLabel, String value) {
-		
+
 		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
 
 		def label = getTestObjectWithXpath(xpath)
-		
+
 		WebUI.click(label)
 	}
-	
+
 	/**
 	 * Check item(s) in the group checkbox list
 	 */
 	@Keyword
 	def TestObject setGroupCheckboxValue(String controlLabel, String values) {
-		
+
 		def valueList = (new StringHelper()).parseItems(values)
-		
+
 		for (value in valueList) {
 			def xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
-	
+
 			def label = getTestObjectWithXpath(xpath)
-			
+
 			WebUI.click(label)
 		}
 	}
-	
+
 	/**
 	 * Set Date Field Value
 	 */
@@ -176,14 +203,14 @@ class TestObjectHelper {
 		def xpath = "//div[@id='${id}']/descendant::input"
 
 		def dateField = getTestObjectWithXpath(xpath)
-		
+
 		def dateToSelect = getFormattedDateForControl(value)
-		
+
 		WebUI.setText(dateField, dateToSelect)
-		
+
 		WebUI.sendKeys(dateField, Keys.chord(Keys.ENTER))
 	}
-	
+
 	/**
 	 * Get formatted date string for given Date object
 	 */
@@ -191,10 +218,30 @@ class TestObjectHelper {
 	def String getFormattedDateForControl(Date date) {
 
 		def sdf = new SimpleDateFormat('MM/dd/yyyy')
-		
+
 		return sdf.format(date)
 	}
-	
+
+	@Keyword
+	def verifyTextFieldValueEqual(TestObject object, String valueToCompare) {
+
+		// get the value attribute from the text field
+		def value = WebUI.getAttribute(object, 'value')
+
+		// verify the field value'
+		WebUI.verifyEqual(value, valueToCompare)
+	}
+
+	@Keyword
+	def verifyTextAreaValueEqual(TestObject object, String valueToCompare) {
+
+		// get the value attribute from the text field
+		def value = WebUI.getAttribute(object, 'innerText')
+
+		// verify the field value'
+		WebUI.verifyEqual(value, valueToCompare)
+	}
+
 	/**
 	 * Click element
 	 * @param to Katalon test object
