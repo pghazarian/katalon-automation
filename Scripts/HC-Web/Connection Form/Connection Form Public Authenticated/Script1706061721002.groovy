@@ -69,10 +69,10 @@ not_run: inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form 
 'Verify the email field value is not blank'
 not_run: WebUI.verifyNotEqual(inputValue, '')
 
-'Update the Input field'
-not_run: TargetTestObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(FormInputFieldXPath)
+FormInputFieldXPath = 'connection_form_public--question_field_21225'
 
-not_run: WebUI.setText(TargetTestObject, MessageText)
+'Update the Input field'
+CustomKeywords.'customUtility.TestObjectHelper.setTextfieldValue'(FormInputFieldXPath, MessageText)
 
 CustomFormInputFieldXPath = 'connection_form_public--question_field_21247'
 
@@ -85,8 +85,7 @@ CustomFormParagraphFieldXPath = 'connection_form_public--question_field_21248'
 CustomKeywords.'customUtility.TestObjectHelper.setMultilineTextfieldValue'(CustomFormParagraphFieldXPath, ParagraphTextValue)
 
 'Check item(s) in the group checkbox list'
-CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '3')
-CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '4')
+CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '4, 2, 3, 1')
 
 'Select the multiple choice (radio button) value'
 CustomKeywords.'customUtility.TestObjectHelper.setMultipleChoiceControlValue'('Multiple Choice', '3')

@@ -84,12 +84,38 @@ class TestObjectHelper {
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
 
+	@Keyword
+	def TestObject getTextInputByLabel(String label) {
+		def xpath = "//h3[text()='${label}' or . = '${label}']/following-sibling::div/descendant::input[@type='text']"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+	}
+
+	//h3[text()='Single Text' or . = 'Single Text']/following-sibling::div/descendant::input
+
+	//h3[text()='Multiple Choice' or . = 'Multiple Choice']/following-sibling::div/descendant::input/parent::div[contains(@class, 'radio-is-checked')]/descendant::label/span
+
+	@Keyword
+	def TestObject getRadioInputSelectionByLabel(String label) {
+		def xpath = "//h3[text()='${label}' or . = '${label}']/following-sibling::div/descendant::input[@type='text']"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		def input = new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+		return input.properties["innerText"]
+	}
+
 	/**
 	 * Get a TestObject textarea element by ID
 	 */
 	@Keyword
 	def TestObject getTextAreaById(String id) {
 		def xpath = "//textarea[@id='${id}']"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+	}
+
+	@Keyword
+	def TestObject getTextAreaByLabel(String label) {
+		def xpath = "//h3[text()='${label}' or . = '${label}']/following-sibling::div/descendant::textarea]"
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
@@ -143,10 +169,7 @@ class TestObjectHelper {
 	@Keyword
 	def TestObject setMultipleChoiceControlValue(String controlLabel, String value) {
 
-		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/div/div/label/span[text() = '$value']/parent::label"
-		xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
-
-		KeywordUtil.logInfo("searching for xpath: ${xpath}")
+		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
 
 		def label = getTestObjectWithXpath(xpath)
 
@@ -157,16 +180,17 @@ class TestObjectHelper {
 	 * Check item(s) in the group checkbox list
 	 */
 	@Keyword
-	def TestObject setGroupCheckboxValue(String controlLabel, String value) {
+	def TestObject setGroupCheckboxValue(String controlLabel, String values) {
 
-		def xpath = "//h3[text()='$controlLabel']/following-sibling::div/div/div/div/label/span[text() = '$value']/parent::label"
-		xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
+		def valueList = (new StringHelper()).parseItems(values)
 
-		KeywordUtil.logInfo("searching for xpath: ${xpath}")
+		for (value in valueList) {
+			def xpath = "//h3[text()='$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
 
-		def label = getTestObjectWithXpath(xpath)
+			def label = getTestObjectWithXpath(xpath)
 
-		WebUI.click(label)
+			WebUI.click(label)
+		}
 	}
 
 	/**
@@ -177,13 +201,11 @@ class TestObjectHelper {
 
 		def xpath = "//div[@id='${id}']/descendant::input"
 
-		KeywordUtil.logInfo("searching for xpath: ${xpath}")
-
 		def dateField = getTestObjectWithXpath(xpath)
 
-		def DateToSelect = getFormattedDateForControl(value)
+		def dateToSelect = getFormattedDateForControl(value)
 
-		WebUI.setText(dateField, DateToSelect)
+		WebUI.setText(dateField, dateToSelect)
 
 		WebUI.sendKeys(dateField, Keys.chord(Keys.ENTER))
 	}
@@ -199,6 +221,26 @@ class TestObjectHelper {
 		return sdf.format(date)
 	}
 
+	@Keyword
+	def verifyTextFieldValueEqual(TestObject object, String valueToCompare) {
+
+		// get the value attribute from the text field
+		def value = WebUI.getAttribute(object, 'value')
+
+		// verify the field value'
+		WebUI.verifyEqual(value, valueToCompare)
+	}
+
+	@Keyword
+	def verifyTextAreaValueEqual(TestObject object, String valueToCompare) {
+
+		// get the value attribute from the text field
+		def value = WebUI.getAttribute(object, 'innerText')
+
+		// verify the field value'
+		WebUI.verifyEqual(value, valueToCompare)
+	}
+	
 	/**
 	 * Click element
 	 * @param to Katalon test object
