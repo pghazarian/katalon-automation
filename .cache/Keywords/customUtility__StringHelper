@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "B655813FD3A462579DC16AA5E3F801BC",
+  "keywordFileContentHash": "4E698FA2799A32E185C46FF5BF0C6250",
   "keywordClasses": [
     {
       "name": "customUtility.StringHelper",
@@ -54,6 +54,25 @@
             }
           ],
           "javadoc": ""
+        },
+        {
+          "name": "getUSFormatDateForControl",
+          "parameters": [
+            {
+              "name": "date",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Date",
+                "unresolvedClassName": "Date",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Get formatted date string for given Date object\n\t */"
         }
       ]
     }

@@ -19,6 +19,14 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+/* Environment Test Connection Form URLs
+ * https://hc.saddleback.com/data-capture/connection-forms/674/overview
+https://hc-stage.saddleback.com/data-capture/connection-forms/3830/overview
+https://hc-stage2.saddleback.com/data-capture/connection-forms/181/overview
+https://hc-qa.saddleback.com/data-capture/connection-forms/36/overview
+https://hc-dev.saddleback.com/data-capture/connection-forms/226/overview
+ */
+
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [(null) : null], FailureHandling.STOP_ON_FAILURE)
 
 def date = new Date()
@@ -30,8 +38,6 @@ def CurrentDateTime = sdf.format(date)
 def FormPath = GlobalVariable.HC_HostUrl + PublicConnectionFormPath
 
 def AdminFormPath = GlobalVariable.HC_HostUrl + ConnectionFormManagementPath
-
-def MessageText = "Romans 8:28 - $CurrentDateTime"
 
 def SingleTextValue = "Single Text - $CurrentDateTime"
 
@@ -71,20 +77,19 @@ not_run: inputValue = WebUI.getAttribute(findTestObject('HC-Web/Connection Form 
 'Verify the email field value is not blank'
 not_run: WebUI.verifyNotEqual(inputValue, '')
 
-FormInputFieldXPath = 'connection_form_public--question_field_21225'
-
-'Update the Input field'
-CustomKeywords.'customUtility.TestObjectHelper.setTextfieldValue'(FormInputFieldXPath, MessageText)
-
-CustomFormInputFieldXPath = 'connection_form_public--question_field_21247'
-
 'Update the Single Line Text field'
-CustomKeywords.'customUtility.TestObjectHelper.setTextfieldValue'(CustomFormInputFieldXPath, SingleTextValue)
-
-CustomFormParagraphFieldXPath = 'connection_form_public--question_field_21248'
+CustomKeywords.'customUtility.FormHelper.setTextfieldValue'("Can you enter a sentence?", SingleTextValue)
 
 'Update the Paragraph Text field'
-CustomKeywords.'customUtility.TestObjectHelper.setMultilineTextfieldValue'(CustomFormParagraphFieldXPath, ParagraphTextValue)
+CustomKeywords.'customUtility.FormHelper.setTextAreaValue'("Can you enter a paragraph?", ParagraphTextValue)
+
+'Set the date control value'
+date = new Date().plus(3)
+
+CustomKeywords.'customUtility.FormHelper.setDateFieldValue'('Please choose a Date', date)
+
+assert true
+
 
 'Check item(s) in the group checkbox list'
 CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '4, 2, 3, 1')
@@ -95,10 +100,7 @@ CustomKeywords.'customUtility.TestObjectHelper.setMultipleChoiceControlValue'('M
 'Select the drop down value'
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('connection_form_public--question_field_21254', '2')
 
-'Set the date control value'
-date = new Date().plus(3)
 
-CustomKeywords.'customUtility.TestObjectHelper.setDateFieldValue'('connection_form_public--question_field_21255', date)
 
 not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Submit'))
 

@@ -91,8 +91,6 @@ class TestObjectHelper {
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
 
-	//h3[text()='Single Text' or . = 'Single Text']/following-sibling::div/descendant::input
-
 	//h3[text()='Multiple Choice' or . = 'Multiple Choice']/following-sibling::div/descendant::input/parent::div[contains(@class, 'radio-is-checked')]/descendant::label/span
 
 	@Keyword
