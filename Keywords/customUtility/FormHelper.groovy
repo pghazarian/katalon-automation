@@ -57,4 +57,59 @@ public class FormHelper {
 		def field = getTextAreaByLabel(id)
 		WebUI.setText(field, value)
 	}
+	
+	/**
+	 * Set Radio button control (a.k.a multiple choice control)
+	 */
+	@Keyword
+	def TestObject setMultipleChoiceControlValue(String controlLabel, String value) {
+
+		def xpath = "//div[text()='$controlLabel' or . = '$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
+
+		def label = (new TestObjectHelper()).getTestObjectWithXpath(xpath)
+
+		WebUI.click(label)
+	}
+
+	/**
+	 * Check item(s) in the group checkbox list
+	 */
+	@Keyword
+	def TestObject setGroupCheckboxValue(String controlLabel, String values) {
+
+		def valueList = (new StringHelper()).parseItemsWithDelimiter(values, ',')
+
+		for (value in valueList) {
+			def xpath = "//div[text()='$controlLabel' or . = '$controlLabel']/following-sibling::div/descendant::span[text() = '$value']/parent::label"
+
+			def label =  (new TestObjectHelper()).getTestObjectWithXpath(xpath)
+
+			WebUI.click(label)
+		}
+	}
+	
+	/**
+	 * Set value for Drop Down component
+	 */
+	@Keyword
+	def TestObject setDropDownValue(String label, String value) {
+
+		def helper = new TestObjectHelper();
+		
+		def xpath = "//label[text() = '$label']/parent::div"
+
+		def dropdown = helper.getTestObjectWithXpath(xpath)
+
+		WebUI.click(dropdown)
+
+		xpath = "//label[text() = '$label']/following-sibling::div/descendant::input"
+
+		def dropdownInput = helper.getTestObjectWithXpath(xpath)
+
+		// Type Dropdown value
+		WebUI.sendKeys(dropdownInput, value)
+
+		// Press <Enter> to select the value
+		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
+	}
 }

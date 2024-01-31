@@ -88,19 +88,19 @@ date = new Date().plus(3)
 
 CustomKeywords.'customUtility.FormHelper.setDateFieldValue'('Please choose a Date', date)
 
-assert true
-
+'Check item(s) in the single checkbox list'
+CustomKeywords.'customUtility.FormHelper.setGroupCheckboxValue'('Check Single - Label', 'Check Single')
 
 'Check item(s) in the group checkbox list'
-CustomKeywords.'customUtility.TestObjectHelper.setGroupCheckboxValue'('Group checkbox', '4, 2, 3, 1')
+CustomKeywords.'customUtility.FormHelper.setGroupCheckboxValue'('Check Group', 'Option 1,Option 3')
 
 'Select the multiple choice (radio button) value'
-CustomKeywords.'customUtility.TestObjectHelper.setMultipleChoiceControlValue'('Multiple Choice', '3')
+CustomKeywords.'customUtility.FormHelper.setMultipleChoiceControlValue'('Multiple Choice', 'Option 3')
 
 'Select the drop down value'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('connection_form_public--question_field_21254', '2')
+CustomKeywords.'customUtility.FormHelper.setDropDownValue'('Please Select from the Drop-down', 'Option 1')
 
-
+assert true
 
 not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Submit'))
 
