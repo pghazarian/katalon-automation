@@ -34,6 +34,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [(null) : null], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.openBrowser('https://hc-stage.saddleback.com')
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), 'crisf@saddleback.com')

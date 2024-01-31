@@ -1,13 +1,12 @@
 {
-  "keywordFileContentHash": "9137CAC473769B3A4DDE9041DD006BBD",
+  "keywordFileContentHash": "AFBC06F0DF158382B138B40060AF47AE",
   "keywordClasses": [
     {
       "name": "customUtility.TestObjectHelper",
       "keywordMethods": [
         {
           "name": "refreshBrowser",
-          "parameters": [],
-          "javadoc": "/**\n\t * Refresh browser\n\t */"
+          "parameters": []
         },
         {
           "name": "getTestObjectWithXpath",
@@ -25,8 +24,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Get a TestObject given a xpath\n\t */"
+          ]
         },
         {
           "name": "getTestObjectWithXpathTextMatch",
@@ -70,8 +68,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Get a TestObject given a xpath, text string to match, and the index for which one to get\n\t */"
+          ]
         },
         {
           "name": "getInputById",
@@ -89,8 +86,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Get a TestObject input element by ID\n\t */"
+          ]
         },
         {
           "name": "getTextInputByLabel",
@@ -108,8 +104,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getRadioInputSelectionByLabel",
@@ -127,8 +122,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getTextAreaById",
@@ -146,8 +140,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Get a TestObject textarea element by ID\n\t */"
+          ]
         },
         {
           "name": "getTextAreaByLabel",
@@ -165,8 +158,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "setTextfieldValue",
@@ -197,8 +189,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Set value for Text field (single line) (e.g. input type\u003d\"text\" element)\n\t */"
+          ]
         },
         {
           "name": "setMultilineTextfieldValue",
@@ -229,8 +220,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Set value for Text field (multi-line) (e.g. textarea element)\n\t */"
+          ]
         },
         {
           "name": "setDropDownValue",
@@ -261,8 +251,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Set value for Drop Down component\n\t */"
+          ]
         },
         {
           "name": "setMultipleChoiceControlValue",
@@ -293,8 +282,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Set Radio button control (a.k.a multiple choice control)\n\t */"
+          ]
         },
         {
           "name": "setGroupCheckboxValue",
@@ -325,8 +313,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Check item(s) in the group checkbox list\n\t */"
+          ]
         },
         {
           "name": "setDateFieldValue",
@@ -357,8 +344,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Set Date Field Value\n\t */"
+          ]
         },
         {
           "name": "getFormattedDateForControl",
@@ -376,8 +362,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Get formatted date string for given Date object\n\t */"
+          ]
         },
         {
           "name": "verifyTextFieldValueEqual",
@@ -408,8 +393,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "verifyTextAreaValueEqual",
@@ -440,8 +424,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickElement",
@@ -459,8 +442,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Click element\n\t * @param to Katalon test object\n\t */"
+          ]
         },
         {
           "name": "getHtmlTableRows",
@@ -491,8 +473,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Get all rows of HTML table\n\t * @param table Katalon test object represent for HTML table\n\t * @param outerTagName outer tag name of TR tag, usually is TBODY\n\t * @return All rows inside HTML table\n\t */"
+          ]
         },
         {
           "name": "isElementPresent_Mobile",
@@ -523,13 +504,11 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Check if element present in timeout\n\t * @param to Katalon test object\n\t * @param timeout time to wait for element to show up\n\t * @return true if element present, otherwise false\n\t */"
+          ]
         },
         {
           "name": "getCurrentSessionMobileDriver",
-          "parameters": [],
-          "javadoc": "/**\n\t * Get mobile driver for current session\n\t * @return mobile driver for current session\n\t */"
+          "parameters": []
         },
         {
           "name": "verifyStatusCode",
@@ -560,8 +539,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Send request and verify status code\n\t * @param request request object, must be an instance of RequestObject\n\t * @param expectedStatusCode\n\t * @return a boolean to indicate whether the response status code equals the expected one\n\t */"
+          ]
         },
         {
           "name": "addBasicAuthorizationProperty",
@@ -605,8 +583,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Add Header basic authorization field,\n\t * this field value is Base64 encoded token from user name and password\n\t * @param request object, must be an instance of RequestObject\n\t * @param username username\n\t * @param password password\n\t * @return the original request object with basic authorization header field added\n\t */"
+          ]
         },
         {
           "name": "getTestObjectWithXpathTextMatch",
@@ -637,11 +614,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

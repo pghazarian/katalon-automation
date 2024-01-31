@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "8AECC5CB4CDCB76F578B750582B547F6",
+  "keywordFileContentHash": "B655813FD3A462579DC16AA5E3F801BC",
   "keywordClasses": [
     {
       "name": "customUtility.StringHelper",
@@ -20,7 +20,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "parseItemsWithDelimiter",
@@ -51,10 +52,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

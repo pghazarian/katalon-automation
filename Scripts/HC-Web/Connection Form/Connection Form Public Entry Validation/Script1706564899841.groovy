@@ -19,6 +19,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [(null) : null], FailureHandling.STOP_ON_FAILURE)
+
 def date = new Date()
 
 def sdf = new SimpleDateFormat('yyyy-MM-dd HH:mm:ss')

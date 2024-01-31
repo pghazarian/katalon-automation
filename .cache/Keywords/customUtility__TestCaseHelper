@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "E230682BD398055C49A0217902AAFDD7",
+  "keywordClasses": [
+    {
+      "name": "customUtility.TestCaseHelper",
+      "keywordMethods": [
+        {
+          "name": "isCurrentTestCaseEnvironmentValid",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
