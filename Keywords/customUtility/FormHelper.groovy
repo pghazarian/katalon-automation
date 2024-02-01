@@ -1,17 +1,14 @@
 package customUtility
 
 import org.openqa.selenium.Keys
-import org.openqa.selenium.WebDriver
-
+import org.openqa.selenium.WebElement
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI 
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-import org.openqa.selenium.By as By
-import org.openqa.selenium.WebElement as WebElement
 
 public class FormHelper {
 	@Keyword
@@ -129,23 +126,27 @@ public class FormHelper {
 
 	@Keyword
 	def String getCheckBoxSelectionByLabel(String label) {
-		WebDriver driver = DriverFactory.getWebDriver()
-
 		def xpath = "//div[text()='$label' or . = '$label']/following-sibling::div[contains(@class, 'checkbox-is-checked')]/label/span"
-		KeywordUtil.logInfo("searching for xpath: " + xpath)
 
-		List<WebElement> elements = driver.findElements(By.xpath(xpath))
-
-		elements.count
-		KeywordUtil.logInfo("elements.size(): ${elements}");
+		def helper = new TestObjectHelper()
+		
+		// get a TestObject for the selected items
+		def checkboxContainer = helper.getTestObjectWithXpath(xpath)
+		
+		// get web elements based on the TestObject
+		List<WebElement> selectedItems = WebUI.findWebElements(checkboxContainer, 0)
 
 		def selection = ""
+		
+		// get comma-separated list of text values from the options
+		for (item in selectedItems) {
+			if (selection.length() > 0)
+				selection = selection + ","
 
-		for (item in elements) {
-			selection = selection + item.text + ','
+			selection = selection + item.text
 		}
 
-		KeywordUtil.logInfo(selection);
+		KeywordUtil.logInfo(selection)
 
 		return selection
 	}

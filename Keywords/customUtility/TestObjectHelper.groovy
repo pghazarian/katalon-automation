@@ -236,7 +236,7 @@ class TestObjectHelper {
 	@Keyword
 	def clickElement(TestObject to) {
 		try {
-			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
+			WebElement element = WebUI.findWebElement(to, 0);
 			KeywordUtil.logInfo("Clicking element")
 			element.click()
 			KeywordUtil.markPassed("Element has been clicked")
@@ -255,7 +255,7 @@ class TestObjectHelper {
 	 */
 	@Keyword
 	def List<WebElement> getHtmlTableRows(TestObject table, String outerTagName) {
-		WebElement mailList = WebUiBuiltInKeywords.findWebElement(table)
+		WebElement mailList = WebUI.findWebElement(table, 0)
 		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
 		return selectedRows
 	}
