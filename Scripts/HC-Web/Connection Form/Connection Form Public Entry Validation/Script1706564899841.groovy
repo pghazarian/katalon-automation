@@ -27,7 +27,7 @@ def sdf = new SimpleDateFormat('yyyy-MM-dd HH:mm:ss')
 
 def CurrentDateTime = sdf.format(date)
 
-CurrentDateTime = '2024-01-31 13:15:10'
+CurrentDateTime = '2024-02-01 15:06:51'
 
 def FormPath = GlobalVariable.HC_HostUrl + PublicConnectionFormPath
 
@@ -43,7 +43,7 @@ def LastName = 'Francisco'
 
 def Email = 'crisf@saddleback.com'
 
-def DateSelected = CustomKeywords.'customUtility.StringHelper.getUSFormatDateForControl'(new Date().plus(2))
+def DateSelected = CustomKeywords.'customUtility.StringHelper.getUSFormatDateForControl'(new Date().plus(3))
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
@@ -63,39 +63,54 @@ CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTe
     FirstName)
 
 'Verify the last name'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'),
-	LastName)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'), 
+    LastName)
 
 'Verify the email'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/EmailTextField'),
-	Email)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/EmailTextField'), 
+    Email)
 
 'Verify single line text'
-InputTextFieldLabel = "Can you enter a sentence?"
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextInputByLabel'('Can you enter a sentence?'),
-	SingleTextValue)
+InputTextFieldLabel = 'Can you enter a sentence?'
+
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextInputByLabel'(
+        'Can you enter a sentence?'), SingleTextValue)
 
 'Verify paragraph text'
-TextAreaFieldLabel = "Can you enter a paragraph?"
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextAreaByLabel'(TextAreaFieldLabel),
-	ParagraphTextValue)
+TextAreaFieldLabel = 'Can you enter a paragraph?'
+
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextAreaByLabel'(
+        TextAreaFieldLabel), ParagraphTextValue)
 
 'Verify date text'
-DateFieldLabel = "Please choose a Date"
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextInputByLabel'(DateFieldLabel),
-	DateSelected)
+DateFieldLabel = 'Please choose a Date'
+
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextInputByLabel'(
+        DateFieldLabel), DateSelected)
+
 //
 'Verify radio selection'
-RadioFieldLabel = "Multiple Choice"
+RadioFieldLabel = 'Multiple Choice'
+
 WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getRadioInputSelectionByLabel'(RadioFieldLabel), 'Option 3')
 
 'Verify Single checkbox selection'
-SingleCheckboxFieldLabel = "Check Single - Label"
+SingleCheckboxFieldLabel = 'Check Single - Label'
+
 WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getCheckBoxSelectionByLabel'(SingleCheckboxFieldLabel), 'Check Single')
 
 'Verify multiple checkbox selection'
 MultipleCheckboxFieldLabel = 'Check Group'
 
-WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getCheckBoxSelectionByLabel'(MultipleCheckboxFieldLabel), 
-    'Option 1,Option 3')
+WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getCheckBoxSelectionByLabel'(MultipleCheckboxFieldLabel), 'Option 1,Option 3')
+
+WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/ActionsButton'))
+
+WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/DeleteEntry'))
+
+WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/Confirmation/Yes'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Overview'))
 
