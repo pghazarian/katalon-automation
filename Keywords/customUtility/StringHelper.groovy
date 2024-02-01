@@ -34,12 +34,23 @@ class StringHelper {
 	}
 
 	/**
-	 * Get formatted date string for given Date object
+	 * Get U.S. formatted date string for given Date object
 	 */
 	@Keyword
 	def String getUSFormatDateForControl(Date date) {
 
 		def sdf = new SimpleDateFormat('MM/dd/yyyy')
+
+		return sdf.format(date)
+	}
+
+	/**
+	 * Get ISO formatted date string for given Date object
+	 */
+	@Keyword
+	def String getIsoFormatDate(Date date) {
+
+		def sdf = new SimpleDateFormat('yyyy-MM-dd HH:mm:ss')
 
 		return sdf.format(date)
 	}

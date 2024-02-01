@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Publish a connection form, go to the public rendering of the form, verify that that the authenticated user's personal info (email, first and last name) are populated, submit the form and verify that it was successful, and unpublish the form.</description>
    <name>Connection Form Public Authenticated</name>
-   <tag>Stage</tag>
+   <tag>Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>02c4adeb-221b-4412-ab72-eb74329107cf</testCaseGuid>
    <variableLinks>

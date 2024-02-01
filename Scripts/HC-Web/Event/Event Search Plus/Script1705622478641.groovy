@@ -17,13 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://hc-stage.saddleback.com')
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), 'crisf@saddleback.com')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), 'Z8nazMpc16177aX9xH8qZQ==')
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Events Central'))
 
@@ -32,6 +28,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_All
 WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputui-input--events_search'), 'Bryant\'s Demo Event')
 
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputui-input--events_search'), Keys.chord(Keys.ENTER))
+
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church People - Person Record _91ca73/div_Whitney  Kelmp'), 
+    'Whitney Kelmp')
 
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'Bryant\'s Demo Event')
 
@@ -52,9 +51,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Ch
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Occurrence Schedule'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Whitney  Kelmp'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church People - Person Record _91ca73/div_Whitney  Kelmp'), 
-    'Whitney Kelmp')
 
 WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _91ca73/CloseButton'))
 

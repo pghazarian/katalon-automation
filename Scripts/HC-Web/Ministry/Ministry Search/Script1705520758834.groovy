@@ -37,6 +37,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Search/MinistryRow1_Mini
 'Open Ministry'
 WebUI.click(findTestObject('HC-Web/Ministry/Search/MinistryRow1_MinistryName'))
 
+WebUI.delay(1)
+
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
 //LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(((('//div[@class=\'drawer-children\']/table/tbody/tr/td[(text() = \'' + 
@@ -54,7 +56,11 @@ WebUI.click(LocationRowObject)
 
 MinistryLocationName = ((MinistryName + ' / ') + LocationName)
 
+WebUI.delay(1)
+
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/Drawer2Header'), MinistryLocationName)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_ViewDashboard'))
 

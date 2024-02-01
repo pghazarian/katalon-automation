@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Perform a person search, open the record both in Person v2 and Person Edit to verify its information</description>
    <name>People Search</name>
-   <tag>Production,Stage,Dev,Stage2,QA</tag>
+   <tag>Production,Stage,Dev,Stage2,QA,Smoke</tag>
    <comment></comment>
    <testCaseGuid>b37f7a59-fae3-46a5-9576-5b38f74fc230</testCaseGuid>
    <variableLinks>

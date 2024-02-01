@@ -31,9 +31,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [(nu
 
 def date = new Date()
 
-def sdf = new SimpleDateFormat('yyyy-MM-dd HH:mm:ss')
-
-def CurrentDateTime = sdf.format(date)
+def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
 
 def FormPath = GlobalVariable.HC_HostUrl + PublicConnectionFormPath
 

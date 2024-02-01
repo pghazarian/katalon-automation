@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "B1479F4672412CCC87C7C01060CDA994",
+  "keywordFileContentHash": "ADEA19D64DFCDE950F6E2E73CBD8C85E",
   "keywordClasses": [
     {
       "name": "customUtility.StringHelper",
@@ -72,7 +72,26 @@
               }
             }
           ],
-          "javadoc": "/**\n\t * Get formatted date string for given Date object\n\t */"
+          "javadoc": "/**\n\t * Get U.S. formatted date string for given Date object\n\t */"
+        },
+        {
+          "name": "getIsoFormatDate",
+          "parameters": [
+            {
+              "name": "date",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Date",
+                "unresolvedClassName": "Date",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Get ISO formatted date string for given Date object\n\t */"
         }
       ]
     }

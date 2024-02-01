@@ -1,12 +1,17 @@
 package customUtility
 
 import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI 
+
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
 
 public class FormHelper {
 	@Keyword
@@ -57,7 +62,7 @@ public class FormHelper {
 		def field = getTextAreaByLabel(id)
 		WebUI.setText(field, value)
 	}
-	
+
 	/**
 	 * Set Radio button control (a.k.a multiple choice control)
 	 */
@@ -87,7 +92,7 @@ public class FormHelper {
 			WebUI.click(label)
 		}
 	}
-	
+
 	/**
 	 * Set value for Drop Down component
 	 */
@@ -95,7 +100,7 @@ public class FormHelper {
 	def TestObject setDropDownValue(String label, String value) {
 
 		def helper = new TestObjectHelper();
-		
+
 		def xpath = "//label[text() = '$label']/parent::div"
 
 		def dropdown = helper.getTestObjectWithXpath(xpath)
@@ -111,5 +116,37 @@ public class FormHelper {
 
 		// Press <Enter> to select the value
 		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
+	}
+
+	@Keyword
+	def String getRadioInputSelectionByLabel(String label) {
+		def xpath = "//div[text()='$label' or . = '$label']/following-sibling::div[contains(@class, 'radio-is-checked')]/label/span"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		def input = new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+
+		return WebUI.getAttribute(input, 'textContent')
+	}
+
+	@Keyword
+	def String getCheckBoxSelectionByLabel(String label) {
+		WebDriver driver = DriverFactory.getWebDriver()
+
+		def xpath = "//div[text()='$label' or . = '$label']/following-sibling::div[contains(@class, 'checkbox-is-checked')]/label/span"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+
+		List<WebElement> elements = driver.findElements(By.xpath(xpath))
+
+		elements.count
+		KeywordUtil.logInfo("elements.size(): ${elements}");
+
+		def selection = ""
+
+		for (item in elements) {
+			selection = selection + item.text + ','
+		}
+
+		KeywordUtil.logInfo(selection);
+
+		return selection
 	}
 }

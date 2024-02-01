@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "98D3B7482819811327795EEABC9DBF48",
+  "keywordFileContentHash": "685FCBCE6928B339B89A884198681FA8",
   "keywordClasses": [
     {
       "name": "customUtility.FormHelper",
@@ -233,6 +233,44 @@
             }
           ],
           "javadoc": "/**\n\t * Set value for Drop Down component\n\t */"
+        },
+        {
+          "name": "getRadioInputSelectionByLabel",
+          "parameters": [
+            {
+              "name": "label",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "getCheckBoxSelectionByLabel",
+          "parameters": [
+            {
+              "name": "label",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
         }
       ]
     }

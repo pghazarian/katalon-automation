@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Login</description>
    <name>Login</name>
-   <tag>QA,Dev,Stage2,Stage,Production</tag>
+   <tag>QA,Dev,Stage2,Stage,Production,Smoke</tag>
    <comment></comment>
    <testCaseGuid>2872d71a-535b-4b5b-acb5-322021b79e88</testCaseGuid>
    <variableLinks>

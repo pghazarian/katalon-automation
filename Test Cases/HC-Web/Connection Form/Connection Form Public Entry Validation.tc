@@ -17,12 +17,6 @@
       <value></value>
       <variableId>e02f59a8-7cda-488b-a9b4-ef4a36879980</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>95533b28-7848-41a0-aa97-0951cf535640</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>GlobalVariable.ConnectionForm_PublicFormPath</defaultValue>
       <description></description>
@@ -36,12 +30,5 @@
       <id>e02f59a8-7cda-488b-a9b4-ef4a36879980</id>
       <masked>false</masked>
       <name>ConnectionFormManagementPath</name>
-   </variable>
-   <variable>
-      <defaultValue>GlobalVariable.ConnectionForm_InputFieldXPath</defaultValue>
-      <description></description>
-      <id>95533b28-7848-41a0-aa97-0951cf535640</id>
-      <masked>false</masked>
-      <name>FormInputFieldXPath</name>
    </variable>
 </TestCaseEntity>

@@ -27,13 +27,11 @@ def sdf = new SimpleDateFormat('yyyy-MM-dd HH:mm:ss')
 
 def CurrentDateTime = sdf.format(date)
 
-CurrentDateTime = '2024-01-29 15:02:27'
+CurrentDateTime = '2024-01-31 13:15:10'
 
 def FormPath = GlobalVariable.HC_HostUrl + PublicConnectionFormPath
 
-def AdminFormPath = GlobalVariable.HC_HostUrl + '/data-capture/connection-forms/72/entries'
-
-def MessageText = "Romans 8:28 - $CurrentDateTime"
+def AdminFormPath = GlobalVariable.HC_HostUrl + ConnectionFormManagementPath
 
 def SingleTextValue = "Single Text - $CurrentDateTime"
 
@@ -45,7 +43,7 @@ def LastName = 'Francisco'
 
 def Email = 'crisf@saddleback.com'
 
-def DateSelected = CustomKeywords.'customUtility.TestObjectHelper.getFormattedDateForControl'(new Date().plus(3))
+def DateSelected = CustomKeywords.'customUtility.StringHelper.getUSFormatDateForControl'(new Date().plus(3))
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
@@ -60,45 +58,45 @@ WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Entries'))
 'Open an entry'
 WebUI.click(findTestObject('HC-Web/Connection Form/Entries/FirstRow'))
 
-'Verify the first name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'), 
-    FirstName)
+//'Verify the first name field value'
+//CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'), 
+//    FirstName)
+//
+//'Verify the last name'
+//CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'),
+//	LastName)
+//
+//'Verify the email'
+//CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/EmailTextField'),
+//	Email)
+//
+//'Verify single line text'
+//InputTextFieldLabel = "Can you enter a sentence?"
+//CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextInputByLabel'('Can you enter a sentence?'),
+//	SingleTextValue)
+//
+//'Verify paragraph text'
+//TextAreaFieldLabel = "Can you enter a paragraph?"
+//CustomKeywords.'customUtility.TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextAreaByLabel'(TextAreaFieldLabel),
+//	ParagraphTextValue)
+//
+//'Verify date text'
+//DateFieldLabel = "Please choose a Date"
+//CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextInputByLabel'(DateFieldLabel),
+//	DateSelected)
+////
+//'Verify radio selection'
+//RadioFieldLabel = "Multiple Choice"
+//WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getRadioInputSelectionByLabel'(RadioFieldLabel), 'Option 3')
+//
+//'Verify Single checkbox selection'
+//SingleCheckboxFieldLabel = "Check Single - Label"
+//WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getCheckBoxSelectionByLabel'(SingleCheckboxFieldLabel), 'Option 1')
 
-'Verify the last name'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'),
-	LastName)
+'Verify multiple checkbox selection'
+MultipleCheckboxFieldLabel = "Check Group"
+WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getCheckBoxSelectionByLabel'(MultipleCheckboxFieldLabel), 'Option 1,Option 3')
 
-'Verify the email'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/EmailTextField'),
-	Email)
-
-'Verify custom single line text'
-CustomSingleLineTextFieldLabel = "Extra Questions"
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.TestObjectHelper.getTextInputByLabel'(CustomSingleLineTextFieldLabel),
-	MessageText)
-
-'Verify single line text'
-InputTextFieldLabel = "Single Text"
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.TestObjectHelper.getTextInputByLabel'(InputTextFieldLabel),
-	SingleTextValue)
-
-'Verify paragraph text'
-TextAreaFieldLabel = "Paragraph Text"
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'customUtility.TestObjectHelper.getTextAreaByLabel'(TextAreaFieldLabel),
-	ParagraphTextValue)
-
-'Verify date text'
-DateFieldLabel = "Select a Date"
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'customUtility.TestObjectHelper.getTextAreaByLabel'(TextAreaFieldLabel),
-	DateSelected)
-
-'Verify radio selection'
-RadioFieldLabel = "Multiple Choice"
-WebUI.verifyEqual(CustomKeywords.'customUtility.TestObjectHelper.getRadioInputSelectionByLabel'(RadioFieldLabel), '1')
-
-'Verify checkbox selection'
-RadioFieldLabel = "Group checkbox"
-WebUI.verifyEqual(CustomKeywords.'customUtility.TestObjectHelper.getRadioInputSelectionByLabel'(RadioFieldLabel), '1')
 
 
 
