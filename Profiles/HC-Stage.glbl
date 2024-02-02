@@ -21,17 +21,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'/public/connection-form/72/cris-test-connection-form'</initValue>
-      <name>ConnectionForm_PublicFormPath</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'/data-capture/connection-forms/72/overview'</initValue>
+      <initValue>'/data-capture/connection-forms/3830/overview'</initValue>
       <name>ConnectionForm_FormManagementPath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'//input[@id=\'connection_form_public--question_field_21225\']'</initValue>
-      <name>ConnectionForm_InputFieldXPath</name>
+      <initValue>'/public/connection-form/3830/zztest-automation-do-not-touch'</initValue>
+      <name>ConnectionForm_PublicFormPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

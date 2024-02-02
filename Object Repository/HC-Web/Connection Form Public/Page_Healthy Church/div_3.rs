@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Publish</name>
+   <name>div_3</name>
    <tag></tag>
-   <elementGuidId>b4611f9f-ac34-4118-bf96-7a32cd3c9fec</elementGuidId>
+   <elementGuidId>f21d3829-417f-4039-8cc6-7defaefa962b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='connection_forms--details--publish_unpublish_link']</value>
+         <value>(//div[@id='react-select-12--list']/div/div/div/div[3])[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#connection_forms--details--publish_unpublish_link</value>
+         <value>div.Select-option.is-focused</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +21,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>73a04e53-59cf-4e7f-b72d-957c811906d0</webElementGuid>
+      <value>div</value>
+      <webElementGuid>980f93ad-bef2-4daf-b5c4-63bc05d30461</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-selected</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>74bd4237-3b77-4aa6-a3ae-e657388d75de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui a jss360 jss273</value>
-      <webElementGuid>23f4954b-e716-44ef-8910-fdb70a328a8d</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>connection_forms--details--publish_unpublish_link</value>
-      <webElementGuid>476848d6-b239-4637-9fbb-9d3adfac0e02</webElementGuid>
+      <value>Select-option is-focused</value>
+      <webElementGuid>3f769755-0aca-4236-8b0c-ce6478c218fe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>11413c4a-8769-4d02-80bd-0271f662799e</webElementGuid>
+      <value>option</value>
+      <webElementGuid>6d27a85b-8c41-40ac-9ff6-9c5db5dbd1e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>-1</value>
-      <webElementGuid>91484e1c-74f7-4f96-a233-4b79d8329412</webElementGuid>
+      <value>0</value>
+      <webElementGuid>7342363b-43d8-4e81-928a-a72d3bc7284b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Publish</value>
-      <webElementGuid>6caac6bf-eec3-4d9b-9ba6-8d79efcd363c</webElementGuid>
+      <value>3</value>
+      <webElementGuid>0466551d-7409-43d7-9178-cbbf23d86a02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;connection_forms--details--publish_unpublish_link&quot;)</value>
-      <webElementGuid>c57bd38d-8f0c-492f-987a-a71d1f2ab5bc</webElementGuid>
+      <value>id(&quot;connection_form_public--question_field_21254&quot;)/div[@class=&quot;Select has-value is-focused is-open is-searchable Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-12--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
+      <webElementGuid>f60bf388-9d7c-40c4-9d8a-413e5a60abfd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//span[@id='connection_forms--details--publish_unpublish_link']</value>
-      <webElementGuid>b3cbe435-fd19-4e0b-a175-19d67fdcb5c6</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div/section/div[2]/div/div/div/div/div[2]/div/div[7]/div/div/ul/li/div[2]/div/span</value>
-      <webElementGuid>6a709b5e-ccc5-401f-b593-5a1088011fbb</webElementGuid>
+      <value>(//div[@id='react-select-12--list']/div/div/div/div[3])[2]</value>
+      <webElementGuid>3e3c5c47-5a26-46b3-b6d1-affc792710f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/span</value>
-      <webElementGuid>39675ae1-cdd1-43fe-8d2d-d35301ef8dda</webElementGuid>
+      <value>//div[3]/div/div/div/div/div[3]</value>
+      <webElementGuid>62effa71-a379-4498-bfe1-53596ae11454</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[@id = 'connection_forms--details--publish_unpublish_link' and (text() = 'Publish' or . = 'Publish')]</value>
-      <webElementGuid>eaafd39b-fe5e-49e7-8d88-cd22b43f4ce2</webElementGuid>
+      <value>//div[(text() = '3' or . = '3')]</value>
+      <webElementGuid>674433c2-aa9c-4006-99cd-b06c93773c62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

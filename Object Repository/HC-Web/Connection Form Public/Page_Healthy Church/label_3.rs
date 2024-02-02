@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_3</name>
+   <tag></tag>
+   <elementGuidId>f2301fe8-99df-428a-9346-00eadac50f44</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='page-content']/div/div/div[9]/div/div/div[4]/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>f5fe62d4-4b74-4455-af55-714d7130c7b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>label jss481</value>
+      <webElementGuid>ae67c772-6245-4d04-a719-12143eb5667e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>3</value>
+      <webElementGuid>54ec4a41-f5a6-46fa-9107-034414f454eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-content&quot;)/div[1]/div[@class=&quot;jss3&quot;]/div[@class=&quot;jss484&quot;]/div[1]/div[@class=&quot;cmui grid--column jss309 jss487 jss332&quot;]/div[@class=&quot;ui radio jss483 jss494 jss478 radio-full-width&quot;]/label[@class=&quot;label jss481&quot;]</value>
+      <webElementGuid>9ce2d104-0b8f-4564-b1d3-a3f6fcb412ce</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-content']/div/div/div[9]/div/div/div[4]/label</value>
+      <webElementGuid>fe2144bc-a45a-4b27-b727-57a5d5ebf650</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/label</value>
+      <webElementGuid>b78402c8-e4f0-47b5-9410-3d2d9afa8763</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = '3' or . = '3')]</value>
+      <webElementGuid>bf48dda9-8822-4c6a-b0b0-0bb1f206d816</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

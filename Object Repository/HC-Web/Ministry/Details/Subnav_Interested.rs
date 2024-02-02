@@ -6,12 +6,11 @@
    <elementGuidId>5f59cf39-72dd-4711-978a-880a04b17f1d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='sectional-tabs-container']/div/div/button/span[(text() = 'Interested' or . = 'Interested')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='sectional-tabs-container']/div/div/button[(text() = 'Interested' or . = 'Interested')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

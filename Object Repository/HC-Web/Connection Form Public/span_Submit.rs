@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Entries</name>
+   <name>span_Submit</name>
    <tag></tag>
-   <elementGuidId>58cdc84b-b2d1-4f70-a1d1-61d6dede1a8d</elementGuidId>
+   <elementGuidId>3c74c4e1-1236-4faf-bbd3-c90e6f7b2328</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
+         <value>//button[@id='connection_form_public--submit_btn']/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss416.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+         <value>#connection_form_public--submit_btn > span.button-inner-container.jss497</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,39 +22,39 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>9236603e-eefa-4e94-95ad-8d5ff1fcecfb</webElementGuid>
+      <webElementGuid>e91b8301-20d6-4b91-8328-51546ba14bb2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root jss416 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>bc7572f1-51c4-4d49-86a3-62a3352b4eaa</webElementGuid>
+      <value>button-inner-container jss497</value>
+      <webElementGuid>db5da896-37ba-4a73-b33f-02fdb799b0ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Entries</value>
-      <webElementGuid>9cd877a9-65fc-4670-8db7-5ab9ade299e1</webElementGuid>
+      <value>Submit</value>
+      <webElementGuid>ddb63c8d-4f7c-42dc-af32-2c24d95f06e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss416 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>7fe9cbb6-cf5e-489b-b35c-56b563b3b434</webElementGuid>
+      <value>id(&quot;connection_form_public--submit_btn&quot;)/span[@class=&quot;button-inner-container jss497&quot;]</value>
+      <webElementGuid>1fa24bf8-f4e1-4416-a8a7-1b13682d6e7d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
-      <webElementGuid>a9f280d4-c768-49ce-b34a-4e5593771b1d</webElementGuid>
+      <value>//button[@id='connection_form_public--submit_btn']/span</value>
+      <webElementGuid>48488e80-f9ce-4d7f-8862-f21261cbe0d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,14 +62,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]/span</value>
-      <webElementGuid>ddabf53d-394f-409a-9bc2-159c6c89cd50</webElementGuid>
+      <webElementGuid>4a087031-a4c9-4c8c-ae32-87f8f3ae6adf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Entries' or . = 'Entries')]</value>
-      <webElementGuid>23bb018b-ebd5-41dc-943f-a38ee0cde5c4</webElementGuid>
+      <value>//span[(text() = 'Submit' or . = 'Submit')]</value>
+      <webElementGuid>488964f1-7e70-43d3-a3da-d4f311f11f3f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
