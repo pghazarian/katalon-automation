@@ -86,11 +86,4 @@
          <variableId>80ed7adf-9029-49e4-adef-b8aafd501455</variableId>
       </variableLink>
    </testCaseLink>
-   <testCaseLink>
-      <guid>fcfc041b-e378-452c-9ce6-e8c99e06f2d9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Connection Form/Data Capture Connection Forms</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>
