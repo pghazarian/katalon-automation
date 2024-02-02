@@ -3,7 +3,7 @@
    <description></description>
    <name>div_Yes</name>
    <tag></tag>
-   <elementGuidId>19414aeb-8b97-420a-92fe-f913a28f9022</elementGuidId>
+   <elementGuidId>4262546b-3928-488f-91f8-474aacf5c69f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c3cbb742-8061-445a-9a5e-3b62348f5a1d</webElementGuid>
+      <webElementGuid>95d87bc9-aabc-4c6f-b912-5efed2c71293</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>prompt-yes-btn</value>
-      <webElementGuid>65c29cf1-175f-435c-b989-69926b5f2151</webElementGuid>
+      <webElementGuid>cc2907a8-0c5e-4269-b998-01b7fd487899</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>role</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>3e5569da-95ae-45a6-8bea-36eceb0b9df5</webElementGuid>
+      <webElementGuid>063571d9-da16-45e2-b9e9-edb6b2e3a6a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>550ed8e3-c831-4eef-b66f-007744daff2d</webElementGuid>
+      <webElementGuid>46ddadd8-f85a-4a78-894a-e7166c7068e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Yes</value>
-      <webElementGuid>5d069cc1-f2bb-4ced-a181-f68c06253900</webElementGuid>
+      <webElementGuid>95909fec-8944-417e-969a-35a7238d0dcd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss277 jss280 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss306 ui page--container jss305&quot;]/section[@class=&quot;cmui content jss309 ui page--content jss308&quot;]/div[@class=&quot;jss271&quot;]/div[@class=&quot;ui page--data_groups&quot;]/div[@class=&quot;page--data_groups_column&quot;]/div[@class=&quot;page--data_group&quot;]/div[@class=&quot;page--data_group_inner_container&quot;]/div[@class=&quot;page--data_group_contract_section&quot;]/div[@class=&quot;ui list page--data_group_list list-divide&quot;]/div[@class=&quot;list--item&quot;]/div[@class=&quot;page--data_group_row&quot;]/div[@class=&quot;page--data_group_row_value&quot;]/ul[@class=&quot;jss275&quot;]/li[@class=&quot;jss272&quot;]/div[@class=&quot;ui prompt jss358 prompt-show prompt-inline&quot;]/div[@class=&quot;prompt-actions jss357&quot;]/div[@class=&quot;prompt-yes-btn&quot;]</value>
-      <webElementGuid>c8278f8b-d94c-4f08-bcb8-6958d91331d8</webElementGuid>
+      <webElementGuid>21b23e3b-a165-4251-8511-4d8fab1bbc37</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/section/div[2]/div/div/div/div/div[2]/div/div[7]/div/div/ul/li/div[2]/div[2]/div[2]</value>
-      <webElementGuid>952cf2c2-c584-4402-a280-db96b1d2f651</webElementGuid>
+      <webElementGuid>e446f496-b784-4d9d-869f-ae82ac758119</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/div[2]</value>
-      <webElementGuid>fba289fe-facd-4bdf-b50a-7c7d419f1f00</webElementGuid>
+      <webElementGuid>cbf5a25d-2896-4800-9ad8-6379d6e6d415</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Yes' or . = 'Yes')]</value>
-      <webElementGuid>6fa51193-fc15-41a7-9274-95f2cf1fff8e</webElementGuid>
+      <webElementGuid>06ee8781-9563-4a26-81b7-21e704a5f332</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

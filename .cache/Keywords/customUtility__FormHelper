@@ -20,7 +20,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "setTextfieldValue",
@@ -51,7 +52,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\n\t * Set value for Text field (single line) (e.g. input type\u003d\"text\" element)\n\t */"
         },
         {
           "name": "setDateFieldValue",
@@ -82,7 +84,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\n\t * Set Date Field Value\n\t */"
         },
         {
           "name": "getTextAreaByLabel",
@@ -100,7 +103,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "setTextAreaValue",
@@ -131,7 +135,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\n\t * Set value for Text field (multi-line) (e.g. textarea element)\n\t */"
         },
         {
           "name": "setMultipleChoiceControlValue",
@@ -162,7 +167,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\n\t * Set Radio button control (a.k.a multiple choice control)\n\t */"
         },
         {
           "name": "setGroupCheckboxValue",
@@ -193,7 +199,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\n\t * Check item(s) in the group checkbox list\n\t */"
         },
         {
           "name": "setDropDownValue",
@@ -224,7 +231,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\n\t * Set value for Drop Down component\n\t */"
         },
         {
           "name": "getDropDownSelectionByLabel",
@@ -242,7 +250,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\n\t * Get value for Drop Down component\n\t */"
         },
         {
           "name": "getRadioInputSelectionByLabel",
@@ -260,7 +269,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "getCheckBoxSelectionByLabel",
@@ -278,10 +288,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

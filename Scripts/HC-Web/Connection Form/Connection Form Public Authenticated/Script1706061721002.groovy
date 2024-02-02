@@ -31,22 +31,35 @@ def date = new Date()
 def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
 
 def FormPath = GlobalVariable.HC_HostUrl + PublicConnectionFormPath
+
 def AdminFormPath = GlobalVariable.HC_HostUrl + ConnectionFormManagementPath
 
 def DateSelected = new Date().plus(3)
+
 def SingleTextValue = "Single Text - $CurrentDateTime"
+
 def ParagraphTextValue = "Paragraph Text - $CurrentDateTime"
+
 def SingleCheckBoxSelection = 'Check Single'
+
 def GroupCheckBoxSelection = 'Option 1,Option 3'
+
 def RadioButtonSelection = 'Option 2'
+
 def DropDownSelection = 'Option 1'
 
 def LabelValueDate = 'Please choose a Date'
+
 def LabelValueSingleLineText = 'Can you enter a sentence?'
+
 def LabelValueParagraphText = 'Can you enter a paragraph?'
+
 def LabelValueSingleCheckbox = 'Check Single - Label'
+
 def LabelValueGroupCheckbox = 'Check Group'
+
 def LabelValueRadioButton = 'Multiple Choice'
+
 def LabelValueDropDown = 'Please Select from the Drop-down'
 
 'Login'
@@ -59,13 +72,13 @@ WebUI.navigateToUrl(AdminFormPath)
 def PublishButton = findTestObject('Object Repository/HC-Web/Connection Form/Overview/PublishLinkButton')
 
 if (CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(PublishButton, 0)) {
-	'Check that the form is unpublished'
-	WebUI.verifyElementText(PublishButton, 'Publish')
-	
-	'Publish the connection form (to make it publicly available)'
-	WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Publish'))
-	
-	WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Yes'))
+    'Check that the form is unpublished'
+    WebUI.verifyElementText(PublishButton, 'Publish')
+
+    'Publish the connection form (to make it publicly available)'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Overview/span_Publish'))
+
+    WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Overview/div_Yes'))
 }
 
 WebUI.navigateToUrl(FormPath)
@@ -106,16 +119,16 @@ CustomKeywords.'customUtility.FormHelper.setDropDownValue'(LabelValueDropDown, D
 'Set the date control value'
 CustomKeywords.'customUtility.FormHelper.setDateFieldValue'(LabelValueDate, DateSelected)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Submit'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form Public/span_Submit'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Success'), 'Success')
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Connection Form Public/div_Success'), 'Success')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Your form has been received'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Connection Form Public/div_Your form has been received'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Your form has been received'), 
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Connection Form Public/div_Your form has been received'), 
     'Your form has been received')
 
 'Go to the Connection Form Admin screen'
@@ -128,8 +141,8 @@ WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Entries'))
 WebUI.click(findTestObject('HC-Web/Connection Form/Entries/FirstRow'))
 
 'Verify the first name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'), 
-    FirstName)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'),
+	FirstName)
 
 'Verify the last name'
 CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'), 
@@ -163,26 +176,36 @@ WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getCheckBoxSelectionB
 'Verify dropdown selection'
 WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getDropDownSelectionByLabel'(LabelValueDropDown), DropDownSelection)
 
+'Delete the form entry'
 WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/ActionsButton'))
 
 WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/DeleteEntry'))
 
 WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/Confirmation/Yes'))
 
-WebUI.delay(1)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Overview'))
+WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form/Entries/EntriesHeader'), 3)
 
-'Go to the Connection Form Admin screen'
+//WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Overview'))
+
 WebUI.navigateToUrl(AdminFormPath)
 
-'Check that the form is published'
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Unpublish'), 'Unpublish')
+WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Connection Form/Overview/Form Details Header'), 2)
 
 'Unpublish the form'
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Unpublish'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Connection Form/Overview/span_Unpublish'), 2)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Yes'))
+'Check that the form is published'
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Connection Form/Overview/span_Unpublish'), 'Unpublish')
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Overview/span_Unpublish'))
+
+//WebUI.delay(1)
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Connection Form/Overview/div_Yes'), 2)
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Overview/div_Yes'))
 
 WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form/Overview/PublishLinkButton'), 2)
 

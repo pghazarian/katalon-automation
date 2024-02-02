@@ -281,10 +281,10 @@ class TestObjectHelper {
 		}
 		return false;
 	}
-	
+
 	@Keyword
 	def isElementPresent(TestObject to, int timeout) {
-		
+
 		try {
 			KeywordUtil.logInfo("Finding element with id:" + to.getObjectId())
 
