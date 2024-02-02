@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "D7322AA0FE253B08ED3105E86FA7830E",
+  "keywordFileContentHash": "F7225317625177255EC745E03173FD9B",
   "keywordClasses": [
     {
       "name": "customUtility.TestObjectHelper",
@@ -506,6 +506,38 @@
             }
           ],
           "javadoc": "/**\n\t * Check if element present in timeout\n\t * @param to Katalon test object\n\t * @param timeout time to wait for element to show up\n\t * @return true if element present, otherwise false\n\t */"
+        },
+        {
+          "name": "isElementPresent",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "timeout",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
         },
         {
           "name": "getTestObjectWithXpathTextMatch",

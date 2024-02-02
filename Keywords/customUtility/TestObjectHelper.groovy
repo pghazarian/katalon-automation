@@ -281,4 +281,20 @@ class TestObjectHelper {
 		}
 		return false;
 	}
+	
+	@Keyword
+	def isElementPresent(TestObject to, int timeout) {
+		
+		try {
+			KeywordUtil.logInfo("Finding element with id:" + to.getObjectId())
+
+			WebElement element = WebUI.findWebElement(to, timeout)
+			if (element != null) {
+				KeywordUtil.markPassed("Object " + to.getObjectId() + " is present")
+			}
+			return true
+		} catch (Exception e) {
+		}
+		return false;
+	}
 }

@@ -114,6 +114,27 @@ public class FormHelper {
 		// Press <Enter> to select the value
 		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
 	}
+	
+	/**
+	 * Get value for Drop Down component
+	 */
+	@Keyword
+	def String getDropDownSelectionByLabel(String label) {
+
+		def helper = new TestObjectHelper()
+
+		def xpath = "//label[text() = '$label']/parent::div/descendant::span[@class='Select-value-label']"
+
+		def dropdownValueObject = helper.getTestObjectWithXpath(xpath)
+
+		def dropDownValueSpan = WebUI.findWebElement(dropdownValueObject, 0)
+		
+		if (dropDownValueSpan) {
+			return dropDownValueSpan.text
+		}
+		
+		return null
+	}
 
 	@Keyword
 	def String getRadioInputSelectionByLabel(String label) {
@@ -129,15 +150,15 @@ public class FormHelper {
 		def xpath = "//div[text()='$label' or . = '$label']/following-sibling::div[contains(@class, 'checkbox-is-checked')]/label/span"
 
 		def helper = new TestObjectHelper()
-		
+
 		// get a TestObject for the selected items
 		def checkboxContainer = helper.getTestObjectWithXpath(xpath)
-		
+
 		// get web elements based on the TestObject
 		List<WebElement> selectedItems = WebUI.findWebElements(checkboxContainer, 0)
 
 		def selection = ""
-		
+
 		// get comma-separated list of text values from the options
 		for (item in selectedItems) {
 			if (selection.length() > 0)
