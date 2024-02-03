@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Perform a person search, open the record both in Person v2 and Person Edit to verify its information</description>
    <name>People Search without View DOB Permissions</name>
-   <tag>Stage,Smoke</tag>
+   <tag>Stage,Smoke,QA,Dev,Stage2</tag>
    <comment></comment>
    <testCaseGuid>2ebf23a0-a21c-470d-adcd-58efb7a6b51a</testCaseGuid>
    <variableLinks>

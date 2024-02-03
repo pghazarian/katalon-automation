@@ -26,16 +26,15 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Peopl
 WebUI.clearText(findTestObject('HC-Web/Person/Search/SearchInput'))
 
 'Type Search term'
-WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), 
-    SearchTerm)
+WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), SearchTerm)
 
 'Initiate Search'
-WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), 
-    Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Search/TableRowOne'), 0)
 
-SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'("//div[@data-testid='person-personal-info']/div", VerificationName, 1)
+SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@data-testid=\'person-personal-info\']/div', 
+    VerificationName, 1)
 
 PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
 
@@ -54,7 +53,7 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_DOB'
 'Open the person record from the search results'
 WebUI.click(SearchTableCellObject)
 
-WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/PersonName'), 0)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Person/Details/PersonName'), 3)
 
 'Verify the name in the details page'
 WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), VerificationName)
@@ -63,10 +62,12 @@ WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), Veri
 WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
 
 'Verify the first name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/FirstNameInput'), FirstName)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/FirstNameInput'), 
+    FirstName)
 
 'Verify the last name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), LastName)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), 
+    LastName)
 
 'Verify the birthdate label is present'
 WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/Birthdate_Label'), 0)

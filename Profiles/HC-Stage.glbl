@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'/public/connection-form/72/cris-test-connection-form'</initValue>
+      <initValue>'/public/connection-form/3830/zztest-automation-do-not-touch'</initValue>
       <name>ConnectionForm_PublicFormPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
