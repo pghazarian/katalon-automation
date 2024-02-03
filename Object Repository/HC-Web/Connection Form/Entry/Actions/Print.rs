@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Subnav_Members</name>
+   <name>Print</name>
    <tag></tag>
-   <elementGuidId>67f1f3e8-206c-49ef-9ed1-7a65b8afbc42</elementGuidId>
+   <elementGuidId>cb4856fc-6cca-4528-b0c7-b84644f8fb2a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='sectional-tabs-container']/div/div/button[(text() = 'Members' or . = 'Members')]</value>
+         <value>//div[@id='form_entry_editor--actions_print_form']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

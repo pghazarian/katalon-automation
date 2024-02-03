@@ -66,17 +66,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'/public/connection-form/22/zztest'</initValue>
-      <name>ConnectionForm_PublicFormPath</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'/data-capture/connection-forms/22/overview'</initValue>
+      <initValue>'/data-capture/connection-forms/674/overview'</initValue>
       <name>ConnectionForm_FormManagementPath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'//textarea[@id=\'connection_form_public--question_field_34414\']'</initValue>
-      <name>ConnectionForm_InputFieldXPath</name>
+      <initValue>'/public/connection-form/674/zztest-automation-do-not-touch'</initValue>
+      <name>ConnectionForm_PublicFormPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

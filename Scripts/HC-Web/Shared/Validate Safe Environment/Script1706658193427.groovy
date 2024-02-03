@@ -17,21 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Events Central'))
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputui-input--events_search'), 'HC Test Private Event')
-
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputui-input--events_search'), Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('HC-Web/Page_Healthy Church/div_EventTItle'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_EventTitle'), 0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_EventTitle'), 'HC Test Private Event')
-
-WebUI.closeBrowser()
-
+CustomKeywords.'customUtility.TestCaseHelper.isCurrentTestCaseEnvironmentValid'()

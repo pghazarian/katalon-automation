@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "5E00E403CBC348206D744DA5BCABB4A3",
+  "keywordFileContentHash": "7E9243B916556B2D49518509A31E657D",
   "keywordClasses": [
     {
       "name": "customUtility.TestObjectHelper",
@@ -543,9 +543,10 @@
         },
         {
           "name": "verifyStatusCode",
+          "name": "isElementPresent",
           "parameters": [
             {
-              "name": "request",
+              "name": "to",
               "initialExpression": "",
               "type": {
                 "fullClassName": "com.kms.katalon.core.testobject.TestObject",
@@ -558,7 +559,7 @@
               }
             },
             {
-              "name": "expectedStatusCode",
+              "name": "timeout",
               "initialExpression": "",
               "type": {
                 "fullClassName": "int",

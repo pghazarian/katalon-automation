@@ -91,8 +91,6 @@ class TestObjectHelper {
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
 
-	//h3[text()='Single Text' or . = 'Single Text']/following-sibling::div/descendant::input
-
 	//h3[text()='Multiple Choice' or . = 'Multiple Choice']/following-sibling::div/descendant::input/parent::div[contains(@class, 'radio-is-checked')]/descendant::label/span
 
 	@Keyword
@@ -224,22 +222,11 @@ class TestObjectHelper {
 
 		def dateField = getTestObjectWithXpath(xpath)
 
-		def dateToSelect = getFormattedDateForControl(value)
+		def dateToSelect = (new StringHelper()).getUSFormatDateForControl(value)
 
 		WebUI.setText(dateField, dateToSelect)
 
 		WebUI.sendKeys(dateField, Keys.chord(Keys.ENTER))
-	}
-
-	/**
-	 * Get formatted date string for given Date object
-	 */
-	@Keyword
-	def String getFormattedDateForControl(Date date) {
-
-		def sdf = new SimpleDateFormat('MM/dd/yyyy')
-
-		return sdf.format(date)
 	}
 
 	@Keyword
@@ -255,8 +242,8 @@ class TestObjectHelper {
 	@Keyword
 	def verifyTextAreaValueEqual(TestObject object, String valueToCompare) {
 
-		// get the value attribute from the text field
-		def value = WebUI.getAttribute(object, 'innerText')
+		// get the value attribute from the textarea
+		def value = WebUI.getAttribute(object, 'value')
 
 		// verify the field value'
 		WebUI.verifyEqual(value, valueToCompare)
@@ -269,7 +256,7 @@ class TestObjectHelper {
 	@Keyword
 	def clickElement(TestObject to) {
 		try {
-			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
+			WebElement element = WebUI.findWebElement(to, 0);
 			KeywordUtil.logInfo("Clicking element")
 			element.click()
 			KeywordUtil.markPassed("Element has been clicked")
@@ -288,7 +275,7 @@ class TestObjectHelper {
 	 */
 	@Keyword
 	def List<WebElement> getHtmlTableRows(TestObject table, String outerTagName) {
-		WebElement mailList = WebUiBuiltInKeywords.findWebElement(table)
+		WebElement mailList = WebUI.findWebElement(table, 0)
 		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
 		return selectedRows
 	}
@@ -315,73 +302,19 @@ class TestObjectHelper {
 		return false;
 	}
 
-	/**
-	 * Get mobile driver for current session
-	 * @return mobile driver for current session
-	 */
 	@Keyword
-	def WebDriver getCurrentSessionMobileDriver() {
-		return MobileDriverFactory.getDriver();
-	}
+	def isElementPresent(TestObject to, int timeout) {
 
-	/**
-	 * Send request and verify status code
-	 * @param request request object, must be an instance of RequestObject
-	 * @param expectedStatusCode
-	 * @return a boolean to indicate whether the response status code equals the expected one
-	 */
-	@Keyword
-	def verifyStatusCode(TestObject request, int expectedStatusCode) {
-		if (request instanceof RequestObject) {
-			RequestObject requestObject = (RequestObject) request
-			ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
-			if (response.getStatusCode() == expectedStatusCode) {
-				KeywordUtil.markPassed("Response status codes match")
-			} else {
-				KeywordUtil.markFailed("Response status code not match. Expected: " +
-						expectedStatusCode + " - Actual: " + response.getStatusCode() )
+		try {
+			KeywordUtil.logInfo("Finding element with id:" + to.getObjectId())
+
+			WebElement element = WebUI.findWebElement(to, timeout)
+			if (element != null) {
+				KeywordUtil.markPassed("Object " + to.getObjectId() + " is present")
 			}
-		} else {
-			KeywordUtil.markFailed(request.getObjectId() + " is not a RequestObject")
+			return true
+		} catch (Exception e) {
 		}
-	}
-
-	/**
-	 * Add Header basic authorization field,
-	 * this field value is Base64 encoded token from user name and password
-	 * @param request object, must be an instance of RequestObject
-	 * @param username username
-	 * @param password password
-	 * @return the original request object with basic authorization header field added
-	 */
-	@Keyword
-	def addBasicAuthorizationProperty(TestObject request, String username, String password) {
-		if (request instanceof RequestObject) {
-			String authorizationValue = username + ":" + password
-			authorizationValue = "Basic " + authorizationValue.bytes.encodeBase64().toString()
-
-			// Find available basic authorization field and change its value to the new one, if any
-			List<TestObjectProperty> headerProperties = request.getHttpHeaderProperties()
-			boolean fieldExist = false
-			for (int i = 0; i < headerProperties.size(); i++) {
-				TestObjectProperty headerField = headerProperties.get(i)
-				if (headerField.getName().equals('Authorization')) {
-					KeywordUtil.logInfo("Found existent basic authorization field. Replacing its value.")
-					headerField.setValue(authorizationValue)
-					fieldExist = true
-					break
-				}
-			}
-
-			if (!fieldExist) {
-				TestObjectProperty authorizationProperty = new TestObjectProperty("Authorization",
-						ConditionType.EQUALS, authorizationValue, true)
-				headerProperties.add(authorizationProperty)
-			}
-			KeywordUtil.markPassed("Basic authorization field has been added to request header")
-		} else {
-			KeywordUtil.markFailed(request.getObjectId() + "is not a RequestObject")
-		}
-		return request
+		return false;
 	}
 }

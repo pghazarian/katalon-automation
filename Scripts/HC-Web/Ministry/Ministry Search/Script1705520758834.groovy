@@ -18,7 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HC-Web/Navigation/MinistriesCentral'))
 
@@ -35,6 +36,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Search/MinistryRow1_Mini
 
 'Open Ministry'
 WebUI.click(findTestObject('HC-Web/Ministry/Search/MinistryRow1_MinistryName'))
+
+WebUI.delay(1)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
@@ -53,7 +56,11 @@ WebUI.click(LocationRowObject)
 
 MinistryLocationName = ((MinistryName + ' / ') + LocationName)
 
+WebUI.delay(1)
+
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/Drawer2Header'), MinistryLocationName)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_ViewDashboard'))
 

@@ -3,7 +3,7 @@
    <description></description>
    <name>span_Unpublish</name>
    <tag></tag>
-   <elementGuidId>a3a07173-85f8-417a-9484-8d57a64c0a5d</elementGuidId>
+   <elementGuidId>3c69c010-eb4a-49fd-9bfc-4ebe61cd93a7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>9e01d0cc-02b9-48be-9f90-b255b6c28783</webElementGuid>
+      <webElementGuid>22759661-ecbc-40a5-a6bf-9ccfb5e1eaf4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui a jss358 jss273</value>
-      <webElementGuid>905f2647-a51b-4de8-bdd2-0a2c835267e7</webElementGuid>
+      <webElementGuid>e28bfdf1-480e-46f1-87e7-1a1fe823979f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>connection_forms--details--publish_unpublish_link</value>
-      <webElementGuid>183071ec-bc6f-4714-aae5-87280d91a1a1</webElementGuid>
+      <webElementGuid>fc4c7108-f2fe-49a6-953d-a5bb7254828a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>role</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>af96aa0d-499a-4802-b7da-6972dde07b39</webElementGuid>
+      <webElementGuid>64c63ed7-13ef-4620-a510-8b9566b16d53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>bfa91dc7-e4a7-4a8f-a880-ddd2f8d81ce8</webElementGuid>
+      <webElementGuid>97d1f40d-9e6c-4ff3-8294-b1b4fe52502d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Unpublish</value>
-      <webElementGuid>9fcac38e-8f09-4e81-bb40-eb2525ea415e</webElementGuid>
+      <webElementGuid>f8695b94-72cc-4c63-b64f-12e661ab567b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;connection_forms--details--publish_unpublish_link&quot;)</value>
-      <webElementGuid>9ed5b490-70fa-45fc-8845-6002c6b16343</webElementGuid>
+      <webElementGuid>b35ac254-e7b2-469a-ac63-5b8fa18a06be</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//span[@id='connection_forms--details--publish_unpublish_link']</value>
-      <webElementGuid>95c30935-299f-40ef-b72a-eb63bf20db12</webElementGuid>
+      <webElementGuid>71c9bbfc-d616-4853-9470-5598f6af1262</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/section/div[2]/div/div/div/div/div[2]/div/div[7]/div/div/ul/li[3]/div/div/span</value>
-      <webElementGuid>2021bb7c-fedc-4a81-9dbf-a3f553605cd6</webElementGuid>
+      <webElementGuid>1b0a9443-f90a-42d4-a174-dc63e6f49161</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[3]/div/div/span</value>
-      <webElementGuid>3b62c8f2-7581-421a-8832-a1693127d570</webElementGuid>
+      <webElementGuid>c3f24de2-863b-4320-ae97-3e7d17f5076a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[@id = 'connection_forms--details--publish_unpublish_link' and (text() = 'Unpublish' or . = 'Unpublish')]</value>
-      <webElementGuid>6c0f4507-d40d-4040-86f5-b55f98f2c718</webElementGuid>
+      <webElementGuid>2b894c60-e3ed-4ff1-86fb-67ad538ac98a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

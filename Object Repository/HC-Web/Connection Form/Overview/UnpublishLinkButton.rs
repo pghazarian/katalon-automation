@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Subnav_Members</name>
+   <name>UnpublishLinkButton</name>
    <tag></tag>
-   <elementGuidId>67f1f3e8-206c-49ef-9ed1-7a65b8afbc42</elementGuidId>
+   <elementGuidId>fc39e704-5e89-43df-9f38-f3f33f13eb9f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//span[@id='connection_forms--details--publish_unpublish_link' and text()='Unpublish']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='sectional-tabs-container']/div/div/button[(text() = 'Members' or . = 'Members')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

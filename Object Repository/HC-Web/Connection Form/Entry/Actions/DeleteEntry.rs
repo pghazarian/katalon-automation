@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Subnav_Members</name>
+   <name>DeleteEntry</name>
    <tag></tag>
-   <elementGuidId>67f1f3e8-206c-49ef-9ed1-7a65b8afbc42</elementGuidId>
+   <elementGuidId>a22def2f-7bf5-43c2-91d6-9294938a6137</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='sectional-tabs-container']/div/div/button[(text() = 'Members' or . = 'Members')]</value>
+         <value>//div[@id='form_entry_editor--actions_delete_entry']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

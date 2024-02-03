@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Publish a connection form, go to the public rendering of the form, verify that that the authenticated user's personal info (email, first and last name) are populated, submit the form and verify that it was successful, and unpublish the form.</description>
    <name>Connection Form Public Authenticated</name>
-   <tag>Production,Stage</tag>
+   <tag>Stage,Smoke,QA,Dev,Stage2,Production</tag>
    <comment></comment>
    <testCaseGuid>02c4adeb-221b-4412-ab72-eb74329107cf</testCaseGuid>
    <variableLinks>
@@ -17,12 +17,6 @@
       <value></value>
       <variableId>1509d933-8280-475f-a59b-8341f842b6c3</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>2cc39384-c1f2-43e7-9953-e89b09ab870d</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>GlobalVariable.ConnectionForm_PublicFormPath</defaultValue>
       <description></description>
@@ -36,12 +30,5 @@
       <id>1509d933-8280-475f-a59b-8341f842b6c3</id>
       <masked>false</masked>
       <name>ConnectionFormManagementPath</name>
-   </variable>
-   <variable>
-      <defaultValue>GlobalVariable.ConnectionForm_InputFieldXPath</defaultValue>
-      <description></description>
-      <id>2cc39384-c1f2-43e7-9953-e89b09ab870d</id>
-      <masked>false</masked>
-      <name>FormInputFieldXPath</name>
    </variable>
 </TestCaseEntity>

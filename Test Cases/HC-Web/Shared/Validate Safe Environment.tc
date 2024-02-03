@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Helper test case to validate the environment info based on the tags</description>
+   <name>Validate Safe Environment</name>
+   <tag>QA,Dev,Stage2,Production,Stage</tag>
+   <comment></comment>
+   <testCaseGuid>69b43d8b-46a3-4b51-900e-023348662de7</testCaseGuid>
+</TestCaseEntity>
