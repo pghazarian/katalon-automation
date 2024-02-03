@@ -18,24 +18,23 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.User_NoViewDOBPermissions_UserName
+        , ('Password') : GlobalVariable.User_NoViewDOBPermissions_Password], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_People'))
 
 WebUI.clearText(findTestObject('HC-Web/Person/Search/SearchInput'))
 
 'Type Search term'
-WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), 
-    SearchTerm)
+WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), SearchTerm)
 
 'Initiate Search'
-WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), 
-    Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Search/TableRowOne'), 0)
 
-SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'("//div[@data-testid='person-personal-info']/div", VerificationName, 1)
+SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@data-testid=\'person-personal-info\']/div', 
+    VerificationName, 1)
 
 PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
 
@@ -48,8 +47,8 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_Pers
 'Verify that the Email Column is visible'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_Email'))
 
-'Verify that the DOB Column is visible'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_DOB'))
+'Verify that the DOB Column is not visible'
+WebUI.verifyElementNotVisible(findTestObject('HC-Web/Person/Search/TableColumn_DOB'))
 
 'Open the person record from the search results'
 WebUI.click(SearchTableCellObject)
@@ -68,11 +67,11 @@ CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTe
 'Verify the last name field value'
 CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), LastName)
 
-'Verify the birthdate label is present'
-WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/Birthdate_Label'), 0)
+'Verify the birthdate label is not present'
+WebUI.verifyElementNotPresent(findTestObject('HC-Web/Person/Details/Birthdate_Label'), 0)
 
-'Verify the birthdate text field is present'
-WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/Birthdate_TextField'), 0)
+'Verify the birthdate text field is not present'
+WebUI.verifyElementNotPresent(findTestObject('HC-Web/Person/Details/Birthdate_TextField'), 0)
 
 WebUI.closeBrowser()
 

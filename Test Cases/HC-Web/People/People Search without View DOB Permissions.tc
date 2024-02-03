@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Perform a person search, open the record both in Person v2 and Person Edit to verify its information</description>
+   <name>People Search without View DOB Permissions</name>
+   <tag>Production,Stage,Dev,Stage2,QA,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>2ebf23a0-a21c-470d-adcd-58efb7a6b51a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ceb1cc50-4cfd-4463-959b-6ff71865c454</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>75ec749b-b741-4079-891c-8b2d5a4d66cd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>18683f48-408e-4372-a12b-c593f2d9bf5e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2a8c870e-87d5-403f-b77a-c0564cd00258</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.PeopleSearch_SearchTerm</defaultValue>
+      <description></description>
+      <id>ceb1cc50-4cfd-4463-959b-6ff71865c454</id>
+      <masked>false</masked>
+      <name>SearchTerm</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.PeopleSearch_VerificationName</defaultValue>
+      <description></description>
+      <id>75ec749b-b741-4079-891c-8b2d5a4d66cd</id>
+      <masked>false</masked>
+      <name>VerificationName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.PeopleSearch_FirstName</defaultValue>
+      <description></description>
+      <id>18683f48-408e-4372-a12b-c593f2d9bf5e</id>
+      <masked>false</masked>
+      <name>FirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.PeopleSearch_LastName</defaultValue>
+      <description></description>
+      <id>2a8c870e-87d5-403f-b77a-c0564cd00258</id>
+      <masked>false</masked>
+      <name>LastName</name>
+   </variable>
+</TestCaseEntity>
