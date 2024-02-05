@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_ActionsActionsExport Occurrence Roster _b92df0</name>
+   <name>OccurrenceScheduleActionsDropdown_div</name>
    <tag></tag>
    <elementGuidId>96db0898-c97a-4d58-8028-33a1e009e078</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#occurrence_schedule--actions_dropdown_button</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='occurrence_schedule--actions_dropdown_button']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#occurrence_schedule--actions_dropdown_button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>b9d91812-2119-42d6-9f91-0d55323a24f3</webElementGuid>
+      <webElementGuid>9af90815-d398-4062-ab4e-883f20bcc8ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui dropdown prompt-action dropdown-button dropdown-color-alternate dropdown-menu-theme-dark</value>
-      <webElementGuid>adfe6aba-6c4f-453f-a424-4e3df9d928be</webElementGuid>
+      <webElementGuid>6cc3cbdc-dcf4-4d44-b5e3-122a11cc10d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>occurrence_schedule--actions_dropdown_button</value>
-      <webElementGuid>be7f7bd3-68bc-4c9e-b1cb-7541df6ca927</webElementGuid>
+      <webElementGuid>324029dd-6c2a-43b2-9958-065fb4ffba19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>ActionsActionsExport Occurrence Roster (CSV)Export Occurrence Roster (XLSX)Cancel Occurrence</value>
-      <webElementGuid>52576c48-cd60-49c7-b6e6-a3ebf3c5d227</webElementGuid>
+      <webElementGuid>91257b83-788c-4929-9b5f-a015c3f40894</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;occurrence_schedule--actions_dropdown_button&quot;)</value>
-      <webElementGuid>0d9908cd-db97-49b0-9143-5dc9e87b0b95</webElementGuid>
+      <webElementGuid>2423462e-fdba-41ed-9238-7da860dee55d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,30 +62,6 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='occurrence_schedule--actions_dropdown_button']</value>
-      <webElementGuid>2f717f6d-6570-4b3c-8d87-c0cc1dc969fb</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='occurrence_schedule--actions_prompt']/div/div</value>
-      <webElementGuid>5dbc6175-0ac1-4b7c-af7a-9dfe6fa40fc1</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[5]/div/div</value>
-      <webElementGuid>8e2a5540-d981-4403-9214-4f286d4d3d1b</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//div[@id = 'occurrence_schedule--actions_dropdown_button' and (text() = 'ActionsActionsExport Occurrence Roster (CSV)Export Occurrence Roster (XLSX)Cancel Occurrence' or . = 'ActionsActionsExport Occurrence Roster (CSV)Export Occurrence Roster (XLSX)Cancel Occurrence')]</value>
-      <webElementGuid>9761e352-143a-4e7d-8b70-1a21d6a5f814</webElementGuid>
+      <webElementGuid>693df891-7321-4a2f-9ede-cee91f150f3b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

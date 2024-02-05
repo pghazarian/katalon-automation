@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Select Campus</name>
+   <name>span_Overview</name>
    <tag></tag>
-   <elementGuidId>082eba82-739b-4997-ba53-b998f1145c23</elementGuidId>
+   <elementGuidId>11879d1f-33ca-4087-9746-5ac6ca653f21</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.Select-placeholder</value>
+         <key>XPATH</key>
+         <value>//button[@id='tab-navigation_tab--key-item-0']/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='react-select-3--value']/div</value>
+         <key>CSS</key>
+         <value>span.MuiTypography-root.jss763.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,55 +21,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>1761a204-7c0b-488b-b893-647a56123f75</webElementGuid>
+      <value>span</value>
+      <webElementGuid>49544eee-3368-4c4a-9257-8619f1676ec6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>Select-placeholder</value>
-      <webElementGuid>f8d81a49-36c6-4937-a09a-cf600ff1081c</webElementGuid>
+      <value>MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
+      <webElementGuid>924520ab-ff68-4d91-a5db-510c012a1ac1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Select Campus</value>
-      <webElementGuid>3c285943-611d-40ab-a048-54e03f6d4934</webElementGuid>
+      <value>Overview</value>
+      <webElementGuid>d57c58a5-56d7-4e82-9619-8b49d0a2f219</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;react-select-3--value&quot;)/div[@class=&quot;Select-placeholder&quot;]</value>
-      <webElementGuid>40e031fc-333f-43fb-910a-6c5995fc86ad</webElementGuid>
+      <value>id(&quot;tab-navigation_tab--key-item-0&quot;)/span[@class=&quot;MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
+      <webElementGuid>14e9cc2b-0e85-4ab4-8dfd-b4b6f5d6686f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='react-select-3--value']/div</value>
-      <webElementGuid>4e700de9-33b6-4d9f-854c-244ff63a9db8</webElementGuid>
+      <value>//button[@id='tab-navigation_tab--key-item-0']/span</value>
+      <webElementGuid>6d7fb398-a25b-4e7b-9e20-cf74cd866912</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div[2]/div/div</value>
-      <webElementGuid>81562faa-833a-48d6-a3b2-48585c8618e0</webElementGuid>
+      <value>//button/span</value>
+      <webElementGuid>d20bf01a-4955-4fc6-a9f9-88d36961c349</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Select Campus' or . = 'Select Campus')]</value>
-      <webElementGuid>54c0604a-35ab-4bee-98d0-f972a327136d</webElementGuid>
+      <value>//span[(text() = 'Overview' or . = 'Overview')]</value>
+      <webElementGuid>a0b10570-cbcf-49b3-ac46-18ace3569f9e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

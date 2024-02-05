@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_ActionsActionsCancelDuplicate</name>
+   <name>button_Save</name>
    <tag></tag>
-   <elementGuidId>05fb7ca4-e654-43e1-9411-418812da3103</elementGuidId>
+   <elementGuidId>a2e48288-95ba-46ab-b9cb-1f2a21863c91</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#event_details--actions_dropdown</value>
+         <key>XPATH</key>
+         <value>(//button[@id='journeys_list_page--edit_details_button'])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='event_details--actions_dropdown']</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,71 +20,71 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>10a2cb41-b854-4140-8258-2e2426b528d3</webElementGuid>
+      <value>button</value>
+      <webElementGuid>1dc20bd6-9cd3-45ed-921c-9a97704e501a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui dropdown prompt-action dropdown-button dropdown-color-alternate dropdown-menu-theme-dark</value>
-      <webElementGuid>2a936b03-3f6e-4012-a889-d810c07462b7</webElementGuid>
+      <value>ui button jss243 jss780 jss255</value>
+      <webElementGuid>1692d5b7-c17a-4641-ae06-08c8f2724a54</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>event_details--actions_dropdown</value>
-      <webElementGuid>6f93bf04-6e31-408f-9d4f-2a7b95b82c00</webElementGuid>
+      <value>journeys_list_page--edit_details_button</value>
+      <webElementGuid>1d11cb18-5cac-49f4-83b8-a54bf5f53da7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>ActionsActionsCancelDuplicate</value>
-      <webElementGuid>b3e228dc-1e32-4e00-8caf-ca5f59817dea</webElementGuid>
+      <value>Save</value>
+      <webElementGuid>37fa7385-b4a6-47e5-9f45-1f97e07c3f49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;event_details--actions_dropdown&quot;)</value>
-      <webElementGuid>b5bea3ca-897d-479f-88b8-68b5f971dec4</webElementGuid>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss777 page-has_action_bar&quot;]/header[@class=&quot;ui page--action_bar action_bar&quot;]/div[1]/div[@class=&quot;cmui grid jss7 action_bar--grid jss13 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 action_bar--grid_column&quot;]/button[@id=&quot;journeys_list_page--edit_details_button&quot;]</value>
+      <webElementGuid>65226d3c-83c3-40f9-b21e-f6778f3b0daa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='event_details--actions_dropdown']</value>
-      <webElementGuid>eaed6083-f0cc-45e9-ae62-d3697092dcdb</webElementGuid>
+      <value>(//button[@id='journeys_list_page--edit_details_button'])[2]</value>
+      <webElementGuid>db52513e-eb38-4d8a-9284-4dc4763d7765</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='ui-prompt--event_action']/div/div</value>
-      <webElementGuid>97bc111e-9e94-4fbb-9d53-febd6ee8b519</webElementGuid>
+      <value>//div[@id='layout']/div[2]/div/main/header/div/div/div[2]/button</value>
+      <webElementGuid>c629fef0-d682-44f3-a1a6-ed53444311aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//header/div/div/div/div/div/div</value>
-      <webElementGuid>a198b0c9-2b92-4a23-96f0-f99e18853bf5</webElementGuid>
+      <value>//div[2]/button</value>
+      <webElementGuid>82423b5e-94bc-4f98-bbb2-3ff0bd2a7e05</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[@id = 'event_details--actions_dropdown' and (text() = 'ActionsActionsCancelDuplicate' or . = 'ActionsActionsCancelDuplicate')]</value>
-      <webElementGuid>5a82c0e2-5724-41f4-9c85-868c4f6f4090</webElementGuid>
+      <value>//button[@id = 'journeys_list_page--edit_details_button' and (text() = 'Save' or . = 'Save')]</value>
+      <webElementGuid>58364280-ce1c-447a-86e9-b6a4ee0064e3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

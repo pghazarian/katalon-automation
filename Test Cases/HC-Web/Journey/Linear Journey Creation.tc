@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Linear Journey Creation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0fee36da-850c-4be5-a833-d5ba61a4bc8b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>695ad43a-07bf-4d1b-8e08-cae893b1c17d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Katalon Test Journey'</defaultValue>
+      <description></description>
+      <id>695ad43a-07bf-4d1b-8e08-cae893b1c17d</id>
+      <masked>false</masked>
+      <name>JourneyName</name>
+   </variable>
+</TestCaseEntity>

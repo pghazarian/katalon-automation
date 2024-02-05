@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_N
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Create New Event'))
 
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', 'Anaheim')
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', campus)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/label_Campus Event'))
 
@@ -35,13 +35,13 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/inpu
     'Katalon Test Event')
 
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
-    'Baptism')
+    category)
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/Event Description Textbox'), 'Test Event for Katalon Automation')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Add Venue(s) from this Campus'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Anaheim Main Worship Center  Capacity 2010'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/FirstVenueDropdownOption_div'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Create'))
 
@@ -53,10 +53,12 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_A
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_For This Occurrence'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputperson_search_form--search_input'), 'Garrett Clover')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputperson_search_form--search_input'), attendee)
 
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputperson_search_form--search_input'), Keys.chord(
         Keys.ENTER))
+
+WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Event Creation/First Person Record Result'), 0)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Person Record Result'))
 
@@ -64,23 +66,19 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/button
 
 WebUI.click(findTestObject('HC-Web/Event/Event Creation/Select Attendee Confirmation'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Garrett  Clover'), 'Garrett Clover')
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Event Creation/AttendeeNames_div'), attendee)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Attendee Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_ActionsActionsMark AttendedRemove From _368a48'))
+WebUI.click(findTestObject('HC-Web/Event/Event Creation/OccurrenceScheduleActionsDropdown_div'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Mark Attended'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Attended'), 'Attended')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_ActionsActionsExport Occurrence Roster _b92df0'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Tuesday, January 30th1000 am - 1100 amC_9bdb47'))
-
 WebUI.click(findTestObject('HC-Web/Event/Event Creation/First Attendee Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Actions'))
+WebUI.click(findTestObject('HC-Web/Event/Event Creation/OccurrenceScheduleActionsDropdown_div'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Remove From This Occurrence'))
 
@@ -88,7 +86,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Ye
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Overview'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_ActionsActionsCancelDuplicate'))
+WebUI.click(findTestObject('HC-Web/Event/Event Creation/OverviewActionsDropdown_div'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Cancel'))
 

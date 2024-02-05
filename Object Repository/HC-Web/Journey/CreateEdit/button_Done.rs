@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_chevron-downNew EventCreate New Even_149b56</name>
+   <name>button_Done</name>
    <tag></tag>
-   <elementGuidId>cb9c70e9-5cbf-4873-9114-96dd4be940f6</elementGuidId>
+   <elementGuidId>929319e3-f990-4cff-8fc8-d59a3433959b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ui-dropdown--events_new_event</value>
+         <key>XPATH</key>
+         <value>//button[@id='journeys_list_page--step_done_button']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='ui-dropdown--events_new_event']</value>
+         <key>CSS</key>
+         <value>#journeys_list_page--step_done_button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,78 +22,78 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>11ffeb92-60a6-4cf8-accb-59b885ad1df1</webElementGuid>
+      <webElementGuid>8044f3e1-b26f-41d7-8a17-73e72bf4c4e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
+      <name>data-testid</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>7cc3b93c-9f24-4e89-b4ec-bf701107bceb</webElementGuid>
+      <value>journey_step_done_button</value>
+      <webElementGuid>fb4536fd-06e0-4c8f-b868-0a17da39e79d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui button jss243 jss388 jss205 button_dropdown jss255</value>
-      <webElementGuid>24f0983b-5aa3-408a-afb0-c12593f56831</webElementGuid>
+      <value>ui button jss243 jss855 jss255</value>
+      <webElementGuid>bcb3835c-56db-4be9-91a6-df3b3cd7a613</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ui-dropdown--events_new_event</value>
-      <webElementGuid>d20fe5f5-4998-455d-9cf8-a4574548a5ec</webElementGuid>
+      <value>journeys_list_page--step_done_button</value>
+      <webElementGuid>9daa74ed-f924-41ef-abe0-ee84e072f34f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>chevron-downNew EventCreate New EventRequest Paid Event</value>
-      <webElementGuid>f0cd48e9-8d1f-49f3-8bb1-ea1a34777899</webElementGuid>
+      <value>Done</value>
+      <webElementGuid>b117cbe1-9cf3-4206-b960-de9bae39c398</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ui-dropdown--events_new_event&quot;)</value>
-      <webElementGuid>d5275fdc-b231-4771-9d0d-b170c584a1ec</webElementGuid>
+      <value>id(&quot;journeys_list_page--step_done_button&quot;)</value>
+      <webElementGuid>f7fcdbb6-8899-434e-8ba4-b2fdf8516d34</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@id='ui-dropdown--events_new_event']</value>
-      <webElementGuid>97298cc4-71f1-49f0-9ec7-5a863bf172a8</webElementGuid>
+      <value>//button[@id='journeys_list_page--step_done_button']</value>
+      <webElementGuid>1cc2c3c0-7668-474d-93ab-26a0062d0f1c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div/div[3]/button</value>
-      <webElementGuid>1c1e8bec-9ea8-4a4a-af68-ec88452da6b0</webElementGuid>
+      <value>//div[@id='layout']/div[2]/div/main/div/div/div/div/div[2]/div[7]/button[2]</value>
+      <webElementGuid>1651fe97-710e-4b99-983f-08f30990d8b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/button</value>
-      <webElementGuid>f77085a1-7d08-4e6b-9c91-b3ffa082e324</webElementGuid>
+      <value>//div[7]/button[2]</value>
+      <webElementGuid>a3223daf-b308-4f8f-8754-ac621b75c0ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@id = 'ui-dropdown--events_new_event' and (text() = 'chevron-downNew EventCreate New EventRequest Paid Event' or . = 'chevron-downNew EventCreate New EventRequest Paid Event')]</value>
-      <webElementGuid>444effa9-c92b-4001-aab6-23efb1f4f530</webElementGuid>
+      <value>//button[@id = 'journeys_list_page--step_done_button' and (text() = 'Done' or . = 'Done')]</value>
+      <webElementGuid>b0f28393-bba5-45e2-86dc-5d48146ddbad</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "ADEA19D64DFCDE950F6E2E73CBD8C85E",
+  "keywordFileContentHash": "537663E626CD85CE3C5651AA2B0F04EE",
   "keywordClasses": [
     {
       "name": "customUtility.StringHelper",
@@ -72,7 +72,7 @@
               }
             }
           ],
-          "javadoc": "/**\n\t * Get U.S. formatted date string for given Date object\n\t */"
+          "javadoc": "/**\r\n\t * Get U.S. formatted date string for given Date object\r\n\t */"
         },
         {
           "name": "getIsoFormatDate",
@@ -91,7 +91,7 @@
               }
             }
           ],
-          "javadoc": "/**\n\t * Get ISO formatted date string for given Date object\n\t */"
+          "javadoc": "/**\r\n\t * Get ISO formatted date string for given Date object\r\n\t */"
         }
       ]
     }

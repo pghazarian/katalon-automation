@@ -101,11 +101,13 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputperson_
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Serving Opps/inputperson_search_form--search_input'), Keys.chord(
         Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_GC Garrett  Clover Male  Lake ForestId 7801492'))
+WebUI.waitForElementClickable(findTestObject('HC-Web/Serving Opps/div_PeopleSearchDrawerResults'), 0)
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_PeopleSearchDrawerResults'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Select_1'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_Yes'))
+WebUI.click(findTestObject('HC-Web/Serving Opps/div_Yes_PersonSearchDrawer'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1_2_3'))
 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Actions</name>
+   <name>span_Continue</name>
    <tag></tag>
-   <elementGuidId>696ab6a0-0d7e-48b7-9e18-f99ec6425caf</elementGuidId>
+   <elementGuidId>75a3d547-8d24-49c9-a3c3-705fdf932594</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>span.dropdown-selection-value</value>
+         <key>XPATH</key>
+         <value>//button[@id='journey_add_drawer--action_bar_add_button']/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='occurrence_schedule--actions_dropdown_button']/span</value>
+         <key>CSS</key>
+         <value>#journey_add_drawer--action_bar_add_button > span.button-inner-container.jss208</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,54 +22,54 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>06d46724-66a0-472d-98ee-01a1567f6f1e</webElementGuid>
+      <webElementGuid>b1ed4efd-02b9-4e52-bd12-e7eb9a810b98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dropdown-selection-value</value>
-      <webElementGuid>22d11e17-57a7-49e4-b74d-ade9d13d36c9</webElementGuid>
+      <value>button-inner-container jss208</value>
+      <webElementGuid>03bbc138-0bb5-4bed-bb19-62a2eab1990f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Actions</value>
-      <webElementGuid>cc12699d-7139-4453-8773-44a90abd4be6</webElementGuid>
+      <value>Continue</value>
+      <webElementGuid>2cf90977-5266-4233-93dd-309a28e2256b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;occurrence_schedule--actions_dropdown_button&quot;)/span[@class=&quot;dropdown-selection-value&quot;]</value>
-      <webElementGuid>0b1022da-1dc8-485b-9436-876ad581a606</webElementGuid>
+      <value>id(&quot;journey_add_drawer--action_bar_add_button&quot;)/span[@class=&quot;button-inner-container jss208&quot;]</value>
+      <webElementGuid>bafb4ab4-bff4-4cce-8319-0419bff5b58d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='occurrence_schedule--actions_dropdown_button']/span</value>
-      <webElementGuid>5bda56f0-93f5-45ec-890f-efe49767555e</webElementGuid>
+      <value>//button[@id='journey_add_drawer--action_bar_add_button']/span</value>
+      <webElementGuid>2a5a52cc-f570-4844-8f70-6b76a41b0bc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[5]/div/div/span</value>
-      <webElementGuid>69709ade-70cc-43e3-8591-de98637cc0ba</webElementGuid>
+      <value>//header/div/div/div[2]/button/span</value>
+      <webElementGuid>e86a2b6a-cc3b-4d73-90d6-06275d6a1439</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Actions' or . = 'Actions')]</value>
-      <webElementGuid>63fbe343-bf4d-4d53-ae65-22af72ee698c</webElementGuid>
+      <value>//span[(text() = 'Continue' or . = 'Continue')]</value>
+      <webElementGuid>af09ca65-ab96-4d76-98d3-631e9099ad62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

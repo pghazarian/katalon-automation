@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_sbchcqagmail.com</name>
+   <name>div_JourneyJourney(beta)</name>
    <tag></tag>
-   <elementGuidId>16f64406-cba2-4126-82db-4aa3cd97d95c</elementGuidId>
+   <elementGuidId>280c007d-04f7-4591-b707-2cb0979d6d20</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.jss511</value>
+         <key>XPATH</key>
+         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[7]/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//td[@id='data_grid--table_user_search_drawer--data_grid_cell_base-2_0']/div/div/div[2]/div[2]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,54 +21,54 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>a9e16fd7-b8fe-4e53-894b-98112823a803</webElementGuid>
+      <webElementGuid>bb4d34b2-cc17-450e-a0fd-d566be70096c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>jss511</value>
-      <webElementGuid>64107fd4-4968-4261-b977-fef156f5d51f</webElementGuid>
+      <value>section-label-container</value>
+      <webElementGuid>33447519-3d20-454c-b2fd-dc48038d4895</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>sbchcqa@gmail.com</value>
-      <webElementGuid>1bd3ce6f-ae93-44fd-843a-407481a4b113</webElementGuid>
+      <value>JourneyJourney(beta)</value>
+      <webElementGuid>3e396412-b305-4339-be8f-95145f023573</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;data_grid--table_user_search_drawer--data_grid_cell_base-2_0&quot;)/div[@class=&quot;jss506&quot;]/div[@class=&quot;jss509&quot;]/div[@class=&quot;jss508&quot;]/div[@class=&quot;jss511&quot;]</value>
-      <webElementGuid>3ed9df0c-45b0-43e7-9380-3bf1f552a7a8</webElementGuid>
+      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss273&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]</value>
+      <webElementGuid>47bc816e-cf46-450e-b353-69a8f84f2db6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//td[@id='data_grid--table_user_search_drawer--data_grid_cell_base-2_0']/div/div/div[2]/div[2]</value>
-      <webElementGuid>31f58840-6885-40dd-8251-da11d3530a77</webElementGuid>
+      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[7]/div</value>
+      <webElementGuid>c9508b54-31e8-477b-8aac-4de7e7a72a5c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/div/div/div[2]/div[2]</value>
-      <webElementGuid>0bfd8d9d-2560-4950-9958-968529369788</webElementGuid>
+      <value>//li[7]/div</value>
+      <webElementGuid>dab4aeed-0199-41df-b5ff-982dcdb21fb3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'sbchcqa@gmail.com' or . = 'sbchcqa@gmail.com')]</value>
-      <webElementGuid>28bb539c-b498-446a-b646-3be3ef6c3a4f</webElementGuid>
+      <value>//div[(text() = 'JourneyJourney(beta)' or . = 'JourneyJourney(beta)')]</value>
+      <webElementGuid>99e23df9-0ab9-4f63-97f6-d5f6c8674b48</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

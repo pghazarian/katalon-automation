@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_123</name>
+   <name>div_Anaheim</name>
    <tag></tag>
-   <elementGuidId>d324c6b9-1b24-42b9-82b2-dcae29a519b0</elementGuidId>
+   <elementGuidId>8b54949f-13bc-47bd-a1c5-d973895bb420</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//div[@id='react-select-3--list']/div/div/div/div)[52]</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>div.Select-option.is-focused</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>(//div[@id='react-select-4--list']/div/div/div/div)[88]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>8381e78a-8677-4fa1-9a2c-273c3535b46d</webElementGuid>
+      <webElementGuid>cec2bc89-2445-40a0-a271-8fe12b912be5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>9d9780e9-2ccb-4ce8-8c1f-d7f8205df9e2</webElementGuid>
+      <webElementGuid>b8c77800-4aca-4749-a11c-a937349c5c91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Select-option is-focused</value>
-      <webElementGuid>de23a188-627d-46e6-b1ea-bb6773c14539</webElementGuid>
+      <webElementGuid>ad14b838-3249-41c3-8000-bc179b31298b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>5af4c7cb-8ae0-4688-a7b4-98c188865de5</webElementGuid>
+      <webElementGuid>f2652467-a608-4bf3-9144-8fd776edea04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,46 +54,46 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>eb1687ed-b4cb-4a55-b934-07c8b0374251</webElementGuid>
+      <webElementGuid>bee2c754-09c9-4004-b2be-0a42661d1d16</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>123</value>
-      <webElementGuid>d3f110f9-c055-4a0a-b318-f7555bd28b8c</webElementGuid>
+      <value>Anaheim</value>
+      <webElementGuid>2d033e19-6482-4837-894e-90066b76af9a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;event_details_basic_info--event_category&quot;)/div[@class=&quot;Select is-focused is-open is-searchable Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-4--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
-      <webElementGuid>233986b5-cf79-4a7e-b087-35f5073e02bd</webElementGuid>
+      <value>id(&quot;journeys_list_page--field_campus&quot;)/div[@class=&quot;Select has-value is-focused is-open is-searchable Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-3--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
+      <webElementGuid>33d0e5a2-3580-4b2c-94f3-2000fb98a389</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(//div[@id='react-select-4--list']/div/div/div/div)[88]</value>
-      <webElementGuid>601f7a83-872e-4e99-9660-d36ac5be5497</webElementGuid>
+      <value>(//div[@id='react-select-3--list']/div/div/div/div)[52]</value>
+      <webElementGuid>376d1b46-6fba-4bc7-98a8-2a9665bcdb61</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div[3]/div/div/div/div/div</value>
-      <webElementGuid>68b748a9-4db3-4e8e-92b6-5b648671f229</webElementGuid>
+      <value>//div[2]/div/div[3]/div/div/div/div/div</value>
+      <webElementGuid>0dd3bff0-ad1f-4bd1-a2d7-dff0116051b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = '123' or . = '123')]</value>
-      <webElementGuid>e8b78df1-43ad-434b-8aae-a1db32bdbd38</webElementGuid>
+      <value>//div[(text() = 'Anaheim' or . = 'Anaheim')]</value>
+      <webElementGuid>da6e5f02-c0a3-4bc7-830f-73216990e5e1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_QAQA Automation Adminsbchcqagmail.com</name>
+   <name>div_New SectionNew Section Subtitle0 Steps Total</name>
    <tag></tag>
-   <elementGuidId>b02b6832-2ffd-4ced-9bd1-f2125ee027a6</elementGuidId>
+   <elementGuidId>901a799d-70ac-4814-828f-44e49bf34adf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.jss525</value>
+         <key>XPATH</key>
+         <value>//div[@id='journeys_list_page--journey_card_0']/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//td[@id='data_grid--table_user_search_drawer--data_grid_cell_base-2_0']/div/div</value>
+         <key>CSS</key>
+         <value>div.jss834</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,54 +22,54 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>f4e424b4-261d-4ff1-822c-e1979cae0d06</webElementGuid>
+      <webElementGuid>2b045679-ad32-4131-a301-f508246798ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>jss525</value>
-      <webElementGuid>ca5e20ff-6167-49bf-b79c-4d778741f1c1</webElementGuid>
+      <value>jss834</value>
+      <webElementGuid>20465c34-6bce-4190-b97f-b959054b06da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>QAQA Automation Adminsbchcqa@gmail.com</value>
-      <webElementGuid>afc5c9f3-bcd7-4753-9210-652beaf48fad</webElementGuid>
+      <value>New SectionNew Section Subtitle0 Steps Total</value>
+      <webElementGuid>642572f5-7478-4930-8013-98cbb09ea836</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;data_grid--table_user_search_drawer--data_grid_cell_base-2_0&quot;)/div[@class=&quot;jss522&quot;]/div[@class=&quot;jss525&quot;]</value>
-      <webElementGuid>b980af15-1b99-4d1e-81a0-899638980df4</webElementGuid>
+      <value>id(&quot;journeys_list_page--journey_card_0&quot;)/div[@class=&quot;jss834&quot;]</value>
+      <webElementGuid>cb4b1456-6f36-477b-9fc0-f10e54e07b02</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//td[@id='data_grid--table_user_search_drawer--data_grid_cell_base-2_0']/div/div</value>
-      <webElementGuid>3d2bb268-542a-4f87-a203-2312a4bd0d6c</webElementGuid>
+      <value>//div[@id='journeys_list_page--journey_card_0']/div</value>
+      <webElementGuid>ca33ea9a-041d-495e-9577-94fc63916f00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/div/div</value>
-      <webElementGuid>c61a58b2-dc1c-4afb-bb55-8121cc28010e</webElementGuid>
+      <value>//div[3]/div[3]/div/div/div</value>
+      <webElementGuid>6b6f3403-f240-4ecf-a487-66f33f712b90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'QAQA Automation Adminsbchcqa@gmail.com' or . = 'QAQA Automation Adminsbchcqa@gmail.com')]</value>
-      <webElementGuid>a62b8537-559b-4d75-90d2-b34f0b79ccf3</webElementGuid>
+      <value>//div[(text() = 'New SectionNew Section Subtitle0 Steps Total' or . = 'New SectionNew Section Subtitle0 Steps Total')]</value>
+      <webElementGuid>ee846c69-1ace-4a98-af48-f282a3e7a5eb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

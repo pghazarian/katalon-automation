@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Garrett  Clover</name>
+   <name>AttendeeNames_div</name>
    <tag></tag>
    <elementGuidId>50bef7f7-b75b-4961-b33f-4f5ff0dc7481</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.jss1315</value>
+         <key>XPATH</key>
+         <value>//tbody/tr/td[3]/div/div[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/table/tbody/tr/td[3]/div/div</value>
+         <key>CSS</key>
+         <value>div.jss1315</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>d8e0b0f1-8873-4b16-a388-863b0f7f8b94</webElementGuid>
+      <webElementGuid>49ffe49e-c829-474c-b12d-25f3748a2e68</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>jss1315</value>
-      <webElementGuid>eb800be2-2f03-4693-be3c-34be188183d1</webElementGuid>
+      <webElementGuid>197b7a67-55ee-42e1-a729-7641a86ad186</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Garrett  Clover</value>
-      <webElementGuid>fcddee57-3315-459c-8bc5-e5cba8899853</webElementGuid>
+      <webElementGuid>39186ac4-4aeb-432c-8f8b-7155b1c10af0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,30 +46,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss875 jss851 jss873 ministry-occurrence-schedule-wrap page-has_action_bar&quot;]/div[@class=&quot;cmui container jss720 ui page--container jss719&quot;]/section[@class=&quot;cmui content jss723 ui page--content jss722&quot;]/div[@class=&quot;view-container&quot;]/div[@class=&quot;view-scrollbar padding-bottom-2x&quot;]/div[@class=&quot;roster-container&quot;]/table[@class=&quot;ui jss903 table table-basic table-font-size-xsmall table-selectable table-stretch-very&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell&quot;]/div[@class=&quot;jss1314&quot;]/div[@class=&quot;jss1315&quot;]</value>
-      <webElementGuid>ce200a6e-2135-40b6-8b41-51693f032c97</webElementGuid>
+      <webElementGuid>1eb88520-6b72-4bea-85a0-82193a2351c2</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/table/tbody/tr/td[3]/div/div</value>
-      <webElementGuid>4dd88921-e404-4dfd-ae08-24c742c4cbe9</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//td[3]/div/div</value>
-      <webElementGuid>2ab3f648-1a38-426b-bb98-5459c545348b</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//div[(text() = 'Garrett  Clover' or . = 'Garrett  Clover')]</value>
-      <webElementGuid>c86f969b-7f17-48ae-9e9a-ed6260a03306</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>

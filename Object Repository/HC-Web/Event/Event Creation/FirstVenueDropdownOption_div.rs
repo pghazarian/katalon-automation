@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Anaheim Main Worship Center  Capacity 2010</name>
+   <name>FirstVenueDropdownOption_div</name>
    <tag></tag>
    <elementGuidId>c0de3215-aa35-47e2-86c2-59b3bc130ee3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.Select-option.is-focused</value>
+         <key>XPATH</key>
+         <value>//div[@id='event_location_on_campus-where_venue']/descendant::div[contains(@class,'Select-menu-outer')][2]/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@id='react-select-10--list']/div/div/div/div)[49]</value>
+         <key>CSS</key>
+         <value>div.Select-option.is-focused</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>533ce535-c908-4073-96c1-8f11f6a50a79</webElementGuid>
+      <webElementGuid>da1b2102-ab26-4be8-a3e4-69c6a534e65d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>d6ad6ed7-4b05-43fc-b51c-09b31cc05345</webElementGuid>
+      <webElementGuid>4bb86262-058e-4783-b7e5-dc5ddef08cb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Select-option is-focused</value>
-      <webElementGuid>c8899c43-7f71-42d4-8e77-102be20a2453</webElementGuid>
+      <webElementGuid>74d19276-58d6-4648-bb03-d53dc47713e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>4ba5a9b5-9ce4-4776-b5dc-d66654b303aa</webElementGuid>
+      <webElementGuid>eeb27483-843c-4fba-b7dd-9dd8175c329e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>e180b5dd-d77e-47a0-b231-269ea7a4472c</webElementGuid>
+      <webElementGuid>b413f5f0-0a9f-42b7-aadd-48329127a128</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Anaheim Main Worship Center | Capacity 2010</value>
-      <webElementGuid>868a0ce3-7f83-432e-bcef-4fd361fbbca4</webElementGuid>
+      <webElementGuid>c50319be-06e8-4bd8-9318-7802b050adbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,30 +70,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;event_location_on_campus-where_venue&quot;)/div[@class=&quot;Select is-focused is-open Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-10--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
-      <webElementGuid>c63bdcb5-25b2-4dd2-9f8d-9151af28730d</webElementGuid>
+      <webElementGuid>7cd46e52-67a6-44cd-9d7a-5012d62d39b3</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>(//div[@id='react-select-10--list']/div/div/div/div)[49]</value>
-      <webElementGuid>39600051-ff31-4095-abc5-dd92affcb7c6</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[3]/div/div[2]/div/div/div/div/div[3]/div/div/div/div/div</value>
-      <webElementGuid>09f02169-21f8-4846-a7ab-19391787014d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//div[(text() = 'Anaheim Main Worship Center | Capacity 2010' or . = 'Anaheim Main Worship Center | Capacity 2010')]</value>
-      <webElementGuid>7e8c66c2-7665-4d03-89ef-57304519e729</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>
