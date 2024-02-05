@@ -83,6 +83,8 @@ if (CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(PublishButt
 
 WebUI.navigateToUrl(FormPath)
 
+WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form Public/FirstNameField'), 2)
+
 FirstName = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/FirstNameField'), 'value')
 
 'Verify the first name field value is not blank'

@@ -18,8 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.User_NoViewDOBPermissions_UserName
+        , ('Password') : GlobalVariable.User_NoViewDOBPermissions_Password], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_People'))
 
@@ -47,13 +47,13 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_Pers
 'Verify that the Email Column is visible'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_Email'))
 
-'Verify that the DOB Column is visible'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_DOB'))
+'Verify that the DOB Column is not visible'
+WebUI.verifyElementNotVisible(findTestObject('HC-Web/Person/Search/TableColumn_DOB'))
 
 'Open the person record from the search results'
 WebUI.click(SearchTableCellObject)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Person/Details/PersonName'), 3)
+WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/PersonName'), 0)
 
 'Verify the name in the details page'
 WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), VerificationName)
@@ -62,18 +62,16 @@ WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), Veri
 WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
 
 'Verify the first name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/FirstNameInput'), 
-    FirstName)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/FirstNameInput'), FirstName)
 
 'Verify the last name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), 
-    LastName)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), LastName)
 
-'Verify the birthdate label is present'
-WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/Birthdate_Label'), 0)
+'Verify the birthdate label is not present'
+WebUI.verifyElementNotPresent(findTestObject('HC-Web/Person/Details/Birthdate_Label'), 0)
 
-'Verify the birthdate text field is present'
-WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/Birthdate_TextField'), 0)
+'Verify the birthdate text field is not present'
+WebUI.verifyElementNotPresent(findTestObject('HC-Web/Person/Details/Birthdate_TextField'), 0)
 
 WebUI.closeBrowser()
 
