@@ -7,7 +7,7 @@
         {
           "name": "refreshBrowser",
           "parameters": [],
-          "javadoc": "/**\r\n\t * Refresh browser\r\n\t */"
+          "javadoc": "/**\n\t * Refresh browser\n\t */"
         },
         {
           "name": "getTestObjectWithXpath",
@@ -26,7 +26,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Get a TestObject given a xpath\r\n\t */"
+          "javadoc": "/**\n\t * Get a TestObject given a xpath\n\t */"
         },
         {
           "name": "getTestObjectWithXpathTextMatch",
@@ -71,7 +71,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Get a TestObject given a xpath, text string to match, and the index for which one to get\r\n\t */"
+          "javadoc": "/**\n\t * Get a TestObject given a xpath, text string to match, and the index for which one to get\n\t */"
         },
         {
           "name": "getInputById",
@@ -90,7 +90,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Get a TestObject input element by ID\r\n\t */"
+          "javadoc": "/**\n\t * Get a TestObject input element by ID\n\t */"
         },
         {
           "name": "getTextInputByLabel",
@@ -147,7 +147,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Get a TestObject textarea element by ID\r\n\t */"
+          "javadoc": "/**\n\t * Get a TestObject textarea element by ID\n\t */"
         },
         {
           "name": "getTextAreaByLabel",
@@ -198,7 +198,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Set value for Text field (single line) (e.g. input type\u003d\"text\" element)\r\n\t */"
+          "javadoc": "/**\n\t * Set value for Text field (single line) (e.g. input type\u003d\"text\" element)\n\t */"
         },
         {
           "name": "setMultilineTextfieldValue",
@@ -230,7 +230,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Set value for Text field (multi-line) (e.g. textarea element)\r\n\t */"
+          "javadoc": "/**\n\t * Set value for Text field (multi-line) (e.g. textarea element)\n\t */"
         },
         {
           "name": "setDropDownValue",
@@ -294,7 +294,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Set value for Drop Down component\r\n\t */"
+          "javadoc": "/**\n\t * Set value for Drop Down component\n\t */"
         },
         {
           "name": "setMultipleChoiceControlValue",
@@ -326,7 +326,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Set Radio button control (a.k.a multiple choice control)\r\n\t */"
+          "javadoc": "/**\n\t * Set Radio button control (a.k.a multiple choice control)\n\t */"
         },
         {
           "name": "setGroupCheckboxValue",
@@ -358,7 +358,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Check item(s) in the group checkbox list\r\n\t */"
+          "javadoc": "/**\n\t * Check item(s) in the group checkbox list\n\t */"
         },
         {
           "name": "setDateFieldValue",
@@ -390,7 +390,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Set Date Field Value\r\n\t */"
+          "javadoc": "/**\n\t * Set Date Field Value\n\t */"
         },
         {
           "name": "verifyTextFieldValueEqual",
@@ -473,7 +473,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Click element\r\n\t * @param to Katalon test object\r\n\t */"
+          "javadoc": "/**\n\t * Click element\n\t * @param to Katalon test object\n\t */"
         },
         {
           "name": "getHtmlTableRows",
@@ -505,8 +505,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Get all rows of HTML table\r\n\t * @param table Katalon test object represent for HTML table\r\n\t * @param outerTagName outer tag name of TR tag, usually is TBODY\r\n\t * @return All rows inside HTML table\r\n\t */"
-        },
+          "javadoc": "/**\n\t * Get all rows of HTML table\n\t * @param table Katalon test object represent for HTML table\n\t * @param outerTagName outer tag name of TR tag, usually is TBODY\n\t * @return All rows inside HTML table\n\t */"
         {
           "name": "isElementPresent_Mobile",
           "parameters": [
@@ -537,7 +536,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Check if element present in timeout\r\n\t * @param to Katalon test object\r\n\t * @param timeout time to wait for element to show up\r\n\t * @return true if element present, otherwise false\r\n\t */"
+          "javadoc": "/**\n\t * Check if element present in timeout\n\t * @param to Katalon test object\n\t * @param timeout time to wait for element to show up\n\t * @return true if element present, otherwise false\n\t */"
         },
         {
           "name": "isElementPresent",

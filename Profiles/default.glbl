@@ -6,8 +6,13 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'test'</initValue>
-      <name>AttributeName</name>
+      <initValue>'shcqa1+cannotviewdob@gmail.com'</initValue>
+      <name>User_NoViewDOBPermissions_UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'T62yYySZkYyh6V728arnFg=='</initValue>
+      <name>User_NoViewDOBPermissions_Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

@@ -21,6 +21,16 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'shcqa1+cannotviewdob@gmail.com'</initValue>
+      <name>User_NoViewDOBPermissions_UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'T62yYySZkYyh6V728arnFg=='</initValue>
+      <name>User_NoViewDOBPermissions_Password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'/data-capture/connection-forms/3830/overview'</initValue>
       <name>ConnectionForm_FormManagementPath</name>
    </GlobalVariableEntity>
