@@ -41,7 +41,15 @@ public class NavigationHelper {
 
 	@Keyword
 	def Boolean clickSubmenuAndValidateHeader(String menuLabel, String submenuLabel, String headerLabel) {
-		clickTopMenu(menuLabel)
+		return clickSubmenuAndValidateHeader(menuLabel, submenuLabel, headerLabel, false)
+	}
+	
+	@Keyword
+	def Boolean clickSubmenuAndValidateHeader(String menuLabel, String submenuLabel, String headerLabel, Boolean openTopMenuFirst) {
+		if (openTopMenuFirst) {
+			clickTopMenu(menuLabel)
+		}
+		
 		clickSubMenu(menuLabel, submenuLabel)
 		return validatePageHeader(headerLabel)
 	}
