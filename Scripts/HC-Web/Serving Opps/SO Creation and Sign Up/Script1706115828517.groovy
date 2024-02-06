@@ -84,11 +84,11 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Members
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Serving Opps'))
 
-WebUI.click(findTestObject('HC-Web/Serving Opps/List View Serving Ops'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/List View Serving Ops'))
 
-WebUI.click(findTestObject('HC-Web/Serving Opps/Upcoming Radio Option Serving Opps'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Upcoming Radio Option Serving Opps'))
 
-WebUI.click(findTestObject('HC-Web/Serving Opps/Table Row Serving Opp'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Table Row Serving Opp'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_plusAdd VolunteerTo This OccurrenceT_6a52af'))
 
@@ -101,11 +101,13 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputperson_
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Serving Opps/inputperson_search_form--search_input'), Keys.chord(
         Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_GC Garrett  Clover Male  Lake ForestId 7801492'))
+WebUI.waitForElementClickable(findTestObject('HC-Web/Serving Opps/div_PeopleSearchDrawerResults'), 0)
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_PeopleSearchDrawerResults'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Select_1'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_Yes'))
+WebUI.click(findTestObject('HC-Web/Serving Opps/div_Yes_PersonSearchDrawer'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1_2_3'))
 
@@ -128,4 +130,6 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/span_Actions')
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/span_Close OpportunityClose Opportunity'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/span_Yes'))
+
+WebUI.closeBrowser()
 

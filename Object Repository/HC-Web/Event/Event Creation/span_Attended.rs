@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Attended</name>
+   <tag></tag>
+   <elementGuidId>31e3ca96-ebea-4c09-8a3e-4f368733227e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/table/tbody/tr/td[5]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>834f325a-56b7-4c19-9b12-ab0601e2994e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-semibold </value>
+      <webElementGuid>df0942b7-a565-4296-adf7-6936cf640fc2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Attended</value>
+      <webElementGuid>bd32aea9-4243-40ab-8a34-3d9cc00aa3b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss875 jss851 jss873 ministry-occurrence-schedule-wrap page-has_action_bar&quot;]/div[@class=&quot;cmui container jss720 ui page--container jss719&quot;]/section[@class=&quot;cmui content jss723 ui page--content jss722&quot;]/div[@class=&quot;view-container&quot;]/div[@class=&quot;view-scrollbar padding-bottom-2x&quot;]/div[@class=&quot;roster-container&quot;]/table[@class=&quot;ui jss903 table table-basic table-font-size-xsmall table-selectable table-stretch-very&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell&quot;]/span[@class=&quot;text-semibold&quot;]</value>
+      <webElementGuid>46026405-a0fa-4c7d-be98-8cc92b38605a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/table/tbody/tr/td[5]/span</value>
+      <webElementGuid>505d8d1a-9cbf-41b9-8294-206732db428f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[5]/span</value>
+      <webElementGuid>1b450f05-b278-4997-ba43-5334a81f4152</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Attended' or . = 'Attended')]</value>
+      <webElementGuid>09e83ce4-d63d-4145-9172-4fed71e1b285</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

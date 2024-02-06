@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>First Person Record Result</name>
+   <tag></tag>
+   <elementGuidId>0adb1724-89f9-4edb-a3ab-2ba7eeae0895</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.cmui.grid.jss7.jss936.jss13.jss32</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='people_search_drawer--results']/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4c166bea-2762-4d09-b6b4-677ab9c7852c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cmui grid jss7 jss936 jss13 jss32</value>
+      <webElementGuid>e801b1af-890a-408d-a002-370201b96a40</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>cmui-grid</value>
+      <webElementGuid>b7cb3b16-c940-4015-8923-76a3e6ea718c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>GC Garrett  Clover Male | Lake ForestId: 7801492</value>
+      <webElementGuid>7f245311-edd9-44ae-8bb5-2eff9586a75c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;people_search_drawer--results&quot;)/div[@class=&quot;jss929 jss924 cmui person_panel&quot;]/div[@class=&quot;jss930 jss923 jss928 cmui person_panel--summary jss944 jss946&quot;]/div[@class=&quot;cmui grid jss7 jss936 jss13 jss32&quot;]</value>
+      <webElementGuid>017e7285-8437-4187-884f-2361b257f1f9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='people_search_drawer--results']/div</value>
+      <webElementGuid>c518bfcd-fc06-432f-ad55-81415c5662c3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

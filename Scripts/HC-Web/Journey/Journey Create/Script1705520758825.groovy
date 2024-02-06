@@ -47,11 +47,11 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/texta
 
 not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_ui image image-avatar image-avatar-person'))
 
-WebUI.click(findTestObject('HC-Web/Page_Healthy Church/Journey/CreateEdit/CampusDropDown'))
+WebUI.click(findTestObject('HC-Web/Journey/CreateEdit/CampusDropDown'))
 
-WebUI.sendKeys(findTestObject('HC-Web/Page_Healthy Church/Journey/CreateEdit/CampusDropDown'), 'Anaheim')
+WebUI.sendKeys(findTestObject('HC-Web/Journey/CreateEdit/CampusDropDown'), 'Anaheim')
 
-WebUI.sendKeys(findTestObject('HC-Web/Page_Healthy Church/Journey/CreateEdit/CampusDropDown'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Journey/CreateEdit/CampusDropDown'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Anaheim'))
 

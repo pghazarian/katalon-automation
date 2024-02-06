@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Select</name>
+   <tag></tag>
+   <elementGuidId>fae2f9e9-4a68-4b63-93b6-91805147cc5c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#person_panel--select_record_btn > span.button-inner-container.jss208</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='person_panel--select_record_btn']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cce71f37-c0ae-426c-8d38-0f36085d0463</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss208</value>
+      <webElementGuid>e7ee9107-6ec5-418b-b303-d338b74ac0ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Select</value>
+      <webElementGuid>7fb41a41-4f93-4e50-a5a7-e858be94229a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;people_search_drawer--results&quot;)/div[@class=&quot;jss929 jss924 cmui person_panel&quot;]/div[@class=&quot;jss956 jss922 jss927 cmui person_panel--details jss954&quot;]/div[@class=&quot;MuiCollapse-root MuiCollapse-entered&quot;]/div[@class=&quot;MuiCollapse-wrapper&quot;]/div[@class=&quot;MuiCollapse-wrapperInner&quot;]/div[@class=&quot;jss953&quot;]/div[@class=&quot;jss951&quot;]/div[@class=&quot;ui prompt jss780 jss1063 prompt-inline&quot;]/div[1]/button[@id=&quot;person_panel--select_record_btn&quot;]/span[@class=&quot;button-inner-container jss208&quot;]</value>
+      <webElementGuid>6182cddc-abb2-4767-a28f-636ff4c78c68</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='person_panel--select_record_btn']/span</value>
+      <webElementGuid>5d7864a5-9db6-4fd1-acde-2e4ff4fb8363</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/button/span</value>
+      <webElementGuid>a6a011f9-1103-4ddd-b595-e08d53274b80</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Select' or . = 'Select')]</value>
+      <webElementGuid>86d9244e-d405-4339-b94c-5aed7695edaa</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
