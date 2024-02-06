@@ -17,5 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [(null) : null], FailureHandling.STOP_ON_FAILURE)
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('People', 'Search or Add')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Search or Add', 'Search or Add')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Record Management', 'Record Management')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Settings and Preferences', 'Settings and Preferences')
+
+WebUI.closeBrowser()
