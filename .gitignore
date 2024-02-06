@@ -20,3 +20,7 @@ build
 /.classpath
 .svn/
 *.log
+
+/.cache
+
+.DS_Store
