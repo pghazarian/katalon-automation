@@ -21,6 +21,6 @@ build
 .svn/
 *.log
 
-/.cache
+.cache/
 
 .DS_Store
