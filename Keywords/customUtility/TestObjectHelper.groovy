@@ -118,7 +118,6 @@ class TestObjectHelper {
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
 
-
 	/**
 	 * Set value for Text field (single line) (e.g. input type="text" element)
 	 */
@@ -146,6 +145,27 @@ class TestObjectHelper {
 	def TestObject setDropDownValue(String id, String value) {
 
 		def xpath = "//div[@id='${id}']"
+
+		def dropdown = getTestObjectWithXpath(xpath)
+
+		WebUI.click(dropdown)
+
+		xpath = xpath + "/descendant::input"
+
+		def dropdownInput = getTestObjectWithXpath(xpath)
+
+		// Type Dropdown value
+		WebUI.sendKeys(dropdownInput, value)
+
+		// Press <Enter> to select the value
+		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
+	}
+
+	/**
+	 * Set value for Drop Down component
+	 */
+	@Keyword
+	def TestObject setDropDownValueByXPath(String xpath, String value) {
 
 		def dropdown = getTestObjectWithXpath(xpath)
 

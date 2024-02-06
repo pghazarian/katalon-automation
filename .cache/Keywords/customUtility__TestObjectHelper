@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "7E9243B916556B2D49518509A31E657D",
+  "keywordFileContentHash": "7242DB509E0E7176CF33AEF200E677AE",
   "keywordClasses": [
     {
       "name": "customUtility.TestObjectHelper",
@@ -262,6 +262,38 @@
               }
             }
           ],
+          "javadoc": "/**\r\n\t * Set value for Drop Down component\r\n\t */"
+        },
+        {
+          "name": "setDropDownValueByXPath",
+          "parameters": [
+            {
+              "name": "xpath",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "value",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
           "javadoc": "/**\n\t * Set value for Drop Down component\n\t */"
         },
         {
@@ -474,7 +506,6 @@
             }
           ],
           "javadoc": "/**\n\t * Get all rows of HTML table\n\t * @param table Katalon test object represent for HTML table\n\t * @param outerTagName outer tag name of TR tag, usually is TBODY\n\t * @return All rows inside HTML table\n\t */"
-        },
         {
           "name": "isElementPresent_Mobile",
           "parameters": [

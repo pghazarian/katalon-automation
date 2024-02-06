@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Mark Attended</name>
+   <tag></tag>
+   <elementGuidId>8698b489-21ec-4344-a987-60b4dc506d31</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#occurrence_schedule--actions_dropdown_button_7 > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@id='occurrence_schedule--actions_dropdown_button_7']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>529e822e-fd69-40b8-a933-e8ae48c83d8e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Mark Attended</value>
+      <webElementGuid>a8a0dd23-74d3-4df1-b697-0bde2db2d58c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;occurrence_schedule--actions_dropdown_button_7&quot;)/span[1]</value>
+      <webElementGuid>a7abffab-97e7-4fb8-b1ab-5bab969d17a6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//li[@id='occurrence_schedule--actions_dropdown_button_7']/span</value>
+      <webElementGuid>66a93165-35d8-47d4-9182-c256e1665f1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li/span</value>
+      <webElementGuid>c27f5066-3560-407d-abd7-293c222aa4b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Mark Attended' or . = 'Mark Attended')]</value>
+      <webElementGuid>f12b1e83-5f8f-42aa-8eb3-663db1ce077e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

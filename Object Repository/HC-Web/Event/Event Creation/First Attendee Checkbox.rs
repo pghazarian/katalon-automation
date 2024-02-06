@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>First Attendee Checkbox</name>
+   <tag></tag>
+   <elementGuidId>8bf340c8-718f-47af-8125-d09d66bd5b72</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-checkbox--bulk_select_390388 > label.checkbox-label > div.cmui.ui.icon.icon-check.icon-align-left.icon-color-primary.icon-compact.icon-inverse > svg > g > use.icon-use-path</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>use</value>
+      <webElementGuid>3eff5b91-3073-4db8-a1c8-507109d61ee1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-use-path</value>
+      <webElementGuid>e4e7e30b-9546-4510-a942-aa670f253d3c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xlink:href</name>
+      <type>Main</type>
+      <value>#icon-svg-path-check-9023472504</value>
+      <webElementGuid>cdc84948-a416-40cf-b39c-a03c275e4252</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-checkbox--bulk_select_390388&quot;)/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;cmui ui icon icon-check icon-align-left icon-color-primary icon-compact icon-inverse&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
+      <webElementGuid>60e3e27f-c39c-40b4-9d57-be52feceee35</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

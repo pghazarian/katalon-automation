@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Organizer</name>
+   <tag></tag>
+   <elementGuidId>5e9e1788-58be-4575-938c-86c88e21e82d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#event_details_event_organizer--event_contact_button > span.button-inner-container.jss244 > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='event_details_event_organizer--event_contact_button']/span/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>fde88f1e-b0e0-4f9d-a15e-f9b27ddafdef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Organizer</value>
+      <webElementGuid>23b6e698-0e71-478b-ad11-ea4544ce0922</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;event_details_event_organizer--event_contact_button&quot;)/span[@class=&quot;button-inner-container jss244&quot;]/span[1]</value>
+      <webElementGuid>978722e8-584d-404a-b4b0-f42564e9ab65</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='event_details_event_organizer--event_contact_button']/span/span</value>
+      <webElementGuid>f9586c0a-e40c-4b66-87c6-032a053b0970</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div[2]/button/span/span</value>
+      <webElementGuid>56b84bef-2886-419a-a5a4-4081993a7be5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Organizer' or . = 'Organizer')]</value>
+      <webElementGuid>32584f35-c0e0-4c24-b81b-882370396d90</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

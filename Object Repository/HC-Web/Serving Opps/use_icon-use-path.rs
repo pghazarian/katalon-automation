@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+         <value>//tr/td</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>use</value>
-      <webElementGuid>cefc52e6-e580-41e6-abfc-5f94b05a16f8</webElementGuid>
+      <webElementGuid>c9b8599c-4c09-47d2-b8c3-8cb36b4b5585</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-use-path</value>
-      <webElementGuid>e579878f-f8af-4dba-90b7-58c046b7e587</webElementGuid>
+      <webElementGuid>9fb74a54-539e-42d7-a2e9-b48299a7e6fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +38,7 @@
       <name>xlink:href</name>
       <type>Main</type>
       <value>#icon-svg-path-check-5130865680</value>
-      <webElementGuid>b4166010-1620-4ce1-a918-5cac03f7167a</webElementGuid>
+      <webElementGuid>329d218d-226e-4b57-938a-cc7d3e01e345</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,6 +46,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;new_serving_opportunity_when_and_where--where&quot;)/div[5]/table[@class=&quot;ui jss1000 table table-basic table-font-size-xsmall table-selectable&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@id=&quot;select_venue--select_venue_908&quot;]/td[@class=&quot;table-cell&quot;]/div[@id=&quot;select_venue--select_venue_908&quot;]/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;cmui ui icon icon-check icon-align-left icon-color-primary icon-compact icon-inverse&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
-      <webElementGuid>1e22d993-c68a-46cf-8091-10479a262fee</webElementGuid>
+      <webElementGuid>ec6e6707-39c4-4da9-8f20-0b89f6ed74a2</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CampusDropDown</name>
+   <name>div_Yes_PersonSearchDrawer</name>
    <tag></tag>
-   <elementGuidId>a2198b6a-863a-40e4-a72b-73a9e72ae863</elementGuidId>
+   <elementGuidId>febf2893-a86f-4e2e-b966-eccf73f1ed51</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='journeys_list_page--field_campus']</value>
+         <value>//div[@id='people_search_drawer--content']/descendant::div[@class='prompt-yes-btn']</value>
       </entry>
       <entry>
          <key>BASIC</key>

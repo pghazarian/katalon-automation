@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_plusOrganizer</name>
+   <tag></tag>
+   <elementGuidId>07e4bd78-6e7f-46ac-9c83-9b4c3719f14a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#event_details_event_organizer--event_contact_button > span.button-inner-container.jss244</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='event_details_event_organizer--event_contact_button']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>0ec21d84-f504-40d4-a469-53acb69b5220</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss244</value>
+      <webElementGuid>bfd424f8-8ab5-4377-a547-7dcd5767e0b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>plusOrganizer</value>
+      <webElementGuid>fc29dffe-eb92-4ab8-b5e0-95171025b266</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;event_details_event_organizer--event_contact_button&quot;)/span[@class=&quot;button-inner-container jss244&quot;]</value>
+      <webElementGuid>7505063e-4ead-40a3-918d-26db617ec6ef</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='event_details_event_organizer--event_contact_button']/span</value>
+      <webElementGuid>e4d60b32-aff5-4f62-9a78-7aab2254cba6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div[2]/button/span</value>
+      <webElementGuid>da49dae6-04f0-4851-b41f-5842d65e7fd9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'plusOrganizer' or . = 'plusOrganizer')]</value>
+      <webElementGuid>79a1f059-799a-42e0-a127-2c4fd5d9ec6b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
