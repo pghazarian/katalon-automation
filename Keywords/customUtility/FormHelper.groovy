@@ -114,7 +114,7 @@ public class FormHelper {
 		// Press <Enter> to select the value
 		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
 	}
-	
+
 	/**
 	 * Get value for Drop Down component
 	 */
@@ -128,11 +128,11 @@ public class FormHelper {
 		def dropdownValueObject = helper.getTestObjectWithXpath(xpath)
 
 		def dropDownValueSpan = WebUI.findWebElement(dropdownValueObject, 0)
-		
+
 		if (dropDownValueSpan) {
 			return dropDownValueSpan.text
 		}
-		
+
 		return null
 	}
 

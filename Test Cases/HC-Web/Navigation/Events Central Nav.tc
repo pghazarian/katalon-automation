@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Events Central Nav</name>
+   <tag>Production,Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>e6658de5-9d39-4d46-9a83-56a77afb2071</testCaseGuid>
+</TestCaseEntity>
