@@ -21,10 +21,8 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 'Quick-view Insights')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences', 'Settings & Preferences')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 'Serving Opps Catalogs')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Insights', 'Flash Reports')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Insights', 'Flash Reports', 'Flash Reports')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Insights', 'Embedded Reports', 'Embedded Reports')
 
 WebUI.closeBrowser()

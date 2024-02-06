@@ -21,10 +21,10 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 'Quick-view Insights')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences', 'Settings & Preferences')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 'Serving Opps Catalogs')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Events Central', 'All Events')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'All Events', 'All Events')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Worship Service Setup', 'Worship Service Setup')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences', 'Settings & Preferences')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Event Catalogs', 'Event Catalogs')
 
 WebUI.closeBrowser()

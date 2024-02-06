@@ -69,7 +69,7 @@ class TestObjectHelper {
 	 */
 	@Keyword
 	def TestObject getTestObjectWithXpathTextMatch(String xpath, String textToMatch, int index = 1) {
-		xpath = "(" + xpath + "[normalize-space(.) = '" + textToMatch + "'])[" + index + "]"
+		xpath = "($xpath[text() = '$textToMatch' or normalize-space(.) = '$textToMatch'])[$index]"
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}

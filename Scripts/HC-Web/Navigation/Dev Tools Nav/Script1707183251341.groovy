@@ -21,10 +21,13 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 'Quick-view Insights')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences', 'Settings & Preferences')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 'Serving Opps Catalogs')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Dev Tools', 'Elastic Search Indexing')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'Elastic Search Indexing', 'Elastic Search Indexing')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'Schedule Cache Control', 'Schedule Cache Control')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'Occurrence Tool', 'Occurrence Tool')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'QR Code Tool', 'QR Code Tool')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'Unlayer Email Editor Test', 'Unlayer Email Editor Test')
 
 WebUI.closeBrowser()
+
+

@@ -26,7 +26,7 @@ public class NavigationHelper {
 
 		WebUI.click(to.getTestObjectWithXpathTextMatch('//ul/li/div//p', menuLabel))
 	}
-	
+
 	def clickSubMenu(String menuLabel, String submenuLabel) {
 		def to = new TestObjectHelper()
 
@@ -38,19 +38,20 @@ public class NavigationHelper {
 		clickTopMenu(menuLabel)
 		return validatePageHeader(headerLabel)
 	}
-	
+
 	@Keyword
 	def Boolean clickSubmenuAndValidateHeader(String menuLabel, String submenuLabel, String headerLabel) {
 		clickTopMenu(menuLabel)
 		clickSubMenu(menuLabel, submenuLabel)
 		return validatePageHeader(headerLabel)
 	}
-	
+
 	def Boolean validatePageHeader(String headerLabel) {
 
 		def to = new TestObjectHelper()
 
 		return WebUI.verifyElementText(to.getTestObjectWithXpath("//div[contains(@class, 'app-header-desktop')]/descendant::h4"), headerLabel)
-	}}
+	}
+}
 
 

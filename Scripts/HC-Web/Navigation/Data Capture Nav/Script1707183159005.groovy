@@ -21,10 +21,10 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 'Quick-view Insights')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences', 'Settings & Preferences')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 'Serving Opps Catalogs')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Data Capture', 'Connection Forms')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Forms', 'Connection Forms')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Cards', 'Connection Cards')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Questions', 'Connection Questions')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Weekend Metrics Capture', 'Weekend Metrics Capture')
 
 WebUI.closeBrowser()

@@ -21,10 +21,11 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 'Quick-view Insights')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences', 'Settings & Preferences')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 'Serving Opps Catalogs')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('System', 'System')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Platform Settings', 'Platform Settings')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Campus Settings', 'Campus Settings')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Users & Teams', 'Users & Teams')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Security & Permissions', 'Security & Permissions')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Migration Settings', 'Migration Settings')
 
 WebUI.closeBrowser()

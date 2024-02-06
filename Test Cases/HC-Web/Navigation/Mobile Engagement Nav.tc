@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Mobile Engagement Nav</name>
+   <tag>Production,Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>b13cfdbd-c826-4664-a6ff-0d4715269442</testCaseGuid>
+</TestCaseEntity>
