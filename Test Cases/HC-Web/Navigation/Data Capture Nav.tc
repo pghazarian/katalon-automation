@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Data Capture Nav</name>
-   <tag>Production,Stage,Smoke</tag>
+   <tag>Production,Stage,Smoke,QA,Dev,Stage2</tag>
    <comment></comment>
    <testCaseGuid>538f9581-1edb-4792-83dd-3c013dae42b2</testCaseGuid>
 </TestCaseEntity>

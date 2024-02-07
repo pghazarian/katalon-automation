@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Events Central Nav</name>
-   <tag>Production,Stage,Smoke</tag>
+   <tag>Production,Stage,Smoke,QA,Dev,Stage2</tag>
    <comment></comment>
    <testCaseGuid>e6658de5-9d39-4d46-9a83-56a77afb2071</testCaseGuid>
 </TestCaseEntity>

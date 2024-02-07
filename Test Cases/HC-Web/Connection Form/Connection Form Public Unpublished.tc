@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Verify that an unpublished Connection Form is not rendered</description>
    <name>Connection Form Public Unpublished</name>
-   <tag>Production,Stage</tag>
+   <tag>Production,Stage,QA,Dev,Stage2,Smoke</tag>
    <comment></comment>
    <testCaseGuid>55e21b97-db9c-44d2-98c5-0bcc1ccc3706</testCaseGuid>
 </TestCaseEntity>
