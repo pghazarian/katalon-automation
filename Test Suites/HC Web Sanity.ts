@@ -12,13 +12,6 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>90096318-f02e-4629-b285-f04d8c544d5b</testSuiteGuid>
    <testCaseLink>
-      <guid>3a789c60-9616-4f97-b514-d5eb2fc5f2d5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Event/Event Search</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>d6419847-5f5b-457a-bd68-15618f47b537</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BreadCrumb2</name>
+   <name>Subnav_Communications</name>
    <tag></tag>
-   <elementGuidId>6cb0125b-7da4-4680-9c4f-f1273a586e6b</elementGuidId>
+   <elementGuidId>c0718285-7cd3-42d2-b27d-08ec13c9d08b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@class, 'navigation_breadcrumbs--breadcrumb_title')])[2]/p</value>
+         <value>//div[@class='sectional-tabs-container']/div/div/button[(text() = 'Communications' or . = 'Communications')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

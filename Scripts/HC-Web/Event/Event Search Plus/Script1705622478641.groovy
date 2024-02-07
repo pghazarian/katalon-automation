@@ -21,60 +21,79 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Events Central'))
+StartingUrl = (GlobalVariable.HC_HostUrl + '/events-central/overview')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_All Events'))
+WebUI.navigateToUrl(StartingUrl)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputui-input--events_search'), 'Bryant\'s Demo Event')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Search/SearchTextField'), SearchTerm)
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputui-input--events_search'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Search/SearchTextField'), Keys.chord(Keys.ENTER))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church People - Person Record _91ca73/div_Whitney  Kelmp'), 
-    'Whitney Kelmp')
+FoundSearchRecord = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'event-card-title\')]', 
+    EventName)
 
-WebUI.verifyElementText(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'Bryant\'s Demo Event')
+WebUI.verifyElementText(FoundSearchRecord, EventName)
 
-WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'))
+WebUI.click(FoundSearchRecord)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_Bryants Demo Event'), 'Bryant\'s Demo Event')
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Overview/BreadcrumbText2'), EventName)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_This is a demo event for Bryant Stone'), 
-    0)
+WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Overview/EventDescription'), 1)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_This is a demo event for Bryant StoneHo_6b4ac0'))
+WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Event Details'))
+//EventName = findTestObject('HC-Web/Event/Details/EventName')
+//CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(EventName, SearchTerm)
+WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_OccurrenceSchedule'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/inputevent_details_basic_info--event_name'), 
-    '')
+'Click on name in the table to open the record in a drawer'
+WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
+        ScheduledName))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Occurrence Schedule'))
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-container-inner\']/descendant::div[@class=\'person_record--details_window_person_info_full_name\']', 
+    ScheduledName, 1)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Whitney  Kelmp'))
+PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
 
-WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _91ca73/CloseButton'))
+'Verify the schedule person\'s name in the table'
+WebUI.verifyEqual(ScheduledName, PersonName)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Registration Roster'))
+WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/CloseButton'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/div_Bryant  Stone'))
+WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_RegistrationRoster'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church People - Person Record _845e2e/div_Bryant  Stone'), 
-    'Bryant Stone')
+'Click on name in the table to open the record in a drawer'
+WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
+        RegistrantName))
 
-WebUI.click(findTestObject('HC-Web/Page_Healthy Church People - Person Record _845e2e/CloseButton'))
+PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-container-inner\']/descendant::div[@class=\'person_record--details_window_person_info_full_name\']', 
+    RegistrantName)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Serving Opps'))
+PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h4_Bryants Demo Serving Opp'))
+'Verify the schedule person\'s name in the table'
+WebUI.verifyEqual(RegistrantName, PersonName)
 
-WebUI.verifyElementText(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb2'), 'Bryant\'s Demo Event')
+WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/CloseButton'))
 
-WebUI.verifyElementText(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb3'), 'Bryant\'s Demo Serving Opp')
+WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_Serving Opps'))
+
+'Click on the serving opp'
+ServingOppDiv = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'page--data_cards\')]/descendant::h4', 
+    ServingOppName)
+
+WebUI.click(ServingOppDiv)
+
+WebUI.verifyElementText(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb3'), ServingOppName)
+
+WebUI.verifyElementText(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb2'), EventName)
 
 'Go back to the Event via the Breadcrumb'
 WebUI.click(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb2'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/span_Communications'))
+WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_Communications'))
+
+WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Communications/RegistrationEmailHeader'), 1)
 
 WebUI.closeBrowser()
 

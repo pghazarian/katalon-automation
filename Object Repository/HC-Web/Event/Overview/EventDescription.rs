@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BreadCrumb2</name>
+   <name>EventDescription</name>
    <tag></tag>
-   <elementGuidId>6cb0125b-7da4-4680-9c4f-f1273a586e6b</elementGuidId>
+   <elementGuidId>cc6f1c88-f53a-42a6-9b7f-bc2a41f456bb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@class, 'navigation_breadcrumbs--breadcrumb_title')])[2]/p</value>
+         <value>//div[@class='overlay-details']</value>
       </entry>
       <entry>
          <key>BASIC</key>
