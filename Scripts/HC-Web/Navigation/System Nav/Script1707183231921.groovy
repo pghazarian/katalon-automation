@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('System', 'System')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('System', 'Platform Settings')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Platform Settings', 'Platform Settings')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Campus Settings', 'Campus Settings')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Users & Teams', 'Users & Teams')
