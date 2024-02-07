@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BreadCrumb2</name>
+   <name>BreadcrumbText2</name>
    <tag></tag>
-   <elementGuidId>6cb0125b-7da4-4680-9c4f-f1273a586e6b</elementGuidId>
+   <elementGuidId>bab7bd92-310f-4afc-9a7d-098c25ffba84</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[contains(@class, 'navigation_breadcrumbs--breadcrumb_title')])[2]/p</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//ul[contains(@class, 'navigation_breadcrumbs--list')]/descendant::p)[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

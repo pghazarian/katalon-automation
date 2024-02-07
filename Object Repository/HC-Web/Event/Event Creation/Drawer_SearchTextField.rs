@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputui-input--events_search</name>
+   <name>Drawer_SearchTextField</name>
    <tag></tag>
-   <elementGuidId>64e6cf18-f402-4186-af39-c6db5c94e1cf</elementGuidId>
+   <elementGuidId>f3ec3607-7a70-416d-a0d3-89988c3bb11d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='ui-input--events_search']</value>
+         <value>//input[@id='user_search_drawer--action_bar_search']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#ui-input--events_search</value>
+         <value>#user_search_drawer--action_bar_search</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +22,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>eca103a8-100a-4340-aee5-d31429b73d1e</webElementGuid>
+      <webElementGuid>e58b4d24-6b5e-4049-8ba1-a942e2a4ac8f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>cmui--search_input</value>
+      <webElementGuid>c7daa548-9fe6-4fab-bb4a-6c14e6d021f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ui-input--events_search</value>
-      <webElementGuid>c68c931f-8045-4027-94db-acc0565ef0d0</webElementGuid>
+      <value>user_search_drawer--action_bar_search</value>
+      <webElementGuid>333e17b9-e594-4b4a-b960-f9e572a7096c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +46,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search</value>
-      <webElementGuid>9cf1b620-83c1-4ab7-b0b0-ca19655bd556</webElementGuid>
+      <webElementGuid>c914be4e-e079-4f12-a35b-b978709b2604</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,54 +54,46 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>a2ba2567-2b02-417c-ae76-94e2a7099a0f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>id(&quot;ui-input--events_search&quot;)</value>
-      <webElementGuid>cea0f9dd-d521-4e6b-9392-61ac10b42521</webElementGuid>
+      <webElementGuid>1c22d16f-a0c4-4fe2-bde2-22b57f48b693</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>B</value>
-      <webElementGuid>25ad5c8c-a0be-4bd2-a821-1987acb44797</webElementGuid>
+      <value>q</value>
+      <webElementGuid>31edd649-35d3-4c54-972f-cb7841298dba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;user_search_drawer--action_bar_search&quot;)</value>
+      <webElementGuid>3591cd3f-e7ae-4691-8856-3cfc0d55b2b8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='ui-input--events_search']</value>
-      <webElementGuid>00abebd3-5bc9-4f10-b94c-8d49919de627</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div/div[2]/div/input</value>
-      <webElementGuid>9ad8dd1f-f5b0-4ae9-a5d9-ab98a203c511</webElementGuid>
+      <value>//input[@id='user_search_drawer--action_bar_search']</value>
+      <webElementGuid>2286ab6a-9469-427c-a65b-3f63cfb8f26d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/input</value>
-      <webElementGuid>8bc342a5-e42f-4c1a-8ba5-8fc00603e2f9</webElementGuid>
+      <value>//header/div/div/div[2]/div/div/input</value>
+      <webElementGuid>0283d41f-9c81-4215-831e-5007f2b52dfc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'ui-input--events_search' and @placeholder = 'Search' and @type = 'text']</value>
-      <webElementGuid>8390c6a2-a6cd-42b4-8d29-ba23ffebb759</webElementGuid>
+      <value>//input[@id = 'user_search_drawer--action_bar_search' and @placeholder = 'Search' and @type = 'text']</value>
+      <webElementGuid>afa3dc08-d56f-4c19-968e-646674fc371f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

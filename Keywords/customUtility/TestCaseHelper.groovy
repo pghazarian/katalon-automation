@@ -31,6 +31,11 @@ class TestCaseHelper {
 			return true
 		}
 
+		if (isTestSuite()) {
+			KeywordUtil.markPassed("This is a test suite file. Proceed.")
+			return true
+		}
+
 		def testCase = getTestCaseObject()
 
 		def tags = testCase.tag.split(",")
@@ -64,7 +69,7 @@ class TestCaseHelper {
 
 	def getCurrentlyRunningTestCaseId() {
 
-		def source = RunConfiguration.getExecutionSource();
+		def source = RunConfiguration.getExecutionSource()
 
 		KeywordUtil.logInfo("RunConfiguration.getExecutionSource(): ${source}")
 
@@ -76,12 +81,28 @@ class TestCaseHelper {
 		// to
 		//		Test Cases/HC-Web/Shared/Is Environment Valid
 
-		def startPos = source.indexOf("Test Cases/")
+		def startPos = 0
+		def parsed = ""
 
-		def parsed = source.substring(startPos, source.size() - '.tc'.size())
+		// test cases
+		if (source.indexOf("Test Cases/") > 0) {
 
-		KeywordUtil.logInfo("parsed test case id: ${parsed}")
+			startPos = source.indexOf("Test Cases/")
+
+			parsed = source.substring(startPos, source.size() - '.tc'.size())
+
+			KeywordUtil.logInfo("parsed test case id: ${parsed}")
+		}
 
 		return parsed;
+	}
+
+	def Boolean isTestSuite() {
+
+		def source = RunConfiguration.getExecutionSource()
+
+		KeywordUtil.logInfo("RunConfiguration.getExecutionSource(): ${source}")
+
+		return source.indexOf("Test Suites/") > 0
 	}
 }

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BreadCrumb2</name>
+   <name>CloseButton</name>
    <tag></tag>
-   <elementGuidId>6cb0125b-7da4-4680-9c4f-f1273a586e6b</elementGuidId>
+   <elementGuidId>cf341429-6838-450b-8107-c18b2873aee9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@class, 'navigation_breadcrumbs--breadcrumb_title')])[2]/p</value>
+         <value>//div[@class=&quot;close-button&quot;]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>/html/body/div[4]/div/div[1]/div[1]/div[1]/div/header/div/div[2]/button</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
       </entry>
       <entry>
          <key>BASIC</key>

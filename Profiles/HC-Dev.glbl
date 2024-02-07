@@ -29,4 +29,29 @@
       <initValue>'/public/connection-form/226/zztest-automation-do-not-touch'</initValue>
       <name>ConnectionForm_PublicFormPath</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Flying Squirrel Parade'</initValue>
+      <name>EventSearch_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Flying Squirrel Parade'</initValue>
+      <name>EventSearch_EventName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bittu Rauniyar'</initValue>
+      <name>EventSearch_ScheduledName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Matthew Kemper'</initValue>
+      <name>EventSearch_RegistrantName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Flying Squirrel Parade Fellowship'</initValue>
+      <name>EventSearch_ServingOppName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
