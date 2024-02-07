@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Event Search Plus</name>
-   <tag></tag>
+   <tag>QA,Dev,Stage,Smoke,Stage2,Production</tag>
    <comment></comment>
    <testCaseGuid>ce456e66-09e6-48fd-81d9-492ab400d213</testCaseGuid>
    <variableLinks>
