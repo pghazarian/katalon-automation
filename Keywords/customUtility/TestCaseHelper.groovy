@@ -30,7 +30,7 @@ class TestCaseHelper {
 			assert true
 			return true
 		}
-		
+
 		if (isTestSuite()) {
 			KeywordUtil.markPassed("This is a test suite file. Proceed.")
 			return true
@@ -40,17 +40,17 @@ class TestCaseHelper {
 
 		def tags = testCase.tag.split(",")
 
-		def isProductionApproved = tags.contains(PRODUCTION_TAG) || testCase.name.indexOf("Production")
+		def hasProductionTag = tags.contains(PRODUCTION_TAG)
 
-		KeywordUtil.logInfo("isProductionApproved: $isProductionApproved")
+		KeywordUtil.logInfo("hasProductionTag: $hasProductionTag")
 
-		if (isProductionApproved) {
-			KeywordUtil.markPassed("Executing Profile is $executionProfile and this test case/suite case is approved for Production. Test Case may proceed.")
+		if (hasProductionTag) {
+			KeywordUtil.markPassed("Executing Profile is $executionProfile and the $PRODUCTION_TAG tag is present in the test case properties tab. Test Case may proceed.")
 			assert true
 			return true
 		}
 		else {
-			KeywordUtil.markFailed("Executing Profile is $executionProfile and this test case/suite case is approved for Production. Test Case may NOT proceed.")
+			KeywordUtil.markFailed("Executing Profile is $executionProfile and the $PRODUCTION_TAG tag is not present in the test case properties tab. Test Case may NOT proceed.")
 			assert false
 			return false
 		}
@@ -96,9 +96,9 @@ class TestCaseHelper {
 
 		return parsed;
 	}
-	
-	def Boolean isTestSuite() {		
-			
+
+	def Boolean isTestSuite() {
+
 		def source = RunConfiguration.getExecutionSource()
 
 		KeywordUtil.logInfo("RunConfiguration.getExecutionSource(): ${source}")
