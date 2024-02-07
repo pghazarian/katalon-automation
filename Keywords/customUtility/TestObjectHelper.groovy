@@ -69,9 +69,6 @@ class TestObjectHelper {
 	 */
 	@Keyword
 	def TestObject getTestObjectWithXpathTextMatch(String xpath, String textToMatch, int index = 1) {
-		// escape single quotes in the textToMatch
-		//		textToMatch = textToMatch.replaceAll('\'', '\\\'')
-
 		xpath = "($xpath[text() = \"$textToMatch\" or normalize-space(.) = \"$textToMatch\"])[$index]"
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
