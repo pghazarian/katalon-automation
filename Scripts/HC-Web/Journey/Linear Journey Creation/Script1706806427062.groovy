@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_20s3
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Continue'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Katalon Test Journey'), JourneyName)
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb'), JourneyName)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Builder'))
 
