@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Katalon Test Journey</name>
+   <name>JourneyName_Breadcrumb</name>
    <tag></tag>
    <elementGuidId>98290bb8-9fe9-484a-b695-772d77c89a93</elementGuidId>
    <selectorCollection>

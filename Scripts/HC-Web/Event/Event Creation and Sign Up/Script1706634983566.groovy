@@ -97,4 +97,44 @@ WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Event/Event Cre
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Close Email Drawer Chevron Button'))
 
 WebUI.closeBrowser()
+/*
+ *  This code performs a series of actions to create and manage an event in a web application.
+ *
+ *  1. The code calls a test case named 'Login' with specific parameters.
+ *  2. The code clicks on a specific test object to navigate to the event creation page.
+ *  3. The code clicks on another test object to create a new event.
+ *  4. The code sets the value of a dropdown field using a custom keyword.
+ *  5. The code clicks on a test object to select a specific option.
+ *  6. The code sets the value of a text field.
+ *  7. The code clicks on a test object to add a venue to the event.
+ *  8. The code clicks on a test object to select a specific venue.
+ *  9. The code clicks on a test object to create the event.
+ *  10. The code clicks on a test object to save the event.
+ *  11. The code clicks on a test object to navigate to the occurrence schedule page.
+ *  12. The code clicks on a test object to add attendees to the event.
+ *  13. The code clicks on a test object to select the option for the current occurrence.
+ *  14. The code sets the value of a text field to search for an attendee.
+ *  15. The code sends a key press event to the search field.
+ *  16. The code waits for a specific test object to become clickable.
+ *  17. The code clicks on a test object to select the first person record result.
+ *  18. The code clicks on a test object to select the attendee.
+ *  19. The code clicks on a test object to confirm the selection of the attendee.
+ *  20. The code verifies the text of a test object to ensure the correct attendee is selected.
+ *  21. The code clicks on a test object to select the first attendee checkbox.
+ *  22. The code clicks on a test object to open the occurrence schedule actions dropdown.
+ *  23. The code clicks on a test object to mark the attendee as attended.
+ *  24. The code verifies the text of a test object to ensure the attendee is marked as attended.
+ *  25. The code clicks on a test object to select the first attendee checkbox.
+ *  26. The code clicks on a test object to open the occurrence schedule actions dropdown.
+ *  27. The code clicks on a test object to remove the attendee from the occurrence.
+ *  28. The code clicks on a test object to confirm the removal of the attendee.
+ *  29. The code clicks on a test object to navigate to the overview page.
+ *  30. The code clicks on a test object to open the overview actions dropdown.
+ *  31. The code clicks on a test object to cancel the event.
+ *  32. The code clicks on a test object to confirm the cancellation of the event.
+ *  33. The code verifies the text of a test object to ensure the event is successfully canceled.
+ *  34. The code clicks on a test object to close the email drawer.
+ *  35. The code closes the browser.
+ *
+ */
 

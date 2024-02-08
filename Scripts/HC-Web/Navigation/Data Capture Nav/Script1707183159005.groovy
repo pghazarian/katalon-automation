@@ -28,3 +28,12 @@ CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('D
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Weekend Metrics Capture', 'Weekend Metrics Capture')
 
 WebUI.closeBrowser()
+/*
+ *  This code is for logging into a web application and performing various navigation actions.
+ *
+ *  1. The code calls a test case named 'Login' with the parameters 'HostUrl', 'UserName', and 'Password' to log into the application.
+ *  2. The code then calls a custom keyword named 'clickTopMenuAndValidateHeader' with the parameters 'Data Capture' and 'Connection Forms' to navigate to a specific page and validate the header.
+ *  3. The code continues to call the 'clickSubmenuAndValidateHeader' custom keyword multiple times with different parameters to navigate to different pages and validate the headers.
+ *  4. Finally, the code closes the browser.
+ *
+ */
