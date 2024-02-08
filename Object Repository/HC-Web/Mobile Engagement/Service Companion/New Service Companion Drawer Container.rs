@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>MinistriesCentral</name>
+   <name>New Service Companion Drawer Container</name>
    <tag></tag>
-   <elementGuidId>90f82f2a-42d7-4469-968d-928f995284d7</elementGuidId>
+   <elementGuidId>75b63aa2-22c1-4d43-9ff1-b4a7d4ca727c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='drawer-container-inner']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='section-label-container']/p[(text() = 'Mobile Engagement' or . = 'Mobile Engagement')]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

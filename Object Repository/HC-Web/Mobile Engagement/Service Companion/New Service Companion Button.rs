@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>New Service Companion Button</name>
+   <tag></tag>
+   <elementGuidId>2bbf3cb4-7072-4a35-98bf-da72d84b2f6e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='ui-button--service_companion_add_template']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.button-inner-container.jss244</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dff23a9d-b044-492d-b0a9-001589e0ae27</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss244</value>
+      <webElementGuid>4f90f93f-95a5-462e-9e67-93f42228d644</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>plusNew</value>
+      <webElementGuid>70cc49b0-dec4-4ac5-8d77-96a9fe249643</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-button--service_companion_add_template&quot;)/span[@class=&quot;button-inner-container jss244&quot;]</value>
+      <webElementGuid>a73a8f39-99f5-4137-ba2a-559902751af2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
