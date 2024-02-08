@@ -9,22 +9,8 @@ trigger:
 pool:
 #  This is an override attempt 
   vmImage: ubuntu-20.04
-#  This is the original code that was included in the 
+#  This is the original code that was included in the example
 #  vmImage: ubuntu-latest
-
-# steps:
-# - script: echo Hello, world!
-#   displayName: 'Run a one-line script'
-
-# - script: |
-#     echo Add other tasks to build, test, and deploy your project.
-#     echo See https://aka.ms/yaml
-#   displayName: 'Run a multi-line script'
-
-# - task: katalonTask@1
-#   inputs:
-#     version: '8.5.2'
-#     executeArgs: '-retry=0 -statusDelay=15 -testSuitePath="Test Suites/HC Stage Tests" -browserType="Chrome" -apiKey=$(katalon_api_key)'
 
 steps:
 - task: katalonTask@1
