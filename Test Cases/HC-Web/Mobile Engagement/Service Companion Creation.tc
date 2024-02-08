@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Service Companion Creation</name>
-   <tag>Stage</tag>
+   <tag>Stage,QA,Dev,Stage2</tag>
    <comment></comment>
    <testCaseGuid>301a3d5c-8f5d-42fe-8b09-aa1f3a0f6c57</testCaseGuid>
    <variableLinks>
