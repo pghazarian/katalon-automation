@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Dev Tools Nav</name>
+   <tag>Production,Stage,Smoke,QA,Dev,Stage2</tag>
+   <comment></comment>
+   <testCaseGuid>9ab4aeeb-e2d1-4239-be02-48a52a508c18</testCaseGuid>
+</TestCaseEntity>

@@ -39,4 +39,29 @@
       <initValue>'/public/connection-form/3830/zztest-automation-do-not-touch'</initValue>
       <name>ConnectionForm_PublicFormPath</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bryant\'s Demo Event'</initValue>
+      <name>EventSearch_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bryant\'s Demo Event'</initValue>
+      <name>EventSearch_EventName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Whitney Kelmp'</initValue>
+      <name>EventSearch_ScheduledName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Kid Stone'</initValue>
+      <name>EventSearch_RegistrantName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bryant\'s Demo Serving Opp'</initValue>
+      <name>EventSearch_ServingOppName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

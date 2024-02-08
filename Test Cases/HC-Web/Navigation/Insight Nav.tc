@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Insight Nav</name>
+   <tag>Production,Stage,Smoke,QA,Dev,Stage2</tag>
+   <comment></comment>
+   <testCaseGuid>37473704-58e2-4e30-b75e-ff97da0ea379</testCaseGuid>
+</TestCaseEntity>

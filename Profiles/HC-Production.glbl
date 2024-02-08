@@ -11,12 +11,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'sbchcqa@gmail.com'</initValue>
+      <initValue>'crisf@saddleback.com'</initValue>
       <name>Admin_UserName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rVcUJioFBnnzd8VbIkn2VQ=='</initValue>
+      <initValue>'QyKAW1zkijel+aLNsYRCJQ=='</initValue>
       <name>Admin_Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -73,5 +73,30 @@
       <description></description>
       <initValue>'/public/connection-form/674/zztest-automation-do-not-touch'</initValue>
       <name>ConnectionForm_PublicFormPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'KSG Lake Forest Tuesday 4:30pm'</initValue>
+      <name>EventSearch_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'KSG Lake Forest - Tuesday 4:30pm'</initValue>
+      <name>EventSearch_EventName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Adelyn Bassett'</initValue>
+      <name>EventSearch_ScheduledName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Andrew Diaz'</initValue>
+      <name>EventSearch_RegistrantName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'KSG Tuesday 4:30pm 2023 - 2024'</initValue>
+      <name>EventSearch_ServingOppName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

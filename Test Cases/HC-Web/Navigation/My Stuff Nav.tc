@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>My Stuff Nav</name>
+   <tag>Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>b9977175-4a8d-41c5-a98e-b76fd4e40b13</testCaseGuid>
+</TestCaseEntity>

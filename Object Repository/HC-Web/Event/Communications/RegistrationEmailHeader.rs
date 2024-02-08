@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BreadCrumb2</name>
+   <name>RegistrationEmailHeader</name>
    <tag></tag>
-   <elementGuidId>6cb0125b-7da4-4680-9c4f-f1273a586e6b</elementGuidId>
+   <elementGuidId>f9606c4c-537a-4abf-8b34-4eb59d77b956</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@class, 'navigation_breadcrumbs--breadcrumb_title')])[2]/p</value>
+         <value>//h3[text()='Registration Email']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
