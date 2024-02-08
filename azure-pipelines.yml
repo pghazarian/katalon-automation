@@ -7,9 +7,10 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-20.04
+#  This is an override attempt 
+#  vmImage: ubuntu-20.04
 #  This is the original code that was included in the 
-#  vmImage: ubuntu-latest
+  vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
