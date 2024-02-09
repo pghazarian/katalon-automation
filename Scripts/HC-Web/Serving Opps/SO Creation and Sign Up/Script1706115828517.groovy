@@ -19,9 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_Ministries CentralMinistries Central'))
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/ministries-central'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/input'), 'Event SO Test')
 
@@ -34,6 +32,8 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/td_Anaheim'))
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_View Dashboard'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Serving Opps'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_plusNew Opportunity'))
 

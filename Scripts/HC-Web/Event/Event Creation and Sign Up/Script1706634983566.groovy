@@ -19,9 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/p_Events Central'))
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/events-central/overview'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_New Event'))
 
