@@ -21,8 +21,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.User_NoViewDOBPermissions_UserName
         , ('Password') : GlobalVariable.User_NoViewDOBPermissions_Password, ('TargetPath') : '/people/search-or-add'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Healthy Church/p_People'))
-
 WebUI.clearText(findTestObject('HC-Web/Person/Search/SearchInput'))
 
 'Type Search term'
@@ -62,10 +60,12 @@ WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), Veri
 WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
 
 'Verify the first name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/FirstNameInput'), FirstName)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/FirstNameInput'), 
+    FirstName)
 
 'Verify the last name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), LastName)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), 
+    LastName)
 
 'Verify the birthdate label is not present'
 WebUI.verifyElementNotPresent(findTestObject('HC-Web/Person/Details/Birthdate_Label'), 0)

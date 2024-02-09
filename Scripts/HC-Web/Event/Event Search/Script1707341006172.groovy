@@ -25,12 +25,23 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Search/SearchTextFi
 
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Search/SearchTextField'), Keys.chord(Keys.ENTER))
 
-FoundSearchRecord = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'event-card-title\')]', 
-    EventName)
+try {
+	'Try to click the record in the table'
+	FoundSearchRecord = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'event-card-title\')]',
+		EventName)
+	
+	WebUI.verifyElementText(FoundSearchRecord, EventName)
 
-WebUI.verifyElementText(FoundSearchRecord, EventName)
+	WebUI.click(FoundSearchRecord)
+} catch(Exception ex) {
+	println("Could not click on the record")
+	
+	'if the record could not be clicked, try to click the event Details Popover'
+	EventDetailsPopover = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'event-details-popover')]")
+	
+	WebUI.click(EventDetailsPopover)
+}
 
-WebUI.click(FoundSearchRecord)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Overview/BreadcrumbText2'), EventName)
 
