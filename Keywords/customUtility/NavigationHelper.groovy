@@ -43,13 +43,13 @@ public class NavigationHelper {
 	def Boolean clickSubmenuAndValidateHeader(String menuLabel, String submenuLabel, String headerLabel) {
 		return clickSubmenuAndValidateHeader(menuLabel, submenuLabel, headerLabel, false)
 	}
-	
+
 	@Keyword
 	def Boolean clickSubmenuAndValidateHeader(String menuLabel, String submenuLabel, String headerLabel, Boolean openTopMenuFirst) {
 		if (openTopMenuFirst) {
 			clickTopMenu(menuLabel)
 		}
-		
+
 		clickSubMenu(menuLabel, submenuLabel)
 		return validatePageHeader(headerLabel)
 	}
@@ -59,6 +59,18 @@ public class NavigationHelper {
 		def to = new TestObjectHelper()
 
 		return WebUI.verifyElementText(to.getTestObjectWithXpath("//div[contains(@class, 'app-header-desktop')]/descendant::h4"), headerLabel)
+	}
+
+	@Keyword
+	def getHCUrl(String relativePath) {
+		// Return the current profile HC HostUrl and Relative Path for the initial target URL
+		return "$GlobalVariable.HC_HostUrl$relativePath"
+	}
+
+	@Keyword
+	def goToHCUrl(String relativePath) {
+		// Navigate to the full path'
+		WebUI.navigateToUrl(getHCUrl(relativePath))
 	}
 }
 

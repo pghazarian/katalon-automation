@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Perform a person search, open the record both in Person v2 and Person Edit to verify its information</description>
+   <description>Perform a person search, open the record both in Person v2 and Person Edit to verify its information AND that no DOB (Date of Birth) information is displayed</description>
    <name>People Search without View DOB Permissions</name>
    <tag>Stage,Smoke,QA,Dev,Stage2</tag>
    <comment></comment>

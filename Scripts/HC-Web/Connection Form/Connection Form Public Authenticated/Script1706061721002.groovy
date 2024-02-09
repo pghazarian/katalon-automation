@@ -30,10 +30,7 @@ def date = new Date()
 
 def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
 
-def FormPath = GlobalVariable.HC_HostUrl + PublicConnectionFormPath
-
-def AdminFormPath = GlobalVariable.HC_HostUrl + ConnectionFormManagementPath
-
+'Define values to use in the controls to enter and then verify'
 def DateSelected = new Date().plus(3)
 
 def SingleTextValue = "Single Text - $CurrentDateTime"
@@ -48,6 +45,7 @@ def RadioButtonSelection = 'Option 2'
 
 def DropDownSelection = 'Option 1'
 
+'Define Labels that we will search controls with'
 def LabelValueDate = 'Please choose a Date'
 
 def LabelValueSingleLineText = 'Can you enter a sentence?'
@@ -67,7 +65,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 'Go to the Connection Form Admin screen'
-WebUI.navigateToUrl(AdminFormPath)
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
 
 def PublishButton = findTestObject('Object Repository/HC-Web/Connection Form/Overview/PublishLinkButton')
 
@@ -81,7 +79,7 @@ if (CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(PublishButt
     WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Overview/div_Yes'))
 }
 
-WebUI.navigateToUrl(FormPath)
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(PublicConnectionFormPath)
 
 WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form Public/FirstNameField'), 2)
 
@@ -134,7 +132,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Connection Form
     'Your form has been received')
 
 'Go to the Connection Form Admin screen'
-WebUI.navigateToUrl(AdminFormPath)
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
 
 'Click on the Entries menu'
 WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Entries'))
@@ -189,9 +187,8 @@ WebUI.delay(3)
 
 WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form/Entries/EntriesHeader'), 3)
 
-//WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Overview'))
-
-WebUI.navigateToUrl(AdminFormPath)
+'Go to the Connection Form Admin screen'
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Connection Form/Overview/Form Details Header'), 2)
 
@@ -202,8 +199,6 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Connection 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Connection Form/Overview/span_Unpublish'), 'Unpublish')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Overview/span_Unpublish'))
-
-//WebUI.delay(1)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Connection Form/Overview/div_Yes'), 2)
 
