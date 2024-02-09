@@ -21,9 +21,9 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/events-central/overview'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Search/SearchTextField'), SearchTerm)
+WebUI.setText(findTestObject('HC-Web/Event/Search/SearchTextField'), SearchTerm)
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Search/SearchTextField'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Event/Search/SearchTextField'), Keys.chord(Keys.ENTER))
 
 try {
 	'Try to click the record in the table'
@@ -47,11 +47,20 @@ WebUI.verifyElementText(findTestObject('HC-Web/Event/Overview/BreadcrumbText2'),
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Overview/EventDescription'), 1)
 
+'Go to the Event Details screen'
 WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 
-//EventName = findTestObject('HC-Web/Event/Details/EventName')
-//CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(EventName, SearchTerm)
-WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_OccurrenceSchedule'))
+WebUI.delay(2)
+
+'Go to the Occurrence Schedule screen'
+try {
+	WebUI.verifyElementVisible(findTestObject('HC-Web/Event/Details/Subnav_OccurrenceSchedule'), 10)
+	WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_OccurrenceSchedule'))
+}
+catch (Exception ex) {
+	WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_MoreEllipsis'))
+	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Occurrence Schedule']"))
+}
 
 'Click on name in the table to open the record in a drawer'
 WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
@@ -67,7 +76,15 @@ WebUI.verifyEqual(ScheduledName, PersonName)
 
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/CloseButton'))
 
-WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_RegistrationRoster'))
+'Go to the Registration Roster screen'
+try {
+	WebUI.verifyElementVisible(findTestObject('HC-Web/Event/Details/Subnav_RegistrationRoster'), 10)
+	WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_RegistrationRoster'))
+}
+catch (Exception ex) {
+	WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_MoreEllipsis'))
+	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Registration Roster']"))
+}
 
 'Click on name in the table to open the record in a drawer'
 WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
@@ -83,9 +100,29 @@ WebUI.verifyEqual(RegistrantName, PersonName)
 
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/CloseButton'))
 
-WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_Serving Opps'))
+'Go to the Communications screen'
+try {
+	WebUI.verifyElementVisible(findTestObject('HC-Web/Event/Details/Subnav_Communications'), 10)
+	WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_Communications'))
+}
+catch (Exception ex) {
+	WebUI.click(findTestObject('Object Repository/HC-Web/Event/Details/Subnav_MoreEllipsis'))
+	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Communications']"))
+}
 
-'Click on the serving opp'
+WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Communications/RegistrationEmailHeader'), 1)
+
+'Go to the Serving Opps screen'
+try {
+	WebUI.verifyElementVisible(findTestObject('HC-Web/Event/Details/Subnav_Serving Opps'), 10)
+	WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_Serving Opps'))
+}
+catch (Exception ex) {
+	WebUI.click(findTestObject('Object Repository/HC-Web/Event/Details/Subnav_MoreEllipsis'))
+	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Serving Opps']"))
+}
+
+'Click on the serving opp entry'
 ServingOppDiv = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'page--data_cards\')]/descendant::h4', 
     ServingOppName)
 
@@ -97,10 +134,6 @@ WebUI.verifyElementText(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb2'), E
 
 'Go back to the Event via the Breadcrumb'
 WebUI.click(findTestObject('HC-Web/Event/ServingOpp/BreadCrumb2'))
-
-WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_Communications'))
-
-WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Communications/RegistrationEmailHeader'), 1)
 
 WebUI.closeBrowser()
 
