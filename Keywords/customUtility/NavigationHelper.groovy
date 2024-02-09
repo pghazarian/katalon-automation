@@ -21,6 +21,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class NavigationHelper {
+	/**
+	 * Check if the primary element is present. If so, click it.
+	 * Otherwise, click both the connector and the secondary elements.
+	 */
+	@Keyword
+	def clickPrimaryOrSecondary(TestObject primary, TestObject connector, TestObject secondary) {
+		def to = new TestObjectHelper()
+
+		if (to.isElementPresent(primary, 2)) {
+			WebUI.click(primary)
+		}
+		else {
+			if (to.isElementPresent(connector, 2)) {
+				WebUI.click(connector)
+			}
+
+			if (to.isElementPresent(secondary, 2)) {
+				WebUI.click(secondary)
+			}
+		}
+	}
+
 	def clickTopMenu(String menuLabel) {
 		def to = new TestObjectHelper()
 
