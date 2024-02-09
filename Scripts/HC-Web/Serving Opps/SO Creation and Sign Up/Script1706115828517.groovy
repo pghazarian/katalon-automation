@@ -37,44 +37,69 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_plusNew Opportunity'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/td_What  Why'))
+try {
+	
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/td_What  Why'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputui-input--so_name'), 'Katalon Test SO')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputui-input--so_name'), 'Katalon Test SO')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputui-input--so_short_description'), 'Katalon Test SO')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputui-input--so_short_description'), 'Katalon Test SO')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/textarea_SO Created for Katalon Testing'), 'SO Created for Katalon Testing')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/textarea_SO Created for Katalon Testing'), 'SO Created for Katalon Testing')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Add Contactplus'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Add Contactplus'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_QAQA Automation  AdminMale  Lake Forest_34d8fc'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_QAQA Automation  AdminMale  Lake Forest_34d8fc'))
+	
+	try {
+		
+		WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Select'))
+		
+	}
+	
+	catch (Exception ex){
+		
+	    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Opp Creation Cross Button'))
+		
+	    throw new com.kms.katalon.core.exception.StepFailedException('Failed to add opportunity contact')
+		
+	}
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Select'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Nextchevron-wl-right'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Nextchevron-wl-right'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Nextchevron-wh-right'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Nextchevron-wh-right'))
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputschedule_capacity_drawer--input'), '10')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputschedule_capacity_drawer--input'), '10')
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_pencilEdit Custom Questions'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_pencilEdit Custom Questions'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_New Question'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_New Question'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/h5_CheckboxCheckbox'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/h5_CheckboxCheckbox'))
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_title_input--1'), 'Test Question')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_title_input--1'), 'Test Question')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_placeholder_input--1'), 
+        'Check This Box')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_placeholder_input--1'), 
-    'Check This Box')
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1_2'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1_2'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Done'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Done'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Save'))
+	
+}
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Save'))
+catch (Exception e) {
+	
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Opp Creation Cross Button'))
+
+    WebUI.click('Object Repository/HC-Web/Serving Opps/Start Over Button')
+	
+    throw new com.kms.katalon.core.exception.StepFailedException('Failed to create Serving Opportunity')
+} 
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Done_1'))
 
