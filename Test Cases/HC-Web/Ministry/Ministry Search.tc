@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Search for a ministry and open a given location and verify that every page is able to open successfully</description>
    <name>Ministry Search</name>
-   <tag>Production,Stage,Smoke</tag>
+   <tag>Production,Stage,Smoke,QA</tag>
    <comment></comment>
    <testCaseGuid>624a9365-ddd8-495b-af52-f18a8d44eea7</testCaseGuid>
    <variableLinks>

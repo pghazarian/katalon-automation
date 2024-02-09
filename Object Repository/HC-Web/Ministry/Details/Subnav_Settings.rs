@@ -6,11 +6,11 @@
    <elementGuidId>b94bfec0-ddd1-4211-987e-ceb199f54a7d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='sectional-tabs-container']/div/div/button[(text() = 'Settings' or . = 'Settings')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='sectional-tabs-container']/div/div/button[(text() = 'Serving Opps' or . = 'Serving Opps')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

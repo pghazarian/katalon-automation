@@ -54,4 +54,29 @@
       <initValue>'Flying Squirrel Parade Fellowship'</initValue>
       <name>EventSearch_ServingOppName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Accounting'</initValue>
+      <name>MinistrySearch_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Accounting'</initValue>
+      <name>MinistrySearch_MinistryName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lake Forest'</initValue>
+      <name>MinistrySearch_LocationName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cameron Brewer'</initValue>
+      <name>MinistrySearch_MemberName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Margaret Barrett'</initValue>
+      <name>MinistrySearch_InterestedName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
