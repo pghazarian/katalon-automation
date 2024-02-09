@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Subnav_ServingOpps</name>
+   <name>Subnav_MoreEllipsis</name>
    <tag></tag>
-   <elementGuidId>8f20045e-db57-467d-9ad7-ea5b6942c9cc</elementGuidId>
+   <elementGuidId>da61946c-74a8-4ed9-8c13-3fe1082824cf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='sectional-tabs-container']/div/div/button[(text() = 'Serving Opps' or . = 'Serving Opps')]</value>
+         <value>//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
