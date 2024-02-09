@@ -19,9 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('HC-Web/Navigation/MinistriesCentral'))
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/ministries-central'], FailureHandling.STOP_ON_FAILURE)
 
 'Search for Ministry'
 WebUI.setText(findTestObject('HC-Web/Ministry/Search/SearchInput'), SearchTerm)
@@ -41,8 +39,6 @@ WebUI.delay(1)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
-//LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(((('//div[@class=\'drawer-children\']/table/tbody/tr/td[(text() = \'' + 
-//    LocationName) + '\' or . = \'') + LocationName) + '\')]')
 LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-children\']/table/tbody/tr/td', 
     LocationName, 1)
 

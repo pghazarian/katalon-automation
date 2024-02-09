@@ -19,9 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('HC-Web/Navigation/Mobile Engagement Navigation Button'))
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/content-management/service-companion'], FailureHandling.STOP_ON_FAILURE)
 
 ServiceCompanionName = ('Katalon Test Service Companion ' + UUID.randomUUID())
 

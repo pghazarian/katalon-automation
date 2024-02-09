@@ -23,6 +23,12 @@
       <value></value>
       <variableId>02acebe1-40e6-416b-b1a0-eea15b86bcc0</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>38949a31-56f4-4c20-b0e3-9ffb87f46274</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>GlobalVariable.HC_HostUrl</defaultValue>
       <description></description>
@@ -43,5 +49,12 @@
       <id>02acebe1-40e6-416b-b1a0-eea15b86bcc0</id>
       <masked>false</masked>
       <name>Password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>38949a31-56f4-4c20-b0e3-9ffb87f46274</id>
+      <masked>false</masked>
+      <name>TargetPath</name>
    </variable>
 </TestCaseEntity>

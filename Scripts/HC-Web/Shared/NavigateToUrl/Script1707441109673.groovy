@@ -17,20 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'customUtility.TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
-
-'Append the HostUrl and TargetPath for the initial target URL'
+'Append the current profile HC HostUrl and TargetPath for the initial target URL'
 TargetUrl = "$HostUrl$TargetPath"
 
-'Open the browser at the target URL'
-WebUI.openBrowser(TargetUrl)
-
-'Fill in the user name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), UserName)
-
-'Fill in the password'
-WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), Password)
-
-'Sign the sign button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
+'Navigate to the target URL'
+WebUI.navigateToUrl(TargetUrl)
 
