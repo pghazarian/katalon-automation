@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Exercise the navigation for the Insights menu and all of its submenus</description>
    <name>Insight Nav</name>
    <tag>Production,Stage,Smoke,QA,Dev,Stage2</tag>
    <comment></comment>

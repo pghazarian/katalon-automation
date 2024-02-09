@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Exercise the navigation for the Mobile Engagement menu and all of its submenus</description>
    <name>Mobile Engagement Nav</name>
    <tag>Production,Stage,Smoke</tag>
    <comment></comment>

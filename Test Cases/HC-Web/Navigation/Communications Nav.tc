@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Exercise the navigation for the Communications menu and all of its submenus</description>
    <name>Communications Nav</name>
    <tag>Stage,Smoke,QA,Dev,Stage2</tag>
    <comment></comment>

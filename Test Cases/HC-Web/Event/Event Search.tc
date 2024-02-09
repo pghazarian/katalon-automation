@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Search for an Event and walk through the various pages of the Event</description>
    <name>Event Search</name>
    <tag>QA,Dev,Stage,Smoke,Stage2,Production</tag>
    <comment></comment>
