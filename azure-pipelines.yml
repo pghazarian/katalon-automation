@@ -16,7 +16,7 @@ steps:
 - task: katalonTask@1
   inputs:
     version: '9.0.0'
-    executeArgs: '-testSuitePath="Test Suites/HC Stage Tests" -browserType="Chrome" -apiKey=$(katalon_api_key) --config -webui.autoUpdateDrivers=true -executionProfile="HC-Stage"'
+    executeArgs: '-testSuitePath="Test Suites/$(test_suite_pathname)" -browserType="Chrome" -apiKey=$(katalon_api_key) --config -webui.autoUpdateDrivers=true -executionProfile="$(execution_profile)"'
     xvfbConfiguration: '-s "-screen 0 1024x768x24"'
   env:
     JAVA_HOME: $(JAVA_HOME_17_X64)
