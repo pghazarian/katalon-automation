@@ -12,40 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>3f6e7e24-cbb5-486c-8766-6789d803ce6f</testSuiteGuid>
    <testCaseLink>
-      <guid>9b60618b-efe2-4663-badf-25dda494d77d</guid>
+      <guid>ad2e1260-ca3f-4a0f-a96b-108973218095</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Ministry/Ministry Search</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Navigation/People Nav</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>7dd511c0-60cd-48f5-a519-fe8328504ade</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5375c838-c981-4fe3-be61-7c43e5ea1aef</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>693a1173-6038-4b12-b3e3-feec3bb6d235</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>bbe3d360-b751-48ad-bd20-f475e4bd858c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8837e34b-942c-4ae4-bc62-5fde1803aa6d</variableId>
-      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

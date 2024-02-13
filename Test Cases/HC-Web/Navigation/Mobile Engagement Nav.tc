@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Exercise the navigation for the Mobile Engagement menu and all of its submenus</description>
    <name>Mobile Engagement Nav</name>
-   <tag>Production,Stage,Smoke</tag>
+   <tag>Production,Stage</tag>
    <comment></comment>
    <testCaseGuid>b13cfdbd-c826-4664-a6ff-0d4715269442</testCaseGuid>
 </TestCaseEntity>

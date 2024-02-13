@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Exercise the navigation for the Journey menu and all of its submenus</description>
    <name>Journey Nav</name>
-   <tag>Stage,Smoke,Production</tag>
+   <tag>Stage,Production</tag>
    <comment></comment>
    <testCaseGuid>7337190f-2e5d-4e28-a2cf-a9a2e95758c7</testCaseGuid>
 </TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>All Nav</name>
+   <tag>Stage,Smoke,Production</tag>
+   <comment></comment>
+   <testCaseGuid>90239ee4-8b34-4bbf-8840-8cf49971a624</testCaseGuid>
+</TestCaseEntity>
