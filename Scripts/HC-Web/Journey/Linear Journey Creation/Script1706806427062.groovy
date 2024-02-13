@@ -33,13 +33,9 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputj
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--template_public_name'), 
     JourneyName)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Select-value'))
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_campus', 'Lake Forest')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Anaheim'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Select-value_1'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_20s30s'))
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_category', 'Worship')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Continue'))
 

@@ -22,26 +22,25 @@ import java.util.UUID as UUID
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_JourneyJourney(beta)'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/div_JourneyJourney(beta)'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_JourneyCreate Journey'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_JourneyCreate Journey'))
 
-JourneyName = ('Katalon Test Journey ' + UUID.randomUUID())
+JourneyName = ('QA Automation Test Open Nav Journey ' + UUID.randomUUID())
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--template_name'), JourneyName)
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--template_public_name'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/inputjourneys_list_page--template_name'), 
     JourneyName)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Select-value'))
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/inputjourneys_list_page--template_public_name'), 
+    JourneyName)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Anaheim'))
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_campus', 'Lake Forest')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Select-value_1'))
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_category', 'Worship')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_20s30s'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/Open Navigation Journey Pill Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Continue'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_Continue'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Katalon Test Journey'), JourneyName)
 
@@ -53,8 +52,8 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_New 
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--step_form_title'), 'Test')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--step_form_subtitle'), 
-    'Test')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--step_form_subtitle'),
+	'Test')
 
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
 
@@ -70,8 +69,7 @@ WebUI.click(findTestObject('HC-Web/Journey/CreateEdit/BackToAllJourneys'))
 
 WebUI.setText(findTestObject('HC-Web/Journey/AllJourneysPage/SearchBar'), JourneyName + Keys.ENTER)
 
-CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
-    1)
+CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName,
+	1)
 
 WebUI.closeBrowser()
-
