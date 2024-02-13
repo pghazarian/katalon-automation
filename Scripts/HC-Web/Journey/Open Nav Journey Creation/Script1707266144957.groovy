@@ -18,6 +18,12 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.util.UUID as UUID
 
+def date = new Date()
+
+def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
+
+def JourneyName = "QA Automation Test Open Nav Journey - $CurrentDateTime"
+
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
@@ -25,8 +31,6 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/div_JourneyJourney(beta)'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_JourneyCreate Journey'))
-
-JourneyName = ('QA Automation Test Open Nav Journey ' + UUID.randomUUID())
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/inputjourneys_list_page--template_name'), 
     JourneyName)
@@ -47,6 +51,8 @@ WebUI.delay(2)
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Katalon Test Journey'), JourneyName)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Builder'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Add an OptionNew Section'))
 
