@@ -19,13 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
+        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('My Stuff', 'Home')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('My Stuff', 'Home', 'Home')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('My Stuff', 'My Follow Ups', 'My Follow Ups')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('My Stuff', 'All Follow Ups', 'All Follow Ups')
+
+// This will open the My Ministries page if the user has no ministries assigned or two or more ministries assigned
+// If the user has exactly one ministry assigned, the one ministry will be automatically opened and this validation will fail
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('My Stuff', 'My Ministries', 'My Ministries')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('My Stuff', 'Notifications', 'Notifications')
 
-WebUI.closeBrowser()

@@ -19,10 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
+        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Giving Central', 'All Giving')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'All Giving', 'All Giving')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'Designations', 'Designations')
 
-WebUI.closeBrowser()

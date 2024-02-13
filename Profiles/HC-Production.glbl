@@ -31,13 +31,13 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Ryan'</initValue>
-      <name>PeopleSearch_FirstName</name>
+      <initValue>'Carson'</initValue>
+      <name>PeopleSearch_LastName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Carson'</initValue>
-      <name>PeopleSearch_LastName</name>
+      <initValue>'Ryan'</initValue>
+      <name>PeopleSearch_FirstName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -76,27 +76,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'KSG Lake Forest Tuesday 4:30pm'</initValue>
+      <initValue>'HC Test Private Event 2024'</initValue>
       <name>EventSearch_SearchTerm</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'KSG Lake Forest - Tuesday 4:30pm'</initValue>
+      <initValue>'HC Test Private Event 2024'</initValue>
       <name>EventSearch_EventName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Adelyn Bassett'</initValue>
+      <initValue>'Cris Francisco'</initValue>
       <name>EventSearch_ScheduledName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Andrew Diaz'</initValue>
+      <initValue>'Cris Francisco'</initValue>
       <name>EventSearch_RegistrantName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'KSG Tuesday 4:30pm 2023 - 2024'</initValue>
+      <initValue>'For Testing - DO NOT USE'</initValue>
       <name>EventSearch_ServingOppName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
@@ -23,8 +24,10 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Communications', 'Email Templates')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Email Templates', 'Email Templates')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Search', 'Segment Search')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Builder', 'Segment Builder')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Settings & Preferences', 'Settings & Preferences')
 
-WebUI.closeBrowser()
+// (2024-02-13) These tests are not available in production because they are still in development
+if (RunConfiguration.getExecutionProfile() != "HC-Production") {
+	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Search', 'Segment Search')
+	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Builder', 'Segment Builder')
+	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Settings & Preferences', 'Settings & Preferences')
+}

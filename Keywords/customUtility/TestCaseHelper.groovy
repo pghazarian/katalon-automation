@@ -5,9 +5,36 @@ import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory
 import com.kms.katalon.core.util.KeywordUtil
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 
 class TestCaseHelper {
+	final PRODUCTION_PROFILE = "HC-Production";
+	final PRODUCTION_TAG = "Production";
+
+	@Keyword
+	def Boolean isBrowserOpen() {
+		try {
+			def x = DriverFactory.getCurrentWindowIndex()
+			if ( x != null && x >= 0 ) {
+				// “Browser is open…”
+				KeywordUtil.logInfo("Browser is open")
+				return true
+			}
+			
+			KeywordUtil.logInfo("Browser is not open from try block")
+			return false
+		}
+		catch ( Exception e ) {
+			KeywordUtil.logInfo("Browser is not open (from catch block)")
+			return false
+			// “Browser is NOT open…”
+		}
+
+		KeywordUtil.logInfo("Browser is not open (end of function(")
+		return false;
+	}
+
 	def TestCase getTestCaseObject() {
 
 		def testCaseId = getCurrentlyRunningTestCaseId()

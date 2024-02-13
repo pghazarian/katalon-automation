@@ -16,21 +16,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
 CustomKeywords.'customUtility.TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
 
 'Append the HostUrl and TargetPath for the initial target URL'
 TargetUrl = "$HostUrl$TargetPath"
 
-'Open the browser at the target URL'
-WebUI.openBrowser(TargetUrl)
+if (CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'()) {
+	KeywordUtil.logInfo("Browser is open")
+}
 
-'Fill in the user name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), UserName)
+else {
 
-'Fill in the password'
-WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), Password)
+	'Open the browser at the target URL'
+	WebUI.openBrowser(TargetUrl)
+	
+	'Fill in the user name'
+	WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), UserName)
+	
+	'Fill in the password'
+	WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), Password)
+	
+	'Sign the sign button'
+	WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
 
-'Sign the sign button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
-
+}
