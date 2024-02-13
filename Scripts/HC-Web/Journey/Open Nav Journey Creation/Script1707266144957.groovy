@@ -42,6 +42,8 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/Cre
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_Continue'))
 
+WebUI.delay(2)
+
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Katalon Test Journey'), JourneyName)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Builder'))
@@ -52,8 +54,8 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_New 
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--step_form_title'), 'Test')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--step_form_subtitle'),
-	'Test')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--step_form_subtitle'), 
+    'Test')
 
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
 
@@ -69,7 +71,8 @@ WebUI.click(findTestObject('HC-Web/Journey/CreateEdit/BackToAllJourneys'))
 
 WebUI.setText(findTestObject('HC-Web/Journey/AllJourneysPage/SearchBar'), JourneyName + Keys.ENTER)
 
-CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName,
-	1)
+CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
+    1)
 
 WebUI.closeBrowser()
+
