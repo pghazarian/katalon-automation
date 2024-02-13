@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Anaheim</name>
+   <name>div_Open Navigation Journey</name>
    <tag></tag>
-   <elementGuidId>caf27ed4-cbc5-4f08-9639-6482ea395b4e</elementGuidId>
+   <elementGuidId>3f9a8539-5037-48ec-b848-65419ced73ce</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@id='react-select-3--list']/div/div/div/div)[52]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>div.Select-option.is-focused</value>
+         <key>XPATH</key>
+         <value>//div[11]/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,78 +21,70 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c6d8f42e-e319-4978-9808-2ec5f56eb2ae</webElementGuid>
+      <webElementGuid>ddfb8498-b9bd-4eda-bf6f-9c76348252b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>aria-selected</name>
+      <name>aria-checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>95629fb9-a500-4814-b154-c26736a73ab7</webElementGuid>
+      <webElementGuid>44bd2acd-3873-473f-afb7-02a41b3109fe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>Select-option is-focused</value>
-      <webElementGuid>5aacb4c7-7bac-48d8-860f-14550b22ef74</webElementGuid>
+      <value>radio-item</value>
+      <webElementGuid>3767270f-59a5-486e-9b99-3e5278b69c13</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
-      <value>option</value>
-      <webElementGuid>629aa2b6-e8c0-4cc1-b9f2-f846b62a9eeb</webElementGuid>
+      <value>radio</value>
+      <webElementGuid>88a56ab5-5753-405b-a235-f4af8e88115a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>f86f4ce1-dc33-4ffa-915c-187ecdfc8de4</webElementGuid>
+      <value>-1</value>
+      <webElementGuid>3220f1ad-6482-41b3-ad68-625c79ea10c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Anaheim</value>
-      <webElementGuid>5e4c73e3-1a34-41ca-8278-599ff7e9cfce</webElementGuid>
+      <value>Open Navigation Journey</value>
+      <webElementGuid>e1930e9d-733d-4a61-b8c6-dd1b8bd52cde</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;journeys_list_page--field_campus&quot;)/div[@class=&quot;Select has-value is-focused is-open is-searchable Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-3--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
-      <webElementGuid>cf361240-965d-4ed7-8f7a-6d976dbf726c</webElementGuid>
+      <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;design-v1 drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 journeys_list_page--add_drawer drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/section[@class=&quot;ui jss364 drawer--content journeys_list_page--content&quot;]/div[1]/div[@class=&quot;cmui grid jss7 jss371 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss372 jss68&quot;]/div[@class=&quot;ui radio jss332 jss328 radio-pill&quot;]/div[@class=&quot;radio-item&quot;]</value>
+      <webElementGuid>0e783b5e-8053-408d-ba5e-603fce52f70e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>(//div[@id='react-select-3--list']/div/div/div/div)[52]</value>
-      <webElementGuid>0b0f498e-9762-4381-816d-2f67c59b8095</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div[3]/div/div/div/div/div</value>
-      <webElementGuid>17882c44-daef-4d7c-a26e-f79c0fe0369e</webElementGuid>
+      <value>//div[11]/div/div[2]</value>
+      <webElementGuid>e371b678-8e57-4df1-a67e-5dd9605e485b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Anaheim' or . = 'Anaheim')]</value>
-      <webElementGuid>22919ec9-fb37-486e-85b1-1fe6546bc08d</webElementGuid>
+      <value>//div[(text() = 'Open Navigation Journey' or . = 'Open Navigation Journey')]</value>
+      <webElementGuid>b37f11ab-3cdd-4c88-bd24-71f50b7d34be</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

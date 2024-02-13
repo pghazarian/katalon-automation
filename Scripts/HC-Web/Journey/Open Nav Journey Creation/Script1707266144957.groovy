@@ -77,6 +77,7 @@ WebUI.click(findTestObject('HC-Web/Journey/CreateEdit/BackToAllJourneys'))
 
 WebUI.setText(findTestObject('HC-Web/Journey/AllJourneysPage/SearchBar'), JourneyName + Keys.ENTER)
 
+'this is attempting to match the journey name in the first row of the search results'
 CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
     1)
 
