@@ -21,8 +21,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/people/search-or-add'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.clearText(findTestObject('HC-Web/Person/Search/SearchInput'))
-
 'Type Search term'
 WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), SearchTerm)
 
