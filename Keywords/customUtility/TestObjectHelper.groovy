@@ -248,7 +248,7 @@ class TestObjectHelper {
 		// verify the field value'
 		WebUI.verifyEqual(webElement.text, valueToCompare)
 	}
-	
+
 	@Keyword
 	def String getWebElementText(TestObject object, String valueToCompare) {
 
@@ -257,7 +257,7 @@ class TestObjectHelper {
 
 		if (webElement)
 			return webElement.text
-		
+
 		return null
 	}
 
