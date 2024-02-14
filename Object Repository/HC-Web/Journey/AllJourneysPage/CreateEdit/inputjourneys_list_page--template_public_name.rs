@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Sign In</name>
+   <name>inputjourneys_list_page--template_public_name</name>
    <tag></tag>
-   <elementGuidId>ef9defa8-33ec-444b-9f62-43c299b51856</elementGuidId>
+   <elementGuidId>3f697b0c-5ec5-40d1-bf7b-840484a11f32</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='submit']</value>
+         <value>//input[@id='journeys_list_page--template_public_name']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.ui.fluid.primary.button.sign-in</value>
+         <value>#journeys_list_page--template_public_name</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,63 +21,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>b30d59af-ad45-4131-afb8-5a0ddb6824f2</webElementGuid>
+      <value>input</value>
+      <webElementGuid>5198ceff-bfe6-40b5-9027-3bb2d2012774</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>journeys_list_page--template_public_name</value>
+      <webElementGuid>11872342-d79f-49bf-83e7-118a0f5bc011</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>ui fluid primary button sign-in</value>
-      <webElementGuid>1d16d353-9afa-4cec-a50d-868926d698ba</webElementGuid>
+      <value>0</value>
+      <webElementGuid>c334ae89-61e8-4153-8d7e-d5630e068146</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>submit</value>
-      <webElementGuid>cbd4fbca-cf1f-4a1c-992d-810e2b066d09</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Sign In</value>
-      <webElementGuid>aff46b52-f36a-468b-a959-55f905ca95a7</webElementGuid>
+      <value>text</value>
+      <webElementGuid>09c11dd4-ea1d-4bb4-8959-aae58166d9ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[@class=&quot;log-in-process&quot;]/main[@class=&quot;ui container&quot;]/div[@class=&quot;ui center aligned grid log-in&quot;]/div[@class=&quot;column&quot;]/div[@class=&quot;ui left aligned segment&quot;]/div[@class=&quot;content&quot;]/form[@class=&quot;ui large form&quot;]/button[@class=&quot;ui fluid primary button sign-in&quot;]</value>
-      <webElementGuid>fccd7c7b-1ee7-47d1-b655-0a7f5a25f67e</webElementGuid>
+      <value>id(&quot;journeys_list_page--template_public_name&quot;)</value>
+      <webElementGuid>eb2de91d-aa75-4fbb-8df8-155a61559574</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@type='submit']</value>
-      <webElementGuid>ca043e41-6161-47ac-a898-cc63bd790352</webElementGuid>
+      <value>//input[@id='journeys_list_page--template_public_name']</value>
+      <webElementGuid>011e2053-ff52-4bcd-92fe-73d2964de278</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button</value>
-      <webElementGuid>58bbbc94-8540-48eb-a0e6-65503fac295f</webElementGuid>
+      <value>//div[4]/div[2]/div/input</value>
+      <webElementGuid>156e98c7-5a5e-4f79-b9e3-79b95ba1d075</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'submit' and (text() = 'Sign In' or . = 'Sign In')]</value>
-      <webElementGuid>c8cac5f1-f44b-46ac-b8de-afef3618f2c0</webElementGuid>
+      <value>//input[@id = 'journeys_list_page--template_public_name' and @type = 'text']</value>
+      <webElementGuid>07def264-ea41-4f54-86e4-8a3aca0f2b67</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

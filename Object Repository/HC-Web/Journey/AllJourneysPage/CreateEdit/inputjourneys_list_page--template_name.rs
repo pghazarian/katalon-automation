@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Builder</name>
+   <name>inputjourneys_list_page--template_name</name>
    <tag></tag>
-   <elementGuidId>e92e6ea4-259a-4523-a98e-f65f596c95e6</elementGuidId>
+   <elementGuidId>743ac205-9d03-420e-b763-c982d8852062</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
+         <value>//input[@id='journeys_list_page--template_name']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss763.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+         <value>#journeys_list_page--template_name</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,55 +21,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>6cd8a60f-8092-4798-a1f7-563e0fe9f678</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>cdbd0605-451b-4993-813e-4dfb47b1b137</webElementGuid>
+      <value>input</value>
+      <webElementGuid>e03362df-1ad4-4aaa-853b-f9a4072b1757</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>id</name>
       <type>Main</type>
-      <value>Builder</value>
-      <webElementGuid>45e90e1f-ad1b-40c1-aa13-c02c5651a8bf</webElementGuid>
+      <value>journeys_list_page--template_name</value>
+      <webElementGuid>99bbd5c0-ddc2-4a10-ba4b-7f000005d73c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>f306a7b0-f6b9-4f8c-8feb-caf883200e49</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>e8dd3fda-0cf8-4435-a767-d1b2424e3972</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>bcaacb8b-c57f-4570-870d-40f090bdd1e1</webElementGuid>
+      <value>id(&quot;journeys_list_page--template_name&quot;)</value>
+      <webElementGuid>39c557b4-1d57-4199-b3a8-71fe2b5bbe55</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
-      <webElementGuid>8e82421c-3e1b-4925-934b-4dd10ea53c1d</webElementGuid>
+      <value>//input[@id='journeys_list_page--template_name']</value>
+      <webElementGuid>394e0e42-7cf1-4c87-a770-5ab644ebd716</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[2]/span</value>
-      <webElementGuid>3b5b622c-92d6-4421-8ab2-bea542131a08</webElementGuid>
+      <value>//div[3]/div[2]/div/input</value>
+      <webElementGuid>23e83ee7-8654-4b17-b37e-133761cfde58</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
-      <webElementGuid>7580f8dd-2c99-49a3-b858-f0b32d28a498</webElementGuid>
+      <value>//input[@id = 'journeys_list_page--template_name' and @type = 'text']</value>
+      <webElementGuid>4561045a-afd1-414f-8f7c-8f0ff277157f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

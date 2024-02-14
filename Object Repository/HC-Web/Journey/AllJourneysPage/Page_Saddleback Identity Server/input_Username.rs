@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_20s30s</name>
+   <name>input_Username</name>
    <tag></tag>
-   <elementGuidId>ef4f6f41-e90a-42e8-ab3e-54f7e7b196d6</elementGuidId>
+   <elementGuidId>17f8ac2b-5769-4db6-a5b7-7b2e402e622f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@id='react-select-4--list']/div/div/div/div)[7]</value>
+         <value>//input[@id='Username']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.Select-option.is-focused</value>
+         <value>#Username</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,79 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>8caf6372-431b-4af7-82a0-96ce1b204d80</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-selected</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>7d6456f9-7ce2-4b54-8036-c706f8adb24e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>Select-option is-focused</value>
-      <webElementGuid>b958ba06-b126-487d-bb94-f9cda48951a6</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>role</name>
-      <type>Main</type>
-      <value>option</value>
-      <webElementGuid>7ef2f20a-f982-4bf0-9772-2a46e29424a8</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>0</value>
-      <webElementGuid>a82eac10-04d0-4c32-b1e0-fa93211656f6</webElementGuid>
+      <value>input</value>
+      <webElementGuid>842b2cb6-fde2-4a35-968c-817c355dd101</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>placeholder</name>
       <type>Main</type>
-      <value>20s/30s</value>
-      <webElementGuid>223b09aa-387a-4388-aa0e-da299d3031be</webElementGuid>
+      <value>Email Address</value>
+      <webElementGuid>8bb2b799-a824-4e88-bc72-28bcb8a1fb38</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>f82a3adf-7e3e-48a1-9587-1b7bc22b3db8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>ed13bdb8-a13f-4119-9e2d-199a7a1fdaa4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-required</name>
+      <type>Main</type>
+      <value>The Username field is required.</value>
+      <webElementGuid>759bb3cf-dfcb-4716-8f85-8a04597a4a03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Username</value>
+      <webElementGuid>6b9b9eab-8f33-4752-98f4-1e6373630d89</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Username</value>
+      <webElementGuid>22c98b96-0134-46f2-b18b-4f61e4005186</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;journeys_list_page--field_category&quot;)/div[@class=&quot;Select has-value is-focused is-open is-searchable Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-4--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
-      <webElementGuid>95cbd1ed-c8d8-49c2-9f4b-a54b09a4ff23</webElementGuid>
+      <value>id(&quot;Username&quot;)</value>
+      <webElementGuid>0f576cc4-c53d-418f-81e5-fdb58343b8d0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//div[@id='react-select-4--list']/div/div/div/div)[7]</value>
-      <webElementGuid>c349f470-dedd-46d7-849b-cef75f91a244</webElementGuid>
+      <value>//input[@id='Username']</value>
+      <webElementGuid>66e30d16-2b1a-4996-a4dc-882812009e57</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div[3]/div/div/div/div/div</value>
-      <webElementGuid>4ac2ca3f-bf8f-4d38-8203-2703285d3c97</webElementGuid>
+      <value>//input</value>
+      <webElementGuid>4a79bfe5-a3a4-4a1d-933c-ec2ba6255654</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = '20s/30s' or . = '20s/30s')]</value>
-      <webElementGuid>e666945b-691b-46f9-8980-c454a0414bbb</webElementGuid>
+      <value>//input[@placeholder = 'Email Address' and @type = 'text' and @id = 'Username' and @name = 'Username']</value>
+      <webElementGuid>7d474bde-d41c-4a2b-b728-91d171b3e244</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

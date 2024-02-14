@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Username</name>
+   <name>button_Done</name>
    <tag></tag>
-   <elementGuidId>3fe8ea8e-036f-43ec-853f-0df79418b505</elementGuidId>
+   <elementGuidId>1322431f-3d61-44bc-83d9-c7277c468c91</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Username']</value>
+         <value>//button[@id='journeys_list_page--step_done_button']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#Username</value>
+         <value>#journeys_list_page--step_done_button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +21,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>dd4db62c-d1d2-4f14-af97-42b8de140385</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
-      <type>Main</type>
-      <value>Email Address</value>
-      <webElementGuid>f3a6c520-16e3-434b-bfae-bb4bb11206e4</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>57935a91-e9b0-4157-aff5-84ae6c520f1b</webElementGuid>
+      <value>button</value>
+      <webElementGuid>8044f3e1-b26f-41d7-8a17-73e72bf4c4e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-val</name>
+      <name>data-testid</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>6d1406ac-7494-4e8e-9d88-679d31b63524</webElementGuid>
+      <value>journey_step_done_button</value>
+      <webElementGuid>fb4536fd-06e0-4c8f-b868-0a17da39e79d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-val-required</name>
+      <name>class</name>
       <type>Main</type>
-      <value>The Username field is required.</value>
-      <webElementGuid>542223ca-f1b2-43ce-be1b-590fdec850fe</webElementGuid>
+      <value>ui button jss243 jss855 jss255</value>
+      <webElementGuid>bcb3835c-56db-4be9-91a6-df3b3cd7a613</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>Username</value>
-      <webElementGuid>4f144119-9c2e-4918-b949-3ab848bea97f</webElementGuid>
+      <value>journeys_list_page--step_done_button</value>
+      <webElementGuid>9daa74ed-f924-41ef-abe0-ee84e072f34f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>text</name>
       <type>Main</type>
-      <value>Username</value>
-      <webElementGuid>eebf8d7c-485f-4de3-adc0-e0e774994c89</webElementGuid>
+      <value>Done</value>
+      <webElementGuid>b117cbe1-9cf3-4206-b960-de9bae39c398</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Username&quot;)</value>
-      <webElementGuid>e22fff63-49d5-4cd9-bfff-439cea0fafeb</webElementGuid>
+      <value>id(&quot;journeys_list_page--step_done_button&quot;)</value>
+      <webElementGuid>f7fcdbb6-8899-434e-8ba4-b2fdf8516d34</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='Username']</value>
-      <webElementGuid>9ace5bc0-12a5-40e0-a42e-c259106a1aa2</webElementGuid>
+      <value>//button[@id='journeys_list_page--step_done_button']</value>
+      <webElementGuid>1cc2c3c0-7668-474d-93ab-26a0062d0f1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div/div/div/div/div[2]/div[7]/button[2]</value>
+      <webElementGuid>1651fe97-710e-4b99-983f-08f30990d8b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//input</value>
-      <webElementGuid>3254a804-5872-4063-8ee6-8df53b0ea079</webElementGuid>
+      <value>//div[7]/button[2]</value>
+      <webElementGuid>a3223daf-b308-4f8f-8754-ac621b75c0ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@placeholder = 'Email Address' and @type = 'text' and @id = 'Username' and @name = 'Username']</value>
-      <webElementGuid>fb4986bc-7ff8-433b-aa74-fadf5b3bd44a</webElementGuid>
+      <value>//button[@id = 'journeys_list_page--step_done_button' and (text() = 'Done' or . = 'Done')]</value>
+      <webElementGuid>b0f28393-bba5-45e2-86dc-5d48146ddbad</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

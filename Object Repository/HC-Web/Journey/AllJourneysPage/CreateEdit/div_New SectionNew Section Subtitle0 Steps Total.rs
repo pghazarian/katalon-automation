@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Builder</name>
+   <name>div_New SectionNew Section Subtitle0 Steps Total</name>
    <tag></tag>
-   <elementGuidId>e92e6ea4-259a-4523-a98e-f65f596c95e6</elementGuidId>
+   <elementGuidId>9152df17-eaa8-4f74-a058-88111271585e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
+         <value>//div[@id='journeys_list_page--journey_card_0']/div</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss763.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+         <value>div.jss834</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,55 +21,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>6cd8a60f-8092-4798-a1f7-563e0fe9f678</webElementGuid>
+      <value>div</value>
+      <webElementGuid>2b045679-ad32-4131-a301-f508246798ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>cdbd0605-451b-4993-813e-4dfb47b1b137</webElementGuid>
+      <value>jss834</value>
+      <webElementGuid>20465c34-6bce-4190-b97f-b959054b06da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Builder</value>
-      <webElementGuid>45e90e1f-ad1b-40c1-aa13-c02c5651a8bf</webElementGuid>
+      <value>New SectionNew Section Subtitle0 Steps Total</value>
+      <webElementGuid>642572f5-7478-4930-8013-98cbb09ea836</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>bcaacb8b-c57f-4570-870d-40f090bdd1e1</webElementGuid>
+      <value>id(&quot;journeys_list_page--journey_card_0&quot;)/div[@class=&quot;jss834&quot;]</value>
+      <webElementGuid>cb4b1456-6f36-477b-9fc0-f10e54e07b02</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
-      <webElementGuid>8e82421c-3e1b-4925-934b-4dd10ea53c1d</webElementGuid>
+      <value>//div[@id='journeys_list_page--journey_card_0']/div</value>
+      <webElementGuid>ca33ea9a-041d-495e-9577-94fc63916f00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[2]/span</value>
-      <webElementGuid>3b5b622c-92d6-4421-8ab2-bea542131a08</webElementGuid>
+      <value>//div[3]/div[3]/div/div/div</value>
+      <webElementGuid>6b6f3403-f240-4ecf-a487-66f33f712b90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
-      <webElementGuid>7580f8dd-2c99-49a3-b858-f0b32d28a498</webElementGuid>
+      <value>//div[(text() = 'New SectionNew Section Subtitle0 Steps Total' or . = 'New SectionNew Section Subtitle0 Steps Total')]</value>
+      <webElementGuid>ee846c69-1ace-4a98-af48-f282a3e7a5eb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

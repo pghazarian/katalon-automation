@@ -3,11 +3,11 @@
    <description></description>
    <name>span_Builder</name>
    <tag></tag>
-   <elementGuidId>e92e6ea4-259a-4523-a98e-f65f596c95e6</elementGuidId>
+   <elementGuidId>a9ab6e97-0fdf-4de3-8ce2-d113750e0ac9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
+         <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>6cd8a60f-8092-4798-a1f7-563e0fe9f678</webElementGuid>
+      <webElementGuid>7264888f-794f-4d09-b9c6-a739ec70d136</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>cdbd0605-451b-4993-813e-4dfb47b1b137</webElementGuid>
+      <webElementGuid>94adf151-1c5a-420e-ac58-d3ba42900f5d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Builder</value>
-      <webElementGuid>45e90e1f-ad1b-40c1-aa13-c02c5651a8bf</webElementGuid>
+      <webElementGuid>896d0dc0-d636-489c-a258-c6f9486f33dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>bcaacb8b-c57f-4570-870d-40f090bdd1e1</webElementGuid>
+      <webElementGuid>57f5352c-9357-4218-abe4-62d6680eb6d2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
-      <webElementGuid>8e82421c-3e1b-4925-934b-4dd10ea53c1d</webElementGuid>
+      <webElementGuid>9e9442b5-3aee-4b20-9dc3-e7dc5a2f4fa0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]/span</value>
-      <webElementGuid>3b5b622c-92d6-4421-8ab2-bea542131a08</webElementGuid>
+      <webElementGuid>9022b3a6-8b3d-4b98-ab07-e2b0156f8a6f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
-      <webElementGuid>7580f8dd-2c99-49a3-b858-f0b32d28a498</webElementGuid>
+      <webElementGuid>382705bd-d183-4ee7-9328-d767cda8dc94</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

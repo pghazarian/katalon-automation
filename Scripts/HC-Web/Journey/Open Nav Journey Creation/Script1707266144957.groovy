@@ -18,30 +18,41 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.util.UUID as UUID
 
+def date = new Date()
+
+def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
+
+def JourneyName = "QA Automation Test Open Nav Journey - $CurrentDateTime"
+
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/journeys'], FailureHandling.STOP_ON_FAILURE)
+        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_JourneyJourney(beta)'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/div_JourneyJourney(beta)'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_JourneyCreate Journey'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_JourneyCreate Journey'))
 
-JourneyName = ('Katalon Test Journey ' + UUID.randomUUID())
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/inputjourneys_list_page--template_name'), 
+    JourneyName)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--template_name'), JourneyName)
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--template_public_name'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/inputjourneys_list_page--template_public_name'), 
     JourneyName)
 
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_campus', 'Lake Forest')
 
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_category', 'Worship')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Continue'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/Open Navigation Journey Pill Button'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb'), JourneyName)
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_Continue'))
+
+WebUI.delay(2)
+
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Katalon Test Journey'), JourneyName)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Builder'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Add an OptionNew Section'))
 
@@ -66,6 +77,7 @@ WebUI.click(findTestObject('HC-Web/Journey/CreateEdit/BackToAllJourneys'))
 
 WebUI.setText(findTestObject('HC-Web/Journey/AllJourneysPage/SearchBar'), JourneyName + Keys.ENTER)
 
+'this is attempting to match the journey name in the first row of the search results'
 CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
     1)
 

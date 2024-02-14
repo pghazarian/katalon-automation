@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Builder</name>
+   <name>div_Katalon Test Journey</name>
    <tag></tag>
-   <elementGuidId>e92e6ea4-259a-4523-a98e-f65f596c95e6</elementGuidId>
+   <elementGuidId>28f6f88e-2b95-43d9-833a-fa043e6f3a16</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
+         <value>//div[@id='layout']/div[2]/div/main/div/div[2]/div/div[2]/div</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss763.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+         <value>div.MuiTypography-root.jss732.MuiTypography-h4</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,55 +21,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>6cd8a60f-8092-4798-a1f7-563e0fe9f678</webElementGuid>
+      <value>div</value>
+      <webElementGuid>2b9c7beb-8062-452a-87dd-189c15d564b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>cdbd0605-451b-4993-813e-4dfb47b1b137</webElementGuid>
+      <value>MuiTypography-root jss732 MuiTypography-h4</value>
+      <webElementGuid>7aaaff8e-c576-4b69-9f97-7b0eddf052dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Builder</value>
-      <webElementGuid>45e90e1f-ad1b-40c1-aa13-c02c5651a8bf</webElementGuid>
+      <value>Katalon Test Journey</value>
+      <webElementGuid>7e97d2cb-d8f1-41e8-8189-42698325d00a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>bcaacb8b-c57f-4570-870d-40f090bdd1e1</webElementGuid>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss735 jss725 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss292 ui page--container jss291&quot;]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss723 jss62 jss50&quot;]/div[@class=&quot;jss722&quot;]/div[@class=&quot;MuiTypography-root jss732 MuiTypography-h4&quot;]</value>
+      <webElementGuid>8768926e-9a17-46a0-8994-54942f0a9897</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
-      <webElementGuid>8e82421c-3e1b-4925-934b-4dd10ea53c1d</webElementGuid>
+      <value>//div[@id='layout']/div[2]/div/main/div/div[2]/div/div[2]/div</value>
+      <webElementGuid>8b8c0fe9-922e-46d6-944f-cc00c8f2b394</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[2]/span</value>
-      <webElementGuid>3b5b622c-92d6-4421-8ab2-bea542131a08</webElementGuid>
+      <value>//main/div/div[2]/div/div[2]/div</value>
+      <webElementGuid>720e2ed1-fd81-449e-8d04-2597af2e2d69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
-      <webElementGuid>7580f8dd-2c99-49a3-b858-f0b32d28a498</webElementGuid>
+      <value>//div[(text() = 'Katalon Test Journey' or . = 'Katalon Test Journey')]</value>
+      <webElementGuid>70841e6a-e664-43b1-85b3-7b2527d55455</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

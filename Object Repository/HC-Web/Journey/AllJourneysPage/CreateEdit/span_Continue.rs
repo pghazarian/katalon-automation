@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Builder</name>
+   <name>span_Continue</name>
    <tag></tag>
-   <elementGuidId>e92e6ea4-259a-4523-a98e-f65f596c95e6</elementGuidId>
+   <elementGuidId>a9b495f9-90ec-459c-ae81-823b6d5d44e8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
+         <value>//button[@id='journey_add_drawer--action_bar_add_button']/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss763.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+         <value>#journey_add_drawer--action_bar_add_button > span.button-inner-container.jss208</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,54 +22,54 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>6cd8a60f-8092-4798-a1f7-563e0fe9f678</webElementGuid>
+      <webElementGuid>b1ed4efd-02b9-4e52-bd12-e7eb9a810b98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>cdbd0605-451b-4993-813e-4dfb47b1b137</webElementGuid>
+      <value>button-inner-container jss208</value>
+      <webElementGuid>03bbc138-0bb5-4bed-bb19-62a2eab1990f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Builder</value>
-      <webElementGuid>45e90e1f-ad1b-40c1-aa13-c02c5651a8bf</webElementGuid>
+      <value>Continue</value>
+      <webElementGuid>2cf90977-5266-4233-93dd-309a28e2256b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss763 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>bcaacb8b-c57f-4570-870d-40f090bdd1e1</webElementGuid>
+      <value>id(&quot;journey_add_drawer--action_bar_add_button&quot;)/span[@class=&quot;button-inner-container jss208&quot;]</value>
+      <webElementGuid>bafb4ab4-bff4-4cce-8319-0419bff5b58d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
-      <webElementGuid>8e82421c-3e1b-4925-934b-4dd10ea53c1d</webElementGuid>
+      <value>//button[@id='journey_add_drawer--action_bar_add_button']/span</value>
+      <webElementGuid>2a5a52cc-f570-4844-8f70-6b76a41b0bc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[2]/span</value>
-      <webElementGuid>3b5b622c-92d6-4421-8ab2-bea542131a08</webElementGuid>
+      <value>//header/div/div/div[2]/button/span</value>
+      <webElementGuid>e86a2b6a-cc3b-4d73-90d6-06275d6a1439</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Builder' or . = 'Builder')]</value>
-      <webElementGuid>7580f8dd-2c99-49a3-b858-f0b32d28a498</webElementGuid>
+      <value>//span[(text() = 'Continue' or . = 'Continue')]</value>
+      <webElementGuid>af09ca65-ab96-4d76-98d3-631e9099ad62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
