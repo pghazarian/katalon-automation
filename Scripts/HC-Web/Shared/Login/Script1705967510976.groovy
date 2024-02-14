@@ -33,12 +33,12 @@ else {
 	WebUI.openBrowser(TargetUrl)
 	
 	'Fill in the user name'
-	WebUI.setText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Username'), UserName)
+	WebUI.setText(findTestObject('Object Repository/HC-Web/Login/Email Address Textfield'), UserName)
 	
 	'Fill in the password'
-	WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/input_Password'), Password)
+	WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Login/Password Textfield'), Password)
 	
 	'Sign the sign button'
-	WebUI.click(findTestObject('Object Repository/HC-Web/Page_Saddleback Identity Server/button_Sign In'))
+	WebUI.click(findTestObject('Object Repository/HC-Web/Login/Sign In Button'))
 
 }
