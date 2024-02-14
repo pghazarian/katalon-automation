@@ -30,4 +30,4 @@ WebUI.callTestCase(findTestCase('HC-Web/Navigation/My Stuff Nav'), [:], FailureH
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/People Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/System Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-
+WebUI.closeBrowser()
