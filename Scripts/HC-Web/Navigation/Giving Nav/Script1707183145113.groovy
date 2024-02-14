@@ -16,14 +16,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Giving Central', 'All Giving')
-
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'All Giving', 'All Giving')
-
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'Designations', 'Designations')
-
+// (2024-02-13) These tests are not available in production because they are still in development
+if (RunConfiguration.getExecutionProfile() != "HC-Production") {
+	
+	CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Giving Central', 'All Giving')
+	
+	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'All Giving', 'All Giving')
+	
+	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'Designations', 'Designations')
+	
+}
