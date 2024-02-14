@@ -17,20 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'()
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Dev Tools', 'Elastic Search Indexing')
+WebUI.openBrowser('https://hc-stage.saddleback.com')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'Elastic Search Indexing', 'Elastic Search Indexing')
-
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'Schedule Cache Control', 'Schedule Cache Control')
-
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'Occurrence Tool', 'Occurrence Tool')
-
-not_run: CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'QR Code Tool', 'QR Code Tool')
-
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Dev Tools', 'Unlayer Email Editor Test', 
-    'Unlayer Email Editor Test')
+CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'()
 

@@ -24,5 +24,3 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Mobile Engagement', 'Service Companion')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Mobile Engagement', 'Service Companion', 'Service Companion')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Mobile Engagement', 'Service Series Builder', 'Service Series Builder')
-
-WebUI.closeBrowser()

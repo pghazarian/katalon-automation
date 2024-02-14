@@ -31,7 +31,7 @@ WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(
 WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
 'Validate results'
-MinistryRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'("//div[@class='main-view']/descendant::td", SearchTerm)
+MinistryRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'("//div[@class='main-view']/descendant::td", MinistryName)
 
 WebUI.verifyElementPresent(MinistryRowObject, 2)
 

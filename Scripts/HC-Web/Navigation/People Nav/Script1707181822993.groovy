@@ -25,5 +25,3 @@ CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('P
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Search or Add', 'Search or Add')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Record Management', 'Record Management')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Settings and Preferences', 'Settings and Preferences')
-
-WebUI.closeBrowser()

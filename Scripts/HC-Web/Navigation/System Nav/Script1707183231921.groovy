@@ -19,13 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
+        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('System', 'Platform Settings')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Platform Settings', 'Platform Settings')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Campus Settings', 'Campus Settings')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Users & Teams', 'Users & Teams')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Security & Permissions', 'Security & Permissions')
+
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Migration Settings', 'Migration Settings')
 
-WebUI.closeBrowser()

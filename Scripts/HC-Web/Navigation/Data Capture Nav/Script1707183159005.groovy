@@ -27,7 +27,6 @@ CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('D
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Questions', 'Connection Questions')
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Weekend Metrics Capture', 'Weekend Metrics Capture')
 
-WebUI.closeBrowser()
 /*
  *  This code is for logging into a web application and performing various navigation actions.
  *
