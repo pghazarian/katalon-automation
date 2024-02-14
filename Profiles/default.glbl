@@ -59,4 +59,9 @@
       <initValue>'Nikhilesh Walwatkar'</initValue>
       <name>MinistrySearch_InterestedName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage-welcome.saddleback.com'</initValue>
+      <name>Saddleback_Welcome_URL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

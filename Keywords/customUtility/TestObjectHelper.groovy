@@ -240,6 +240,28 @@ class TestObjectHelper {
 	}
 
 	@Keyword
+	def verifyLabelValueEqual(TestObject object, String valueToCompare) {
+
+		// get the value attribute from the text field
+		def webElement = WebUI.findWebElement(object, 1)
+
+		// verify the field value'
+		WebUI.verifyEqual(webElement.text, valueToCompare)
+	}
+	
+	@Keyword
+	def String getWebElementText(TestObject object, String valueToCompare) {
+
+		// get the text attribute from the label / span field
+		def webElement = WebUI.findWebElement(object, 1)
+
+		if (webElement)
+			return webElement.text
+		
+		return null
+	}
+
+	@Keyword
 	def verifyTextAreaValueEqual(TestObject object, String valueToCompare) {
 
 		// get the value attribute from the textarea

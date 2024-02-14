@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Latest Message Heading</name>
+   <tag></tag>
+   <elementGuidId>4da64918-679c-4e29-9205-15da34f1b676</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h5.white</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='latestMessage']/div/h5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>1fa180a5-45b4-4a4e-985f-0f33bde258f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>white</value>
+      <webElementGuid>1345bdbe-68c5-4a1c-8a7f-ca5eb5bad5c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Latest Message</value>
+      <webElementGuid>2b526c65-aad0-4964-b729-98548451eb2e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;latestMessage&quot;)/div[1]/h5[@class=&quot;white&quot;]</value>
+      <webElementGuid>42f80a19-1146-4f23-8082-5d0ec6be9c38</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='latestMessage']/div/h5</value>
+      <webElementGuid>92c7e62a-50cf-4181-abad-9086bcb8ec8b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h5</value>
+      <webElementGuid>ded3378e-8130-4d90-9c64-cf5cb1de7e87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[(text() = 'Latest Message' or . = 'Latest Message')]</value>
+      <webElementGuid>aca09c2b-e541-408e-af27-0e1c16e476a1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

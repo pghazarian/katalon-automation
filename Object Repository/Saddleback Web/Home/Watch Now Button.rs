@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Watch Now Button</name>
+   <tag></tag>
+   <elementGuidId>923ef0a9-1a5c-4964-ada6-579314d895e6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#btnWatchNow > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='btnWatchNow']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>eda583cc-7a21-4752-81f9-f65d5cc8162e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Watch Now</value>
+      <webElementGuid>126facee-4269-495f-8c3a-cabf4a4d0a88</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;btnWatchNow&quot;)/span[1]</value>
+      <webElementGuid>ac52da01-aa36-486a-981d-6eeb285f49cf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='btnWatchNow']/span</value>
+      <webElementGuid>1521bbc5-d4b0-440e-914f-0b8e7e2416b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button/span</value>
+      <webElementGuid>35b38b1b-5e6a-4868-b239-b9ba884e99e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Watch Now' or . = 'Watch Now')]</value>
+      <webElementGuid>c889a85e-6e93-4b94-8b9d-faad331105fc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

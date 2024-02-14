@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Watch Now</name>
+   <tag></tag>
+   <elementGuidId>1ddc34fd-9b29-4264-81ac-a22e2381d7e2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.btn.playToggle</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='WidgetWorshipService']/div[2]/div/div[3]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cc8caed7-6dfe-47e0-ab31-4dfdb9de47b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>43a6b9ec-7582-4aab-9639-16ce6b2ef48c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn playToggle</value>
+      <webElementGuid>779498ac-9f00-4aae-8087-1cbef93d19d9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bind</name>
+      <type>Main</type>
+      <value>html: getWatchButtonText(), visible: !inPrePeriodBeforeFirstService(), click: function (data, event) { pressPlay(data, event, window.audioPlayerCheck) } </value>
+      <webElementGuid>0954b320-8377-4471-aa39-f8cd0b378ac7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Watch Now</value>
+      <webElementGuid>74451e5a-cf33-4510-82d4-8601543d0aff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;WidgetWorshipService&quot;)/div[@class=&quot;videoInfoContainer&quot;]/div[@class=&quot;messageInfo&quot;]/div[@class=&quot;buttonContainer&quot;]/a[@class=&quot;btn playToggle&quot;]</value>
+      <webElementGuid>601f16b4-b9d3-4dd3-8a5c-7ddcd0aaa3d8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='WidgetWorshipService']/div[2]/div/div[3]/a</value>
+      <webElementGuid>c4ce8b86-8334-4b8f-a4bf-64eb13811dc0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Watch Now')]</value>
+      <webElementGuid>65a68cd2-1e61-4fdf-acf4-a98c0b54b82b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[5]</value>
+      <webElementGuid>8cfe8ab7-faa9-4149-9580-fbf6518ceb62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[3]/a</value>
+      <webElementGuid>94cb784b-a8d2-4eb5-a9bf-78f6fa43961c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = ' Watch Now' or . = ' Watch Now')]</value>
+      <webElementGuid>49d47b45-a76f-478c-a380-fbf7fb60bfeb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
