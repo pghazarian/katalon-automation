@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_New SectionNew Section Subtitle0 Steps Total</name>
+   <name>Builder Step 1</name>
    <tag></tag>
    <elementGuidId>901a799d-70ac-4814-828f-44e49bf34adf</elementGuidId>
    <selectorCollection>
