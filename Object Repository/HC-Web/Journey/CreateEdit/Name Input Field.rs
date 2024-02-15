@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputjourneys_list_page--template_name</name>
+   <name>Name Input Field</name>
    <tag></tag>
    <elementGuidId>c8e713a8-3db8-4628-ace2-f623401b0bb9</elementGuidId>
    <selectorCollection>

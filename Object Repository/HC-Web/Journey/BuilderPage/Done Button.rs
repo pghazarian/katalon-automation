@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputjourneys_list_page--step_form_subtitle</name>
+   <name>Done Button</name>
    <tag></tag>
-   <elementGuidId>cb38914a-09ba-41b1-b354-2c319bba1e8e</elementGuidId>
+   <elementGuidId>929319e3-f990-4cff-8fc8-d59a3433959b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='journeys_list_page--step_form_subtitle']</value>
+         <value>//button[@id='journeys_list_page--step_done_button']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#journeys_list_page--step_form_subtitle</value>
+         <value>#journeys_list_page--step_done_button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,79 +21,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>5818c556-fe69-4218-a0e1-2541b4901b7e</webElementGuid>
+      <value>button</value>
+      <webElementGuid>8044f3e1-b26f-41d7-8a17-73e72bf4c4e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>journey_step_done_button</value>
+      <webElementGuid>fb4536fd-06e0-4c8f-b868-0a17da39e79d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss855 jss255</value>
+      <webElementGuid>bcb3835c-56db-4be9-91a6-df3b3cd7a613</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>journeys_list_page--step_form_subtitle</value>
-      <webElementGuid>0846702a-b242-44b1-9fca-dfd0ef2d4971</webElementGuid>
+      <value>journeys_list_page--step_done_button</value>
+      <webElementGuid>9daa74ed-f924-41ef-abe0-ee84e072f34f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>text</name>
       <type>Main</type>
-      <value>New Section Subtitle</value>
-      <webElementGuid>fe868447-eb4b-4c15-977f-28eb422af40c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>0</value>
-      <webElementGuid>05aca5c7-35fd-4f8c-9129-75c9dd1737dc</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>43076934-952a-4198-b7bb-dcc1c3817806</webElementGuid>
+      <value>Done</value>
+      <webElementGuid>b117cbe1-9cf3-4206-b960-de9bae39c398</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;journeys_list_page--step_form_subtitle&quot;)</value>
-      <webElementGuid>a2d7dd9c-d9d7-4157-b9a5-ff1d70c4c721</webElementGuid>
+      <value>id(&quot;journeys_list_page--step_done_button&quot;)</value>
+      <webElementGuid>f7fcdbb6-8899-434e-8ba4-b2fdf8516d34</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='journeys_list_page--step_form_subtitle']</value>
-      <webElementGuid>4cf5909d-5a41-44bd-a4e0-df203b427fa9</webElementGuid>
+      <value>//button[@id='journeys_list_page--step_done_button']</value>
+      <webElementGuid>1cc2c3c0-7668-474d-93ab-26a0062d0f1c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div/div/div/div/div[2]/div[3]/div[2]/input</value>
-      <webElementGuid>935c6352-2a03-4630-9216-42deed6b9311</webElementGuid>
+      <value>//div[@id='layout']/div[2]/div/main/div/div/div/div/div[2]/div[7]/button[2]</value>
+      <webElementGuid>1651fe97-710e-4b99-983f-08f30990d8b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div[2]/input</value>
-      <webElementGuid>52927de0-a4a8-44b8-9f2b-5660814e5ff3</webElementGuid>
+      <value>//div[7]/button[2]</value>
+      <webElementGuid>a3223daf-b308-4f8f-8754-ac621b75c0ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'journeys_list_page--step_form_subtitle' and @placeholder = 'New Section Subtitle' and @type = 'text']</value>
-      <webElementGuid>aa8224b2-2d71-43f4-970d-5a6a10dbf8b5</webElementGuid>
+      <value>//button[@id = 'journeys_list_page--step_done_button' and (text() = 'Done' or . = 'Done')]</value>
+      <webElementGuid>b0f28393-bba5-45e2-86dc-5d48146ddbad</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

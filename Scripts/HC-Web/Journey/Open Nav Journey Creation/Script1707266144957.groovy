@@ -54,26 +54,26 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Bui
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Add an OptionNew Section'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_New SectionNew Section Subtitle0 Steps Total'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--step_form_title'), 'Test')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/inputjourneys_list_page--step_form_subtitle'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Subtitle'), 
     'Test')
 
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
 
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/button_Done'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/button_Save'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Save Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Overview'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Overview Tab'))
 
-WebUI.click(findTestObject('HC-Web/Journey/CreateEdit/BackToAllJourneys'))
+WebUI.click(findTestObject('HC-Web/Journey/Overview/Back to All Journeys Button'))
 
 WebUI.setText(findTestObject('HC-Web/Journey/AllJourneysPage/SearchBar'), JourneyName + Keys.ENTER)
 

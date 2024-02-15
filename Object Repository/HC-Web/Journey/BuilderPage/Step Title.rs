@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputjourneys_list_page--step_form_title_1</name>
+   <name>Step Title</name>
    <tag></tag>
-   <elementGuidId>3972602d-5f78-4157-9f88-dd8f8b38225d</elementGuidId>
+   <elementGuidId>6d72c6e2-8928-4af2-a884-4d820a59717c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>c49a99c7-fa90-44ca-92ba-f45cf3704e17</webElementGuid>
+      <webElementGuid>3c1d3cbf-26b4-45ef-9972-5fcc70914b04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,15 +30,15 @@
       <name>id</name>
       <type>Main</type>
       <value>journeys_list_page--step_form_title</value>
-      <webElementGuid>56b5fab7-c8c2-4665-a01c-e20a4daa54eb</webElementGuid>
+      <webElementGuid>5dad9ea5-0911-43ff-8938-df2548ca9b12</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>New Step</value>
-      <webElementGuid>fe237152-7071-49db-b9b4-97303736b1f4</webElementGuid>
+      <value>New Section</value>
+      <webElementGuid>037e2583-b448-4f7d-8f42-68cd1a728ae0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>c3554fa9-2113-46c9-9f3b-32b2872df4c2</webElementGuid>
+      <webElementGuid>0bd55b4b-4c99-4a99-ad15-9dc64b2ed218</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>3c7b16a4-cf58-4ec9-b771-91a78c9543a7</webElementGuid>
+      <webElementGuid>3084137d-ec74-4d6c-9eea-6f5d8d0fb4ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;journeys_list_page--step_form_title&quot;)</value>
-      <webElementGuid>27940640-3fb4-4d1f-acd0-a9b3334d9716</webElementGuid>
+      <webElementGuid>4f601408-aeff-4125-be13-be4ebf1d1d7d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='journeys_list_page--step_form_title']</value>
-      <webElementGuid>50ac9faf-62d8-4f9c-adf1-ffab8cf0f12b</webElementGuid>
+      <webElementGuid>2a5dd498-123e-4a86-b1ee-819a6db4447d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/div/div/div/div[2]/div[2]/div[2]/input</value>
-      <webElementGuid>586d4e42-665a-4aaa-bc9a-c68668aee85c</webElementGuid>
+      <webElementGuid>c46623da-5411-4ead-ab2b-57cf92a9b575</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,14 +86,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/input</value>
-      <webElementGuid>698412ab-a990-4ab8-bec9-dc59108e178f</webElementGuid>
+      <webElementGuid>d6c0d50a-1823-4c4a-a062-1da91757898e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'journeys_list_page--step_form_title' and @placeholder = 'New Step' and @type = 'text']</value>
-      <webElementGuid>615f5f97-3995-456c-9fa6-e70debc78fa8</webElementGuid>
+      <value>//input[@id = 'journeys_list_page--step_form_title' and @placeholder = 'New Section' and @type = 'text']</value>
+      <webElementGuid>a59aa942-b26b-4294-93c8-6f7e36bdc4ef</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
