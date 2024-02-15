@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Step Type Listen to Audio</name>
+   <name>Add Attachment Button</name>
    <tag></tag>
-   <elementGuidId>f020d4d2-dbd1-4672-beb5-20ba3969f36c</elementGuidId>
+   <elementGuidId>41a68b62-9ab8-4221-b66c-631e99cc1de7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='journeys_list_page--touch_point_12']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@id='journeys_list_page--step_form_catalog_drawer']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

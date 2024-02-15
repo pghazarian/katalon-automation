@@ -6,12 +6,11 @@
    <elementGuidId>db11950c-c5ac-4264-8d3e-6057fb1385d0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='journeys_list_page--touch_point_11']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='journeys_list_page--touch_point_11']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

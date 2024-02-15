@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Add an OptionNew Section</name>
+   <name>Add New Section Button</name>
    <tag></tag>
    <elementGuidId>a58a616c-11c8-4177-8f05-daf237205c0b</elementGuidId>
    <selectorCollection>

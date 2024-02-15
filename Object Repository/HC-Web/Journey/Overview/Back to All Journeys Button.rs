@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Video Step Icon</name>
+   <name>Back to All Journeys Button</name>
    <tag></tag>
-   <elementGuidId>ec2fb035-173a-40f8-8c7f-e50f2b5c6c16</elementGuidId>
+   <elementGuidId>600e0034-1e50-49d8-af7d-70db1fe87557</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@id,'journey_card--step_')]/descendant::div[contains(@class,'icon-media')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//li[contains(@class,'navigation_breadcrumbs--breadcrumb')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Overview</name>
+   <name>Overview Tab</name>
    <tag></tag>
    <elementGuidId>11879d1f-33ca-4087-9746-5ac6ca653f21</elementGuidId>
    <selectorCollection>

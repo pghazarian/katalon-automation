@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Step Type Link Out From ME</name>
+   <name>Video Step Icon</name>
    <tag></tag>
-   <elementGuidId>04c48f76-7cce-49f0-8eaa-3a977209dbbd</elementGuidId>
+   <elementGuidId>ec2fb035-173a-40f8-8c7f-e50f2b5c6c16</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='journeys_list_page--touch_point_9']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@id,'journey_card--step_')]/descendant::div[contains(@class,'icon-media')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

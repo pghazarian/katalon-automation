@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Audio Step Icon</name>
+   <name>Step Type Listen to Audio</name>
    <tag></tag>
-   <elementGuidId>cc082e23-729a-4ce6-a850-3f01616c6366</elementGuidId>
+   <elementGuidId>f020d4d2-dbd1-4672-beb5-20ba3969f36c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@id,'journey_card--step_')]/descendant::div[contains(@class,'icon-audio')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='journeys_list_page--touch_point_12']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

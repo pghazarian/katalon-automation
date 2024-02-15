@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BackToAllJourneys</name>
+   <name>First Video Search Result</name>
    <tag></tag>
-   <elementGuidId>600e0034-1e50-49d8-af7d-70db1fe87557</elementGuidId>
+   <elementGuidId>f4e6a8fa-3d4d-462d-9b56-a16b44158914</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//li[contains(@class,'navigation_breadcrumbs--breadcrumb')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//tbody/tr[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

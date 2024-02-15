@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Add Attachment Button</name>
+   <name>Quiz Step Icon</name>
    <tag></tag>
-   <elementGuidId>41a68b62-9ab8-4221-b66c-631e99cc1de7</elementGuidId>
+   <elementGuidId>b6f74ac6-bf98-471e-9310-83db8e1bcaf4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='journeys_list_page--step_form_catalog_drawer']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@id,'journey_card--step_')]/descendant::div[contains(@class,'icon-quiz')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

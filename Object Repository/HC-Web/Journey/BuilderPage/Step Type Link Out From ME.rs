@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Video Search Result</name>
+   <name>Step Type Link Out From ME</name>
    <tag></tag>
-   <elementGuidId>f4e6a8fa-3d4d-462d-9b56-a16b44158914</elementGuidId>
+   <elementGuidId>04c48f76-7cce-49f0-8eaa-3a977209dbbd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tbody/tr[3]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='journeys_list_page--touch_point_9']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

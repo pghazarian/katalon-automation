@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Builder Step 2</name>
+   <name>Add Attachment Drawer Search Results</name>
    <tag></tag>
-   <elementGuidId>2ddfda78-a9aa-42c9-8c68-b9151d17ca0a</elementGuidId>
+   <elementGuidId>36624ac5-1f81-47ff-a535-99f4c1147f81</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='journeys_list_page--journey_card_1']/div</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//tbody/tr</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
