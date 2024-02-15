@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>[1:18 PM] Ryan Carson
+Load homepage
+ 
+Load homepage > Select Language > Spanish > Load Spanish Homepage
+ 
+Load homepage > Click Watch Now > Load Online Community watch page and autoplay service
+ 
+Load homepage > Click I want to follow Jesus button > Load Following Jesus page > Click I’ve Made a Decision to Follow Jesus > Load popup with HC form > Submit form
+ 
+Load homepage > Click Give > Load Legacy Giving page > Click Give Tithe > Load simple giving page</description>
    <name>Home Page Load and Verification</name>
    <tag></tag>
    <comment></comment>
