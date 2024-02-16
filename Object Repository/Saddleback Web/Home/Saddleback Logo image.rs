@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Saddleback Logo image</name>
+   <tag></tag>
+   <elementGuidId>81c92d30-4cc2-4799-bb52-dafb3f1085cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img.logo-icon-name</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//img[@alt='Saddleback Church']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>4a4ad64c-b2ff-4a42-ba1f-3d1aecf0786c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/icons/saddleback_logo_header_icon_and_name.svg</value>
+      <webElementGuid>9927c13f-abc8-4521-ab88-b64b086f19ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Saddleback Church</value>
+      <webElementGuid>96edd4f7-6731-48a2-abae-8c01abb8dbe0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>logo-icon-name</value>
+      <webElementGuid>7a83616f-d744-41c9-ac01-2b8ec08adfa1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-sb-logo desktop-center&quot;]/a[1]/img[@class=&quot;logo-icon-name&quot;]</value>
+      <webElementGuid>820656e6-c6ee-4c51-99a5-435190261698</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Saddleback Church']</value>
+      <webElementGuid>66f93acf-0b22-4f6d-b583-d43732e65e52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//img[2]</value>
+      <webElementGuid>7c980101-ceb5-4c8b-81fa-ef18a993d1ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/icons/saddleback_logo_header_icon_and_name.svg' and @alt = 'Saddleback Church']</value>
+      <webElementGuid>2e32408c-6bfd-4eae-bfb9-127fa6e00ed2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

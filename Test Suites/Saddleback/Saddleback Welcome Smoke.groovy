@@ -23,7 +23,6 @@ import com.kms.katalon.core.annotation.SetUp
 import com.kms.katalon.core.annotation.SetupTestCase
 import com.kms.katalon.core.annotation.TearDown
 import com.kms.katalon.core.annotation.TearDownTestCase
-import com.kms.katalon.core.util.KeywordUtil
 
 /**
  * Some methods below are samples for using SetUp/TearDown in a test suite.
@@ -56,16 +55,9 @@ def setupTestCase() {
 /**
  * Run after each test case ends.
  */
-@TearDownTestCase(skipped = false) // Please change skipped to be false to activate this method.
+@TearDownTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def tearDownTestCase() {
-	KeywordUtil.logInfo("tearing down test case")
-	
 	// Put your code here.
-	if (CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'()) {
-		KeywordUtil.logInfo("Browser is still open after this case execution. Attempting to close")
-		WebUI.closeBrowser()
-		KeywordUtil.logInfo("Closing successful")
-	}
 }
 
 /**

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Latest Message Title</name>
+   <tag></tag>
+   <elementGuidId>ca3fee7c-479e-464c-8a75-ec0171a4d59e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h3.white</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='latestMessage']/div/h3</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>7311b86f-cc38-4882-a6cf-886f49e44e20</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>white</value>
+      <webElementGuid>6ebc3cce-8204-4f91-b778-947d988a621a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Anchored in Peace</value>
+      <webElementGuid>69360802-ff4c-4f85-a6ce-5cc3d5eb3e1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;latestMessage&quot;)/div[1]/h3[@class=&quot;white&quot;]</value>
+      <webElementGuid>cda15ad3-ff3e-412a-b0ea-18c9961d910c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='latestMessage']/div/h3</value>
+      <webElementGuid>c4bc3e6c-1611-4343-bd4a-8a0792f221da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h3</value>
+      <webElementGuid>eea4cbb7-9626-4865-9cb7-9f7d4a5dc9bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[(text() = 'Anchored in Peace' or . = 'Anchored in Peace')]</value>
+      <webElementGuid>f101faeb-4db6-47e7-bf52-85fac6dd2989</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
