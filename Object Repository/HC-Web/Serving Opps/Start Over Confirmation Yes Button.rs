@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Start Over Button</name>
+   <name>Start Over Confirmation Yes Button</name>
    <tag></tag>
-   <elementGuidId>a589febf-360b-4dec-a73b-8b6039c0c5bf</elementGuidId>
+   <elementGuidId>b6d70fe4-2052-4837-98e3-8eff0ba97b8b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='new_serving_ops_drawer--btn_start_over']</value>
+         <value>//a[contains(@class,'btn-yes')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

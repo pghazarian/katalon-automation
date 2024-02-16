@@ -23,39 +23,84 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 ServiceCompanionName = ('Katalon Test Service Companion ' + UUID.randomUUID())
 
+'Click button to create new service companion'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/New Service Companion Button'))
 
+'Give service companion a unique name'
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Name Text Field'), ServiceCompanionName)
 
+'Enter description'
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Description Text Field'), 'Service Companion Created by Katalon Test')
 
+'Select a speaker from the dropdown'
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('react-select-3--value', Speaker)
 
+'Select a series from the dropdown'
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('react-select-4--value', Series)
 
+'Click button to attach a service outline'
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Outline Button'))
+
+'Select a service outline from the dropdown'
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('ui-dropdown--edit_sermon_outline_category', '')
+
+'Add a description to the service outline'
+WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Edit Service Outline Body'), 'Test Description')
+
+'Save the service outline attachment'
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Save Service Outline Button'))
+
+'Click button to attach a connection form'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Connection Form Button'))
 
+'Search for a connection form to attach'
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Connection Form Search Bar'), ConnectionForm)
 
 WebUI.sendKeys(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Connection Form Search Bar'), Keys.chord(Keys.ENTER))
 
+'Select a connection form from search result'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/First Connection Form Search Result'))
 
+'Confirm connection form attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Selected Connection Form'))
 
+'Click button to attach an announcement'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Announcement Button'))
 
+'Search for an announcement to attach'
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Announcement Search Bar'), Announcement)
 
+'Select announcement from search results'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/First Announcement Search Result'))
 
+'Confirm announcement attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Selected Announcement Button'))
 
+'Click the button to add a song as an attachment'
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Button'))
+
+'Select a song to attach'
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Search Result'))
+
+'Confirm song attachment selection'
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Song Search Add Button'))
+
+'Click the button to add a service'
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Association Button'))
+
+'Select a campus for the service attachment'
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Campus Checkboxes'))
+
+'Confirm service attachment selection'
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Drawer Save Button'))
+
+'Save service companion'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Save Service Companion Button'))
 
 WebUI.waitForElementNotPresent(findTestObject('HC-Web/Mobile Engagement/Service Companion/New Service Companion Drawer Container'), 
     10)
 
+'Return to service companion page and search for created service companion'
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search Bar'), ServiceCompanionName)
 
 WebUI.sendKeys(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search Bar'), Keys.chord(Keys.ENTER))

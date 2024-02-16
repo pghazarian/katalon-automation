@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Start Over Button</name>
+   <name>Add Song Search Result</name>
    <tag></tag>
-   <elementGuidId>a589febf-360b-4dec-a73b-8b6039c0c5bf</elementGuidId>
+   <elementGuidId>bc13ea53-12f3-4cc4-8f15-064c3ff9c98e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='new_serving_ops_drawer--btn_start_over']</value>
+         <value>//div[contains(@class,'drawer-container-inner')]/descendant::tbody/tr[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

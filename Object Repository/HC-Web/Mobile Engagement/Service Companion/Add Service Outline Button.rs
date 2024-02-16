@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Start Over Button</name>
+   <name>Add Service Outline Button</name>
    <tag></tag>
-   <elementGuidId>a589febf-360b-4dec-a73b-8b6039c0c5bf</elementGuidId>
+   <elementGuidId>798bbdd7-038f-4aa2-8e5b-b864aa2815b9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='new_serving_ops_drawer--btn_start_over']</value>
+         <value>//button[@id='ui-button--service_companion_edit_outline']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
