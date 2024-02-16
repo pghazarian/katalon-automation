@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[4]/button</value>
+         <value>//button[normalize-space(.)=&quot;I’ve Made a Decision to Follow Jesus&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>f6302399-9ff3-49bb-b363-34f900898808</webElementGuid>
+      <webElementGuid>86c581fb-4622-42e7-9d91-abd08660cfba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>call-to-action</value>
-      <webElementGuid>8f18729b-2b57-4850-a5f8-ec4e4947dfd5</webElementGuid>
+      <webElementGuid>16afa193-7713-4323-ade5-c34dca5b54ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -40,7 +40,7 @@
       <value>
     I’ve Made a Decision to Follow Jesus
 </value>
-      <webElementGuid>63eb2b2d-9bfc-437e-b324-ffe762b37e52</webElementGuid>
+      <webElementGuid>a13b40e3-7df2-4623-81ca-e43a7693254c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -48,7 +48,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[1]/div[@class=&quot;umb-block-grid&quot;]/div[@class=&quot;umb-block-grid__layout-container&quot;]/div[@class=&quot;umb-block-grid__layout-item&quot;]/button[@class=&quot;call-to-action&quot;]</value>
-      <webElementGuid>2b735947-f418-4f1e-a24d-391348c72a8a</webElementGuid>
+      <webElementGuid>b95f3904-9baf-41f1-ac0e-19851fdce9ff</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -56,7 +56,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/button</value>
-      <webElementGuid>f4dd418e-377f-41f6-91e2-87cc16188eae</webElementGuid>
+      <webElementGuid>e6aea94f-d16f-4277-a138-ead8a5f97254</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,6 +68,6 @@
 ' or . = '
     I’ve Made a Decision to Follow Jesus
 ')]</value>
-      <webElementGuid>990c23cb-6911-4ec3-a2cb-36d2333b39bd</webElementGuid>
+      <webElementGuid>358261b7-8400-45f8-97b1-8d345e387be4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
