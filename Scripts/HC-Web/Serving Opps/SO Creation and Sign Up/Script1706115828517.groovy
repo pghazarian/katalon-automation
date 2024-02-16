@@ -38,7 +38,6 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_plusNew Opportunity'))
 
 try {
-	
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/td_What  Why'))
 
     WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputui-input--so_name'), 'Katalon Test SO')
@@ -52,14 +51,18 @@ try {
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/div_QAQA Automation  AdminMale  Lake Forest_34d8fc'))
 
     try {
-		
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Select'))
-		
     }
-	
     catch (Exception ex) {
-		
         WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Opp Creation People Search Drawer Cross Button'))
+
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Opp Creation Cross Button'))
+
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Start Over Button'))
+
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Start Over Confirmation Yes Button'))
+
+        WebUI.closeBrowser()
 
         throw new com.kms.katalon.core.exception.StepFailedException('Failed to add opportunity contact')
     } 
@@ -74,47 +77,47 @@ try {
 
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_pencilEdit Custom Questions'))
 
-	try {
-			
-	    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_New Question'))
-	
-	    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/h5_CheckboxCheckbox'))
-	
-	    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_title_input--1'), 'Test Question')
-	
-	    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_placeholder_input--1'), 
-	        'Check This Box')
-	
-	    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1_2'))
-	
-	    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Done'))
-		
-	}
-	
-	catch (exception ex) {
+    try {
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_New Question'))
 
-		WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Custom Questions Cancel Button'))
-		
-	    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Opp Creation Cross Button'))
-	
-	    WebUI.click('Object Repository/HC-Web/Serving Opps/Start Over Button')
-	
-	    throw new com.kms.katalon.core.exception.StepFailedException('Failed to add custom questions')
-		
-	}
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/h5_CheckboxCheckbox'))
 
+        WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_title_input--1'), 
+            'Test Question')
+
+        WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/inputcustom_question--props_placeholder_input--1'), 
+            'Check This Box')
+
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1_2'))
+
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Done'))
+    }
+    catch (Exception ex) {
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Custom Questions Cancel Button'))
+
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Opp Creation Cross Button'))
+
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Start Over Button'))
+
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Start Over Confirmation Yes Button'))
+
+        WebUI.closeBrowser()
+
+        throw new com.kms.katalon.core.exception.StepFailedException('Failed to add custom questions')
+    } 
+    
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Save'))
-	
 }
-
 catch (Exception e) {
-	
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Opp Creation Cross Button'))
 
-    WebUI.click('Object Repository/HC-Web/Serving Opps/Start Over Button')
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Start Over Button'))
+
+    WebUI.click(findTestObject('HC-Web/Serving Opps/Start Over Confirmation Yes Button'))
+
+    WebUI.closeBrowser()
 
     throw new com.kms.katalon.core.exception.StepFailedException('Failed to create Serving Opportunity')
-	
 } 
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Done_1'))
