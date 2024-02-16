@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_I want to find community</name>
+   <tag></tag>
+   <elementGuidId>4e82e4e8-8412-41d9-8f0d-faa25f2ad3fc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='quick-start']/a[4]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>7b34c34f-df1f-4947-9629-e33c975db085</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>I want to find community.</value>
+      <webElementGuid>33a648f2-3d95-4b44-ae31-272da403a466</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;umb-block-grid&quot;]/div[@class=&quot;umb-block-grid__layout-container&quot;]/div[@class=&quot;umb-block-grid__layout-item&quot;]/div[@class=&quot;responsive-section&quot;]/div[@class=&quot;umb-block-grid__area-container&quot;]/div[@class=&quot;umb-block-grid__area&quot;]/div[@class=&quot;umb-block-grid__layout-container&quot;]/div[@class=&quot;umb-block-grid__layout-item&quot;]/div[@class=&quot;quick-start&quot;]/a[@class=&quot;quick-start-card&quot;]/span[1]</value>
+      <webElementGuid>5446b0d1-1d1c-4fe9-84f9-290eb7ee940a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/div/div/div/div/div/div/div[2]/div/a[4]/span</value>
+      <webElementGuid>d2714950-701d-46dd-aa5d-af87a720b6dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[4]/span</value>
+      <webElementGuid>63f77352-8f16-46b2-b738-cb116456bd75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'I want to find community.' or . = 'I want to find community.')]</value>
+      <webElementGuid>70a5ce75-ccad-4729-8360-7ab3ad8e492b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

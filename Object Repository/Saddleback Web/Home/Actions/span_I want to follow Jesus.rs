@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_I want to follow Jesus</name>
+   <tag></tag>
+   <elementGuidId>d25b0b5b-76ed-47fd-868a-7799fcd9475f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='quick-start']/a[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>7cf4a166-5d27-4070-9522-6a64b1ef8a67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>I want to follow Jesus.</value>
+      <webElementGuid>6c59b16a-34ce-4633-a557-2d94904148dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;umb-block-grid&quot;]/div[@class=&quot;umb-block-grid__layout-container&quot;]/div[@class=&quot;umb-block-grid__layout-item&quot;]/div[@class=&quot;responsive-section&quot;]/div[@class=&quot;umb-block-grid__area-container&quot;]/div[@class=&quot;umb-block-grid__area&quot;]/div[@class=&quot;umb-block-grid__layout-container&quot;]/div[@class=&quot;umb-block-grid__layout-item&quot;]/div[@class=&quot;quick-start&quot;]/a[@class=&quot;quick-start-card&quot;]/span[1]</value>
+      <webElementGuid>34a9af10-ba6c-4a75-86a9-64d350aaaff5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/div/div/div/div/div/div/div[2]/div/a[2]/span</value>
+      <webElementGuid>cdbbc35e-d6d4-420b-841f-9995dbfade9b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]/span</value>
+      <webElementGuid>c131a5cf-32ab-4457-901c-1e0fad05936b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'I want to follow Jesus.' or . = 'I want to follow Jesus.')]</value>
+      <webElementGuid>e4de413f-004e-40dc-a7ae-1f9467027f53</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
