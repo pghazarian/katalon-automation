@@ -46,22 +46,18 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/Cre
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_Continue'))
 
-WebUI.delay(2)
+//WebUI.delay(5)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Katalon Test Journey'), JourneyName)
+//WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Katalon Test Journey'), JourneyName)
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb'), JourneyName)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Builder'))
 
-WebUI.delay(2)
-
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_New SectionNew Section Subtitle0 Steps Total'))
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Section 1')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test')
-
-WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Subtitle'), 
-    'Test')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Subtitle'), 'Section 1')
 
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
 
@@ -69,7 +65,103 @@ CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Type Fill Out a Form'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 1')
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Button'))
+
+WebUI.setText(findTestObject('HC-Web/Journey/BuilderPage/Connection Form Search Bar'), 'Response Card' + Keys.ENTER)
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Search Results'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Select Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Done Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Watch a Video'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 2')
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/First Video Search Result'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Select Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Listen to Audio'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 3')
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Search Results'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Select Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Section 2')
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Subtitle'), 'Section 2')
+
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
+
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Read Text'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 1')
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Search Results'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Select Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Done Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Link Out From ME'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 2')
+
+WebUI.setText(findTestObject('HC-Web/Journey/BuilderPage/Link Out URL Field'), GlobalVariable.HC_HostUrl)
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Take a Quiz'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 3')
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Button'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Search Results'))
+
+WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Select Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
+
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Save Button'))
+
+WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Connection Card Step Icon'))
+
+WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Video Step Icon'))
+
+WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Audio Step Icon'))
+
+WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Read Text Step Icon'))
+
+WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Link Out Step Icon'))
+
+WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Quiz Step Icon'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Overview Tab'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Overview Tab'))
 
