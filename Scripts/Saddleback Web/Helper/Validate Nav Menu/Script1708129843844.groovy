@@ -35,7 +35,7 @@ final WIDTH_BREAKPOINT = 1024
 if (width >= WIDTH_BREAKPOINT) {
 
 	'Verify the text for Locations link'
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Nav/Location Header link'), 'Locations')
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Nav/Location Header Link'), 'Locations')
 	
 	'Verify the text for Watch link'
 	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Nav/Watch Header Link'), 'Watch')
@@ -62,7 +62,7 @@ else {
 	// 1) verify that the navigation header is not present
 	
 	'Verify the text for Locations link'
-	WebUI.verifyElementNotVisible(findTestObject('Object Repository/Saddleback Web/Home/Nav/Location Header link'))
+	WebUI.verifyElementNotVisible(findTestObject('Object Repository/Saddleback Web/Home/Nav/Location Header Link'))
 	
 	'Verify the text for Watch link'
 	WebUI.verifyElementNotVisible(findTestObject('Object Repository/Saddleback Web/Home/Nav/Watch Header Link'))
