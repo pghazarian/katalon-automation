@@ -46,13 +46,11 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/Cre
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_Continue'))
 
-//WebUI.delay(5)
-
-//WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_Katalon Test Journey'), JourneyName)
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb'), JourneyName)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Builder'))
 
+'Add first section to support each step type addition'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Section 1')
@@ -65,6 +63,7 @@ CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
+'Add a form entry step type'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Type Fill Out a Form'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 1')
@@ -79,6 +78,7 @@ WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Sel
 
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Done Button'))
 
+'Add a watch video step type'
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Watch a Video'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 2')
@@ -89,6 +89,7 @@ WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/First Video Search Result
 
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Select Button'))
 
+'Add a audio step type'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Listen to Audio'))
@@ -103,6 +104,7 @@ WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Sel
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
+'Add second section to support remaining step type addition'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Section 2')
@@ -115,6 +117,7 @@ CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
+'Add a read text step type'
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Read Text'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 1')
@@ -127,6 +130,7 @@ WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Sel
 
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Done Button'))
 
+'Add a link out step type'
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Link Out From ME'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 2')
@@ -135,6 +139,7 @@ WebUI.setText(findTestObject('HC-Web/Journey/BuilderPage/Link Out URL Field'), G
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
+'Add a quiz/review step type'
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Step Type Take a Quiz'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Test 3')
@@ -147,6 +152,7 @@ WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Sel
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
+'Save the journey'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Save Button'))
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Connection Card Step Icon'))
