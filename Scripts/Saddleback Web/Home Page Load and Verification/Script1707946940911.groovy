@@ -21,6 +21,14 @@ import org.openqa.selenium.Keys as Keys
 'Load the Welcome home page'
 WebUI.openBrowser(GlobalVariable.Saddleback_Welcome_URL)
 
+def width = 1024
+
+width += 50
+
+WebUI.setViewPortSize(width, 768)
+
+WebUI.waitForPageLoad(10)
+
 'Wait for the Saddleback Logo to be rendered before we verify page content'
 WebUI.waitForElementPresent(findTestObject('Saddleback Web/Home/Saddleback Logo image'), 0)
 

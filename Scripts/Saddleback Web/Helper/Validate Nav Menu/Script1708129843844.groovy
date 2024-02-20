@@ -30,10 +30,9 @@ KeywordUtil.logInfo("Width & height: ${width.toString()}x${height.toString()}")
 
 final WIDTH_BREAKPOINT = 1024
 
-// if the Width is greater than or equal to the break point, 
-// verify that the navigation header is present
-if (width >= WIDTH_BREAKPOINT) {
-
+// if the menu is not present, we are in "full width" mode
+if (!CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'), 1)) {
+	
 	'Verify the text for Locations link'
 	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Nav/Location Header Link'), 'Locations')
 	
@@ -58,7 +57,7 @@ if (width >= WIDTH_BREAKPOINT) {
 
 else {
 	
-	// if the Width is less than the break point,
+	// if the menu is present
 	// 1) verify that the navigation header is not present
 	
 	'Verify the text for Locations link'

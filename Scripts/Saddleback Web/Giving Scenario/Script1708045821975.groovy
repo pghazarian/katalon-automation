@@ -13,6 +13,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
@@ -110,19 +111,40 @@ KeywordUtil.logInfo("random value: $CustomAmount")
 'Load the Welcome home page'
 WebUI.openBrowser(GlobalVariable.Saddleback_Welcome_URL)
 
+def width = 375
+
+width += 50
+
+WebUI.setViewPortSize(width, 768)
+
+WebUI.waitForPageLoad(10)
+
+if (!CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'), 1)) {
+
 // Verify that the Give link is present.
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Nav/Give Header Link'), 1)
 
 // Click on the Give link.
 WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Nav/Give Header Link'))
 
+} else {
+	
+	'Click Menu button'
+	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))
+	
+	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Give Footer Link'))
+	
+}
+
 // Navigate to URL https://stage.saddleback.com/giving-at-saddleback
 WebUI.navigateToUrl('https://stage.saddleback.com/giving-at-saddleback')
 
 // Click the Give Tithe button
-WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Giving/Give Tithe Button'))
 
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Tithe Header'), 0)
+while (!CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Designation Section'), 1)) {
+	WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Giving/Give Tithe Button'))
+	WebUI.delay(3)
+}
 
 // Verify that the Designation section is present
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Designation Section'), 0)
