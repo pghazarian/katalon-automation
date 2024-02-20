@@ -111,7 +111,7 @@ KeywordUtil.logInfo("random value: $CustomAmount")
 'Load the Welcome home page'
 WebUI.openBrowser(GlobalVariable.Saddleback_Welcome_URL)
 
-def width = 375
+def width = 1024
 
 width += 50
 
@@ -119,19 +119,22 @@ WebUI.setViewPortSize(width, 768)
 
 WebUI.waitForPageLoad(10)
 
-if (!CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'), 1)) {
+'If the Menu button is NOT displayed, use the Header navigation'
+if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
 
-// Verify that the Give link is present.
-WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Nav/Give Header Link'), 1)
-
-// Click on the Give link.
-WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Nav/Give Header Link'))
+	'Verify that the Give link is present.'
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Nav/Give Header Link'), 1)
+	
+	'Click on the Give link.'
+	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Nav/Give Header Link'))
 
 } else {
+	'If the Menu button is displayed, use the Menu navigation'
 	
 	'Click Menu button'
 	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))
 	
+	'Click on the Give link.'
 	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Give Footer Link'))
 	
 }
@@ -140,17 +143,15 @@ WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Nav/Give Heade
 WebUI.navigateToUrl('https://stage.saddleback.com/giving-at-saddleback')
 
 // Click the Give Tithe button
-
-while (!CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Designation Section'), 1)) {
+def count = 1
+while (count < 5 && !CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Designation Section'), 1)) {
 	WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Giving/Give Tithe Button'))
 	WebUI.delay(3)
+	count += 1
 }
 
 // Verify that the Designation section is present
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Designation Section'), 0)
-
-//// Verify that the word Title is present.
-//WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Tithe Header'), 'Tithe')
 
 // Fill out the Custom Amount textfield with CustomAmount variable
 WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Custom Amount Textfield'))

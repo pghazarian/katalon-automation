@@ -339,4 +339,22 @@ class TestObjectHelper {
 		}
 		return false;
 	}
+	
+	@Keyword
+	def isElementVisible(TestObject to) {
+
+		try {
+			KeywordUtil.logInfo("Finding element with id:" + to.getObjectId())
+
+			if (WebUI.verifyElementVisible(to, FailureHandling.OPTIONAL)) {
+				return true
+			}
+			else {
+				return false
+			}
+		} catch (Exception e) {
+			KeywordUtil.logInfo("Error thrown when trying to determine visibility")
+		}
+		return false;
+	}
 }
