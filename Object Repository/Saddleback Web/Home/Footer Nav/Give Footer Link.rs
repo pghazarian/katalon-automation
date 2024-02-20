@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Give Footer Link</name>
+   <tag></tag>
+   <elementGuidId>72f4e438-4dac-40fa-bc3a-dc4213293e47</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li:nth-of-type(5) > a.footer-nav-page</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@class='footer-nav']/li/a[contains(text(),'Give')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>b2628432-1d22-49d2-806b-311784b70b10</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/give/</value>
+      <webElementGuid>83c3d2ea-62a8-4a11-b4ae-1d5403d63f6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>footer-nav-page</value>
+      <webElementGuid>3cdc4a3f-9150-41e1-aab9-b098181c97f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Give</value>
+      <webElementGuid>e2a0f5fe-592d-498b-98ef-ab4ee9c4569c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[5]/a[@class=&quot;footer-nav-page&quot;]</value>
+      <webElementGuid>4a2eb392-bec5-423b-9395-682bd642dd63</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Give')]</value>
+      <webElementGuid>2848bed0-b144-448e-9e71-0d46ecde137d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/give/')]</value>
+      <webElementGuid>8ae3c144-42b3-41b8-939a-2af33b19bfc2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[5]/a</value>
+      <webElementGuid>5cdcd49b-0da8-464e-854f-c206cae90b19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/give/' and (text() = 'Give' or . = 'Give')]</value>
+      <webElementGuid>ea6e88b4-bd85-44ef-a7ef-bc09dd6bda29</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Care Footer Link</name>
+   <tag></tag>
+   <elementGuidId>dd00f7b3-190c-4ef3-8c3a-f9ff31d1b860</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li:nth-of-type(4) > a.footer-nav-page</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@class='footer-nav']/li/a[contains(text(),'Care')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>d0bae6ca-61c7-42d5-aa0b-2dd9d2530893</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/care/</value>
+      <webElementGuid>45b99a40-5c2b-470d-9f4a-9ec55c62d027</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>footer-nav-page</value>
+      <webElementGuid>af62a1c2-0746-4435-8ca2-7b3052a65ac4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Care</value>
+      <webElementGuid>b40e73b9-9055-4fad-848b-cc6aaba4eb9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[4]/a[@class=&quot;footer-nav-page&quot;]</value>
+      <webElementGuid>453d33f9-e9f9-431c-a230-af8a27ed70c7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Care')]</value>
+      <webElementGuid>3e442627-321d-4170-a47c-41859191b49d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/care/')]</value>
+      <webElementGuid>a48f2158-eca7-4418-b8a6-85fc24635056</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/a</value>
+      <webElementGuid>540a9eaf-ea92-45ef-854f-679bcde4bca5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/care/' and (text() = 'Care' or . = 'Care')]</value>
+      <webElementGuid>fb79fb03-bcc4-4a88-ab5d-6553faa7eeae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

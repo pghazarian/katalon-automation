@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Watch Footer Link</name>
+   <tag></tag>
+   <elementGuidId>2e4fa6c1-79ef-434d-b833-28e333b03207</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li:nth-of-type(2) > a.footer-nav-page</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@class='footer-nav']/li/a[contains(text(),'Watch')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>91bed833-d911-41c7-9410-a2b2eff6b74f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/watch/</value>
+      <webElementGuid>645fe58e-0b90-4027-b222-dd36586302e5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>footer-nav-page</value>
+      <webElementGuid>ca5d4186-f594-4edf-9a9c-6122367c14ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Watch</value>
+      <webElementGuid>a7e8a66b-7a58-4e1a-bc02-96f745c9dec8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[2]/a[@class=&quot;footer-nav-page&quot;]</value>
+      <webElementGuid>002a4385-f2f6-4cba-b090-dad0d16edcce</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Watch')]</value>
+      <webElementGuid>7df4a5f0-f02d-4328-9745-cfb7b82a3b25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/watch/')]</value>
+      <webElementGuid>177d4540-e4f6-43bb-b84d-46876079f9dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a</value>
+      <webElementGuid>4b872ced-7642-49cb-b4ef-aa0cefd4f8c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/watch/' and (text() = 'Watch' or . = 'Watch')]</value>
+      <webElementGuid>addf6444-8179-41bd-89c2-155e97daadc1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
