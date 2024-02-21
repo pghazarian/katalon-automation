@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 'Load the Welcome home page'
 WebUI.openBrowser(GlobalVariable.Saddleback_Welcome_URL)
 
-def width = 375
+def width = 1024
 
 width += 50
 
@@ -31,6 +31,7 @@ WebUI.waitForPageLoad(10)
 'If the Menu button is NOT displayed, use the Header navigation'
 if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
 
+// This logic is inconsistent in Safari (sometimes it works and sometimes it doesn't)
 WebUI.click(findTestObject('Saddleback Web/Home/Language/Language Selector'))
 
 WebUI.click(findTestObject('Saddleback Web/Home/Language/Spanish Option'))
@@ -43,6 +44,8 @@ WebUI.click(findTestObject('Saddleback Web/Home/Language/Spanish Option'))
 	
 }
 
+WebUI.delay(3)
+
 WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_New to Saddleback'), 'Nuevo en Saddleback?')
 
 WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to follow Jesus'), 'Quiero seguir a Jesus.')
@@ -53,6 +56,8 @@ WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want 
 
 WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to start volunteering'), 'Quiero ser voluntario.')
 
+// This comparison works fine in all browsers except Safari. 
+// Need to provide a case insensitive comparison to get this working.
 WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Latest Message Heading'), 'ÚLTIMO MENSAJE')
 
 'Verify the Watch Now button is present'

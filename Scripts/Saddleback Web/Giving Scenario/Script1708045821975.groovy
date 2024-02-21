@@ -120,7 +120,7 @@ WebUI.setViewPortSize(width, 768)
 WebUI.waitForPageLoad(10)
 
 'If the Menu button is NOT displayed, use the Header navigation'
-if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
+if (!WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'), FailureHandling.OPTIONAL)) {
 
 	'Verify that the Give link is present.'
 	WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Nav/Give Header Link'), 1)
