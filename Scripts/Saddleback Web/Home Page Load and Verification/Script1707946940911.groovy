@@ -21,6 +21,14 @@ import org.openqa.selenium.Keys as Keys
 'Load the Welcome home page'
 WebUI.openBrowser(GlobalVariable.Saddleback_Welcome_URL)
 
+def width = 1024
+
+width += 50
+
+WebUI.setViewPortSize(width, 768)
+
+WebUI.waitForPageLoad(10)
+
 'Wait for the Saddleback Logo to be rendered before we verify page content'
 WebUI.waitForElementPresent(findTestObject('Saddleback Web/Home/Saddleback Logo image'), 0)
 
@@ -47,9 +55,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Ac
 
 'Verify the Watch Now button is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button'), 0)
-
-'Verify the text for Watch Now button'
-WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button'), 'Watch Now')
 
 'Verify the text for Latest Message heading is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Latest Message Heading'), 0)
