@@ -28,6 +28,4 @@ CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('C
 // (2024-02-13) These tests are not available in production because they are still in development
 if (RunConfiguration.getExecutionProfile() != "HC-Production") {
 	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Search', 'Segment Search')
-	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Builder', 'Segment Builder')
-	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Settings & Preferences', 'Settings & Preferences')
 }
