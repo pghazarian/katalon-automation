@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='btnWatchNow']/span</value>
+         <value>//div[@class='latest-message-card']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>eda583cc-7a21-4752-81f9-f65d5cc8162e</webElementGuid>
+      <webElementGuid>1b42c0c6-166b-444c-85fa-56beb76ef2e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Watch Now</value>
-      <webElementGuid>126facee-4269-495f-8c3a-cabf4a4d0a88</webElementGuid>
+      <webElementGuid>d4322ce3-ea2f-4bd1-817b-76013cac2d5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;btnWatchNow&quot;)/span[1]</value>
-      <webElementGuid>ac52da01-aa36-486a-981d-6eeb285f49cf</webElementGuid>
+      <webElementGuid>71844ba1-9be0-4518-9b3a-763d7e2702fc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='btnWatchNow']/span</value>
-      <webElementGuid>1521bbc5-d4b0-440e-914f-0b8e7e2416b2</webElementGuid>
+      <webElementGuid>b546074b-11eb-4cd5-b5b8-78018830d03c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button/span</value>
-      <webElementGuid>35b38b1b-5e6a-4868-b239-b9ba884e99e4</webElementGuid>
+      <webElementGuid>a73aac7c-db77-4494-b327-9083542da1ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,6 +62,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Watch Now' or . = 'Watch Now')]</value>
-      <webElementGuid>c889a85e-6e93-4b94-8b9d-faad331105fc</webElementGuid>
+      <webElementGuid>77dc81b1-30d4-4785-94a3-6590052f3d57</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
