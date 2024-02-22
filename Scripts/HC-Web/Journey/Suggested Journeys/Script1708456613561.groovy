@@ -25,29 +25,32 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Button'))
 
 'Attempt to remove journey to be added in case it is already suggested'
-try {
+if (CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(
+	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'('//div[contains(text(),\'' + JourneyName + '\')]/preceding-sibling::div/descendant::div[contains(@class,\'icon-check\')]'), 0)) {
 	
-	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(text(),'" + JourneyName + "')]/preceding-sibling::div/descendant::div[contains(@class,'icon-check')]"))
-	
-	WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Button'))
+    WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(('//div[contains(text(),\'' + JourneyName) + '\')]/preceding-sibling::div/descendant::div[contains(@class,\'icon-check\')]'))
 
-	WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Confirmation Yes Button'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Button'))
 
-	WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Button'))
-	
+    WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Confirmation Yes Button'))
+
+    WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Button'))
+
+    CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject(null), 0)
 }
 
-catch (Exception ex) {
-}
-
+//catch (Exception ex) {
+//}
 'Add new suggested journey'
 WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Add Journey Button'))
 
 'Search for desired journey by name'
-WebUI.setText(findTestObject('HC-Web/Journey/Settings and Preferences/Add Journey Search Bar'), JourneyName + Keys.chord(Keys.ENTER))
+WebUI.setText(findTestObject('HC-Web/Journey/Settings and Preferences/Add Journey Search Bar'), JourneyName + Keys.chord(
+        Keys.ENTER))
 
-'Click checkbox to select first search result'	
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//td[contains(text(),'" + JourneyName + "')]/preceding-sibling::td/descendant::div[contains(@class,'icon-check')]"))
+'Click checkbox to select first search result'
+WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(('//td[contains(text(),\'' + JourneyName) + 
+        '\')]/preceding-sibling::td/descendant::div[contains(@class,\'icon-check\')]'))
 
 'Click button to add selected journey'
 WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Add Selected Journeys'))
@@ -62,7 +65,8 @@ WebUI.verifyTextPresent(JourneyName, false)
 WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Button'))
 
 'Select previously added journey'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(text(),'" + JourneyName + "')]/preceding-sibling::div/descendant::div[contains(@class,'icon-check')]"))
+WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(('//div[contains(text(),\'' + JourneyName) + 
+        '\')]/preceding-sibling::div/descendant::div[contains(@class,\'icon-check\')]'))
 
 'Delete added journey from suggested journeys'
 WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Button'))
