@@ -64,4 +64,9 @@
       <initValue>'https://stage-welcome.saddleback.com'</initValue>
       <name>Saddleback_Welcome_URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Garrett Clover'</initValue>
+      <name>AuditLog_SearchName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
