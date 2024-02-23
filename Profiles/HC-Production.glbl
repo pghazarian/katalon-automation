@@ -99,4 +99,9 @@
       <initValue>'For Testing - DO NOT USE'</initValue>
       <name>EventSearch_ServingOppName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cris Francisco'</initValue>
+      <name>AuditLog_SearchName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

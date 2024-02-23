@@ -12,7 +12,7 @@
       <variableId>f24ca378-85c2-46ec-9973-a8cad396253b</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Garrett Clover'</defaultValue>
+      <defaultValue>GlobalVariable.AuditLog_SearchName</defaultValue>
       <description></description>
       <id>f24ca378-85c2-46ec-9973-a8cad396253b</id>
       <masked>false</masked>
