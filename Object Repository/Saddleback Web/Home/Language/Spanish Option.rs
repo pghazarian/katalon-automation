@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class='select2-results']/ul/li[normalize-space(.)='Spanish']</value>
+         <value>//span[@class='select2-results']/ul/li[normalize-space(.)='Español']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
