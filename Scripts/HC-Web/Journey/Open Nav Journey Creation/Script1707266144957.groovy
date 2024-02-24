@@ -169,7 +169,21 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Quiz Step 
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Overview Tab'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Overview Tab'))
+'Now publish the newly created open navigation journey'
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Publish And Unpublished'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Journey Publish Radio Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Journey Publishing Save Button'))
+
+'Now unpublish the newly created open navigation journey'
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Publish And Unpublished'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Journey Unpublish Radio Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Journey Publishing Save Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Unpublish Confirmation Button'))
 
 WebUI.click(findTestObject('HC-Web/Journey/Overview/Back to All Journeys Button'))
 
