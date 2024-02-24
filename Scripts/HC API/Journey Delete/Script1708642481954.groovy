@@ -20,11 +20,20 @@ import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-def JourneyIds = [481, 482, 483, 594]
+def JourneyIds = [481, 482]
 
+// for each id in the array, call the API
 for (id in JourneyIds) {
+	// Log the id that is being processed
 	KeywordUtil.logInfo("processing ${id}")
-    WS.sendRequest(findTestObject('HC API/Search Index/Journey Delete', [('JourneyID') : id]))
+	
+	// Call API 
+	// Notice: the test object of type, Web Service / API Call
+	// 		   and the array of parameters
+    def response = WS.sendRequest(findTestObject('HC API/Search Index/Journey Delete', [('JourneyID') : id]))
+	
+	// Validate the response was successful (HTTP Code 200 == Status)
+	WS.verifyResponseStatusCode(response, 200)
 }
 
 

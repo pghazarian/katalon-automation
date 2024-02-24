@@ -45,7 +45,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://hc-website-stage.azurewebsites.net/api/search-index</restUrl>
+   <restUrl>${GlobalVariable.HC_API_URL}/api/search-index</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
