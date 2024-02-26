@@ -64,4 +64,9 @@
       <initValue>'Bryant\'s Demo Serving Opp'</initValue>
       <name>EventSearch_ServingOppName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'7798526'</initValue>
+      <name>PersonRecordId_Notes</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

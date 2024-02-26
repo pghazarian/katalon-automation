@@ -79,4 +79,9 @@
       <initValue>'Margaret Barrett'</initValue>
       <name>MinistrySearch_InterestedName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'7798391'</initValue>
+      <name>PersonRecordId_Notes</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
