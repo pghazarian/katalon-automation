@@ -54,4 +54,9 @@
       <initValue>'Flying Squirrel Parade Fellowship'</initValue>
       <name>EventSearch_ServingOppName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'7798391'</initValue>
+      <name>PersonRecordId_Notes</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
