@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Notes Create, Edit, and Delete</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be753458-eb2e-4e2a-b1d2-04982f6b4d11</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>80b21f25-21f7-4bed-a91d-c704d9e85802</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'7798526'</defaultValue>
+      <description></description>
+      <id>80b21f25-21f7-4bed-a91d-c704d9e85802</id>
+      <masked>false</masked>
+      <name>PersonId</name>
+   </variable>
+</TestCaseEntity>
