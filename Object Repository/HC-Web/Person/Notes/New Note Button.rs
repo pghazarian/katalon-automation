@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OpenNotesButton</name>
+   <name>New Note Button</name>
    <tag></tag>
-   <elementGuidId>4e8427be-d858-498d-bcc7-c3c4bb559b19</elementGuidId>
+   <elementGuidId>d03818a7-f01c-4512-aaef-fd7af3cf0a90</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[contains(@id,'person_record--notes_drawer--new_note_')]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@id='ui-button--open_person_notes_modal']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

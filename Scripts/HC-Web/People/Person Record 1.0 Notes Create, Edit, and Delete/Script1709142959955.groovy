@@ -24,31 +24,31 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 def NoteText = 'QA Automation Note Created By Katalon Automation' + UUID.randomUUID()
 
-WebUI.click(findTestObject('HC-Web/Person/Edit/OpenNotesButton'))
+WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Open Notes Button'))
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/NewNoteButton'))
+WebUI.click(findTestObject('HC-Web/Person/Record 1.0 Notes/NewNoteButton'))
 
-WebUI.setText(findTestObject('HC-Web/Person/Notes/TextField'), NoteText)
+WebUI.setText(findTestObject('HC-Web/Person/Record 1.0 Notes/TextField'), NoteText)
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/SaveButton'))
-
-WebUI.verifyTextPresent(NoteText, false)
-
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
-
-NoteText = NoteText + ' - EDITED'
-
-WebUI.setText(findTestObject('HC-Web/Person/Notes/TextField'), ' - EDITED')
-
-WebUI.click(findTestObject('HC-Web/Person/Notes/SaveButton'))
+WebUI.click(findTestObject('HC-Web/Person/Record 1.0 Notes/SaveButton'))
 
 WebUI.verifyTextPresent(NoteText, false)
 
 WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/DeleteButton'))
+NoteText = (NoteText + ' - EDITED')
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/DeleteNoteConfirmationYesButton'))
+WebUI.setText(findTestObject('HC-Web/Person/Record 1.0 Notes/TextField'), ' - EDITED')
+
+WebUI.click(findTestObject('HC-Web/Person/Record 1.0 Notes/SaveButton'))
+
+WebUI.verifyTextPresent(NoteText, false)
+
+WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
+
+WebUI.click(findTestObject('HC-Web/Person/Record 1.0 Notes/DeleteButton'))
+
+WebUI.click(findTestObject('HC-Web/Person/Record 1.0 Notes/DeleteNoteConfirmationYesButton'))
 
 WebUI.delay(2)
 

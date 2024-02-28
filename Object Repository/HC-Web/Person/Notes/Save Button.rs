@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DeleteButton</name>
+   <name>Save Button</name>
    <tag></tag>
-   <elementGuidId>e7872cf5-4008-4937-83e2-0a376e243578</elementGuidId>
+   <elementGuidId>44fc09c5-0d32-4855-a4b9-f960f0f5d6f3</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='person_notes_drawer_note_form--save']</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//a[@id='ui-legacy_button--desktop_delete_note']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

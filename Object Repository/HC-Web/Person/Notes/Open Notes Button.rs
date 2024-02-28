@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LastNameInput</name>
+   <name>Open Notes Button</name>
    <tag></tag>
-   <elementGuidId>322b5352-5ce1-4dce-977a-9fbb25790482</elementGuidId>
+   <elementGuidId>b8459b32-f232-4b56-b647-3771920f9387</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='lastName']</value>
+         <value>//button[@id='ui-button--details_window_notes_action_btn']</value>
       </entry>
       <entry>
          <key>BASIC</key>

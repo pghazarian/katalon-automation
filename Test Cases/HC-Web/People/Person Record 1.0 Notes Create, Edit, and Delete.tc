@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Notes Create, Edit, and Delete</name>
+   <name>Person Record 1.0 Notes Create, Edit, and Delete</name>
    <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>be753458-eb2e-4e2a-b1d2-04982f6b4d11</testCaseGuid>

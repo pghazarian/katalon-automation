@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FirstNameInput</name>
+   <name>Save Button</name>
    <tag></tag>
-   <elementGuidId>35d396f1-e799-4f5c-a728-8cb63f9022ec</elementGuidId>
+   <elementGuidId>64cee7d9-f778-426d-a15a-c6f76894c5d9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='firstName']</value>
+         <value>//a[@id='ui-legacy_button--desktop_save_note']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
