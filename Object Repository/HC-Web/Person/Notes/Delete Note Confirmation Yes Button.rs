@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SaveButton</name>
+   <name>Delete Note Confirmation Yes Button</name>
    <tag></tag>
-   <elementGuidId>64cee7d9-f778-426d-a15a-c6f76894c5d9</elementGuidId>
+   <elementGuidId>c07c6c17-e1fd-45d8-aa67-78b3f2ae8a9b</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='prompt-yes-btn']</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//a[@id='ui-legacy_button--desktop_save_note']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
