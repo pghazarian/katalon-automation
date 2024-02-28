@@ -14,6 +14,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.configuration.RunConfiguration
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
@@ -22,6 +23,8 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/volunteers/members/$MinistryId/$CampusId"], 
     FailureHandling.STOP_ON_FAILURE)
 
+def Environment = RunConfiguration.getExecutionProfile()
+
 'Select all members to send an email to'
 WebUI.click(findTestObject('HC-Web/Ministry/Members/Select All Members Checkbox'))
 
@@ -29,7 +32,7 @@ WebUI.click(findTestObject('HC-Web/Ministry/Members/Select All Members Checkbox'
 WebUI.click(findTestObject('HC-Web/Ministry/Members/Send Email Button'))
 
 'Enter a subject'
-WebUI.setText(findTestObject('HC-Web/Ministry/Members/Message to Members Drawer/Email Subject Text Field'), 'QA Automation Test Email')
+WebUI.setText(findTestObject('HC-Web/Ministry/Members/Message to Members Drawer/Email Subject Text Field'), "QA Automation Test Email from $Environment")
 
 'Click on the field for the main body of text'
 WebUI.click(findTestObject('HC-Web/Ministry/Members/Message to Members Drawer/Email Body Text Field'), FailureHandling.STOP_ON_FAILURE)

@@ -14,6 +14,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.configuration.RunConfiguration
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
@@ -22,6 +23,10 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/volunteers/members/$MinistryId/$CampusId"], 
     FailureHandling.STOP_ON_FAILURE)
 
+def Environment = RunConfiguration.getExecutionProfile()
+
+CustomKeywords.'customUtility.TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
+
 'Select all members to send a text to'
 WebUI.click(findTestObject('HC-Web/Ministry/Members/Select All Members Checkbox'))
 
@@ -29,7 +34,7 @@ WebUI.click(findTestObject('HC-Web/Ministry/Members/Select All Members Checkbox'
 WebUI.click(findTestObject('HC-Web/Ministry/Members/Send Text Button'))
 
 'Enter a message into the body of the text'
-WebUI.setText(findTestObject('HC-Web/Ministry/Members/Message to Members Drawer/SMS Message Text Field'), 'QA Automation Test Text Sent By Katalon Test')
+WebUI.setText(findTestObject('HC-Web/Ministry/Members/Message to Members Drawer/SMS Message Text Field'), "QA Automation Test Text Sent By $Environment")
 
 'Send text'
 WebUI.click(findTestObject('HC-Web/Ministry/Members/Message to Members Drawer/Send Message Button'))
