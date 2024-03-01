@@ -59,4 +59,14 @@
       <initValue>'7798391'</initValue>
       <name>PersonRecordId_Notes</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2231'</initValue>
+      <name>MinistryId_HasMembers</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'10'</initValue>
+      <name>Ministry_CampusId</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

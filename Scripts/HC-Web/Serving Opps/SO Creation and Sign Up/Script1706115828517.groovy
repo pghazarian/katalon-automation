@@ -69,6 +69,14 @@ try {
     
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Nextchevron-wl-right'))
 
+    WebUI.delay(2)
+
+    def expanded = WebUI.getAttribute(findTestObject('HC-Web/Serving Opps/Expand Venue List Button'), 'aria-expanded')
+	
+	if(expanded == "false") {
+		WebUI.click(findTestObject('HC-Web/Serving Opps/Expand Venue List Button'))
+	}
+
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/use_icon-use-path_1'))
 
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/button_Nextchevron-wh-right'))

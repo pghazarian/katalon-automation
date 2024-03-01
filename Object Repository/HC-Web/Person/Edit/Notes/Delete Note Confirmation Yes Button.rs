@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>NewNoteButton</name>
+   <name>Delete Note Confirmation Yes Button</name>
    <tag></tag>
-   <elementGuidId>c1aa8302-7010-475a-bb6e-f54df4bd6d4a</elementGuidId>
+   <elementGuidId>3f554eec-e69e-4a0b-89ce-7113abb675ba</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@id='ui-legacy_button--desktop_confirm_delete_note']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='ui-legacy_button--desktop_add_note']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

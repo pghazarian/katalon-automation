@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DeleteButton</name>
+   <name>Send Message Button</name>
    <tag></tag>
-   <elementGuidId>e7872cf5-4008-4937-83e2-0a376e243578</elementGuidId>
+   <elementGuidId>e9a08703-6163-48ff-8acc-3a0f33c8712d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@id='communications_drawer--action_bar_send']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='ui-legacy_button--desktop_delete_note']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

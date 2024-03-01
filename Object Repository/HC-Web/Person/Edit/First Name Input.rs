@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DeleteNoteConfirmationYesButton</name>
+   <name>First Name Input</name>
    <tag></tag>
-   <elementGuidId>3f554eec-e69e-4a0b-89ce-7113abb675ba</elementGuidId>
+   <elementGuidId>35d396f1-e799-4f5c-a728-8cb63f9022ec</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='firstName']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='ui-legacy_button--desktop_confirm_delete_note']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

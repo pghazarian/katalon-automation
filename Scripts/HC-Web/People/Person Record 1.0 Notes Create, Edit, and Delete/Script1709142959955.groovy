@@ -22,36 +22,51 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/people/search-or-add/record/$PersonId/edit"], 
     FailureHandling.STOP_ON_FAILURE)
 
+'Create unique note text'
 def NoteText = 'QA Automation Note Created By Katalon Automation' + UUID.randomUUID()
 
-WebUI.click(findTestObject('HC-Web/Person/Edit/OpenNotesButton'))
+'Open person record\'s notes'
+WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Open Notes Button'))
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/NewNoteButton'))
+'Click button to create a new note'
+WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/New Note Button'))
 
-WebUI.setText(findTestObject('HC-Web/Person/Notes/TextField'), NoteText)
+'Enter note text'
+WebUI.setText(findTestObject('HC-Web/Person/Edit/Notes/Text Field'), NoteText)
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/SaveButton'))
+'Save note'
+WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Save Button'))
 
+'Verify note appears in list'
 WebUI.verifyTextPresent(NoteText, false)
 
+'Click button to edit previously created note'
 WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
 
-NoteText = NoteText + ' - EDITED'
+'Create edited note text'
+NoteText = (NoteText + ' - EDITED')
 
-WebUI.setText(findTestObject('HC-Web/Person/Notes/TextField'), ' - EDITED')
+'Enter newly created edited note text'
+WebUI.setText(findTestObject('HC-Web/Person/Edit/Notes/Text Field'), ' - EDITED')
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/SaveButton'))
+'Save edited note'
+WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Save Button'))
 
+'Verify edited note appears in list'
 WebUI.verifyTextPresent(NoteText, false)
 
+'Click button to edit previously edited note'
 WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/DeleteButton'))
+'Click delete button'
+WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Delete Button'))
 
-WebUI.click(findTestObject('HC-Web/Person/Notes/DeleteNoteConfirmationYesButton'))
+'Confirm deletion'
+WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Delete Note Confirmation Yes Button'))
 
 WebUI.delay(2)
 
+'Verify deleted note does not appear in list'
 WebUI.verifyTextNotPresent(NoteText, false)
 
 WebUI.closeBrowser()

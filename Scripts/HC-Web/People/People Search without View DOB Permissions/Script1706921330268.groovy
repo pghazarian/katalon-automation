@@ -60,11 +60,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), Veri
 WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
 
 'Verify the first name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/FirstNameInput'), 
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/First Name Input'), 
     FirstName)
 
 'Verify the last name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), 
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/Last Name Input'), 
     LastName)
 
 'Verify the birthdate label is not present'

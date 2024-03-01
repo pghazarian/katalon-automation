@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FirstNameInput</name>
+   <name>Send Text Button</name>
    <tag></tag>
-   <elementGuidId>35d396f1-e799-4f5c-a728-8cb63f9022ec</elementGuidId>
+   <elementGuidId>ef5cb352-6834-4f14-9d30-05df71c12891</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='firstName']</value>
+         <value>//button[@id='ui-button--open_bulk_sms_drawer']</value>
       </entry>
       <entry>
          <key>BASIC</key>

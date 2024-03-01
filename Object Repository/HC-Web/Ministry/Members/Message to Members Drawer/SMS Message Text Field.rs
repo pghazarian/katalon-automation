@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LastNameInput</name>
+   <name>SMS Message Text Field</name>
    <tag></tag>
-   <elementGuidId>322b5352-5ce1-4dce-977a-9fbb25790482</elementGuidId>
+   <elementGuidId>009201dd-48cd-4618-9d6f-7ab5a9474197</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='lastName']</value>
+         <value>//textarea[@id='ui-text_area--new-sms-message']</value>
       </entry>
       <entry>
          <key>BASIC</key>

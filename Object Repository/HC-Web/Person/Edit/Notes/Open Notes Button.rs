@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TextField</name>
+   <name>Open Notes Button</name>
    <tag></tag>
-   <elementGuidId>d61b2dda-bc93-434a-9aef-c198099bfcba</elementGuidId>
+   <elementGuidId>4e8427be-d858-498d-bcc7-c3c4bb559b19</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@id='ui-button--open_person_notes_modal']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//textarea[@id='ui-text_area--desktop_note_field']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
