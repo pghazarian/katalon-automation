@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 * 2. Log in to the website
 * 3. Click the login button
 * 4. Input username and password
-* 5. Clock the browser
+* 5. Close the browser
 */
 /*
  *  This test case opens a browser to a specified URL, logs in to the website, clicks the login button,
@@ -33,16 +33,16 @@ import org.openqa.selenium.Keys as Keys
  *  @param password The password to be inputted
  */
 
-// Open browser to URL
+'Open browser to URL'
 WebUI.openBrowser('https://www.example.com')
 
-// Log in to the website
+'Log in to the website'
 WebUI.click(findTestObject('Page_Login/button_Login'))
 
-// Click the login button
+'Click the login button'
 WebUI.click(findTestObject('Page_Login/button_Login'))
 
-// Input username and password
+'Input username and password'
 WebUI.setText(findTestObject('Page_Login/input_Username'), 'username')
 WebUI.setText(findTestObject('Page_Login/input_Password'), 'password')
 
