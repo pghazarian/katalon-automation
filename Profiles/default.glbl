@@ -89,4 +89,9 @@
       <initValue>'10'</initValue>
       <name>Ministry_CampusId</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27772'</initValue>
+      <name>EventId_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
