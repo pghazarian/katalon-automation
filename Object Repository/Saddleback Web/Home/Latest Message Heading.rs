@@ -6,12 +6,12 @@
    <elementGuidId>4da64918-679c-4e29-9205-15da34f1b676</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h5.white</value>
+         <key>XPATH</key>
+         <value>//div[@class='message-card-inner']/h5</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='latestMessage']/div/h5</value>
+         <key>CSS</key>
+         <value>h5.white</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h5</value>
-      <webElementGuid>1fa180a5-45b4-4a4e-985f-0f33bde258f6</webElementGuid>
+      <webElementGuid>765e18dd-742c-40d6-8ae9-263a5b900f9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>white</value>
-      <webElementGuid>1345bdbe-68c5-4a1c-8a7f-ca5eb5bad5c9</webElementGuid>
+      <webElementGuid>ebf0428b-3752-42ac-adde-ef5bdd7591a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Latest Message</value>
-      <webElementGuid>2b526c65-aad0-4964-b729-98548451eb2e</webElementGuid>
+      <webElementGuid>3d10ac89-2620-4318-ac58-7d593ac80f50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;latestMessage&quot;)/div[1]/h5[@class=&quot;white&quot;]</value>
-      <webElementGuid>42f80a19-1146-4f23-8082-5d0ec6be9c38</webElementGuid>
+      <webElementGuid>b191f504-ffd2-4b7d-8a17-3b4f2c8c5849</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='latestMessage']/div/h5</value>
-      <webElementGuid>92c7e62a-50cf-4181-abad-9086bcb8ec8b</webElementGuid>
+      <webElementGuid>725be190-faed-4384-9be4-48d46f8405d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h5</value>
-      <webElementGuid>ded3378e-8130-4d90-9c64-cf5cb1de7e87</webElementGuid>
+      <webElementGuid>c8ddbb9f-1dfe-42f4-ad6a-92cf57466b24</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//h5[(text() = 'Latest Message' or . = 'Latest Message')]</value>
-      <webElementGuid>aca09c2b-e541-408e-af27-0e1c16e476a1</webElementGuid>
+      <webElementGuid>0bae7650-31c7-465c-90af-7cc4e0aeb5cc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
