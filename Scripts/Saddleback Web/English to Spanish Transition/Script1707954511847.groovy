@@ -65,6 +65,9 @@ WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Latest Message Headi
 'Verify the Watch Now button is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button'), 0)
 
+'Verify the Watch Now button text'
+WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button Text'), 'Ver ahora')
+
 'Verify the header nav link text'
 WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), 'Ubicaciones')
 WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Watch Header Link'), 'Ver')

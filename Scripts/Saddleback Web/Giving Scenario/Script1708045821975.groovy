@@ -134,9 +134,6 @@ if (!(WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback We
     WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Give Footer Link'))
 }
 
-// Navigate to URL https://stage.saddleback.com/giving-at-saddleback
-not_run: WebUI.navigateToUrl('https://stage.saddleback.com/giving-at-saddleback')
-
 // Click the Give Tithe button
 def count = 1
 
