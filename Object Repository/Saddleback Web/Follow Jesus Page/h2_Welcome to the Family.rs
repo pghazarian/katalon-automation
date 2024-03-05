@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h2_Welcome to the Family</name>
+   <tag></tag>
+   <elementGuidId>05a8c96e-0b9c-472d-9117-8c097932ce56</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='infoCardPopup683']/div/div/div[2]/div/div/h2</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h2.MuiTypography-root.connection-form5.MuiTypography-h2</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h2</value>
+      <webElementGuid>fa75ee26-06a7-439a-a7b5-dcc30bd3f189</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root connection-form5 MuiTypography-h2</value>
+      <webElementGuid>cb72b564-ab02-4022-87a5-7548c40a711b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Welcome to the Family!</value>
+      <webElementGuid>82c039d2-85a8-45a5-b002-e70b0c1693a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;infoCardPopup683&quot;)/div[@class=&quot;popup-inner&quot;]/div[@class=&quot;connection-form-container&quot;]/div[@class=&quot;connection-form&quot;]/div[@class=&quot;widget-content&quot;]/div[@class=&quot;connection-form2&quot;]/h2[@class=&quot;MuiTypography-root connection-form5 MuiTypography-h2&quot;]</value>
+      <webElementGuid>72f62fb6-840b-437a-b5bc-d1013eaab1ab</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='infoCardPopup683']/div/div/div[2]/div/div/h2</value>
+      <webElementGuid>3ba4c539-d44f-4e9d-8a34-19777c11359e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h2</value>
+      <webElementGuid>9d5ef6bb-9d25-4070-8e00-f7c637be8a61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h2[(text() = 'Welcome to the Family!' or . = 'Welcome to the Family!')]</value>
+      <webElementGuid>493566aa-d0d8-44ed-b663-51c791905604</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

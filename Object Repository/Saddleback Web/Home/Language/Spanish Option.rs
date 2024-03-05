@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class='select2-results']/ul/li[normalize-space(.)='Español']</value>
+         <value>//div[contains(@class, 'desktop-center')]/div[@class='header-lang-select']//descendant::ul/li[text()='Español']</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -6,12 +6,12 @@
    <elementGuidId>eaf268f2-a62d-43bd-8ef2-1d1954bd6488</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li:nth-of-type(2) > a.footer-nav-page</value>
+         <key>XPATH</key>
+         <value>//li[2]/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'Watch')]</value>
+         <key>CSS</key>
+         <value>li:nth-of-type(2) > a.footer-nav-page</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>7dbecc4e-92ab-46e1-9032-97d81fee4c24</webElementGuid>
+      <webElementGuid>8692d77b-ac59-40e1-b009-b7265ee98b40</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/watch/</value>
-      <webElementGuid>23a4bf8a-20ca-4cf2-8953-7a06642faaf7</webElementGuid>
+      <webElementGuid>b521da88-d026-4041-bcbf-b53f311ae45c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>footer-nav-page</value>
-      <webElementGuid>d985b2d7-3fc1-4bba-bc12-b0a853e752a3</webElementGuid>
+      <webElementGuid>9e832b2b-3d84-45d1-8151-cc30636466ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Watch</value>
-      <webElementGuid>05d39b09-1dea-48fa-a031-652b7ca5d7c1</webElementGuid>
+      <webElementGuid>ea0ec94d-660e-4dce-b2e0-f3c80163c5fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[2]/a[@class=&quot;footer-nav-page&quot;]</value>
-      <webElementGuid>993bb73a-5087-413b-948d-16536feb4430</webElementGuid>
+      <webElementGuid>48fe5303-76b0-4757-80c6-80370a2363c5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Watch')]</value>
-      <webElementGuid>9ca49748-c1a0-49b5-b063-39a98cc344d8</webElementGuid>
+      <webElementGuid>00d3a9d9-5cc5-4fd0-bb3a-184d199050d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/watch/')]</value>
-      <webElementGuid>d0440435-4a4b-49f0-b596-76b88c608d20</webElementGuid>
+      <webElementGuid>2d83bfb9-17e5-4559-acce-c617d2da99c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/a</value>
-      <webElementGuid>4d880da5-3974-43bc-bffc-bd864a63c11a</webElementGuid>
+      <webElementGuid>aa6fb196-dbf1-441a-bc8a-83a6aed78ceb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/watch/' and (text() = 'Watch' or . = 'Watch')]</value>
-      <webElementGuid>bb75e119-c924-4dcb-a47e-0de5e816eeba</webElementGuid>
+      <webElementGuid>b4daa53f-64e8-402d-96bb-a7e13d976e96</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

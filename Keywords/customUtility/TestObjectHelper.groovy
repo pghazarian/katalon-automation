@@ -339,7 +339,7 @@ class TestObjectHelper {
 		}
 		return false;
 	}
-	
+
 	@Keyword
 	def isElementVisible(TestObject to) {
 

@@ -6,12 +6,12 @@
    <elementGuidId>1c65818a-3736-4616-ae92-596d2d9d5bf2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li:nth-of-type(5) > a.footer-nav-page</value>
+         <key>XPATH</key>
+         <value>//li[5]/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'Give')]</value>
+         <key>CSS</key>
+         <value>li:nth-of-type(5) > a.footer-nav-page</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>419f474f-b942-4602-8ffe-cf7c307599bc</webElementGuid>
+      <webElementGuid>3bbb4fc8-5b58-435a-ad09-049d827e189a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/give/</value>
-      <webElementGuid>c1d59068-c963-4a9a-997d-0c317c571b6a</webElementGuid>
+      <webElementGuid>a26eb588-bb70-4ec6-95fe-54f166de59fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>footer-nav-page</value>
-      <webElementGuid>f555fc59-146e-478b-a11b-aa1411336b51</webElementGuid>
+      <webElementGuid>a158223e-11b7-45f6-86f5-c79e9f0b0b8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Give</value>
-      <webElementGuid>fb0397a9-060b-4b06-b96d-670482003f86</webElementGuid>
+      <webElementGuid>7ec8043d-df11-46ee-8932-5c1e3dcb42f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[5]/a[@class=&quot;footer-nav-page&quot;]</value>
-      <webElementGuid>f852ee1e-2596-4659-a094-4ce420b9fd11</webElementGuid>
+      <webElementGuid>2e05848c-1409-47f1-9330-acb0cc7b0db2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Give')]</value>
-      <webElementGuid>352c1cbf-60cf-491f-8a2f-a1138e646f59</webElementGuid>
+      <webElementGuid>ebe6133f-48c3-4ab2-9870-49fa48bf1979</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/give/')]</value>
-      <webElementGuid>b5b66cbd-2355-45a1-8e2c-60aa0793ba0e</webElementGuid>
+      <webElementGuid>0cd25014-74b8-4664-a228-2bf090340bd9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[5]/a</value>
-      <webElementGuid>5a94b1b9-e900-4c18-8a83-14f6df0eae4a</webElementGuid>
+      <webElementGuid>0ec771aa-30ff-4390-8107-83363c44c5cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/give/' and (text() = 'Give' or . = 'Give')]</value>
-      <webElementGuid>5a344f60-5913-4f23-afa0-589c21770275</webElementGuid>
+      <webElementGuid>44f5de40-7eaf-4e03-995d-2a506038397b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

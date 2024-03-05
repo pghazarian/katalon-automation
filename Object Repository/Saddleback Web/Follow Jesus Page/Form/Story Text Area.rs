@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Location Footer Link</name>
+   <name>Story Text Area</name>
    <tag></tag>
-   <elementGuidId>ec5277de-325c-4530-a523-8bc4a3642c1d</elementGuidId>
+   <elementGuidId>8f0d5a18-8fa5-425a-afed-be9bf62a3239</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@class='footer-nav']/li[1]/a</value>
+         <value>//textarea[@id='connection_form_public--question_field_35686']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>a.footer-nav-page</value>
+         <value>#connection_form_public--question_field_35686</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,71 +21,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-      <webElementGuid>61dd6a79-bcc9-40ea-a4f3-dd6e69a8262e</webElementGuid>
+      <value>textarea</value>
+      <webElementGuid>fcbba053-97dd-4664-ad7a-effc873c50d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>id</name>
       <type>Main</type>
-      <value>/locations/</value>
-      <webElementGuid>735f088e-3b8b-49b8-9bbd-7e42071cb016</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>footer-nav-page</value>
-      <webElementGuid>79b8d38a-b57f-47ab-adf2-b0a9a2edfe85</webElementGuid>
+      <value>connection_form_public--question_field_35686</value>
+      <webElementGuid>4d2c88af-6534-4856-998e-21bec0ef23fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Locations</value>
-      <webElementGuid>8c167fdf-e9da-41ae-9c89-a8612e39bf71</webElementGuid>
+      <value>T</value>
+      <webElementGuid>58c0a8b4-5df9-4e8d-abd7-aadc631bb545</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[1]/a[@class=&quot;footer-nav-page&quot;]</value>
-      <webElementGuid>4a1362a9-c34e-4c8a-9987-e1b10299f698</webElementGuid>
+      <value>id(&quot;connection_form_public--question_field_35686&quot;)</value>
+      <webElementGuid>0afb1792-473c-42a2-a8c6-5ebd12945c9f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:link</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Locations')]</value>
-      <webElementGuid>6ecb5e29-b431-4617-8a7e-0d6271819213</webElementGuid>
+      <value>//textarea[@id='connection_form_public--question_field_35686']</value>
+      <webElementGuid>8d371b07-9757-4a59-a860-03f1d0ea0929</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//a[contains(@href, '/locations/')]</value>
-      <webElementGuid>b753f36a-653f-45a7-b7b1-1bf40ce046a4</webElementGuid>
+      <value>//div[@id='infoCardPopup683']/div/div/div[2]/div/div/div[4]/div[2]/div/div/div/textarea</value>
+      <webElementGuid>b1728bb7-c34d-422e-9028-16f104f1eb35</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li/a</value>
-      <webElementGuid>862f7fe2-96d0-4520-8225-118de2333e30</webElementGuid>
+      <value>//textarea</value>
+      <webElementGuid>39336571-3425-4c5e-a5e7-997215b52201</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = '/locations/' and (text() = 'Locations' or . = 'Locations')]</value>
-      <webElementGuid>896598fe-967f-4436-a8d1-6b6854ae897b</webElementGuid>
+      <value>//textarea[@id = 'connection_form_public--question_field_35686' and (text() = 'T' or . = 'T')]</value>
+      <webElementGuid>4f99f428-2d65-4ff8-af01-0de64fb5e88d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

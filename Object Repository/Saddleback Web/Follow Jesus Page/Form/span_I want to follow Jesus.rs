@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_I want to follow Jesus</name>
+   <tag></tag>
+   <elementGuidId>a116d863-db54-4b92-83e8-245175e0646b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='quick-start']/a[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#redirecteb54989a > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cf709bc6-c358-4ad3-bc68-0517988dacc3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>I want to follow Jesus.</value>
+      <webElementGuid>e8835d73-d366-4b8b-a981-6e07f35b193d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;redirecteb54989a&quot;)/span[1]</value>
+      <webElementGuid>f520c88d-b0ea-4fb4-ab2c-fa39f61c9445</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='redirecteb54989a']/span</value>
+      <webElementGuid>02492efd-eef5-438d-a41d-cb0bbaa6ccac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]/span</value>
+      <webElementGuid>68ee98cc-1cc9-4edd-9051-c467162774ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'I want to follow Jesus.' or . = 'I want to follow Jesus.')]</value>
+      <webElementGuid>f1b63f45-21f2-466f-9105-6a04c1e155d1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

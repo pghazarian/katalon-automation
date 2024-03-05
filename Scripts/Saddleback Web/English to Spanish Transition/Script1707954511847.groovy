@@ -31,6 +31,8 @@ WebUI.waitForPageLoad(10)
 'If the Menu button is NOT displayed, use the Header navigation'
 if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
 
+WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), 'English')
+	
 // This logic is inconsistent in Safari (sometimes it works and sometimes it doesn't)
 WebUI.click(findTestObject('Saddleback Web/Home/Language/Language Selector'))
 
@@ -46,15 +48,15 @@ WebUI.click(findTestObject('Saddleback Web/Home/Language/Spanish Option'))
 
 WebUI.delay(3)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_New to Saddleback'), 'Nuevo en Saddleback?')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_New to Saddleback'), '¿Recién llegado a Saddleback?')
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to follow Jesus'), 'Quiero seguir a Jesus.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to follow Jesus'), 'Quiero seguir a Jesús.')
 
 WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to get baptized'), 'Quiero ser bautizado.')
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to find community'), 'Quiero encontrar una comunidad')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to find community'), 'Quiero encontrar comunidad.')
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to start volunteering'), 'Quiero ser voluntario.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to start volunteering'), 'Quiero empezar a ser voluntario.')
 
 // This comparison works fine in all browsers except Safari. 
 // Need to provide a case insensitive comparison to get this working.
@@ -63,7 +65,14 @@ WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Latest Message Headi
 'Verify the Watch Now button is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button'), 0)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), 'Locations')
+'Verify the header nav link text'
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), 'Ubicaciones')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Watch Header Link'), 'Ver')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/About Header Link'), 'Acerca de')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Care Header Link'), 'Acompañamiento')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Give Header Link'), 'Dar')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), 'Español')
 
 WebUI.click(findTestObject('Saddleback Web/Home/Language/Language Selector'))
 

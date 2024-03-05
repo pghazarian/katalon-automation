@@ -89,4 +89,9 @@
       <initValue>'10'</initValue>
       <name>Ministry_CampusId</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/data-capture/connection-forms/683/overview'</initValue>
+      <name>ConnectionForm_FollowJesus</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
