@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Check In Search or Add Button</name>
+   <name>Search or Add Button</name>
    <tag></tag>
    <elementGuidId>6ef3d45d-ce3b-4fa6-aac2-937edbcb31de</elementGuidId>
    <selectorCollection>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Check In Child Room</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>217fe7f0-84d4-4a03-a328-8b858b28c4ce</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6221b712-e314-4bd5-af29-d1a32bc62392</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>06e484d5-e689-44e0-8846-6cc9ab69edea</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2e7d93e8-3545-4032-8a6f-11cba43ca079</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'QA Automation'</defaultValue>
+      <description></description>
+      <id>6221b712-e314-4bd5-af29-d1a32bc62392</id>
+      <masked>false</masked>
+      <name>VolunteerSearchName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child QAAutomation'</defaultValue>
+      <description></description>
+      <id>06e484d5-e689-44e0-8846-6cc9ab69edea</id>
+      <masked>false</masked>
+      <name>ChildName</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Admin'</defaultValue>
+      <description></description>
+      <id>2e7d93e8-3545-4032-8a6f-11cba43ca079</id>
+      <masked>false</masked>
+      <name>ParentName</name>
+   </variable>
+</TestCaseEntity>
