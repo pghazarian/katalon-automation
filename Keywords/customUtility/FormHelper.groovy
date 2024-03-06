@@ -74,6 +74,19 @@ public class FormHelper {
 	}
 
 	/**
+	 * Set Radio button control (a.k.a multiple choice control)
+	 */
+	@Keyword
+	def TestObject setMultipleChoiceControlValueByXPath(String xpathToRadioPill, String value) {
+
+		def xpath = "$xpathToRadioPill/descendant::*[contains(text(),'$value')]"
+
+		def label = (new TestObjectHelper()).getTestObjectWithXpath(xpath)
+
+		WebUI.click(label)
+	}
+
+	/**
 	 * Check item(s) in the group checkbox list
 	 */
 	@Keyword

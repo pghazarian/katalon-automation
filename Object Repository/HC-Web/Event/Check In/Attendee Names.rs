@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Check In Attendee Names</name>
+   <name>Attendee Names</name>
    <tag></tag>
    <elementGuidId>330872f6-94fe-4702-b403-40e790ced2eb</elementGuidId>
    <selectorCollection>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Close Space Confirmation Yes Button</name>
+   <name>Child Room Button</name>
    <tag></tag>
-   <elementGuidId>5021abe0-ff75-475a-a351-c19e1a4d5e38</elementGuidId>
+   <elementGuidId>732c7bd0-6983-4bfd-8e03-feb68f73eeb1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='check_in_page--yes_button']</value>
+         <value>//button[@id='check_in_page--open_room_modal_open_child_button']</value>
       </entry>
       <entry>
          <key>BASIC</key>
