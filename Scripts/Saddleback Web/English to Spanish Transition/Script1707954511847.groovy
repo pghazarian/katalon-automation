@@ -28,6 +28,13 @@ WebUI.setViewPortSize(width, 768)
 
 WebUI.waitForPageLoad(10)
 
+TargetLanguageTranslated = 'Español'
+LocationTranslated = 'Ubicaciones'
+WatchTranslated = 'Ver'
+AboutTranslated = 'Acerca de'
+CareTranslated = 'Acompañamiento'
+GiveTranslated = 'Dar'
+
 'If the Menu button is NOT displayed, use the Header navigation'
 if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
 
@@ -39,13 +46,13 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	WebUI.click(findTestObject('Saddleback Web/Home/Language/Spanish Option'))
 	
 	'Verify the header nav link text'
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), 'Ubicaciones')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Watch Header Link'), 'Ver')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/About Header Link'), 'Acerca de')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Care Header Link'), 'Acompañamiento')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Give Header Link'), 'Dar')
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), LocationTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Watch Header Link'), WatchTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/About Header Link'), AboutTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Care Header Link'), CareTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Give Header Link'), GiveTranslated)
 	
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), 'Español')
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), TargetLanguageTranslated)
 
 } else {
 	
@@ -57,13 +64,13 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Spanish Option'))
 	
 	'Verify the footer nav link text'
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Location Footer Link'), 'Ubicaciones')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Watch Footer Link'), 'Ver')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/About Footer Link'), 'Acerca de')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Care Footer Link'), 'Acompañamiento')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Give Footer Link'), 'Dar')
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Location Footer Link'), LocationTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Watch Footer Link'), WatchTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/About Footer Link'), AboutTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Care Footer Link'), CareTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Give Footer Link'), GiveTranslated)
 	
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), 'Español')
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), TargetLanguageTranslated)
 }
 
 WebUI.delay(3)

@@ -28,6 +28,12 @@ WebUI.setViewPortSize(width, 768)
 
 WebUI.waitForPageLoad(10)
 
+LocationTranslated = ''
+WatchTranslated = ''
+AboutTranslated = ''
+CareTranslated = ''
+GiveTranslated = ''
+
 'If the Menu button is NOT displayed, use the Header navigation'
 if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
 
