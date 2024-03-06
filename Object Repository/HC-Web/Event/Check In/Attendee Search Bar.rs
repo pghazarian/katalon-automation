@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Check In Search Bar</name>
+   <name>Attendee Search Bar</name>
    <tag></tag>
    <elementGuidId>97f1a82a-f400-462b-a370-16647f651b41</elementGuidId>
    <selectorCollection>

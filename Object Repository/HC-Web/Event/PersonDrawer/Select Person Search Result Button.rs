@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Close Space Confirmation Yes Button</name>
+   <name>Select Person Search Result Button</name>
    <tag></tag>
-   <elementGuidId>5021abe0-ff75-475a-a351-c19e1a4d5e38</elementGuidId>
+   <elementGuidId>11a40196-c94b-4e53-8a34-87f2a1236f65</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@id='check_in_page--yes_button']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='person_panel--select_record_btn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

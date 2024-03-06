@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Check In Attendee Checkboxes</name>
+   <name>Attendee Checkboxes</name>
    <tag></tag>
    <elementGuidId>f7bfecd9-b070-4979-bf24-43850ba312b7</elementGuidId>
    <selectorCollection>

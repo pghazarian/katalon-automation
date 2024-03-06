@@ -94,4 +94,9 @@
       <initValue>'/data-capture/connection-forms/683/overview'</initValue>
       <name>ConnectionForm_FollowJesus</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27772'</initValue>
+      <name>EventId_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

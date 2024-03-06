@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Close Space Button</name>
+   <name>Volunteer Page Open Space Button</name>
    <tag></tag>
-   <elementGuidId>93f0cbc0-25e6-41be-9ba9-fb42f94c374b</elementGuidId>
+   <elementGuidId>ca3c985a-16e4-4b35-ba39-ffd7418c4bcc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@data-testid='room-attendee-details-close-space-btn']</value>
+         <value>//button[@id='check_in_page--room_volunteers_modal-open_room_button']</value>
       </entry>
       <entry>
          <key>BASIC</key>
