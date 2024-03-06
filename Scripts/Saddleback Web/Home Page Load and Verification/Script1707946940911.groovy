@@ -56,6 +56,9 @@ WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Ac
 'Verify the Watch Now button is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button'), 0)
 
+'Verify the Watch Now button text'
+WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button Text'), 'Watch Now')
+
 'Verify the text for Latest Message heading is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Latest Message Heading'), 0)
 

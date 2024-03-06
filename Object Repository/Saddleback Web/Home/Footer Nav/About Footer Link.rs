@@ -6,12 +6,12 @@
    <elementGuidId>8beb119d-1691-4639-a508-7f79024cc5ac</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li:nth-of-type(3) > a.footer-nav-page</value>
+         <key>XPATH</key>
+         <value>//ul[@class='footer-nav']/li[3]/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//ul[@class='footer-nav']/li/a[contains(text(),'About')]</value>
+         <key>CSS</key>
+         <value>li:nth-of-type(3) > a.footer-nav-page</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>641de43c-9e0c-475e-a9b9-6851536ac841</webElementGuid>
+      <webElementGuid>04ae5d2e-946c-4c38-992d-a61dc7b5bda4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/about/</value>
-      <webElementGuid>48b044ac-886a-48c5-bb20-3806a6b0d7cb</webElementGuid>
+      <webElementGuid>2fe96f18-8314-4b39-9a50-39325a44baa6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>footer-nav-page</value>
-      <webElementGuid>8c6c5832-8c46-494b-936b-3427e565bc1f</webElementGuid>
+      <webElementGuid>95fd5fc6-4a63-463a-91ae-aef529f846b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>About</value>
-      <webElementGuid>472a5b0a-b9b0-48ff-aad2-bfb61ff9cd0c</webElementGuid>
+      <webElementGuid>d68bfd05-6bb4-47d3-93da-b09e937dd45e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[3]/a[@class=&quot;footer-nav-page&quot;]</value>
-      <webElementGuid>703a3cd3-1668-4d4f-a0ac-7cb89a8f82de</webElementGuid>
+      <webElementGuid>999708d5-b71d-4cca-be49-866d4c4c2c91</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'About')]</value>
-      <webElementGuid>a7418ad3-1b32-4066-90e6-e3eef04111f7</webElementGuid>
+      <webElementGuid>d1e70708-9307-4035-9d6f-029db57acf72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/about/')]</value>
-      <webElementGuid>3b3e6227-b4c3-47b3-a51c-7b85173966b4</webElementGuid>
+      <webElementGuid>045ca533-f366-40a1-abc4-ae7154985beb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[3]/a</value>
-      <webElementGuid>687ce1f3-517e-4bc6-b770-1a2a9050f334</webElementGuid>
+      <webElementGuid>f792a601-685f-4b75-94c9-99987f9a3160</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/about/' and (text() = 'About' or . = 'About')]</value>
-      <webElementGuid>16079408-e536-447c-92e0-9f12d564e1c2</webElementGuid>
+      <webElementGuid>052e9c69-f1bf-40f8-8fd0-2e554a905df7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Submit</name>
+   <tag></tag>
+   <elementGuidId>b0f575a2-f1cd-4766-b2f2-652571af6197</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='connection_form_public--submit_btn']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#connection_form_public--submit_btn > span.button-inner-container.connection-form753</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>4bce18fe-e977-48ce-9671-cc52b2c0c2b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container connection-form753</value>
+      <webElementGuid>b4b59648-9d3b-4902-81fc-b71db7614d67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Submit</value>
+      <webElementGuid>da29778e-b72c-43cb-be8e-dc23cfe2cabc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;infoCardPopup683&quot;)/div[@class=&quot;popup-inner&quot;]/div[@class=&quot;connection-form-container&quot;]/div[@class=&quot;connection-form&quot;]/div[@class=&quot;widget-content&quot;]/div[@class=&quot;connection-form2&quot;]/div[@class=&quot;connection-form1&quot;]/button[@id=&quot;connection_form_public--submit_btn&quot;]/span[@class=&quot;button-inner-container connection-form753&quot;]</value>
+      <webElementGuid>876f5d99-5410-4bf4-959f-0ad7a4389e70</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='connection_form_public--submit_btn']/span</value>
+      <webElementGuid>04950ef1-102b-4ece-91fd-a2915b34b575</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/span</value>
+      <webElementGuid>6f432618-f8be-4866-b348-1203e04025b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Submit' or . = 'Submit')]</value>
+      <webElementGuid>a0f1a461-4bbb-4a0d-ac84-70006142dcb0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

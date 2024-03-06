@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Step - I Want to Follow Jesus</name>
-   <tag></tag>
+   <tag>Production,Smoke</tag>
    <comment></comment>
    <testCaseGuid>6a15e73d-64b9-4581-830d-2d54940fbd3b</testCaseGuid>
 </TestCaseEntity>

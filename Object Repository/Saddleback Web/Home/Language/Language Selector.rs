@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='select2-headerLangSelect-container']</value>
+         <value>//div[contains(@class, 'desktop-center')]/div[@class='header-lang-select']/label/following::span[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

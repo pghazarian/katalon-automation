@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Work</name>
+   <tag></tag>
+   <elementGuidId>33328675-b18f-4489-9bf1-75c389b0c1e2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[(text() = 'Work' or . = 'Work')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>10e04fe4-0f2f-46fa-aad7-4b75e1592114</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Work</value>
+      <webElementGuid>bbd8cb3c-cb7c-47bb-9525-f0ac2eb6aeff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;infoCardPopup683&quot;)/div[@class=&quot;popup-inner&quot;]/div[@class=&quot;connection-form-container&quot;]/div[@class=&quot;connection-form&quot;]/div[@class=&quot;widget-content&quot;]/div[@class=&quot;connection-form2&quot;]/div[@class=&quot;connection-form724&quot;]/div[@class=&quot;cmui grid connection-form527 connection-form725 connection-form555&quot;]/div[@class=&quot;cmui grid--column connection-form565 connection-form731 connection-form588 connection-form596 connection-form566&quot;]/div[@class=&quot;cmui grid--column connection-form565 connection-form580&quot;]/div[@class=&quot;ui radio connection-form739&quot;]/label[@class=&quot;label connection-form737&quot;]/span[1]</value>
+      <webElementGuid>f1a34583-f323-4b63-a255-7f8076e6bec5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='infoCardPopup683']/div/div/div[2]/div/div/div[3]/div/div[4]/div[3]/div/label/span</value>
+      <webElementGuid>383adf78-d4fc-4f92-aa4e-38b4a13a6eb7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/label/span</value>
+      <webElementGuid>990b8a75-5a3f-4dfe-926f-82549199da17</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Work' or . = 'Work')]</value>
+      <webElementGuid>c2751100-6b99-4baf-9596-4fb9580d562e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

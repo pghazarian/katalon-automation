@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CloseButton</name>
+   <name>PhoneTextField</name>
    <tag></tag>
-   <elementGuidId>f0943a12-aa21-48ac-8f67-c228a9015f88</elementGuidId>
+   <elementGuidId>592438df-8499-4561-abe2-2a1954f82986</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;close-button&quot;]/button</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>/html/body/div[4]/div/div[1]/div[1]/div[1]/div/header/div/div[2]/button</value>
+         <value>//input[@id='form_entry_editor--contact_form-input_phone']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
