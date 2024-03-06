@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Language Selector</name>
+   <name>Chinese Traditional Option</name>
    <tag></tag>
-   <elementGuidId>a1a66b96-405e-451c-b133-f21a433735e7</elementGuidId>
+   <elementGuidId>952ba329-c886-4cd1-bd7b-97d2289d7544</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'footer-language')]/div[@class='header-lang-select']/label/following::span[1]</value>
+         <value>//div[contains(@class, 'footer-language')]/div[@class='header-lang-select']//descendant::ul/li[text()='繁體中文']</value>
       </entry>
       <entry>
          <key>BASIC</key>

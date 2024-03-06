@@ -36,7 +36,7 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	// This logic is inconsistent in Safari (sometimes it works and sometimes it doesn't)
 	WebUI.click(findTestObject('Saddleback Web/Home/Language/Language Selector'))
 	
-	WebUI.click(findTestObject('Saddleback Web/Home/Language/Spanish Option'))
+	WebUI.click(findTestObject('Saddleback Web/Home/Language/German Option'))
 	
 	'Verify the header nav link text'
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), 'Ubicaciones')
@@ -45,7 +45,7 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Care Header Link'), 'Acompañamiento')
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Give Header Link'), 'Dar')
 	
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), 'Español')
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), 'Deutsch')
 
 } else {
 	
@@ -54,7 +54,7 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	
 	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selector'))
 	
-	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Spanish Option'))
+	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/German Option'))
 	
 	'Verify the footer nav link text'
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Location Footer Link'), 'Ubicaciones')
@@ -63,7 +63,7 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Care Footer Link'), 'Acompañamiento')
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Give Footer Link'), 'Dar')
 	
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), 'Español')
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), 'Deutsch')
 }
 
 WebUI.delay(3)

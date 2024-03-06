@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Language Selector</name>
+   <name>German Option</name>
    <tag></tag>
-   <elementGuidId>a1a66b96-405e-451c-b133-f21a433735e7</elementGuidId>
+   <elementGuidId>411d0e41-f5c8-4083-862d-48a631e3fa47</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'footer-language')]/div[@class='header-lang-select']/label/following::span[1]</value>
+         <value>//div[contains(@class, 'footer-language')]/div[@class='header-lang-select']//descendant::ul/li[text()='Deutsch']</value>
       </entry>
       <entry>
          <key>BASIC</key>
