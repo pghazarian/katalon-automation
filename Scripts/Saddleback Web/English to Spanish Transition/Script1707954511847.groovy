@@ -34,6 +34,13 @@ WatchTranslated = 'Ver'
 AboutTranslated = 'Acerca de'
 CareTranslated = 'Acompañamiento'
 GiveTranslated = 'Dar'
+NewToSaddlebackTranslated = '¿Recién llegado a Saddleback?'
+FollowJesusTranslated = 'Quiero seguir a Jesús.'
+GetBaptizedTranslated = 'Quiero ser bautizado.'
+FindCommunityTranslated = 'Quiero encontrar comunidad.'
+StartVolunteeringTranslated = 'Quiero empezar a ser voluntario.'
+MessageHeadingTranslated = 'ÚLTIMO MENSAJE'
+WatchNowTranslated = 'Ver ahora'
 
 'If the Menu button is NOT displayed, use the Header navigation'
 if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
@@ -75,25 +82,25 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 
 WebUI.delay(3)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_New to Saddleback'), '¿Recién llegado a Saddleback?')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_New to Saddleback'), NewToSaddlebackTranslated)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to follow Jesus'), 'Quiero seguir a Jesús.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to follow Jesus'), FollowJesusTranslated)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to get baptized'), 'Quiero ser bautizado.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to get baptized'), GetBaptizedTranslated)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to find community'), 'Quiero encontrar comunidad.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to find community'), FindCommunityTranslated)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to start volunteering'), 'Quiero empezar a ser voluntario.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to start volunteering'), StartVolunteeringTranslated)
 
 // This comparison works fine in all browsers except Safari. 
 // Need to provide a case insensitive comparison to get this working.
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Latest Message Heading'), 'ÚLTIMO MENSAJE')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Latest Message Heading'), MessageHeadingTranslated)
 
 'Verify the Watch Now button is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button'), 0)
 
 'Verify the Watch Now button text'
-WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button Text'), 'Ver ahora')
+WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button Text'), WatchNowTranslated)
 
 'Switch back to English '
 //If the Menu button is NOT displayed, use the Header navigation'
