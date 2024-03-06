@@ -28,11 +28,19 @@ WebUI.setViewPortSize(width, 768)
 
 WebUI.waitForPageLoad(10)
 
-LocationTranslated = ''
-WatchTranslated = ''
-AboutTranslated = ''
-CareTranslated = ''
-GiveTranslated = ''
+TargetLanguageTranslated = 'Deutsch'
+LocationTranslated = 'Standorte'
+WatchTranslated = 'Ansehen'
+AboutTranslated = 'Über Uns'
+CareTranslated = 'Pflege'
+GiveTranslated = 'Geben'
+NewToSaddlebackTranslated = 'Neu bei Saddleback?'
+FollowJesusTranslated = 'I möchte Jesus nachfolgen.'
+GetBaptizedTranslated = 'Ich möchte getauft werden.'
+FindCommunityTranslated = 'Ich möchte Gemeinschaft finden.'
+StartVolunteeringTranslated = 'Ich möchte mitmachen.'
+MessageHeadingTranslated = 'LETZTE PREDIGTEN'
+WatchNowTranslated = 'Ansehen'
 
 'If the Menu button is NOT displayed, use the Header navigation'
 if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
@@ -45,13 +53,13 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	WebUI.click(findTestObject('Saddleback Web/Home/Language/German Option'))
 	
 	'Verify the header nav link text'
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), 'Ubicaciones')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Watch Header Link'), 'Ver')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/About Header Link'), 'Acerca de')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Care Header Link'), 'Acompañamiento')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Give Header Link'), 'Dar')
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), LocationTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Watch Header Link'), WatchTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/About Header Link'), AboutTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Care Header Link'), CareTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Give Header Link'), GiveTranslated)
 	
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), 'Deutsch')
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), TargetLanguageTranslated)
 
 } else {
 	
@@ -63,36 +71,36 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/German Option'))
 	
 	'Verify the footer nav link text'
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Location Footer Link'), 'Ubicaciones')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Watch Footer Link'), 'Ver')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/About Footer Link'), 'Acerca de')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Care Footer Link'), 'Acompañamiento')
-	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Give Footer Link'), 'Dar')
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Location Footer Link'), LocationTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Watch Footer Link'), WatchTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/About Footer Link'), AboutTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Care Footer Link'), CareTranslated)
+	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Give Footer Link'), GiveTranslated)
 	
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), 'Deutsch')
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), TargetLanguageTranslated)
 }
 
 WebUI.delay(3)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_New to Saddleback'), '¿Recién llegado a Saddleback?')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_New to Saddleback'), NewToSaddlebackTranslated)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to follow Jesus'), 'Quiero seguir a Jesús.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to follow Jesus'), FollowJesusTranslated)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to get baptized'), 'Quiero ser bautizado.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to get baptized'), GetBaptizedTranslated)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to find community'), 'Quiero encontrar comunidad.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to find community'), FindCommunityTranslated)
 
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to start volunteering'), 'Quiero empezar a ser voluntario.')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Actions/span_I want to start volunteering'), StartVolunteeringTranslated)
 
 // This comparison works fine in all browsers except Safari. 
 // Need to provide a case insensitive comparison to get this working.
-WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Latest Message Heading'), 'ÚLTIMO MENSAJE')
+WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Latest Message Heading'), MessageHeadingTranslated)
 
 'Verify the Watch Now button is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button'), 0)
 
 'Verify the Watch Now button text'
-WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button Text'), 'Ver ahora')
+WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Watch Now Button Text'), WatchNowTranslated)
 
 'Switch back to English '
 //If the Menu button is NOT displayed, use the Header navigation'
