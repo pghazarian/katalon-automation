@@ -90,7 +90,7 @@ CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTe
 	LastName)
 
 'Verify the email'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/EmailTextField'),
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/Email Text Field'),
 	Email)
 
 'Verify dropdown selection'
