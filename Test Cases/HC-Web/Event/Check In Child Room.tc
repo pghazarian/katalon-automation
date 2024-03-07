@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Check In Child Room</name>
-   <tag></tag>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>217fe7f0-84d4-4a03-a328-8b858b28c4ce</testCaseGuid>
    <variableLinks>
@@ -22,6 +22,12 @@
       <type>DEFAULT</type>
       <value></value>
       <variableId>2e7d93e8-3545-4032-8a6f-11cba43ca079</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>00724f45-620d-4024-9cc3-49a93c04cc04</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'QA Automation'</defaultValue>
@@ -43,5 +49,12 @@
       <id>2e7d93e8-3545-4032-8a6f-11cba43ca079</id>
       <masked>false</masked>
       <name>ParentName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
+      <description></description>
+      <id>00724f45-620d-4024-9cc3-49a93c04cc04</id>
+      <masked>false</masked>
+      <name>EventId</name>
    </variable>
 </TestCaseEntity>

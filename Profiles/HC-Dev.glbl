@@ -74,4 +74,9 @@
       <initValue>'1960'</initValue>
       <name>EventId_Recurring_DoesNotEnd</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1961'</initValue>
+      <name>EventId_CheckIn</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

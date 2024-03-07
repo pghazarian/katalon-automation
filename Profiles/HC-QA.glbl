@@ -99,4 +99,9 @@
       <initValue>'17975'</initValue>
       <name>EventId_Recurring_DoesNotEnd</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'17977'</initValue>
+      <name>EventId_CheckIn</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
