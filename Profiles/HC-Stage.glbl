@@ -66,6 +66,21 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'QA Automation Follow Up Test'</initValue>
+      <name>Follow_Up_Connection_Form_Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QAOne'</initValue>
+      <name>Follow_Up_Task_Person_First_Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Saddleback'</initValue>
+      <name>Follow_Up_Task_Person_Last_Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'7798526'</initValue>
       <name>PersonRecordId_Notes</name>
    </GlobalVariableEntity>
