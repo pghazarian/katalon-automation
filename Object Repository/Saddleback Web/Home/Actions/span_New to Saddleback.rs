@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_New to Saddleback</name>
+   <tag></tag>
+   <elementGuidId>3bfa613b-8379-42d6-b48f-f62f8a6e2fbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.quick-start-card > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='quick-start']/a[1]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c239bf76-22e7-4269-8684-d9db8d204a8b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>New to Saddleback?</value>
+      <webElementGuid>cc74fd48-cd53-4a00-ab88-b2bee4b33454</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;umb-block-grid&quot;]/div[@class=&quot;umb-block-grid__layout-container&quot;]/div[@class=&quot;umb-block-grid__layout-item&quot;]/div[@class=&quot;responsive-section&quot;]/div[@class=&quot;umb-block-grid__area-container&quot;]/div[@class=&quot;umb-block-grid__area&quot;]/div[@class=&quot;umb-block-grid__layout-container&quot;]/div[@class=&quot;umb-block-grid__layout-item&quot;]/div[@class=&quot;quick-start&quot;]/a[@class=&quot;quick-start-card&quot;]/span[1]</value>
+      <webElementGuid>f532aed9-68bb-46ec-9d07-d2bf616737d7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/div/div/div/div/div/div/div[2]/div/a/span</value>
+      <webElementGuid>4ef1a95e-8b61-4ab6-9ce5-afaf037f4b53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/span</value>
+      <webElementGuid>5169fa6a-5bd0-444d-a920-f711ca70b55f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'New to Saddleback?' or . = 'New to Saddleback?')]</value>
+      <webElementGuid>0426114b-dc6f-4c30-8ce4-084a6b3f4373</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

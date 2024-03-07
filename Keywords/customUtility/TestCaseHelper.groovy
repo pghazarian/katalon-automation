@@ -21,7 +21,7 @@ class TestCaseHelper {
 				KeywordUtil.logInfo("Browser is open")
 				return true
 			}
-			
+
 			KeywordUtil.logInfo("Browser is not open from try block")
 			return false
 		}

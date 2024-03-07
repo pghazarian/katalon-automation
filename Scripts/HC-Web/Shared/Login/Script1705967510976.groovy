@@ -23,7 +23,7 @@ CustomKeywords.'customUtility.TestCaseHelper.isCurrentTestCaseEnvironmentValid'(
 'Append the HostUrl and TargetPath for the initial target URL'
 TargetUrl = "$HostUrl$TargetPath"
 
-if (CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'()) {
+if (CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'() && !ForceLogin) {
 	KeywordUtil.logInfo("Browser is open")
 }
 

@@ -79,4 +79,24 @@
       <initValue>'Margaret Barrett'</initValue>
       <name>MinistrySearch_InterestedName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'7798391'</initValue>
+      <name>PersonRecordId_Notes</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1955'</initValue>
+      <name>MinistryId_HasMembers</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>Ministry_CampusId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'17975'</initValue>
+      <name>EventId_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

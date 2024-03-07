@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Attendee Names</name>
+   <tag></tag>
+   <elementGuidId>330872f6-94fe-4702-b403-40e790ced2eb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='check_in_page--room_attendees']/descendant::tbody/tr/td/descendant::div[@class='font-weight-semibold']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.jss821 > div.font-weight-semibold</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ab35b7d1-4289-4c8c-a39d-b8c57f6a8fc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>font-weight-semibold</value>
+      <webElementGuid>44934111-d5c5-4ab2-a648-4bae8744dfa6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>QA Automation  Admin</value>
+      <webElementGuid>b490fb30-d082-44ca-a5de-b8f6df412c0e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss608 check_in_page page-has_action_bar&quot;]/div[@class=&quot;check_in_page--room_attendees&quot;]/main[@class=&quot;ui page jss237 jss763 jss760 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss653 ui page--container jss742 jss652&quot;]/section[@class=&quot;cmui content jss656 ui page--content jss743 jss655&quot;]/table[@class=&quot;ui jss664 table table-basic table-font-size-xsmall table-selectable jss761&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable table-row-vertical-align-middle&quot;]/td[@class=&quot;table-cell&quot;]/div[@class=&quot;jss736&quot;]/div[@class=&quot;jss759&quot;]/div[@class=&quot;jss822&quot;]/div[@class=&quot;jss821&quot;]/div[@class=&quot;font-weight-semibold&quot;]</value>
+      <webElementGuid>9393d0ec-60c7-4512-978e-5ab88e3a6409</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div[3]/main/div[2]/section/table/tbody/tr/td/div/div[2]/div/div[2]/div</value>
+      <webElementGuid>78700028-18a8-4688-a20d-a9afdd3c24f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/div[2]/div/div[2]/div</value>
+      <webElementGuid>38519f07-3878-40d5-8a9d-a53cef53dbb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'QA Automation  Admin' or . = 'QA Automation  Admin')]</value>
+      <webElementGuid>95ca439f-a92f-42fc-8638-e70527aa3a01</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
