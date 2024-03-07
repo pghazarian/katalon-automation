@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>My Follow Ups Menu Item</name>
+   <tag></tag>
+   <elementGuidId>e3b77746-daa9-4131-b07e-1265f8f28ff0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li/div[2]/div/div/ul/li/ul/li[2]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>fc9584df-1b35-4a7f-a71c-3dec8615c699</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root navigation-sub-section-item-label MuiTypography-body2</value>
+      <webElementGuid>e8c65170-7605-4ded-b257-3fc5822107e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>My Follow Ups</value>
+      <webElementGuid>6bb4b4eb-3c19-4eae-9293-180d1c779e2c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item is-active is-hover&quot;]/div[@class=&quot;MuiCollapse-root navigation-level-one-collapse-my-stuff MuiCollapse-entered&quot;]/div[@class=&quot;MuiCollapse-wrapper&quot;]/div[@class=&quot;MuiCollapse-wrapperInner&quot;]/ul[@class=&quot;navigation-sub-items my-stuff&quot;]/li[@class=&quot;navigation-sub-item&quot;]/ul[@class=&quot;navigation-sub-section-items&quot;]/li[@class=&quot;navigation-sub-section-item&quot;]/div[@class=&quot;MuiTypography-root navigation-sub-section-item-label MuiTypography-body2&quot;]</value>
+      <webElementGuid>0c79175b-1067-4710-a754-56c98974accb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li/div[2]/div/div/ul/li/ul/li[2]/div</value>
+      <webElementGuid>2948f818-0253-4d2f-bb9d-11a94907b40e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li/ul/li[2]/div</value>
+      <webElementGuid>c93175e9-e32f-4efb-ad3f-02dfcbd8ea95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'My Follow Ups' or . = 'My Follow Ups')]</value>
+      <webElementGuid>9acc7bf3-6f40-467e-9c9a-753e0f3d8ae1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
