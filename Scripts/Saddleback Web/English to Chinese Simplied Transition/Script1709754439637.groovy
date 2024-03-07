@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 'Load the Welcome home page'
 WebUI.openBrowser(GlobalVariable.Saddleback_Welcome_URL)
 
-def width = 1024
+def width = 700
 
 width += 50
 
@@ -50,7 +50,9 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	// This logic is inconsistent in Safari (sometimes it works and sometimes it doesn't)
 	WebUI.click(findTestObject('Saddleback Web/Home/Language/Language Selector'))
 	
-	WebUI.click(findTestObject('Saddleback Web/Home/Language/Chinese Traditional Option'))
+	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'desktop-center')]/div[@class='header-lang-select']//descendant::ul/li[text()='$TargetLanguageTranslated']"))
+	
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), TargetLanguageTranslated)
 	
 	'Verify the header nav link text'
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Location Header Link'), LocationTranslated)
@@ -58,8 +60,6 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/About Header Link'), AboutTranslated)
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Care Header Link'), CareTranslated)
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Nav/Give Header Link'), GiveTranslated)
-	
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), TargetLanguageTranslated)
 
 } else {
 	
@@ -68,7 +68,9 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	
 	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selector'))
 	
-	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Chinese Traditional Option'))
+	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'footer-language')]/div[@class='header-lang-select']//descendant::ul/li[text()='$TargetLanguageTranslated']"))
+	
+	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), TargetLanguageTranslated)
 	
 	'Verify the footer nav link text'
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Location Footer Link'), LocationTranslated)
@@ -76,8 +78,6 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/About Footer Link'), AboutTranslated)
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Care Footer Link'), CareTranslated)
 	WebUI.verifyElementText(findTestObject('Saddleback Web/Home/Footer Nav/Give Footer Link'), GiveTranslated)
-	
-	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), TargetLanguageTranslated)
 }
 
 WebUI.delay(3)
