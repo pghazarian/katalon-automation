@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Person Search Bar</name>
+   <tag></tag>
+   <elementGuidId>208c5794-ae88-4b5d-a13a-1f50fb215712</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#person_search_form--search_input</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='person_search_form--search_input']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>bcd8a4ca-4bb0-40bc-8935-fcf69a68170b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>person_search_form--search_input</value>
+      <webElementGuid>c6336868-e3cb-4a84-949a-32218a3d3321</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Search by Name or Phone Number</value>
+      <webElementGuid>17228447-a813-4e05-b2f2-962ff65e92c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>3e5c8838-2acc-415e-a804-e865447c878b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;person_search_form--search_input&quot;)</value>
+      <webElementGuid>a7ab830f-2b46-4220-a2f1-26c7ad57d9c1</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

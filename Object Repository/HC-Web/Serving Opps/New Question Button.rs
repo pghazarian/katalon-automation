@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>New Question Button</name>
+   <tag></tag>
+   <elementGuidId>a8e49efb-bea3-4c55-aaea-5ac4c0c20379</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#custom_question--add_button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='custom_question--add_button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>5e058755-1f91-4233-a52d-a3cf7cfecb2d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss1154 jss255 jss262</value>
+      <webElementGuid>3aab2972-ede9-4ceb-86aa-1c6221d645f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>custom_question--add_button</value>
+      <webElementGuid>4f99f05f-7d36-4c7d-bbc4-09893504d3e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>New Question</value>
+      <webElementGuid>3da55316-0e01-463b-a50b-501ab669338e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;custom_question--add_button&quot;)</value>
+      <webElementGuid>72778763-e046-4afd-b635-c6b5f555a041</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

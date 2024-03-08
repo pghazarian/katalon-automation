@@ -6,12 +6,12 @@
    <elementGuidId>f7bfecd9-b070-4979-bf24-43850ba312b7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='check_in_page--room_attendees']/descendant::tbody/tr/td/descendant::div[contains(@class,'checkbox')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.ui.checkbox.jss738 > label.checkbox-label > div.cmui.ui.icon.icon-check.icon-align-left.icon-color-primary.icon-compact.icon-inverse > svg > g > use.icon-use-path</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tbody/tr/td/descendant::label[contains(@class,'checkbox')]/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>use</value>
-      <webElementGuid>c68d3778-7e8f-4a53-bd1a-ee02a7babd52</webElementGuid>
+      <webElementGuid>d4167419-18ee-41c9-ad9e-549df31fb601</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-use-path</value>
-      <webElementGuid>e698edc6-bac3-4205-86ab-45258e864516</webElementGuid>
+      <webElementGuid>8dc89687-ece7-4c74-87a0-e26f48b2b992</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>xlink:href</name>
       <type>Main</type>
       <value>#icon-svg-path-check-7619612357</value>
-      <webElementGuid>e785512d-86e2-4621-849f-a8994fd18826</webElementGuid>
+      <webElementGuid>d882d58c-cdd5-4272-8b91-c2e842fb16f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,6 +46,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss608 check_in_page page-has_action_bar&quot;]/div[@class=&quot;check_in_page--room_attendees&quot;]/main[@class=&quot;ui page jss237 jss763 jss760 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss653 ui page--container jss742 jss652&quot;]/section[@class=&quot;cmui content jss656 ui page--content jss743 jss655&quot;]/table[@class=&quot;ui jss664 table table-basic table-font-size-xsmall table-selectable jss761&quot;]/thead[@class=&quot;table-header&quot;]/tr[@class=&quot;table-row&quot;]/th[@class=&quot;table-header-cell table-cell&quot;]/span[1]/div[@class=&quot;jss736&quot;]/div[@class=&quot;ui checkbox jss738&quot;]/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;cmui ui icon icon-check icon-align-left icon-color-primary icon-compact icon-inverse&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
-      <webElementGuid>4f9cb083-c44a-42c0-981f-75a4d6eff887</webElementGuid>
+      <webElementGuid>c746dab5-7ed8-4f42-8241-ee69dab9b458</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
