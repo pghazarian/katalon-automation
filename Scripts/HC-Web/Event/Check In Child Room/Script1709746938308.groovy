@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/events-central/event/27471/overview'], FailureHandling.STOP_ON_FAILURE)
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/events-central/event/$EventId/overview"], FailureHandling.STOP_ON_FAILURE)
 
 'Navigate to occurrence schedule'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Occurrence Schedule Tab'))
@@ -28,7 +28,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/O
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Check In Button'))
 
 'Select first room designated for children in list'
-WebUI.click(findTestObject('HC-Web/Event/Check In/First Child Room'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Second Room'))
 
 'If event has not started, open room early'
 if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {

@@ -183,6 +183,26 @@ class TestObjectHelper {
 	}
 
 	/**
+	 * Set value for Drop Down component
+	 */
+	@Keyword
+	def TestObject setDropDownValueWithClick(String id, String value) {
+
+		def xpath = "//div[@id='${id}']/descendant::div[@class='Select-control']"
+
+		def dropdown = getTestObjectWithXpath(xpath)
+
+		WebUI.click(dropdown)
+
+		xpath = "//div[@id='$id']/descendant::div[@class='Select-menu-outer' and not(contains(@style,'visibility: hidden'))]/descendant::div[text()='$value']"
+
+		def dropdownInput = getTestObjectWithXpath(xpath)
+
+		// Type Dropdown value
+		WebUI.click(dropdownInput)
+	}
+
+	/**
 	 * Set Radio button control (a.k.a multiple choice control)
 	 */
 	@Keyword

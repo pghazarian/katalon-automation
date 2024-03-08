@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Check In General Room</name>
+   <name>Worship Service Setup</name>
    <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
-   <testCaseGuid>bca4dcfe-6592-48f5-a3b1-51cea1d98a03</testCaseGuid>
+   <testCaseGuid>1c5bf52c-fc54-410d-9976-1a0363975f57</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c680a00c-3e40-43aa-a7e3-7c25f678dbcc</variableId>
+      <variableId>54b78942-d76f-48f5-bba3-a1947b006439</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
+      <defaultValue>'Anaheim'</defaultValue>
       <description></description>
-      <id>c680a00c-3e40-43aa-a7e3-7c25f678dbcc</id>
+      <id>54b78942-d76f-48f5-bba3-a1947b006439</id>
       <masked>false</masked>
-      <name>EventId</name>
+      <name>campus</name>
    </variable>
 </TestCaseEntity>
