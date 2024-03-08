@@ -17,8 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Open the App'
 Mobile.startApplication('C:\\Users\\paren\\Desktop\\Katalon\\HC-MA 1.18.0 APK.apk', true)
 
+'Tap Login button '
 Mobile.tap(findTestObject('Ministry App/Login button'), 0)
 
 Mobile.setText(findTestObject('Object Repository/Ministry App/Email Address text field'), 'pareng@saddleback.com', 5)
