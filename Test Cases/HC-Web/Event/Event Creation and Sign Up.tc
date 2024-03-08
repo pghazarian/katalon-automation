@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Event Creation and Sign Up</name>
-   <tag>QA,Dev,Stage2,Stage</tag>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>b8927480-9a40-4c3b-b554-60019f45281a</testCaseGuid>
    <variableLinks>

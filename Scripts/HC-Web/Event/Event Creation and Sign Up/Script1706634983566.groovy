@@ -21,118 +21,103 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/events-central/overview'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_New Event'))
+'Click button to create new event'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/New Event Dropdown Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Create New Event'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Create New Event Button'))
 
+'Select campus'
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', campus)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/label_Campus Event'))
+'Switch to campus event'
+CustomKeywords.'customUtility.FormHelper.setMultipleChoiceControlValueByXPath'('//div[@class=\'event_details_event_type\']/descendant::div[@class=\'radio-item\']', 
+    'Campus Event')
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputevent_details_basic_info--event_name'), 
-    'Katalon Test Event')
+'Name event'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/Event Name Text Field'), 'QA Automation Test Event')
 
+'Select category'
 CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
     category)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/Event Description Textbox'), 'Test Event for Katalon Automation')
+'Give event a description'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/Event Description Textbox'), 'Event created by QA Automation test')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Add Venue(s) from this Campus'))
+'Open venue dropdown'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Venue Dropdown'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/FirstVenueDropdownOption_div'))
+'Select first listed venue'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Venue Dropdown Option'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Create'))
+'Save event'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Create Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Save'))
+'Navigate to occurrence schedule'
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Occurrence Schedule Tab'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Occurrence Schedule'))
+'Click button to add attendee'
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Add to Roster'))
+'Add attendee for this occurrence only'
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/For This Occurrence Option'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_For This Occurrence'))
+'Search for an attendee'
+WebUI.setText(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), attendee)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputperson_search_form--search_input'), attendee)
-
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Event Creation/inputperson_search_form--search_input'), Keys.chord(
-        Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), Keys.chord(Keys.ENTER))
 
 WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Event Creation/First Person Record Result'), 0)
 
+'Open first search result'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Person Record Result'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/button_Select'))
+'Select attendee'
+WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
 
-WebUI.click(findTestObject('HC-Web/Event/Event Creation/Select Attendee Confirmation'))
+WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
-WebUI.verifyElementText(findTestObject('HC-Web/Event/Event Creation/AttendeeNames_div'), attendee)
+'Verify attendee appears in list'
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Attendee Names'), attendee)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Attendee Checkbox'))
+'Select previously added attendee'
+WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes'))
 
-WebUI.click(findTestObject('HC-Web/Event/Event Creation/OccurrenceScheduleActionsDropdown_div'))
+'Open actions for selected attendee'
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Mark Attended'))
+'Mark attendee as attended'
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Mark Attended Option'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Attended'), 'Attended')
+'Verify attendee is listed as attended'
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Attendance Field'), 'Attended')
 
-WebUI.click(findTestObject('HC-Web/Event/Event Creation/First Attendee Checkbox'))
+'Select attendee again'
+WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes'))
 
-WebUI.click(findTestObject('HC-Web/Event/Event Creation/OccurrenceScheduleActionsDropdown_div'))
+'Open actions for selected attendee'
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Remove From This Occurrence'))
+'Remove attendee from this occurrence'
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Remove from this Occurrence Option'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Yes'))
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Remove from this Occurrence Confirmation Yes Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Overview'))
+'Navigate to event overview'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Overview/Overview Tab'))
 
-WebUI.click(findTestObject('HC-Web/Event/Event Creation/OverviewActionsDropdown_div'))
+'Open event actions'
+WebUI.click(findTestObject('HC-Web/Event/Overview/Actions Dropdown'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/span_Cancel'))
+'Cancel event'
+WebUI.click(findTestObject('HC-Web/Event/Overview/Cancel Event Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Yes'))
+WebUI.click(findTestObject('HC-Web/Event/Overview/Cancel Event Confirmation Yes Button'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Event/Event Creation/div_Successfully Canceled'), 'Successfully Canceled')
+'Verify banner appears for event cancellation'
+WebUI.verifyElementVisible(findTestObject('Object Repository/HC-Web/Event/Overview/Successfully Cancelled Banner'), FailureHandling.STOP_ON_FAILURE)
 
+'Close email to attendees drawer'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Close Email Drawer Chevron Button'))
 
 WebUI.closeBrowser()
-/*
- *  This code performs a series of actions to create and manage an event in a web application.
- *
- *  1. The code calls a test case named 'Login' with specific parameters.
- *  2. The code clicks on a specific test object to navigate to the event creation page.
- *  3. The code clicks on another test object to create a new event.
- *  4. The code sets the value of a dropdown field using a custom keyword.
- *  5. The code clicks on a test object to select a specific option.
- *  6. The code sets the value of a text field.
- *  7. The code clicks on a test object to add a venue to the event.
- *  8. The code clicks on a test object to select a specific venue.
- *  9. The code clicks on a test object to create the event.
- *  10. The code clicks on a test object to save the event.
- *  11. The code clicks on a test object to navigate to the occurrence schedule page.
- *  12. The code clicks on a test object to add attendees to the event.
- *  13. The code clicks on a test object to select the option for the current occurrence.
- *  14. The code sets the value of a text field to search for an attendee.
- *  15. The code sends a key press event to the search field.
- *  16. The code waits for a specific test object to become clickable.
- *  17. The code clicks on a test object to select the first person record result.
- *  18. The code clicks on a test object to select the attendee.
- *  19. The code clicks on a test object to confirm the selection of the attendee.
- *  20. The code verifies the text of a test object to ensure the correct attendee is selected.
- *  21. The code clicks on a test object to select the first attendee checkbox.
- *  22. The code clicks on a test object to open the occurrence schedule actions dropdown.
- *  23. The code clicks on a test object to mark the attendee as attended.
- *  24. The code verifies the text of a test object to ensure the attendee is marked as attended.
- *  25. The code clicks on a test object to select the first attendee checkbox.
- *  26. The code clicks on a test object to open the occurrence schedule actions dropdown.
- *  27. The code clicks on a test object to remove the attendee from the occurrence.
- *  28. The code clicks on a test object to confirm the removal of the attendee.
- *  29. The code clicks on a test object to navigate to the overview page.
- *  30. The code clicks on a test object to open the overview actions dropdown.
- *  31. The code clicks on a test object to cancel the event.
- *  32. The code clicks on a test object to confirm the cancellation of the event.
- *  33. The code verifies the text of a test object to ensure the event is successfully canceled.
- *  34. The code clicks on a test object to close the email drawer.
- *  35. The code closes the browser.
- *
- */
 

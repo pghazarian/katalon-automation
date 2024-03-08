@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Done Button</name>
+   <tag></tag>
+   <elementGuidId>73ce221c-b7be-4855-b2e0-9aa5a282932c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#custom_question--props_done_button--1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='custom_question--props_done_button--1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>260c70c8-7113-4469-bec7-4f42d65074a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss1184 jss253</value>
+      <webElementGuid>3666a349-f4d4-457d-942a-d393037c7918</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>custom_question--props_done_button--1</value>
+      <webElementGuid>107cdd42-73bd-4d56-a0b4-c35ad83767ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Done</value>
+      <webElementGuid>8359cf81-72ca-4160-a32a-7ef9c80d6fed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;custom_question--props_done_button--1&quot;)</value>
+      <webElementGuid>469ce1b6-2ed7-4c81-a23d-a0de277c982f</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
