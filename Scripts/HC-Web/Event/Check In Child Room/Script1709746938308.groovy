@@ -99,7 +99,7 @@ if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check
 }
 
 'Verify that the child was added to the attendee list'
-WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Attendee Names'), ChildName)
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Child Room Attendee Names'), ChildName)
 
 'Select all attendee checkboxes'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Checkboxes'))
