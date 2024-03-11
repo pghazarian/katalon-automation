@@ -14,5 +14,5 @@
    <filteringBuiltIn>com.kms.katalon.execution.platform.DynamicBuiltInSearch</filteringBuiltIn>
    <filteringExtension></filteringExtension>
    <filteringPlugin></filteringPlugin>
-   <filteringText>tag=(Stage) and tag=(Smoke) </filteringText>
+   <filteringText>tag=(Stage,Smoke)</filteringText>
 </FilteringTestSuiteEntity>
