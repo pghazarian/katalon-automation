@@ -279,6 +279,16 @@ class TestObjectHelper {
 	}
 
 	@Keyword
+	def verifyObjectValueContains(TestObject object, String valueToFind) {
+
+		// get the value attribute from the text field
+		def webElement = WebUI.findWebElement(object, 1)
+
+		// verify the valueToFind is found in the TestObject text'
+		WebUI.verifyGreaterThanOrEqual(webElement.text.indexOf(valueToFind), 0, FailureHandling.CONTINUE_ON_FAILURE)
+	}
+
+	@Keyword
 	def String getWebElementText(TestObject object) {
 
 		// get the text attribute from the label / span field

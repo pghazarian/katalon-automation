@@ -17,20 +17,40 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def envPrefix = GlobalVariable.EnvironmentPrefix
+def targetHcVersion = "1.78"
+
 'Go to the HC About page'
 WebUI.openBrowser(CustomKeywords.'customUtility.NavigationHelper.getHCUrl'('/about'))
 
-def to = findTestObject('Object Repository/HC-Web/About/Core Version')
+'Verify Core Version'
+def to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-core-version")
+CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
-def version = CustomKeywords.'customUtility.TestObjectHelper.getWebElementText'(to)
+'Verify Events Version'
+to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-events-version")
+CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
-'Verify the version of the Core API'
+'Verify Giving Version'
+to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-giving-version")
+CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
-'Verify the version of the Event Service'
+'Verify Journey Version'
+to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-journey-version")
+CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
-'Verify the version of the Notification Service'
+'Verify Notifications Version'
+to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-notifications-version")
+CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
-//def to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("production-core-version")
-//def version = CustomKeywords.'customUtility.TestObjectHelper.getWebElementText'(to)
-//
-//WebUI.verifyNotMatch(version, "1.78.0", false)
+'Verify Small Groups Version'
+to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-smallgroups-version")
+CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
+
+'Verify Workflow Version'
+to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-workflows-version")
+CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
+
+'Verify UI Version'
+to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-ui-version")
+CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
