@@ -12,6 +12,13 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>824eebf5-3cf0-48b9-a011-f3b6ccca7257</testSuiteGuid>
    <testCaseLink>
+      <guid>621d5364-8bbc-474d-a77e-63e16bcf3e45</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Shared/Verify Component Versions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>b5d36787-2fab-4a15-8d78-a1fe81d65ee6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

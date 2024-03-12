@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 def envPrefix = GlobalVariable.EnvironmentPrefix
-def targetHcVersion = "1.78"
+def targetHcVersion = GlobalVariable.HC_Version
 
 'Go to the HC About page'
 WebUI.openBrowser(CustomKeywords.'customUtility.NavigationHelper.getHCUrl'('/about'))
