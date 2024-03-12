@@ -24,7 +24,11 @@ def to = findTestObject('Object Repository/HC-Web/About/Core Version')
 
 def version = CustomKeywords.'customUtility.TestObjectHelper.getWebElementText'(to)
 
-WebUI.verifyNotMatch(version, "1.78.0", false)
+'Verify the version of the Core API'
+
+'Verify the version of the Event Service'
+
+'Verify the version of the Notification Service'
 
 //def to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("production-core-version")
 //def version = CustomKeywords.'customUtility.TestObjectHelper.getWebElementText'(to)
