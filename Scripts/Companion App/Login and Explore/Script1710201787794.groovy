@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Open existing app by the app bundle id'
-Mobile.startExistingApplication('com.healthychurch.companion.development')
+Mobile.startExistingApplication(GlobalVariable.CompanionApp_BundleId)
 
 'Click Login Button'
 Mobile.tap(findTestObject('Object Repository/Companion App/Splash/Log In or Create an Account Button'), 0)
@@ -29,15 +29,15 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Login/Continue Button
 'Put focus in the Email Address field'
 Mobile.tap(findTestObject('Object Repository/Companion App/Login/Email Address Text Field'), 0)
 
-'Fill in the Email Address'
-Mobile.setText(findTestObject('Object Repository/Companion App/Login/Email Address Text Field'), 'crisf@saddleback.com', 
-    0)
-
 'Put focus in the Password field'
 Mobile.tap(findTestObject('Object Repository/Companion App/Login/Password Text Field'), 0)
 
+'Fill in the Email Address'
+Mobile.setText(findTestObject('Object Repository/Companion App/Login/Email Address Text Field'), GlobalVariable.Admin_UserName, 
+    0)
+
 'Fill in the Password field (using Encypt method)'
-Mobile.setEncryptedText(findTestObject('Object Repository/Companion App/Login/Password Text Field'), 'Z8nazMpc16177aX9xH8qZQ==', 
+Mobile.setEncryptedText(findTestObject('Object Repository/Companion App/Login/Password Text Field'), GlobalVariable.Admin_Password, 
     0)
 
 'Click Sign In Button'
