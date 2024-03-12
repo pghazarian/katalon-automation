@@ -61,7 +61,16 @@ class TestObjectHelper {
 	def TestObject getTestObjectWithXpath(String xpath) {
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
-		KeywordUtil.markPassed("Refresh successfully")
+	}
+
+	/**
+	 * Get a TestObject given an id
+	 */
+	@Keyword
+	def TestObject getTestObjectById(String id) {
+		def xpath = "//div[@id='$id']"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
 
 	/**
@@ -270,7 +279,7 @@ class TestObjectHelper {
 	}
 
 	@Keyword
-	def String getWebElementText(TestObject object, String valueToCompare) {
+	def String getWebElementText(TestObject object) {
 
 		// get the text attribute from the label / span field
 		def webElement = WebUI.findWebElement(object, 1)
