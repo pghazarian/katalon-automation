@@ -15,7 +15,7 @@
       <guid>b5d36787-2fab-4a15-8d78-a1fe81d65ee6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Data Capture/Connection Form Public Authenticated</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Data Capture/Forms/Published Forms/Connection Form Public Authenticated</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -34,14 +34,14 @@
       <guid>cf360bff-8150-4c00-8472-98afab34770b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Data Capture/Connection Form Public Unpublished</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Data Capture/Forms/Published Forms/Connection Form Public Unpublished</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b510abfe-2b8e-4cfa-9d6c-0938228ee129</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Event/Event Search</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Events/Event Search</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
