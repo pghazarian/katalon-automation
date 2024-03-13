@@ -80,7 +80,7 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Resul
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Attendee Names'), attendee)
 
 'Select previously added attendee'
-WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes'))
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Attendee Checkboxes'))
 
 'Open actions for selected attendee'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
@@ -92,7 +92,7 @@ WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Mark Attended Optio
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Attendance Field'), 'Attended')
 
 'Select attendee again'
-WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes'))
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Attendee Checkboxes'))
 
 'Open actions for selected attendee'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))

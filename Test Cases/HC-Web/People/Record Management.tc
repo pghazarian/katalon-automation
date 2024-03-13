@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Record Management</name>
-   <tag></tag>
+   <tag>Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>b3c55277-d194-40a6-a128-ad3fc6901cdc</testCaseGuid>
    <variableLinks>

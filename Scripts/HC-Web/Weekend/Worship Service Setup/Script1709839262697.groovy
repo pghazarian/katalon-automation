@@ -42,6 +42,8 @@ WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Save Service Conf
 'Search for newly created service'
 WebUI.setText(findTestObject('HC-Web/Event/Worship Service Setup/Search Bar'), WorshipServiceName + Keys.ENTER)
 
+WebUI.delay(3)
+
 'Verify service appears in list'
 WebUI.verifyTextPresent(WorshipServiceName, false)
 
@@ -52,6 +54,8 @@ WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Actions Dropdown'
 WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Close Service Dropdown Option'))
 
 WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Close Service Confirmation Yes Button'))
+
+WebUI.delay(3)
 
 'Verify service was removed from list'
 WebUI.verifyTextNotPresent(WorshipServiceName, false)
