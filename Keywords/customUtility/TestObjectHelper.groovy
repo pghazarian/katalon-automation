@@ -61,7 +61,16 @@ class TestObjectHelper {
 	def TestObject getTestObjectWithXpath(String xpath) {
 		KeywordUtil.logInfo("searching for xpath: " + xpath)
 		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
-		KeywordUtil.markPassed("Refresh successfully")
+	}
+
+	/**
+	 * Get a TestObject given an id
+	 */
+	@Keyword
+	def TestObject getTestObjectById(String id) {
+		def xpath = "//div[@id='$id']"
+		KeywordUtil.logInfo("searching for xpath: " + xpath)
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
 	}
 
 	/**
@@ -270,7 +279,19 @@ class TestObjectHelper {
 	}
 
 	@Keyword
-	def String getWebElementText(TestObject object, String valueToCompare) {
+	def verifyObjectValueContains(TestObject object, String valueToFind) {
+
+		// get the value attribute from the text field
+		def webElement = WebUI.findWebElement(object, 1)
+
+		KeywordUtil.logInfo("comparing '$webElement.text' and '$valueToFind'")
+
+		// verify the valueToFind is found in the TestObject text'
+		WebUI.verifyGreaterThanOrEqual(webElement.text.indexOf(valueToFind), 0, FailureHandling.CONTINUE_ON_FAILURE)
+	}
+
+	@Keyword
+	def String getWebElementText(TestObject object) {
 
 		// get the text attribute from the label / span field
 		def webElement = WebUI.findWebElement(object, 1)

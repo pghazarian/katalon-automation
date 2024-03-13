@@ -11,6 +11,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'dev'</initValue>
+      <name>EnvironmentPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'sbchcqa@gmail.com'</initValue>
       <name>Admin_UserName</name>
    </GlobalVariableEntity>
