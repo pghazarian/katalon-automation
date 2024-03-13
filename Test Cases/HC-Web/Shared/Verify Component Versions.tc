@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Verify that the Components in the HC environment have the expected versions in that environment
 
-This is based on the /about page and the Global profile, &quot;HC_Version&quot; variable.</description>
+This is based on the /about page and the major/minor version of the Core component.</description>
    <name>Verify Component Versions</name>
    <tag>QA,Dev,Stage2,Production,Stage,Smoke</tag>
    <comment></comment>

@@ -16,11 +16,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'1.78'</initValue>
-      <name>HC_Version</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'crisf@saddleback.com'</initValue>
       <name>Admin_UserName</name>
    </GlobalVariableEntity>

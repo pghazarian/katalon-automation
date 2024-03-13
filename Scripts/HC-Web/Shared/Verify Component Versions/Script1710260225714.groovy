@@ -18,39 +18,53 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 def envPrefix = GlobalVariable.EnvironmentPrefix
-def targetHcVersion = GlobalVariable.HC_Version
 
 'Go to the HC About page'
 WebUI.openBrowser(CustomKeywords.'customUtility.NavigationHelper.getHCUrl'('/about'))
 
-'Verify Core Version'
+'Get the Core Version and we will verify the rest of the versions based on this value'
 def to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-core-version")
+
+def fullVersion = CustomKeywords.'customUtility.TestObjectHelper.getWebElementText'(to)
+
+def targetHcVersion = CustomKeywords.'customUtility.StringHelper.parseMajorMinorVersion'(fullVersion)
+
 CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
 'Verify Events Version'
 to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-events-version")
+
 CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
 'Verify Giving Version'
 to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-giving-version")
+
 CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
 'Verify Journey Version'
 to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-journey-version")
+
 CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
 'Verify Notifications Version'
 to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-notifications-version")
+
 CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
 'Verify Small Groups Version'
 to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-smallgroups-version")
+
 CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
 'Verify Workflow Version'
 to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-workflows-version")
+
 CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
 
 'Verify UI Version'
 to = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectById'("$envPrefix-ui-version")
+
 CustomKeywords.'customUtility.TestObjectHelper.verifyObjectValueContains'(to, targetHcVersion)
+
+WebUI.closeBrowser()
+

@@ -283,7 +283,7 @@ class TestObjectHelper {
 
 		// get the value attribute from the text field
 		def webElement = WebUI.findWebElement(object, 1)
-		
+
 		KeywordUtil.logInfo("comparing '$webElement.text' and '$valueToFind'")
 
 		// verify the valueToFind is found in the TestObject text'
