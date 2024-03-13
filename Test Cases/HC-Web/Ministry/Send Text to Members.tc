@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Send Text to Members</name>
-   <tag></tag>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>42248e0b-c155-4dac-a38e-02f0ced753ee</testCaseGuid>
    <variableLinks>
