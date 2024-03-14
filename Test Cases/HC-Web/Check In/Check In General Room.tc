@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Open Nav Journey Creation</name>
+   <name>Check In General Room</name>
    <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
-   <testCaseGuid>7814aef5-749f-443b-9045-9fb748821e79</testCaseGuid>
+   <testCaseGuid>bca4dcfe-6592-48f5-a3b1-51cea1d98a03</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3e635431-a72a-4e15-81d6-81a36f26d045</variableId>
+      <variableId>c680a00c-3e40-43aa-a7e3-7c25f678dbcc</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Katalon Test Journey'</defaultValue>
+      <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
       <description></description>
-      <id>3e635431-a72a-4e15-81d6-81a36f26d045</id>
+      <id>c680a00c-3e40-43aa-a7e3-7c25f678dbcc</id>
       <masked>false</masked>
-      <name>JourneyName</name>
+      <name>EventId</name>
    </variable>
 </TestCaseEntity>

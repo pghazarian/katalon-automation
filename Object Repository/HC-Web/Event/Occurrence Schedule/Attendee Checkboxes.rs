@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Attendee Checkboxes</name>
+   <tag></tag>
+   <elementGuidId>9bb3f42c-1c2a-45c6-af08-181a9332a3ed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tbody/tr/td/descendant::label[contains(@class,'checkbox')]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.ui.checkbox.jss738 > label.checkbox-label > div.cmui.ui.icon.icon-check.icon-align-left.icon-color-primary.icon-compact.icon-inverse > svg > g > use.icon-use-path</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>use</value>
+      <webElementGuid>6eaea5b5-9e36-453f-a7f4-bc8eb60f6f4e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-use-path</value>
+      <webElementGuid>c798a8bb-455a-4bed-b375-16450f2c5b54</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xlink:href</name>
+      <type>Main</type>
+      <value>#icon-svg-path-check-7619612357</value>
+      <webElementGuid>3bf3dc4d-3089-424c-9df3-d29a84f0b546</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss608 check_in_page page-has_action_bar&quot;]/div[@class=&quot;check_in_page--room_attendees&quot;]/main[@class=&quot;ui page jss237 jss763 jss760 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss653 ui page--container jss742 jss652&quot;]/section[@class=&quot;cmui content jss656 ui page--content jss743 jss655&quot;]/table[@class=&quot;ui jss664 table table-basic table-font-size-xsmall table-selectable jss761&quot;]/thead[@class=&quot;table-header&quot;]/tr[@class=&quot;table-row&quot;]/th[@class=&quot;table-header-cell table-cell&quot;]/span[1]/div[@class=&quot;jss736&quot;]/div[@class=&quot;ui checkbox jss738&quot;]/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;cmui ui icon icon-check icon-align-left icon-color-primary icon-compact icon-inverse&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
+      <webElementGuid>1acf06a8-3cc0-495e-9b82-0b565386561b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
