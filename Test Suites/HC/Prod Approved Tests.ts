@@ -85,7 +85,7 @@
       <guid>8ab4e277-fe2a-470a-8181-d8b37bc97163</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Ministry/Ministry Search</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Ministry/Navigation/Ministry Search</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
