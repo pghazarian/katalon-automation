@@ -17,10 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Open Browser'
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.HC_HostUrl)
 
+'Login'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Saddleback Identity Server/input_Email Address_Username'), 
     UserName)
 
