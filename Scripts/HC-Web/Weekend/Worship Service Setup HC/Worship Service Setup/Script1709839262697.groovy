@@ -24,6 +24,17 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 def WorshipServiceName = 'QA Automation Worship Service ' + UUID.randomUUID()
 
+'Verify that the sub navigation buttons are available.'
+
+'Click button to filter for One-time services'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Worship Service Setup/One-Time Tab Button'))
+
+'Click button to filter for Closed services'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Worship Service Setup/Closed Tab Button'))
+
+'Click button to filter for Recurring services'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Worship Service Setup/Recurring Tab Button'))
+
 'Click button to create new worship service'
 WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/New Service Button'))
 
