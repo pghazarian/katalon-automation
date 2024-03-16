@@ -21,15 +21,50 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
+'Verify Events Central Top Menu Navigation'
 CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Events Central', 'All Events')
 
+'Verify Events Central | All Events Navigation'
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'All Events', 'All Events')
 
+'Verify Events Central | Worship Service Setup Navigation'
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Worship Service Setup', 
     'Worship Service Setup')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences', 
-    'Settings & Preferences')
-
+'Verify Events Central | Event Catalogs Navigation'
 CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Event Catalogs', 'Event Catalogs')
+
+'Verify Events Central | Settings & Preferences Navigation'
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences',
+	'Settings & Preferences')
+
+'Verify Accommodations Sub Nav'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Accommodations Tab Button'))
+'Verify Data Header is present'
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Accommodations/Data Header'), 0)
+
+'Verify Event Categories Sub Nav'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Event Categories Tab Button'))
+'Verify Data Header is present'
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Event Categories/Data Header'), 0)
+
+'Verify Room Categories Sub Nav'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Room Categories Tab Button'))
+'Verify Data Header is present'
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Room Categories/Data Header'), 0)
+
+'Verify Service Categories Sub Nav'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Service Categories Tab Button'))
+'Verify Data Header is present'
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Service Categories/Data Header'), 0)
+
+'Verify Tags Sub Nav'
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Tags Tab Button'))
+'Verify Data Header is present'
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Tags/Data Header'), 0)
+
+
+
+
+
 
