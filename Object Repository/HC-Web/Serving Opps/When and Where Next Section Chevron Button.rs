@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>When and Where Next Section Chevron Button</name>
+   <tag></tag>
+   <elementGuidId>b87670e7-5da0-4a18-8690-f451744973c9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#new_serving_opportunity_when_and_where--action_bar_next</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='new_serving_opportunity_when_and_where--action_bar_next']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>ad535761-34ff-440d-bd29-29c51902bc70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss1054 jss253</value>
+      <webElementGuid>abde9713-78d8-48ba-907f-5551cf5afde8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>new_serving_opportunity_when_and_where--action_bar_next</value>
+      <webElementGuid>a27d4750-9c44-43b7-91c0-ea3c784282b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nextchevron-wh-right</value>
+      <webElementGuid>3b7e5254-3bc2-4629-b97a-2b5ee1490d83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;new_serving_opportunity_when_and_where--action_bar_next&quot;)</value>
+      <webElementGuid>61fc591f-79a6-4c98-8c01-a38209c8802b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

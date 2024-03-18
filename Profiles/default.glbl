@@ -99,4 +99,14 @@
       <initValue>'27772'</initValue>
       <name>EventId_Recurring_DoesNotEnd</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27471'</initValue>
+      <name>EventId_CheckIn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.healthychurch.companion.development'</initValue>
+      <name>CompanionApp_BundleId</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

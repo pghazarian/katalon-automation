@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Service Series Builder</name>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>ebcb1439-e536-4cda-b3be-8420927f834a</testCaseGuid>
+</TestCaseEntity>

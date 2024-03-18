@@ -11,6 +11,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'staging2'</initValue>
+      <name>EnvironmentPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'sbchcqa@gmail.com'</initValue>
       <name>Admin_UserName</name>
    </GlobalVariableEntity>
@@ -73,5 +78,10 @@
       <description></description>
       <initValue>'3034'</initValue>
       <name>EventId_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'3036'</initValue>
+      <name>EventId_CheckIn</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
