@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Core Version</name>
+   <name>Sub Nav Menu</name>
    <tag></tag>
-   <elementGuidId>3c014f1c-368e-492d-a486-483c9f9d3235</elementGuidId>
+   <elementGuidId>9c754b32-e65f-413c-837e-1e061fa8bbcd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;qa-core-version&quot;]</value>
+         <value>//button[contains(@class, 'navigation_sectional_tabs--tab') and .= &quot;${MenuText}&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
