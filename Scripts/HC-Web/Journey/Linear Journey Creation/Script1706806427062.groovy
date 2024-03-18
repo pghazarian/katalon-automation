@@ -42,10 +42,10 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/Subtit
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/Description Field'), Description)
 
 'Select campus from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_campus', Campus)
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_campus', Campus)
 
 'Select category from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_category', Type)
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_category', Type)
 
 'Continue to journey builder'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Continue'))
@@ -65,10 +65,10 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Subtitle'), 'Section 1')
 
 'Select accent color for section from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
 
 'Select symbol for section from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
 
 'Click done to save section'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
@@ -139,10 +139,10 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Subtitle'), 'Section 2')
 
 'Select accent color for section from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
 
 'Select symbol for section from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
 
 'Click done to save section'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
@@ -220,7 +220,7 @@ WebUI.click(findTestObject('HC-Web/Journey/Overview/Back to All Journeys Button'
 'Search for unique journey name and verify that it appears in result list'
 WebUI.setText(findTestObject('HC-Web/Journey/AllJourneysPage/SearchBar'), JourneyName + Keys.ENTER)
 
-CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
+CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
     1)
 
 WebUI.closeBrowser()

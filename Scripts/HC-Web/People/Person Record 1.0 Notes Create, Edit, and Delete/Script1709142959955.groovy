@@ -41,7 +41,7 @@ WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Save Button'))
 WebUI.verifyTextPresent(NoteText, false)
 
 'Click button to edit previously created note'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
 
 'Create edited note text'
 NoteText = (NoteText + ' - EDITED')
@@ -56,7 +56,7 @@ WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Save Button'))
 WebUI.verifyTextPresent(NoteText, false)
 
 'Click button to edit previously edited note'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$NoteText']/ancestor::div[contains(@class,'note-details')]/descendant::a[@id='ui-legacy_button_circle--desktop_edit_note']"))
 
 'Click delete button'
 WebUI.click(findTestObject('HC-Web/Person/Edit/Notes/Delete Button'))

@@ -73,7 +73,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups
 
 WebUI.delay(3)
 
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$strFollowUpTaskPersonName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$strFollowUpTaskPersonName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Unclaimed/Unclaimed Follow Up Task Claim Drop Down'))
 
@@ -83,7 +83,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Active Tab Bu
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Unclaimed/QA Automation Follow Up Rule Task List Item'))
 
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$strFollowUpTaskPersonName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$strFollowUpTaskPersonName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Follow Up Successful Button'))
 

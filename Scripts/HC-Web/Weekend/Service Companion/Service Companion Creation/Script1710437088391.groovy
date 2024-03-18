@@ -33,16 +33,16 @@ WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Name Te
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Description Text Field'), 'Service Companion Created by Katalon Test')
 
 'Select a speaker from the dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('react-select-3--value', Speaker)
+CustomKeywords.'TestObjectHelper.setDropDownValue'('react-select-3--value', Speaker)
 
 'Select a series from the dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('react-select-4--value', Series)
+CustomKeywords.'TestObjectHelper.setDropDownValue'('react-select-4--value', Series)
 
 'Click button to attach a service outline'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Outline Button'))
 
 'Select a service outline from the dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('ui-dropdown--edit_sermon_outline_category', '')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('ui-dropdown--edit_sermon_outline_category', '')
 
 'Add a description to the service outline'
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Edit Service Outline Body'), 'Test Description')
@@ -105,7 +105,7 @@ WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search 
 
 WebUI.sendKeys(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search Bar'), Keys.chord(Keys.ENTER))
 
-CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//td[@id=\'data_grid--table_page_cell_base-2_0\']', 
+CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//td[@id=\'data_grid--table_page_cell_base-2_0\']', 
     ServiceCompanionName, 1)
 
 WebUI.closeBrowser()

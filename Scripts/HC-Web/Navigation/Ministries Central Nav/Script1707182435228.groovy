@@ -21,16 +21,16 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 
     'Quick-view Insights')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences', 
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences', 
     'Settings & Preferences')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 
     'Serving Opps Catalogs')
 

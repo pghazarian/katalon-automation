@@ -44,7 +44,7 @@ if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check
     WebUI.click(findTestObject('HC-Web/Event/Check In/Find Volunteers Button'))
 
     'Switch to person search'
-    CustomKeywords.'customUtility.FormHelper.setMultipleChoiceControlValueByXPath'('//div[contains(@class,\'radio-pill\')]', 
+    CustomKeywords.'FormHelper.setMultipleChoiceControlValueByXPath'('//div[contains(@class,\'radio-pill\')]', 
         'Person Search')
 
     'Search for volunteers'

@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('People', 'Search or Add')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Search or Add', 'Search or Add')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Record Management', 'Record Management')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Settings and Preferences', 'Settings and Preferences')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('People', 'Search or Add')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Search or Add', 'Search or Add')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Record Management', 'Record Management')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Settings and Preferences', 'Settings and Preferences')

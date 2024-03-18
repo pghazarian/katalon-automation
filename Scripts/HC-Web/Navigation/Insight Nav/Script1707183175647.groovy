@@ -21,9 +21,9 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Insights', 'Flash Reports')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Insights', 'Flash Reports')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Insights', 'Flash Reports', 'Flash Reports')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Insights', 'Flash Reports', 'Flash Reports')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Insights', 'Embedded Reports', 'Embedded Reports')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Insights', 'Embedded Reports', 'Embedded Reports')
 

@@ -1,4 +1,4 @@
-package customUtility
+
 import java.text.SimpleDateFormat
 
 import com.kms.katalon.core.annotation.Keyword

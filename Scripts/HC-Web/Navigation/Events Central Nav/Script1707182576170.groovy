@@ -21,15 +21,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Events Central', 'All Events')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Events Central', 'All Events')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'All Events', 'All Events')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'All Events', 'All Events')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Worship Service Setup', 
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Worship Service Setup', 
     'Worship Service Setup')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences', 
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences', 
     'Settings & Preferences')
 
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Event Catalogs', 'Event Catalogs')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Event Catalogs', 'Event Catalogs')
 
