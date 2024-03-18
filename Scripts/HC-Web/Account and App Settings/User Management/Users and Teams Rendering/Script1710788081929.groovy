@@ -33,15 +33,25 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/System/Users and Teams/Back Bu
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Users and Teams/Scoped Roles'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.click(findTestObject('HC-Web/System/Users and Teams/Scoped Roles'))
+
+WebUI.verifyTextPresent('Roles', false)
+
+WebUI.verifyTextPresent('Scope of Role(s)', false)
+
+WebUI.verifyTextPresent('Ministries', false)
+
 WebUI.verifyTextPresent(SearchUser, false)
 
 WebUI.click(findTestObject('HC-Web/System/Users and Teams/Teams Tab'), FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[@class='church-line' and text()='$Campus']")
+WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[@class='church-line' and text()='$Campus']"))
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Users and Teams/New Team Button'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Users and Teams/Manage Team Buttons'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Users and Teams/Team Rows'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.closeBrowser()
 

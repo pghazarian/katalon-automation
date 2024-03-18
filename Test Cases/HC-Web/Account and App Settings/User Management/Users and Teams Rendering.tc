@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Users and Teams Rendering</name>
-   <tag></tag>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>4810b4c1-e922-451e-98d2-3e96855d2207</testCaseGuid>
    <variableLinks>
@@ -18,7 +18,7 @@
       <variableId>7b83ad30-4713-46f9-8ac9-6a6d9f0935db</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Chuck Saddleback'</defaultValue>
+      <defaultValue>'Garrett Clover'</defaultValue>
       <description></description>
       <id>764eeeaf-b74b-428b-a46b-0637ed4db147</id>
       <masked>false</masked>
