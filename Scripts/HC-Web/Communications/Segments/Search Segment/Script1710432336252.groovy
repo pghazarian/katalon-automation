@@ -19,11 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/people/search-or-add'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/div_Communications CentralCommunications(beta)'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/div_Segment Search'))
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/input_Log Out_segment--search_input'), 
     'ST Record 1')
