@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Remove</name>
+   <tag></tag>
+   <elementGuidId>4191d6e6-dfc5-4138-b676-7aeb4bd4bbdc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'Remove')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.color-alert.font-weight-normal.font-size-small</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>035d98b0-e689-4c49-9d29-a74142e84849</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>color-alert font-weight-normal font-size-small</value>
+      <webElementGuid>486edb25-88ba-40e1-8b8d-b5c644d74703</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Remove</value>
+      <webElementGuid>06a0cf35-fe23-4b2e-a7b7-a616933cfa3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 question-drawer drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/section[@class=&quot;ui jss344 drawer--content&quot;]/table[@class=&quot;ui jss322 table table-basic table-stretch-very&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row&quot;]/td[@class=&quot;table-cell&quot;]/div[@class=&quot;ui prompt jss413 prompt-inline&quot;]/div[1]/a[@class=&quot;color-alert font-weight-normal font-size-small&quot;]</value>
+      <webElementGuid>eeaae24d-1bea-4c0e-bc2a-8f7438725118</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Remove')]</value>
+      <webElementGuid>2bdc2227-32ad-4544-9ac9-a683f1ef4c40</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a</value>
+      <webElementGuid>64922e20-cce6-4cf0-abe2-96f477a31b12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = 'Remove' or . = 'Remove')]</value>
+      <webElementGuid>0abc9c3e-3b12-4e6f-a931-7bea17c025ea</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Add Announcement Button</name>
+   <tag></tag>
+   <elementGuidId>6b78e294-1c9e-4bb3-a5d7-efc4dd26b4b7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='ui-button--service_companion_edit_show_announcements']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-button--service_companion_edit_show_announcements > span.button-inner-container.jss244</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>09498dfc-a61e-4b99-9d7d-bbdc7191b9a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss244</value>
+      <webElementGuid>34c604f7-7cb7-4af7-a7b4-6f6a08827c27</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>plusAnnouncement</value>
+      <webElementGuid>95c9f4f3-468f-44ae-8c83-1f586e8ec2e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-button--service_companion_edit_show_announcements&quot;)/span[@class=&quot;button-inner-container jss244&quot;]</value>
+      <webElementGuid>701ebc72-40e2-499a-906c-9e772013fc14</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='ui-button--service_companion_edit_show_announcements']/span</value>
+      <webElementGuid>171cdacb-210e-40ab-856e-d192338d00b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[3]/span</value>
+      <webElementGuid>eb5848bb-86b8-4619-a956-c8fbff5118ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'plusAnnouncement' or . = 'plusAnnouncement')]</value>
+      <webElementGuid>f3daee3d-b7e1-42c7-b3fa-46afeb2a7c59</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

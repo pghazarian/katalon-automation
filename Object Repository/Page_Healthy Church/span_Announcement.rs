@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Announcement</name>
+   <tag></tag>
+   <elementGuidId>ce244765-e156-4564-927b-6b020e9da549</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='ui-button--service_companion_edit_show_announcements']/span/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-button--service_companion_edit_show_announcements > span.button-inner-container.jss246 > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1694fa61-5e6c-4cc2-a1f8-5c1244dc9366</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Announcement</value>
+      <webElementGuid>48dcb698-a86a-45f8-9437-2265f040aaed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-button--service_companion_edit_show_announcements&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
+      <webElementGuid>fd8f9531-f211-403a-839d-f86223b0c51c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='ui-button--service_companion_edit_show_announcements']/span/span</value>
+      <webElementGuid>26399851-ca97-4fc2-974a-0fb36b348194</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[3]/span/span</value>
+      <webElementGuid>48711331-e3f5-414f-908b-5b3a927564d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Announcement' or . = 'Announcement')]</value>
+      <webElementGuid>d2b8c9b8-e740-41b6-b0f8-a48e5d8391fb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -76,6 +76,10 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/First Ann
 'Confirm announcement attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Selected Announcement Button'))
 
+WebUI.click(findTestObject('Object Repository/Page_Healthy Church/a_Remove'))
+
+WebUI.click(findTestObject('Object Repository/Page_Healthy Church/div_Yes'))
+
 'Click the button to add a song as an attachment'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Button'))
 
@@ -84,6 +88,10 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song 
 
 'Confirm song attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Song Search Add Button'))
+
+WebUI.click(findTestObject('Object Repository/Page_Healthy Church/a_Remove'))
+
+WebUI.click(findTestObject('Object Repository/Page_Healthy Church/div_Yes'))
 
 'Click the button to add a service'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Association Button'))
@@ -105,8 +113,8 @@ WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search 
 
 WebUI.sendKeys(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search Bar'), Keys.chord(Keys.ENTER))
 
-CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//td[@id=\'data_grid--table_page_cell_base-2_0\']', 
-    ServiceCompanionName, 1)
+CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//td[@id=\'data_grid--table_page_cell_base-2_0\']', ServiceCompanionName, 
+    1)
 
 WebUI.closeBrowser()
 
