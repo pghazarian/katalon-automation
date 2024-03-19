@@ -17,19 +17,37 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def date = new Date()
+
+def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
+
+def SegmentName= "ST Segment - $CurrentDateTime"
+
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
 
-SearchTerm = 'ST Record 2'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/span_plusCreate Segment'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Search Text Field'), SearchTerm)
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/input__segment_create--segment_name'), 
+    SegmentName)
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Search Text Field'), Keys.chord(Keys.ENTER))
+not_run: WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/textarea_ST Segment Test 3192024'), 
+    'ST Segment Test 3192024')
 
-WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/TableRow', [('SegmentName') : SearchTerm]), 0)
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/textarea_ST Segment Test 3192024 Description'), 
+    "$SegmentName Description")
 
-WebUI.click(findTestObject('HC-Web/Communications/TableRow', [('SegmentName') : SearchTerm]))
+//CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('react-select-7--value', 'Anaheim')
+'Select campus from dropdown'
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
+    'Anaheim')
+
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Campus Dropdown'))
+
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/div_Anaheim'))
+
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Page_Healthy Church/span_Create'))
 
 WebUI.closeBrowser()
 
