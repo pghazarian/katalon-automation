@@ -1,4 +1,4 @@
-package customUtility
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.testcase.TestCase

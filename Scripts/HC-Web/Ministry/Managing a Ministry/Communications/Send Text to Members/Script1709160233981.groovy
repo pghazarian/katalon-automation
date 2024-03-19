@@ -25,7 +25,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 def Environment = RunConfiguration.getExecutionProfile()
 
-CustomKeywords.'customUtility.TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
+CustomKeywords.'TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
 
 'Select all members to send a text to'
 WebUI.click(findTestObject('HC-Web/Ministry/Members/Select All Members Checkbox'))

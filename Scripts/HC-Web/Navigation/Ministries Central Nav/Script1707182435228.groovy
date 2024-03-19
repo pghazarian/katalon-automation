@@ -22,34 +22,34 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 'Verify Ministries Central Top Menu Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Ministries Central', 'All Ministries')
 
 'Verify Ministries Central | All Ministries Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'All Ministries', 'All Ministries')
 
 'Verify Ministries Central | Quick-view Insights Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Quick-view Insights', 
     'Quick-view Insights')
 
 'Verify Ministries Central | Serving Opps Catalogs Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Serving Opps Catalogs', 
     'Serving Opps Catalogs')
 
 'Verify Ministries Central | Settings & Preferences Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences',
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Ministries Central', 'Settings & Preferences',
 	'Settings & Preferences')
 
 'Verify Categories Sub Nav'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Categories']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Categories']"))
 'Verify Section Header is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Ministry/Settings and Preferences/Categories/Section Header'), 0)
 
 'Verify Tags Sub Nav'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Tags']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Tags']"))
 'Verify Section Header is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Ministry/Settings and Preferences/Tags/Section Header'), 0)
 
 'Verify Featured Ministries Sub Nav'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Featured Ministries']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Featured Ministries']"))
 'Verify Section Header is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Ministry/Settings and Preferences/Featured Ministries/Section Header'), 0)

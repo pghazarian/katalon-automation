@@ -29,7 +29,7 @@ WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), Keys.chord(Ke
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Search/TableRowOne'), 0)
 
-SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@data-testid=\'person-personal-info\']/div', 
+SearchTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@data-testid=\'person-personal-info\']/div', 
     VerificationName, 1)
 
 PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
@@ -58,11 +58,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), Veri
 WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
 
 'Verify the first name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/First Name Input'), 
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/First Name Input'), 
     FirstName)
 
 'Verify the last name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/Last Name Input'), 
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/Last Name Input'), 
     LastName)
 
 'Verify the birthdate label is present'

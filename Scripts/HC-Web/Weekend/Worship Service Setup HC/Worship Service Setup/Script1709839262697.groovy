@@ -42,7 +42,7 @@ WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/New Service Butto
 WebUI.setText(findTestObject('HC-Web/Event/Worship Service Setup/Name Text Field'), WorshipServiceName)
 
 'Select a campus'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueWithClick'('new_serving_opportunity_where_saddleback--campus', 
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('new_serving_opportunity_where_saddleback--campus', 
     campus)
 
 'Save worship service'

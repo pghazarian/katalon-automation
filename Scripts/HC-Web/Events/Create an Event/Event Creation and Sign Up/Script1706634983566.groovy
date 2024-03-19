@@ -27,17 +27,17 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/New Ev
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Create New Event Button'))
 
 'Select campus'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', campus)
+CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', campus)
 
 'Switch to campus event'
-CustomKeywords.'customUtility.FormHelper.setMultipleChoiceControlValueByXPath'('//div[@class=\'event_details_event_type\']/descendant::div[@class=\'radio-item\']', 
+CustomKeywords.'FormHelper.setMultipleChoiceControlValueByXPath'('//div[@class=\'event_details_event_type\']/descendant::div[@class=\'radio-item\']', 
     'Campus Event')
 
 'Name event'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/Event Name Text Field'), 'QA Automation Test Event')
 
 'Select category'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
     category)
 
 'Give event a description'

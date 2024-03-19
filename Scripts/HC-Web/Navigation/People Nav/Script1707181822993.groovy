@@ -22,28 +22,28 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 'Verify People Top Menu Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('People', 'Search or Add')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('People', 'Search or Add')
 'Verify People | Search or Add Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Search or Add', 'Search or Add')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Search or Add', 'Search or Add')
 'Verify People | Record Management Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Record Management', 'Record Management')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Record Management', 'Record Management')
 'Verify People | Settings and Preferences Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Settings and Preferences', 'Settings and Preferences')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('People', 'Settings and Preferences', 'Settings and Preferences')
 
 'Verify the Sectional Navigation for Settings and Preferences'
 
 'Verify Milestone Sub Nav'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Milestones']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Milestones']"))
 'Verify Milestones Header is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Person/Settings and Preferences/Milestones/Milestones Header'), 0)
 
 'Verify Note Categories Sub Nav'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Note Categories']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Note Categories']"))
 'Verify Add Note Category button is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Person/Settings and Preferences/Note Categories/Add Note Category Button'), 0)
 
 'Verify Child & Student Sub Nav'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Child & Student']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--container')]//button[.='Child & Student']"))
 'Verify Grade Advancement header is present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Person/Settings and Preferences/Child and Student/Grade Advancement Header'), 0)
 

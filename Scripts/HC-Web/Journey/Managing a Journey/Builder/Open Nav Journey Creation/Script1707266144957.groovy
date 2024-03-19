@@ -20,7 +20,7 @@ import java.util.UUID as UUID
 
 def date = new Date()
 
-def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
+def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
 
 def JourneyName = "QA Automation Test Open Nav Journey - $CurrentDateTime"
 
@@ -38,9 +38,9 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/C
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/inputjourneys_list_page--template_public_name'), 
     JourneyName)
 
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_campus', 'Lake Forest')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_campus', 'Lake Forest')
 
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_category', 'Worship')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_category', 'Worship')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/Open Navigation Journey Pill Button'))
 
@@ -57,9 +57,9 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step 
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Subtitle'), 'Section 1')
 
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
 
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
@@ -111,9 +111,9 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step 
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Subtitle'), 'Section 2')
 
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_accent_color', 'Sky')
 
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_section_symbol', 'Action')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))
 
@@ -190,7 +190,7 @@ WebUI.click(findTestObject('HC-Web/Journey/Overview/Back to All Journeys Button'
 WebUI.setText(findTestObject('HC-Web/Journey/AllJourneysPage/SearchBar'), JourneyName + Keys.ENTER)
 
 'this is attempting to match the journey name in the first row of the search results'
-CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
+CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
     1)
 
 WebUI.closeBrowser()
