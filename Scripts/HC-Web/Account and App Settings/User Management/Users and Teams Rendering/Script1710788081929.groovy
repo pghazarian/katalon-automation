@@ -45,7 +45,7 @@ WebUI.verifyTextPresent(SearchUser, false)
 
 WebUI.click(findTestObject('HC-Web/System/Users and Teams/Teams Tab'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[@class='church-line' and text()='$Campus']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[@class='church-line' and text()='$Campus']"))
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Users and Teams/New Team Button'), FailureHandling.STOP_ON_FAILURE)
 

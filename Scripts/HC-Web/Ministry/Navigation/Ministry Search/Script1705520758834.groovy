@@ -31,7 +31,7 @@ WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(
 WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
 'Validate results'
-MinistryRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'("//div[@class='main-view']/descendant::td", MinistryName)
+MinistryRowObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'("//div[@class='main-view']/descendant::td", MinistryName)
 
 WebUI.verifyElementPresent(MinistryRowObject, 2)
 
@@ -42,7 +42,7 @@ WebUI.delay(1)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
-LocationRowObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-children\']/table/tbody/tr/td', 
+LocationRowObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-children\']/table/tbody/tr/td', 
     LocationName, 1)
 
 LocationValue = WebUI.getAttribute(LocationRowObject, 'innerText')
@@ -65,7 +65,7 @@ WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_V
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Details/BreadCrumbMinistryName'), MinistryName)
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', 
+PersonTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', 
     MemberName, 1)
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
@@ -77,12 +77,12 @@ WebUI.click(PersonTableCellObject)
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
-CustomKeywords.'customUtility.NavigationHelper.clickPrimaryOrSecondary'(
+CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Ministry/Details/Subnav_Interested'),
 	findTestObject('HC-Web/Ministry/Details/Subnav_MoreEllipsis'),
-	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Interested']"))
+	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Interested']"))
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', 
+PersonTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', 
     InterestedName, 1)
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
@@ -94,22 +94,22 @@ WebUI.click(PersonTableCellObject)
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
-CustomKeywords.'customUtility.NavigationHelper.clickPrimaryOrSecondary'(
+CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Ministry/Details/Subnav_ServingOpps'),
 	findTestObject('HC-Web/Ministry/Details/Subnav_MoreEllipsis'),
-	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Serving Opps']"))
+	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Serving Opps']"))
 
-CustomKeywords.'customUtility.NavigationHelper.clickPrimaryOrSecondary'(
+CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Ministry/Details/Subnav_Communications'),
 	findTestObject('HC-Web/Ministry/Details/Subnav_MoreEllipsis'),
-	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Communications']"))
+	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Communications']"))
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h3_Email Statistics'), 'Email Statistics')
 
-CustomKeywords.'customUtility.NavigationHelper.clickPrimaryOrSecondary'(
+CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Ministry/Details/Subnav_Settings'),
 	findTestObject('HC-Web/Ministry/Details/Subnav_MoreEllipsis'),
-	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Settings']"))
+	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Settings']"))
 
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Page_Healthy Church/h2_Description'), 'Description')
 

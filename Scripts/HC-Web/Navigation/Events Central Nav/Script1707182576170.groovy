@@ -22,20 +22,20 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 'Verify Events Central Top Menu Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Events Central', 'All Events')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Events Central', 'All Events')
 
 'Verify Events Central | All Events Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'All Events', 'All Events')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'All Events', 'All Events')
 
 'Verify Events Central | Worship Service Setup Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Worship Service Setup', 
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Worship Service Setup', 
     'Worship Service Setup')
 
 'Verify Events Central | Event Catalogs Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Event Catalogs', 'Event Catalogs')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Event Catalogs', 'Event Catalogs')
 
 'Verify Events Central | Settings & Preferences Navigation'
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences',
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences',
 	'Settings & Preferences')
 
 'Verify Accommodations Sub Nav'
