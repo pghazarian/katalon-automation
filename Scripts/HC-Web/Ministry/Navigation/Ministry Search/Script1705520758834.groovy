@@ -31,7 +31,7 @@ WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(
 WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
 'Validate results'
-MinistryRowObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'("//div[@class='main-view']/descendant::td", MinistryName)
+MinistryRowObject = findTestObject('Object Repository/HC-Web/Ministry/Search/Search Results Ministry Name Match', [('textToMatch') : MinistryName])
 
 WebUI.verifyElementPresent(MinistryRowObject, 2)
 
@@ -42,8 +42,7 @@ WebUI.delay(1)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
-LocationRowObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-children\']/table/tbody/tr/td', 
-    LocationName, 1)
+LocationRowObject = findTestObject('Object Repository/HC-Web/Ministry/Location/Location List Name Match', [('textToMatch') : LocationName])
 
 LocationValue = WebUI.getAttribute(LocationRowObject, 'innerText')
 
