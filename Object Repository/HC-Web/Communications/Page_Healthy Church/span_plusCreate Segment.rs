@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_plusCreate Segment</name>
+   <tag></tag>
+   <elementGuidId>2271c3b9-d3ef-4fd5-ab0e-6e174d078a38</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.button-inner-container.jss246</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='segment--create-query_button']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>9a0cc8b8-bc21-4891-a34e-26dda30d0b9c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss246</value>
+      <webElementGuid>b9a1a13e-1a3d-48a8-b565-251e7f13c02c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>plusCreate Segment</value>
+      <webElementGuid>6d12fe6e-5444-47ab-b156-2a75e571b474</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;segment--create-query_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
+      <webElementGuid>2f560925-1e9a-4aa4-8494-fca432ec43f7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='segment--create-query_button']/span</value>
+      <webElementGuid>1c93a1d0-33ff-4fb7-a711-91e2d2fad6a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log Out'])[1]/following::span[4]</value>
+      <webElementGuid>8105a016-d4b8-4035-975e-93f5575dfb63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::span[4]</value>
+      <webElementGuid>2f077bf6-f01c-4123-9011-a9377c4a4ef4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Demographic'])[1]/preceding::span[2]</value>
+      <webElementGuid>5e913f04-9fbd-4d43-88e1-d5e7e0add4a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/button/span</value>
+      <webElementGuid>2a17b76b-0bbb-480b-bf91-850f49e18af8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'plusCreate Segment' or . = 'plusCreate Segment')]</value>
+      <webElementGuid>4b977118-97e9-41a6-a785-64680ba5b8ee</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
