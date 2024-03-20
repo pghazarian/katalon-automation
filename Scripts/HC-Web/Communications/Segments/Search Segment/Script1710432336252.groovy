@@ -23,13 +23,26 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 SearchTerm = 'ST Record 2'
 
+SearchDescription = 'ST Record 2 Description'
+
+'Type Search term'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Search Text Field'), SearchTerm)
 
+'Initiate Search'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Search Text Field'), Keys.chord(Keys.ENTER))
 
+'Verify a row contains the expected name'
 WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/TableRow', [('SegmentName') : SearchTerm]), 0)
 
+'Open the segment record from the search results'
 WebUI.click(findTestObject('HC-Web/Communications/TableRow', [('SegmentName') : SearchTerm]))
+
+'Verify segment name is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/SegmentName', [('SegmentName') : SearchTerm]), SearchTerm)
+
+'Verify segment description is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/SegmentDescription', [('SegmentDescription') : SearchDescription]), 
+    SearchDescription)
 
 WebUI.closeBrowser()
 
