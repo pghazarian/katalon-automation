@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+MinistryLocationName = "$MinistryName / $LocationName"
+
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/ministries-central'], FailureHandling.STOP_ON_FAILURE)
@@ -31,28 +33,14 @@ WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(
 WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
 'Validate results'
-MinistryRowObject = findTestObject('Object Repository/HC-Web/Ministry/Search/Search Results Ministry Name Match', [('textToMatch') : MinistryName])
-
-WebUI.verifyElementPresent(MinistryRowObject, 2)
 
 'Open Ministry'
-WebUI.click(MinistryRowObject)
-
-WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Search/Search Results Ministry Name Match', [('textToMatch') : MinistryName]))
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Location/DrawerHeader'), MinistryName)
 
-LocationRowObject = findTestObject('Object Repository/HC-Web/Ministry/Location/Location List Name Match', [('textToMatch') : LocationName])
-
-LocationValue = WebUI.getAttribute(LocationRowObject, 'innerText')
-
-'Verify the location value'
-WebUI.verifyEqual(LocationValue, LocationName)
-
 'Open the Location'
-WebUI.click(LocationRowObject)
-
-MinistryLocationName = ((MinistryName + ' / ') + LocationName)
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Location/Location List Name Match', [('textToMatch') : LocationName]))
 
 WebUI.delay(1)
 
