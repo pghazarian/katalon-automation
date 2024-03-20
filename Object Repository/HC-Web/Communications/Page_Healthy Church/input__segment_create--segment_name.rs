@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Log Out_segment--search_input</name>
+   <name>input__segment_create--segment_name</name>
    <tag></tag>
-   <elementGuidId>a4b19900-33ba-4ce9-a0ca-55e3282db9eb</elementGuidId>
+   <elementGuidId>318be495-037b-44a9-b9b8-8b61a445290d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='segment--search_input']</value>
+         <key>CSS</key>
+         <value>#segment_create--segment_name</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#segment--search_input</value>
+         <key>XPATH</key>
+         <value>//input[@id='segment_create--segment_name']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,31 +22,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>2fdeb61e-644e-469a-acb5-b3496353c0d0</webElementGuid>
+      <webElementGuid>afbe7d69-1f53-40d4-8ec4-af4a658d7fd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-testid</name>
       <type>Main</type>
-      <value>cmui--search_input</value>
-      <webElementGuid>338efb8c-100a-42eb-9935-241098a75cfa</webElementGuid>
+      <value>segment_create--input_segment_name</value>
+      <webElementGuid>8cab4c3d-f408-48bc-91f8-0029c6223634</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>segment--search_input</value>
-      <webElementGuid>f28ece07-bc15-47c1-8f53-876dacba3277</webElementGuid>
+      <value>segment_create--segment_name</value>
+      <webElementGuid>051efb73-0996-467a-a3d2-f8f24cb5cdbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>maxlength</name>
       <type>Main</type>
-      <value>Search</value>
-      <webElementGuid>1539228e-8c55-4f14-ab52-43a122fc5aa8</webElementGuid>
+      <value>250</value>
+      <webElementGuid>bb1b55d6-5735-4824-94fe-7a9e94ae1b73</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,46 +54,38 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>9c4eed72-ac9d-4a07-bb50-78847e1c668c</webElementGuid>
+      <webElementGuid>61aa784f-8bbc-4b70-8582-58af6135e8e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;segment--search_input&quot;)</value>
-      <webElementGuid>911f44fe-7bc3-4751-bafe-72703f3a9b1b</webElementGuid>
+      <value>id(&quot;segment_create--segment_name&quot;)</value>
+      <webElementGuid>23b89104-b973-40d6-9e91-7c5231d46be9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='segment--search_input']</value>
-      <webElementGuid>c7b69cf1-3f1e-4f33-86de-fe60dce7cbb2</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/header/div/div/div[3]/div/div/input</value>
-      <webElementGuid>a98d3c9b-9ed8-413e-8db7-99b7e405f4c3</webElementGuid>
+      <value>//input[@id='segment_create--segment_name']</value>
+      <webElementGuid>06f400a5-49db-47cb-b87c-a481767e0789</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/input</value>
-      <webElementGuid>455bedce-7744-44c3-bf6e-8b5611fa2ae6</webElementGuid>
+      <value>//section/div/div/div[2]/div/input</value>
+      <webElementGuid>90992f72-f965-457c-9c8f-975fa5819caf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'segment--search_input' and @placeholder = 'Search' and @type = 'text']</value>
-      <webElementGuid>d239f75f-4342-46c6-9c9f-10ad749b61b8</webElementGuid>
+      <value>//input[@id = 'segment_create--segment_name' and @type = 'text']</value>
+      <webElementGuid>f3b7eee6-7b0e-4cb1-841a-b83b4de8f342</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
