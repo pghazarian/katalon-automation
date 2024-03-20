@@ -3,7 +3,7 @@
    <description></description>
    <name>Log In or Create an Account Button</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>bea722c0-3e03-4ddb-8d57-bca4e036e858</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeOther</value>
-      <webElementGuid>22ba68e3-75ce-4ecc-88aa-316a8cf06e35</webElementGuid>
+      <webElementGuid>18442371-3b42-414f-af13-5b2a5bb61af3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +20,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>0e08301a-846f-46e7-bf82-69c53fdf9714</webElementGuid>
+      <webElementGuid>a4bb4cb7-2fb4-4b19-bc46-8ac5f4a146bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,7 +28,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>b16ca485-1b02-4cdc-93b7-f50d5facbdd4</webElementGuid>
+      <webElementGuid>1024bdc2-beec-4477-a66d-e10228d473ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>height</name>
       <type>Main</type>
       <value>90.0</value>
-      <webElementGuid>b29c66f2-09a5-48fc-b6a5-4b445d8a49fd</webElementGuid>
+      <webElementGuid>3958828c-fd6e-483b-8f55-3f0e8d9b29a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +44,7 @@
       <name>index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>df82c0f3-20d8-4908-a152-090dfe1402a2</webElementGuid>
+      <webElementGuid>1d325d42-5db2-4f0c-aaf2-32e45d4ad6af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>label</name>
       <type>Main</type>
       <value>Log In or Create an Account</value>
-      <webElementGuid>f7e86314-e1a5-4899-97e1-52b51552913e</webElementGuid>
+      <webElementGuid>99425e12-5371-4452-ba3e-80fbaefb2472</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <name>name</name>
       <type>Main</type>
       <value>Log In or Create an Account</value>
-      <webElementGuid>cc726ebc-d5f1-47bf-bc97-2a39800f7f31</webElementGuid>
+      <webElementGuid>f6c479a7-b8c6-438f-97b4-c837206dddf9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,7 +68,7 @@
       <name>width</name>
       <type>Main</type>
       <value>698.0</value>
-      <webElementGuid>af04e8e4-0003-42ee-9cc7-90e0241c38f9</webElementGuid>
+      <webElementGuid>4c615614-362f-4d20-803e-038956572637</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -76,7 +76,7 @@
       <name>x</name>
       <type>Main</type>
       <value>44.0</value>
-      <webElementGuid>90738d6c-9390-41f3-acd9-ee7d8c276913</webElementGuid>
+      <webElementGuid>6f76adb4-0284-4b20-8006-b29f28cf3655</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -84,7 +84,7 @@
       <name>y</name>
       <type>Main</type>
       <value>1548.0</value>
-      <webElementGuid>5a81f6cc-c698-4d8c-a074-36a6f6a60540</webElementGuid>
+      <webElementGuid>7f4b11ff-88ad-4dc3-9d1a-80a8c0d9f790</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -92,8 +92,8 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]</value>
-      <webElementGuid>aafbd55a-0f2c-4707-a32d-13519299e9c5</webElementGuid>
+      <webElementGuid>d8f058b7-cb9f-47e8-bdbe-aa0af5cd6bae</webElementGuid>
    </webElementProperties>
    <locator>//*[@type = 'XCUIElementTypeOther' and @label = 'Log In or Create an Account' and @name = 'Log In or Create an Account']</locator>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

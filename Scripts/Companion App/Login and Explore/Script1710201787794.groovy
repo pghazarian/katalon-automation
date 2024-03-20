@@ -47,7 +47,7 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Login/Sign In Button'
 Mobile.tap(findTestObject('Companion App/Nav/Home Button'), 0)
 
 'Navigate to Journey'
-Mobile.tap(findTestObject('Object Repository/Companion App/Nav/Journey Button'), 0)
+Mobile.tap(findTestObject('Companion App/Nav/Journey Button'), 0)
 
 'Verify the Journey title'
 Mobile.verifyElementText(findTestObject('Object Repository/Companion App/Misc/Journey Heading'), 'Journey')
