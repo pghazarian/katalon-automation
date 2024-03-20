@@ -24,40 +24,51 @@ Mobile.startExistingApplication('com.healthychurch.companion.development')
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Create Account or Login Button'), 0)
 
 'Enter user credentials email address.'
-Mobile.setText(findTestObject('Object Repository/Companion App/Android/User Email Text Entry'), 'sbchcqa@gmail.com', 0)
+Mobile.setText(findTestObject('Object Repository/Companion App/Android/User Email Text Entry'), GlobalVariable.Admin_UserName, 
+    0)
 
 'Enter user credentials password'
-Mobile.setText(findTestObject('Object Repository/Companion App/Android/Password Edit Text'), 'QA@dm1n*3', 0)
+Mobile.setEncryptedText(findTestObject('Object Repository/Companion App/Android/Password Edit Text'), GlobalVariable.Admin_Password, 
+    0)
+
+Mobile.hideKeyboard()
 
 'tap the sign in button'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Login Sign In Button'), 0)
 
 'tap on the Journey navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Journey Navigation Button'), 0)
+
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Journey Heading'), 0)
 
 'tap on the Profile navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Profile Navigation Button'), 0)
+
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Profile Heading'), 0)
 
 'tap on the Discover navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Discover Navigation Button'), 0)
+
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Discover Heading'), 0)
 
 'tap on the Groups navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Groups Navigation Button'), 0)
+
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Groups Heading'), 0)
 
 'tap on the Ministries navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Ministries Navigation Button'), 0)
+
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Ministries Heading'), 0)
 
 'tap on the Events navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Events Navigation Button'), 0)
+
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Events Heading'), 0)
 
 'tap on the Home navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Home Navigation Button'), 0)
+
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Home Heading'), 0)
 
 'tap on the Home page log out button.'
