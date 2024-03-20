@@ -129,7 +129,7 @@
       <guid>1a7028f8-53d2-49b1-9b50-95d23f9ef43e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/People/People Search</testCaseId>
+      <testCaseId>Test Cases/HC-Web/People/Person Search/People Search</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
