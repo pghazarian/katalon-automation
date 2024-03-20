@@ -17,25 +17,32 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def strFollowUpTaskPersonName = GlobalVariable.Follow_Up_Task_Person_First_Name + "  " + GlobalVariable.Follow_Up_Task_Person_Last_Name
+def strFollowUpTaskPersonName = (GlobalVariable.Follow_Up_Task_Person_First_Name + '  ') + GlobalVariable.Follow_Up_Task_Person_Last_Name
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/data-capture/connection-forms'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), GlobalVariable.Follow_Up_Connection_Form_Name)
-
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), Keys.chord(Keys.ENTER))
 
+'Search for the Connection Form (for followup)'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), GlobalVariable.Follow_Up_Connection_Form_Name)
+
+'Open Connection Form record'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/List/QA Automation Follow Up Test List Item'))
 
+'Go to the Entries tab'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Entries Tab Button'))
 
+'Click the New Entry button'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Entry Button'))
 
+'Select the "No Event Associated" button'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Event Association Modal/No Event Associated Button'))
 
+'Click Next button'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Person Entry Type Modal/Next Button'))
+
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
     GlobalVariable.Follow_Up_Task_Person_First_Name)
