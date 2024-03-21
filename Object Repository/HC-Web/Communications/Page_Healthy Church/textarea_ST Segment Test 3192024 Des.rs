@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>textarea_ST Segment Test 3192024 Des</name>
+   <tag></tag>
+   <elementGuidId>69a404bc-6396-438d-befc-ac528b169044</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#segment_create--description</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//textarea[@id='segment_create--description']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>60bb73e1-1483-4b89-8663-2cc27af19f9e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>segment_create--description</value>
+      <webElementGuid>5d5d42d6-c6e6-43b9-9618-d0bea8d5aaec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>1000</value>
+      <webElementGuid>e3bbef46-aa62-4ca4-8f1a-69ea4312dc66</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ST Segment Test 3192024 Des</value>
+      <webElementGuid>5bd54c9a-75db-4d20-8c7e-3f2f9768f75e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;segment_create--description&quot;)</value>
+      <webElementGuid>d26ac839-3419-4693-84fa-406539446a1f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//textarea[@id='segment_create--description']</value>
+      <webElementGuid>8f73a645-3592-41b7-93d0-b2507d3d3cab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::textarea[1]</value>
+      <webElementGuid>fed2bc24-2e21-4116-b777-96ccd6ad5d43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/following::textarea[1]</value>
+      <webElementGuid>22fc3a24-2c43-4fa6-8263-7741f9dd3d3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>171ab8ec-3f15-47b8-8e91-005ad32a83cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='ST Segment Test 3192024 Des']/parent::*</value>
+      <webElementGuid>5e53c70e-b46b-4fb9-a447-14ee4c5a9f13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//textarea</value>
+      <webElementGuid>86b4f25b-d262-4083-8564-2ad78824862d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[@id = 'segment_create--description' and (text() = 'ST Segment Test 3192024 Des' or . = 'ST Segment Test 3192024 Des')]</value>
+      <webElementGuid>9538aa0c-ffa5-424b-a6bd-b828a03cce84</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
