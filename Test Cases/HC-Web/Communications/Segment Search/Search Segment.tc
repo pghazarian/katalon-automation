@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Test case to search for a segment</description>
    <name>Search Segment</name>
    <tag></tag>
    <comment></comment>
