@@ -76,9 +76,9 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/First Ann
 'Confirm announcement attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Selected Announcement Button'))
 
-WebUI.click(findTestObject('Object Repository/Page_Healthy Church/a_Remove'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/a_Remove'))
 
-WebUI.click(findTestObject('Object Repository/Page_Healthy Church/div_Yes'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/div_Yes'))
 
 'Click the button to add a song as an attachment'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Button'))
@@ -89,9 +89,9 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song 
 'Confirm song attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Song Search Add Button'))
 
-WebUI.click(findTestObject('Object Repository/Page_Healthy Church/a_Remove'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/a_Remove'))
 
-WebUI.click(findTestObject('Object Repository/Page_Healthy Church/div_Yes'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/div_Yes'))
 
 'Click the button to add a service'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Association Button'))
