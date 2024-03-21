@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TableRow</name>
+   <name>Segment Create Button</name>
    <tag></tag>
-   <elementGuidId>0a960e6f-4c81-4360-bbbb-3d416dd0e461</elementGuidId>
+   <elementGuidId>60a4c043-0128-4e64-b66a-1b6e243a3183</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#data_grid--table_segments--page_data_grid_cell_base-2_0 > h4.MuiTypography-root.MuiTypography-h4</value>
+         <value>#segment_create__save_button > span.button-inner-container.jss208 > span</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h4[text()=&quot;${SegmentName}&quot;]</value>
+         <value>//button[@id='segment_create__save_button']/span/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,95 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>h4</value>
-      <webElementGuid>b9aa7e3a-eebc-4a56-a99c-8968bfade5f5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>MuiTypography-root MuiTypography-h4</value>
-      <webElementGuid>449d719c-a21e-45c0-971e-36b1fd7fc7b1</webElementGuid>
+      <value>span</value>
+      <webElementGuid>58d9006a-c1bb-4a6a-bd66-b3bed0c4ee4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>ST Record 1</value>
-      <webElementGuid>f614ac6f-786f-4d5c-8e1e-3e90a47aa7a3</webElementGuid>
+      <value>Create</value>
+      <webElementGuid>6b6b7b4a-6c74-4825-8e43-c8b5f44dc970</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;data_grid--table_segments--page_data_grid_cell_base-2_0&quot;)/h4[@class=&quot;MuiTypography-root MuiTypography-h4&quot;]</value>
-      <webElementGuid>577541c9-3e12-476e-9c84-2376d104389d</webElementGuid>
+      <value>id(&quot;segment_create__save_button&quot;)/span[@class=&quot;button-inner-container jss208&quot;]/span[1]</value>
+      <webElementGuid>8395c43c-cee8-4020-9b48-6ed4706f6561</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//td[@id='data_grid--table_segments--page_data_grid_cell_base-2_0']/h4</value>
-      <webElementGuid>53b8dd75-d6c3-4183-adad-9db4ef6171c0</webElementGuid>
+      <value>//button[@id='segment_create__save_button']/span/span</value>
+      <webElementGuid>7a4f6da0-c409-475d-98fd-38a8677818ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email Template'])[1]/following::h4[1]</value>
-      <webElementGuid>2e016590-ade9-427f-8d21-254a1f5c5d57</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[2]</value>
+      <webElementGuid>589892c0-3545-4894-bedd-0aee8b2d4ca0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Modified'])[1]/following::h4[1]</value>
-      <webElementGuid>615ed4bb-9cc6-44b8-8312-2803c9db071b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create Segment Record'])[1]/following::span[4]</value>
+      <webElementGuid>7d9959ca-5ae4-475e-8dfe-fdb7891c0fc4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::h4[1]</value>
-      <webElementGuid>05d84ccb-d502-4d9b-a69a-98f8fdc0e0ed</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Segment Info'])[1]/preceding::span[1]</value>
+      <webElementGuid>434cbf84-b14e-43a2-9e32-94985410a239</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ST Record 10'])[1]/preceding::h4[1]</value>
-      <webElementGuid>71387473-eac3-4e2e-a395-e275218f9953</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/preceding::span[1]</value>
+      <webElementGuid>ca8f1cfe-38b2-4fed-9515-b47104596e40</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='ST Record 1']/parent::*</value>
-      <webElementGuid>f8e81316-66e9-4d62-b0c6-ae6345565540</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Create']/parent::*</value>
+      <webElementGuid>f6c78814-de4d-45ac-8c7b-b2a396b31462</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/h4</value>
-      <webElementGuid>6b74f929-1c16-4f93-8647-194b8941b3f1</webElementGuid>
+      <value>//div[2]/button/span/span</value>
+      <webElementGuid>422752ed-1baa-4e07-80e3-50b317bfc191</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h4[(text() = 'ST Record 1' or . = 'ST Record 1')]</value>
-      <webElementGuid>2846bcaf-40bb-4d96-99ed-a37fd479a5c7</webElementGuid>
+      <value>//span[(text() = 'Create' or . = 'Create')]</value>
+      <webElementGuid>b6c43501-ad17-40fe-86f7-28a03c409eb7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

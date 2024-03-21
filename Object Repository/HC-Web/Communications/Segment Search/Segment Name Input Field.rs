@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__segment_create--segment_name</name>
+   <name>Segment Name Input Field</name>
    <tag></tag>
    <elementGuidId>318be495-037b-44a9-b9b8-8b61a445290d</elementGuidId>
    <selectorCollection>

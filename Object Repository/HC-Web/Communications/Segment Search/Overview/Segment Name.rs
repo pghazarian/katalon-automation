@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SegmentDescription</name>
+   <name>Segment Name</name>
    <tag></tag>
-   <elementGuidId>dd2e1e0c-56ba-41f3-ace9-65e5f4f90341</elementGuidId>
+   <elementGuidId>7eeccce9-a8f9-4095-8607-f77822eb8a30</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//h2[text()=&quot;${SegmentName}&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//h5[text()=&quot;${SegmentDescription}&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

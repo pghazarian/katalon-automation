@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>p_Communications(beta)</name>
+   <name>Create Segment Button</name>
    <tag></tag>
-   <elementGuidId>1711e711-d412-4b3a-a109-079978c47ad9</elementGuidId>
+   <elementGuidId>2271c3b9-d3ef-4fd5-ab0e-6e174d078a38</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>span.button-inner-container.jss246</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div/p</value>
+         <value>//button[@id='segment--create-query_button']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,79 +21,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>3794d5f2-2f32-4410-984b-822df7d85216</webElementGuid>
+      <value>span</value>
+      <webElementGuid>9a0cc8b8-bc21-4891-a34e-26dda30d0b9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root section-label MuiTypography-body1</value>
-      <webElementGuid>5f2582f7-b9a5-46ca-82f3-13b45fc048a7</webElementGuid>
+      <value>button-inner-container jss246</value>
+      <webElementGuid>b9a1a13e-1a3d-48a8-b565-251e7f13c02c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Communications(beta)</value>
-      <webElementGuid>a408d24f-ad47-44c5-a094-fe70a823b0e2</webElementGuid>
+      <value>plusCreate Segment</value>
+      <webElementGuid>6d12fe6e-5444-47ab-b156-2a75e571b474</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]/p[@class=&quot;MuiTypography-root section-label MuiTypography-body1&quot;]</value>
-      <webElementGuid>fda0de2c-c024-4074-8cd4-228332638ce5</webElementGuid>
+      <value>id(&quot;segment--create-query_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
+      <webElementGuid>2f560925-1e9a-4aa4-8494-fca432ec43f7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div/p</value>
-      <webElementGuid>60d70dad-e57b-44aa-a52f-964b16838912</webElementGuid>
+      <value>//button[@id='segment--create-query_button']/span</value>
+      <webElementGuid>1c93a1d0-33ff-4fb7-a711-91e2d2fad6a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Event Catalogs'])[1]/following::p[1]</value>
-      <webElementGuid>9098515a-659c-4ef7-a1a7-b0762fccaee6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log Out'])[1]/following::span[4]</value>
+      <webElementGuid>8105a016-d4b8-4035-975e-93f5575dfb63</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Settings &amp; Preferences'])[2]/following::p[1]</value>
-      <webElementGuid>a02fc252-4def-48f0-840c-96e88057a549</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::span[4]</value>
+      <webElementGuid>2f077bf6-f01c-4123-9011-a9377c4a4ef4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Communications']/parent::*</value>
-      <webElementGuid>e78f2f2d-63fb-47e4-a8e9-409eb3b701bb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Demographic'])[1]/preceding::span[2]</value>
+      <webElementGuid>5e913f04-9fbd-4d43-88e1-d5e7e0add4a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[5]/div/p</value>
-      <webElementGuid>430fc841-1a8d-4823-90e3-fe5f3a71c2e5</webElementGuid>
+      <value>//div[4]/button/span</value>
+      <webElementGuid>2a17b76b-0bbb-480b-bf91-850f49e18af8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Communications(beta)' or . = 'Communications(beta)')]</value>
-      <webElementGuid>786f89d3-6988-4024-bd25-3d1a9b23bd04</webElementGuid>
+      <value>//span[(text() = 'plusCreate Segment' or . = 'plusCreate Segment')]</value>
+      <webElementGuid>4b977118-97e9-41a6-a785-64680ba5b8ee</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

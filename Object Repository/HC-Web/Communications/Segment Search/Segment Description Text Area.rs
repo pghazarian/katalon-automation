@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>textarea_ST Segment Test 3192024 Descrip</name>
+   <name>Segment Description Text Area</name>
    <tag></tag>
-   <elementGuidId>53de8a07-1b3b-46fc-8f53-a24771a5dfdb</elementGuidId>
+   <elementGuidId>9d536354-1682-4dd8-8d7c-c1d67d15f0cb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>textarea</value>
-      <webElementGuid>ca34b0bc-87d8-4372-819d-b3ea98bf1e77</webElementGuid>
+      <webElementGuid>27b0ec2b-d69d-42cf-8ecd-8a7a87957d27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>segment_create--description</value>
-      <webElementGuid>1d7672af-f1dc-45ac-b923-364c4e4e69bf</webElementGuid>
+      <webElementGuid>71ac23f4-a00b-4fe0-9970-824d62f1d928</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +38,15 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>1000</value>
-      <webElementGuid>764f1994-9998-4251-8e72-ab0ff9fb9b80</webElementGuid>
+      <webElementGuid>7325e55b-9fef-4d6d-9d95-da865e532615</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>ST Segment Test 3192024 Descrip</value>
-      <webElementGuid>af3c3264-c7c0-40e2-b070-e4ec1177c6cf</webElementGuid>
+      <value>ST Segment Test 3192024 Description</value>
+      <webElementGuid>05503b93-82be-4cc7-80a0-f156867570c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;segment_create--description&quot;)</value>
-      <webElementGuid>39cf8303-eebb-496f-9f63-560cbd3e80fd</webElementGuid>
+      <webElementGuid>1f995dcb-aae7-4f1b-b901-400097526220</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//textarea[@id='segment_create--description']</value>
-      <webElementGuid>a2c65187-11c5-42a9-910e-353a27b02e3d</webElementGuid>
+      <webElementGuid>6189a3f4-2faa-49dd-9f1a-c81aac16a1f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::textarea[1]</value>
-      <webElementGuid>fd5f6a99-f709-4fc5-9eb6-81944c48043b</webElementGuid>
+      <webElementGuid>33972142-56df-4823-92af-dfe50a0af2c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/following::textarea[1]</value>
-      <webElementGuid>87e55f8b-0c17-40ad-bce8-c07926a9218d</webElementGuid>
+      <webElementGuid>c8261497-3206-4814-9eec-169d09d4f45a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,15 +86,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/preceding::textarea[1]</value>
-      <webElementGuid>90e64928-9031-47ed-8c7e-22f33ca23563</webElementGuid>
+      <webElementGuid>c365a4c4-e319-4659-977b-9cc07e81fb4f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='ST Segment Test 3192024 Descrip']/parent::*</value>
-      <webElementGuid>d73a265a-3d73-426f-ad00-a002a33276c3</webElementGuid>
+      <value>//*/text()[normalize-space(.)='ST Segment Test 3192024 Description']/parent::*</value>
+      <webElementGuid>cf144167-d4a5-40a7-9f86-07c1b89bc9e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,14 +102,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//textarea</value>
-      <webElementGuid>86e6c5aa-8bd8-4695-b8c5-9b9d93c6bd4b</webElementGuid>
+      <webElementGuid>790148b1-6238-4b05-8a8c-c016f9a5b034</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//textarea[@id = 'segment_create--description' and (text() = 'ST Segment Test 3192024 Descrip' or . = 'ST Segment Test 3192024 Descrip')]</value>
-      <webElementGuid>b7b0a892-ab04-4397-8f83-7a06785c97d2</webElementGuid>
+      <value>//textarea[@id = 'segment_create--description' and (text() = 'ST Segment Test 3192024 Description' or . = 'ST Segment Test 3192024 Description')]</value>
+      <webElementGuid>64b6bb76-e13d-477e-8d8f-c145af74011f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
