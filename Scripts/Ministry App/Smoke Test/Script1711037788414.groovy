@@ -52,10 +52,6 @@ driver.pressKeyCode(AndroidKeyCode.ENTER)
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/Search Result Person Name'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/android.widget.TextView - Results'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.widget.TextView - Sarkis Sanger'), 0)
-
 Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/android.widget.TextView - Sarkis Sanger (1)'), 
     0)
 
@@ -63,11 +59,13 @@ Mobile.verifyElementText(findTestObject('Object Repository/Ministry App/android.
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (2)'), 0)
 
-Mobile.switchToNative()
-
 Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (3)'), 0)
 
 Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/android.widget.TextView - Hey Paren,'), 0)
 
-Mobile.closeApplication()
+Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (1)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (1)'), 0)
 
