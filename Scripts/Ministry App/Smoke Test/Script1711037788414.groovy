@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import io.appium.java_client.android.AndroidDriver as AndroidDriver
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
 Mobile.startApplication('C:\\Users\\paren\\Desktop\\MA 1.18.0 DEV build 98994.apk', true)
 
@@ -36,34 +40,21 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Continue Button'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/Got It Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup'), 0)
-
-Mobile.switchToNative()
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Ministry App/android.widget.EditText - Looking for Someone'), 0)
-
-Mobile.switchToNative()
 
 Mobile.setText(findTestObject('Object Repository/Ministry App/android.widget.EditText - Looking for Someone'), 'Sarkis', 
     0)
 
-Mobile.switchToNative()
+//Mobile.sendKeys(findTestObject('Ministry App/android.widget.EditText - Looking for Someone'), '\n')
+AndroidDriver<?> driver = MobileDriverFactory.getDriver()
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (1)'), 0)
+driver.pressKeyCode(AndroidKeyCode.ENTER)
 
-Mobile.switchToNative()
-
-Mobile.switchToNative()
-
-Mobile.switchToNative()
+Mobile.tap(findTestObject('Object Repository/Ministry App/Search Result Person Name'), 0)
 
 Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/android.widget.TextView - Results'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/android.widget.TextView - Sarkis Sanger'), 0)
-
-Mobile.switchToNative()
 
 Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/android.widget.TextView - Sarkis Sanger (1)'), 
     0)
