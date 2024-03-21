@@ -17,19 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def strFollowUpTaskPersonName = (GlobalVariable.Follow_Up_Task_Person_First_Name + '  ') + GlobalVariable.Follow_Up_Task_Person_Last_Name
+def FollowUpTaskPersonName = "$GlobalVariable.Follow_Up_Task_Person_First_Name $GlobalVariable.Follow_Up_Task_Person_Last_Name"
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/data-capture/connection-forms'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), Keys.chord(Keys.ENTER))
-
 'Search for the Connection Form (for followup)'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), GlobalVariable.Follow_Up_Connection_Form_Name)
 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), Keys.chord(Keys.ENTER))
+
 'Open Connection Form record'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/List/QA Automation Follow Up Test List Item'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/List/List Item By Name Match', [('textToMatch') : GlobalVariable.Follow_Up_Connection_Form_Name]))
 
 'Go to the Entries tab'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Entries Tab Button'))
@@ -43,33 +43,44 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Con
 'Click Next button'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Person Entry Type Modal/Next Button'))
 
+WebUI.delay(3)
 
+'Enter the Person\'s name to be assigned to the Connection Form Entry'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
     GlobalVariable.Follow_Up_Task_Person_First_Name)
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Person Search LastName Text Entry'), 
     GlobalVariable.Follow_Up_Task_Person_Last_Name)
 
+'Search for the Person'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Search Button'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Add Entry First Search Results'))
+'Select the person summary row'
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Summary Panel Name Match', [('textToMatch') : FollowUpTaskPersonName]))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Select Button'))
+'After that, click the Select button button on that person summary row'
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Details Panel Button Match', [('textToMatch') : FollowUpTaskPersonName]))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Yes Confirmation Button'))
+//WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Select Button'))
+'Confirm the Selection '
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Summary Panel Yes Confirmation Button Match', [('textToMatch') : FollowUpTaskPersonName]))
 
+'Click the Add Entry Button'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Button'))
 
+'Click the "I\'m Done" button to advance to this point'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Im Done Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Navigation Logo Image Button'))
 
-WebUI.refresh()
+//WebUI.refresh()
 
+'Click on the My Follow Up menu item'
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Menu Item'))
 
+'Click on the Unclamfiep menu item'
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Unclaimed Tab Button'))
 
 WebUI.delay(3)
@@ -78,7 +89,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups
 
 WebUI.delay(3)
 
-WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$strFollowUpTaskPersonName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
+WebUI.click(findTestObject('HC-Web/My Follow Ups/Table Row Check Input By Name Match', [('textToMatch') : FollowUpTaskPersonName]))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Unclaimed/Unclaimed Follow Up Task Claim Drop Down'))
 
@@ -88,9 +99,30 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Active Tab Bu
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Unclaimed/QA Automation Follow Up Rule Task List Item'))
 
-WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$strFollowUpTaskPersonName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
+'Select follow ups record by person name to open drawer'
+WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', [('textToMatch') : FollowUpTaskPersonName]))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Follow Up Successful Button'))
+'Click More Actions... button'
+WebUI.click(findTestObject('Object Repository/HC-Web/Shared Component/Person Record Drawer/Actions/More Actions Button'))
+
+'Click Reassign button'
+WebUI.click(findTestObject('Object Repository/HC-Web/Shared Component/Person Record Drawer/Actions/Reassign Button'))
+
+'Login as the other Admin'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin2_UserName
+		, ('Password') : GlobalVariable.Admin2_Password, ('TargetPath') : '/my-dashboard/follow-ups/unclaimed', ('ForceLogin') : true], FailureHandling.STOP_ON_FAILURE)
+
+//WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Follow Up Successful Button'))
+
+'Open the Upcoming Follow Ups' 
+WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Unclaimed/QA Automation Follow Up Rule Task List Item'))
+
+'Select follow ups record by person name to open drawer'
+WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', [('textToMatch') : FollowUpTaskPersonName]))
+
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Shared Component/Person Record Drawer/Person Full Name'), FollowUpTaskPersonName)
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Shared Component/Person Record Drawer/Actions/Successful Button'))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Active Follow Up Completed Banner'))
 

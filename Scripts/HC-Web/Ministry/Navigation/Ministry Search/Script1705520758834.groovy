@@ -52,15 +52,9 @@ WebUI.click(findTestObject('HC-Web/Page_Healthy Church/button_MinistryLocation_V
 
 WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Details/BreadCrumbMinistryName'), MinistryName)
 
-PersonTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', 
-    MemberName, 1)
 
-PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
-
-'Verify the member person\'s name in the table'
-WebUI.verifyEqual(PersonName, MemberName)
-
-WebUI.click(PersonTableCellObject)
+'Verify the member person\'s name in the table and click Row'
+WebUI.click(findTestObject('HC-Web/My Follow Ups/Table Row Check Input By Name Match', [('textToMatch') : MemberName]))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
@@ -69,15 +63,8 @@ CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Ministry/Details/Subnav_MoreEllipsis'),
 	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Interested']"))
 
-PersonTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'dashboard-activity-list\')]/div/div/div/table/tbody/tr/td/span/div/div', 
-    InterestedName, 1)
-
-PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
-
 'Verify the interested person\'s name in the table'
-WebUI.verifyEqual(PersonName, InterestedName)
-
-WebUI.click(PersonTableCellObject)
+WebUI.click(findTestObject('HC-Web/My Follow Ups/Table Row Check Input By Name Match', [('textToMatch') : MemberName]))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 

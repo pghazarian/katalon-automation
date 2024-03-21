@@ -109,4 +109,14 @@
       <initValue>'27471'</initValue>
       <name>EventId_CheckIn</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'crisf@saddleback.com'</initValue>
+      <name>Admin2_UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Z8nazMpc16177aX9xH8qZQ=='</initValue>
+      <name>Admin2_Password</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
