@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Yes</name>
+   <name>Remove Prompt Yes button</name>
    <tag></tag>
    <elementGuidId>2e89c87d-1c4a-4625-aa0e-9de6aa5b62ad</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+         <value>//div[contains(@class, 'prompt-show')]//div[@class='prompt-yes-btn']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>2c97f0cf-fb16-4f4a-8b67-4703db2ae797</webElementGuid>
+      <webElementGuid>f8807fd7-ec7f-4c6a-baf6-decaa70737fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>prompt-yes-btn</value>
-      <webElementGuid>2578213c-d1c5-475d-bdd9-d188c66c8db7</webElementGuid>
+      <webElementGuid>1709348d-b6b7-4734-8848-2b72ff3695de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +38,7 @@
       <name>role</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>73531a7c-092a-4d4a-997d-ac8e6a312e88</webElementGuid>
+      <webElementGuid>0d5c66e2-fedb-4160-bb70-4aa24c8ddce5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +46,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>2fe32617-341a-4b84-9c56-e67fdaf884f1</webElementGuid>
+      <webElementGuid>51b79ad5-19b6-4dad-ae55-8bb2315adb0c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Yes</value>
-      <webElementGuid>620b7dee-24d0-435e-a2dd-e6b2449e48f6</webElementGuid>
+      <webElementGuid>abfc6f11-7ca0-4430-980f-a141a1c1b47b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 question-drawer drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/section[@class=&quot;ui jss344 drawer--content&quot;]/table[@class=&quot;ui jss322 table table-basic table-stretch-very&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row&quot;]/td[@class=&quot;table-cell&quot;]/div[@class=&quot;ui prompt jss413 prompt-show prompt-inline&quot;]/div[@class=&quot;prompt-actions jss412&quot;]/div[@class=&quot;prompt-yes-btn&quot;]</value>
-      <webElementGuid>e64fc413-ac81-4063-9a50-4785715d81ff</webElementGuid>
+      <webElementGuid>a4bfbd84-4475-49c7-b8e2-23a896c404e6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +70,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/div/div[2]/div[2]</value>
-      <webElementGuid>177801e7-30b8-437e-96f6-3e9f4db28c33</webElementGuid>
+      <webElementGuid>d3b6b2b3-c749-4a68-b1b7-054dd7492480</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +78,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Yes' or . = 'Yes')]</value>
-      <webElementGuid>75d75a31-2dd4-495a-adb9-0e776d9079a8</webElementGuid>
+      <webElementGuid>d41a5cdf-b67b-44ad-b61b-38b4ee46ad35</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
