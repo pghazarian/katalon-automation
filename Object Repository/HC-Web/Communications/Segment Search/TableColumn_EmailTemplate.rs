@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'table--scroll_container')]/descendant::thead/tr/th/span[text()='Email Template' or . = 'Email Template']</value>
+         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Email Template' or . = 'Email Template']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
