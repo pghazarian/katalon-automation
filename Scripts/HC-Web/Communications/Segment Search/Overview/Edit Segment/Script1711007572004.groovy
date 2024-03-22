@@ -75,7 +75,7 @@ CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Save Button'))
 
 'Verify segment record updated toast is displayed'
-WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), 0)
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Edited Toast Text'), 
