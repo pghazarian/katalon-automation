@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Remove</name>
+   <name>Remove button</name>
    <tag></tag>
    <elementGuidId>4191d6e6-dfc5-4138-b676-7aeb4bd4bbdc</elementGuidId>
    <selectorCollection>
