@@ -43,5 +43,14 @@ CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@
 'Click button to save a new segment'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Create Button'))
 
+'Verify segment record added toast is displayed'
+WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), 0)
+
+'Verify the text in the toast message'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Added Toast Header'), 'Segment record added')
+
+'Verify the text in the toast message'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Added Toast Text'), 'You’ve successfully created and linked a new record')
+
 WebUI.closeBrowser()
 

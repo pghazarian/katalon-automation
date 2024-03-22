@@ -43,23 +43,27 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('
 'Click button to edit segment info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Segment Edit Button'))
 
-'Update segment name'
+'Select the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
     Keys.chord(Keys.CONTROL, 'a'))
 
+'Clear the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
     Keys.chord(Keys.BACK_SPACE))
 
+'Update segment name'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
     EditSegmentName)
 
-'Update segment description'
+'Select the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
     Keys.chord(Keys.CONTROL, 'a'))
 
+'Clear the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
     Keys.chord(Keys.BACK_SPACE))
 
+'Update segment description'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
     EditSegmentDescription)
 
@@ -69,6 +73,13 @@ CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@
 
 'Click button to save segment info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Save Button'))
+
+'Verify segment record updated toast is displayed'
+WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), 0)
+
+'Verify the text in the toast message'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Edited Toast Text'), 
+    'Segment data updated successfully')
 
 WebUI.closeBrowser()
 
