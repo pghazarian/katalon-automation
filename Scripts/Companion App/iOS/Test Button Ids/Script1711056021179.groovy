@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.healthychurch.companion.development')
 
-Mobile.tap(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeOther - button-one'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Button One'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeButton - OK'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeOther - button-two'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Button Three'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeButton - OK'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeOther - ui-button--three'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Button Two'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeButton - OK'), 0)
 
