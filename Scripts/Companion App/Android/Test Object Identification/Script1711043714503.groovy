@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.healthychurch.companion.development')
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Button One'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Button Three'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/android.widget.Button - OK'), 0)
 
@@ -27,9 +27,11 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/Button Two'),
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/android.widget.Button - OK'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Button Three'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Button One'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/android.widget.Button - OK'), 0)
+
+
 
 Mobile.closeApplication()
 
