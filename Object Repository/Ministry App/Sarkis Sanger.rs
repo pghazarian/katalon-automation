@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Search Result Person Name</name>
+   <name>Sarkis Sanger</name>
    <tag></tag>
    <elementGuidId>49945d5f-95a7-4679-9da7-8e0cafe51192</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

@@ -17,23 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open the App'
-Mobile.startApplication('C:\\Users\\paren\\Desktop\\Katalon\\MA 1.18.0 DEV build 98994.apk', true)
-
-'Tap Login button '
-Mobile.tap(findTestObject('Ministry App/Login button'), 0)
-
-Mobile.setText(findTestObject('Object Repository/Ministry App/Email Address text field'), 'pareng@saddleback.com', 5)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Ministry App/Password Text Field'), 0)
-
-Mobile.setEncryptedText(findTestObject('Ministry App/Password Text Field'), 'bGzvpoZCcaztWWDnaA3/tA==', 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/Sign In Button'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/Continue Button'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/Got It Button'), 0)
-

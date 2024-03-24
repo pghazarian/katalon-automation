@@ -21,41 +21,24 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
-Mobile.startApplication('C:\\Users\\paren\\Desktop\\MA 1.18.0 DEV build 98994.apk', true)
+WebUI.callTestCase(findTestCase('Ministry App/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Tap Login button '
-Mobile.tap(findTestObject('Ministry App/Login button'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/in the Looking for Someone text field'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Ministry App/Email Address text field'), 'pareng@saddleback.com', 5)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Ministry App/Password Text Field'), 0)
-
-Mobile.setEncryptedText(findTestObject('Ministry App/Password Text Field'), 'bGzvpoZCcaztWWDnaA3/tA==', 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/Sign In Button'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/Continue Button'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/Got It Button'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.widget.EditText - Looking for Someone'), 0)
-
-Mobile.setText(findTestObject('Object Repository/Ministry App/android.widget.EditText - Looking for Someone'), 'Sarkis', 
+Mobile.setText(findTestObject('Object Repository/Ministry App/in the Looking for Someone text field'), 'Sarkis', 
     0)
 
-//Mobile.sendKeys(findTestObject('Ministry App/android.widget.EditText - Looking for Someone'), '\n')
+//Mobile.sendKeys(findTestObject('Ministry App/in the Looking for Someone text field'), '\n')
 AndroidDriver<?> driver = MobileDriverFactory.getDriver()
 
 driver.pressKeyCode(AndroidKeyCode.ENTER)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Search Result Person Name'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Sarkis Sanger'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/android.widget.TextView - Sarkis Sanger (1)'), 
+Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Sarkis Sanger name exists'), 
     0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/Ministry App/android.widget.TextView - Sarkis Sanger (1)'), 'Sarkis Sanger')
+Mobile.verifyElementText(findTestObject('Object Repository/Ministry App/Sarkis Sanger name exists'), 'Sarkis Sanger')
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (2)'), 0)
 
