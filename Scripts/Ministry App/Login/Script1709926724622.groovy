@@ -21,19 +21,19 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startApplication(GlobalVariable.Ministry_App_Path, true)
 
 'Tap Login button '
-Mobile.tap(findTestObject('Ministry App/Login button'), 0)
+Mobile.tap(findTestObject('Ministry App/Login/Login button'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Ministry App/Email Address text field'), UserName, 5)
+Mobile.setText(findTestObject('Object Repository/Ministry App/Login/Email Address text field'), UserName, 5)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Ministry App/Password Text Field'), 0)
+Mobile.tap(findTestObject('Ministry App/Login/Password Text Field'), 0)
 
-Mobile.setEncryptedText(findTestObject('Ministry App/Password Text Field'), Password, 0)
+Mobile.setEncryptedText(findTestObject('Ministry App/Login/Password Text Field'), Password, 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Sign In Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Sign In Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Continue Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Continue Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Got It Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Got It Button'), 0)
 

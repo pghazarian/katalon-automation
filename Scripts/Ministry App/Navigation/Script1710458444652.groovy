@@ -19,11 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Ministry App/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Ministry App/People icon'), 0)
+Mobile.tap(findTestObject('Ministry App/Navigation/People icon'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Search icon'), 0)
+Mobile.tap(findTestObject('Ministry App/Navigation/Search icon'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Metrics icon'), 0)
+Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Home icon'), 0)
+Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
 

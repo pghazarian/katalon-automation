@@ -23,32 +23,35 @@ import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
 WebUI.callTestCase(findTestCase('Ministry App/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Looking for Someone and set text field'), 0)
+'Tap into the "Looking for Somebody" field'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Home Page/Person Search text field'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Ministry App/Looking for Someone and set text field'), 'Sarkis', 
-    0)
+'Enter text into the "Looking for Somebody" field'
+Mobile.setText(findTestObject('Object Repository/Ministry App/Home Page/Person Search text field'), 'Sarkis', 0)
 
-//Mobile.sendKeys(findTestObject('Ministry App/Looking for Someone and set text field'), '\n')
+//Mobile.sendKeys(findTestObject('Ministry App/Home Page/Person Search text field'), '\n')
 AndroidDriver<?> driver = MobileDriverFactory.getDriver()
 
+'Hit the Done or Enter key on the keyboard to initiate the search '
 driver.pressKeyCode(AndroidKeyCode.ENTER)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Sarkis Sanger'), 0)
+'Tap on person name to view record '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Search/Results/Person Name in Results'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Sarkis Sanger name text exists'), 
-    0)
+not_run: Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Person Record/Person Name'), 0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/Ministry App/Sarkis Sanger name text exists'), 'Sarkis Sanger')
+'Verify the name matches in the person record\'s drawer details \r\n'
+Mobile.verifyElementText(findTestObject('Object Repository/Ministry App/Person Record/Person Name'), 'Sarkis Sanger')
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (2)'), 0)
+'Back button on top left of Person Record'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Person Record/Back Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (3)'), 0)
+Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/android.widget.TextView - Hey Paren,'), 0)
+'This is the Hey "user\'s first name" message '
+Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Home Page/Welcome Message'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (1)'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (1)'), 0)
 
