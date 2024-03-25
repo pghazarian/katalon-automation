@@ -23,22 +23,22 @@ import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
 WebUI.callTestCase(findTestCase('Ministry App/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/in the Looking for Someone text field'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Looking for Someone and set text field'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Ministry App/in the Looking for Someone text field'), 'Sarkis', 
+Mobile.setText(findTestObject('Object Repository/Ministry App/Looking for Someone and set text field'), 'Sarkis', 
     0)
 
-//Mobile.sendKeys(findTestObject('Ministry App/in the Looking for Someone text field'), '\n')
+//Mobile.sendKeys(findTestObject('Ministry App/Looking for Someone and set text field'), '\n')
 AndroidDriver<?> driver = MobileDriverFactory.getDriver()
 
 driver.pressKeyCode(AndroidKeyCode.ENTER)
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/Sarkis Sanger'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Sarkis Sanger name exists'), 
+Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Sarkis Sanger name text exists'), 
     0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/Ministry App/Sarkis Sanger name exists'), 'Sarkis Sanger')
+Mobile.verifyElementText(findTestObject('Object Repository/Ministry App/Sarkis Sanger name text exists'), 'Sarkis Sanger')
 
 Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (2)'), 0)
 

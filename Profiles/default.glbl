@@ -104,4 +104,9 @@
       <initValue>'27471'</initValue>
       <name>EventId_CheckIn</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'App Files\\Ministry App\\MA Latest.apk'</initValue>
+      <name>Ministry_App_Path</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
