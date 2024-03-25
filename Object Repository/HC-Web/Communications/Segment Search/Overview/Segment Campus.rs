@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TableColumn_Campus</name>
+   <name>Segment Campus</name>
    <tag></tag>
-   <elementGuidId>383dae87-6250-4bc1-ac39-1b84bfe971cf</elementGuidId>
+   <elementGuidId>ae0906cb-8a25-41e3-8998-609216a16592</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Campus' or . = 'Campus']</value>
+         <value>//h5[text()=&quot;Lake Forest&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

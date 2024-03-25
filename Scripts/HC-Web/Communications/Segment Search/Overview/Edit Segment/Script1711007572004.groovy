@@ -81,5 +81,16 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Edited Toast Text'), 
     'Segment data updated successfully')
 
+'Verify the updated segment name is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Name', [('SegmentName') : EditSegmentName]), 
+    EditSegmentName)
+
+'Verify the updated segment description is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Description', [('SegmentDescription') : EditSegmentDescription]), 
+    EditSegmentDescription)
+
+'Verify the updated segment campus is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Lake Forest')
+
 WebUI.closeBrowser()
 
