@@ -19,15 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 /*
  1. Launch Companion App
- 2. Log into Companion App
+ 2. Log into Companion App with a user who has journeys not started, in progress and completed statuses.
  3. Tap on Journey Navigation button
  4. Tap on the Browse Journeys tab 
  5. Verify a list of all published journeys is listed and item content is correct
- 6. Type the name of a specific journey into the search text entry
- 7. Verify that the search journey shows up as the only item in the list
- 8. Sort the list of journeys by each available type
- 9. Verify the list is displaying by sort type
- 10.Filter the list of journeys by each filtering criteria
- 11. Verify the list is displaying all journeys that match filtering criteria 
- 12. close the app
+ 6. Tap on Journey that has not been started
+ 7. Verify that the Journey Details are as defined and Start Journey button is displayed
+ 8. Tap on Back button to get back to the Journey List
+ 9. Tap on a Journey that is in progress
+ 10. Verify that the Journey Details are as defined with In Progress status text and View Pathway and Stop Journey Buttons are displayed.
+ 11. Tap on Back button to get back to the Journey List
+ 12. Tap on a Journey that has been completed
+ 13. Verify that the Journey Details are as defined with Completed status text and only View Pathway Button is displayed
+ 14. close the app
  */
