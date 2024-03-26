@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Import and Export People Rendering</name>
-   <tag></tag>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>d1a0a807-d18c-4885-a2da-df0aa5be287b</testCaseGuid>
    <variableLinks>
