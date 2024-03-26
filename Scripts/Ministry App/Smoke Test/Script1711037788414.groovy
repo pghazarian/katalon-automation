@@ -51,7 +51,12 @@ Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
 'This is the Hey "user\'s first name" message '
 Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Home Page/Welcome Message'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup'), 0)
+'To enter into user\'s profile drawer (top right) '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/User Profile Avatar'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/android.view.ViewGroup (1)'), 0)
+'To open user\'s profile drawer '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/X Button'), 0)
+
+'To close user\'s profile drawer '
+Mobile.tap(findTestObject('Ministry App/Navigation/X Button'), 0)
 
