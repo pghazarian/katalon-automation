@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 def date = new Date()
 
-def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
+def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
 
 def SegmentName = "ST Segment - $CurrentDateTime"
 
@@ -37,7 +37,7 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Se
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Description Text Area'), "$SegmentName Description")
 
 'Select campus from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
     'Anaheim')
 
 'Click button to save a new segment'

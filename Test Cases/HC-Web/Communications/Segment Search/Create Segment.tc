@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Test case to create a new segment</description>
    <name>Create Segment</name>
-   <tag></tag>
+   <tag>Dev</tag>
    <comment></comment>
    <testCaseGuid>3e82f6d6-c7cb-4d38-af5e-49672417f4f0</testCaseGuid>
 </TestCaseEntity>
