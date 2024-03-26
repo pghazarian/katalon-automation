@@ -48,10 +48,10 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_DOB'
 'Open the person record from the search results'
 WebUI.click(SearchTableCellObject)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Person/Details/PersonName'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Person/Details/Person Name Label Match', [('textToMatch') : VerificationName]), 3)
 
 'Verify the name in the details page'
-WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), VerificationName)
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Person/Details/Person Name Label Match', [('textToMatch') : VerificationName]), 0)
 
 'Open the Person Edit page'
 WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
