@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Events Label</name>
+   <tag></tag>
+   <elementGuidId>c0061ba9-aea3-41d9-a530-4cb9762a5b6f</elementGuidId>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

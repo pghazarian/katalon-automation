@@ -54,5 +54,49 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Added Toast Text'), 
     'You’ve successfully created and linked a new record')
 
+'Verify Demographic Info label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Demographic Info Label'), 
+    'Demographic info')
+
+'Verify Edit button next to Demographic Info is displayed'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Demographic Info Edit Button'), 
+    FailureHandling.STOP_ON_FAILURE)
+
+'Verify Target Campus label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Label'), 
+    'Target Campus')
+
+'Verify default value of Target Campus is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Value'), 
+    'N/A')
+
+'Verify Gender label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Label'), 'Gender')
+
+'Verify default value of Gender is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Value'), 'N/A')
+
+'Verify Age label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Label'), 'Age')
+
+'Verify default value of Age is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Value'), 'N/A')
+
+'Verify Marital Status label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Label'), 
+    'Marital Status')
+
+'Verify default value of Marital Status is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Value'), 
+    'N/A')
+
+'Verify Children label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Label'), 
+    'Children')
+
+'Verify default value of Children is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Value'), 
+    'N/A')
+
 WebUI.closeBrowser()
 
