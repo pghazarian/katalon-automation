@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Reassign No Confirmation Button</name>
+   <name>All Pill Button</name>
    <tag></tag>
-   <elementGuidId>eff3e2b8-8dfa-4145-8ef5-b50ff0b9d55a</elementGuidId>
+   <elementGuidId>f07d6c1f-e130-414e-83b8-c459e670a4e8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='tasks-reassign-drawer-reassign_button']/following::div[@class='prompt-no-btn']</value>
+         <value>//div[contains(@class, 'find-assignee-select-container')]//div[text()='All' or .='All']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

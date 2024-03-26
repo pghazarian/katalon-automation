@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Suggestions Name Match</name>
+   <name>Status Updated Success Banner</name>
    <tag></tag>
-   <elementGuidId>06281d7a-2c43-446e-87f9-2fdd1391ead6</elementGuidId>
+   <elementGuidId>1e9942fa-5433-48d7-bfac-5669cce5dee9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[contains(@class,'react-autosuggest__suggestions-container--open')]//div[text() = '${textToMatch}' or normalize-space(.) = '${textToMatch}']</value>
+         <value>//div[@id=&quot;task_person_drawer--bulk_scheduled_success_banner&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

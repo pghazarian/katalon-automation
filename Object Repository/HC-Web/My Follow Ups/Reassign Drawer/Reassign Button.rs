@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Team Pill Button</name>
+   <name>Reassign Button</name>
    <tag></tag>
-   <elementGuidId>cf6c9014-34c5-4d8f-ab84-7d1eb15ac436</elementGuidId>
+   <elementGuidId>15080019-d609-4529-8848-96c1c4363d83</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@class='label' and text()='Team']/..</value>
+         <value>//button[@id='tasks-reassign-drawer-reassign_button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

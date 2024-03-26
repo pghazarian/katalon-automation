@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>All Pill Button</name>
+   <name>Log Out Menu Option</name>
    <tag></tag>
-   <elementGuidId>118be964-9df2-4f47-92ef-76cd37cedfd5</elementGuidId>
+   <elementGuidId>fecfe53d-da00-4c0c-ad97-eca979849f1a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@class='label' and text()='All']/..</value>
+         <value>//div[@class='user-menu-avatar_container']//following::div[text()='Log Out']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

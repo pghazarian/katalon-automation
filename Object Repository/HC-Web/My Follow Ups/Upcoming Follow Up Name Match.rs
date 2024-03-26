@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Reassign Yes Confirmation Button</name>
+   <name>Upcoming Follow Up Name Match</name>
    <tag></tag>
-   <elementGuidId>14cd2154-b9fc-414c-8511-6e3df413751a</elementGuidId>
+   <elementGuidId>e4fbb517-bce5-496e-b266-05204e03f0a4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='tasks-reassign-drawer-reassign_button']/following::div[@class='prompt-yes-btn']</value>
+         <value>//div[text()='Upcoming Follow Ups' or .='Upcoming Follow Ups']/following::tbody//div[text() = '${textToMatch}' or normalize-space(.) = '${textToMatch}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

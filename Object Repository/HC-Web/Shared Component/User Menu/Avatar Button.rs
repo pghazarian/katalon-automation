@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Reassign Button</name>
+   <name>Avatar Button</name>
    <tag></tag>
-   <elementGuidId>8236b042-363d-4eed-9479-409643dcd336</elementGuidId>
+   <elementGuidId>6f662b08-995e-4c70-bbe5-d6471abd48b4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='tasks-reassign-drawer-reassign_button']</value>
+         <value>//div[@class='user-menu-avatar_container']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

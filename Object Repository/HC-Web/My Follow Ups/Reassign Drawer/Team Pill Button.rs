@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Assignee Name Search Text Field</name>
+   <name>Team Pill Button</name>
    <tag></tag>
-   <elementGuidId>55f03a98-3ce4-4633-9903-c1d49106f1cf</elementGuidId>
+   <elementGuidId>c9b0b35c-ec3d-46bf-874f-4e6a319ecd96</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[contains(@class,'react-autosuggest__input')]</value>
+         <value>//div[contains(@class, 'find-assignee-select-container')]//div[text()='Team' or .='Team']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
