@@ -18,11 +18,18 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /*
-Prerequisite:  Use login credentials for a person who is NOT in progress on any journey  (New User)
-	There should be some journey
- 
-1. Launch CA App
-2. Log into CA App
-3. Tap on Journey Navigation button
-4. Verify Today page is displaying all suggested journeys and journeys either completed or finished
-*/
+ 1. Launch Companion App
+ 2. Log into Companion App with a user who has journeys not started, in progress and completed statuses.
+ 3. Tap on Journey Navigation button
+ 4. Tap on the Browse Journeys tab 
+ 5. Verify a list of all published journeys is listed and item content is correct
+ 6. Tap on Journey that has not been started
+ 7. Verify that the Journey Details are as defined and Start Journey button is displayed
+ 8. Tap on Back button to get back to the Journey List
+ 9. Tap on a Journey that is in progress
+ 10. Verify that the Journey Details are as defined with In Progress status text and View Pathway and Stop Journey Buttons are displayed.
+ 11. Tap on Back button to get back to the Journey List
+ 12. Tap on a Journey that has been completed
+ 13. Verify that the Journey Details are as defined with Completed status text and only View Pathway Button is displayed
+ 14. close the app
+ */
