@@ -17,12 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/*
-Prerequisite:  Use login credentials for a person who is NOT in progress on any journey  (New User)
-	There should be some journey
- 
-1. Launch CA App
-2. Log into CA App
-3. Tap on Journey Navigation button
-4. Verify Today page is displaying all suggested journeys and journeys either completed or finished
-*/
+Mobile.startExistingApplication('com.healthychurch.companion.development')
+
+Mobile.tap(findTestObject('Companion App/Android/Button Three'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/android.widget.Button - OK'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Button One'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/android.widget.Button - OK'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Button Two'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/android.widget.Button - OK'), 0)
+
+Mobile.closeApplication()
+

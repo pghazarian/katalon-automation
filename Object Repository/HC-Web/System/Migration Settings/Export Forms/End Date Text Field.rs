@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit Service Outline Body</name>
+   <name>End Date Text Field</name>
    <tag></tag>
-   <elementGuidId>2e8672ce-b5e7-4bd3-a7a9-8160398d6303</elementGuidId>
+   <elementGuidId>02a411cc-b0d3-46e1-ae58-ebc23e99c5f6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'ck-content')]/p</value>
+         <value>//div[@id='connection_forms_data_export_parameters--date_picker_input_range_to']/descendant::input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

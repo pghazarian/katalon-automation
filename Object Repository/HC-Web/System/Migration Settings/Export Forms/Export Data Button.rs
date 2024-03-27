@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit Service Outline Body</name>
+   <name>Export Data Button</name>
    <tag></tag>
-   <elementGuidId>2e8672ce-b5e7-4bd3-a7a9-8160398d6303</elementGuidId>
+   <elementGuidId>1acb881d-e733-481b-849e-cbd513d16b9c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'ck-content')]/p</value>
+         <value>//button[@id='connection_forms_data_export_parameters--export_data_button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

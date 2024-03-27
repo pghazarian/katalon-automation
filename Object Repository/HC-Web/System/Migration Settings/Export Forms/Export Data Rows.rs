@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit Service Outline Body</name>
+   <name>Export Data Rows</name>
    <tag></tag>
-   <elementGuidId>2e8672ce-b5e7-4bd3-a7a9-8160398d6303</elementGuidId>
+   <elementGuidId>d394bf3b-88a5-4d4a-83ef-7ab29c718e94</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'ck-content')]/p</value>
+         <value>//div[@class='data-extract-preview']/descendant::tr</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

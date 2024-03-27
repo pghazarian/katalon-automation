@@ -84,4 +84,9 @@
       <initValue>'1961'</initValue>
       <name>EventId_CheckIn</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Jesus'</initValue>
+      <name>ConnectionForm_SearchName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit Service Outline Body</name>
+   <name>Segment Description</name>
    <tag></tag>
-   <elementGuidId>2e8672ce-b5e7-4bd3-a7a9-8160398d6303</elementGuidId>
+   <elementGuidId>dd2e1e0c-56ba-41f3-ace9-65e5f4f90341</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//h5[text()=&quot;${SegmentDescription}&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class,'ck-content')]/p</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

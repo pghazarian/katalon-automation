@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit Service Outline Body</name>
+   <name>TableColumn_CreatedOn</name>
    <tag></tag>
-   <elementGuidId>2e8672ce-b5e7-4bd3-a7a9-8160398d6303</elementGuidId>
+   <elementGuidId>54236d1b-3f1c-4de4-9c16-5cfc2f55355e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'ck-content')]/p</value>
+         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Created On' or . = 'Created On']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

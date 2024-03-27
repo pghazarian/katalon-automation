@@ -129,4 +129,9 @@
       <initValue>'Cris Francisco'</initValue>
       <name>Admin2_FullName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Anaheim Connection Form 1'</initValue>
+      <name>ConnectionForm_SearchName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

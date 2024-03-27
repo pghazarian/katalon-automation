@@ -76,6 +76,14 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/First Ann
 'Confirm announcement attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Selected Announcement Button'))
 
+WebUI.scrollToElement(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Button'), 0)
+
+'Click remove button'
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove button'))
+
+'Remove prompt yes button'
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove Prompt Yes button'))
+
 'Click the button to add a song as an attachment'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Button'))
 
@@ -84,6 +92,12 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song 
 
 'Confirm song attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Song Search Add Button'))
+
+'Click remove button'
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove button'))
+
+'Remove prompt yes button'
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove Prompt Yes button'))
 
 'Click the button to add a service'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Association Button'))
@@ -105,8 +119,8 @@ WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search 
 
 WebUI.sendKeys(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search Bar'), Keys.chord(Keys.ENTER))
 
-CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//td[@id=\'data_grid--table_page_cell_base-2_0\']', 
-    ServiceCompanionName, 1)
+CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//td[@id=\'data_grid--table_page_cell_base-2_0\']', ServiceCompanionName, 
+    1)
 
 WebUI.closeBrowser()
 
