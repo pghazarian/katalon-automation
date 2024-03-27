@@ -23,9 +23,9 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
     FailureHandling.STOP_ON_FAILURE)
 
 'If person record is already listed in occurrence schedule, remove them'
-if (CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'(
+if (CustomKeywords.'TestObjectHelper.isElementPresent'(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'(
         "//div[normalize-space(.)='$SearchName']"), 5)) {
-    WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
+    WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
 
     WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
 
@@ -58,7 +58,7 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Resul
 WebUI.verifyTextPresent(SearchName, false)
 
 'Click checkbox for recently added person record'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
 
 'Open actions dropdown'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))

@@ -109,4 +109,9 @@
       <initValue>'27471'</initValue>
       <name>EventId_CheckIn</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Anaheim Connection Form 1'</initValue>
+      <name>ConnectionForm_SearchName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

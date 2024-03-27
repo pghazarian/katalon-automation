@@ -18,12 +18,12 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
 
-CustomKeywords.'customUtility.TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
+CustomKeywords.'TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
 
 'Append the HostUrl and TargetPath for the initial target URL'
 TargetUrl = "$HostUrl$TargetPath"
 
-if (CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'() && !ForceLogin) {
+if (CustomKeywords.'TestCaseHelper.isBrowserOpen'() && !ForceLogin) {
 	KeywordUtil.logInfo("Browser is open")
 }
 

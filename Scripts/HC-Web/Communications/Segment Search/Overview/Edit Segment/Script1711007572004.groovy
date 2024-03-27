@@ -68,8 +68,63 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Se
     EditSegmentDescription)
 
 'Select campus from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_primary_details_edit--church_campus\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_primary_details_edit--church_campus\']/descendant::div[@class=\'Select-control\']', 
     'Lake Forest')
+
+'Click button to save segment info'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Save Button'))
+
+'Return to segment search'
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Return To Segment Search Button'))
+
+'Clear the search field'
+WebUI.sendKeys(findTestObject('HC-Web/Communications/Segment Search/Search Text Field'), Keys.chord(Keys.CONTROL, 'a'))
+
+WebUI.sendKeys(findTestObject('HC-Web/Communications/Segment Search/Search Text Field'), Keys.chord(Keys.BACK_SPACE))
+
+'Search for edited segment name'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), EditSegmentName)
+
+'Initiate Search'
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), Keys.chord(Keys.ENTER))
+
+'Verify a row contains the expected name'
+WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : EditSegmentName]), 
+    0)
+
+'Open the segment record from the search results'
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : EditSegmentName]))
+
+'Click button to edit segment info'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Segment Edit Button'))
+
+'Select the text'
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+    Keys.chord(Keys.CONTROL, 'a'))
+
+'Clear the text'
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+    Keys.chord(Keys.BACK_SPACE))
+
+'Reset segment name to original name'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+    SearchTerm)
+
+'Select the text'
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+    Keys.chord(Keys.CONTROL, 'a'))
+
+'Clear the text'
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+    Keys.chord(Keys.BACK_SPACE))
+
+'Reset segment description to original description'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+    SearchTerm)
+
+'Select original campus from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_primary_details_edit--church_campus\']/descendant::div[@class=\'Select-control\']', 
+    'Anaheim')
 
 'Click button to save segment info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Save Button'))

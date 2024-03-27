@@ -27,7 +27,7 @@ WebUI.sendKeys(findTestObject('HC-Web/Event/Search/SearchTextField'), Keys.chord
 
 try {
 	'Try to click the record in the table'
-	FoundSearchRecord = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'event-card-title\')]',
+	FoundSearchRecord = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'event-card-title\')]',
 		EventName)
 	
 	WebUI.verifyElementText(FoundSearchRecord, EventName)
@@ -37,7 +37,7 @@ try {
 	println("Could not click on the record")
 	
 	'if the record could not be clicked, try to click the event Details Popover'
-	EventDetailsPopover = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'event-details-popover')]")
+	EventDetailsPopover = CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'event-details-popover')]")
 	
 	WebUI.click(EventDetailsPopover)
 }
@@ -53,16 +53,16 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 WebUI.delay(2)
 
 'Go to the Occurrence Schedule screen'
-CustomKeywords.'customUtility.NavigationHelper.clickPrimaryOrSecondary'(
+CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Event/Details/Subnav_OccurrenceSchedule'), 
 	findTestObject('HC-Web/Event/Details/Subnav_MoreEllipsis'), 
-	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Occurrence Schedule']"))
+	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Occurrence Schedule']"))
 
 'Click on name in the table to open the record in a drawer'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
         ScheduledName))
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-container-inner\']/descendant::div[@class=\'person_record--details_window_person_info_full_name\']', 
+PersonTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-container-inner\']/descendant::div[@class=\'person_record--details_window_person_info_full_name\']', 
     ScheduledName, 1)
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
@@ -73,16 +73,16 @@ WebUI.verifyEqual(ScheduledName, PersonName)
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/CloseButton'))
 
 'Go to the Registration Roster screen'
-CustomKeywords.'customUtility.NavigationHelper.clickPrimaryOrSecondary'(
+CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Event/Details/Subnav_RegistrationRoster'),
 	findTestObject('HC-Web/Event/Details/Subnav_MoreEllipsis'),
-	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Registration Roster']"))
+	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Registration Roster']"))
 
 'Click on name in the table to open the record in a drawer'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
         RegistrantName))
 
-PersonTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-container-inner\']/descendant::div[@class=\'person_record--details_window_person_info_full_name\']', 
+PersonTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@class=\'drawer-container-inner\']/descendant::div[@class=\'person_record--details_window_person_info_full_name\']', 
     RegistrantName)
 
 PersonName = WebUI.getAttribute(PersonTableCellObject, 'innerText')
@@ -93,21 +93,21 @@ WebUI.verifyEqual(RegistrantName, PersonName)
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/CloseButton'))
 
 'Go to the Communications screen'
-CustomKeywords.'customUtility.NavigationHelper.clickPrimaryOrSecondary'(
+CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Event/Details/Subnav_Communications'),
 	findTestObject('HC-Web/Event/Details/Subnav_MoreEllipsis'),
-	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Communications']"))
+	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Communications']"))
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Communications/RegistrationEmailHeader'), 1)
 
 'Go to the Serving Opps screen'
-CustomKeywords.'customUtility.NavigationHelper.clickPrimaryOrSecondary'(
+CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	findTestObject('HC-Web/Event/Details/Subnav_Serving Opps'),
 	findTestObject('HC-Web/Event/Details/Subnav_MoreEllipsis'),
-	CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Serving Opps']"))
+	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Serving Opps']"))
 
 'Click on the serving opp entry'
-ServingOppDiv = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'page--data_cards\')]/descendant::h4', 
+ServingOppDiv = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[contains(@class, \'page--data_cards\')]/descendant::h4', 
     ServingOppName)
 
 WebUI.click(ServingOppDiv)
