@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Perform a person search, open the record both in Person v2 and Person Edit to verify its information</description>
+   <name>People Search</name>
+   <tag>Production,Stage,Dev,Stage2,QA,Smoke,Shared Component</tag>
+   <comment></comment>
+   <testCaseGuid>b37f7a59-fae3-46a5-9576-5b38f74fc230</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c26ce4b9-ff1a-41a2-bbcf-7d07d375db81</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>535d2097-cdd3-47c6-b508-8cef521a0a7b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>82b2d77e-024c-4719-88e1-9e8fdcdcedf9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>80ed7adf-9029-49e4-adef-b8aafd501455</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.PeopleSearch_SearchTerm</defaultValue>
+      <description></description>
+      <id>c26ce4b9-ff1a-41a2-bbcf-7d07d375db81</id>
+      <masked>false</masked>
+      <name>SearchTerm</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.PeopleSearch_VerificationName</defaultValue>
+      <description></description>
+      <id>535d2097-cdd3-47c6-b508-8cef521a0a7b</id>
+      <masked>false</masked>
+      <name>VerificationName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.PeopleSearch_FirstName</defaultValue>
+      <description></description>
+      <id>82b2d77e-024c-4719-88e1-9e8fdcdcedf9</id>
+      <masked>false</masked>
+      <name>FirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.PeopleSearch_LastName</defaultValue>
+      <description></description>
+      <id>80ed7adf-9029-49e4-adef-b8aafd501455</id>
+      <masked>false</masked>
+      <name>LastName</name>
+   </variable>
+</TestCaseEntity>

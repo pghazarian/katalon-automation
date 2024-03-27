@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Question Label Text Field</name>
+   <tag></tag>
+   <elementGuidId>01ae15c2-19d8-45e8-9c83-fecb53bf5b23</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#custom_question--props_placeholder_input--1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='custom_question--props_placeholder_input--1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>deb6c0a9-363c-43fb-8df4-a8e85a56e633</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>custom_question--props_placeholder_input--1</value>
+      <webElementGuid>544279e7-3e87-4933-a5ea-9efb23e60c90</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>ee96d74a-4942-43b2-8639-d7bc34560779</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;custom_question--props_placeholder_input--1&quot;)</value>
+      <webElementGuid>6a02e142-63be-4a77-a7d2-114a4065af14</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

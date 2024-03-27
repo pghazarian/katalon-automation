@@ -11,6 +11,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'staging2'</initValue>
+      <name>EnvironmentPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'sbchcqa@gmail.com'</initValue>
       <name>Admin_UserName</name>
    </GlobalVariableEntity>
@@ -78,5 +83,10 @@
       <description></description>
       <initValue>'3036'</initValue>
       <name>EventId_CheckIn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Agreement Test'</initValue>
+      <name>ConnectionForm_SearchName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

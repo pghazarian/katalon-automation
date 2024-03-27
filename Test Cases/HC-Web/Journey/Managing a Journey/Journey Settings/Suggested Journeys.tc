@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Suggested Journeys</name>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>4a61dce2-ac00-4739-8600-53bccf768898</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>81624e1f-61d0-45d4-95fe-7035c955d34d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'4 Journey Test'</defaultValue>
+      <description></description>
+      <id>81624e1f-61d0-45d4-95fe-7035c955d34d</id>
+      <masked>false</masked>
+      <name>JourneyName</name>
+   </variable>
+</TestCaseEntity>

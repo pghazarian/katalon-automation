@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Linear Journey Creation</name>
-   <tag></tag>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>0fee36da-850c-4be5-a833-d5ba61a4bc8b</testCaseGuid>
    <variableLinks>

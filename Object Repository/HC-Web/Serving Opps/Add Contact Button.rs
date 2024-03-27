@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Add Contact Button</name>
+   <tag></tag>
+   <elementGuidId>e0d9ac77-0fca-4e80-858f-96f7ff1f7b00</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-button--add_contact</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='ui-button--add_contact']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>6d00d41c-ddab-4b92-a0d4-fbfdb8a20743</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss1035 jss255</value>
+      <webElementGuid>8aa66d94-dc59-4a94-b19c-599b37ff9219</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-button--add_contact</value>
+      <webElementGuid>937fa2c3-7472-477a-a698-f9435eb463d9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Add Contactplus</value>
+      <webElementGuid>b9bde4b6-0bba-4eb9-a9b2-fa1ae4708664</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-button--add_contact&quot;)</value>
+      <webElementGuid>6196bf63-31e9-491b-aabb-3b7ed8054d27</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -21,6 +21,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Mobile Engagement', 'Service Companion')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Mobile Engagement', 'Service Companion', 'Service Companion')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Mobile Engagement', 'Service Series Builder', 'Service Series Builder')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Mobile Engagement', 'Service Companion')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Mobile Engagement', 'Service Companion', 'Service Companion')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Mobile Engagement', 'Service Series Builder', 'Service Series Builder')

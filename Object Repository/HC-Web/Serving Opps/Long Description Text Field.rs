@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Long Description Text Field</name>
+   <tag></tag>
+   <elementGuidId>6ad1c321-279e-474a-97d5-abfd7d5fc03f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-textarea--so_description</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//textarea[@id='ui-textarea--so_description']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>f8f4d696-434b-4e49-9312-5c33681975b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-textarea--so_description</value>
+      <webElementGuid>5b041dd2-46a3-4c2d-9606-7c1bbc55800e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>2048</value>
+      <webElementGuid>b5129e55-811a-4100-950a-9d3c772c112c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>SO Created for Katalon Testing</value>
+      <webElementGuid>d28bed45-9d82-4481-a852-4744f801ad22</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-textarea--so_description&quot;)</value>
+      <webElementGuid>768b0569-5280-4350-a922-c7031ecea4ba</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
