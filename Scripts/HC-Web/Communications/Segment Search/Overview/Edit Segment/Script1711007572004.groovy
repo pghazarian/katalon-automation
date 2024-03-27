@@ -78,7 +78,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Edited Toast Text'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Updated Toast Text'), 
     'Segment data updated successfully')
 
 'Verify the updated segment name is visible in the Overview page'

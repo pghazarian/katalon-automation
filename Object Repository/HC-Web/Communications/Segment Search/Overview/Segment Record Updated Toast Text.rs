@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Age Value</name>
+   <name>Segment Record Updated Toast Text</name>
    <tag></tag>
-   <elementGuidId>c6da5348-1ed8-4693-936d-87a1ca226e93</elementGuidId>
+   <elementGuidId>3ab560dc-ab46-43e2-9fb2-cb59a58a48a0</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;N/A&quot;]</value>
+         <value>//div[@class='ui header header-size-small']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

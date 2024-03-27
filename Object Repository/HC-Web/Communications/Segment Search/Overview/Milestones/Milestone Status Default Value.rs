@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Segment Record Edited Toast Text</name>
+   <name>Milestone Status Default Value</name>
    <tag></tag>
-   <elementGuidId>3ab560dc-ab46-43e2-9fb2-cb59a58a48a0</elementGuidId>
+   <elementGuidId>b1552e91-e8c0-4c90-950b-58a960aee44f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//div[@class='ui header header-size-small']</value>
+         <value>//h5[text()=&quot;N/A&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

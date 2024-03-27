@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Status Label</name>
+   <name>Demographic Info Updated Toast</name>
    <tag></tag>
-   <elementGuidId>13485557-043e-49af-b2a8-5b2729b23709</elementGuidId>
+   <elementGuidId>59c6015c-4759-434a-b6f3-8b40ca6ae683</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h6[text()=&quot;Member Status&quot;]</value>
+         <value>//div[@class='banner-message-container']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

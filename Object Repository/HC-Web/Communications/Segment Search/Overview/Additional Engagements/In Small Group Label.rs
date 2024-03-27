@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Target Campus Value</name>
+   <name>In Small Group Label</name>
    <tag></tag>
-   <elementGuidId>33c160b8-a0cc-4319-b75f-5f960dbf37ad</elementGuidId>
+   <elementGuidId>f7a4ede0-b045-4ab2-a5a0-ba96f3b7b085</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;N/A&quot;]</value>
+         <value>//h6[text()=&quot;In Small Group&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
