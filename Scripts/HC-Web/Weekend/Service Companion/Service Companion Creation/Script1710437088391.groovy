@@ -76,6 +76,8 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/First Ann
 'Confirm announcement attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Selected Announcement Button'))
 
+WebUI.scrollToElement(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Button'), 0)
+
 'Click remove button'
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove button'))
 

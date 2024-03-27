@@ -6,12 +6,12 @@
    <elementGuidId>4191d6e6-dfc5-4138-b676-7aeb4bd4bbdc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'Remove')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a.color-alert.font-weight-normal.font-size-small</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'Remove')]/..</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>035d98b0-e689-4c49-9d29-a74142e84849</webElementGuid>
+      <webElementGuid>3e222a0c-013a-4d04-ae1b-160c7111c18b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>color-alert font-weight-normal font-size-small</value>
-      <webElementGuid>486edb25-88ba-40e1-8b8d-b5c644d74703</webElementGuid>
+      <webElementGuid>9c49f10e-019b-483e-ab77-7dad38d30ab8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Remove</value>
-      <webElementGuid>06a0cf35-fe23-4b2e-a7b7-a616933cfa3f</webElementGuid>
+      <webElementGuid>86316cc0-e17d-4866-ba69-e01467993d99</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 question-drawer drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/section[@class=&quot;ui jss344 drawer--content&quot;]/table[@class=&quot;ui jss322 table table-basic table-stretch-very&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row&quot;]/td[@class=&quot;table-cell&quot;]/div[@class=&quot;ui prompt jss413 prompt-inline&quot;]/div[1]/a[@class=&quot;color-alert font-weight-normal font-size-small&quot;]</value>
-      <webElementGuid>eeaae24d-1bea-4c0e-bc2a-8f7438725118</webElementGuid>
+      <webElementGuid>da64d6b3-fe8d-4016-b616-65d6948ddbb0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Remove')]</value>
-      <webElementGuid>2bdc2227-32ad-4544-9ac9-a683f1ef4c40</webElementGuid>
+      <webElementGuid>00dfa1e0-eb4f-41b4-8fb0-54a088df643a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a</value>
-      <webElementGuid>64922e20-cce6-4cf0-abe2-96f477a31b12</webElementGuid>
+      <webElementGuid>8dc1a39f-efd3-4649-83e3-006394fe2343</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[(text() = 'Remove' or . = 'Remove')]</value>
-      <webElementGuid>0abc9c3e-3b12-4e6f-a931-7bea17c025ea</webElementGuid>
+      <webElementGuid>6f7f948f-a464-45aa-aaa1-9b3ab9bdd0b0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

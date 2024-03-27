@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Test case to search for a segment</description>
    <name>Search Segment</name>
-   <tag></tag>
+   <tag>Dev</tag>
    <comment></comment>
    <testCaseGuid>32b65154-0a72-4270-b45d-373e62a660d2</testCaseGuid>
 </TestCaseEntity>

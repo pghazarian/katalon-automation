@@ -54,30 +54,27 @@ class StringHelper {
 
 		return sdf.format(date)
 	}
-	
+
 	/*
 	 * """Parses a version string like "1.80.0-dev-gccab4e1.20240312.15" and returns the major and minor versions (e.g. "1.80").
-
-  Args:
-    version_str: The version string to parse.
-
-  Returns:
-    The major and minor versions as a string (e.g. "1.80").
-  """
-	  
+	 Args:
+	 version_str: The version string to parse.
+	 Returns:
+	 The major and minor versions as a string (e.g. "1.80").
+	 """
 	 */
 	@Keyword
 	def String parseMajorMinorVersion(version_str) {
-	
+
 		// Split the version string based on "." delimiter
 		def parts = version_str.split(/\./)
-	  
+
 		// Ensure at least two parts are present (major and minor version)
 		if (parts.size() < 2) {
-		  return null
+			return null
 		}
-	  
+
 		// Extract and combine major and minor versions
 		return parts[0..1].join('.')
-	  }
+	}
 }

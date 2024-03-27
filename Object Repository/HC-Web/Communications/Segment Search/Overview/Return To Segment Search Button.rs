@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit Service Outline Body</name>
+   <name>Return To Segment Search Button</name>
    <tag></tag>
-   <elementGuidId>2e8672ce-b5e7-4bd3-a7a9-8160398d6303</elementGuidId>
+   <elementGuidId>f934793f-9f16-4ab8-873c-c9aabcda52a8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'ck-content')]/p</value>
+         <value>//div[contains(@class,'navigation_breadcrumbs--breadcrumb_title')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
