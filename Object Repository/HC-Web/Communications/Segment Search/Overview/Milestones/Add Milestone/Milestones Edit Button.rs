@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Milestones Edit Button</name>
+   <tag></tag>
+   <elementGuidId>ad7475cf-f13e-4caf-8d69-a665234da0d9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id='segment_details_header--edit_button']/span)[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^MilestonesEdit$/ >> #segment_details_header--edit_button</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ace56c07-8f5e-442e-a952-60a2aa034f21</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss208</value>
+      <webElementGuid>fbb17134-cdfb-4f73-8361-a98c00544a94</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit</value>
+      <webElementGuid>1a215993-98da-441c-8b60-71d87a820bf1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss37&quot;]/div[@class=&quot;cmui grid--column jss45 jss68 jss76&quot;]/div[@class=&quot;cmui grid jss7 jss485&quot;]/button[@id=&quot;segment_details_header--edit_button&quot;]/span[@class=&quot;button-inner-container jss208&quot;]</value>
+      <webElementGuid>53411dc5-e88b-48ab-94d6-a7f1a66afcec</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//button[@id='segment_details_header--edit_button']/span)[2]</value>
+      <webElementGuid>945c7586-a9e0-407d-b9b9-9bdb3e7771ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Milestones'])[1]/following::span[1]</value>
+      <webElementGuid>4757c630-168b-46a8-b0cc-3c93d8ea3572</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Event'])[1]/following::span[1]</value>
+      <webElementGuid>6de696ce-e7a8-4bfa-9b8b-c722b05fd21d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[7]/preceding::span[1]</value>
+      <webElementGuid>a8091106-273f-4e95-b08c-da99fc86411f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Milestone/Status'])[1]/preceding::span[1]</value>
+      <webElementGuid>40dfe371-63fd-4db3-b857-703c5625579f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/button/span</value>
+      <webElementGuid>de8c92d6-df4b-4ad9-b891-6e3212ca2be0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Edit' or . = 'Edit')]</value>
+      <webElementGuid>9ea7c61d-9f38-4ed7-a6f5-23ea43fb81aa</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
