@@ -18,32 +18,22 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Open the App'
-Mobile.startApplication('C:\\Users\\paren\\Desktop\\Katalon\\HC-MA 1.18.0 APK.apk', true)
+Mobile.startApplication(GlobalVariable.Ministry_App_Path, true)
 
 'Tap Login button '
-Mobile.tap(findTestObject('Ministry App/Login button'), 0)
+Mobile.tap(findTestObject('Ministry App/Login/Login button'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Ministry App/Email Address text field'), 'pareng@saddleback.com', 5)
+Mobile.setText(findTestObject('Object Repository/Ministry App/Login/Email Address text field'), UserName, 5)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Ministry App/Password Text Field'), 0)
+Mobile.tap(findTestObject('Ministry App/Login/Password Text Field'), 0)
 
-Mobile.setEncryptedText(findTestObject('Ministry App/Password Text Field'), 'bGzvpoZCcaztWWDnaA3/tA==', 0)
+Mobile.setEncryptedText(findTestObject('Ministry App/Login/Password Text Field'), Password, 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Sign In Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Sign In Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Continue Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Continue Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Got It Button'), 0)
-
-not_run: Mobile.closeApplication()
-
-Mobile.tap(findTestObject('Ministry App/android.widget.TextView - People'), 0)
-
-Mobile.tap(findTestObject('Ministry App/android.widget.TextView - Search'), 0)
-
-Mobile.tap(findTestObject('Ministry App/android.widget.TextView - Metrics'), 0)
-
-Mobile.tap(findTestObject('Ministry App/android.widget.TextView - Home'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Got It Button'), 0)
 
