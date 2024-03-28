@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c3a3631b-cae1-475f-9068-ec06802326fa</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ea378658-df48-4e73-97b9-8cd743bbce59</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8b160f8c-9464-45c3-a648-740f431d6256</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Pareng@Saddleback.com'</defaultValue>
+      <description></description>
+      <id>ea378658-df48-4e73-97b9-8cd743bbce59</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+   <variable>
+      <defaultValue>'bGzvpoZCcaztWWDnaA3/tA=='</defaultValue>
+      <description></description>
+      <id>8b160f8c-9464-45c3-a648-740f431d6256</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
 </TestCaseEntity>
