@@ -76,6 +76,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'QA Automation Follow Up Rule Task'</initValue>
+      <name>Follow_Up_Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'QAOne'</initValue>
       <name>Follow_Up_Task_Person_First_Name</name>
    </GlobalVariableEntity>
@@ -108,6 +113,21 @@
       <description></description>
       <initValue>'27471'</initValue>
       <name>EventId_CheckIn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'crisf@saddleback.com'</initValue>
+      <name>Admin2_UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Z8nazMpc16177aX9xH8qZQ=='</initValue>
+      <name>Admin2_Password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cris Francisco'</initValue>
+      <name>Admin2_FullName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
