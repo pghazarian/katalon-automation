@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TableColumn_LastModified</name>
+   <name>Segment Record Updated Toast Text</name>
    <tag></tag>
-   <elementGuidId>73c6b3ee-6da1-4597-80a6-1dc2323237f3</elementGuidId>
+   <elementGuidId>3ab560dc-ab46-43e2-9fb2-cb59a58a48a0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Last Modified' or . = 'Last Modified']</value>
+         <value>//div[@class='ui header header-size-small']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

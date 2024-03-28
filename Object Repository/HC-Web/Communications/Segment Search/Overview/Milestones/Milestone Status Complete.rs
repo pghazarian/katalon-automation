@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Milestone Status Complete</name>
+   <tag></tag>
+   <elementGuidId>51fb2cd5-d7d0-41aa-acc4-8047b2ce8dd8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//h5[text()=&quot;Complete&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

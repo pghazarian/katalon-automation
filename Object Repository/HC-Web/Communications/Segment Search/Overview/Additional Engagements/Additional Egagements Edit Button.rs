@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Segment Record Edited Toast Text</name>
+   <name>Additional Egagements Edit Button</name>
    <tag></tag>
-   <elementGuidId>3ab560dc-ab46-43e2-9fb2-cb59a58a48a0</elementGuidId>
+   <elementGuidId>1e83b18d-fd15-422b-a38b-f26a17801bb2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//div[@class='ui header header-size-small']</value>
+         <value>//button[@id='segment_details_header--edit_button']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

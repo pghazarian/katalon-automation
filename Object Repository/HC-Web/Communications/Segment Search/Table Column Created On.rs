@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TableColumn_EmailTemplate</name>
+   <name>Table Column Created On</name>
    <tag></tag>
-   <elementGuidId>3cda3d8a-883c-44e8-a42f-9f1991c5bbc2</elementGuidId>
+   <elementGuidId>54236d1b-3f1c-4de4-9c16-5cfc2f55355e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Email Template' or . = 'Email Template']</value>
+         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Created On' or . = 'Created On']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

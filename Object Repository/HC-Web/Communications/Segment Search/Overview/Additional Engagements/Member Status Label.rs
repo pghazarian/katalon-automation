@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TableColumn_Name</name>
+   <name>Member Status Label</name>
    <tag></tag>
-   <elementGuidId>19864d53-4b99-4835-9774-8d5eebb540cc</elementGuidId>
+   <elementGuidId>13485557-043e-49af-b2a8-5b2729b23709</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Name' or . = 'Name']</value>
+         <value>//h6[text()=&quot;Member Status&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

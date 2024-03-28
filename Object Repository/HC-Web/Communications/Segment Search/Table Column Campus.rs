@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TableColumn_CreatedOn</name>
+   <name>Table Column Campus</name>
    <tag></tag>
-   <elementGuidId>54236d1b-3f1c-4de4-9c16-5cfc2f55355e</elementGuidId>
+   <elementGuidId>383dae87-6250-4bc1-ac39-1b84bfe971cf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Created On' or . = 'Created On']</value>
+         <value>//div[contains(@class, 'page--container')]/descendant::thead/tr/th/span[text()='Campus' or . = 'Campus']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
