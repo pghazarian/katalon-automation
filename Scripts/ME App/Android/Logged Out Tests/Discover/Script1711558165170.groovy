@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\gclov\\Downloads\\hc-android-release (5).apk', false)
+Mobile.startApplication(GlobalVariable.ME_App_Path, false)
 
 Mobile.tap(findTestObject('ME App Android/Campus Selector/Continue As Guest Button'), 0)
 

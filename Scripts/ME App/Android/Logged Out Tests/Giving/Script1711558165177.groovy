@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\gclov\\Downloads\\hc-android-release (5).apk', false)
+Mobile.startApplication(GlobalVariable.ME_App_Path, false)
 
 Mobile.tap(findTestObject('Object Repository/ME App Android/Campus Selector/Continue As Guest Button'), 0)
 
@@ -27,11 +27,9 @@ Mobile.tap(findTestObject('Object Repository/ME App Android/Campus Selector/Camp
 
 Mobile.tap(findTestObject('Object Repository/ME App Android/Worship Page/Giving Tile'), 0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/ME App Android/Giving/Giving Header'), 
-    'Giving')
+Mobile.verifyElementText(findTestObject('Object Repository/ME App Android/Giving/Giving Header'), 'Giving')
 
-Mobile.verifyElementVisible(findTestObject('Object Repository/ME App Android/Giving/Bank Account Tile'), 
-    0)
+Mobile.verifyElementVisible(findTestObject('Object Repository/ME App Android/Giving/Bank Account Tile'), 0)
 
 Mobile.closeApplication()
 
