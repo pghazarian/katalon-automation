@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verify the filtering functionality from &quot;Weekly Flash&quot; and &quot;Trending&quot; tabs for the &quot;Service Check-Ins&quot;  option, works properly</description>
    <name>Metrics - Weekly Flash Report - Filters - Service Check-Ins</name>
    <tag></tag>
    <comment></comment>
