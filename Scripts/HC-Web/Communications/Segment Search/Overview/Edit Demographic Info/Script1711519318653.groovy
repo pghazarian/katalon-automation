@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 def date = new Date()
 
-def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
+def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
 
 def SegmentName = "ST Segment - $CurrentDateTime"
 
@@ -37,7 +37,7 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Se
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Description Text Area'), "$SegmentName Description")
 
 'Select campus from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
     'Anaheim')
 
 'Click button to save a new segment'
@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Demographic Info Edit Button'))
 
 'Select campus from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'campus-selector\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'campus-selector\']/descendant::div[@class=\'Select-control\']', 
     'Anaheim')
 
 'Select Male using the checkbox'
@@ -71,7 +71,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Has Children Yes Checkbox'))
 
 'Select grade from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'grade-selector\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'grade-selector\']/descendant::div[@class=\'Select-control\']', 
     'Grade 1')
 
 'Click button to save demographic info'
