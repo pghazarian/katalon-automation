@@ -21,9 +21,7 @@ def strFollowUpTaskPersonName = GlobalVariable.Follow_Up_Task_Person_First_Name 
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture Navigation Item'))
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/data-capture/connection-forms'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), GlobalVariable.Follow_Up_Connection_Form_Name)
 

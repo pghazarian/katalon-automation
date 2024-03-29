@@ -74,6 +74,24 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
 'Click button to save segment info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Save Button'))
 
+'Verify segment record updated toast is displayed'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
+
+'Verify the text in the toast message'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Updated Toast Text'), 
+    'Segment data updated successfully')
+
+'Verify the updated segment name is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Name', [('SegmentName') : EditSegmentName]), 
+    EditSegmentName)
+
+'Verify the updated segment description is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Description', [('SegmentDescription') : EditSegmentDescription]), 
+    EditSegmentDescription)
+
+'Verify the updated segment campus is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Lake Forest')
+
 'Return to segment search'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Return To Segment Search Button'))
 
@@ -135,17 +153,6 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/
 'Verify the text in the toast message'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Updated Toast Text'), 
     'Segment data updated successfully')
-
-'Verify the updated segment name is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Name', [('SegmentName') : EditSegmentName]), 
-    EditSegmentName)
-
-'Verify the updated segment description is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Description', [('SegmentDescription') : EditSegmentDescription]), 
-    EditSegmentDescription)
-
-'Verify the updated segment campus is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Lake Forest')
 
 WebUI.closeBrowser()
 
