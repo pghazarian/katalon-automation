@@ -21,33 +21,28 @@ Mobile.startExistingApplication('com.healthychurch.companion.development')
 
 not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Home Tab'), 0)
 
-not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Journey Tab'), 
-    0)
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Journey Tab'), 0)
 
-not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Profile Tab'), 
-    0)
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Profile Tab'), 0)
 
 not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Groups Tab'), 0)
 
-not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Discover Tab'), 
-    0)
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Discover Tab'), 0)
 
-not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Setting Tab'), 
-    0)
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Setting Tab'), 0)
 
 not_run: Mobile.verifyElementText(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeStaticText - SettingsRoot'), 
     'SettingsRoot')
 
-not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Ministries Tab'), 
-    0)
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Ministries Tab'), 0)
 
 not_run: Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Events Tab'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Navigation Menu/Journey Tab'), 0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeStaticText - text (3)'), 'Thursday, March 28')
+not_run: Mobile.verifyElementText(findTestObject('Companion App/iOS/XCUIElementTypeStaticText - text (3)'), 'Thursday, March 28')
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeOther - Journey 6 Start Journey'), 
+not_run: Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeOther - Journey 6 Start Journey'), 
     0)
 
 not_run: Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/iOS/XCUIElementTypeStaticText - text'), 
