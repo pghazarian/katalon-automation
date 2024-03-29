@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Verify the filtering functionality from &quot;Weekly Flash&quot; and &quot;Trending&quot; tabs for the &quot;Service Call To Actions&quot;  option, works properly</description>
+   <description>Verify the filtering functionality from &quot;Weekly Flash&quot; and &quot;Trending&quot; tabs for the &quot;Service Call To Actions&quot; (AKA CTAs) option, works properly</description>
    <name>Metrics - Weekly Flash Report - Filters - Service CTAs</name>
    <tag></tag>
    <comment></comment>
