@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_No</name>
+   <name>In Small Group No Radio Button</name>
    <tag></tag>
    <elementGuidId>dace4f08-cad3-412c-a296-38eec74f0e91</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.ui.radio.jss598.jss589.undefined.radio-is-checked > label.label.jss596 > span</value>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/section/div[1]/section/div[6]/label</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div[3]/label/span</value>
+         <key>CSS</key>
+         <value>div.ui.radio.jss598.jss589.undefined.radio-is-checked > label.label.jss596 > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>76d8cb5c-b68a-4555-b904-fd52b1d5e461</webElementGuid>
+      <webElementGuid>884741d6-d349-4f84-8ce4-1dc4b55864ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>No</value>
-      <webElementGuid>d1c488de-f706-4349-a335-0df7bc8aa38c</webElementGuid>
+      <webElementGuid>21304994-e7fe-4ca9-8e47-99ed66a666a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/section[1]/div[@class=&quot;ui radio jss598 jss589 undefined radio-is-checked&quot;]/label[@class=&quot;label jss596&quot;]/span[1]</value>
-      <webElementGuid>5e20a19c-958b-4f9b-a16d-b14f9d8c47d4</webElementGuid>
+      <webElementGuid>9202604f-5bfb-42d4-af49-0c568bc26c94</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div[3]/label/span</value>
-      <webElementGuid>2635251e-b5ee-4edf-bf41-caaabda95593</webElementGuid>
+      <webElementGuid>55b55131-5451-4ad2-a46a-cd19adf0a2b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/following::span[1]</value>
-      <webElementGuid>5298f20d-80a2-47ef-9a46-0c096f6ac373</webElementGuid>
+      <webElementGuid>7326f216-1af7-46b1-885a-f72349520172</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[1]/following::span[2]</value>
-      <webElementGuid>7bb1a744-5a0e-4cb2-b222-d15af50e6258</webElementGuid>
+      <webElementGuid>6535f1cd-6b17-4c47-a631-041514002791</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='In Small Group?'])[1]/preceding::span[1]</value>
-      <webElementGuid>724549a8-042e-4db9-aea1-4149b9152cd4</webElementGuid>
+      <webElementGuid>c28ff71c-f6ca-4082-8a08-8d6d3e550b96</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[2]/preceding::span[1]</value>
-      <webElementGuid>4b56531b-2fd0-4062-8615-d298970da806</webElementGuid>
+      <webElementGuid>2dbee2f7-712e-4389-9b8f-eaa4396dea9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='No']/parent::*</value>
-      <webElementGuid>b6cd14b4-d646-43eb-90dd-a1f7804490ed</webElementGuid>
+      <webElementGuid>4104bd84-9e64-4d03-9165-a3f3369a07c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/label/span</value>
-      <webElementGuid>e8b3c1b8-6367-4373-8f51-42473f33342e</webElementGuid>
+      <webElementGuid>ff1ff723-a3c9-48d4-94d4-1116e6c0cb8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'No' or . = 'No')]</value>
-      <webElementGuid>3c30435f-df00-42bb-93a6-6790be7e6a2b</webElementGuid>
+      <webElementGuid>7e557de1-e632-4961-9186-d8478d0bab21</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

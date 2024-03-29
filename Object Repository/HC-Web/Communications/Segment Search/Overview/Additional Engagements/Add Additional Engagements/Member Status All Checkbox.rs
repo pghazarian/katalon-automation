@@ -6,12 +6,12 @@
    <elementGuidId>5fe2ceda-821f-459f-9608-5025b4340890</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>label.checkbox-label</value>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/section/div[1]/section/div[7]/label</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='All']/label</value>
+         <key>CSS</key>
+         <value>label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>dcc6bc26-dea2-46d5-bb26-c3b713a8306f</webElementGuid>
+      <webElementGuid>d9e1d8fe-62b8-493a-9cfe-e3bda79cc9c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>checkbox-label</value>
-      <webElementGuid>f3069619-896b-49bf-a010-752462082549</webElementGuid>
+      <webElementGuid>8bcfb280-f2b7-4de2-9097-66c8bfce4cff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Allcheck</value>
-      <webElementGuid>4a38a737-d75d-4c4e-a935-a87a2c066cdf</webElementGuid>
+      <webElementGuid>00cf7bc4-933c-447f-a945-d9b29c846933</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;All&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
-      <webElementGuid>10a4b9c0-6dcd-4da4-a73a-bbd7bfb9089f</webElementGuid>
+      <webElementGuid>814d2fb6-d831-4a84-9716-2b66a9e84b65</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='All']/label</value>
-      <webElementGuid>d917b589-4209-4d82-83aa-db03ba7af293</webElementGuid>
+      <webElementGuid>4b5937b7-f10f-4f1b-bcc2-641f3ddc2bc1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Member Status'])[1]/following::label[1]</value>
-      <webElementGuid>7bfdd063-e6e7-4f87-bb52-f278a3a0d70f</webElementGuid>
+      <webElementGuid>ba8b8d9c-f84c-4724-8cb6-736d86933076</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[2]/following::label[1]</value>
-      <webElementGuid>42ec2f6f-2abf-44e3-9ca4-b94fa38c40d0</webElementGuid>
+      <webElementGuid>8a5961b2-e7da-4bcf-9385-9ec71f636fc3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Disengaged Member'])[1]/preceding::label[1]</value>
-      <webElementGuid>325284f1-a1c4-4c9b-aebb-1f3bc516e5d8</webElementGuid>
+      <webElementGuid>589158f1-bd1b-46af-92cb-876491b3c648</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[7]/label</value>
-      <webElementGuid>41e45340-5990-4b0a-aa08-e28616a3a4a3</webElementGuid>
+      <webElementGuid>0a34cb8e-3e1f-4814-8008-13205b0181e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Allcheck' or . = 'Allcheck')]</value>
-      <webElementGuid>fdab1ee3-2d84-4e64-afe4-f7c48558e7a8</webElementGuid>
+      <webElementGuid>62cd8a54-519d-411b-884e-f1f90d70c4e4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Event Value</name>
+   <name>Member Status Pending Checkbox</name>
    <tag></tag>
-   <elementGuidId>2400e08f-64b1-4bdb-baf4-2c5e28ec042c</elementGuidId>
+   <elementGuidId>fb6eb636-3a91-4c1d-aa4f-307c509cec8e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[2]/div[2]/h5</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/section/div[1]/section/div[12]/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

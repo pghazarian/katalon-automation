@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Status New Value</name>
+   <name>Milestone Status New Value</name>
    <tag></tag>
-   <elementGuidId>37bbd050-eaea-40f0-a2dd-78ccb143b97c</elementGuidId>
+   <elementGuidId>51fb2cd5-d7d0-41aa-acc4-8047b2ce8dd8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/div[2]/div[5]/h5</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/h5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

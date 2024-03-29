@@ -170,7 +170,7 @@ not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segmen
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Label'), 'Event')
 
 'Verify default value of Event is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Value'), 'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Default Value'), 'N/A')
 
 WebUI.closeBrowser()
 

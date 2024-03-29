@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>p_Communications(beta)</name>
+   <name>In Ministry No Radio Button</name>
    <tag></tag>
-   <elementGuidId>fe358e8c-d2d8-4231-914e-71c2ba845af5</elementGuidId>
+   <elementGuidId>ed04108e-77ce-45ec-8d80-7c2b8949799e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/section/div[1]/section/div[3]/label</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div/p</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;Communications(beta)&quot;i</value>
+         <value>internal:role=radio[name=&quot;No&quot;i] >> nth=0</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,79 +27,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>52fd0a1a-80dd-48b7-9bae-4a7be4d2a62b</webElementGuid>
+      <value>label</value>
+      <webElementGuid>b4ebfc54-2337-4456-ac37-94ff8a46c24e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root section-label MuiTypography-body1</value>
-      <webElementGuid>45ade280-495b-4e30-9a33-5f909bc3b04b</webElementGuid>
+      <value>label jss572</value>
+      <webElementGuid>6e6f2df8-53aa-453a-86da-ad7ef7544d7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Communications(beta)</value>
-      <webElementGuid>dd5b8b12-bf9d-4392-ab2e-dd95cb7fee18</webElementGuid>
+      <value>No</value>
+      <webElementGuid>70f18e4e-54f8-4d53-a0e9-b3fa0207c620</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]/p[@class=&quot;MuiTypography-root section-label MuiTypography-body1&quot;]</value>
-      <webElementGuid>03d06416-001d-4d1e-8681-d8f04262bbcd</webElementGuid>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/section[1]/div[@class=&quot;ui radio jss574 jss565&quot;]/label[@class=&quot;label jss572&quot;]</value>
+      <webElementGuid>b6141a2c-2e2d-4098-8056-5f61e4f34636</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div/p</value>
-      <webElementGuid>9b3e4280-f76d-43e3-93e6-5c4a814f1407</webElementGuid>
+      <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div[3]/label</value>
+      <webElementGuid>e19caac6-c927-40c9-80d7-8827bbc86301</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Event Catalogs'])[1]/following::p[1]</value>
-      <webElementGuid>0054b670-a517-45a5-9eb9-b3b071b7f9e2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/following::label[1]</value>
+      <webElementGuid>6a8804fd-ecba-4177-bdcb-e282627b6313</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Settings &amp; Preferences'])[2]/following::p[1]</value>
-      <webElementGuid>4ed11246-5240-4f23-8be9-14d6ce20a662</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[1]/following::label[2]</value>
+      <webElementGuid>9d82efc9-fbd7-4249-83e5-bcd904359e8d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Communications']/parent::*</value>
-      <webElementGuid>3bc2dc9e-2794-44b3-959e-f844a333d32d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='In Small Group?'])[1]/preceding::label[1]</value>
+      <webElementGuid>fb260e05-a22c-4128-bd9a-588c4d1b0042</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[5]/div/p</value>
-      <webElementGuid>1fbde27f-1025-496d-ae0a-5600efd9c457</webElementGuid>
+      <value>//div[3]/label</value>
+      <webElementGuid>a9d6abb8-685a-451d-a215-4ef268926754</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Communications(beta)' or . = 'Communications(beta)')]</value>
-      <webElementGuid>02d6ba8f-3cad-405b-84d2-dab34fdc26c0</webElementGuid>
+      <value>//label[(text() = 'No' or . = 'No')]</value>
+      <webElementGuid>3c62d4d2-d7c2-4b0f-b791-0277813d85be</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
