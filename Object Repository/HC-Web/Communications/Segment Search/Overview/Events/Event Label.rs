@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h6[text()=&quot;Event&quot;]</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[2]/div[2]/h6</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Milestone Status Complete</name>
+   <name>Event Value</name>
    <tag></tag>
-   <elementGuidId>51fb2cd5-d7d0-41aa-acc4-8047b2ce8dd8</elementGuidId>
+   <elementGuidId>2400e08f-64b1-4bdb-baf4-2c5e28ec042c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;Complete&quot;]</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[2]/div[2]/h5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

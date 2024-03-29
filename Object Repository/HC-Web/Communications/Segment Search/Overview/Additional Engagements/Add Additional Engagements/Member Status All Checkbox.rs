@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Member Status All Checkbox</name>
+   <tag></tag>
+   <elementGuidId>5fe2ceda-821f-459f-9608-5025b4340890</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>label.checkbox-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='All']/label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;duplicate Duplicate spreadsheet Export ST Segment - 2024-03-27 13:59:12 ST Segment - 2024-03-27 13:59:12 Description Campus Anaheim Status Inactive Communications 0 Record Result 1024 edit-2&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>dcc6bc26-dea2-46d5-bb26-c3b713a8306f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>checkbox-label</value>
+      <webElementGuid>f3069619-896b-49bf-a010-752462082549</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Allcheck</value>
+      <webElementGuid>4a38a737-d75d-4c4e-a935-a87a2c066cdf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;All&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>10a4b9c0-6dcd-4da4-a73a-bbd7bfb9089f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='All']/label</value>
+      <webElementGuid>d917b589-4209-4d82-83aa-db03ba7af293</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Member Status'])[1]/following::label[1]</value>
+      <webElementGuid>7bfdd063-e6e7-4f87-bb52-f278a3a0d70f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[2]/following::label[1]</value>
+      <webElementGuid>42ec2f6f-2abf-44e3-9ca4-b94fa38c40d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Disengaged Member'])[1]/preceding::label[1]</value>
+      <webElementGuid>325284f1-a1c4-4c9b-aebb-1f3bc516e5d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[7]/label</value>
+      <webElementGuid>41e45340-5990-4b0a-aa08-e28616a3a4a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Allcheck' or . = 'Allcheck')]</value>
+      <webElementGuid>fdab1ee3-2d84-4e64-afe4-f7c48558e7a8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
