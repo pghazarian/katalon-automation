@@ -75,7 +75,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     'N/A')
 
 'Verify the updated Member Status value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status New Value'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value'), 
     'Disengaged Member, Member, Membership Review, Non-Member, Pending')
 
 'Click on the Edit button next to Additional Engagements'
