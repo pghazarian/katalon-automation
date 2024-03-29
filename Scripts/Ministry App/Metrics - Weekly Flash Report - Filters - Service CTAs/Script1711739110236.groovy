@@ -18,10 +18,20 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /*
- * 1. Open MA 
- * 2. Login 
+ * 1. Open MA
+ * 2. Login
  * 3. tap on Metrics icon
  * 4. tap on Trending tab
- * 5. tap on Service Check-Ins tile 
- * 6. tap on Filter icon 
+ * 5. tap on Service CTAs tile
+ * 6. tap on Filter icon
+ * 7. Verify Filters drawer opens
+ * 8. Verify Filters header is displayed on top left corner of drawer
+ * 9. Verify Campus field exists with a ">" Chevron icon to the far right of it
+ * 10. Verify Service field exists with a ">" Chevron icon to the far right of it
+ * 11. Verify when tapping on the Chevron icon next to the Campus field, all Campuses in HC admin will be displayed
+ * 12. Verify when tapping on the Chevron icon next to the Service field, all Services in HC admin will be displayed
+ * 13. Verify when filtering on a specific Campus, all Service CTAs for selected Campus are displayed
+ * 14. Verify when filtering on a specific Service, all Service CTAs for selected Service are displayed
+ * 15. Verify when filtering on both Services for a specific Campus, all available servies for the selected campus are displayed
+ * 16. Verify when filtering on Services which have no data gathered yet will show a Pending link
  */
