@@ -46,6 +46,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 'Click on the Edit button next to Demographic Info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Demographic Info Edit Button'))
 
+'Scroll to top of the Demographic Info section'
+WebUI.scrollToPosition(0, 0)
+
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'campus-selector\']/descendant::div[@class=\'Select-control\']', 
     'Anaheim')
