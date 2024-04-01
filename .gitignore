@@ -24,3 +24,4 @@ build
 .cache/
 
 .DS_Store
+settings/internal/com.kms.katalon.core.webui.remote.properties
