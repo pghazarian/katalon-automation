@@ -45,7 +45,7 @@ println(Device.getDeviceOS())
 // setup configuration for the apps
 
 // Android
-String androidFile = "app.apk"
+String androidFile = "App Files/Companion App/Android/android-stage-build.apk"
 String androidAppId = GlobalVariable.CompanionApp_BundleId
 App androidApp = new App(androidFile, androidAppId)
 
@@ -82,6 +82,10 @@ TextField.typeText(emailAddress, GlobalVariable.Admin_UserName, timeout)
 TestObject password = Finder.findTextField('Login/Password Text Field')
 'Enter value in the Password field'
 Mobile.setEncryptedText(password, GlobalVariable.Admin_Password, timeout)
+
+if (Device.isAndroid()) {
+	Mobile.hideKeyboard()
+}
 
 'Click Sign In Button'
 Button.tap('Login/Sign In Button')
