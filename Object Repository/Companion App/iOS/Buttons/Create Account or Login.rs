@@ -3,7 +3,7 @@
    <description></description>
    <name>Create Account or Login</name>
    <tag></tag>
-   <elementGuidId>eda3e85b-e03d-435f-ac6a-ecd9ab4c273e</elementGuidId>
+   <elementGuidId>700ad058-c888-442c-8d59-0c04558699a9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -95,6 +95,6 @@
       <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[17]/XCUIElementTypeOther[3]/XCUIElementTypeAlert[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]</value>
       <webElementGuid>afbf09e4-b026-4f6b-a92d-ea97d6cf9455</webElementGuid>
    </webElementProperties>
-   <locator>//*[@type = 'XCUIElementTypeOther' and @label = 'ui-button--intro-screen-login' and @name = 'ui-button--intro-screen-login']</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-button--intro-screen-login</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

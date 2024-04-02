@@ -5,6 +5,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.mobile.keyword.internal.MobileAbstractKeyword
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -26,7 +27,6 @@ import com.detroitlabs.katalonmobileutil.testobject.TextField
 
 /*
  * Documentation for the DetroitLabs library: https://github.com/detroit-labs/katalon-mobile-util?tab=readme-ov-file#textfield
- * 
  */
 
 int timeout = 3
@@ -62,36 +62,28 @@ Finder.setAndroidRepository('Object Repository/Companion App/Android')
 boolean removeAppBeforeTest = false // change this to false to keep the app state between tests
 Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 
+// These lines demonstrate the convenience function to tap a button, given the relative 
 'Click Login Button'
 Button.tap("Create Account or Login")
 
-//TestObject loginButton = Finder.findButton('blahblah')
-//Mobile.tap(loginButton, 0)
+'Click the Continue Button (from the OS to approve going to an external domain)'
+Button.tap("Login/Continue")
 
-//
-///*
-// * Object Repository/Companion App/iOS/Buttons/Create Account or Login Button
-// * Object Repository/Companion App/iOS/Create Account or Login Button
-// * Object Repository/Companion App/iOS/Buttons/Create Account or Login
-// * Object Repository/Companion App/iOS/Buttons/Create Account or Login
-// */
-//
-//'Click the Continue Button (from the OS to approve going to an external domain)'
-//Button.tap("Login/Continue")
-//
-//'Put focus in the Email Address field'
-//TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
-//TextField.clearText(emailAddress, timeout)
-//TextField.typeText(emailAddress, GlobalVariable.Admin_UserName, timeout)
-//
-//'Put focus in the Password field'
-//TestObject password = Finder.findTextField('Login/Password Text Field')
-//TextField.clearText(password, timeout)
-//TextField.typeText(password, GlobalVariable.Admin_Password, timeout)
-//
-//'Click Sign In Button'
-//Button.tap('Login/Sign In Button')
-//
-//'Click Later Button'
-//Button.tap("Later")
-//
+'Find the Email Address field'
+TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
+'Clear in the Email Address field'
+TextField.clearText(emailAddress, timeout)
+'Enter value in the Email Address field'
+TextField.typeText(emailAddress, GlobalVariable.Admin_UserName, timeout)
+
+'Find the Password field'
+TestObject password = Finder.findTextField('Login/Password Text Field')
+'Enter value in the Password field'
+Mobile.setEncryptedText(password, GlobalVariable.Admin_Password, timeout)
+
+'Click Sign In Button'
+Button.tap('Login/Sign In Button')
+
+'Click Later Button'
+Button.tap("Later Button", timeout, FailureHandling.OPTIONAL)
+
