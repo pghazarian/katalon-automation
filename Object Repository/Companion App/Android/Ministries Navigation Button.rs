@@ -3,9 +3,10 @@
    <description></description>
    <name>Ministries Navigation Button</name>
    <tag></tag>
-   <elementGuidId>86e9c2fe-76a5-45d1-a75e-e4d62be9206d</elementGuidId>
+   <elementGuidId>3689a016-aa79-43be-a348-9d9b2beb5925</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = 'Ministries' or . = 'Ministries')]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-icon--buttom-nav-Ministries, Ministries&#xd;
+</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

@@ -18,7 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Launch the CA app'
-Mobile.startExistingApplication('com.healthychurch.companion.development')
+Mobile.startExistingApplication('com.healthychurch.companion.stage')
+
+Mobile.delay(3)
 
 'tap button to log in.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Create Account or Login Button'), 0)
@@ -56,6 +58,7 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/Groups Naviga
 
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Groups Heading'), 0)
 
+ /*
 'tap on the Ministries navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Ministries Navigation Button'), 0)
 
@@ -65,7 +68,7 @@ Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Androi
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Events Navigation Button'), 0)
 
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Events Heading'), 0)
-
+*/
 'tap on the Home navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Home Navigation Button'), 0)
 

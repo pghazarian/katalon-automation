@@ -3,9 +3,9 @@
    <description></description>
    <name>Profile Navigation Button</name>
    <tag></tag>
-   <elementGuidId>1b904679-d649-4eb5-8ebe-aa6e9c96794e</elementGuidId>
+   <elementGuidId>a979aa38-a438-4fd2-90cd-5f4696f848a8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = 'Profile' or . = 'Profile')]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-icon--buttom-nav-Profile, Profile</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
