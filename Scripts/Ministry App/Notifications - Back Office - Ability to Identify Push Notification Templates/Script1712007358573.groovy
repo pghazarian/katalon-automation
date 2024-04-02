@@ -24,8 +24,8 @@ import org.openqa.selenium.Keys as Keys
  * 4. Search for an Active Connection Form
  * 5. Open the Active Connection Form 
  * 6. Go to the Follow Ups tab
- * 7. Add a New Follow Up Templete Rule
- * 8. Add a Task Rule to the New Templete Rule
+ * 7. Add a New Follow Up Template Rule
+ * 8. Add a Task Rule to the New Template Rule
  * 9. Go to Notifications section of the Rule Builder part of the Task Rule
  * 10. Verify that only Push Notifications Templates appear in the dropdown menu within the Notifications section 
  */
