@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/section/div[1]/section/div[5]/label</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[5]/label</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>2298cdb2-1653-4301-8d0c-d3e059b99b02</webElementGuid>
+      <webElementGuid>2ed6b6c6-6ae8-4a71-8825-8d7f4259f92d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Yes</value>
-      <webElementGuid>006987ce-3d24-40f0-9c9a-4b312757a5c9</webElementGuid>
+      <webElementGuid>6e956cf5-3432-4600-8a72-226e38e2a128</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/section[1]/div[@class=&quot;ui radio jss598 jss589 undefined radio-is-checked&quot;]/label[@class=&quot;label jss596&quot;]/span[1]</value>
-      <webElementGuid>eeb94f4b-32ea-42b5-a0bf-bcddc29339d2</webElementGuid>
+      <webElementGuid>b996d1af-acc1-4d09-9280-4d4c064e5f76</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div[2]/label/span</value>
-      <webElementGuid>3d2c8759-c911-4d69-b87b-a7b4b2af4255</webElementGuid>
+      <webElementGuid>0f563f9f-8b3f-4afb-86ae-5d247f214f24</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[1]/following::span[1]</value>
-      <webElementGuid>2ee33ac9-22fb-46ce-9372-b3ef2dea3fe4</webElementGuid>
+      <webElementGuid>51fcf19c-9801-4dd6-b867-a9647f410049</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='In Ministry?'])[1]/following::span[2]</value>
-      <webElementGuid>03db94ee-311c-4187-96a3-2e0ae6e6d276</webElementGuid>
+      <webElementGuid>ce533e41-4b89-4aba-9895-3b14c9a630ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::span[1]</value>
-      <webElementGuid>24c3f8e3-65d2-43da-8d02-1674735cf78b</webElementGuid>
+      <webElementGuid>b09dae97-1df3-46a8-b7a3-38738d6f12a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='In Small Group?'])[1]/preceding::span[2]</value>
-      <webElementGuid>ea4d86db-83e6-4ab6-9bfe-f093092c6cc0</webElementGuid>
+      <webElementGuid>4839c71b-dd9e-48bb-8f34-129f6006aeed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Yes']/parent::*</value>
-      <webElementGuid>cfa782b4-6ca3-49b5-bf11-0f8424f2c90d</webElementGuid>
+      <webElementGuid>ec145b24-93ab-418d-8c99-d36d7a3e2c65</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/label/span</value>
-      <webElementGuid>22bdf69f-118c-4637-aa6a-946f1a38da3c</webElementGuid>
+      <webElementGuid>86636b1c-2e00-43b7-ba88-53944dd57bb5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Yes' or . = 'Yes')]</value>
-      <webElementGuid>21944c37-7962-479e-8314-4436cab382ab</webElementGuid>
+      <webElementGuid>5fba134e-d77f-42f6-85b0-47c2687a6383</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

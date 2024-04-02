@@ -6,12 +6,12 @@
    <elementGuidId>c4609ffb-e13e-425e-b34c-cd343338cb52</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.cmui.grid.jss7.jss479 > div.cmui.grid.jss7.jss485 > #segment_details_header--edit_button > span.button-inner-container.jss208</value>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/div[1]/button/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@id='segment_details_header--edit_button']/span)[3]</value>
+         <key>CSS</key>
+         <value>div.cmui.grid.jss7.jss479 > div.cmui.grid.jss7.jss485 > #segment_details_header--edit_button > span.button-inner-container.jss208</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>d97fc971-e846-484a-9492-706f242a341e</webElementGuid>
+      <webElementGuid>dc31ecd0-7ab8-4788-baa3-61d3e6dabdf8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button-inner-container jss208</value>
-      <webElementGuid>af502086-5f09-4efe-9a9f-19c66a266326</webElementGuid>
+      <webElementGuid>952282c4-a4c2-471c-a360-27d33d99fcfd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Edit</value>
-      <webElementGuid>ca5a557d-62a0-4698-b5e7-f4339fe2f2b3</webElementGuid>
+      <webElementGuid>b538dd0e-d50d-4aa9-a0ec-a61b92e26a0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/div[@class=&quot;cmui grid jss7 jss485&quot;]/button[@id=&quot;segment_details_header--edit_button&quot;]/span[@class=&quot;button-inner-container jss208&quot;]</value>
-      <webElementGuid>48a104ee-b13b-4da2-87c1-bdaa12a91e05</webElementGuid>
+      <webElementGuid>ddaec34a-7445-49f3-a51f-a9622ef08278</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//button[@id='segment_details_header--edit_button']/span)[3]</value>
-      <webElementGuid>bee2633f-454f-4c3c-bc5d-9d2a7cb40ee8</webElementGuid>
+      <webElementGuid>12f3e3a3-1480-4c40-a669-60bf19de87f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Additional Engagements'])[1]/following::span[1]</value>
-      <webElementGuid>9eec8a52-7b82-44d1-856e-d4220ab1893f</webElementGuid>
+      <webElementGuid>cbcbe9a3-a22a-4e92-bf47-bb2ba3e3e4be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DOJ Cleared'])[1]/following::span[1]</value>
-      <webElementGuid>a174ef77-a55e-4a8a-88d6-c207804f0740</webElementGuid>
+      <webElementGuid>143175b1-9bcb-4b36-9f4d-ae838748b4b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[7]/preceding::span[1]</value>
-      <webElementGuid>08070496-747c-4b3b-b9c8-aa0a875b83d5</webElementGuid>
+      <webElementGuid>a200b83f-ec20-49b9-ba3b-002758555c18</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='In Ministry'])[1]/preceding::span[1]</value>
-      <webElementGuid>dba422e8-1f36-48d0-8177-e9a239a67547</webElementGuid>
+      <webElementGuid>0a5d3e2b-853d-41a3-a91d-ca7e641d7fc8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//main/div[2]/div/button/span</value>
-      <webElementGuid>0f3c5b6f-6f48-4762-9b26-5f9615004234</webElementGuid>
+      <webElementGuid>a7577429-1ce7-46cb-acfc-e19200910c2e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Edit' or . = 'Edit')]</value>
-      <webElementGuid>9ce1662a-ffca-46d7-9fa2-63572464d8a2</webElementGuid>
+      <webElementGuid>48880d5b-4525-43e5-95d1-a7b5db15840b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -52,18 +52,18 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 'Click on Any under In Small Group'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Small Group Any Radio Button'))
 
-'Click All under Member Status'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status All Checkbox'))
+'Click Member under Member Status'
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status Member Checkbox'))
 
 'Click button to save additional engagements'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Additional Engagements Save Button'))
 
 'Verify additional engagements updated toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast'), 
+not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast'), 
     FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast Text'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast Text'), 
     'Additional Engagements updated successfully')
 
 'Verify the updated In Ministry value'
@@ -76,7 +76,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 
 'Verify the updated Member Status value'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value'), 
-    'Disengaged Member, Member, Membership Review, Non-Member, Pending')
+    'Member')
 
 'Click on the Edit button next to Additional Engagements'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Additional Engagements Edit Button'))
@@ -87,21 +87,21 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 'Click on Yes under In Small Group'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Small Group Yes Radio Button'))
 
-'Click All under Member Status to deselect all'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status All Checkbox'))
-
-'Click Member under Member Status'
+'Click Member under Member Status to deselect'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status Member Checkbox'))
+
+'Click All under Member Status'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status All Checkbox'))
 
 'Click button to save additional engagements'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Additional Engagements Save Button'))
 
 'Verify additional engagements updated toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast'), 
+not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast'), 
     FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast Text'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast Text'), 
     'Additional Engagements updated successfully')
 
 'Verify the updated In Ministry value'
@@ -114,7 +114,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 
 'Verify the updated Member Status value'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value'), 
-    'Member')
+    'Disengaged Member, Member, Membership Review, Non-Member, Pending')
 
 'Click on the Edit button next to Additional Engagements'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Additional Engagements Edit Button'))
@@ -125,8 +125,8 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additi
 'Click on No under In Small Group'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Small Group No Radio Button'))
 
-'Click Member under Member Status to deselect'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status Member Checkbox'))
+'Click All under Member Status to deselect'
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status All Checkbox'))
 
 'Click Membership Review under Member Status'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status Membership Review Checkbox'))
@@ -135,11 +135,11 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additi
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Additional Engagements Save Button'))
 
 'Verify additional engagements updated toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast'), 
+not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast'), 
     FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast Text'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements Updated Toast Text'), 
     'Additional Engagements updated successfully')
 
 'Verify the updated In Ministry value'

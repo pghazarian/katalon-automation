@@ -112,6 +112,19 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Default Value'), 
     'N/A')
 
+'Verify Events label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Label'), 'Events')
+
+'Verify Edit button next to Events is displayed'
+not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Edit Button'), 
+    FailureHandling.STOP_ON_FAILURE)
+
+'Verify Event label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Label'), 'Event')
+
+'Verify default value of Event is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Default Value'), 'N/A')
+
 'Verify Milestones label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Label'), 'Milestones')
 
@@ -158,19 +171,6 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 'Verify default value of Member Status is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value'), 
     'N/A')
-
-'Verify Events label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Label'), 'Events')
-
-'Verify Edit button next to Events is displayed'
-not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Edit Button'), 
-    FailureHandling.STOP_ON_FAILURE)
-
-'Verify Event label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Label'), 'Event')
-
-'Verify default value of Event is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Default Value'), 'N/A')
 
 WebUI.closeBrowser()
 

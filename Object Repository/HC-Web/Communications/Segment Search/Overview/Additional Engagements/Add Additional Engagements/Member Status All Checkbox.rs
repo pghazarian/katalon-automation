@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/section/div[1]/section/div[7]/label</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[7]/label</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>d9e1d8fe-62b8-493a-9cfe-e3bda79cc9c3</webElementGuid>
+      <webElementGuid>971e4761-ef75-4574-a0a9-1338ad40dac3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>checkbox-label</value>
-      <webElementGuid>8bcfb280-f2b7-4de2-9097-66c8bfce4cff</webElementGuid>
+      <webElementGuid>33884dcb-d0c6-4ce2-b700-97ac6a6d94d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Allcheck</value>
-      <webElementGuid>00cf7bc4-933c-447f-a945-d9b29c846933</webElementGuid>
+      <webElementGuid>2e143d50-f0cd-45a8-ab46-1a044e3c4b45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;All&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
-      <webElementGuid>814d2fb6-d831-4a84-9716-2b66a9e84b65</webElementGuid>
+      <webElementGuid>38e8c470-1176-4019-bbe8-8f7c554c9b95</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='All']/label</value>
-      <webElementGuid>4b5937b7-f10f-4f1b-bcc2-641f3ddc2bc1</webElementGuid>
+      <webElementGuid>5a9d0ff7-07e4-4810-8d1f-772ff50843b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Member Status'])[1]/following::label[1]</value>
-      <webElementGuid>ba8b8d9c-f84c-4724-8cb6-736d86933076</webElementGuid>
+      <webElementGuid>cd9a1973-af59-46d2-b450-70472b92681e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[2]/following::label[1]</value>
-      <webElementGuid>8a5961b2-e7da-4bcf-9385-9ec71f636fc3</webElementGuid>
+      <webElementGuid>538ada44-2e8c-47c5-897f-a50f2db836b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Disengaged Member'])[1]/preceding::label[1]</value>
-      <webElementGuid>589158f1-bd1b-46af-92cb-876491b3c648</webElementGuid>
+      <webElementGuid>1ce6c21c-e25c-48d2-801b-1d30c706680b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[7]/label</value>
-      <webElementGuid>0a34cb8e-3e1f-4814-8008-13205b0181e9</webElementGuid>
+      <webElementGuid>8332c083-fecf-4f95-962a-0a44f0c05078</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Allcheck' or . = 'Allcheck')]</value>
-      <webElementGuid>62cd8a54-519d-411b-884e-f1f90d70c4e4</webElementGuid>
+      <webElementGuid>ad35fbc2-9a34-4ef8-83d8-ddab3ba4abbb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

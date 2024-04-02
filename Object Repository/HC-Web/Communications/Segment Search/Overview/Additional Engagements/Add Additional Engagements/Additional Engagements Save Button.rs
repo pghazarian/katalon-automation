@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/section/div[1]/div[1]/button[2]/span</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/div[1]/button[2]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>9fcb390e-01ea-411e-bdc9-619ddfc84b5e</webElementGuid>
+      <webElementGuid>3383d019-778b-4176-9e02-7250e1822e56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>f7bb40ed-75ea-40b7-95cc-2c0254c5c4a8</webElementGuid>
+      <webElementGuid>39ab7c11-74af-4713-8290-676b27744e64</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>cmui button jss207 jss532 jss215 jss206</value>
-      <webElementGuid>44b5a117-851f-40ce-b6dc-0417e90d68e7</webElementGuid>
+      <webElementGuid>24818c84-e773-4c14-a09b-534dba8c9b4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>e11a2bc3-ac9e-4364-903c-b84946bdbe43</webElementGuid>
+      <webElementGuid>2e326bc3-746a-4937-9643-4d15cd892af4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
-      <webElementGuid>8c6513f3-c739-4aa7-90fa-34c5488d0b8e</webElementGuid>
+      <webElementGuid>c8f8c6e5-50f1-4160-adce-1390544271fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/div[@class=&quot;jss515&quot;]/button[@class=&quot;cmui button jss207 jss532 jss215 jss206&quot;]</value>
-      <webElementGuid>3ee4157f-16bf-4d3c-8045-616008151d98</webElementGuid>
+      <webElementGuid>6f1b626a-5142-492b-8fcb-802d27279ced</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[10]</value>
-      <webElementGuid>3a0ddbe9-de32-47ef-846c-fe77eb5280d7</webElementGuid>
+      <webElementGuid>75e0a134-7c67-4d72-a762-efb3e167edfb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/div/button[2]</value>
-      <webElementGuid>261695ed-d9f0-412d-a938-d5a1ba6dae12</webElementGuid>
+      <webElementGuid>36789317-9385-4684-9c76-852e0fd661fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
-      <webElementGuid>6ab838f6-e113-4c94-9ea5-142af18a4389</webElementGuid>
+      <webElementGuid>d82cfc3a-c482-4199-ac0e-7117d175f98f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pending'])[1]/following::button[2]</value>
-      <webElementGuid>aba91c35-b5f5-44bd-94ba-3c7134c8a60e</webElementGuid>
+      <webElementGuid>fa90f728-f152-4336-9165-964d522e57cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::button[2]</value>
-      <webElementGuid>c7625565-7338-4453-8079-150df0306980</webElementGuid>
+      <webElementGuid>3948b002-db5e-4cab-9eae-3844d8425337</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]</value>
-      <webElementGuid>50f7a6df-5781-474c-a5cf-980841fd0516</webElementGuid>
+      <webElementGuid>ef38f6a5-bfc2-4696-af9d-c810c6cfaf44</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +125,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Save' or . = 'Save')]</value>
-      <webElementGuid>66d5fc8b-acd4-4277-9d2c-52615ca58728</webElementGuid>
+      <webElementGuid>f3b0a7ba-324f-43b3-a954-a600f14b9fd5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

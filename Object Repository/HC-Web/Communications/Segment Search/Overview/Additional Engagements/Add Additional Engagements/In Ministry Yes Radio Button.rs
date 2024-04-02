@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[2]/section/div[1]/section/div[2]/label</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[2]/label</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>52607f18-4da3-4d3d-a7b2-b730e0efdb1d</webElementGuid>
+      <webElementGuid>e29fa62c-d106-462d-8ed1-eb0f104dfb99</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>label jss548</value>
-      <webElementGuid>80113cf3-a2e6-4298-87a6-d24176a5fcca</webElementGuid>
+      <webElementGuid>0edaba64-e8fe-4ae6-89ef-d1f71cc79e4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Yes</value>
-      <webElementGuid>c35f2893-a26a-4644-ac4f-f0d462be8c81</webElementGuid>
+      <webElementGuid>047b1849-83ef-4f0a-b93e-48dce8204e6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/section[1]/div[@class=&quot;ui radio jss550 jss541&quot;]/label[@class=&quot;label jss548&quot;]</value>
-      <webElementGuid>23064047-cee9-4d03-81b0-a502dfa5860d</webElementGuid>
+      <webElementGuid>a5a7e4a7-b895-47b1-9d0a-9869b968a336</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div[2]/label</value>
-      <webElementGuid>4739cc27-c65b-4f31-8ab0-919edd6e77b8</webElementGuid>
+      <webElementGuid>72e7dae2-6e8b-42e9-8e73-4250321ddebd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[1]/following::label[1]</value>
-      <webElementGuid>8cd01f87-8453-4bb4-b539-9f52136c6262</webElementGuid>
+      <webElementGuid>da707d06-a012-4b4b-841e-26020bd11200</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='In Ministry?'])[1]/following::label[2]</value>
-      <webElementGuid>d3b630ae-1d9d-45f5-9393-6b30282ee762</webElementGuid>
+      <webElementGuid>596c4a88-c4b3-41f9-b80c-cbf22a6bc8ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::label[1]</value>
-      <webElementGuid>4d70e6f8-d912-4cb0-8d78-f1dfd3451ed5</webElementGuid>
+      <webElementGuid>3c909ca5-61cd-472b-b9c4-af2d84579531</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,7 +92,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/label</value>
-      <webElementGuid>830c08a9-53b7-446f-8b9f-2d483451478d</webElementGuid>
+      <webElementGuid>2148f40f-ee20-43bf-abaf-9389c90f22e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,6 +100,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Yes' or . = 'Yes')]</value>
-      <webElementGuid>3b0765fc-2280-4c0f-bea9-e57a18dc0eef</webElementGuid>
+      <webElementGuid>3bd6577e-8607-4881-99d6-5ff7265c21f1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
