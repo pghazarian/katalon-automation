@@ -66,8 +66,10 @@ Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 'Click Login Button'
 Button.tap("Create Account or Login")
 
-'Click the Continue Button (from the OS to approve going to an external domain)'
-Button.tap("Login/Continue")
+if (Device.isIOS()) {
+	'Click the Continue Button (from the OS to approve going to an external domain)'
+	Button.tap("Login/Continue")
+}
 
 'Find the Email Address field'
 TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
@@ -84,6 +86,8 @@ Mobile.setEncryptedText(password, GlobalVariable.Admin_Password, timeout)
 'Click Sign In Button'
 Button.tap('Login/Sign In Button')
 
-'Click Later Button'
-Button.tap("Later Button", timeout, FailureHandling.OPTIONAL)
+if (Device.isIOS()) {
+	'Click Later Button'
+	Button.tap("Later Button", timeout, FailureHandling.OPTIONAL)
+}
 
