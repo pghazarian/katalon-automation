@@ -3,9 +3,9 @@
    <description></description>
    <name>Home Log Out Button</name>
    <tag></tag>
-   <elementGuidId>62697379-3f9e-41dc-848a-9c52a226799c</elementGuidId>
+   <elementGuidId>b46d27bb-d184-403e-948f-ab453488bd77</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = 'LOGOUT!' or . = 'LOGOUT!')]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>LOGOUT!</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

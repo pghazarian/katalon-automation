@@ -3,9 +3,9 @@
    <description></description>
    <name>Discover Navigation Button</name>
    <tag></tag>
-   <elementGuidId>93dd086b-e096-4a9f-aeba-fcaeb669007a</elementGuidId>
+   <elementGuidId>c84e89ed-bf27-4401-bc04-a60efc3d8a6a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = 'Discover' or . = 'Discover')]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-icon--buttom-nav-Discover, Discover</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
