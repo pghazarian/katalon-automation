@@ -3,9 +3,9 @@
    <description></description>
    <name>Groups Navigation Button</name>
    <tag></tag>
-   <elementGuidId>059a3dfe-3827-44d3-b9cf-f4b4da84c410</elementGuidId>
+   <elementGuidId>bafde5df-0c75-47df-b7f6-9cb38de7da86</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = 'Groups' or . = 'Groups')]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-icon--buttom-nav-Groups, Groups</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

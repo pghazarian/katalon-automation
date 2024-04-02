@@ -3,9 +3,10 @@
    <description></description>
    <name>Events Navigation Button</name>
    <tag></tag>
-   <elementGuidId>fc92674b-c068-4376-bde5-bf7cd5f3604a</elementGuidId>
+   <elementGuidId>6902d71f-203c-4eec-9328-23d81dce71c8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = 'Events' or . = 'Events')]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-icon--buttom-nav-Events, Events&#xd;
+</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
