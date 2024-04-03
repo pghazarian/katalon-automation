@@ -23,9 +23,9 @@ def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
 
 def SegmentName = "ST Segment - $CurrentDateTime"
 
+'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search', ('ForceLogin') : false], 
-    FailureHandling.STOP_ON_FAILURE)
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
 
 'Click button to create a new segment'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Button'))
@@ -53,4 +53,27 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 'Verify the text in the toast message'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Added Toast Text'), 
     'You’ve successfully created and linked a new record')
+
+'Click button to duplicate the segment record'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Duplicate Button'))
+
+'Click button to duplicate a segment record'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Create Record Button'))
+
+'Click on Yes in the confirmation modal'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Create Duplicate Record Yes Button'))
+
+'Verify segment name is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Name'), "Copy of $SegmentName")
+
+'Verify segment description is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Description'), "$SegmentName Description")
+
+'Verify segment campus is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Anaheim')
+
+'Verify default status of segment is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status'), 'Inactive')
+
+WebUI.closeBrowser()
 
