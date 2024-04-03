@@ -31,30 +31,39 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandl
 'Navigate to Resources'
 Button.tap('Nav/Resources Navigation Button', timeout)
 
+Mobile.verifyElementText(Finder.findLabel('Resources Heading'), "Resources")
+
 'Navigate to Profile'
 Button.tap('Nav/Profile Navigation Button', timeout)
+
+Mobile.verifyElementText(Finder.findLabel('Profile Heading'), "Profile")
 
 'Navigate to Journey'
 Button.tap('Nav/Journey Navigation Button', timeout)
 
+Mobile.verifyElementText(Finder.findLabel('Journey Heading'), "Journey")
+
 'Navigate to Discover'
 Button.tap('Nav/Discover Navigation Button', timeout)
+
+Mobile.verifyElementText(Finder.findLabel('Discover Heading'), "Discover")
 
 'Navigate to Settings'
 Button.tap('Nav/Settings Navigation Button', timeout)
 
+Mobile.verifyElementText(Finder.findLabel('Settings Heading'), "Settings")
+
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
+
+Mobile.verifyElementText(Finder.findLabel('Home Heading'), "Home")
 
 // add test for that
 'Log out'
 Button.tap('Logout Button', timeout)
 
-//'Verify that the account is logged out'
-//Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Splash/Splash Page Heading'), 0)
-//
-//'Verify that the text is present on the Welcome screen'
-//Mobile.verifyElementText(findTestObject('Object Repository/Companion App/Splash/Splash Page Heading'), 'Welcome!')
+'Verify the splash page header is there'
+Mobile.verifyElementText(Finder.findLabel('Splash Page Heading'), "Welcome!")
 
 'Close the app'
 Mobile.closeApplication()

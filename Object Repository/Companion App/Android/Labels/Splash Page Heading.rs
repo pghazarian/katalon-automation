@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Journey Navigation Button</name>
+   <name>Splash Page Heading</name>
    <tag></tag>
-   <elementGuidId>3c7edc3f-f150-42e2-9258-582633eb2db4</elementGuidId>
+   <elementGuidId>6ffdd835-0abf-4961-a3e8-d031a3a0c0e5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-icon--buttom-nav-Journey</locator>
+   <locator>ui-label--intro-screen-welcome</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

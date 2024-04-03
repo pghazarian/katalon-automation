@@ -3,10 +3,9 @@
    <description></description>
    <name>Home Navigation Button</name>
    <tag></tag>
-   <elementGuidId>ffcda55e-0097-461f-9319-6538c5be1b5f</elementGuidId>
+   <elementGuidId>6bbadaba-41f4-401c-9a67-22d00cc80e78</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-icon--buttom-nav-Home, Home</locator>
+   <locator>ui-icon--buttom-nav-Home</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

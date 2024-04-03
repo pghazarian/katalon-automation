@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Logout Button</name>
+   <name>Settings Navigation Button</name>
    <tag></tag>
-   <elementGuidId>c88a1ac7-fd93-4dd1-854f-ea89f6d265b3</elementGuidId>
+   <elementGuidId>66d4f8ee-7433-47d7-99e0-5095c9dd7984</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeButton</value>
-      <webElementGuid>a2fbb6b4-fa93-41b7-8465-0f1d9e6867f5</webElementGuid>
+      <webElementGuid>01b7f941-215c-43c0-a542-0d1fb9679eb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +20,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>b0142249-17d2-4bcc-8924-362d3634d0e2</webElementGuid>
+      <webElementGuid>f0e1ad6f-4aea-458e-ae78-ceaa18c14808</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,72 +28,72 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>2c3db405-4fa6-475d-b341-9df8d6fb9852</webElementGuid>
+      <webElementGuid>1e938c81-d50b-4ab5-873b-5cdcd0c64912</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>76.0</value>
-      <webElementGuid>a0334454-b29d-46f1-825b-9a6fa9035eb0</webElementGuid>
+      <value>100.0</value>
+      <webElementGuid>4c7d38d5-dc3a-4ecf-bb3d-aa3941ead498</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
-      <value>1</value>
-      <webElementGuid>181ddf40-8546-4131-be82-b5722b0116e1</webElementGuid>
+      <value>6</value>
+      <webElementGuid>eec0ed8d-faac-4cb8-9493-d61dbcd0ab9e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>label</name>
       <type>Main</type>
-      <value>Logout!</value>
-      <webElementGuid>4c1224f9-b819-4060-945f-1d3a128ff8c9</webElementGuid>
+      <value>Events, tab, 7 of 7</value>
+      <webElementGuid>89f04642-2b63-4dd7-ac8f-589163e191a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>Logout!</value>
-      <webElementGuid>f5676ec0-a0c4-4dd5-83ad-2569b5e72342</webElementGuid>
+      <value>Events, tab, 7 of 7</value>
+      <webElementGuid>6df68500-e2b9-49b5-8742-942595d54737</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>722.0</value>
-      <webElementGuid>7349fa1d-774e-45e8-a749-3ab6776cb3c4</webElementGuid>
+      <value>112.0</value>
+      <webElementGuid>55291746-6c60-4e0f-ba70-480071fe09f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
-      <value>32.0</value>
-      <webElementGuid>7c6bc645-4359-4645-ba05-e79687d835c0</webElementGuid>
+      <value>674.0</value>
+      <webElementGuid>a7bfb6c4-d152-47ea-ba21-d381dd1d7a14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>
-      <value>308.0</value>
-      <webElementGuid>af81f110-8901-4599-a1fb-f0be8d8f74ee</webElementGuid>
+      <value>1546.0</value>
+      <webElementGuid>17ad65af-f775-4495-8ac4-3f9f3b90245f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]</value>
-      <webElementGuid>ba2dc2a7-b521-43e8-bd86-f927d86a3950</webElementGuid>
+      <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[7]</value>
+      <webElementGuid>cb465751-fd23-4521-ab79-2cdfdf784384</webElementGuid>
    </webElementProperties>
-   <locator>LOGOUT!</locator>
+   <locator>ui-icon--buttom-nav-Settings</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
