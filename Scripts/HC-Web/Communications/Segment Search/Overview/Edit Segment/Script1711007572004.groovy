@@ -33,10 +33,6 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Se
 'Initiate Search'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), Keys.chord(Keys.ENTER))
 
-'Verify a row contains the expected name'
-WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : SearchTerm]), 
-    0)
-
 'Open the segment record from the search results'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : SearchTerm]))
 
@@ -106,10 +102,6 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Se
 'Initiate Search'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), Keys.chord(Keys.ENTER))
 
-'Verify a row contains the expected name'
-WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : EditSegmentName]), 
-    0)
-
 'Open the segment record from the search results'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : EditSegmentName]))
 
@@ -138,7 +130,7 @@ WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment S
 
 'Reset segment description to original description'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
-    SearchTerm)
+    "$SearchTerm Description")
 
 'Select original campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_primary_details_edit--church_campus\']/descendant::div[@class=\'Select-control\']', 

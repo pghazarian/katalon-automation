@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Status Default Value</name>
+   <name>Member Status Membership Review Checkbox</name>
    <tag></tag>
-   <elementGuidId>129de639-5411-4de5-ab50-fc172e69c2f0</elementGuidId>
+   <elementGuidId>d9c39290-8ac2-4fb4-8bbf-d9fd9947398c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;N/A&quot;]</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[10]/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

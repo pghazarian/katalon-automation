@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>In Small Group Default Value</name>
+   <name>Member Status Member Checkbox</name>
    <tag></tag>
-   <elementGuidId>673cf73d-b276-49b3-9b31-511818bc45f4</elementGuidId>
+   <elementGuidId>25f255cb-58bb-4b77-83c3-f39368b73170</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;N/A&quot;]</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[9]/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
