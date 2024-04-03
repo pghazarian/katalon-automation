@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To ensure that only push notification templates appear in the dropdown within the Notification section of Rule Builder screen in the back office</description>
+   <name>Notifications - Back Office - Ability to Identify Push Notification Templates</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6934f49-6f32-49cd-aa06-d224b5117953</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>As a Saddleback Church staff member or volunteer&#xd;
+I want to be able to set my Notification Preferences in the Back Office using a correctly-designed UI&#xd;
+So I can changes my preferences without having to struggle to understand the screen&#xd;
+Fix the UI for the Notifications Preferences screen (see attachment notification_preferences_back_office.jpg) as follows:&#xd;
+Align the column headings and check boxes vertically&#xd;
+Expand the depth of the rows to allow for the full display of the notification titles</description>
+   <name>Notifications - Back Office - Notifications Preferences Screen UI Repair</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4b0dbbe-585e-4994-9f29-09396c084c6b</testCaseGuid>
+</TestCaseEntity>
