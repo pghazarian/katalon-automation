@@ -41,7 +41,7 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/Login Sign In
 'tap on the Journey navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Journey Navigation Button'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Journey Heading'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Labels/Journey Heading'), 0)
 
 'tap on the Profile navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Profile Navigation Button'), 0)
@@ -51,12 +51,12 @@ Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Androi
 'tap on the Discover navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Discover Navigation Button'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Discover Heading'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Labels/Discover Heading'), 0)
 
 'tap on the Home navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Home Heading'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Labels/Home Heading'), 0)
 
 'tap on the Home page log out button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Home Log Out Button'), 0)

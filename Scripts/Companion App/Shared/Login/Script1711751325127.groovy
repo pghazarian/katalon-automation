@@ -67,6 +67,8 @@ boolean removeAppBeforeTest = false // change this to false to keep the app stat
 
 Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 
+Mobile.delay(5)
+
 // These lines demonstrate the convenience function to tap a button, given the relative 
 'Click Login Button'
 Button.tap('Create Account or Login')
@@ -101,16 +103,3 @@ if (Device.isIOS()) {
     'Click Later Button'
     Button.tap('Later Button', timeout, FailureHandling.OPTIONAL)
 }
-
-// add test for that
-//'Log out'
-//Button.tap('Logout Button', timeout)
-
-//'Verify that the account is logged out'
-//Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Splash/Splash Page Heading'), 0)
-//
-//'Verify that the text is present on the Welcome screen'
-//Mobile.verifyElementText(findTestObject('Object Repository/Companion App/Splash/Splash Page Heading'), 'Welcome!')
-//'Close the app'
-//Mobile.closeApplication()
-

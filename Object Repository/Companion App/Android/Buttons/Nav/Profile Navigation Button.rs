@@ -3,10 +3,9 @@
    <description></description>
    <name>Profile Navigation Button</name>
    <tag></tag>
-   <elementGuidId>a979aa38-a438-4fd2-90cd-5f4696f848a8</elementGuidId>
+   <elementGuidId>870497d9-cec2-487f-9e28-f2bb8dc65738</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-icon--buttom-nav-Profile, Profile</locator>
+   <locator>ui-icon--buttom-nav-Profile</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
