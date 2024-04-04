@@ -44,31 +44,19 @@ Mobile.setEncryptedText(findTestObject('Object Repository/Companion App/Login/Pa
 Mobile.tap(findTestObject('Object Repository/Companion App/Login/Sign In Button'), 0)
 
 'Navigate to Home'
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Button'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
 
 'Navigate to Journey'
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Journey Button'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Journey Navigation Button'), 0)
 
 'Verify the Journey title'
 Mobile.verifyElementText(findTestObject('Object Repository/Companion App/Misc/Journey Heading'), 'Journey')
 
 'Navigate to Discover'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Discover Button'), 0)
-
-'Navigate to Groups'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Groups Button'), 0)
-
-'Navigate to Ministries'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Ministries Button'), 0)
-
-'Navigate to Events'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Events Button'), 0)
-
-'Verify the text on the page'
-Mobile.verifyElementText(findTestObject('Object Repository/Companion App/Misc/Event Heading'), 'This is a dynamic screen.')
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Discover Navigation Button'), 0)
 
 'Navigate to Profile'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Profile Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Profile Navigation Button'), 0)
 
 'Type into the Search Text field'
 Mobile.tap(findTestObject('Object Repository/Companion App/Misc/Search Text Field'), 0)

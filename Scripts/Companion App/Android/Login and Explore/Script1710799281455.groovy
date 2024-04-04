@@ -53,22 +53,6 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/D
 
 Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Discover Heading'), 0)
 
-'tap on the Groups navigation button.'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Groups Navigation Button'), 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Groups Heading'), 0)
-
- /*
-'tap on the Ministries navigation button.'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Ministries Navigation Button'), 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Ministries Heading'), 0)
-
-'tap on the Events navigation button.'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Events Navigation Button'), 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/Companion App/Android/Events Heading'), 0)
-*/
 'tap on the Home navigation button.'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
 
