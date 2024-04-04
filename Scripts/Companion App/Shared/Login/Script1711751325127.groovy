@@ -27,6 +27,15 @@ import com.detroitlabs.katalonmobileutil.testobject.TextField as TextField
 /*
  * Documentation for the DetroitLabs library: https://github.com/detroit-labs/katalon-mobile-util?tab=readme-ov-file#textfield
  */
+
+if (!UserName?.trim()) {
+ 	UserName = GlobalVariable.Admin_UserName
+}
+
+if (!Password?.trim()) {
+	Password = GlobalVariable.Admin_Password
+}
+
 int timeout = 3
 
 Button.initialize(timeout, FailureHandling.OPTIONAL)
@@ -84,13 +93,13 @@ TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
 //'Clear in the Email Address field'
 //TextField.clearText(emailAddress, timeout)
 'Enter value in the Email Address field'
-TextField.typeText(emailAddress, GlobalVariable.Admin_UserName, timeout)
+TextField.typeText(emailAddress, UserName, timeout)
 
 'Find the Password field'
 TestObject password = Finder.findTextField('Login/Password Text Field')
 
 'Enter value in the Password field'
-Mobile.setEncryptedText(password, GlobalVariable.Admin_Password, timeout)
+Mobile.setEncryptedText(password, Password, timeout)
 
 if (Device.isAndroid()) {
     Mobile.hideKeyboard()
@@ -99,7 +108,3 @@ if (Device.isAndroid()) {
 'Click Sign In Button'
 Button.tap('Login/Sign In Button')
 
-if (Device.isIOS()) {
-    'Click Later Button'
-    Button.tap('Later Button', timeout, FailureHandling.OPTIONAL)
-}
