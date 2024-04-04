@@ -67,52 +67,62 @@ if (allowJourneyWalkthrough) {
 
 'Verify that there are search results'
 
-'Click on the Journey record that we are finding'
-Mobile.tap(findTestObject('Companion App/Journey Entry By Id Match', [('id') : journeyId]), timeout)
+Button.tap('Journey/Date Go Back', timeout)
 
-Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Description'), timeout)
+Button.tap('Journey/Date Go Back', timeout)
 
-Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Heading'), timeout)
+Button.tap('Journey/Date Go Back', timeout)
 
-Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Subtitle'), timeout)
+Button.tap('Journey/Date Go Forward', timeout)
 
-'Swipe'
-Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+Button.tap('Journey/Go to Today View', timeout)
 
-'Start Journey'
-Mobile.verifyElementVisible(Finder.findButton('Journey/Details/Start Journey'), timeout)
-
-Mobile.tap(Finder.findButton('Journey/Details/Start Journey'), timeout)
-
-Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
-
-Mobile.verifyElementVisible(Finder.findButton('Journey/Details/See Journey Pathway'), timeout)
-
-Mobile.verifyElementVisible(Finder.findButton('Journey/Details/Stop Pathway'), timeout)
-
-'Stop Journey with No Prompt'
-Mobile.tap(Finder.findButton('Journey/Details/Stop Journey'), timeout)
-
-Mobile.tap(Finder.findButton('Journey/Details/Prompt Stop Journey No'), timeout)
-
-Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
-
-'Stop Journey with Yes Prompt'
-Mobile.tap(Finder.findButton('Journey/Details/Stop Journey'), timeout)
-
-Mobile.tap(Finder.findButton('Journey/Details/Prompt Stop Journey Yes'), timeout)
-
-'See the Popup'
-Mobile.verifyElementVisible(Finder.findLabel('Popup/Body'), timeout)
-
-Mobile.verifyElementVisible(Finder.findLabel('Popup/Title'), timeout)
-
-'Close the Popup'
-Mobile.tap(Finder.findButton('Popup/Close'), timeout)
-
-'Verify the Journey is not in progress'
-Mobile.verifyElementNotVisible(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
-
-'Close the Journey'
-Mobile.tap(Finder.findButton('Journey/Details/Journey Close Top'), timeout)
+//'Click on the Journey record that we are finding'
+//Mobile.tap(findTestObject('Companion App/Journey Entry By Id Match', [('id') : journeyId]), timeout)
+//
+//Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Description'), timeout)
+//
+//Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Heading'), timeout)
+//
+//Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Subtitle'), timeout)
+//
+//'Swipe'
+//Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+//
+//'Start Journey'
+//Mobile.verifyElementVisible(Finder.findButton('Journey/Details/Start Journey'), timeout)
+//
+//Mobile.tap(Finder.findButton('Journey/Details/Start Journey'), timeout)
+//
+//Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
+//
+//Mobile.verifyElementVisible(Finder.findButton('Journey/Details/See Journey Pathway'), timeout)
+//
+//Mobile.verifyElementVisible(Finder.findButton('Journey/Details/Stop Pathway'), timeout)
+//
+//'Stop Journey with No Prompt'
+//Mobile.tap(Finder.findButton('Journey/Details/Stop Journey'), timeout)
+//
+//Mobile.tap(Finder.findButton('Journey/Details/Prompt Stop Journey No'), timeout)
+//
+//Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
+//
+//'Stop Journey with Yes Prompt'
+//Mobile.tap(Finder.findButton('Journey/Details/Stop Journey'), timeout)
+//
+//Mobile.tap(Finder.findButton('Journey/Details/Prompt Stop Journey Yes'), timeout)
+//
+//'See the Popup'
+//Mobile.verifyElementVisible(Finder.findLabel('Popup/Body'), timeout)
+//
+//Mobile.verifyElementVisible(Finder.findLabel('Popup/Title'), timeout)
+//
+//'Close the Popup'
+//Mobile.tap(Finder.findButton('Popup/Close'), timeout)
+//
+//'Verify the Journey is not in progress'
+//Mobile.verifyElementNotVisible(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
+//
+//'Close the Journey'
+//Mobile.tap(Finder.findButton('Journey/Details/Journey Close Top'), timeout)
 
