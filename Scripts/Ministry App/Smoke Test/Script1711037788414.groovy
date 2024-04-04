@@ -60,3 +60,18 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/X Button'),
 'To close user\'s profile drawer '
 Mobile.tap(findTestObject('Ministry App/Navigation/X Button'), 0)
 
+Mobile.tap(findTestObject('Object Repository/Ministry App/Follow Ups/My Follow Ups'), 0)
+
+'To see your user\'s Follow Up Requests'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Follow Ups/Follow Up Requests'), 0)
+
+Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
+
+'To see your Team\'s Follow Up Requests'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Follow Ups/Team Follow Ups'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Ministry App/Follow Ups/Follow Up Requests'), 0)
+
+'To see Follow Up Requests for all Campuses '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Follow Ups/Campus Follow Ups'), 0)
+
