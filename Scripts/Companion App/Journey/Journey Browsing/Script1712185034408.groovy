@@ -25,11 +25,13 @@ import com.detroitlabs.katalonmobileutil.touch.Swipe as Swipe
 import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDirection
 
 def timeout = 3
+
 def journeyId = 508
+
 def allowJourneyWalkthrough = false
 
 'Open existing app by the app bundle id'
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : GlobalVariable.Admin2_UserName, ('Password') : GlobalVariable.Admin2_Password], 
+Mobile.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : GlobalVariable.Admin2_UserName, ('Password') : GlobalVariable.Admin2_Password], 
     FailureHandling.STOP_ON_FAILURE)
 
 'Navigate to Journey'
@@ -39,34 +41,34 @@ Button.tap('Nav/Journey Navigation Button', timeout)
 Mobile.verifyElementVisible(Finder.findLabel('Journey Heading'), timeout)
 
 if (allowJourneyWalkthrough) {
-	'Click Link for the Journey Walkthrough'
-	Button.tap(Finder.findLink('What is a Journey Link'), timeout)
-	
-	'Do the walkthrough of the Journey'
-	
-	'Verify text on page 1'
-	Mobile.verifyElementVisible(Finder.findLabel('Walkthough Page 1 Heading'), timeout)
-	
-	'Swipe'
-	Swipe.swipe(SwipeDirection.RIGHT_TO_LEFT)
-	
-	'Verify text on page 2'
-	Mobile.verifyElementVisible(Finder.findLabel('Walkthough Page 2 Heading'), timeout)
-	
-	'Swipe'
-	Swipe.swipe(SwipeDirection.RIGHT_TO_LEFT)
-	
-	'Verify text on page 3'
-	Mobile.verifyElementVisible(Finder.findLabel('Walkthough Page 3 Heading'), timeout)
-	
-	'Click Browse Journeys Button'
-	Button.tap('Journey/Browse Journeys')
+    'Click Link for the Journey Walkthrough'
+    Button.tap(Finder.findLink('What is a Journey Link'), timeout)
+
+    'Do the walkthrough of the Journey'
+
+    'Verify text on page 1'
+    Mobile.verifyElementVisible(Finder.findLabel('Walkthough Page 1 Heading'), timeout)
+
+    'Swipe'
+    Swipe.swipe(SwipeDirection.RIGHT_TO_LEFT)
+
+    'Verify text on page 2'
+    Mobile.verifyElementVisible(Finder.findLabel('Walkthough Page 2 Heading'), timeout)
+
+    'Swipe'
+    Swipe.swipe(SwipeDirection.RIGHT_TO_LEFT)
+
+    'Verify text on page 3'
+    Mobile.verifyElementVisible(Finder.findLabel('Walkthough Page 3 Heading'), timeout)
+
+    'Click Browse Journeys Button'
+    Button.tap('Journey/Browse Journeys')
 }
 
 'Verify that there are search results'
 
 'Click on the Journey record that we are finding'
-Mobile.tap(findTestObject('Object Repository/Companion App/Journey Entry By Id Match'), timeout)
+Mobile.tap(findTestObject('Companion App/Journey Entry By Id Match', [('id') : journeyId]), timeout)
 
 Mobile.verifyElementVisible(Finder.findLabel('Journey/Details/Description'), timeout)
 
@@ -113,13 +115,4 @@ Mobile.verifyElementNotVisible(Finder.findLabel('Journey/Details/Journey In Prog
 
 'Close the Journey'
 Mobile.tap(Finder.findButton('Journey/Details/Journey Close Top'), timeout)
-
-
-
-
-
-
-
- 
-
 
