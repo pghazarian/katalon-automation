@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Clear All Button</name>
+   <tag></tag>
+   <elementGuidId>5f422acf-076f-49b6-926a-f33131dd1f1c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='segments--filters_rail']/div/div[2]/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.ui.a.jss409.clear-filters.jss305.font-size-xsmall</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Clear All&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>61e04005-dba5-412a-9425-e5bf82f8f532</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui a jss409 clear-filters jss305 font-size-xsmall</value>
+      <webElementGuid>b19c168d-114c-4dcc-a57c-3df4b07e7d17</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>c1dae2e6-ae65-45f4-9598-cb1d6f35ef8f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>f206bcee-eb7a-46c6-9144-9e5501f44f4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Clear All</value>
+      <webElementGuid>695001e2-3588-4fee-b547-1fa745dc845b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;segments--filters_rail&quot;)/div[@class=&quot;ui rail jss318 jss306 jss312 jss313 jss307 jss316&quot;]/div[@class=&quot;filters_rail--action-buttons-container jss304&quot;]/div[@class=&quot;filters_rail--action-buttons jss303&quot;]/span[@class=&quot;ui a jss409 clear-filters jss305 font-size-xsmall&quot;]</value>
+      <webElementGuid>9b3d6d17-c1b4-4cd4-b00d-88a71133a244</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='segments--filters_rail']/div/div[2]/div/span</value>
+      <webElementGuid>94b27f20-8fc3-47ae-a8b8-0ae3451273ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pending'])[1]/following::span[1]</value>
+      <webElementGuid>eb7b9439-869f-4925-a741-6c07c9cb4b38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Non-Member'])[1]/following::span[2]</value>
+      <webElementGuid>7adfe5f9-1209-45d2-9f29-8b0a59936fc7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply Filters'])[1]/preceding::span[1]</value>
+      <webElementGuid>4c56d1df-6537-4e72-8330-77d70170dc79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/preceding::span[2]</value>
+      <webElementGuid>c1f19496-02a8-4d5e-844b-a785b45c5f55</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Clear All']/parent::*</value>
+      <webElementGuid>92622eed-66cc-4071-b17a-df03e59cb67e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/span</value>
+      <webElementGuid>fd54c49c-869d-43ce-b9d1-d0ebeabe2dce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Clear All' or . = 'Clear All')]</value>
+      <webElementGuid>7fea9e5f-131e-462c-816b-51dbd4daaaa0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

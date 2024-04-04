@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Milestone Status Complete Radio Button</name>
+   <tag></tag>
+   <elementGuidId>9a50604d-ac5e-4f4f-b2e4-5f2c54abfcfc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='segments--filters_rail']/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/label/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.ui.radio.jss398.jss401 > label.label.jss396 > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=radio[name=&quot;Complete&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>5ae4341c-d780-4df8-8bcb-fb8a29f7430a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Complete</value>
+      <webElementGuid>5c949544-a926-4d21-aeec-cd1a43a270cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;segments--filters_rail&quot;)/div[@class=&quot;ui rail jss318 jss306 jss312 jss313 jss307 jss316&quot;]/div[1]/div[1]/div[@class=&quot;jss315&quot;]/div[@class=&quot;cmui grid jss7 jss35 jss17 jss378&quot;]/div[@class=&quot;cmui grid--column jss45 jss402&quot;]/div[@class=&quot;ui accordion jss399 accordion-basic&quot;]/div[@class=&quot;accordion-item accordion-item-is-active&quot;]/div[@class=&quot;accordion-item-content&quot;]/div[@class=&quot;jss401&quot;]/div[@class=&quot;ui radio jss398 jss401&quot;]/label[@class=&quot;label jss396&quot;]/span[1]</value>
+      <webElementGuid>1e2759b7-0a1b-4116-911b-8472866be1b6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='segments--filters_rail']/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/label/span</value>
+      <webElementGuid>c57fa1f8-d00f-4027-ae2a-5a82f36d45ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[1]/following::span[1]</value>
+      <webElementGuid>297845a4-2a16-4afb-899a-939b5f7a7eb9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Press backspace to remove Accepted Christ'])[1]/following::span[2]</value>
+      <webElementGuid>9b21743d-a2c3-4323-b744-30f0f4a5b48f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Incomplete'])[1]/preceding::span[1]</value>
+      <webElementGuid>77c19c43-79a3-432e-b38d-2c462db27925</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Additional Engagement'])[1]/preceding::span[2]</value>
+      <webElementGuid>a2529367-efcd-4a5a-9344-7ecc4e0487a5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Complete']/parent::*</value>
+      <webElementGuid>c81648ec-f39e-4cf5-b6a9-c40f285c3b90</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/label/span</value>
+      <webElementGuid>e9df769a-c9e5-4aef-879f-56d7a7935d05</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Complete' or . = 'Complete')]</value>
+      <webElementGuid>b0521dc1-8826-4c2d-a9d1-2923ac7bbc66</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

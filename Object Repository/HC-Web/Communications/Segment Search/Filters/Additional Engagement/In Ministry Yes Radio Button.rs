@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>In Small Group Yes Radio Button</name>
+   <name>In Ministry Yes Radio Button</name>
    <tag></tag>
-   <elementGuidId>3ca22042-e959-49fc-8059-4ece477b29ca</elementGuidId>
+   <elementGuidId>cea37a4f-1bbb-4919-adb5-986c60a82533</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[5]/label</value>
+         <value>//div[@id='segments--filters_rail']/div/div/div/div/div/div[3]/div/div/div[2]/div/div[2]/label/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.ui.radio.jss598.jss589.undefined.radio-is-checked > label.label.jss596 > span</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=radio[name=&quot;Yes&quot;i] >> nth=0</value>
+         <value>internal:role=radio[name=&quot;Yes&quot;i] >> nth=1</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>248fa201-2e7a-4877-b2e5-ecb19cddc2ea</webElementGuid>
+      <webElementGuid>bbc8e06e-cc80-4724-b453-bee4da4eb771</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,31 +37,31 @@
       <name>text</name>
       <type>Main</type>
       <value>Yes</value>
-      <webElementGuid>5330f157-efed-4189-8467-5391cc5751ac</webElementGuid>
+      <webElementGuid>2bc7ba96-bc2f-41b9-9237-041ce63e3435</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/section[1]/div[@class=&quot;ui radio jss598 jss589 undefined radio-is-checked&quot;]/label[@class=&quot;label jss596&quot;]/span[1]</value>
-      <webElementGuid>7d13d15d-ec69-4901-91ea-ea4c0fae81ee</webElementGuid>
+      <value>id(&quot;segments--filters_rail&quot;)/div[@class=&quot;ui rail jss318 jss306 jss312 jss313 jss307 jss316&quot;]/div[1]/div[1]/div[@class=&quot;jss315&quot;]/div[@class=&quot;cmui grid jss7 jss35 jss17 jss378&quot;]/div[@class=&quot;cmui grid--column jss45&quot;]/div[@class=&quot;ui accordion jss407 accordion-basic&quot;]/div[@class=&quot;accordion-item accordion-item-is-active&quot;]/div[@class=&quot;accordion-item-content&quot;]/div[@class=&quot;jss405&quot;]/div[@class=&quot;ui radio jss398 jss405&quot;]/label[@class=&quot;label jss396&quot;]/span[1]</value>
+      <webElementGuid>235cfbbf-538d-4a4b-831d-61a87bf5bb78</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div[2]/label/span</value>
-      <webElementGuid>8ad735ce-778e-4866-b019-af9f6dc5459d</webElementGuid>
+      <value>//div[@id='segments--filters_rail']/div/div/div/div/div/div[3]/div/div/div[2]/div/div[2]/label/span</value>
+      <webElementGuid>5f9ead1f-5d97-4132-a8d2-4d6bbef34138</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[1]/following::span[1]</value>
-      <webElementGuid>9e6b002d-f956-447b-b0d2-8206fbf94fe9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[2]/following::span[1]</value>
+      <webElementGuid>2d246023-876d-48fa-9026-9164969efdf7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,15 +69,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='In Ministry?'])[1]/following::span[2]</value>
-      <webElementGuid>ac439316-6218-41d0-bd82-0df7595040fa</webElementGuid>
+      <webElementGuid>3f14066e-9d04-436e-b273-b9bcb66f1e91</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::span[1]</value>
-      <webElementGuid>29cc9d1a-dd7e-4906-ba64-9c2acd8f141f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[2]/preceding::span[1]</value>
+      <webElementGuid>26813736-677b-4220-b28d-25ce3138c165</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,23 +85,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='In Small Group?'])[1]/preceding::span[2]</value>
-      <webElementGuid>af47d44f-1c86-4ee9-9c52-dad8a73fa9f0</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Yes']/parent::*</value>
-      <webElementGuid>0d50ef73-88c8-4140-80a9-c3956cc68361</webElementGuid>
+      <webElementGuid>a5b91e58-52ea-4c00-9d4e-d284c90ad76f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/label/span</value>
-      <webElementGuid>10867aed-7817-413d-99fc-2679cf4e9750</webElementGuid>
+      <value>//div[3]/div/div/div[2]/div/div[2]/label/span</value>
+      <webElementGuid>9b484920-28e1-4c3d-960a-3f9983598542</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Yes' or . = 'Yes')]</value>
-      <webElementGuid>56f5c890-2e42-4fee-8f4d-d14c389e208e</webElementGuid>
+      <webElementGuid>38e8c6ce-562a-4e3b-9b57-1dba521918c4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

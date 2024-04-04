@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>In Small Group Yes Radio Button</name>
+   <name>div_Select</name>
    <tag></tag>
-   <elementGuidId>3ca22042-e959-49fc-8059-4ece477b29ca</elementGuidId>
+   <elementGuidId>cc78ae8b-95f8-44ec-80aa-323d7de1c009</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[5]/label</value>
+         <value>//div[@id='react-select-4--value']/div</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.ui.radio.jss598.jss589.undefined.radio-is-checked > label.label.jss596 > span</value>
+         <value>div.Select-placeholder</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=radio[name=&quot;Yes&quot;i] >> nth=0</value>
+         <value>div >> internal:has-text=&quot;chevron-leftFilterSearchplusCreate SegmentDemographicCollapseTarget CampusAnahei&quot;i >> nth=3</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,87 +28,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>248fa201-2e7a-4877-b2e5-ecb19cddc2ea</webElementGuid>
+      <value>div</value>
+      <webElementGuid>17ad780e-8863-4f4e-b27c-cc46d24c2fca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Select-placeholder</value>
+      <webElementGuid>803806a7-e686-4771-a74b-a9eb0f5cd7dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Yes</value>
-      <webElementGuid>5330f157-efed-4189-8467-5391cc5751ac</webElementGuid>
+      <value>Select</value>
+      <webElementGuid>f7cb0e24-b6c2-42e9-b1e2-86ea1b740541</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/section[1]/div[@class=&quot;ui radio jss598 jss589 undefined radio-is-checked&quot;]/label[@class=&quot;label jss596&quot;]/span[1]</value>
-      <webElementGuid>7d13d15d-ec69-4901-91ea-ea4c0fae81ee</webElementGuid>
+      <value>id(&quot;react-select-4--value&quot;)/div[@class=&quot;Select-placeholder&quot;]</value>
+      <webElementGuid>2f9dae36-bac6-41f8-b146-54f1ce8a63ac</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div[2]/label/span</value>
-      <webElementGuid>8ad735ce-778e-4866-b019-af9f6dc5459d</webElementGuid>
+      <value>//div[@id='react-select-4--value']/div</value>
+      <webElementGuid>64e24451-9167-44b5-b7da-a3c2475ec30a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[1]/following::span[1]</value>
-      <webElementGuid>9e6b002d-f956-447b-b0d2-8206fbf94fe9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Whittier'])[1]/following::div[7]</value>
+      <webElementGuid>8e255bee-183f-4ff2-8c0c-083cd62790a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='In Ministry?'])[1]/following::span[2]</value>
-      <webElementGuid>ac439316-6218-41d0-bd82-0df7595040fa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Vancouver'])[1]/following::div[8]</value>
+      <webElementGuid>2d73747b-3249-4e9f-bae0-ea69d65749f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::span[1]</value>
-      <webElementGuid>29cc9d1a-dd7e-4906-ba64-9c2acd8f141f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::div[4]</value>
+      <webElementGuid>cb86ee09-4544-4e32-a7e4-81b844363357</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='In Small Group?'])[1]/preceding::span[2]</value>
-      <webElementGuid>af47d44f-1c86-4ee9-9c52-dad8a73fa9f0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Berlin'])[2]/preceding::div[5]</value>
+      <webElementGuid>0480aef9-d8ed-4838-9b60-f04272f702bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Yes']/parent::*</value>
-      <webElementGuid>0d50ef73-88c8-4140-80a9-c3956cc68361</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Select']/parent::*</value>
+      <webElementGuid>386b7df2-b514-4318-8934-2672f5d5924b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/label/span</value>
-      <webElementGuid>10867aed-7817-413d-99fc-2679cf4e9750</webElementGuid>
+      <value>//div/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div</value>
+      <webElementGuid>eca987ea-2ff9-41f1-8e9e-6b4866271f1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Yes' or . = 'Yes')]</value>
-      <webElementGuid>56f5c890-2e42-4fee-8f4d-d14c389e208e</webElementGuid>
+      <value>//div[(text() = 'Select' or . = 'Select')]</value>
+      <webElementGuid>acc5a500-5301-4a64-9d22-437473880551</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
