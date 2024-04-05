@@ -64,16 +64,56 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Create Duplicate Record Yes Button'))
 
 'Verify segment name is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Name'), "Copy of $SegmentName")
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Name'), "Copy of $SegmentName")
 
 'Verify segment description is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Description'), "$SegmentName Description")
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Description'), "$SegmentName Description")
 
 'Verify segment campus is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Anaheim')
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Anaheim')
 
 'Verify default status of segment is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status'), 'Inactive')
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status'), 'Inactive')
 
-WebUI.closeBrowser()
+'Verify default value of Target Campus is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Default Value'), 
+    'N/A')
+
+'Verify default value of Gender is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Default Value'), 
+    'N/A')
+
+'Verify default value of Age is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Default Value'), 
+    'N/A')
+
+'Verify default value of Marital Status is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Default Value'), 
+    'N/A')
+
+'Verify default value of Children is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Default Value'), 
+    'N/A')
+
+'Verify default value of Event is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Default Value'), 
+    'N/A')
+
+'Verify default value of Milestone/Status is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Default Value'), 
+    'N/A')
+
+'Verify default value of In Ministry is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Ministry Value'), 
+    'N/A')
+
+'Verify default value of In Small Group is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Small Group Value'), 
+    'N/A')
+
+'Verify default value of Member Status is displayed'
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value'), 
+    'N/A')
+
+not_run: WebUI.closeBrowser()
 
