@@ -38,8 +38,6 @@ driver.pressKeyCode(AndroidKeyCode.ENTER)
 'Tap on person name to view record '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Search/Results/Person Name in Results'), 0)
 
-not_run: Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Person Record/Person Name'), 0)
-
 'Verify the name matches in the person record\'s drawer details \r\n'
 Mobile.verifyElementText(findTestObject('Object Repository/Ministry App/Person Record/Person Name'), 'Sarkis Sanger')
 
@@ -48,11 +46,14 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Person Record/Back But
 
 Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
 
+'To enter into user\'s profile drawer (top right) '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/User Profile Avatar'), 0)
+
 'This is the Hey "user\'s first name" message '
 Mobile.verifyElementExist(findTestObject('Object Repository/Ministry App/Home Page/Welcome Message'), 0)
 
-'To enter into user\'s profile drawer (top right) '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/User Profile Avatar'), 0)
+'To Check if the info text is there '
+Mobile.verifyElementExist(findTestObject('Ministry App/Home Page/tracking stats info text'), 0)
 
 'To open user\'s profile drawer '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/X Button'), 0)

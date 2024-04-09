@@ -50,17 +50,77 @@ import org.openqa.selenium.Keys as Keys
  * 30. Tap on the X icon at the top right of the Account Settings profile drawer
  * 31. Verify that User's Account Settings profile drawer will close & user will navigate back to the Ministry App's home screen
  */
+// Open Ministry App
+Mobile.openApplication('Ministry App')
 
+// Login
+Mobile.setText(findTestObject('login_username_field'), 'username')
 
-WebUI.callTestCase(findTestCase('Ministry App/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.setText(findTestObject('login_password_field'), 'password')
 
-'To enter into user\'s profile drawer (top right) '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/User Profile Avatar'), 0)
+Mobile.click(findTestObject('login_button'))
 
-'To open user\'s profile drawer '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/X Button'), 0)
+// Tap on the Logged in user's profile avatar photo icon
+Mobile.tap(findTestObject('user_profile_avatar_icon'))
 
-'To see your user\'s Follow Up Requests'
-Mobile.tap(findTestObject('Object Repository/Ministry App/Follow Ups/Follow Up Requests'), 0)
+// Verify user's Account Settings profile drawer is displayed
+Mobile.verifyElementVisible(findTestObject('user_avatar_photo'))
+
+Mobile.verifyElementVisible(findTestObject('user_full_name'))
+
+Mobile.verifyElementVisible(findTestObject('manage_account_text'))
+
+Mobile.verifyElementVisible(findTestObject('profile_button'))
+
+// Tap on the Profile button
+Mobile.tap(findTestObject('profile_button'))
+
+// Verify "Coming Soon" modal is displayed
+Mobile.verifyElementVisible(findTestObject('coming_soon_modal'))
+
+Mobile.verifyElementVisible(findTestObject('ok_button'))
+
+// Tap on the "OK" button
+Mobile.tap(findTestObject('ok_button'))
+
+// Verify "Coming Soon" modal disappears
+Mobile.verifyElementNotVisible(findTestObject('coming_soon_modal'))
+
+// Verify "Notifications" button is displayed
+Mobile.verifyElementVisible(findTestObject('notifications_button'))
+
+// Tap on the "Notifications" button
+Mobile.tap(findTestObject('notifications_button'))
+
+// Verify user navigates to "Notifications" settings screen
+Mobile.verifyElementVisible(findTestObject('notifications_screen_title'))
+
+Mobile.verifyElementVisible(findTestObject('back_button'))
+
+Mobile.verifyElementVisible(findTestObject('all_notifications_toggle'))
+
+Mobile.verifyElementVisible(findTestObject('daily_batch_toggle'))
+
+Mobile.verifyElementVisible(findTestObject('immediate_toggle'))
+
+// Verify checkboxes under "Daily Batch" & "Immediate" toggles
+Mobile.verifyElementVisible(findTestObject('daily_batch_checkboxes'))
+
+Mobile.verifyElementVisible(findTestObject('immediate_checkboxes'))
+
+// Verify behavior of push notifications based on HC Admin settings
+// Additional verification steps can be added based on specific requirements
+// Tap on the back button to navigate back to Account Settings profile drawer
+Mobile.tap(findTestObject('back_button'))
+
+// Verify Log Out & Account Removal buttons are displayed
+Mobile.verifyElementVisible(findTestObject('log_out_button'))
+
+Mobile.verifyElementVisible(findTestObject('account_removal_button'))
+
+// Verify Ministry application's version info is displayed
+Mobile.verifyElementVisible(findTestObject('app_version_info'))
+
+// Tap on the X icon to close Account Settings profile drawer
+Mobile.tap(findTestObject('close_drawer_icon'))
 
