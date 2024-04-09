@@ -37,11 +37,11 @@ if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Search or Add Button'))
 
-WebUI.click(findTestObject('HC-Web/Event/Check In/Person Search Drawer/Occurrence Schedule Tab'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Occurrence Schedule Tab'))
 
-WebUI.click(findTestObject('HC-Web/Event/Check In/Person Search Drawer/First Listed Person'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/First Listed Person'))
 
-WebUI.click(findTestObject('HC-Web/Event/Check In/Person Search Drawer/Edit Person Record Button'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Edit Person Record Button'))
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Edit/Personal Details Panel'))
 
