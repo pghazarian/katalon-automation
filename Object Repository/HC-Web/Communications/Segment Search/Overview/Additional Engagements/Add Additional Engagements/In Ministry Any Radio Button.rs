@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>In Ministry Any Radio Button</name>
+   <tag></tag>
+   <elementGuidId>3dbeddbb-bdf6-4cef-b0b1-18875416063d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[1]/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label.label.jss524</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=radio[name=&quot;Any&quot;i] >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>7930694d-4f84-4131-9f67-c524c4de3094</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>label jss524</value>
+      <webElementGuid>b8dc2d93-0c87-4223-94d5-3d95946fa102</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Any</value>
+      <webElementGuid>34dcf89b-aaf2-4bf2-b004-b09ed2553f22</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/section[1]/div[@class=&quot;ui radio jss526 jss517&quot;]/label[@class=&quot;label jss524&quot;]</value>
+      <webElementGuid>9f3578c9-bb89-4e04-b40b-1f7efb4174b6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div/label</value>
+      <webElementGuid>83aac9a3-f48c-4ef1-86ef-5880e38db4f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='In Ministry?'])[1]/following::label[1]</value>
+      <webElementGuid>15242e93-5322-4573-9977-53db674c0c6d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Additional Engagements'])[1]/following::label[1]</value>
+      <webElementGuid>f17c5e49-eac5-432b-a40f-10283bd2825a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/preceding::label[1]</value>
+      <webElementGuid>5f6d3c2d-5971-4c0c-8460-299eec79ba5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label</value>
+      <webElementGuid>33b01687-c437-4cee-a1ae-e0107a34ae29</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Any' or . = 'Any')]</value>
+      <webElementGuid>9cbb9694-e961-4b07-9f24-c86e6c20b8b5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -17,37 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def date = new Date()
-
-def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
-
-def SegmentName = "ST Segment - $CurrentDateTime"
-
-'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
-
-'Click button to create a new segment'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Button'))
-
-'Enter Segment name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Name Input Field'), SegmentName)
-
-'Enter Segment description'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Description Text Area'), "$SegmentName Description")
-
-'Select campus from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
-    'Anaheim')
-
-'Click button to save a new segment'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Create Button'))
+WebUI.callTestCase(findTestCase('HC-Web/Communications/Segment Search/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Edit button next to Demographic Info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Demographic Info Edit Button'))
 
+'Scroll to top of the Demographic Info section'
+WebUI.scrollToPosition(0, 0)
+
 'Select campus from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'campus-selector\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'campus-selector\']/descendant::div[@class=\'Select-control\']', 
     'Anaheim')
 
 'Select Male using the checkbox'
@@ -71,7 +50,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Has Children Yes Checkbox'))
 
 'Select grade from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'grade-selector\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'grade-selector\']/descendant::div[@class=\'Select-control\']', 
     'Grade 1')
 
 'Click button to save demographic info'

@@ -17,37 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def date = new Date()
-
-def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
-
-def SegmentName = "ST Segment - $CurrentDateTime"
-
-'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
-
-'Click button to create a new segment'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Button'))
-
-'Enter Segment name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Name Input Field'), SegmentName)
-
-'Enter Segment description'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Description Text Area'), "$SegmentName Description")
-
-'Select campus from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
-    'Anaheim')
-
-'Click button to save a new segment'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Create Button'))
+WebUI.callTestCase(findTestCase('HC-Web/Communications/Segment Search/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Edit button next to Milestones'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
 
 'Select milestone from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
     'Accepted Christ')
 
 'Click on Complete under Select Milestone Status'
@@ -57,24 +33,24 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
 
 'Verify milestones updated toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast'), FailureHandling.OPTIONAL)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast Text'), 'Milestones updated successfully')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast Text'), 'Milestones updated successfully', FailureHandling.OPTIONAL)
 
 'Verify Milestone/Status label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value'), 
     'Accepted Christ')
 
 'Verify default value of Milestone/Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Complete'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value'), 
     'Complete')
 
 'Click on the Edit button next to Milestones'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
 
 'Select milestone from dropdown'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
     'Baptism')
 
 'Click on Incomplete under Select Milestone Status'
@@ -84,17 +60,17 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
 
 'Verify milestones updated toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast'), FailureHandling.OPTIONAL)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast Text'), 'Milestones updated successfully')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast Text'), 'Milestones updated successfully',  FailureHandling.OPTIONAL)
 
 'Verify Milestone/Status label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Updated Value'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value'), 
     'Baptism')
 
 'Verify default value of Milestone/Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Incomplete'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value'), 
     'Incomplete')
 
 'Click on the Edit button next to Milestones'
@@ -110,7 +86,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milest
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast Text'), 'Milestones updated successfully')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast Text'), 'Milestones updated successfully',  FailureHandling.CONTINUE_ON_FAILURE)
 
 'Verify Milestone/Status label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Label'), 

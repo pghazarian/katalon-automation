@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;Inactive&quot;]</value>
+         <value>//div[@id='layout']/div[2]/div/div[2]/div/div/div[3]/div/div/h5[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
