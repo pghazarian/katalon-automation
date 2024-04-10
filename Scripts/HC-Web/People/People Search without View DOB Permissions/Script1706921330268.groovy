@@ -29,10 +29,7 @@ WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), SearchTerm)
 'Initiate Search'
 WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
-WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Search/TableRowOne'), 0)
-
-SearchTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@data-testid=\'person-personal-info\']/div', 
-    VerificationName, 1)
+SearchTableCellObject = findTestObject('Object Repository/HC-Web/Person/Search/Search Results Person Name Match', [('textToMatch') : VerificationName])
 
 PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
 

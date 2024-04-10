@@ -21,16 +21,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/people/search-or-add'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.clearText(findTestObject('HC-Web/Person/Search/SearchInput'))
+
 'Type Search term'
 WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), SearchTerm)
 
 'Initiate Search'
 WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
-WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Search/TableRowOne'), 0)
-
-SearchTableCellObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@data-testid=\'person-personal-info\']/div', 
-    VerificationName, 1)
+SearchTableCellObject = findTestObject('Object Repository/HC-Web/Person/Search/Search Results Person Name Match', [('textToMatch') : VerificationName])
 
 PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
 
@@ -49,10 +48,10 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_DOB'
 'Open the person record from the search results'
 WebUI.click(SearchTableCellObject)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Person/Details/PersonName'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Person/Details/Person Name Label Match', [('textToMatch') : VerificationName]), 3)
 
 'Verify the name in the details page'
-WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), VerificationName)
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Person/Details/Person Name Label Match', [('textToMatch') : VerificationName]), 0)
 
 'Open the Person Edit page'
 WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
