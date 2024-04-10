@@ -114,4 +114,9 @@
       <initValue>'com.healthychurch.companion.development'</initValue>
       <name>CompanionApp_BundleId</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.healthychurch.ministry'</initValue>
+      <name>Ministry_App_ID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
