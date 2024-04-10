@@ -17,6 +17,12 @@
       <value></value>
       <variableId>8b160f8c-9464-45c3-a648-740f431d6256</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>96671f44-6fe2-4368-bef6-3c9b167af226</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Pareng@Saddleback.com'</defaultValue>
       <description></description>
@@ -30,5 +36,12 @@
       <id>8b160f8c-9464-45c3-a648-740f431d6256</id>
       <masked>false</masked>
       <name>Password</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>96671f44-6fe2-4368-bef6-3c9b167af226</id>
+      <masked>false</masked>
+      <name>ForceLogin</name>
    </variable>
 </TestCaseEntity>

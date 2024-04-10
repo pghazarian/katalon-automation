@@ -109,4 +109,9 @@
       <initValue>'App Files\\Ministry App\\MA Latest.apk'</initValue>
       <name>Ministry_App_Path</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.healthychurch.ministry'</initValue>
+      <name>Ministry_App_ID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
