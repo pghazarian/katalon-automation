@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div/main/div/div[3]/section/div/section/div/div[4]/div/div[2]</value>
+         <value>//div[@id='layout']/div[2]/div/main/div/div[3]/section/div/section/div[${index}]/div[4]/div/div[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>3215f794-82de-4d31-a268-06fc95eb66f2</webElementGuid>
+      <webElementGuid>57718950-eadc-4efe-95fb-5de894237caa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>aria-checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>0f14f845-9454-4798-a59b-1d44bfdab6be</webElementGuid>
+      <webElementGuid>8a9f1a64-686b-4bbb-a60d-0a1698795fc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>radio-item</value>
-      <webElementGuid>9abf76c7-bb1a-4926-9be9-d471d2696c62</webElementGuid>
+      <webElementGuid>6e6dc888-7be8-4f18-8a45-3d45d3a5e80b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>role</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>b34fba7c-4e10-4334-be31-da0bdc95bb09</webElementGuid>
+      <webElementGuid>d795849f-73ee-4ec8-bb49-a9fd5e7424b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>2f2d0714-1c94-447b-a5c4-4d04b816b900</webElementGuid>
+      <webElementGuid>f2eb5967-ff73-4b6b-9828-9de3889b8cd5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>text</name>
       <type>Main</type>
       <value>AND</value>
-      <webElementGuid>da5c58d7-e15b-4225-9dbb-7206ce686422</webElementGuid>
+      <webElementGuid>df277d3d-7330-448c-b9d8-ac754c65957c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss485 jss488 jss473&quot;]/div[@class=&quot;cmui grid jss7 jss474&quot;]/div[@class=&quot;container&quot;]/section[@class=&quot;jss521&quot;]/div[@class=&quot;jss520&quot;]/section[@class=&quot;jss529&quot;]/div[@class=&quot;jss529&quot;]/div[@class=&quot;jss527&quot;]/div[@class=&quot;ui radio jss551 jss526 jss547 radio-pill&quot;]/div[@class=&quot;radio-item&quot;]</value>
-      <webElementGuid>2573e0e2-bcf7-4c31-ab62-b6d2ddd13b1a</webElementGuid>
+      <webElementGuid>2916a961-6435-4a53-8e17-45cdf363ea51</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/div[3]/section/div/section/div/div[4]/div/div</value>
-      <webElementGuid>3965eead-2193-479a-9b32-1842aa3aa0dd</webElementGuid>
+      <webElementGuid>05aa090d-acd7-4f77-9820-eb4320d176b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select an operator to add multiple milestones'])[1]/following::div[2]</value>
-      <webElementGuid>d71a35d4-f19e-470a-9767-c89021374eef</webElementGuid>
+      <webElementGuid>b6845918-9291-4722-be8a-127c5ba5cf34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/following::div[3]</value>
-      <webElementGuid>f6d6bf9e-216e-4baf-a51e-c616f3a7bbfb</webElementGuid>
+      <webElementGuid>8cbbad9c-ff9a-4840-a5fa-d8fc8ccbd6c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='OR'])[1]/preceding::div[1]</value>
-      <webElementGuid>053de66a-a41e-4da1-b74a-a7e1c28330be</webElementGuid>
+      <webElementGuid>0dd6da5c-5244-4c66-b0f8-13118699160c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/div[4]/div/div</value>
-      <webElementGuid>c9a16620-b05a-49a0-b5c7-2df0a93f6c10</webElementGuid>
+      <webElementGuid>75ef4974-d1a6-46c4-8289-430571af7755</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +125,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'AND' or . = 'AND')]</value>
-      <webElementGuid>aea15335-7b36-408f-9b58-c3c3e1d79c01</webElementGuid>
+      <webElementGuid>19f98968-49c4-49e2-8e5d-9be12d54f389</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
