@@ -23,6 +23,9 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 SearchTerm = 'ST Segment - 2024-04-05 15:29:23'
 
+'Maximize current window'
+WebUI.maximizeWindow()
+
 'Type Search term'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), SearchTerm)
 
@@ -36,7 +39,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
 
 'Select milestone from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'layout\']/div[2]/div/main/div/div[3]/section/div/section/div/div/div', 
     'Accepted Christ')
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Add Milestone Button'))
@@ -44,13 +47,64 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/AND Operator'))
 
 'Select milestone from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'layout\']/div[2]/div/main/div/div[3]/section/div/section/div[2]/div/div', 
     'Baptism')
 
 'Click on Complete under Select Milestone Status'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Complete Radio Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Complete Radio Button', 
+        [('index') : 2]))
 
-not_run: WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
 
-not_run: WebUI.closeBrowser()
+'Verify milestones updated toast is displayed'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast'), FailureHandling.OPTIONAL)
+
+'Verify the text in the toast message'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast Text'), 'Milestones updated successfully', 
+    FailureHandling.OPTIONAL)
+
+'Verify selected Milestone is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
+            ('index') : 1]), 'Accepted Christ')
+
+'Verify status of selected Milestone is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
+        [('index') : 1]), 'Incomplete')
+
+'Verify selected Milestone is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
+            ('index') : 2]), 'Baptism')
+
+'Verify status of selected Milestone is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
+        [('index') : 2]), '[AND] Complete')
+
+'Click on the Edit button next to Milestones'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
+
+'Click button to remove milestone'
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Remove Button'))
+
+'Click button to remove milestone'
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Remove Button'))
+
+'Click button to save milestone'
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
+
+'Verify milestones updated toast is displayed'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast'), FailureHandling.OPTIONAL)
+
+'Verify the text in the toast message'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones Updated Toast Text'), 'Milestones updated successfully', 
+    FailureHandling.OPTIONAL)
+
+'Verify Milestone/Status label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Label'), 
+    'Milestone/Status')
+
+'Verify default value of Milestone/Status is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Default Value'), 
+    'N/A')
+
+WebUI.closeBrowser()
 

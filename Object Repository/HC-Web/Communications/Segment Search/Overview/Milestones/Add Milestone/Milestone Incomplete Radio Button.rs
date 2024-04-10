@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[1]/following::span[2]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[${index}]/following::span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>4d5d3145-3783-4edc-931d-4a8c661ff9b4</webElementGuid>
+      <webElementGuid>0afff166-cd1a-4014-a422-11a0c034a519</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>label jss580</value>
-      <webElementGuid>00ef7ee6-4c3b-4ee6-a738-eeb3e9447fc9</webElementGuid>
+      <webElementGuid>d6f82905-40e5-4764-aecd-6d2fad98213d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Incomplete</value>
-      <webElementGuid>a2e6fd90-c39e-4f38-a7fa-13df37a20fc9</webElementGuid>
+      <webElementGuid>0174be86-eb21-4dc2-bac4-e5e303a38c91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/section[@class=&quot;ui jss554 drawer--content&quot;]/section[@class=&quot;jss555&quot;]/div[@class=&quot;jss555&quot;]/div[2]/div[@class=&quot;ui radio jss582 jss573&quot;]/label[@class=&quot;label jss580&quot;]</value>
-      <webElementGuid>53197fab-1a91-4bc4-915c-edf34e258402</webElementGuid>
+      <webElementGuid>3eba10ff-c4fa-4dd8-a2bc-4afa5dbaeb21</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +60,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Complete'])[2]/following::label[1]</value>
-      <webElementGuid>12a8be40-1438-4442-a491-fa7b256ce9fa</webElementGuid>
+      <webElementGuid>bd9a9e5a-d929-4c6f-a98f-3ddfa8b73165</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[1]/following::label[2]</value>
-      <webElementGuid>4c36d21d-7c74-4e41-a3a2-dd4a59412ed5</webElementGuid>
+      <webElementGuid>83d029b2-0353-463c-a27e-f20e16e213e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/preceding::label[1]</value>
-      <webElementGuid>7fd6e0de-fffd-4b63-ad74-90fa90018734</webElementGuid>
+      <webElementGuid>ad97b2af-efc1-4cfa-8014-f80d792c736e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/label</value>
-      <webElementGuid>de57e740-2cb6-4481-bdaa-45e4f7d63496</webElementGuid>
+      <webElementGuid>4f7c7dbf-7d92-4f03-91b6-2f84d46462e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +92,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Incomplete' or . = 'Incomplete')]</value>
-      <webElementGuid>f12ee796-3aea-4c44-bc6a-cc3989046f1e</webElementGuid>
+      <webElementGuid>af3d2ce6-8aac-4e6f-9754-e5c437e5ca05</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
