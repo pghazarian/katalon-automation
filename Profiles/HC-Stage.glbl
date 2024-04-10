@@ -134,4 +134,9 @@
       <initValue>'Anaheim Connection Form 1'</initValue>
       <name>ConnectionForm_SearchName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.healthychurch.companion.stage'</initValue>
+      <name>CompanionApp_BundleId</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
