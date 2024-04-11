@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Milestone New Value</name>
+   <name>Milestones Label</name>
    <tag></tag>
-   <elementGuidId>c49d5c75-1624-4bbe-b67f-e762932ea8db</elementGuidId>
+   <elementGuidId>3d51e2bd-4034-4616-97fe-7464c0aa6970</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[3]/div[2]/div[1]/div[1]/div[${index}]/div[1]/h6</value>
+         <value>//h4[text()='Milestones']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

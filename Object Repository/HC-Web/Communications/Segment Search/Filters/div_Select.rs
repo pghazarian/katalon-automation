@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Campus Dropdown</name>
+   <name>div_Select</name>
    <tag></tag>
-   <elementGuidId>ce544466-2f1a-412d-b9e9-c66c932f8cee</elementGuidId>
+   <elementGuidId>cc78ae8b-95f8-44ec-80aa-323d7de1c009</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#react-select-7--value > div.Select-placeholder</value>
+         <key>XPATH</key>
+         <value>//div[@id='react-select-4--value']/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='react-select-7--value']/div</value>
+         <key>CSS</key>
+         <value>div.Select-placeholder</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=&quot;chevron-leftFilterSearchplusCreate SegmentDemographicCollapseTarget CampusAnahei&quot;i >> nth=3</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c8e8ac41-e82f-4570-843b-ec09ec68b3d8</webElementGuid>
+      <webElementGuid>17ad780e-8863-4f4e-b27c-cc46d24c2fca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,86 +37,86 @@
       <name>class</name>
       <type>Main</type>
       <value>Select-placeholder</value>
-      <webElementGuid>19ce0d40-1a05-4572-b485-49ec5c671e14</webElementGuid>
+      <webElementGuid>803806a7-e686-4771-a74b-a9eb0f5cd7dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Select Campus</value>
-      <webElementGuid>cb48e3e6-67f7-4fe7-b28b-ea2144d0c40c</webElementGuid>
+      <value>Select</value>
+      <webElementGuid>f7cb0e24-b6c2-42e9-b1e2-86ea1b740541</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;react-select-7--value&quot;)/div[@class=&quot;Select-placeholder&quot;]</value>
-      <webElementGuid>7a3149c2-a864-49c0-a8e2-dae980eb6799</webElementGuid>
+      <value>id(&quot;react-select-4--value&quot;)/div[@class=&quot;Select-placeholder&quot;]</value>
+      <webElementGuid>2f9dae36-bac6-41f8-b146-54f1ce8a63ac</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='react-select-7--value']/div</value>
-      <webElementGuid>e1b3e7b8-b8fa-4619-9610-ea0b596b2580</webElementGuid>
+      <value>//div[@id='react-select-4--value']/div</value>
+      <webElementGuid>64e24451-9167-44b5-b7da-a3c2475ec30a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Whittier'])[2]/following::div[7]</value>
-      <webElementGuid>57b91f13-9c1f-4158-ac22-440e4a7c9de1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Whittier'])[1]/following::div[7]</value>
+      <webElementGuid>8e255bee-183f-4ff2-8c0c-083cd62790a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Vancouver'])[2]/following::div[8]</value>
-      <webElementGuid>5b3984b1-26fd-4d0b-8b1c-6bca14a04d95</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Vancouver'])[1]/following::div[8]</value>
+      <webElementGuid>2d73747b-3249-4e9f-bae0-ea69d65749f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[9]/preceding::div[5]</value>
-      <webElementGuid>b49fa406-c49f-4020-9172-489069be6df0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::div[4]</value>
+      <webElementGuid>cb86ee09-4544-4e32-a7e4-81b844363357</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Berlin'])[3]/preceding::div[6]</value>
-      <webElementGuid>51b3199b-ab7e-4dc4-a411-d699e6cfe08b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Berlin'])[2]/preceding::div[5]</value>
+      <webElementGuid>0480aef9-d8ed-4838-9b60-f04272f702bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Select Campus']/parent::*</value>
-      <webElementGuid>53429d40-b00e-453d-8632-3cce81ab4f47</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Select']/parent::*</value>
+      <webElementGuid>386b7df2-b514-4318-8934-2672f5d5924b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/div/div/div[2]/div/div</value>
-      <webElementGuid>4e623e87-276c-401e-a162-ec657bfed1e4</webElementGuid>
+      <value>//div/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div</value>
+      <webElementGuid>eca987ea-2ff9-41f1-8e9e-6b4866271f1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Select Campus' or . = 'Select Campus')]</value>
-      <webElementGuid>b435f6de-f8b4-483b-93b2-c5a9a3b2cbec</webElementGuid>
+      <value>//div[(text() = 'Select' or . = 'Select')]</value>
+      <webElementGuid>acc5a500-5301-4a64-9d22-437473880551</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

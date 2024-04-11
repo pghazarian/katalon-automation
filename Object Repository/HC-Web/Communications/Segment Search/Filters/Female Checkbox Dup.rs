@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Milestone Incomplete Radio Button</name>
+   <name>Female Checkbox Dup</name>
    <tag></tag>
-   <elementGuidId>e9b1e27d-9d49-4644-8b7b-494c883297f8</elementGuidId>
+   <elementGuidId>dc555ab2-64ca-4040-a080-927951bd5822</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//div[@id='Female']/label</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[${index}]/following::span[2]</value>
+         <key>CSS</key>
+         <value>#Female > label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=radio[name=&quot;Incomplete&quot;i]</value>
+         <value>div >> internal:has-text=&quot;chevron-leftFilterSearchplusCreate SegmentDemographicCollapseTarget CampusBerlin&quot;i >> nth=3</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,70 +29,78 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>0afff166-cd1a-4014-a422-11a0c034a519</webElementGuid>
+      <webElementGuid>2e7ffc92-925e-4c9e-8260-d76785a98c79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>label jss580</value>
-      <webElementGuid>d6f82905-40e5-4764-aecd-6d2fad98213d</webElementGuid>
+      <value>checkbox-label</value>
+      <webElementGuid>454a5dbb-6407-4a1b-a591-8164aa2558bd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Incomplete</value>
-      <webElementGuid>0174be86-eb21-4dc2-bac4-e5e303a38c91</webElementGuid>
+      <value>Femalecheck</value>
+      <webElementGuid>db3fb6e9-e9a3-40da-baca-2b3532276d54</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/section[@class=&quot;ui jss554 drawer--content&quot;]/section[@class=&quot;jss555&quot;]/div[@class=&quot;jss555&quot;]/div[2]/div[@class=&quot;ui radio jss582 jss573&quot;]/label[@class=&quot;label jss580&quot;]</value>
-      <webElementGuid>3eba10ff-c4fa-4dd8-a2bc-4afa5dbaeb21</webElementGuid>
+      <value>id(&quot;Female&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>79ceb601-0869-4f99-9250-e33d42553fa5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Complete'])[2]/following::label[1]</value>
-      <webElementGuid>bd9a9e5a-d929-4c6f-a98f-3ddfa8b73165</webElementGuid>
+      <value>//div[@id='Female']/label</value>
+      <webElementGuid>11886c0a-6701-4160-9f17-d827951649c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[1]/following::label[2]</value>
-      <webElementGuid>83d029b2-0353-463c-a27e-f20e16e213e0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Male'])[1]/following::label[1]</value>
+      <webElementGuid>3ae1e418-6219-415d-b254-c03b6b159f39</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/preceding::label[1]</value>
-      <webElementGuid>ad97b2af-efc1-4cfa-8014-f80d792c736e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gender'])[1]/following::label[2]</value>
+      <webElementGuid>0a521516-c62e-447c-8082-57ac5adc5abe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Unspecified'])[1]/preceding::label[1]</value>
+      <webElementGuid>65086d55-b316-4abb-841b-4be47eaa4217</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/label</value>
-      <webElementGuid>4f7c7dbf-7d92-4f03-91b6-2f84d46462e8</webElementGuid>
+      <value>//div[3]/label</value>
+      <webElementGuid>de712b60-b4aa-4f9a-b9f3-7c9577c10b3c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//label[(text() = 'Incomplete' or . = 'Incomplete')]</value>
-      <webElementGuid>af3d2ce6-8aac-4e6f-9754-e5c437e5ca05</webElementGuid>
+      <value>//label[(text() = 'Femalecheck' or . = 'Femalecheck')]</value>
+      <webElementGuid>eda0a4d6-7bdd-49dd-8a67-129a4add3277</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Milestone New Value</name>
+   <name>Member Status Member Checkbox</name>
    <tag></tag>
-   <elementGuidId>c49d5c75-1624-4bbe-b67f-e762932ea8db</elementGuidId>
+   <elementGuidId>d8d7cce0-1a9a-4bf8-b22a-efb56bfffd5f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[3]/div[2]/div[1]/div[1]/div[${index}]/div[1]/h6</value>
+         <value>//div[@id='segments--filters_rail']/div/div/div/div/div/div[3]/div/div/div[2]/div[5]/label/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

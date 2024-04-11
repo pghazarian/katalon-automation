@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Milestone New Value</name>
+   <name>Unspecified Checkbox</name>
    <tag></tag>
-   <elementGuidId>c49d5c75-1624-4bbe-b67f-e762932ea8db</elementGuidId>
+   <elementGuidId>99e41f32-12bb-4693-b752-97de30ee3815</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[3]/div[2]/div[1]/div[1]/div[${index}]/div[1]/h6</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Unspecified'])[1]/following::*[name()='svg'][1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
