@@ -3,9 +3,9 @@
    <description></description>
    <name>Journey Navigation Button</name>
    <tag></tag>
-   <elementGuidId>3c7edc3f-f150-42e2-9258-582633eb2db4</elementGuidId>
+   <elementGuidId>07b0b63a-16b1-4fa3-8f91-acb3b88b6f8e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-icon--buttom-nav-Journey</locator>
+   <locator>Journey</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
