@@ -6,12 +6,12 @@
    <elementGuidId>65a72f17-876c-4c47-89f8-0f323acebf0a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#segment_details_header--edit_button > span.button-inner-container.jss208</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@id='segment_details_header--edit_button']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#segment_details_header--edit_button > span.button-inner-container.jss208</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>bb290e95-e027-4bc4-81a0-ee029a2b8504</webElementGuid>
+      <webElementGuid>d04cdc8d-bf87-4729-a0c0-591423d4a189</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button-inner-container jss208</value>
-      <webElementGuid>14ed8afb-98ed-43ec-a98a-31a96aa9d417</webElementGuid>
+      <webElementGuid>d6f972a9-7751-4f0d-9502-6690bc6743a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Edit</value>
-      <webElementGuid>1c1dabae-b30b-40c7-afac-829477a20930</webElementGuid>
+      <webElementGuid>7aa020f7-37b0-4431-9b97-d8c164ea0deb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss524 jss527 jss522&quot;]/div[@class=&quot;cmui grid jss7 jss37&quot;]/div[@class=&quot;cmui grid--column jss45 jss68 jss76&quot;]/div[@class=&quot;cmui grid jss7 jss529&quot;]/button[@id=&quot;segment_details_header--edit_button&quot;]/span[@class=&quot;button-inner-container jss208&quot;]</value>
-      <webElementGuid>f9fa3c72-a34a-4916-971b-857d9dd5320d</webElementGuid>
+      <webElementGuid>e7bc7530-f352-491c-abe2-8a59f4010e29</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='segment_details_header--edit_button']/span</value>
-      <webElementGuid>94fa1fa5-6bf8-40a4-86cb-2c32c3b710c1</webElementGuid>
+      <webElementGuid>938cd778-537e-4421-8a0f-f9d062f40aad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Demographic info'])[1]/following::span[1]</value>
-      <webElementGuid>a51d7b7d-1c0b-4231-bcad-feb5e82c7f20</webElementGuid>
+      <webElementGuid>9d69503d-264f-4e02-99f8-6611515928c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Record Result'])[1]/following::span[3]</value>
-      <webElementGuid>d081a9a5-e6b7-48fd-ad23-585fd909c84b</webElementGuid>
+      <webElementGuid>dcfb5226-d0d3-45cf-8d6a-279795885a1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[1]/preceding::span[1]</value>
-      <webElementGuid>9ba8054a-f75c-413b-ae3f-44d8c7759575</webElementGuid>
+      <webElementGuid>5b0af7f7-8a2b-42c6-8a75-b915a11a8ded</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Target Campus'])[1]/preceding::span[1]</value>
-      <webElementGuid>b2efbfcf-661d-43fa-b7a3-862237176acd</webElementGuid>
+      <webElementGuid>abccc01e-3cc3-477b-ba24-5afbabdd1ac3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//main/div/div/div/button/span</value>
-      <webElementGuid>558375e4-6998-47c0-8955-09491ff0efd2</webElementGuid>
+      <webElementGuid>b6c48b60-382c-4bb0-89db-8ddea72a6440</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Edit' or . = 'Edit')]</value>
-      <webElementGuid>8aba0e2f-faf9-4ffc-b3bb-3e5ddd0b1c86</webElementGuid>
+      <webElementGuid>aea9b5a2-2f2e-4ded-829c-4661e7512a85</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

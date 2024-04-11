@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Gender Female Checkbox</name>
+   <name>Marital Status Divorced Checkbox</name>
    <tag></tag>
-   <elementGuidId>5b1cd241-ecb7-4917-8164-dd6ef47dc4f7</elementGuidId>
+   <elementGuidId>8ce3bba8-428f-45d8-b198-44f08278aef3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Gender'])[1]/following::*[name()='svg'][2]</value>
+         <value>//div[@id='Divorced']/label</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#Female > label.checkbox-label > div.cmui.ui.icon.icon-check.icon-align-left.icon-color-primary.icon-compact.icon-inverse > svg</value>
+         <value>#All > label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>#Female >> internal:role=img[name=&quot;check&quot;i]</value>
+         <value>internal:text=&quot;Allcheck&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,71 +28,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>svg</value>
-      <webElementGuid>9ab5aa17-e620-4b9b-8193-1646981606f0</webElementGuid>
+      <value>label</value>
+      <webElementGuid>6a05fa3e-b0c2-40ab-910a-2a65d569d322</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>viewBox</name>
+      <name>class</name>
       <type>Main</type>
-      <value>0 0 24 24</value>
-      <webElementGuid>a1f69400-6108-4a8d-b0fa-909843d96f56</webElementGuid>
+      <value>checkbox-label</value>
+      <webElementGuid>2c0d0053-65ee-47d7-b25f-7bcbaca94881</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>check</value>
-      <webElementGuid>0ca9c8fa-f95b-48ef-8244-ba3704ce5e25</webElementGuid>
+      <value>Allcheck</value>
+      <webElementGuid>f00b3daf-04e8-4dbc-910f-c58bd007d837</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Female&quot;)/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;cmui ui icon icon-check icon-align-left icon-color-primary icon-compact icon-inverse&quot;]/svg[1]</value>
-      <webElementGuid>5b924b69-bc7a-47bd-853e-a8240508b467</webElementGuid>
+      <value>id(&quot;All&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>39eb6798-86a5-4f88-a14e-4372486d8a7e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Female'])[1]/following::*[name()='svg'][1]</value>
-      <webElementGuid>15362a16-5696-4733-b272-8ffc7ad7c63d</webElementGuid>
+      <value>//div[@id='All']/label</value>
+      <webElementGuid>ddb09b5a-4ded-4575-9196-57f3c5f70f9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Male'])[1]/following::*[name()='svg'][2]</value>
-      <webElementGuid>3d0c6bbd-4683-4a50-975d-325861426c35</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Marital Status'])[2]/following::label[1]</value>
+      <webElementGuid>3128d90d-04d5-4b42-982d-f038d5b38843</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Age'])[2]/preceding::*[name()='svg'][1]</value>
-      <webElementGuid>baf6f8ff-48fb-4596-b0ea-36c872a63a71</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Max Age'])[1]/following::label[1]</value>
+      <webElementGuid>dfb0b4cd-c41c-4c29-95c9-0e95c758192f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Minimum accepted age for segment record is 13'])[1]/preceding::*[name()='svg'][1]</value>
-      <webElementGuid>25f5c3f0-a677-4a4d-94e7-a3819614a120</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Divorced'])[1]/preceding::label[1]</value>
+      <webElementGuid>f424c5ca-e39d-40ce-b41e-f1861d58e75f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/label</value>
+      <webElementGuid>b6eb7567-2b75-4efe-8161-d6be1d4bdc51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//svg[(text() = 'check' or . = 'check')]</value>
-      <webElementGuid>32aa501f-629a-4d96-9832-799e8360b7d6</webElementGuid>
+      <value>//label[(text() = 'Allcheck' or . = 'Allcheck')]</value>
+      <webElementGuid>911a5a5b-449a-4f4a-812c-c6ff2d405d75</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

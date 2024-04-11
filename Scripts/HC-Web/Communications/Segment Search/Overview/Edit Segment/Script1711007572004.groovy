@@ -86,7 +86,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     EditSegmentDescription)
 
 'Verify the updated segment campus is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Lake Forest')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus', [('SegmentCampus') : "Lake Forest"]), 
+    'Lake Forest')
 
 'Return to segment search'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Return To Segment Search Button'))

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Children Default Value</name>
+   <name>Milestone Status</name>
    <tag></tag>
-   <elementGuidId>a71b2346-f415-4b98-b246-28c54736e942</elementGuidId>
+   <elementGuidId>b1552e91-e8c0-4c90-950b-58a960aee44f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[1]/div[2]/div[9]/h5</value>
+         <value>//h5[text()=&quot;${MilestoneStatus}&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

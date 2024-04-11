@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Status All Checkbox</name>
+   <name>Marital Status Married Checkbox</name>
    <tag></tag>
-   <elementGuidId>5fe2ceda-821f-459f-9608-5025b4340890</elementGuidId>
+   <elementGuidId>b9f0555b-e13d-45ac-9cfd-8ff7ba4041cb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[7]/label</value>
+         <value>//div[@id='Married']/label</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>label.checkbox-label</value>
+         <value>#All > label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;duplicate Duplicate spreadsheet Export ST Segment - 2024-03-27 13:59:12 ST Segment - 2024-03-27 13:59:12 Description Campus Anaheim Status Inactive Communications 0 Record Result 1024 edit-2&quot;i]</value>
+         <value>internal:text=&quot;Allcheck&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>971e4761-ef75-4574-a0a9-1338ad40dac3</webElementGuid>
+      <webElementGuid>1674f605-75f1-450f-8504-308141c10881</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>checkbox-label</value>
-      <webElementGuid>33884dcb-d0c6-4ce2-b700-97ac6a6d94d7</webElementGuid>
+      <webElementGuid>f1c5ed3a-129c-40d3-8f24-5ad0de556779</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Allcheck</value>
-      <webElementGuid>2e143d50-f0cd-45a8-ab46-1a044e3c4b45</webElementGuid>
+      <webElementGuid>48f5372b-5b4b-46c5-9dcb-50b927097c7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;All&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
-      <webElementGuid>38e8c470-1176-4019-bbe8-8f7c554c9b95</webElementGuid>
+      <webElementGuid>17862f14-a2d4-477d-9115-d2d06cf32f14</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,39 +61,39 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='All']/label</value>
-      <webElementGuid>5a9d0ff7-07e4-4810-8d1f-772ff50843b3</webElementGuid>
+      <webElementGuid>39eaf443-aa99-45fa-b86b-2e2ed51f1936</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Member Status'])[1]/following::label[1]</value>
-      <webElementGuid>cd9a1973-af59-46d2-b450-70472b92681e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Marital Status'])[2]/following::label[1]</value>
+      <webElementGuid>2a16d461-a92d-4f58-bd9e-a66d67fc7d52</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[2]/following::label[1]</value>
-      <webElementGuid>538ada44-2e8c-47c5-897f-a50f2db836b1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Max Age'])[1]/following::label[1]</value>
+      <webElementGuid>a4031951-fc94-4854-8ab7-dc9321c3b95b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Disengaged Member'])[1]/preceding::label[1]</value>
-      <webElementGuid>1ce6c21c-e25c-48d2-801b-1d30c706680b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Divorced'])[1]/preceding::label[1]</value>
+      <webElementGuid>091abaad-b1f9-4a76-979c-e264bfff99ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[7]/label</value>
-      <webElementGuid>8332c083-fecf-4f95-962a-0a44f0c05078</webElementGuid>
+      <value>//div[5]/label</value>
+      <webElementGuid>06f5e1fc-c797-4d85-b481-82a6b7cf0142</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Allcheck' or . = 'Allcheck')]</value>
-      <webElementGuid>ad35fbc2-9a34-4ef8-83d8-ddab3ba4abbb</webElementGuid>
+      <webElementGuid>ef128c45-a315-4ffc-aab9-a0a06086692d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

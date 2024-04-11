@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Gender Female Checkbox</name>
+   <name>Has Children No Checkbox</name>
    <tag></tag>
-   <elementGuidId>5b1cd241-ecb7-4917-8164-dd6ef47dc4f7</elementGuidId>
+   <elementGuidId>584904f6-f238-462c-8df7-d63cc8fd04be</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Gender'])[1]/following::*[name()='svg'][2]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Has Children'])[1]/following::label[3]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#Female > label.checkbox-label > div.cmui.ui.icon.icon-check.icon-align-left.icon-color-primary.icon-compact.icon-inverse > svg</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>#Female >> internal:role=img[name=&quot;check&quot;i]</value>
+         <value>internal:role=radio[name=&quot;Yes&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,71 +27,71 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>svg</value>
-      <webElementGuid>9ab5aa17-e620-4b9b-8193-1646981606f0</webElementGuid>
+      <value>label</value>
+      <webElementGuid>90c42357-c85a-4520-bf46-ece60acd0819</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>viewBox</name>
+      <name>class</name>
       <type>Main</type>
-      <value>0 0 24 24</value>
-      <webElementGuid>a1f69400-6108-4a8d-b0fa-909843d96f56</webElementGuid>
+      <value>label jss591</value>
+      <webElementGuid>07477abc-e7d9-4b8b-9b14-bad6b668739c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>check</value>
-      <webElementGuid>0ca9c8fa-f95b-48ef-8244-ba3704ce5e25</webElementGuid>
+      <value>Yes</value>
+      <webElementGuid>3bfcbf2c-3b17-49f0-b504-52735806b386</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Female&quot;)/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;cmui ui icon icon-check icon-align-left icon-color-primary icon-compact icon-inverse&quot;]/svg[1]</value>
-      <webElementGuid>5b924b69-bc7a-47bd-853e-a8240508b467</webElementGuid>
+      <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/section[@class=&quot;ui jss563 drawer--content&quot;]/section[1]/div[@class=&quot;ui radio jss593 jss584&quot;]/label[@class=&quot;label jss591&quot;]</value>
+      <webElementGuid>d6e4d34d-45e2-4841-b4e9-c2c637593f58</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Female'])[1]/following::*[name()='svg'][1]</value>
-      <webElementGuid>15362a16-5696-4733-b272-8ffc7ad7c63d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Any'])[1]/following::label[1]</value>
+      <webElementGuid>5ef3083d-fdf6-4432-91a1-b19e6ba73257</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Male'])[1]/following::*[name()='svg'][2]</value>
-      <webElementGuid>3d0c6bbd-4683-4a50-975d-325861426c35</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Has Children'])[1]/following::label[2]</value>
+      <webElementGuid>ad17cf57-c26e-4e94-b311-f6342f68b8de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Age'])[2]/preceding::*[name()='svg'][1]</value>
-      <webElementGuid>baf6f8ff-48fb-4596-b0ea-36c872a63a71</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::label[1]</value>
+      <webElementGuid>6e9683b3-433a-4b20-a729-ed25ff8a977d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:position</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Minimum accepted age for segment record is 13'])[1]/preceding::*[name()='svg'][1]</value>
-      <webElementGuid>25f5c3f0-a677-4a4d-94e7-a3819614a120</webElementGuid>
+      <value>//div[11]/label</value>
+      <webElementGuid>4709d83c-3de6-4875-87f8-97b6da860260</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//svg[(text() = 'check' or . = 'check')]</value>
-      <webElementGuid>32aa501f-629a-4d96-9832-799e8360b7d6</webElementGuid>
+      <value>//label[(text() = 'Yes' or . = 'Yes')]</value>
+      <webElementGuid>9c5e7a04-83ad-49ae-8bce-894ff9ed8f5f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

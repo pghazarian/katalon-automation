@@ -76,31 +76,31 @@ not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment S
 not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status'), 'Inactive')
 
 'Verify default value of Target Campus is displayed'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Default Value'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Value'), 
     'N/A')
 
 'Verify default value of Gender is displayed'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Default Value'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Value'), 
     'N/A')
 
 'Verify default value of Age is displayed'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Default Value'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Value'), 
     'N/A')
 
 'Verify default value of Marital Status is displayed'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Default Value'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Value'), 
     'N/A')
 
 'Verify default value of Children is displayed'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Default Value'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Value'), 
     'N/A')
 
 'Verify default value of Event is displayed'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Default Value'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Value'), 
     'N/A')
 
 'Verify default value of Milestone/Status is displayed'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Default Value'), 
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status'), 
     'N/A')
 
 'Verify default value of In Ministry is displayed'

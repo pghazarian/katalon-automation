@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Target Campus Default Value</name>
+   <name>Milestone Label</name>
    <tag></tag>
-   <elementGuidId>33c160b8-a0cc-4319-b75f-5f960dbf37ad</elementGuidId>
+   <elementGuidId>3af8918a-3221-4915-9854-e3ef51d45fe3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[1]/div[2]/div[1]/h5</value>
+         <value>//h6[text()=&quot;${Milestone}&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

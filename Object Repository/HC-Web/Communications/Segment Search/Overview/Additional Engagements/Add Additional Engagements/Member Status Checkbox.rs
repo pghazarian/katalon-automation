@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Female Checkbox Dup</name>
+   <name>Member Status Checkbox</name>
    <tag></tag>
-   <elementGuidId>dc555ab2-64ca-4040-a080-927951bd5822</elementGuidId>
+   <elementGuidId>5fe2ceda-821f-459f-9608-5025b4340890</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='Female']/label</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Member Status'])[1]/following::label[${index}]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#Female > label.checkbox-label</value>
+         <value>label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>div >> internal:has-text=&quot;chevron-leftFilterSearchplusCreate SegmentDemographicCollapseTarget CampusBerlin&quot;i >> nth=3</value>
+         <value>internal:role=button[name=&quot;duplicate Duplicate spreadsheet Export ST Segment - 2024-03-27 13:59:12 ST Segment - 2024-03-27 13:59:12 Description Campus Anaheim Status Inactive Communications 0 Record Result 1024 edit-2&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>2e7ffc92-925e-4c9e-8260-d76785a98c79</webElementGuid>
+      <webElementGuid>90bedc42-36ec-4e67-a2de-e168713ec2bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,70 +37,70 @@
       <name>class</name>
       <type>Main</type>
       <value>checkbox-label</value>
-      <webElementGuid>454a5dbb-6407-4a1b-a591-8164aa2558bd</webElementGuid>
+      <webElementGuid>fe41ecfd-bda8-42c2-9309-da595490e735</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Femalecheck</value>
-      <webElementGuid>db3fb6e9-e9a3-40da-baca-2b3532276d54</webElementGuid>
+      <value>Allcheck</value>
+      <webElementGuid>62693745-d365-4bfa-be29-3240953c4b8e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Female&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
-      <webElementGuid>79ceb601-0869-4f99-9250-e33d42553fa5</webElementGuid>
+      <value>id(&quot;All&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>846f1432-f8c8-47c8-8379-b1ae392c7b15</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Female']/label</value>
-      <webElementGuid>11886c0a-6701-4160-9f17-d827951649c8</webElementGuid>
+      <value>//div[@id='All']/label</value>
+      <webElementGuid>095d5a40-36e4-41a1-a67d-908d7f6db13c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Male'])[1]/following::label[1]</value>
-      <webElementGuid>3ae1e418-6219-415d-b254-c03b6b159f39</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Member Status'])[1]/following::label[1]</value>
+      <webElementGuid>c0de39cf-12b1-40a0-877f-87dd11f220f8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gender'])[1]/following::label[2]</value>
-      <webElementGuid>0a521516-c62e-447c-8082-57ac5adc5abe</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[2]/following::label[1]</value>
+      <webElementGuid>70428201-879b-499e-a68e-f9a52add29b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Unspecified'])[1]/preceding::label[1]</value>
-      <webElementGuid>65086d55-b316-4abb-841b-4be47eaa4217</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Disengaged Member'])[1]/preceding::label[1]</value>
+      <webElementGuid>cae55586-b5a9-4156-b9a1-c2c7170e668f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/label</value>
-      <webElementGuid>de712b60-b4aa-4f9a-b9f3-7c9577c10b3c</webElementGuid>
+      <value>//div[7]/label</value>
+      <webElementGuid>8ec792fe-f0a8-4bbf-bd7d-3c0d89e6fcb9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//label[(text() = 'Femalecheck' or . = 'Femalecheck')]</value>
-      <webElementGuid>eda0a4d6-7bdd-49dd-8a67-129a4add3277</webElementGuid>
+      <value>//label[(text() = 'Allcheck' or . = 'Allcheck')]</value>
+      <webElementGuid>bd24a668-c5b9-4399-a216-5e6da0325d68</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>In Ministry Any Radio Button</name>
+   <name>Marital Status Widowed Checkbox</name>
    <tag></tag>
-   <elementGuidId>3dbeddbb-bdf6-4cef-b0b1-18875416063d</elementGuidId>
+   <elementGuidId>f3e122b8-7d8e-4225-8887-8eca0e0a5ecd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[4]/section/div[1]/section/div[1]/label</value>
+         <value>//div[@id='Widowed']/label</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>label.label.jss524</value>
+         <value>#All > label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=radio[name=&quot;Any&quot;i] >> nth=0</value>
+         <value>internal:text=&quot;Allcheck&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,78 +29,78 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>7930694d-4f84-4131-9f67-c524c4de3094</webElementGuid>
+      <webElementGuid>8a70a007-b3f9-496c-af00-b0bd1e438db4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>label jss524</value>
-      <webElementGuid>b8dc2d93-0c87-4223-94d5-3d95946fa102</webElementGuid>
+      <value>checkbox-label</value>
+      <webElementGuid>f368eb9b-68aa-4616-aa6e-5d0c783efb7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Any</value>
-      <webElementGuid>34dcf89b-aaf2-4bf2-b004-b09ed2553f22</webElementGuid>
+      <value>Allcheck</value>
+      <webElementGuid>81440c5b-e22a-49d9-b42c-1da06fb3b7ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss480 jss483 jss478&quot;]/div[@class=&quot;cmui grid jss7 jss479&quot;]/section[@class=&quot;jss514&quot;]/div[@class=&quot;jss513&quot;]/section[1]/div[@class=&quot;ui radio jss526 jss517&quot;]/label[@class=&quot;label jss524&quot;]</value>
-      <webElementGuid>9f3578c9-bb89-4e04-b40b-1f7efb4174b6</webElementGuid>
+      <value>id(&quot;All&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>50aabc37-5d74-4d84-8ab7-453fa73c11b7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div[2]/section/div/section/div/label</value>
-      <webElementGuid>83aac9a3-f48c-4ef1-86ef-5880e38db4f4</webElementGuid>
+      <value>//div[@id='All']/label</value>
+      <webElementGuid>26b1c35e-b2fa-4900-9648-9deb3e70a6d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='In Ministry?'])[1]/following::label[1]</value>
-      <webElementGuid>15242e93-5322-4573-9977-53db674c0c6d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Marital Status'])[2]/following::label[1]</value>
+      <webElementGuid>fe1a60a3-bc59-43aa-9ea3-e1db750ff71b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Additional Engagements'])[1]/following::label[1]</value>
-      <webElementGuid>f17c5e49-eac5-432b-a40f-10283bd2825a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Max Age'])[1]/following::label[1]</value>
+      <webElementGuid>3af3031f-05b4-47c8-8e43-2d85fdffbfff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/preceding::label[1]</value>
-      <webElementGuid>5f6d3c2d-5971-4c0c-8460-299eec79ba5d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Divorced'])[1]/preceding::label[1]</value>
+      <webElementGuid>1503812c-68a1-4a5d-b1eb-d0f50879bc9d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//label</value>
-      <webElementGuid>33b01687-c437-4cee-a1ae-e0107a34ae29</webElementGuid>
+      <value>//div[5]/label</value>
+      <webElementGuid>36596663-1601-44ab-a3ca-4a77f9024d8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//label[(text() = 'Any' or . = 'Any')]</value>
-      <webElementGuid>9cbb9694-e961-4b07-9f24-c86e6c20b8b5</webElementGuid>
+      <value>//label[(text() = 'Allcheck' or . = 'Allcheck')]</value>
+      <webElementGuid>a5831767-ceb2-46e1-8ccc-f83165fa924c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

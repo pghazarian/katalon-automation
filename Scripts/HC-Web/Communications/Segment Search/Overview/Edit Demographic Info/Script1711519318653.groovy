@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Communications/Segment Search/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Edit button next to Demographic Info'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Demographic Info Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Demographic Info Edit Button'))
 
 'Scroll to top of the Demographic Info section'
 WebUI.scrollToPosition(0, 0)
@@ -65,24 +65,24 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     'Demographic info updated successfully')
 
 'Verify the updated Target Campus value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus New Value'), 
-    'Anaheim')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Value', 
+        [('TargetCampus') : 'Anaheim']), 'Anaheim')
 
 'Verify the updated Gender value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender New Value'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Value', [('Gender') : 'Male, Female']), 
     'Male, Female')
 
 'Verify the updated Age value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age New Value'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Value', [('Age') : '13 - 99']), 
     '13 - 99')
 
 'Verify the updated Marital Status value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status New Value'), 
-    'Divorced, Married, Single, Widowed')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Value', 
+        [('MaritalStatus') : 'Divorced, Married, Single, Widowed']), 'Divorced, Married, Single, Widowed')
 
 'Verify the updated Children value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children New Value'), 
-    'First')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Value', 
+        [('Children') : 'First']), 'First')
 
 WebUI.closeBrowser()
 

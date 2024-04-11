@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Event Default Value</name>
+   <name>Gender Unspecified Checkbox</name>
    <tag></tag>
-   <elementGuidId>2400e08f-64b1-4bdb-baf4-2c5e28ec042c</elementGuidId>
+   <elementGuidId>99e41f32-12bb-4693-b752-97de30ee3815</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[2]/div[2]/div[1]/h5</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Gender'])[1]/following::*[name()='svg'][3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
