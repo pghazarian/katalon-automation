@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Journey Heading</name>
+   <name>Go to Digital Program</name>
    <tag></tag>
-   <elementGuidId>a4fade0d-0c20-4cb4-b82d-8f723759c339</elementGuidId>
+   <elementGuidId>10e6cc6a-ccb6-4b08-a115-dce5c75c1cea</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>name == &quot;Journey&quot; AND label == &quot;Journey&quot;</locator>
-   <locatorStrategy>IOS_PREDICATE_STRING</locatorStrategy>
+   <locator>ui-button--digital-program-navigate</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

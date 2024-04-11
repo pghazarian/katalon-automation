@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Journey Heading</name>
+   <name>Give</name>
    <tag></tag>
-   <elementGuidId>a4fade0d-0c20-4cb4-b82d-8f723759c339</elementGuidId>
+   <elementGuidId>270c38bb-eec8-4711-b1b9-3843104c03d1</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>name == &quot;Journey&quot; AND label == &quot;Journey&quot;</locator>
+   <locator>name == &quot;GIVE&quot; AND label == &quot;GIVE&quot; AND value == &quot;GIVE&quot;</locator>
    <locatorStrategy>IOS_PREDICATE_STRING</locatorStrategy>
 </MobileElementEntity>

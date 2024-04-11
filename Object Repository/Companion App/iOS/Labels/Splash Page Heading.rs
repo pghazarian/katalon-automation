@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Home Navigation Button</name>
+   <name>Splash Page Heading</name>
    <tag></tag>
-   <elementGuidId>07b60d42-b7d1-45ea-b0d0-45bb8217149c</elementGuidId>
+   <elementGuidId>816e193d-005c-434f-b481-6e64446eec38</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Home, tab, 1 of 6</locator>
+   <locator>ui-label--intro-screen-welcome</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

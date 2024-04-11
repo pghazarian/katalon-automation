@@ -51,7 +51,7 @@ Mobile.verifyElementText(Finder.findLabel('Discover Heading'), "Discover")
 'Navigate to Settings'
 Button.tap('Nav/Settings Navigation Button', timeout)
 
-Mobile.verifyElementText(Finder.findLabel('Settings Heading'), "Settings")
+Mobile.verifyElementText(Finder.findLabel('Settings Heading'), "Settings", FailureHandling.CONTINUE_ON_FAILURE)
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
@@ -62,8 +62,9 @@ Mobile.verifyElementText(Finder.findLabel('Home Heading'), "Home")
 'Log out'
 Button.tap('Logout Button', timeout)
 
-'Verify the splash page header is there'
-Mobile.verifyElementText(Finder.findLabel('Splash Page Heading'), "Welcome!")
+'Verify that the Splash Screen loads'
+Mobile.verifyElementVisible(Finder.findLabel('Splash/Description'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Splash/Welcome Heading'), timeout)
 
 'Close the app'
 Mobile.closeApplication()

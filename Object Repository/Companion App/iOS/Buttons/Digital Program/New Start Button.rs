@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Journey Heading</name>
+   <name>New Start Button</name>
    <tag></tag>
-   <elementGuidId>a4fade0d-0c20-4cb4-b82d-8f723759c339</elementGuidId>
+   <elementGuidId>ac73c54e-ea9a-4208-882e-e349296557c7</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>name == &quot;Journey&quot; AND label == &quot;Journey&quot;</locator>
+   <locator>name == &quot;CHECK-IN&quot; AND label == &quot;CHECK-IN&quot; AND value == &quot;CHECK-IN&quot;</locator>
    <locatorStrategy>IOS_PREDICATE_STRING</locatorStrategy>
 </MobileElementEntity>
