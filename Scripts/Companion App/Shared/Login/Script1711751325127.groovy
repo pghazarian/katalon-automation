@@ -78,7 +78,6 @@ Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 
 Mobile.delay(5)
 
-// These lines demonstrate the convenience function to tap a button, given the relative 
 'Click Login Button'
 Button.tap('Create Account or Login')
 
@@ -90,6 +89,8 @@ if (Device.isIOS()) {
 'Find the Email Address field'
 TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
 
+Mobile.tap(emailAddress, timeout)
+
 //'Clear in the Email Address field'
 //TextField.clearText(emailAddress, timeout)
 'Enter value in the Email Address field'
@@ -97,6 +98,8 @@ TextField.typeText(emailAddress, UserName, timeout)
 
 'Find the Password field'
 TestObject password = Finder.findTextField('Login/Password Text Field')
+
+Mobile.tap(password, timeout)
 
 'Enter value in the Password field'
 Mobile.setEncryptedText(password, Password, timeout)

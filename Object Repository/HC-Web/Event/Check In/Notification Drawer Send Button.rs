@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Milestone Status Complete</name>
+   <name>Notification Drawer Send Button</name>
    <tag></tag>
-   <elementGuidId>51fb2cd5-d7d0-41aa-acc4-8047b2ce8dd8</elementGuidId>
+   <elementGuidId>ff181e7d-e91e-4ac4-9f49-205db920f8b0</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;Complete&quot;]</value>
+         <value>//button[@id='check_in_page--send_notification_drawer--action_bar_send']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

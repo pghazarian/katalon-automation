@@ -3,7 +3,7 @@
    <description></description>
    <name>Create Account or Login</name>
    <tag></tag>
-   <elementGuidId>700ad058-c888-442c-8d59-0c04558699a9</elementGuidId>
+   <elementGuidId>76bb79ce-01dd-45fe-b898-5a86e224cd54</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -13,7 +13,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeButton</value>
-      <webElementGuid>b45a32ca-24c4-485c-91e4-61c65e74c930</webElementGuid>
+      <webElementGuid>ef8b92c7-f042-435b-bd43-02d71221f182</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +21,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>0b9ea760-caf3-456c-9fae-3ca85258b36d</webElementGuid>
+      <webElementGuid>e4c5bbd8-5b17-49a9-bb92-371966f2b70e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>cc0f25d0-0515-437a-9fa5-6bef7f6b8097</webElementGuid>
+      <webElementGuid>e1964ab9-1bd6-44a9-bd10-17ebdf7e2c87</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>height</name>
       <type>Main</type>
       <value>90.0</value>
-      <webElementGuid>8aad7246-23a2-4882-bdca-cb1a5bc0130e</webElementGuid>
+      <webElementGuid>51dee5da-8f32-4856-a3ce-c38486b69beb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>c5cf1e7d-1bfe-440f-bdd9-eb67fa009a9a</webElementGuid>
+      <webElementGuid>05c4d949-3d31-4033-8e81-7932c0bb7605</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>label</name>
       <type>Main</type>
       <value>Continue</value>
-      <webElementGuid>679fe21f-22ee-48a4-b03a-0bb998b1364e</webElementGuid>
+      <webElementGuid>d5cef6d6-4603-467a-b7e7-a61af95e6efe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>name</name>
       <type>Main</type>
       <value>Continue</value>
-      <webElementGuid>1c00ca7a-7fb0-4ae3-a8ed-54822f043248</webElementGuid>
+      <webElementGuid>e077a816-07c4-4b36-b838-77a8a17c93c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>width</name>
       <type>Main</type>
       <value>270.0</value>
-      <webElementGuid>ff4e623f-10f3-44c0-8439-da92810d4d37</webElementGuid>
+      <webElementGuid>f1a68247-5d37-4406-8339-8498a1e98886</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>x</name>
       <type>Main</type>
       <value>394.0</value>
-      <webElementGuid>6f3f5eb2-4cea-48e8-baaa-ba872c774a32</webElementGuid>
+      <webElementGuid>ddef01d0-8881-4dd8-9991-086370c9e4b6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>y</name>
       <type>Main</type>
       <value>950.0</value>
-      <webElementGuid>75bbd57d-f87e-4a83-9b50-5b0317d0ebc7</webElementGuid>
+      <webElementGuid>0cdc459e-e82c-4fd0-8b95-b8b605900009</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,8 +93,8 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[17]/XCUIElementTypeOther[3]/XCUIElementTypeAlert[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]</value>
-      <webElementGuid>afbf09e4-b026-4f6b-a92d-ea97d6cf9455</webElementGuid>
+      <webElementGuid>e5f0b493-09f4-486b-8986-83ff15a5302c</webElementGuid>
    </webElementProperties>
-   <locator>ui-button--intro-screen-login</locator>
+   <locator>styled-label-button--login</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

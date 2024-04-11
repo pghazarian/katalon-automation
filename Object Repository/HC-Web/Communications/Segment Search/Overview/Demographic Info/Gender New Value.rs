@@ -3,11 +3,11 @@
    <description></description>
    <name>Gender New Value</name>
    <tag></tag>
-   <elementGuidId>bdcb1f55-fd36-436c-a15e-fd46b18b553f</elementGuidId>
+   <elementGuidId>55e49d81-8f31-4dd0-ad8a-b0f2c49bf8b9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;Male, Female&quot;]</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[1]/div[2]/div[3]/h5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

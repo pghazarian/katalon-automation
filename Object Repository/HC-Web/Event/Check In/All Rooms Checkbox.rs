@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Status Default Value</name>
+   <name>All Rooms Checkbox</name>
    <tag></tag>
-   <elementGuidId>129de639-5411-4de5-ab50-fc172e69c2f0</elementGuidId>
+   <elementGuidId>2c1c7c6a-c091-436e-8104-1c9ae2f347f5</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;N/A&quot;]</value>
+         <value>//table/descendant::th/descendant::label/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

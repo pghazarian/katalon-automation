@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test is only built to run in stage. In order to make it work in other environments, global variables need to be made for the rooms that should appear first for each sorting/filtering option.</description>
+   <name>Filter and Sort (Rooms)</name>
+   <tag>Stage</tag>
+   <comment></comment>
+   <testCaseGuid>b3ecee50-36a9-44c2-a75f-7dc041491bb5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a3bb76dd-0a4c-45fc-8ce0-30979b4e59d2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
+      <description></description>
+      <id>a3bb76dd-0a4c-45fc-8ce0-30979b4e59d2</id>
+      <masked>false</masked>
+      <name>EventId</name>
+   </variable>
+</TestCaseEntity>

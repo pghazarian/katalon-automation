@@ -3,11 +3,11 @@
    <description></description>
    <name>Target Campus New Value</name>
    <tag></tag>
-   <elementGuidId>845863a1-540b-4c4c-901e-72ab8395ee0d</elementGuidId>
+   <elementGuidId>21ab87b0-a0c6-45df-9f3c-b6efc4ecaf72</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h5[text()=&quot;Anaheim&quot;]</value>
+         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[1]/div[2]/div[1]/h5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

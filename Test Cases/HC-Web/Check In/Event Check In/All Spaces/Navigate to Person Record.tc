@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Navigate to Person Record</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb0d5656-9f8b-49fd-85e5-afe05af276f9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>797c436d-2307-4c18-9702-b97d2d3add11</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
+      <description></description>
+      <id>797c436d-2307-4c18-9702-b97d2d3add11</id>
+      <masked>false</masked>
+      <name>EventId</name>
+   </variable>
+</TestCaseEntity>
