@@ -20,15 +20,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Communications/Segment Search/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Edit button next to Milestones'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'))
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
     'Accepted Christ')
 
 'Click on Complete under Select Milestone Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Complete Radio Button', 
-        [('index') : 1]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
+        [('index') : 1, ('index1') : 1]))
 
 'Click button to save milestone'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
@@ -41,23 +41,23 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     FailureHandling.OPTIONAL)
 
 'Verify Milestone/Status label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
-            ('index') : 1]), 'Accepted Christ')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Accepted Christ']), 
+    'Accepted Christ')
 
 'Verify default value of Milestone/Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
-        [('index') : 1]), 'Complete')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'Complete']), 
+    'Complete')
 
 'Click on the Edit button next to Milestones'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'))
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
     'Baptism')
 
 'Click on Incomplete under Select Milestone Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Incomplete Radio Button', 
-        [('index') : 1]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
+        [('index') : 1, ('index1') : 2]))
 
 'Click button to save milestone'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
@@ -70,15 +70,15 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     FailureHandling.OPTIONAL)
 
 'Verify Milestone/Status label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
-            ('index') : 1]), 'Baptism')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Baptism']), 
+    'Baptism')
 
 'Verify default value of Milestone/Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
-        [('index') : 1]), 'Incomplete')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'Incomplete']), 
+    'Incomplete')
 
 'Click on the Edit button next to Milestones'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'))
 
 'Click button to remove milestone'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Remove Button'))
@@ -94,12 +94,12 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     FailureHandling.CONTINUE_ON_FAILURE)
 
 'Verify Milestone/Status label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Label', 
-        [('index') : 1]), 'Milestone/Status')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Milestone/Status']), 
+    'Milestone/Status')
 
 'Verify default value of Milestone/Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Default Value', 
-        [('index') : 1]), 'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'N/A']), 
+    'N/A')
 
 WebUI.closeBrowser()
 

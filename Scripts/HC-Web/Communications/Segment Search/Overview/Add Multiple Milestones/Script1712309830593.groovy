@@ -33,7 +33,7 @@ WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment S
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : SearchTerm]))
 
 'Click on the Edit button next to Milestones'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'))
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'layout\']/div[2]/div/main/div/div[3]/section/div/section/div/div/div', 
@@ -43,29 +43,31 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'layout\']
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Add Milestone Button'))
 
 'Click on the AND operator'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/AND Operator', [('index') : 1]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Operator', [('index') : 1
+            , ('index1') : 1]))
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'layout\']/div[2]/div/main/div/div[3]/section/div/section/div[2]/div/div', 
     'Baptism')
 
 'Click on Complete under Select Milestone Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Complete Radio Button', 
-        [('index') : 2]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
+        [('index') : 2, ('index1') : 1]))
 
 'Click button to add milestone'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Add Milestone Button'))
 
 'Click on the AND operator'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/AND Operator', [('index') : 2]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Operator', [('index') : 2
+            , ('index1') : 1]))
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'layout\']/div[2]/div/main/div/div[3]/section/div/section/div[3]/div/div', 
     'Signed Membership Agreement')
 
 'Click on Complete under Select Milestone Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Complete Radio Button', 
-        [('index') : 3]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
+        [('index') : 3, ('index1') : 1]))
 
 'Click button to save milestone'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
@@ -78,38 +80,39 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     FailureHandling.OPTIONAL)
 
 'Verify selected Milestone is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
-            ('index') : 1]), 'Accepted Christ')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Accepted Christ']), 
+    'Accepted Christ')
 
 'Verify status of selected Milestone is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
-        [('index') : 1]), 'Incomplete')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'Incomplete']), 
+    'Incomplete')
 
 'Verify selected Milestone is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
-            ('index') : 2]), 'Baptism')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Baptism']), 
+    'Baptism')
 
 'Verify status of selected Milestone is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
         [('index') : 2]), '[AND] Complete')
 
 'Verify selected Milestone is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
-            ('index') : 3]), 'Signed Membership Agreement')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Signed Membership Agreement']), 
+    'Signed Membership Agreement')
 
 'Verify status of selected Milestone is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
         [('index') : 3]), '[AND] Complete')
 
 'Click on the Edit button next to Milestones'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'))
 
 'Scroll to remove button'
 WebUI.scrollToElement(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Label'), 
     0)
 
 'Click on the AND operator'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/OR Operator', [('index') : 1]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Operator', [('index') : 1
+            , ('index1') : 2]))
 
 'Click button to save milestone'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
@@ -122,31 +125,31 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     FailureHandling.OPTIONAL)
 
 'Verify selected Milestone is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
-            ('index') : 1]), 'Accepted Christ')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Accepted Christ']), 
+    'Accepted Christ')
 
 'Verify status of selected Milestone is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
-        [('index') : 1]), 'Incomplete')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'Incomplete']), 
+    'Incomplete')
 
 'Verify selected Milestone is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
-            ('index') : 2]), 'Baptism')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Baptism']), 
+    'Baptism')
 
 'Verify status of selected Milestone is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
         [('index') : 2]), '[OR] Complete')
 
 'Verify selected Milestone is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value', [
-            ('index') : 3]), 'Signed Membership Agreement')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Signed Membership Agreement']), 
+    'Signed Membership Agreement')
 
 'Verify status of selected Milestone is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status New Value', 
         [('index') : 3]), '[OR] Complete')
 
 'Click on the Edit button next to Milestones'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'))
 
 'Scroll to remove button'
 WebUI.scrollToElement(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Label'), 
@@ -172,11 +175,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     FailureHandling.OPTIONAL)
 
 'Verify Milestone/Status label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Label'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Milestone/Status']), 
     'Milestone/Status')
 
 'Verify default value of Milestone/Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Default Value'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'N/A']), 
     'N/A')
 
 WebUI.closeBrowser()

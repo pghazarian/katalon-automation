@@ -31,17 +31,17 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Button'))
 
 'Enter Segment name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Name Input Field'), SegmentName)
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Segment Name Input Field'), SegmentName)
 
 'Enter Segment description'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Description Text Area'), "$SegmentName Description")
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Segment Description Text Area'), "$SegmentName Description")
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
     'Anaheim')
 
 'Click button to save a new segment'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Create Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Create Button'))
 
 'Verify segment record added toast is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
@@ -55,19 +55,23 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     'You’ve successfully created and linked a new record')
 
 'Verify segment name is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Name'), SegmentName)
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Name', [('SegmentName') : SegmentName]), 
+    SegmentName)
 
 'Verify segment description is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Description'), "$SegmentName Description")
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Description', [('SegmentDescription') : "$SegmentName Description"]), 
+    "$SegmentName Description")
 
 'Verify segment campus is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Anaheim')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus', [('SegmentCampus') : 'Anaheim']), 
+    'Anaheim')
 
 'Verify default status of segment is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status'), 'Inactive')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status', [('SegmentStatus') : 'Inactive']), 
+    'Inactive')
 
 'Verify Demographic Info label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Demographic Info Label'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Demographic Info Header'), 
     'Demographic info')
 
 'Verify Edit button next to Demographic Info is displayed'
@@ -79,21 +83,21 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     'Target Campus')
 
 'Verify default value of Target Campus is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Default Value'), 
-    'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Value', 
+        [('TargetCampus') : 'N/A']), 'N/A')
 
 'Verify Gender label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Label'), 'Gender')
 
 'Verify default value of Gender is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Default Value'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Value', [('Gender') : 'N/A']), 
     'N/A')
 
 'Verify Age label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Label'), 'Age')
 
 'Verify default value of Age is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Default Value'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Value', [('Age') : 'N/A']), 
     'N/A')
 
 'Verify Marital Status label is displayed'
@@ -101,47 +105,48 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     'Marital Status')
 
 'Verify default value of Marital Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Default Value'), 
-    'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Value', 
+        [('MaritalStatus') : 'N/A']), 'N/A')
 
 'Verify Children label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Label'), 
     'Children')
 
 'Verify default value of Children is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Default Value'), 
-    'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Value', 
+        [('Children') : 'N/A']), 'N/A')
 
 'Verify Events label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Label'), 'Events')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Header'), 'Events')
 
 'Verify Edit button next to Events is displayed'
-not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Edit Button'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Edit Button'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify Event label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Label'), 'Event')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Label', [('Event') : 'Event']), 
+    'Event')
 
 'Verify default value of Event is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Default Value'), 'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Value', [('EventName') : 'N/A']), 
+    'N/A')
 
 'Verify Milestones label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Label'), 'Milestones')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Header'), 'Milestones')
 
 'Verify Edit button next to Milestones is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'), 
     FailureHandling.STOP_ON_FAILURE)
 
 'Verify Milestone/Status label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Label'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Milestone/Status']), 
     'Milestone/Status')
 
 'Verify default value of Milestone/Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status Default Value'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'N/A']), 
     'N/A')
 
 'Verify Additional Engagements label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Additional Egagements Label'), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Additional Engagements Header'), 
     'Additional Engagements')
 
 'Verify Edit button next to Additional Engagements is displayed'
@@ -153,24 +158,24 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     'In Ministry')
 
 'Verify default value of In Ministry is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Ministry Value'), 
-    'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Ministry Value', 
+        [('InMinistry') : 'N/A']), 'N/A')
 
 'Verify In Small Group label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Small Group Label'), 
     'In Small Group')
 
 'Verify default value of In Small Group is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Small Group Value'), 
-    'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Small Group Value', 
+        [('InSmallGroup') : 'N/A']), 'N/A')
 
 'Verify Member Status label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Label'), 
     'Member Status')
 
 'Verify default value of Member Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value'), 
-    'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value', 
+        [('MemberStatus') : 'N/A']), 'N/A')
 
 WebUI.closeBrowser()
 

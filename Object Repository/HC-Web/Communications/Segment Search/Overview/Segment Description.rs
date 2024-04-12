@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div/div[2]/div/div/div/div/div/div/h5</value>
+         <value>//h5[text()=&quot;${SegmentDescription}&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

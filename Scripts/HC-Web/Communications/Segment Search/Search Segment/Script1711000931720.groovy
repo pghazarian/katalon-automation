@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 SearchTerm = 'ST Record 2'
 
-SearchDescription = 'ST Record 2 Description'
+SearchDescription = "$SearchTerm Description"
 
 'Type Search term'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), SearchTerm)

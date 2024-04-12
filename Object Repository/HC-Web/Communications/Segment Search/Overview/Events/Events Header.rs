@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Status Label</name>
+   <name>Events Header</name>
    <tag></tag>
-   <elementGuidId>13485557-043e-49af-b2a8-5b2729b23709</elementGuidId>
+   <elementGuidId>c0061ba9-aea3-41d9-a530-4cb9762a5b6f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h6[text()=&quot;Member Status&quot;]</value>
+         <value>//h4[text()=&quot;Events&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
