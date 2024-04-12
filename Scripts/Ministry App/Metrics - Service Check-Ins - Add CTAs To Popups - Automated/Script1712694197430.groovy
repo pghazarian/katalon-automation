@@ -30,9 +30,15 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Service Check-
 'To open 8 Weeks trends for Service Check-Ins'
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/8 Week Trend button'), 0)
 
-'This will open the actual weekly trend chart\'s pop up modal for Service Check-Ins & CTAs for the Week of 4/14/2024 '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Chart for the week of 4 14 2024'), 0)
+'This will open the actual weekly trend chart\'s pop up modal for Service Check-Ins & CTAs for the Latest Week'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Chart for the latest week'), 0)
 
-'To close the pop up modal '
+'To close the pop up '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/X button'), 0)
+
+Mobile.scrollToText('Month')
+
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.widget.TextView -     Month'), 0)
+
+Mobile.tapAtPosition(62, 627)
 
