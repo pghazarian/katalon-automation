@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Milestone Complete Radio Button</name>
+   <name>Milestone Status Radio Button</name>
    <tag></tag>
    <elementGuidId>67d6b02f-a15b-42c8-8227-d9c0336feaaf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>label.label.jss545 > span</value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[${index}]/following::span[${index1}]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[${index}]/following::span[1]</value>
+         <key>CSS</key>
+         <value>label.label.jss545 > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>88f5362e-6682-4379-bcbd-e5827e89b527</webElementGuid>
+      <webElementGuid>4a904743-a739-4166-807e-0f050d8bd0d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Complete</value>
-      <webElementGuid>e490b4ef-68a1-4290-9686-49c6162653b3</webElementGuid>
+      <webElementGuid>f2819cb6-d9d4-4439-a418-9420a4292fa9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-dimmers drawer-open&quot;]/div[6]/div[@class=&quot;ui drawer jss201 drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/section[@class=&quot;ui jss519 drawer--content&quot;]/section[@class=&quot;jss520&quot;]/div[@class=&quot;jss520&quot;]/div[2]/div[@class=&quot;ui radio jss547 jss538&quot;]/label[@class=&quot;label jss545&quot;]/span[1]</value>
-      <webElementGuid>41360040-c879-4e5f-9183-f68e9c777621</webElementGuid>
+      <webElementGuid>0b36e9e6-995a-414e-ad8e-f4f1da53e324</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Milestone Status'])[1]/following::span[1]</value>
-      <webElementGuid>3aa42003-ed3b-48dd-8f74-f6c6fec3cd9a</webElementGuid>
+      <webElementGuid>419355dc-740d-4524-9a86-876b7c82a78b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Accepted Christ'])[2]/following::span[2]</value>
-      <webElementGuid>c1a22f1b-2b09-4e80-965d-d96dfa79c173</webElementGuid>
+      <webElementGuid>8a6cebe9-f930-44d8-ae78-04695673aa7a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Incomplete'])[1]/preceding::span[1]</value>
-      <webElementGuid>ee37cdcb-cace-453a-bd3f-5f0eca712057</webElementGuid>
+      <webElementGuid>dcf1ac3b-2bae-4f79-ba4c-8f4bd5e208fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/preceding::span[2]</value>
-      <webElementGuid>4a4167d8-fbf6-434a-8e86-9f7a020b7d97</webElementGuid>
+      <webElementGuid>41543c18-a432-44d5-b9c0-8679e48adb2c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Complete']/parent::*</value>
-      <webElementGuid>ef36ba28-e1a0-42e7-9ffa-5a95c797e415</webElementGuid>
+      <webElementGuid>d7075476-522f-46c6-81c9-ee2f5bfbb906</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/label/span</value>
-      <webElementGuid>7ec0bb04-def6-4e66-a4e1-9d370570627e</webElementGuid>
+      <webElementGuid>8bb84e43-5ad3-47cc-8057-e2af9a5d715b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Complete' or . = 'Complete')]</value>
-      <webElementGuid>3c645ad1-ff34-4386-9dcb-26d2e54775e3</webElementGuid>
+      <webElementGuid>05b7d6a7-6d46-48d3-a84b-982e69fd97e3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -30,10 +30,12 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
     'Anaheim')
 
 'Select Male using the checkbox'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Gender Male Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Gender Checkbox', 
+        [('index') : 1]))
 
 'Select Female using the checkbox'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Gender Female Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Gender Checkbox', 
+        [('index') : 2]))
 
 'Enter minimum age'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Minimum Age Input Field'), 
@@ -44,10 +46,12 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Se
     '99')
 
 'Click All under Marital Status'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Marital Status All Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Marital Status Checkbox', 
+        [('index') : 1]))
 
 'Click on Yes under Has Children'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Has Children Yes Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Has Children Radio Button', 
+        [('index') : 2]))
 
 'Select grade from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'grade-selector\']/descendant::div[@class=\'Select-control\']', 

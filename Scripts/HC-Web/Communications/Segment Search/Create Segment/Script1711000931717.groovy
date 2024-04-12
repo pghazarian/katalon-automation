@@ -120,15 +120,14 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Header'), 'Events')
 
 'Verify Edit button next to Events is displayed'
-not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Edit Button'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Edit Button'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify Event label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Label', [('EventType') : 'Event']), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Label', [('Event') : 'Event']), 
     'Event')
 
 'Verify default value of Event is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Value', [('Event') : 'N/A']), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Value', [('EventName') : 'N/A']), 
     'N/A')
 
 'Verify Milestones label is displayed'
@@ -147,8 +146,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     'N/A')
 
 'Verify Additional Engagements label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Additional Engagements Header', 
-        [('AdditionalEngagementsLabel') : 'Additional Engagements']), 'Additional Engagements')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Additional Engagements Header'), 
+    'Additional Engagements')
 
 'Verify Edit button next to Additional Engagements is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Additional Egagements Edit Button'), 
@@ -160,7 +159,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 
 'Verify default value of In Ministry is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Ministry Value', 
-        [('InMinistry') : "N/A"]), 'N/A')
+        [('InMinistry') : 'N/A']), 'N/A')
 
 'Verify In Small Group label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Small Group Label'), 
@@ -168,7 +167,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 
 'Verify default value of In Small Group is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Small Group Value', 
-        [('InSmallGroup') : "N/A"]), 'N/A')
+        [('InSmallGroup') : 'N/A']), 'N/A')
 
 'Verify Member Status label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Label'), 
@@ -176,7 +175,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 
 'Verify default value of Member Status is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value', 
-        [('MemberStatus') : "N/A"]), 'N/A')
+        [('MemberStatus') : 'N/A']), 'N/A')
 
 WebUI.closeBrowser()
 

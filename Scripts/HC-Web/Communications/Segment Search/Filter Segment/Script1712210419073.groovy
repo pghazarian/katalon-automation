@@ -32,10 +32,12 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'campuses\
     'Anaheim')
 
 'Check Male under Gender'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Gender Male Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Gender Checkbox', 
+        [('index') : 1]))
 
 'Check Female under Gender'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Gender Female Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Gender Checkbox', 
+        [('index') : 2]))
 
 'Select the text'
 WebUI.sendKeys(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Minimum Age Input Field'), 
@@ -62,10 +64,10 @@ WebUI.setText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demo
     '99')
 
 'Click All under Marital Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Marital Status All Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Marital Status Checkbox'))
 
 'Click on Yes under Has Children'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Has Children Yes Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Has Children Radio Button'))
 
 'Select grade from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'filters-grade-selector\']/descendant::div[@class=\'Select-control\']', 
@@ -82,7 +84,7 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'milestone
     'Accepted Christ')
 
 'Click on Complete under Select Milestone Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Complete Radio Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button'))
 
 'Click on icon to collapse Milestones'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filters/Milestones Expand Collapse Icon'))

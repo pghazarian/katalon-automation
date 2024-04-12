@@ -55,7 +55,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     'You’ve successfully created and linked a new record')
 
 'Click on the Edit button next to Demographic Info'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Demographic Info Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Demographic Info Edit Button'))
 
 'Scroll to top of the Demographic Info section'
 WebUI.scrollToPosition(0, 0)
@@ -68,29 +68,32 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Demographic Info Save Button'))
 
 'Click on the Edit button next to Milestones'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'))
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
     'Accepted Christ')
 
 'Click on Complete under Select Milestone Status'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Complete Radio Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button'))
 
 'Click button to save milestone'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
 
 'Click on the Edit button next to Additional Engagements'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Additional Engagements Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Additional Egagements Edit Button'))
 
 'Click on Yes under In Ministry'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Ministry Yes Radio Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Ministry Radio Button', 
+        [('index') : 2]))
 
 'Click on Yes under In Small Group'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Small Group Yes Radio Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Small Group Radio Button', 
+        [('index') : 2]))
 
 'Click Member under Member Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status Member Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status Checkbox', 
+        [('index') : 3]))
 
 'Click button to save additional engagements'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Additional Engagements Save Button'))
@@ -117,8 +120,8 @@ not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment S
 not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status'), 'Inactive')
 
 'Verify the updated Target Campus value'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus New Value'), 
-    'Anaheim')
+not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Value', 
+        [('TargetCampus') : 'Anaheim']), 'Anaheim')
 
 'Verify Milestone/Status label is displayed'
 not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone New Value'), 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h6[text()=&quot;${EventType}&quot;]</value>
+         <value>//h6[text()=&quot;${Event}&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

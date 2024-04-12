@@ -27,8 +27,8 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
     'Accepted Christ')
 
 'Click on Complete under Select Milestone Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Complete Radio Button', 
-        [('index') : 1]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
+        [('index') : 1, ('index1') : 1]))
 
 'Click button to save milestone'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
@@ -56,8 +56,8 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
     'Baptism')
 
 'Click on Incomplete under Select Milestone Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Incomplete Radio Button', 
-        [('index') : 1]))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
+        [('index') : 1, ('index1') : 2]))
 
 'Click button to save milestone'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Save Button'))
@@ -94,11 +94,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     FailureHandling.CONTINUE_ON_FAILURE)
 
 'Verify Milestone/Status label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : "Milestone/Status"]), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Milestone/Status']), 
     'Milestone/Status')
 
 'Verify default value of Milestone/Status is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : "N/A"]), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'N/A']), 
     'N/A')
 
 WebUI.closeBrowser()
