@@ -22,7 +22,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
 
 'Click on Filters icon to open filters rail'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Filters/Filter Icon'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Filter Icon'))
 
 'Click on icon to expand Demographic'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Filters/Demographic Expand Collapse Icon'))
@@ -64,10 +64,12 @@ WebUI.setText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demo
     '99')
 
 'Click All under Marital Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Marital Status Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Marital Status Checkbox', 
+        [('index') : 1]))
 
 'Click on Yes under Has Children'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Has Children Radio Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Has Children Radio Button', 
+        [('index') : 2]))
 
 'Select grade from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'filters-grade-selector\']/descendant::div[@class=\'Select-control\']', 
@@ -84,7 +86,8 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'milestone
     'Accepted Christ')
 
 'Click on Complete under Select Milestone Status'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
+        [('index') : 1, ('index1') : 1]))
 
 'Click on icon to collapse Milestones'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filters/Milestones Expand Collapse Icon'))
@@ -93,13 +96,16 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filters/Milesto
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filters/Additional Engagement Expand Collapse Icon'))
 
 'Click on Yes under In Ministry'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filters/Additional Engagement/In Ministry Yes Radio Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Ministry Radio Button', 
+        [('index') : 2]))
 
 'Click on Yes under In Small Group'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filters/Additional Engagement/In Small Group Yes Radio Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/In Small Group Radio Button', 
+        [('index') : 2]))
 
 'Click Member under Member Status to select'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filters/Additional Engagement/Member Status Member Checkbox'))
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Add Additional Engagements/Member Status Checkbox', 
+        [('index') : 3]))
 
 'Click on icon to collapse Additional Engagement'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filters/Additional Engagement Expand Collapse Icon'))
@@ -113,17 +119,57 @@ WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Segment Search/
 'Open the segment record from the search results'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filtered Segment'))
 
+'Verify the updated Target Campus value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Value', 
+        [('TargetCampus') : 'Anaheim']), 'Anaheim')
+
+'Verify the updated Gender value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Value', [('Gender') : 'Male, Female']), 
+    'Male, Female')
+
+'Verify the updated Age value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Value', [('Age') : '13 - 99']), 
+    '13 - 99')
+
+'Verify the updated Marital Status value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Marital Status Value', 
+        [('MaritalStatus') : 'Divorced, Married, Single, Widowed']), 'Divorced, Married, Single, Widowed')
+
+'Verify the updated Children value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Children Value', 
+        [('Children') : 'None']), 'None')
+
+'Verify Milestone/Status label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Label', [('Milestone') : 'Accepted Christ']), 
+    'Accepted Christ')
+
+'Verify default value of Milestone/Status is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'Complete']), 
+    'Complete')
+
+'Verify the updated In Ministry value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Ministry Value', 
+        [('InMinistry') : 'Yes']), 'Yes')
+
+'Verify the updated In Small Group value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/In Small Group Value', 
+        [('InSmallGroup') : 'Yes']), 'Yes')
+
+'Verify the updated Member Status value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Additional Engagements/Member Status Value', 
+        [('MemberStatus') : 'Member']), 'Member')
+
 'Return to segment search'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Return To Segment Search Button'))
 
 'Click on Filters icon to open filters rail'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Filters/Filter Icon'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Filter Icon'))
 
 'Click button to clear filters'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Filters/Clear All Button'))
 
 'Click on Filters icon to close filters rail'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Filters/Filter Icon'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Filter Icon'))
 
 'Open the segment record from the search results'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Filtered Segment'))
