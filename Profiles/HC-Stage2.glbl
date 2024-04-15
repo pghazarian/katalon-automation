@@ -89,4 +89,14 @@
       <initValue>'Agreement Test'</initValue>
       <name>ConnectionForm_SearchName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'3044'</initValue>
+      <name>EventId_OneTime_ForDuplication</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Baptisms'</initValue>
+      <name>EventCategory</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
