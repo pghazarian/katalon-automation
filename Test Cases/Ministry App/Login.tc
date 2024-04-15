@@ -38,7 +38,7 @@
       <name>Password</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>96671f44-6fe2-4368-bef6-3c9b167af226</id>
       <masked>false</masked>
