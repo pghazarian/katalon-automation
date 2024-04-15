@@ -17,7 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def todaysDateAbbreviated = new Date().format('MMMdd').toString()
+def todaysDateMonthAbbreviated = new Date().format('MMM').toString()
+
+def todaysDateDay = new Date().format('dd').toString()
+
+def todaysDateAbbreviated = "$todaysDateMonthAbbreviated $todaysDateDay"
 
 def currentYear = new Date().format('yyyy')
 
@@ -56,7 +60,8 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Upcoming Filter'))
 
 'Verify event not cancelled'
-!(WebUI.getAttribute(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'class').contains('canceled-event'))
+WebUI.verifyEqual(false, WebUI.getAttribute(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'class').contains(
+        'canceled-event'))
 
 'Sort by descending date'
 CustomKeywords.'TestObjectHelper.setDropDownValue'('events_overview--filter_panel-sort_dropdown', 'Event Date (Descending)')
@@ -64,13 +69,13 @@ CustomKeywords.'TestObjectHelper.setDropDownValue'('events_overview--filter_pane
 WebUI.delay(2)
 
 'Verify first event is not today'
-!(WebUI.getText(findTestObject('HC-Web/Event/Search/Search Results First Event Date')).contains(todaysDateAbbreviated))
+WebUI.verifyEqual(false, WebUI.getText(findTestObject('HC-Web/Event/Search/Search Results First Event Date')).contains(todaysDateAbbreviated))
 
 'Sort by ascending date'
 CustomKeywords.'TestObjectHelper.setDropDownValue'('events_overview--filter_panel-sort_dropdown', 'Event Date (Ascending)')
 
 'Verify first event is today'
-WebUI.getText(findTestObject('HC-Web/Event/Search/Search Results First Event Date')).contains(todaysDateAbbreviated)
+WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Search/Search Results First Event Date')).contains(todaysDateAbbreviated))
 
 'Click paid filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Paid Filter'))
@@ -145,8 +150,7 @@ WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Published Fi
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify event is published'
-WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains(
-    'Published')
+WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains('Published'))
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
@@ -158,8 +162,7 @@ WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Unpublished 
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify event is unpublished'
-WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains(
-    'Unpublished')
+WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains('Unpublished'))
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
