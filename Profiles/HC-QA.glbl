@@ -114,4 +114,14 @@
       <initValue>'Response Card Anaheim'</initValue>
       <name>ConnectionForm_SearchName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'17978'</initValue>
+      <name>EventId_OneTime_ForDuplication</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Baptism'</initValue>
+      <name>EventCategory</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
