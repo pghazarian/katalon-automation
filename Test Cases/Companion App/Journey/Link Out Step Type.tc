@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Readable Text Step</name>
+   <name>Link Out Step Type</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>779f8e67-d258-4598-9185-fe1617fc301b</testCaseGuid>
+   <testCaseGuid>b8a3a1f1-dbf5-4094-b88c-6d088fbc9a85</testCaseGuid>
 </TestCaseEntity>
