@@ -76,38 +76,47 @@ boolean removeAppBeforeTest = false // change this to false to keep the app stat
 
 Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 
-Mobile.delay(5)
+Mobile.delay(timeout)
 
-'Click Login Button'
-Button.tap('Create Account or Login')
+Mobile.tapAtPosition(20, 20)
 
-if (Device.isIOS()) {
-    'Click the Continue Button (from the OS to approve going to an external domain)'
-    Button.tap('Login/Continue')
+if (Mobile.verifyElementVisible(Finder.findLabel('Splash/Description'), timeout, FailureHandling.OPTIONAL)) {
+	
+	'Click Login Button'
+	Button.tap('Create Account or Login')
+	
+	if (Device.isIOS()) {
+	    'Click the Continue Button (from the OS to approve going to an external domain)'
+	    Button.tap('Login/Continue')
+	}
+	
+	'Find the Email Address field'
+	TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
+	
+	Mobile.tap(emailAddress, timeout)
+	
+	//'Clear in the Email Address field'
+	//TextField.clearText(emailAddress, timeout)
+	'Enter value in the Email Address field'
+	TextField.typeText(emailAddress, UserName, timeout)
+	
+	'Find the Password field'
+	TestObject password = Finder.findTextField('Login/Password Text Field')
+	
+	Mobile.tap(password, timeout)
+	
+	'Enter value in the Password field'
+	Mobile.setEncryptedText(password, Password, timeout)
+	
+	if (Device.isAndroid()) {
+	    Mobile.hideKeyboard()
+	}
+	
+	'Click Sign In Button'
+	Button.tap('Login/Sign In Button')
+	
 }
-
-'Find the Email Address field'
-TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
-
-Mobile.tap(emailAddress, timeout)
-
-//'Clear in the Email Address field'
-//TextField.clearText(emailAddress, timeout)
-'Enter value in the Email Address field'
-TextField.typeText(emailAddress, UserName, timeout)
-
-'Find the Password field'
-TestObject password = Finder.findTextField('Login/Password Text Field')
-
-Mobile.tap(password, timeout)
-
-'Enter value in the Password field'
-Mobile.setEncryptedText(password, Password, timeout)
-
-if (Device.isAndroid()) {
-    Mobile.hideKeyboard()
+else
+{
+	println('User is logged in already. Skipping')
 }
-
-'Click Sign In Button'
-Button.tap('Login/Sign In Button')
-
