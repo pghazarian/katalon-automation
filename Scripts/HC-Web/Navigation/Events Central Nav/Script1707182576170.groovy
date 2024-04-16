@@ -28,43 +28,57 @@ CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Events Central'
 CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'All Events', 'All Events')
 
 'Verify Events Central | Worship Service Setup Navigation'
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Worship Service Setup', 
-    'Worship Service Setup')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Worship Service Setup', 'Worship Service Setup')
 
 'Verify Events Central | Event Catalogs Navigation'
 CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Event Catalogs', 'Event Catalogs')
 
 'Verify Events Central | Settings & Preferences Navigation'
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences',
-	'Settings & Preferences')
-
-'Verify Accommodations Sub Nav'
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Accommodations Tab Button'))
-'Verify Data Header is present'
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Accommodations/Data Header'), 0)
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central', 'Settings & Preferences', 'Settings & Preferences')
 
 'Verify Event Categories Sub Nav'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Event Categories Tab Button'))
+
 'Verify Data Header is present'
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Event Categories/Data Header'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Event Categories/Data Header'), 
+    0)
 
 'Verify Room Categories Sub Nav'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Room Categories Tab Button'))
+
 'Verify Data Header is present'
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Room Categories/Data Header'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Room Categories/Data Header'), 
+    0)
 
 'Verify Service Categories Sub Nav'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Service Categories Tab Button'))
+
 'Verify Data Header is present'
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Service Categories/Data Header'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Service Categories/Data Header'), 
+    0)
 
 'Verify Tags Sub Nav'
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Tags Tab Button'))
-'Verify Data Header is present'
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Tags/Data Header'), 0)
 
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Tags Tab Button'), 3, FailureHandling.OPTIONAL)) {
+	WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Tags Tab Button'))
+	
+	'Verify Data Header is present'
+	WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Tags/Data Header'), 0)
+} else {
+	WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/More Ellipsis Button'))
+	
+	WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Nav/Submenu By Name Match', [('textToMatch') : 'Tags']))
+}
 
+'Verify Accommodations Sub Nav'			
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Accommodations Tab Button'), 3, FailureHandling.OPTIONAL)) {
+    WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Accommodations Tab Button'))
 
+    'Verify Data Header is present'
+    WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Accommodations/Data Header'), 0)
+} else {
+    WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/More Ellipsis Button'))
 
-
+    WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Nav/Submenu By Name Match', [('textToMatch') : 'Accommodations']))
+}
 
