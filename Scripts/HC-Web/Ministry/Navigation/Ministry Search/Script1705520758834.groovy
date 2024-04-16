@@ -54,7 +54,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Ministry/Details/BreadCrumbMinist
 
 
 'Verify the member person\'s name in the table and click Row'
-WebUI.click(findTestObject('HC-Web/My Follow Ups/Table Row Check Input By Name Match', [('textToMatch') : MemberName]))
+WebUI.click(findTestObject('HC-Web/My Follow Ups/Table Row Person Name By Name Match', [('textToMatch') : MemberName]))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
@@ -64,7 +64,7 @@ CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(
 	CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'navigation_sectional_tabs--panel')]/button[contains(@class, 'button_dropdown')]/descendant::div[text() = 'Interested']"))
 
 'Verify the interested person\'s name in the table'
-WebUI.click(findTestObject('HC-Web/My Follow Ups/Table Row Check Input By Name Match', [('textToMatch') : MemberName]))
+WebUI.click(findTestObject('HC-Web/My Follow Ups/Table Row Person Name By Name Match', [('textToMatch') : InterestedName]))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/CloseButton'))
 
