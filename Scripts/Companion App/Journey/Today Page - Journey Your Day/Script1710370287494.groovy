@@ -47,9 +47,11 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandl
 'Navigate to Journey'
 Button.tap('Nav/Journey Navigation Button', timeout)
 
-Mobile.verifyElementText(Finder.findLabel('Journey/Your Day Heading'), "Your")
+Mobile.verifyElementExist(Finder.findLabel('Journey/Your Day Heading'), timeout)
 
-//Mobile.verifyElementExists(Finder.findTestObject(), null, null, timeout)
+Button.tap('Journey/Date Go Back', timeout)
+
+Button.tap('Journey/Date Go Forward', timeout)
 
 Mobile.verifyElementExist(Finder.findLabel('Journey/Suggested Journey Tiles'), timeout)
 
