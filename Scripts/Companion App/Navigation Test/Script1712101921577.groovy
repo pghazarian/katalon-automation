@@ -28,15 +28,21 @@ def timeout = 3
 'Open existing app by the app bundle id'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+Mobile.delay(3)
+
 'Navigate to Resources'
 Button.tap('Nav/Resources Navigation Button', timeout)
 
 Mobile.verifyElementText(Finder.findLabel('Resources Heading'), "Resources")
 
+Mobile.delay(3)
+
 'Navigate to Profile'
 Button.tap('Nav/Profile Navigation Button', timeout)
 
 Mobile.verifyElementText(Finder.findLabel('Profile Heading'), "Profile")
+
+Mobile.delay(3)
 
 'Navigate to Journey'
 Button.tap('Nav/Journey Navigation Button', timeout)
