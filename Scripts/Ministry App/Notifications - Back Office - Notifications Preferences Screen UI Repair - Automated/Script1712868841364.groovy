@@ -17,11 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/*
- * 1. Open HC Admin
- * 2. Login
- * 3. Click on the Logged in user's profile icon (top right)
- * 4. Select Notification Preferences menu option 
- * 5. Verify that the column headings and check boxes are aligned vertically
- * 6. Verify that the depth of the rows are expanded to allow for the full display of the notifications titles
- */
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/div_PG'))
+
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/div_Notification Preferences'))
+
+WebUI.delay(7)
+
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/span_Cancel'))
+
+WebUI.closeBrowser()
+

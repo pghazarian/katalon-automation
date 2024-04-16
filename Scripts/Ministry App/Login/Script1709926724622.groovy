@@ -16,6 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import io.appium.java_client.TouchAction as TouchAction
+import io.appium.java_client.touch.offset.PointOption as PointOption
+import io.appium.java_client.touch.WaitOptions as WaitOptions
+import java.time.Duration as Duration
+import io.appium.java_client.android.AndroidDriver as AndroidDriver
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
 
 if (ForceLogin) {
     'Open the App'
