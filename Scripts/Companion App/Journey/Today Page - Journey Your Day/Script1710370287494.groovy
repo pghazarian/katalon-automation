@@ -55,6 +55,8 @@ Button.tap('Journey/Date Go Forward', timeout)
 
 Mobile.verifyElementExist(Finder.findLabel('Journey/Suggested Journey Tiles'), timeout)
 
+Button.tap('Nav/Journey Navigation Button', timeout)
+
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
 
