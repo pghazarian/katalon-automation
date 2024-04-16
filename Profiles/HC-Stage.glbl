@@ -139,4 +139,14 @@
       <initValue>'com.healthychurch.companion.stage'</initValue>
       <name>CompanionApp_BundleId</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27831'</initValue>
+      <name>EventId_OneTime_ForDuplication</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Baptism'</initValue>
+      <name>EventCategory</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
