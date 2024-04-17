@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Person Search Tab</name>
+   <tag></tag>
+   <elementGuidId>17ae3f44-dd5a-4382-9dd4-cbf03b2fbd81</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#sub_navigation_button--person_search > span.sub-navigation-button-inner > span.copy</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='sub_navigation_button--person_search']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e607e200-8337-4981-a9e3-15cfda10638d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>copy</value>
+      <webElementGuid>eb35525b-6ee5-4cfe-9d1c-506a9e062a70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Person Search</value>
+      <webElementGuid>fb30f628-5349-47f6-b9c5-b4544ca800e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sub_navigation_button--person_search&quot;)/span[@class=&quot;sub-navigation-button-inner&quot;]/span[@class=&quot;copy&quot;]</value>
+      <webElementGuid>0d68a5aa-4c5a-49f5-a9fb-ce9a0e4512bc</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

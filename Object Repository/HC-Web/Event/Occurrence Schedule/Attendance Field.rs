@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Attendance Field</name>
+   <tag></tag>
+   <elementGuidId>31e3ca96-ebea-4c09-8a3e-4f368733227e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tbody/tr/td[5]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>8bc69c61-bb3d-4c1c-bf52-b8ca6c5be92c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-semibold </value>
+      <webElementGuid>829915d0-a0b7-4bb7-bbcc-cadcf3d1a5a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Attended</value>
+      <webElementGuid>d709b9be-2e8e-41c2-9c0c-c8121fdfa28c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss875 jss851 jss873 ministry-occurrence-schedule-wrap page-has_action_bar&quot;]/div[@class=&quot;cmui container jss720 ui page--container jss719&quot;]/section[@class=&quot;cmui content jss723 ui page--content jss722&quot;]/div[@class=&quot;view-container&quot;]/div[@class=&quot;view-scrollbar padding-bottom-2x&quot;]/div[@class=&quot;roster-container&quot;]/table[@class=&quot;ui jss903 table table-basic table-font-size-xsmall table-selectable table-stretch-very&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell&quot;]/span[@class=&quot;text-semibold&quot;]</value>
+      <webElementGuid>d47e91b3-6f67-410c-8f62-34029a596828</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

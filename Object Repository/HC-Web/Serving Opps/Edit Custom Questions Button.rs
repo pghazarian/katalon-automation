@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Edit Custom Questions Button</name>
+   <tag></tag>
+   <elementGuidId>1e638cbf-6c19-4cc7-9078-a4a6034b6e84</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-button--edit_custom_questions</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='ui-button--edit_custom_questions']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>99e4cb1b-ed96-439b-9567-453ec9dae647</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss1148 jss248</value>
+      <webElementGuid>fd03b1c6-b990-4e68-beeb-ac0b19ae0aa8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-button--edit_custom_questions</value>
+      <webElementGuid>6d8782a3-0718-4dc3-8198-715c2d00b2ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>pencilEdit Custom Questions</value>
+      <webElementGuid>cb1fb085-35be-4c67-8587-97f43a21064a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-button--edit_custom_questions&quot;)</value>
+      <webElementGuid>508101fe-0a70-49f6-b591-1e2038d021df</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

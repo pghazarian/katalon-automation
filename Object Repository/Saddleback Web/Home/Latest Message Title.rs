@@ -6,12 +6,12 @@
    <elementGuidId>ca3fee7c-479e-464c-8a75-ec0171a4d59e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h3.white</value>
+         <key>XPATH</key>
+         <value>//div[@class='message-card-inner']/h3</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='latestMessage']/div/h3</value>
+         <key>CSS</key>
+         <value>h3.white</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h3</value>
-      <webElementGuid>7311b86f-cc38-4882-a6cf-886f49e44e20</webElementGuid>
+      <webElementGuid>3a9915f3-92e5-4112-8d44-55b5cf462e50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>white</value>
-      <webElementGuid>6ebc3cce-8204-4f91-b778-947d988a621a</webElementGuid>
+      <webElementGuid>0317dbb5-3f73-43d3-a1ba-07f28cece522</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Anchored in Peace</value>
-      <webElementGuid>69360802-ff4c-4f85-a6ce-5cc3d5eb3e1e</webElementGuid>
+      <webElementGuid>8f84dcf2-0b90-4b9b-a83d-fc70a1e930e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;latestMessage&quot;)/div[1]/h3[@class=&quot;white&quot;]</value>
-      <webElementGuid>cda15ad3-ff3e-412a-b0ea-18c9961d910c</webElementGuid>
+      <webElementGuid>3c90e41c-e12a-4f58-b1b6-7b55f97a3c30</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='latestMessage']/div/h3</value>
-      <webElementGuid>c4bc3e6c-1611-4343-bd4a-8a0792f221da</webElementGuid>
+      <webElementGuid>3b38c7a6-44f2-4efa-86ee-897375a809ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h3</value>
-      <webElementGuid>eea4cbb7-9626-4865-9cb7-9f7d4a5dc9bc</webElementGuid>
+      <webElementGuid>ad27c6e7-415b-4a15-98d2-636222df6a9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//h3[(text() = 'Anchored in Peace' or . = 'Anchored in Peace')]</value>
-      <webElementGuid>f101faeb-4db6-47e7-bf52-85fac6dd2989</webElementGuid>
+      <webElementGuid>11dd66b7-24fe-4607-a553-e830da196e41</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

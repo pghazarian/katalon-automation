@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Tabs Rendering</name>
+   <tag>QA,Dev,Stage2,Stage,Smoke,Production</tag>
+   <comment></comment>
+   <testCaseGuid>4ab440ac-0e38-431a-8eaf-843a743adccd</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ea72d03d-c49c-4b76-a228-ea8b23621989</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Lake Forest'</defaultValue>
+      <description></description>
+      <id>ea72d03d-c49c-4b76-a228-ea8b23621989</id>
+      <masked>false</masked>
+      <name>campus</name>
+   </variable>
+</TestCaseEntity>

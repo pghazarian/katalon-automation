@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Send a Notification</name>
+   <tag>QA,Dev,Stage2,Stage</tag>
+   <comment></comment>
+   <testCaseGuid>8d2b7227-894b-4fc0-aa27-ba7d1fc192a6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3031cc4b-e97e-44b0-b03c-ee54afeb8afb</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
+      <description></description>
+      <id>3031cc4b-e97e-44b0-b03c-ee54afeb8afb</id>
+      <masked>false</masked>
+      <name>EventId</name>
+   </variable>
+</TestCaseEntity>

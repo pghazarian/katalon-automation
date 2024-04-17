@@ -11,6 +11,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'production'</initValue>
+      <name>EnvironmentPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'crisf@saddleback.com'</initValue>
       <name>Admin_UserName</name>
    </GlobalVariableEntity>
@@ -61,7 +66,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Gregory (Greg) Ortega'</initValue>
+      <initValue>'Marissa Ortega'</initValue>
       <name>MinistrySearch_InterestedName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -98,5 +103,15 @@
       <description></description>
       <initValue>'For Testing - DO NOT USE'</initValue>
       <name>EventSearch_ServingOppName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cris Francisco'</initValue>
+      <name>AuditLog_SearchName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://welcome.saddleback.com'</initValue>
+      <name>Saddleback_Welcome_URL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

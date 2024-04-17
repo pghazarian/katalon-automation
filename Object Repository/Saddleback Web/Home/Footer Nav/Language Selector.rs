@@ -6,12 +6,11 @@
    <elementGuidId>a1a66b96-405e-451c-b133-f21a433735e7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@class, 'footer-language')]/div[@class='header-lang-select']/label/following::span[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='footer-language']/select</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

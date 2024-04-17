@@ -29,6 +29,12 @@
       <value></value>
       <variableId>38949a31-56f4-4c20-b0e3-9ffb87f46274</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>681ac6db-08fd-4724-9f79-cabe34a24cd1</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>GlobalVariable.HC_HostUrl</defaultValue>
       <description></description>
@@ -56,5 +62,12 @@
       <id>38949a31-56f4-4c20-b0e3-9ffb87f46274</id>
       <masked>false</masked>
       <name>TargetPath</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>681ac6db-08fd-4724-9f79-cabe34a24cd1</id>
+      <masked>false</masked>
+      <name>ForceLogin</name>
    </variable>
 </TestCaseEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>e1e15d9f-eb42-42d2-8448-f75ff991c327</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.footer-nav-page</value>
+         <key>XPATH</key>
+         <value>//li[1]/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'Locations')]</value>
+         <key>CSS</key>
+         <value>a.footer-nav-page</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>7a6e891a-004e-4fdc-92d1-51c25383d40a</webElementGuid>
+      <webElementGuid>9b2e1c32-1502-49d4-9d51-933e1681dbb1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/locations/</value>
-      <webElementGuid>6485b010-a9b8-423f-bd87-a481e71eae22</webElementGuid>
+      <webElementGuid>65bac940-83ca-45a0-922c-02779d2322c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>footer-nav-page</value>
-      <webElementGuid>c23b61a6-d3c1-40bb-9700-ac134360153d</webElementGuid>
+      <webElementGuid>09c69798-65ad-4c32-be5a-9e5a8aedd121</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Locations</value>
-      <webElementGuid>b19cea5a-d34d-4f9d-9561-fb88e792dad0</webElementGuid>
+      <webElementGuid>844bfd60-1790-444c-950a-da63bab51a80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[1]/a[@class=&quot;footer-nav-page&quot;]</value>
-      <webElementGuid>dad3f720-2d6b-4423-9e0b-a1a521a02779</webElementGuid>
+      <webElementGuid>f5f51fb2-cbba-43c7-b9d0-e0764f38e608</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Locations')]</value>
-      <webElementGuid>69a78f88-626e-49f9-8150-33bec1e926e9</webElementGuid>
+      <webElementGuid>d3eb0b7c-e6cf-4aef-9ea8-bc77e5aa0920</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/locations/')]</value>
-      <webElementGuid>4ba31c58-ee70-4e3b-b9d9-2a8701f06deb</webElementGuid>
+      <webElementGuid>fb0ff7f2-3590-49e4-8ef9-9fce2a943d7b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li/a</value>
-      <webElementGuid>442827e9-6c02-4b3e-a926-8a8f3a5f1d2d</webElementGuid>
+      <webElementGuid>a1720cf9-9438-4405-b1f5-fbe8bc819273</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/locations/' and (text() = 'Locations' or . = 'Locations')]</value>
-      <webElementGuid>fbd0d52a-0b36-4bcc-892e-0480dd89b7b4</webElementGuid>
+      <webElementGuid>797b6cbf-401b-40bb-ba2f-b4bac1acd860</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -7,4 +7,17 @@ Approved for Stage</description>
    <tag>Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>531fed3c-ae9d-4e80-b51f-01e4d1118f13</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>73feb5ec-5148-4d92-8632-3d9382fc97b9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>73feb5ec-5148-4d92-8632-3d9382fc97b9</id>
+      <masked>false</masked>
+      <name>VolunteerName</name>
+   </variable>
 </TestCaseEntity>

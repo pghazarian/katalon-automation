@@ -12,10 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>1427488d-bd56-4645-ae2d-0ab4519f9b58</testSuiteGuid>
    <testCaseLink>
-      <guid>91b8d18f-46b9-4d6c-94e7-4e7648e54150</guid>
+      <guid>abab3837-2bbe-4748-b45d-c7d543b1f45a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Saddleback Web/English to Spanish Transition</testCaseId>
+      <testCaseId>Test Cases/Saddleback Web/Home Page Load and Verification</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -86,13 +86,6 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>abab3837-2bbe-4748-b45d-c7d543b1f45a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Saddleback Web/Home Page Load and Verification</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>90f7719c-6c4c-4521-acfc-72143c780ab1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -104,6 +97,34 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Saddleback Web/Step - I Want to Follow Jesus</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>91b8d18f-46b9-4d6c-94e7-4e7648e54150</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Saddleback Web/English to Spanish Transition</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>62698470-deca-479a-8e75-ef75bae3ce20</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Saddleback Web/English to German Transition</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fa0739ed-3860-4527-8808-6f0bbb1204d7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Saddleback Web/English to Chinese Traditional Transition</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>25d40ec8-3899-48b1-853a-7d3fbc055bd0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Saddleback Web/English to Chinese Simplied Transition</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Users and Teams Rendering</name>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>4810b4c1-e922-451e-98d2-3e96855d2207</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>764eeeaf-b74b-428b-a46b-0637ed4db147</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7b83ad30-4713-46f9-8ac9-6a6d9f0935db</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>764eeeaf-b74b-428b-a46b-0637ed4db147</id>
+      <masked>false</masked>
+      <name>SearchUser</name>
+   </variable>
+   <variable>
+      <defaultValue>'Lake Forest'</defaultValue>
+      <description></description>
+      <id>7b83ad30-4713-46f9-8ac9-6a6d9f0935db</id>
+      <masked>false</masked>
+      <name>Campus</name>
+   </variable>
+</TestCaseEntity>

@@ -22,12 +22,10 @@ import com.kms.katalon.core.configuration.RunConfiguration
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Communications', 'Email Templates')
-CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Email Templates', 'Email Templates')
+CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Communications', 'Email Templates')
+CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Email Templates', 'Email Templates')
 
 // (2024-02-13) These tests are not available in production because they are still in development
 if (RunConfiguration.getExecutionProfile() != "HC-Production") {
-	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Search', 'Segment Search')
-	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Builder', 'Segment Builder')
-	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Settings & Preferences', 'Settings & Preferences')
+	CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Search', 'Segment Search')
 }

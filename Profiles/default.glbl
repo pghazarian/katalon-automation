@@ -64,4 +64,64 @@
       <initValue>'https://stage-welcome.saddleback.com'</initValue>
       <name>Saddleback_Welcome_URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://hc-website-stage.azurewebsites.net'</initValue>
+      <name>HC_API_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Garrett Clover'</initValue>
+      <name>AuditLog_SearchName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'7798526'</initValue>
+      <name>PersonRecordId_Notes</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2299'</initValue>
+      <name>MinistryId_HasMembers</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'10'</initValue>
+      <name>Ministry_CampusId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/data-capture/connection-forms/683/overview'</initValue>
+      <name>ConnectionForm_FollowJesus</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27772'</initValue>
+      <name>EventId_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27471'</initValue>
+      <name>EventId_CheckIn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'App Files\\Ministry App\\MA Latest.apk'</initValue>
+      <name>Ministry_App_Path</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.healthychurch.companion.development'</initValue>
+      <name>CompanionApp_BundleId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.healthychurch.ministry'</initValue>
+      <name>Ministry_App_ID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'App Files\\ME App\\Android\\hc-android-release.apk'</initValue>
+      <name>ME_App_Path</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Person Record 2.0 Notes Create, Edit, and Delete</name>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>ea82acdd-652c-4eb3-8614-05ef8042078e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>608eab72-b36e-413a-8a02-3c7501d2bb0d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.PersonRecordId_Notes</defaultValue>
+      <description></description>
+      <id>608eab72-b36e-413a-8a02-3c7501d2bb0d</id>
+      <masked>false</masked>
+      <name>PersonId</name>
+   </variable>
+</TestCaseEntity>

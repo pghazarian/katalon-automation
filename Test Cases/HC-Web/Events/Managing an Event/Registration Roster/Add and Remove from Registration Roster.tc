@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add and Remove from Registration Roster</name>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>0788dfe2-e65d-427d-87c2-f3c3047a2481</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3f160a91-892f-4a68-a268-77b1c8b1bc63</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>be2a9505-1fb7-4665-9a93-3875606bdc68</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.EventId_Recurring_DoesNotEnd</defaultValue>
+      <description></description>
+      <id>3f160a91-892f-4a68-a268-77b1c8b1bc63</id>
+      <masked>false</masked>
+      <name>EventId</name>
+   </variable>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>be2a9505-1fb7-4665-9a93-3875606bdc68</id>
+      <masked>false</masked>
+      <name>SearchName</name>
+   </variable>
+</TestCaseEntity>

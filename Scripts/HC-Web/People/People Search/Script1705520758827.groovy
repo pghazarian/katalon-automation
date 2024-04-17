@@ -21,16 +21,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/people/search-or-add'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.clearText(findTestObject('HC-Web/Person/Search/SearchInput'))
+
 'Type Search term'
 WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), SearchTerm)
 
 'Initiate Search'
 WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), Keys.chord(Keys.ENTER))
 
-WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Search/TableRowOne'), 0)
-
-SearchTableCellObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//div[@data-testid=\'person-personal-info\']/div', 
-    VerificationName, 1)
+SearchTableCellObject = findTestObject('Object Repository/HC-Web/Person/Search/Search Results Person Name Match', [('textToMatch') : VerificationName])
 
 PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
 
@@ -58,11 +57,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Person/Details/PersonName'), Veri
 WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
 
 'Verify the first name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/FirstNameInput'), 
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/First Name Input'), 
     FirstName)
 
 'Verify the last name field value'
-CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/LastNameInput'), 
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/Last Name Input'), 
     LastName)
 
 'Verify the birthdate label is present'

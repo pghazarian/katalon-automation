@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Venue Dropdown</name>
+   <tag></tag>
+   <elementGuidId>b1d8d92a-e3bd-46b8-ade1-4e67df5a0777</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#react-select-10--value > div.Select-placeholder</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='event_location_on_campus-where_venue']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>b226455a-2fb0-4d20-9401-431e3c2b02bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Select-placeholder</value>
+      <webElementGuid>40afa102-4112-45bf-a7ea-42fdd037b8d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Add Venue(s) from this Campus</value>
+      <webElementGuid>9a7d20bf-7d5e-414a-8304-4ab0e28b7fdf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;react-select-10--value&quot;)/div[@class=&quot;Select-placeholder&quot;]</value>
+      <webElementGuid>1eaae561-2550-4cfb-af30-73685411ebc3</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

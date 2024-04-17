@@ -6,12 +6,12 @@
    <elementGuidId>4c58d585-115b-42e8-82b4-65b281420b17</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li:nth-of-type(4) > a.footer-nav-page</value>
+         <key>XPATH</key>
+         <value>//li[4]/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'Care')]</value>
+         <key>CSS</key>
+         <value>li:nth-of-type(4) > a.footer-nav-page</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>76b08d2e-cfed-42d8-ab0c-bd1a750d1e87</webElementGuid>
+      <webElementGuid>eb09f5ca-9b8b-4700-a6d7-deb4011f5929</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/care/</value>
-      <webElementGuid>ac8f33bf-e5d4-4ee5-86e4-9e7079ec94ef</webElementGuid>
+      <webElementGuid>0868c9fe-8693-4593-8b20-f879996399d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>footer-nav-page</value>
-      <webElementGuid>90a18dcc-0c04-4130-98cd-adb51e2cf5f7</webElementGuid>
+      <webElementGuid>51b8a576-d0a1-47b4-80d5-b7d29e5ad766</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Care</value>
-      <webElementGuid>4be6f0a1-bb91-42c6-b358-cff5c1d2f473</webElementGuid>
+      <webElementGuid>7acecbf0-7441-43e7-900f-8f8977b78182</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/header[1]/div[@class=&quot;header-desktop-menu desktop-center&quot;]/ul[1]/li[4]/a[@class=&quot;footer-nav-page&quot;]</value>
-      <webElementGuid>887c89c0-56b3-4fa1-afcf-23afae41a2dd</webElementGuid>
+      <webElementGuid>8fbac971-40cb-4e66-9828-2ecd96a8bd10</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Care')]</value>
-      <webElementGuid>b47d4de9-2fd5-4371-8324-c8f0140c895b</webElementGuid>
+      <webElementGuid>45bcef4b-e2c7-44da-a740-d4075124f820</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/care/')]</value>
-      <webElementGuid>4433aa8d-6bfb-424d-8e74-5603fc7737ce</webElementGuid>
+      <webElementGuid>1601b346-4a7f-4d64-afdc-3a440a6dc45f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[4]/a</value>
-      <webElementGuid>b6e781cd-7149-4339-bc7d-18607f288623</webElementGuid>
+      <webElementGuid>8f023a46-0520-42e9-a53d-9aeffb4cc773</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/care/' and (text() = 'Care' or . = 'Care')]</value>
-      <webElementGuid>21ac867b-a8a0-4f9a-8a8c-2a0035489d79</webElementGuid>
+      <webElementGuid>d10592ce-dc3a-4511-9a68-c86325916040</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
