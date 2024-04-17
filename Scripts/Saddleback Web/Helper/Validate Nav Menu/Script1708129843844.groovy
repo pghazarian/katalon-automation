@@ -33,6 +33,8 @@ final WIDTH_BREAKPOINT = 1024
 // if the menu is not present, we are in "full width" mode
 if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
 	
+	WebUI.scrollToElement(findTestObject('Object Repository/Saddleback Web/Home/Nav/Location Header Link'), 0)
+	
 	'Verify the text for Locations link'
 	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Nav/Location Header Link'), 'Locations')
 	
@@ -83,6 +85,8 @@ else {
 	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))
 	
 	// 2) verify that the navigation footer is present
+	
+	WebUI.scrollToElement(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Location Footer link'), 0)
 	
 	'Verify the text for Locations link'
 	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Location Footer link'), 'Locations')
