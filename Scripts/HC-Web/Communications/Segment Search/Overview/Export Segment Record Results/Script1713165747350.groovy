@@ -35,48 +35,63 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('
 'Click button to open export preview'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/Export Button'))
 
-'Click button to download record result in CSV format'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/CSV Download Button'))
+if (WebUI.waitForElementPresent(findTestObject('HC-Web/Communications/Segment Search/Overview/Export/Export No Person Found Message'), 
+    10) == false) {
+    
+	'Click button to download record result in CSV format'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/CSV Download Button'))
 
-'Verify file being ready for download notification is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Snackbar'), 
-    FailureHandling.OPTIONAL)
+    'Verify file being ready for download notification is displayed'
+    WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Snackbar'), 
+        FailureHandling.OPTIONAL)
 
-'Verify the text in the file being ready for download notification'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Snackbar Text'), 
-    'Your file is being prepared for download', FailureHandling.OPTIONAL)
+    'Verify the text in the file being ready for download notification'
+    WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Snackbar Text'), 
+        'Your file is being prepared for download', FailureHandling.OPTIONAL)
 
-'Verify ready for download toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Toast'), FailureHandling.OPTIONAL)
+    'Verify ready for download toast is displayed'
+    WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Toast'), 
+        FailureHandling.OPTIONAL)
 
-'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Toast Text'), 'Your file is ready for download')
+    'Verify the text in the toast message'
+    WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Toast Text'), 
+        'Your file is ready for download')
 
-'Click the link to download'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/CSV Download Link'))
+    'Click the link to download'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/CSV Download Link'))
 
-'Click button to open export preview'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/Export Button'))
+    'Click button to open export preview'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/Export Button'))
 
-'Click button to download record result in XLSX format'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/XLSX Download Button'))
+    'Click button to download record result in XLSX format'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/XLSX Download Button'))
 
-'Verify file being ready for download notification is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Snackbar'), 
-    FailureHandling.OPTIONAL)
+    'Verify file being ready for download notification is displayed'
+    WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Snackbar'), 
+        FailureHandling.OPTIONAL)
 
-'Verify the text in the file being ready for download notification'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Snackbar Text'), 
-    'Your file is being prepared for download', FailureHandling.OPTIONAL)
+    'Verify the text in the file being ready for download notification'
+    WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Snackbar Text'), 
+        'Your file is being prepared for download', FailureHandling.OPTIONAL)
 
-'Verify ready for download toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Toast'), FailureHandling.OPTIONAL)
+    'Verify ready for download toast is displayed'
+    WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Toast'), 
+        FailureHandling.OPTIONAL)
 
-'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Toast Text'), 'Your file is ready for download')
+    'Verify the text in the toast message'
+    WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Ready For Download Toast Text'), 
+        'Your file is ready for download')
 
-'Click the link to download'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/XLSX Download Link'))
+    'Click the link to download'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/XLSX Download Link'))
 
-WebUI.closeBrowser()
+    WebUI.closeBrowser()
+	
+} else {
+	
+    'Click button to close Export Preview modal'
+    WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Export/Export Preview Close Button'))
+
+    WebUI.closeBrowser()
+}
 
