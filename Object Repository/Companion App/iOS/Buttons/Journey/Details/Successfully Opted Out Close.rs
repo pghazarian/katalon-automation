@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Heading</name>
+   <name>Successfully Opted Out Close</name>
    <tag></tag>
-   <elementGuidId>1f5844a6-5534-4998-932f-e159828bcbfc</elementGuidId>
-   <selectorMethod>XPATH</selectorMethod>
+   <elementGuidId>41240c4f-8cce-4ead-8123-ee8435d3d02f</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>heading</locator>
+   <locator>bottom-sheet-close-button</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

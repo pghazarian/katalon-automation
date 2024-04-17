@@ -57,6 +57,9 @@ import com.detroitlabs.katalonmobileutil.device.Device
 import com.detroitlabs.katalonmobileutil.testobject.Finder
 import com.detroitlabs.katalonmobileutil.testobject.Button
 import com.detroitlabs.katalonmobileutil.testobject.TextField
+import com.detroitlabs.katalonmobileutil.touch.Swipe as Swipe
+import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDirection
+
 
 /*
 Prerequisite:  Use login credentials for a person who is NOT in progress on any journey  (New User)
@@ -88,13 +91,57 @@ Mobile.verifyElementExist(Finder.findLabel('Journey/Suggested Journey Tiles'), t
 
 Mobile.tap(Finder.findLabel('Journey/Suggested Journey Tiles'), timeout)
 
+'Verify Journey Details header'
+Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Heading'), timeout)
+
+'Verify Journey Name header'
+Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Name'), timeout)
+
+'Verify Journey Subtitle'
+Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Subtitle'), timeout)
+
+'Verify Journey Category'
+
+'Verify Journey Description'
+Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Description'), timeout)
+
+Button.tap("Journey/Details/Share", timeout)
+Button.tap("Journey/Details/Close Share", timeout)
+
+'tap Start button'
+Button.tap("Journey/Details/Start Journey", timeout)
+
+Mobile.waitForElementPresent(Finder.findButton("Journey/Pathway View/Browse Journeys"), timeout)
+
+'tap on the back button from pathway view page'
+Button.tap("Journey/Pathway View/Back", timeout)
+
+'Verify Journey In-progress status'
+Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
+
+'tap on See Journey Pathway'
+Button.tap("Journey/Details/See Journey Pathway", timeout)
+
+'tap on the back button from pathway view page'
+Button.tap("Journey/Pathway View/Back", timeout)
+
+'swipe up to make stop journey button visible and accessible'
+Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+
+'tap on Stop Journey button'
+Button.tap("Journey/Details/Stop Journey", timeout)
+
+'tap on Stop Journey Yes confirmation button'
+Button.tap("Journey/Details/Prompt Stop Journey Yes", timeout)
+
+'tap on Journey Opted Out confirmation close button'
+Button.tap("Journey/Details/Successfully Opted Out Close", timeout)
+
 'Navigate to Home'
-//Button.tap('Nav/Home Navigation Button', timeout)
+Button.tap('Nav/Home Navigation Button', timeout)
 
-//Mobile.verifyElementText(Finder.findLabel('Home Heading'), "Home")
-
-// add test for that
 'Log out'
+Mobile.waitForElementPresent(Finder.findButton("Logout Button"), timeout)
 Button.tap('Logout Button', timeout)
 
 Mobile.closeApplication()

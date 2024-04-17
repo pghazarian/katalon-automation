@@ -3,10 +3,9 @@
    <description></description>
    <name>Start Journey</name>
    <tag></tag>
-   <elementGuidId>b5d8c6a9-aa73-4f72-8dbe-b433aa1f525e</elementGuidId>
+   <elementGuidId>9fda6824-71a4-4c91-81e7-a62bbb170d42</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-journey-button--start-journey</locator>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locator>(//XCUIElementTypeOther[@name=&quot;ui-journey-button--start-journey&quot;])[2]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

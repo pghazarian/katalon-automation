@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Heading</name>
+   <name>Close Share</name>
    <tag></tag>
-   <elementGuidId>1f5844a6-5534-4998-932f-e159828bcbfc</elementGuidId>
-   <selectorMethod>XPATH</selectorMethod>
+   <elementGuidId>35ee7565-38ad-44bf-8348-971f51319fc1</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>heading</locator>
+   <locator>Close</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
