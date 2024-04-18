@@ -55,7 +55,7 @@ println(Device.getDeviceOS())
 // Android
 String androidFile = 'App Files/Companion App/Android/android-stage-build.apk'
 
-String androidAppId = GlobalVariable.CompanionApp_BundleId
+String androidAppId = "com.healthychurch.companion.stage" 
 
 App androidApp = new App(androidFile, androidAppId)
 
@@ -78,9 +78,7 @@ Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 
 Mobile.delay(timeout)
 
-Mobile.tapAtPosition(20, 20)
-
-if (Mobile.verifyElementVisible(Finder.findLabel('Splash/Description'), timeout, FailureHandling.OPTIONAL)) {
+if (Mobile.verifyElementVisible(Finder.findLabel('Splash/Welcome Heading'), timeout, FailureHandling.OPTIONAL)) {
 	
 	'Click Login Button'
 	Button.tap('Create Account or Login')
@@ -106,7 +104,9 @@ if (Mobile.verifyElementVisible(Finder.findLabel('Splash/Description'), timeout,
 	Mobile.tap(password, timeout)
 	
 	'Enter value in the Password field'
-	Mobile.setEncryptedText(password, Password, timeout)
+	//Mobile.setEncryptedText(password, Password, timeout)
+	TextField.typeText(password, "QA@dm1n*3", timeout)
+	
 	
 	if (Device.isAndroid()) {
 	    Mobile.hideKeyboard()

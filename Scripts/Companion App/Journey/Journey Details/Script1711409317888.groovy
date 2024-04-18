@@ -105,13 +105,14 @@ Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Subtitle'), timeout)
 'Verify Journey Description'
 Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Description'), timeout)
 
+'share the journey'
 Button.tap("Journey/Details/Share", timeout)
 Button.tap("Journey/Details/Close Share", timeout)
 
 'tap Start button'
 Button.tap("Journey/Details/Start Journey", timeout)
 
-Mobile.waitForElementPresent(Finder.findButton("Journey/Pathway View/Browse Journeys"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Pathway View/Pathway Header"), timeout)
 
 'tap on the back button from pathway view page'
 Button.tap("Journey/Pathway View/Back", timeout)
@@ -125,8 +126,12 @@ Button.tap("Journey/Details/See Journey Pathway", timeout)
 'tap on the back button from pathway view page'
 Button.tap("Journey/Pathway View/Back", timeout)
 
+Mobile.waitForElementPresent(Finder.findButton("Journey/Details/See Journey Pathway"), timeout)
+
 'swipe up to make stop journey button visible and accessible'
-Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+//if (!(Mobile.verifyElementVisible(Finder.findButton("Journey/Details/Stop Journey"), timeout)))
+if (Device.isIOS())
+	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
 
 'tap on Stop Journey button'
 Button.tap("Journey/Details/Stop Journey", timeout)
