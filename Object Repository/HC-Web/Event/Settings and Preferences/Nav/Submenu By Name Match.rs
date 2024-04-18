@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Table Row Check Input By Name Match</name>
+   <name>Submenu By Name Match</name>
    <tag></tag>
-   <elementGuidId>61bda306-13ca-4069-8f22-851f72e70bec</elementGuidId>
+   <elementGuidId>8d6f7c18-2e76-41b3-a5b3-7fc4f15a841c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space(text()) = '${textToMatch}' or normalize-space(.) = '${textToMatch}']/ancestor::tr/descendant::div[contains(@class,'icon-check')]</value>
+         <value>//div[@class='dropdown_menu--option_inner'][. = '${textToMatch}']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

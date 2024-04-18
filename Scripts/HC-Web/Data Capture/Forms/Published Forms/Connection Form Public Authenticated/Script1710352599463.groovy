@@ -79,6 +79,8 @@ if (CustomKeywords.'TestObjectHelper.isElementPresent'(PublishButton, 0)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Overview/div_Yes'))
 }
 
+WebUI.waitForElementVisible(findTestObject("Object Repository/HC-Web/Connection Form/Overview/UnpublishLinkButton"), 10)
+
 CustomKeywords.'NavigationHelper.goToHCUrl'(PublicConnectionFormPath)
 
 WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form Public/FirstNameField'), 2)
