@@ -91,22 +91,15 @@ if (Mobile.verifyElementVisible(Finder.findLabel('Splash/Welcome Heading'), time
 	'Find the Email Address field'
 	TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
 	
-	Mobile.tap(emailAddress, timeout)
-	
-	//'Clear in the Email Address field'
-	//TextField.clearText(emailAddress, timeout)
 	'Enter value in the Email Address field'
 	TextField.typeText(emailAddress, UserName, timeout)
 	
 	'Find the Password field'
 	TestObject password = Finder.findTextField('Login/Password Text Field')
 	
-	Mobile.tap(password, timeout)
-	
 	'Enter value in the Password field'
-	//Mobile.setEncryptedText(password, Password, timeout)
-	TextField.typeText(password, "QA@dm1n*3", timeout)
-	
+	Mobile.setEncryptedText(password, Password, timeout)
+
 	
 	if (Device.isAndroid()) {
 	    Mobile.hideKeyboard()
