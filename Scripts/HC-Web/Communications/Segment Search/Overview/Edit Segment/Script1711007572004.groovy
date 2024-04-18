@@ -40,27 +40,27 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Segment Edit Button'))
 
 'Select the text'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
     Keys.chord(Keys.CONTROL, 'a'))
 
 'Clear the text'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
     Keys.chord(Keys.BACK_SPACE))
 
 'Update segment name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
     EditSegmentName)
 
 'Select the text'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
     Keys.chord(Keys.CONTROL, 'a'))
 
 'Clear the text'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
     Keys.chord(Keys.BACK_SPACE))
 
 'Update segment description'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
     EditSegmentDescription)
 
 'Select campus from dropdown'
@@ -68,7 +68,7 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
     'Lake Forest')
 
 'Click button to save segment info'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Save Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Save Button'))
 
 'Verify segment record updated toast is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
@@ -86,7 +86,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
     EditSegmentDescription)
 
 'Verify the updated segment campus is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus'), 'Lake Forest')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Campus', [('SegmentCampus') : "Lake Forest"]), 
+    'Lake Forest')
 
 'Return to segment search'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Return To Segment Search Button'))
@@ -109,27 +110,27 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Segment Edit Button'))
 
 'Select the text'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
     Keys.chord(Keys.CONTROL, 'a'))
 
 'Clear the text'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
     Keys.chord(Keys.BACK_SPACE))
 
 'Reset segment name to original name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Name Input Field'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
     SearchTerm)
 
 'Select the text'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
     Keys.chord(Keys.CONTROL, 'a'))
 
 'Clear the text'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
     Keys.chord(Keys.BACK_SPACE))
 
 'Reset segment description to original description'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Description Text Area'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
     "$SearchTerm Description")
 
 'Select original campus from dropdown'
@@ -137,7 +138,7 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
     'Anaheim')
 
 'Click button to save segment info'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit/Edit Segment Save Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Save Button'))
 
 'Verify segment record updated toast is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)

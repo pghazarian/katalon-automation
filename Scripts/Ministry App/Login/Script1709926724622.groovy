@@ -16,24 +16,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import io.appium.java_client.TouchAction as TouchAction
+import io.appium.java_client.touch.offset.PointOption as PointOption
+import io.appium.java_client.touch.WaitOptions as WaitOptions
+import java.time.Duration as Duration
+import io.appium.java_client.android.AndroidDriver as AndroidDriver
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
 
-'Open the App'
-Mobile.startApplication(GlobalVariable.Ministry_App_Path, true)
+if (ForceLogin) {
+    'Open the App'
+    Mobile.startApplication(GlobalVariable.Ministry_App_Path, true)
 
-'Tap Login button '
-Mobile.tap(findTestObject('Ministry App/Login/Login button'), 0)
+    'Tap Login button '
+    Mobile.tap(findTestObject('Ministry App/Login/Login button'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Ministry App/Login/Email Address text field'), UserName, 5)
+    Mobile.setText(findTestObject('Object Repository/Ministry App/Login/Email Address text field'), UserName, 5)
 
-Mobile.hideKeyboard()
+    Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Ministry App/Login/Password Text Field'), 0)
+    Mobile.tap(findTestObject('Ministry App/Login/Password Text Field'), 0)
 
-Mobile.setEncryptedText(findTestObject('Ministry App/Login/Password Text Field'), Password, 0)
+    Mobile.setEncryptedText(findTestObject('Ministry App/Login/Password Text Field'), Password, 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Sign In Button'), 0)
+    Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Sign In Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Continue Button'), 0)
+    Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Continue Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Got It Button'), 0)
+    Mobile.tap(findTestObject('Object Repository/Ministry App/Login/Got It Button'), 0)
+} else {
+    Mobile.startExistingApplication(GlobalVariable.Ministry_App_ID, FailureHandling.STOP_ON_FAILURE)
+}
 

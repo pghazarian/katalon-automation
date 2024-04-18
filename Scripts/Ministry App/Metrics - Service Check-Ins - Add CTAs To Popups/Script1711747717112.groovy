@@ -25,7 +25,7 @@ import org.openqa.selenium.Keys as Keys
  * 5. Tap on Service Check-Ins tile 
  * 6. Tap on 8 Week Trend button 
  * 7. Tap on any one of the weeks chart 
- * 8. Verify that the Average Service Check-Ins and Actual CTA Sign Ups counts are diplayed, in the Popup of the selected week
+ * 8. Verify that the Actual Service Check-Ins and Actual CTA Sign Ups counts are diplayed, in the Popup of the selected week
  * 9. Close the popup 
  * 10. Tap on the Month button
  * 11. Tap on any one of the Months chart 

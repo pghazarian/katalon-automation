@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>1468aaa4-4957-416f-8675-4348b6b0c346</webElementGuid>
+      <webElementGuid>eb2b3584-bfba-4593-808a-5c2ad4f0eff9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Remove</value>
-      <webElementGuid>30068918-9b29-40ec-b000-27d679233258</webElementGuid>
+      <webElementGuid>8adc5830-678f-41fb-b2f2-d807753c70ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;clearAll&quot;)/span[@class=&quot;button-inner-container jss208&quot;]/span[1]</value>
-      <webElementGuid>6cb23c47-c08b-4d23-9fe0-60b2794454d1</webElementGuid>
+      <webElementGuid>531787ae-1023-405f-a8c9-8dc8ad9659a0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='clearAll']/span/span</value>
-      <webElementGuid>6a25bea4-5815-4642-90fb-e43c80e383a5</webElementGuid>
+      <webElementGuid>7dc2cc59-7492-47fe-96c9-0a541420fc45</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Incomplete'])[2]/following::span[2]</value>
-      <webElementGuid>77232dd0-2301-495d-81b1-fc5fb3b760f7</webElementGuid>
+      <webElementGuid>948139dc-f023-4d8c-ae3d-5d3599666cf1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Complete'])[1]/following::span[3]</value>
-      <webElementGuid>9ea00751-af1d-4e24-9a4f-4bd7feb3bea0</webElementGuid>
+      <webElementGuid>d0fc526f-5525-4a48-bf90-abeb81c9467a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add another Milestone'])[1]/preceding::span[1]</value>
-      <webElementGuid>f5ac20ea-105e-4b0e-bef3-e51c4a43129f</webElementGuid>
+      <webElementGuid>f1cc7402-f837-4de7-94a0-f6ed6cd0def3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Milestone'])[2]/preceding::span[1]</value>
-      <webElementGuid>861b07a3-b180-47ea-8a1f-1663019e212d</webElementGuid>
+      <webElementGuid>f8138a8e-d859-4f99-b076-8abff3dd4e68</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Remove']/parent::*</value>
-      <webElementGuid>f003627b-5a8b-4a59-b9a2-1e6efa783d75</webElementGuid>
+      <webElementGuid>767e0eab-0508-457b-b310-fd2fb365ca26</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/button/span/span</value>
-      <webElementGuid>60851a42-7556-4cdc-8af8-d056316b1b2a</webElementGuid>
+      <webElementGuid>7d78895c-55fe-4181-9791-5f731fc46c99</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Remove' or . = 'Remove')]</value>
-      <webElementGuid>b170de54-79be-4d14-97c9-fa6034418eb2</webElementGuid>
+      <webElementGuid>27e5a6cd-c290-41ab-87dc-725f323507f9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

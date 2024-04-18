@@ -31,15 +31,26 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Button'))
 
 'Enter Segment name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Name Input Field'), SegmentName)
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Segment Name Input Field'), SegmentName)
 
 'Enter Segment description'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Description Text Area'), "$SegmentName Description")
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Segment Description Text Area'), "$SegmentName Description")
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
     'Anaheim')
 
 'Click button to save a new segment'
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Segment Create Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Create Button'))
+
+'Verify segment record added toast is displayed'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
+
+'Verify the text in the toast message'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Added Toast Header'), 
+    'Segment record added')
+
+'Verify the text in the toast message'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Added Toast Text'), 
+    'You’ve successfully created and linked a new record')
 

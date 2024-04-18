@@ -6,14 +6,14 @@
    <elementGuidId>205f6444-8caa-4f9e-9f04-e9d13a1ac4d4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[normalize-space(text()) = '${textToMatch}' or normalize-space(.) = '${textToMatch}']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[text() = '${textToMatch}' or normalize-space(.) = '${textToMatch}']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

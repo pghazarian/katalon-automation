@@ -116,6 +116,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'com.healthychurch.ministry'</initValue>
+      <name>Ministry_App_ID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'App Files\\ME App\\Android\\hc-android-release.apk'</initValue>
       <name>ME_App_Path</name>
    </GlobalVariableEntity>
