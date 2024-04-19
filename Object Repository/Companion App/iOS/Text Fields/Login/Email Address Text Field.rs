@@ -3,7 +3,7 @@
    <description></description>
    <name>Email Address Text Field</name>
    <tag></tag>
-   <elementGuidId>6681c225-cf03-4a89-ae23-e057e3e34afd</elementGuidId>
+   <elementGuidId>e6a1189e-a671-4b03-8e63-5ff1283e801e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -13,7 +13,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeTextField</value>
-      <webElementGuid>11943305-f35a-43d5-b0d0-e97c22821213</webElementGuid>
+      <webElementGuid>1774e545-26a9-40d0-8cfb-c279049da616</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +21,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>c2f4fae3-5678-4da7-a760-3266742551f3</webElementGuid>
+      <webElementGuid>f427fd36-ec86-4e8a-a666-7c01ef4c378d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>28abe0e5-abd9-4fde-b045-2b3c39652d52</webElementGuid>
+      <webElementGuid>c3595408-60a3-4bea-b578-1b88b6cbae7c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>height</name>
       <type>Main</type>
       <value>72.0</value>
-      <webElementGuid>bfbe7cb6-1880-471f-b58b-aa0f41fe5721</webElementGuid>
+      <webElementGuid>1344745e-62ad-4546-89fd-a5f036d53223</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>index</name>
       <type>Main</type>
       <value>2</value>
-      <webElementGuid>68c43dfb-c3f3-4a15-ba14-a5806ebe344f</webElementGuid>
+      <webElementGuid>852188ba-ba9a-4a02-a030-bcdfc32c466b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Email Address</value>
-      <webElementGuid>7822778d-f925-46f8-90db-415632b5b756</webElementGuid>
+      <webElementGuid>b84a717d-77c3-4989-b5e9-db792c356fae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>width</name>
       <type>Main</type>
       <value>670.0</value>
-      <webElementGuid>a8a0d4f3-6d45-41d5-82e6-9f3f560ced0a</webElementGuid>
+      <webElementGuid>9d049962-6495-405d-8003-118bd1a634c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>x</name>
       <type>Main</type>
       <value>58.0</value>
-      <webElementGuid>9e9499e8-4130-430e-8c01-15258cdde05e</webElementGuid>
+      <webElementGuid>3daeb72b-e9c6-47ff-808a-fa6eda2566ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>y</name>
       <type>Main</type>
       <value>772.0</value>
-      <webElementGuid>0c69e321-e44d-4175-9369-eb95ba8b7d89</webElementGuid>
+      <webElementGuid>c45f22bb-663c-4a58-9293-9d17dd496e3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,8 +85,8 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeWebView[1]/XCUIElementTypeWebView[1]/XCUIElementTypeWebView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]</value>
-      <webElementGuid>fc0a4e03-24c5-4130-ad66-d0647ef804f6</webElementGuid>
+      <webElementGuid>41e50272-b54c-4794-b20c-b308f13ca58b</webElementGuid>
    </webElementProperties>
-   <locator>//*[@type = 'XCUIElementTypeTextField' and @value = 'Email Address']</locator>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locator>//XCUIElementTypeTextField[@value=&quot;Email Address&quot;]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
