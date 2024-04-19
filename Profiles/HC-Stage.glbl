@@ -149,4 +149,14 @@
       <initValue>'Baptism'</initValue>
       <name>EventCategory</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27844'</initValue>
+      <name>EventId_EditEvent</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Adult Ministries'</initValue>
+      <name>EventCategory_Edited</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

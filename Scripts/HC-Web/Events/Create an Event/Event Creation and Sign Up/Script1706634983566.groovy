@@ -50,7 +50,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Venue 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Venue Dropdown Option'))
 
 'Save event'
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Create Button'))
+WebUI.click(findTestObject('HC-Web/Event/Event Creation/Location Label'))
+
+WebUI.click(findTestObject('HC-Web/Event/Event Creation/Create Button'))
 
 'Navigate to occurrence schedule'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Occurrence Schedule Tab'))
