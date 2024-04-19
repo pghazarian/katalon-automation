@@ -23,6 +23,7 @@ import com.kms.katalon.core.annotation.SetUp
 import com.kms.katalon.core.annotation.SetupTestCase
 import com.kms.katalon.core.annotation.TearDown
 import com.kms.katalon.core.annotation.TearDownTestCase
+import com.kms.katalon.core.util.KeywordUtil
 
 /**
  * Some methods below are samples for using SetUp/TearDown in a test suite.
