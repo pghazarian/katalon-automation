@@ -119,5 +119,3 @@ WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Confirmation Yes B
 
 WebUI.closeBrowser()
 
-WebUI.acceptAlert()
-
