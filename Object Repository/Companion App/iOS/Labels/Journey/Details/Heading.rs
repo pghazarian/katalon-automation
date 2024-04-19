@@ -3,10 +3,9 @@
    <description></description>
    <name>Heading</name>
    <tag></tag>
-   <elementGuidId>8275f9f5-b1e8-4b16-a3bc-d1f10a8e5c3c</elementGuidId>
+   <elementGuidId>1f5844a6-5534-4998-932f-e159828bcbfc</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-journey-heading</locator>
+   <locator>heading</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

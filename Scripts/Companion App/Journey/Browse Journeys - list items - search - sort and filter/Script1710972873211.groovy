@@ -19,7 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 /*
  1. Launch Companion App
- 2. Log into Companion App with a user who has journeys not started, in progress and completed statuses.
+ 2. Log into Companion App with a user who has journeys not started, in progress and completed statuses 
+ 		and authored some unpublished journeys under HC Back Office.
  3. Tap on Journey Navigation button
  4. Tap on the Browse Journeys tab 
  5. Verify a list of all published journeys is listed and item content is correct
@@ -31,5 +32,9 @@ import org.openqa.selenium.Keys as Keys
  11. Tap on Back button to get back to the Journey List
  12. Tap on a Journey that has been completed
  13. Verify that the Journey Details are as defined with Completed status text and only View Pathway Button is displayed
+ 14. Tap on Back button to get back to the Journey List
+ 15. Verify that there are unpublished journeys that the logged in user has authored
+ 16. Tap on one of the unpublished journeys.
+ 17. Verify that the Journey Details are as defined proper content.
  14. close the app
  */

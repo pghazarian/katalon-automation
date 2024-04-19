@@ -3,10 +3,9 @@
    <description></description>
    <name>Subtitle</name>
    <tag></tag>
-   <elementGuidId>6648483d-c679-4676-b692-fabe688225c7</elementGuidId>
+   <elementGuidId>8f56e149-d5d0-4f9b-aee5-5f5aef25f08f</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-journey-sub-title</locator>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locator>//XCUIElementTypeStaticText[@name=&quot;ui-journey-sub-title&quot;]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
