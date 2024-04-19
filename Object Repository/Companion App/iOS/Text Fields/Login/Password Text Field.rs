@@ -3,7 +3,7 @@
    <description></description>
    <name>Password Text Field</name>
    <tag></tag>
-   <elementGuidId>348eecdb-b3be-4232-ba9a-3a7d9a69ebe5</elementGuidId>
+   <elementGuidId>e72ae68c-cf91-4e6d-9bec-355c654738d4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -13,7 +13,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeSecureTextField</value>
-      <webElementGuid>b7fac151-e686-413c-bd48-cb5529d624d0</webElementGuid>
+      <webElementGuid>5a202acf-1f09-4301-9f70-9ec804232d48</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +21,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>ad224f54-3616-4ef7-9fa9-72a3770cbb8d</webElementGuid>
+      <webElementGuid>33cec0eb-f57d-41cf-93d6-9fc248839290</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>41c1cb09-eceb-4533-b1fa-7a8624863f3c</webElementGuid>
+      <webElementGuid>3d65fab2-db90-49d8-bb6c-b319429eae32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>height</name>
       <type>Main</type>
       <value>86.0</value>
-      <webElementGuid>a58349a3-efff-4af8-8590-b6351baa1a1d</webElementGuid>
+      <webElementGuid>8bc775f4-6073-49c4-a0e1-16b7fef1c335</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>index</name>
       <type>Main</type>
       <value>4</value>
-      <webElementGuid>13f8a491-7b30-4db8-8611-77b2a821e52f</webElementGuid>
+      <webElementGuid>ab39fd83-8b23-4d60-a117-cb988cb78784</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Password</value>
-      <webElementGuid>92368cb2-ba36-463b-a2f5-1df59f171958</webElementGuid>
+      <webElementGuid>72800ce2-ed10-40d3-b678-cbf779468f57</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>width</name>
       <type>Main</type>
       <value>766.0</value>
-      <webElementGuid>f3bfcde4-3f1d-4249-bc60-1b1be124bf1d</webElementGuid>
+      <webElementGuid>7815bf97-a3e3-43d5-b13c-dc5ef2c2d286</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>x</name>
       <type>Main</type>
       <value>10.0</value>
-      <webElementGuid>0c3b8ac6-18af-4f50-bfd7-28f82d4bb7d1</webElementGuid>
+      <webElementGuid>8979e4cd-b95d-4fac-b8e3-8d37754c8eb6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>y</name>
       <type>Main</type>
       <value>1016.0</value>
-      <webElementGuid>b0cb4861-3f81-495c-89d8-7b708edbbc8e</webElementGuid>
+      <webElementGuid>d6113dce-da9a-4ea3-8849-4d6319860270</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,8 +85,8 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeWebView[1]/XCUIElementTypeWebView[1]/XCUIElementTypeWebView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeSecureTextField[1]</value>
-      <webElementGuid>9fd53fc7-5085-49d8-b330-ee52f61bc135</webElementGuid>
+      <webElementGuid>95e59647-dd50-49e1-910b-b08f6afda94c</webElementGuid>
    </webElementProperties>
-   <locator>//*[@type = 'XCUIElementTypeSecureTextField' and @value = 'Password']</locator>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locator>**/XCUIElementTypeSecureTextField[`value == &quot;Password&quot;`]</locator>
+   <locatorStrategy>IOS_CLASS_CHAIN</locatorStrategy>
 </MobileElementEntity>

@@ -3,10 +3,10 @@
    <description></description>
    <name>Journey Heading</name>
    <tag></tag>
-   <elementGuidId>a59adbc0-a739-47d4-a266-7dc299bdbe79</elementGuidId>
+   <elementGuidId>a4fade0d-0c20-4cb4-b82d-8f723759c339</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//XCUIElementTypeNavigationBar[@name=&quot;Journey&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>name == &quot;Journey&quot; AND label == &quot;Journey&quot;</locator>
+   <locatorStrategy>IOS_PREDICATE_STRING</locatorStrategy>
 </MobileElementEntity>

@@ -20,6 +20,16 @@ import io.appium.java_client.android.AndroidDriver as AndroidDriver
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
+import io.appium.java_client.TouchAction
+import io.appium.java_client.touch.offset.PointOption;
+import io.appium.java_client.touch.WaitOptions;
+import java.time.Duration;
+
+AppiumDriver<?> driver = MobileDriverFactory.getDriver(); 	
+TouchAction tap = new TouchAction(driver); 	
+tap.tap(PointOption.point(20, 20)) 			
+	.waitAction(WaitOptions.waitOptions(Duration.ofMillis(50L))); 	
+tap.perform();
 
 WebUI.callTestCase(findTestCase('Ministry App/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 

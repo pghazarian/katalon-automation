@@ -3,10 +3,10 @@
    <description></description>
    <name>Home Navigation Button</name>
    <tag></tag>
-   <elementGuidId>60f0cba0-a3da-4183-abcd-e0e6592a2c9b</elementGuidId>
+   <elementGuidId>07b60d42-b7d1-45ea-b0d0-45bb8217149c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>**/XCUIElementTypeButton[`name == &quot;Home, tab, 1 of 6&quot;`]</locator>
-   <locatorStrategy>IOS_PREDICATE_STRING</locatorStrategy>
+   <locator>Home, tab, 1 of 6</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
