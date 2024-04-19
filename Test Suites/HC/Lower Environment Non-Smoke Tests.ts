@@ -220,4 +220,17 @@
          <variableId>c6983845-abaa-4d7c-a57d-648cee4e64f7</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6fd33baa-ed04-4000-af5a-b1605d2eeccb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/People/People Module Settings/Record Management</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f24ca378-85c2-46ec-9973-a8cad396253b</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
