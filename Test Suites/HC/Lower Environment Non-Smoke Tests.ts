@@ -233,4 +233,48 @@
          <variableId>f24ca378-85c2-46ec-9973-a8cad396253b</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>969a95a9-87b8-4fff-928b-e81912c6287d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Journey/Managing a Journey/Builder/Linear Journey Creation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>695ad43a-07bf-4d1b-8e08-cae893b1c17d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3496a407-ce14-4d2b-97a1-f21963d470e1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1c53344e-439d-47f3-9931-1ff2f9deade3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1646af8a-e266-4403-b76c-41e8bb129312</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>86f6effe-90c6-4252-bb93-71d4920e2814</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Journey/Managing a Journey/Builder/Open Nav Journey Creation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3e635431-a72a-4e15-81d6-81a36f26d045</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
