@@ -25,8 +25,10 @@ import com.detroitlabs.katalonmobileutil.testobject.Finder
 import com.detroitlabs.katalonmobileutil.testobject.Button
 import com.detroitlabs.katalonmobileutil.testobject.TextField
 import com.detroitlabs.katalonmobileutil.touch.Scroll
+import com.detroitlabs.katalonmobileutil.touch.Swipe as Swipe
+import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDirection
 
-def timeout = 3
+def timeout = 4
 def FirstName = 'Cris'
 def LastName = 'Francisco'
 def Email = 'crisf@saddleback.com'
@@ -35,15 +37,21 @@ def Phone = '9495258002'
 'Open existing app by the app bundle id'
 Mobile.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+Mobile.delay(timeout)
+
 Button.tap('Digital Program/Go to Digital Program')
 
 Mobile.delay(timeout)
 
 Button.tap('Digital Program/New Start')
+
+Mobile.delay(timeout)
 	
 Button.tap('Digital Program/New Start Form/Select Location')
 
 Button.tap('Digital Program/New Start Form/Campus Lake Forest')
+
+Mobile.delay(timeout)
 
 //findTestObject('Object Repository/Companion App/iOS/Buttons/Digital Program/New Start Form/Campus By Name Match')
 
@@ -55,13 +63,23 @@ Mobile.tap(firstName, timeout)
 'Enter value in the First Name field'
 TextField.typeText(firstName, FirstName, timeout)
 
+if (Device.isIOS()) {
+	Button.tap("Done")
+}
+
 'Find the Last Name field'
 TestObject lastName = Finder.findTextField('Digital Program/New Start Form/Last Name')
 
 Mobile.tap(lastName, timeout)
 
 'Enter value in the Last Name field'
-TextField.typeText(lastName, FirstName, timeout)
+TextField.typeText(lastName, LastName, timeout)
+
+if (Device.isIOS()) {
+	Button.tap("Done")
+}
+
+Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
 
 'Find the Email field'
 TestObject email = Finder.findTextField('Digital Program/New Start Form/Email')
@@ -71,7 +89,9 @@ Mobile.tap(email, timeout)
 'Enter value in the Email field'
 TextField.typeText(email, Email, timeout)
 
-Scroll.scrollListToElementWithText('Phone', timeout)
+if (Device.isIOS()) {
+	Button.tap("Done")
+}
 
 'Find the Phone field'
 TestObject phone = Finder.findTextField('Digital Program/New Start Form/Phone')
@@ -81,10 +101,16 @@ Mobile.tap(phone, timeout)
 'Enter value in the Email field'
 TextField.typeText(phone, Phone, timeout)
 
+if (Device.isIOS()) {
+	Button.tap("Done")
+}
+
+Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+
 Button.tap('Digital Program/New Start Form/Phone Type Mobile')
 
 Button.tap('Digital Program/New Start Form/Today Im deciding to follow Jesus')
 
-Button.tap('Digital Program/New Start Form/Cancel')
+Button.tap('Digital Program/New Start Form/Submit')
 
 Button.tap('Digital Program/Go Back')
