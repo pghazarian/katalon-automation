@@ -36,7 +36,7 @@ WebUI.setText(findTestObject('HC-Web/Event/Event Creation/Start Date Text Field'
 WebUI.click(findTestObject('HC-Web/Event/Event Creation/Create Button'))
 
 'Verify event name'
-WebUI.verifyElementAttributeValue(findTestObject('HC-Web/Event/Details/EventName'), 'value', EventName, 0)
+WebUI.verifyElementAttributeValue(findTestObject('HC-Web/Event/Details/Event Name'), 'value', EventName, 0)
 
 'Verify free event'
 WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Free Event Radio Option'), 0)
