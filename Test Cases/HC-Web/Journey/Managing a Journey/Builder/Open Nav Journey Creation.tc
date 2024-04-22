@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>This test is technically part of the Smoke test suite. It has been excluded because it will not pass on the pipeline due to window sizing issues.</description>
    <name>Open Nav Journey Creation</name>
-   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
+   <tag>QA,Dev,Stage2,Stage</tag>
    <comment></comment>
    <testCaseGuid>7814aef5-749f-443b-9045-9fb748821e79</testCaseGuid>
    <variableLinks>

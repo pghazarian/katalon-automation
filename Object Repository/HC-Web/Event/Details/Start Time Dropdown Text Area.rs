@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Save Button</name>
+   <name>Start Time Dropdown Text Area</name>
    <tag></tag>
-   <elementGuidId>b4e43518-aa75-4ae5-8791-07b371562ee4</elementGuidId>
+   <elementGuidId>1035903a-9dda-4269-b0d0-de378d13c7cd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[text()='Save']/ancestor::button[not(@disabled)]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@id='event_details_event_date_time--start_time']/descendant::span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

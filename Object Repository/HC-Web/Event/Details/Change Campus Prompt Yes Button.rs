@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Save Button</name>
+   <name>Change Campus Prompt Yes Button</name>
    <tag></tag>
-   <elementGuidId>b4e43518-aa75-4ae5-8791-07b371562ee4</elementGuidId>
+   <elementGuidId>92440e57-0a00-4c01-997b-be6bac9c7c66</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[text()='Save']/ancestor::button[not(@disabled)]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[text()='Change campus and clear chosen venues?']/following-sibling::div[@class='prompt-yes-btn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

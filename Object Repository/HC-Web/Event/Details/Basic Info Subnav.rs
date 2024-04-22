@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>EventName</name>
+   <name>Basic Info Subnav</name>
    <tag></tag>
-   <elementGuidId>8ce08b0c-ce54-4507-a488-bd3aa81329bb</elementGuidId>
+   <elementGuidId>90a99011-3a68-4803-9160-d4a708d55b99</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='event_details_basic_info--event_name']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[text()='Basic Info']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

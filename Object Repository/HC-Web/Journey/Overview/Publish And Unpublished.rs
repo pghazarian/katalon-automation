@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space(.)='Publishing Status']/preceding-sibling::div/button</value>
+         <value>//div[normalize-space(.)='Publishing Status']/preceding-sibling::div/button[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Unpublished' or . = 'Unpublished')]</value>
-      <webElementGuid>19dbe4cc-a20b-45fc-aaa4-88dbf1b79aa4</webElementGuid>
+      <webElementGuid>3f60db05-147d-4e00-a564-b09dd951d285</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
