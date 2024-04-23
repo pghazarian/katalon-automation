@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Search Text Entry</name>
+   <name>Search field</name>
    <tag></tag>
-   <elementGuidId>9fb58ed7-d673-4db9-8d74-92f228ee1be7</elementGuidId>
+   <elementGuidId>86bfcd08-68f9-4048-ab91-7ced0b88c673</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>42fc07be-a1e8-4768-8e72-48108a4a9937</webElementGuid>
+      <webElementGuid>1e184144-d3cd-4246-9182-061db49b60a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>data-testid</name>
       <type>Main</type>
       <value>cmui--search_input</value>
-      <webElementGuid>0898e25b-f177-4c7f-a972-25ccf8d20afc</webElementGuid>
+      <webElementGuid>2fea2540-1bd6-4fe5-bcfc-3ead5aeb43a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>id</name>
       <type>Main</type>
       <value>connection_forms_list_page--page_action_bar_search</value>
-      <webElementGuid>8330518c-abde-4e3b-b00b-3ade28765d69</webElementGuid>
+      <webElementGuid>de932d75-b336-4e17-9fe0-2101062a2948</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search</value>
-      <webElementGuid>928a2f13-87a6-4afb-82e1-f9df63d4e587</webElementGuid>
+      <webElementGuid>8c49c49b-6dda-4aed-828e-bbc4ce45702d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>7149d8d6-8796-411a-b5f4-9bb4c44a86a3</webElementGuid>
+      <webElementGuid>dc08db7f-9cff-492c-b2f4-9838c2397720</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;connection_forms_list_page--page_action_bar_search&quot;)</value>
-      <webElementGuid>8de94708-9408-4b9c-a0a5-2c6a07d8ca76</webElementGuid>
+      <webElementGuid>ba98e48d-d274-46b4-ac70-1b824835f85b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
-      <webElementGuid>585b0a90-31b4-46a9-a1f0-c4966c7b5fa3</webElementGuid>
+      <webElementGuid>15b4c2f9-89a8-4feb-a20e-4a74efce5934</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/header/div/div/div[3]/div/div/input</value>
-      <webElementGuid>6868da4f-ea67-4698-b527-df1da20bd6da</webElementGuid>
+      <webElementGuid>f269e4e3-32fe-4ce1-829a-6c6ed5f4f638</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div/input</value>
-      <webElementGuid>d21c5fab-a194-4686-ba8c-9c07087532cf</webElementGuid>
+      <webElementGuid>444ea420-1842-491d-99a1-2951e91fb1f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'connection_forms_list_page--page_action_bar_search' and @placeholder = 'Search' and @type = 'text']</value>
-      <webElementGuid>0dbe30d5-4a18-4371-8fe9-34d6e3dac960</webElementGuid>
+      <webElementGuid>d9a3f9ae-8009-4725-ad4f-709f4c3dbaa8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
