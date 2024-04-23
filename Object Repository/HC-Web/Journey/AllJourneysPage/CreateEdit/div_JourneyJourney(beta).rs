@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[7]/div</value>
+         <value>//button[@id='journeys_list_page--page_action_bar_new_journey_button']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>bb4d34b2-cc17-450e-a0fd-d566be70096c</webElementGuid>
+      <webElementGuid>1fb761c8-b284-4bc9-8d43-42dcad6f51b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>section-label-container</value>
-      <webElementGuid>33447519-3d20-454c-b2fd-dc48038d4895</webElementGuid>
+      <webElementGuid>1a070b15-8e03-4fa2-b4e8-77aec48b7798</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>JourneyJourney(beta)</value>
-      <webElementGuid>3e396412-b305-4339-be8f-95145f023573</webElementGuid>
+      <webElementGuid>2a572348-db8a-4d72-a39b-e637d0b1b7b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,30 +45,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss273&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]</value>
-      <webElementGuid>47bc816e-cf46-450e-b353-69a8f84f2db6</webElementGuid>
+      <webElementGuid>6834549f-8178-463a-a3ac-fdef902c8058</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[7]/div</value>
-      <webElementGuid>c9508b54-31e8-477b-8aac-4de7e7a72a5c</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//li[7]/div</value>
-      <webElementGuid>dab4aeed-0199-41df-b5ff-982dcdb21fb3</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//div[(text() = 'JourneyJourney(beta)' or . = 'JourneyJourney(beta)')]</value>
-      <webElementGuid>99e23df9-0ab9-4f63-97f6-d5f6c8674b48</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Save Button</name>
+   <name>Campus Dropdown Text Area</name>
    <tag></tag>
-   <elementGuidId>b4e43518-aa75-4ae5-8791-07b371562ee4</elementGuidId>
+   <elementGuidId>3b3961a2-1ba9-4c19-9e35-4fa3b3e225e4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[text()='Save']/ancestor::button[not(@disabled)]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@id='event_location_on_campus-where_campus']/descendant::span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
