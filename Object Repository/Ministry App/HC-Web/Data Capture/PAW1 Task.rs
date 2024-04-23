@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>2160c53b-dd79-4799-8cce-ce6cc573e9bb</webElementGuid>
+      <webElementGuid>5bd21a79-7afc-4a28-8d92-44b06aadbbaf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiTypography-root MuiTypography-body1</value>
-      <webElementGuid>88a42a6a-c4cf-4bfc-ae54-7456ce60cecd</webElementGuid>
+      <webElementGuid>67515082-65d9-4de0-bb51-86f4905ede0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>PAW1 Task</value>
-      <webElementGuid>171fd5c2-43b8-415d-b225-3631c837039c</webElementGuid>
+      <webElementGuid>2f3219d1-9234-422f-ac2d-06248a54094f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;follow_up_rule_editor_drawer--task_details_panel_item_902&quot;)/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss65&quot;]/p[@class=&quot;MuiTypography-root MuiTypography-body1&quot;]</value>
-      <webElementGuid>d144f132-bb1c-4c09-b3a1-84bdc8d5936c</webElementGuid>
+      <webElementGuid>c29a0788-e9c6-46ef-9221-e50dec01a64c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='follow_up_rule_editor_drawer--task_details_panel_item_902']/div/div[2]/p[2]</value>
-      <webElementGuid>86ec0aba-6be1-4e38-9e9c-95dc711e08ba</webElementGuid>
+      <webElementGuid>3f46d4f5-3903-4932-847a-d9a85ddde820</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Action Details'])[1]/following::p[2]</value>
-      <webElementGuid>780b20bc-9f00-48a3-a3db-a445926ae4f1</webElementGuid>
+      <webElementGuid>98bca978-01b3-4c50-87fa-1714c54a7772</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Trigger'])[1]/following::p[2]</value>
-      <webElementGuid>c6c8327a-2f4a-4e9c-8b7b-a05375fc3ab9</webElementGuid>
+      <webElementGuid>0a7ae09e-d5b7-4c01-9a9d-c26588025f06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/preceding::p[1]</value>
-      <webElementGuid>d721ea4c-7524-4a3f-aedf-33b27a34d219</webElementGuid>
+      <webElementGuid>0a8cdf6c-f6cf-4759-8dab-d9b8770ba49c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Task'])[1]/preceding::p[1]</value>
-      <webElementGuid>49c80eaf-ec2c-4bbd-8e4e-fbecf2f63c7e</webElementGuid>
+      <webElementGuid>bc5fc388-b7df-41be-b673-d4dbc0aa9401</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='PAW1 Task']/parent::*</value>
-      <webElementGuid>dab9038f-5fa6-4cf0-95af-8ba4739538df</webElementGuid>
+      <webElementGuid>f7740590-f85b-4574-840b-b8d14b1885a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div[2]/p[2]</value>
-      <webElementGuid>8f13a0f4-de29-439a-9c68-6af551f08f18</webElementGuid>
+      <webElementGuid>e4b5debc-5e55-4168-8fc5-3e6d5c62efbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'PAW1 Task' or . = 'PAW1 Task')]</value>
-      <webElementGuid>6063fec2-b91f-4313-bda4-161cc4ed22d8</webElementGuid>
+      <webElementGuid>cf86089d-0406-465a-9475-3beb24b77be6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
