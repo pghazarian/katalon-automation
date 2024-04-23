@@ -17,16 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Ministry App/MA Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='
+        , ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/User Profile'))
+Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
 
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/Notification Preferences'))
+'To open Trending page'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Trending tab'), 0)
 
-WebUI.delay(7)
-
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/Cancel button'))
-
-WebUI.closeBrowser()
+'To open  Service Check-Ins Trending Reports'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Service Check-Ins tile'), 0)
 

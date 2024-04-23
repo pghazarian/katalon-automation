@@ -20,13 +20,19 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/User Profile'))
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/DC - Connection Form/Page_Healthy Church/p_Data Capture'))
 
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/Notification Preferences'))
+WebUI.setText(findTestObject('Object Repository/Ministry App/HC-Web/DC - Connection Form/Page_Healthy Church/input_Log Out_connection_forms_list_page--p_046c7d'), 
+    'Paren')
 
-WebUI.delay(7)
+WebUI.sendKeys(findTestObject('Object Repository/Ministry App/HC-Web/DC - Connection Form/Page_Healthy Church/input_Log Out_connection_forms_list_page--p_046c7d'), 
+    Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Page_Healthy Church/Cancel button'))
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/DC - Connection Form/Page_Healthy Church/div_Paren Anaheim Worship 1'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/DC - Connection Form/Page_Healthy Church/span_Follow Ups'))
+
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/DC - Connection Form/Page_Healthy Church/span_Template Rules_button-inner-container jss246'))
+
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/DC - Connection Form/Page_Healthy Church/span_New Rule'))
 

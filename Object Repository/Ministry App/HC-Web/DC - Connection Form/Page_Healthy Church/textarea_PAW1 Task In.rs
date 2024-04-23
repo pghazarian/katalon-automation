@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>textarea_PAW1 Task In</name>
+   <tag></tag>
+   <elementGuidId>3ea53b9e-63a0-418c-9ed8-c673c2c71aeb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#task_action_form--task_instructions_textarea</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//textarea[@id='task_action_form--task_instructions_textarea']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;Give this task instructions...&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>0516f550-e5e9-46aa-97a6-73ec655bbe61</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>task_action_form--task_instructions_textarea</value>
+      <webElementGuid>07184f9a-6ca4-455f-9a2e-d4b9e07dd550</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Give this task instructions...</value>
+      <webElementGuid>ba5c24ce-1a79-4e9e-965b-2fa60d488336</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PAW1 Task In</value>
+      <webElementGuid>007cef85-d190-4644-a47a-28d8284fef70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;task_action_form--task_instructions_textarea&quot;)</value>
+      <webElementGuid>a0230dda-020e-4ef8-b9ec-d83d04894ba3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//textarea[@id='task_action_form--task_instructions_textarea']</value>
+      <webElementGuid>eaa2636c-6765-44d2-a007-ac63a334fcd4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='task_action_form']/div[4]/div/div/textarea</value>
+      <webElementGuid>044d7218-c722-433f-9952-41f1c1adfa3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Task Instructions'])[1]/following::textarea[1]</value>
+      <webElementGuid>e246d122-7b3b-483f-b43a-7f4ec463451b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Task Name'])[1]/following::textarea[1]</value>
+      <webElementGuid>df560135-8245-4680-925a-b2b94551db0c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>573a15c2-7b90-4c19-9851-b4917da101f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='PAW1 Task In']/parent::*</value>
+      <webElementGuid>c3ab9d14-c1d0-4510-a322-88ebb09dc891</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//textarea</value>
+      <webElementGuid>6233bfdb-8b4d-41d6-9f45-aef8bfa3b64d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[@id = 'task_action_form--task_instructions_textarea' and @placeholder = 'Give this task instructions...' and (text() = 'PAW1 Task In' or . = 'PAW1 Task In')]</value>
+      <webElementGuid>fd7e6318-f4f1-456a-9e1c-dda0d2e86d5a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

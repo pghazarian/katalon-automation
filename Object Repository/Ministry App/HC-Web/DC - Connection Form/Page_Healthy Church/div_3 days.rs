@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_3 days</name>
+   <tag></tag>
+   <elementGuidId>463326fd-95f2-4b67-939a-7531833a6db2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.Select-option.is-focused</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//div[@id='react-select-6--list']/div/div/div[4])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=listbox >> internal:text=&quot;3 days&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>86d38bd8-c3e1-4283-a47b-aabde6ea2355</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Select-option is-focused</value>
+      <webElementGuid>df0c98b3-5c15-4b05-834e-6d85d0d98d6c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>3 days</value>
+      <webElementGuid>d0edcf76-eb82-47f5-9156-be990bbed6bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;task_action_form--task_due_period_input--days_dropdown&quot;)/div[@class=&quot;Select has-value is-focused is-open is-searchable Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-6--list&quot;]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
+      <webElementGuid>be55b2fa-9497-426a-bfa9-0c28b99cb9c5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//div[@id='react-select-6--list']/div/div/div[4])[2]</value>
+      <webElementGuid>3298e28d-6576-4bbd-a7c6-29c7f483b866</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delay sending task for:'])[1]/preceding::div[151]</value>
+      <webElementGuid>9bb255ee-fca2-4612-ba17-32eac6c40aff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div[4]</value>
+      <webElementGuid>72e0dc2e-7baf-4e79-ba9b-f6352c6a82d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '3 days' or . = '3 days')]</value>
+      <webElementGuid>b9d8863f-225d-417d-bdde-c2a9fc5fe132</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

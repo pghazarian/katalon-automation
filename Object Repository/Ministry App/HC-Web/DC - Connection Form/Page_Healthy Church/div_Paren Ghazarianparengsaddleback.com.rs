@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Paren Ghazarianparengsaddleback.com</name>
+   <tag></tag>
+   <elementGuidId>7ea870d2-cb16-46cb-8361-3d8fb5124ef3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.jss705</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='data_grid--table_user_search_drawer--data_grid_cell_base-2_0']/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[data-testid=&quot;cmui-drawer_data_grid&quot;] div >> internal:has-text=&quot;Paren Ghazarianpareng@saddleback.com&quot;i >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7864fbea-352f-4256-8705-e5f1fa43dcf0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jss705</value>
+      <webElementGuid>971e7cdd-8b3f-40c8-810c-b9e7ef37581f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Paren Ghazarianpareng@saddleback.com</value>
+      <webElementGuid>db878f99-7996-410f-a306-90b22c5ef621</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;data_grid--table_user_search_drawer--data_grid_cell_base-2_0&quot;)/div[@class=&quot;jss702&quot;]/div[@class=&quot;jss705&quot;]</value>
+      <webElementGuid>9cbcfbcb-9725-4fb9-8543-7072af105dfb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='data_grid--table_user_search_drawer--data_grid_cell_base-2_0']/div/div</value>
+      <webElementGuid>d2fc5305-4271-470d-ac8e-55e0d9a4648d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Campus'])[4]/following::div[2]</value>
+      <webElementGuid>8099117c-283e-42f6-8006-edf7903c3a5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/following::div[3]</value>
+      <webElementGuid>befb0473-7e2b-42c0-b34d-62ef96ed2032</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/div</value>
+      <webElementGuid>16672166-d926-4839-946a-0d16e4291298</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Paren Ghazarianpareng@saddleback.com' or . = 'Paren Ghazarianpareng@saddleback.com')]</value>
+      <webElementGuid>804655d2-1ab2-46a0-b6d6-80a0a2c497b6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

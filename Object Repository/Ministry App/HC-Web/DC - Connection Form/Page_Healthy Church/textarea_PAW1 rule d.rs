@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>textarea_PAW1 rule d</name>
+   <tag></tag>
+   <elementGuidId>f0a55c30-0810-40dc-b079-4a5dd71dd3cd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#follow_up_rule_editor_drawer--rule_description_textarea</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//textarea[@id='follow_up_rule_editor_drawer--rule_description_textarea']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;Write a rule description...&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>adeea5b9-cb8e-4405-9f57-939b52cff68b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>follow_up_rule_editor_drawer--rule_description_textarea</value>
+      <webElementGuid>3e32c79b-373d-479b-85db-db975ec5ce56</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Write a rule description...</value>
+      <webElementGuid>ef04b9ce-17bf-46b9-99fe-aed48faa0d7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PAW1 rule d</value>
+      <webElementGuid>736f80f9-8357-47db-9f73-ca892072e365</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;follow_up_rule_editor_drawer--rule_description_textarea&quot;)</value>
+      <webElementGuid>cdd95d84-aab6-45a2-99a3-12a18538a622</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//textarea[@id='follow_up_rule_editor_drawer--rule_description_textarea']</value>
+      <webElementGuid>45006d21-e152-40ad-8dff-7b46ee78a142</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='follow_up_rule_editor_drawer--left_panel_basic_info_editor']/div[5]/div/div/textarea</value>
+      <webElementGuid>9ddb2f97-f371-4644-861c-ff73f58d81eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::textarea[1]</value>
+      <webElementGuid>9b420ce9-93ba-4357-b746-a59ddbb33ebc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[3]/following::textarea[1]</value>
+      <webElementGuid>b7e3844f-db7e-467e-804a-443d23cd4d32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Done'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>ccf246af-d5b5-4484-b5d7-ac1f3ec0e44e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rule Details'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>df21d10f-77b8-4eb8-942f-41645aa9d8ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='PAW1 rule d']/parent::*</value>
+      <webElementGuid>1f5e9701-f510-4852-9c03-742e57af9287</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//textarea</value>
+      <webElementGuid>fc50ce28-d83f-42e2-8bca-66552fa1151b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[@id = 'follow_up_rule_editor_drawer--rule_description_textarea' and @placeholder = 'Write a rule description...' and (text() = 'PAW1 rule d' or . = 'PAW1 rule d')]</value>
+      <webElementGuid>61df2e6f-9304-4e3b-b721-243cd3d41056</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

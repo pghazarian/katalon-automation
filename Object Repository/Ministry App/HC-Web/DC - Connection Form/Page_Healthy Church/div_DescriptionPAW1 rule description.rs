@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_DescriptionPAW1 rule description</name>
+   <tag></tag>
+   <elementGuidId>a366ccd5-910d-43a1-8f3b-a06349bad50e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='follow_up_rule_editor_drawer--left_panel_basic_info_editor']/div[5]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[data-testid=&quot;follow_up_rule_editor_drawer--left_panel_basic_info_editor&quot;] div >> internal:has-text=&quot;DescriptionPAW1 rule description&quot;i >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5de4dd98-a06b-4ba9-a93e-0e02403e7b49</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cmui grid--column jss45</value>
+      <webElementGuid>3ad1ced6-e8c8-4c20-86a8-8fe1e76d49b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>cmui-grid_column</value>
+      <webElementGuid>2874e2ed-6b6a-4d4d-b72c-767c9b1b3711</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>DescriptionPAW1 rule description </value>
+      <webElementGuid>ccadf0e6-0cb2-445a-b06b-f9909d680a76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;follow_up_rule_editor_drawer--left_panel_basic_info_editor&quot;)/div[@class=&quot;cmui grid--column jss45&quot;]</value>
+      <webElementGuid>c32294c3-7d3e-4ee2-a740-932338e56d6e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='follow_up_rule_editor_drawer--left_panel_basic_info_editor']/div[5]</value>
+      <webElementGuid>6caed724-684a-49ce-8336-42307ffe6977</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[3]/following::div[4]</value>
+      <webElementGuid>7f2f6e8f-f647-4359-a9d1-3de95c2c6e02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Whittier'])[1]/following::div[11]</value>
+      <webElementGuid>dca74d49-2f97-431a-8c6b-9f6b24c40906</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div/div/div/div/div[5]</value>
+      <webElementGuid>2e6e7568-7573-4f4c-b729-a4e2be88e62f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'DescriptionPAW1 rule description ' or . = 'DescriptionPAW1 rule description ')]</value>
+      <webElementGuid>c28412d1-b745-42c7-bbd5-c03bebfcb3a6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

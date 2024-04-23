@@ -31,7 +31,7 @@ tap.tap(PointOption.point(20, 20))
 	.waitAction(WaitOptions.waitOptions(Duration.ofMillis(50L))); 	
 tap.perform();
 
-WebUI.callTestCase(findTestCase('Ministry App/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Ministry App/MA Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Tap into the "Looking for Somebody" field'
 Mobile.tap(findTestObject('Object Repository/Ministry App/Home Page/Person Search text field'), 0)
