@@ -45,27 +45,24 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Events
 
 'Select event from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@name=\'event-selector\']/descendant::div[@class=\'Select-control\']', 
-    'ST Event 1')
+    'Baptism')
 
 'Select event from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@name=\'event-type-selector\']/div[\'name=select-menu-scrollbar\']/descendant::div[@class=\'Select-option\']', 
-    'Count')
+CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-type-selector', 'Count')
 
-'Select first recent sequence from dropdown'
-not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'event-first-attendance-selector\']/descendant::div[@class=\'Select-control\']', 
-    'Attended')
+'Select event from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-occurrence-attendance-selector', 'Attended')
 
-'Select count from dropdown'
-not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'event-first-attendance-selector\']/descendant::div[@class=\'Select-control\']', 
-    '1')
+'Select event from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-occurence-count-selector', '1')
 
-'Select second recent sequence from dropdown'
-not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'event-first-attendance-selector\']/descendant::div[@class=\'Select-control\']', 
-    'Unattended')
+'Click on the date picker'
+WebUI.setText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Add Event/Data Picker', [('index') : 3]), 
+    '04/01/2024')
 
-'Select count from dropdown'
-not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'event-first-attendance-selector\']/descendant::div[@class=\'Select-control\']', 
-    '1')
+'Click on the date picker'
+WebUI.setText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Add Event/Data Picker', [('index') : 4]), 
+    '04/22/2024')
 
 not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Events/Add Event/Event Save Button'))
 

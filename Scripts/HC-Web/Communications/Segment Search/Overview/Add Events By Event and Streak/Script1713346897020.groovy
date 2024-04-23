@@ -47,21 +47,17 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Events
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@name=\'event-selector\']/descendant::div[@class=\'Select-control\']', 
     'ST Event 1')
 
-'Select first recent sequence from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@name=\'event-type-selector\']/div[\'name=select-menu-scrollbar\']/descendant::div[@class=\'Select-option\']', 
-    'Attended')
+'Select event from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-first-attendance-selector', 'Attended')
 
-'Select count from dropdown'
-not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'event-first-attendance-selector\']/descendant::div[@class=\'Select-control\']', 
-    '1')
+'Select event from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-attendance-count-selector', '1')
 
-'Select second recent sequence from dropdown'
-not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'event-first-attendance-selector\']/descendant::div[@class=\'Select-control\']', 
-    'Unattended')
+'Select event from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-second-attendance-selector', 'Unattended')
 
-'Select count from dropdown'
-not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'event-first-attendance-selector\']/descendant::div[@class=\'Select-control\']', 
-    '1')
+'Select event from dropdown'
+not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-attendance-count-selector', '1')
 
 not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Events/Add Event/Event Save Button'))
 
