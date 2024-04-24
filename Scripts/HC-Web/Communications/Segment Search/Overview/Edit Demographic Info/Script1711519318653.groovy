@@ -38,7 +38,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demogr
         [('index') : 2]))
 
 'Click on Include Students under Student?'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Student Checkbox', 
+WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Student Radio Button', 
         [('index') : 2]))
 
 'Select student grade from dropdown'

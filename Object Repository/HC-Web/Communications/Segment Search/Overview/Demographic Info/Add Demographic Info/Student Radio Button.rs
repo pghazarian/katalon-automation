@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Student Checkbox</name>
+   <name>Student Radio Button</name>
    <tag></tag>
    <elementGuidId>c553f937-212a-4e1a-bfa7-991052c05b3c</elementGuidId>
    <selectorCollection>

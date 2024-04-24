@@ -47,13 +47,13 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Events
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@name=\'event-selector\']/descendant::div[@class=\'Select-control\']', 
     'ST Event 1')
 
-'Select event from dropdown'
+'Select count from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-type-selector', 'Count')
 
-'Select event from dropdown'
+'Select status from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-occurrence-attendance-selector', 'Attended')
 
-'Select event from dropdown'
+'Select attendance count from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-occurence-count-selector', '1')
 
 'Click on the date picker'

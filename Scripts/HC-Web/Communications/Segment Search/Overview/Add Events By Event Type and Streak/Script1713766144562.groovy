@@ -47,17 +47,17 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Events
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@name=\'event-selector\']/descendant::div[@class=\'Select-control\']', 
     'Baptism')
 
-'Select event from dropdown'
+'Select event attendance from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-first-attendance-selector', 'Attended')
 
-'Select event from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-attendance-count-selector', '1')
+'Select attendance count from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-first-attendance-count-selector', '1')
 
-'Select event from dropdown'
+'Select event attendance from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-second-attendance-selector', 'Unattended')
 
-'Select event from dropdown'
-not_run: CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-attendance-count-selector', '1')
+'Select attendance count from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-second-attendance-count-selector', '1')
 
 not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Events/Add Event/Event Save Button'))
 
