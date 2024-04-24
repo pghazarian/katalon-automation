@@ -24,7 +24,7 @@ import io.appium.java_client.android.AndroidDriver as AndroidDriver
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
 
-WebUI.callTestCase(findTestCase('Ministry App/MA Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Ministry App/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
 
