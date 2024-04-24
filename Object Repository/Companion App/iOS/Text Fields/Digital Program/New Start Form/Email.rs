@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>Email</name>
+   <tag></tag>
+   <elementGuidId>9f77e3c2-210c-4b68-9d61-71dfdd6cbb15</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>XPATH</name>
+      <type>Main</type>
+      <value>//XCUIElementTypeStaticText[@name=&quot;Email&quot;]/../following-sibling::XCUIElementTypeTextField</value>
+      <webElementGuid>99144891-d77f-45e8-b4dd-8ddc3c0beb12</webElementGuid>
+   </webElementProperties>
+   <locator>//XCUIElementTypeStaticText[@name=&quot;Email&quot;]/../following-sibling::XCUIElementTypeTextField</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</MobileElementEntity>
