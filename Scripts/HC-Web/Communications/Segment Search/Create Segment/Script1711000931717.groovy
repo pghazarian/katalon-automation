@@ -31,10 +31,12 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Button'))
 
 'Enter Segment name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Segment Name Input Field'), SegmentName)
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Segment Name Input Field'), 
+    SegmentName)
 
 'Enter Segment description'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Segment Description Text Area'), "$SegmentName Description")
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Create Segment Record/Segment Description Text Area'), 
+    "$SegmentName Description")
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
@@ -92,6 +94,14 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 'Verify default value of Gender is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Value', [('Gender') : 'N/A']), 
     'N/A')
+
+'Verify Gender label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Student Label'), 
+    'Student')
+
+'Verify default value of Gender is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Student Value', [
+            ('Student') : 'N/A']), 'N/A')
 
 'Verify Age label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Label'), 'Age')
