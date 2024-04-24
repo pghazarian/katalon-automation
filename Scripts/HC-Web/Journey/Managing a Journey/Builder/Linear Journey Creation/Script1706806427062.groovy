@@ -22,8 +22,6 @@ import java.util.UUID as UUID
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/journeys'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/div_JourneyJourney(beta)'))
-
 'Click button to create a new journey'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_JourneyCreate Journey'))
 
@@ -220,8 +218,7 @@ WebUI.click(findTestObject('HC-Web/Journey/Overview/Back to All Journeys Button'
 'Search for unique journey name and verify that it appears in result list'
 WebUI.setText(findTestObject('HC-Web/Journey/AllJourneysPage/SearchBar'), JourneyName + Keys.ENTER)
 
-CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 
-    1)
+CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//tbody/tr/td/div/div[2]', JourneyName, 1)
 
 WebUI.closeBrowser()
 

@@ -37,8 +37,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Sear
 
 if (WebUI.waitForElementPresent(findTestObject('HC-Web/Communications/Segment Search/Overview/Export/Export No Person Found Message'), 
     10) == false) {
-    
-	'Click button to download record result in CSV format'
+    'Click button to download record result in CSV format'
     WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/CSV Download Button'))
 
     'Verify file being ready for download notification is displayed'
@@ -85,13 +84,11 @@ if (WebUI.waitForElementPresent(findTestObject('HC-Web/Communications/Segment Se
     'Click the link to download'
     WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Export/XLSX Download Link'))
 
-    WebUI.closeBrowser()
-	
 } else {
-	
     'Click button to close Export Preview modal'
     WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Export/Export Preview Close Button'))
 
-    WebUI.closeBrowser()
 }
+
+	WebUI.closeBrowser()
 

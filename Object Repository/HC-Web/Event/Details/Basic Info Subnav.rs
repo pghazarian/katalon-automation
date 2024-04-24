@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Save Button</name>
+   <name>Basic Info Subnav</name>
    <tag></tag>
-   <elementGuidId>b4e43518-aa75-4ae5-8791-07b371562ee4</elementGuidId>
+   <elementGuidId>90a99011-3a68-4803-9160-d4a708d55b99</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[text()='Save']/ancestor::button[not(@disabled)]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[text()='Basic Info']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

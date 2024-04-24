@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>EventName</name>
+   <name>Data Picker</name>
    <tag></tag>
-   <elementGuidId>8ce08b0c-ce54-4507-a488-bd3aa81329bb</elementGuidId>
+   <elementGuidId>dbc43a4b-0fc5-4747-a974-468248e1d9e4</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='event_details_basic_info--event_name']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[${index}]/div/div/div/input</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
