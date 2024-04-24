@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Registration Required No Radio Option</name>
+   <name>Date Text Field</name>
    <tag></tag>
-   <elementGuidId>4cad768b-9305-49eb-95c8-584b194eac84</elementGuidId>
+   <elementGuidId>ca7593c7-28fe-46dc-a460-6e07718b517b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='event-details--registration_allowed_no']</value>
+         <value>//div[@id='ui-date_picker_input--event_details_event_date_time--start_date']/descendant::input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

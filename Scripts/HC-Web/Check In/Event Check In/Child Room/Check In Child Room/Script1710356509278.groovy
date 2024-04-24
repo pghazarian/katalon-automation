@@ -117,5 +117,7 @@ WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Confirmation Yes Button'))
 
+WebUI.delay(3)
+
 WebUI.closeBrowser()
 

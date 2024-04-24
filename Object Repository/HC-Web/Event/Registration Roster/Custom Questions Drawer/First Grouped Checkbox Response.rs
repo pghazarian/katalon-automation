@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Registration Required Yes Radio Option</name>
+   <name>First Grouped Checkbox Response</name>
    <tag></tag>
-   <elementGuidId>0d38867f-9cfb-4f81-a09c-87cd26c71309</elementGuidId>
+   <elementGuidId>b1a98f70-071b-4d89-9b66-efd021edd20f</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(@id,'edit_response--question_option-')]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='event-details--registration_allowed_yes']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

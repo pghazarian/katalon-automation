@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def date = new Date().plus(1).format('MMddyyyy').toString()
+
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/events-central/event/$EventId/edit"], FailureHandling.STOP_ON_FAILURE)
@@ -25,11 +27,19 @@ WebUI.setText(findTestObject('HC-Web/Event/Details/Event Name'), ' - Edited')
 
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_basic_info--event_category', EventCategory_Edited)
 
+WebUI.setText(findTestObject('HC-Web/Event/Details/Date Text Field'), Keys.chord(Keys.CONTROL + 'a') + date)
+
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_event_date_time--start_time', '07:00 PM')
 
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_location_on_campus-where_campus', 'Lake Forest')
 
-WebUI.click(findTestObject('HC-Web/Event/Details/Change Campus Prompt Yes Button'))
+def hasVenue = !(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Details/Selected Venues'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())
+
+if(hasVenue) {
+
+	WebUI.click(findTestObject('HC-Web/Event/Details/Change Campus Prompt Yes Button'))
+	
+}
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Venue Dropdown'))
 
@@ -62,9 +72,15 @@ CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_basic_info--ev
 
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_event_date_time--start_time', '05:00 PM')
 
+hasVenue = !(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Details/Selected Venues'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())
+
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_location_on_campus-where_campus', 'Anaheim')
 
-WebUI.click(findTestObject('HC-Web/Event/Details/Change Campus Prompt Yes Button'))
+if(hasVenue) {
+
+	WebUI.click(findTestObject('HC-Web/Event/Details/Change Campus Prompt Yes Button'))
+	
+}
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Venue Dropdown'))
 
