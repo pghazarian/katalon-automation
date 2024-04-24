@@ -3,10 +3,18 @@
    <description></description>
    <name>Phone</name>
    <tag></tag>
-   <elementGuidId>4c012e05-b5c5-4864-98ad-1d127fb5be53</elementGuidId>
+   <elementGuidId>4728e9ef-43a3-496c-9447-507011c6bf63</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>XPATH</name>
+      <type>Main</type>
+      <value>//XCUIElementTypeStaticText[@name=&quot;Phone&quot;]/../following-sibling::XCUIElementTypeOther/XCUIElementTypeTextField</value>
+      <webElementGuid>efb794e9-9930-4dd4-8b1a-535e67f38a4b</webElementGuid>
+   </webElementProperties>
    <locator>//XCUIElementTypeStaticText[@name=&quot;Phone&quot;]/../following-sibling::XCUIElementTypeOther/XCUIElementTypeTextField</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

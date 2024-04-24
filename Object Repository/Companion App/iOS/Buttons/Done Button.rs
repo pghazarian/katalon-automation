@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Sign In Button</name>
+   <name>Done Button</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>b4d5a2ef-6c84-4b6a-876e-975cb45c13c1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -12,7 +13,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeButton</value>
-      <webElementGuid>68ede157-f772-48db-beb1-560f1aadcc0d</webElementGuid>
+      <webElementGuid>cca30e82-3bb3-4aba-8e00-006cc4b03c70</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +21,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>8664db00-a49f-42d6-b985-09dbb89af7f0</webElementGuid>
+      <webElementGuid>0faeafb9-d763-4628-b0f1-9f05f6d063cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,72 +29,72 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>1d6dc76d-839f-4955-9054-fcd8efd2bd1e</webElementGuid>
+      <webElementGuid>ddb2916f-c40d-4a3f-934f-ebd69e270f04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>84.0</value>
-      <webElementGuid>31d48735-29ed-45d6-bb16-c66386d3ac34</webElementGuid>
+      <value>76.0</value>
+      <webElementGuid>adca0a79-1c19-48fd-886f-012e29c6c113</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
-      <value>5</value>
-      <webElementGuid>f0e7bd5a-4d7b-4178-ab02-52e254b0df00</webElementGuid>
+      <value>1</value>
+      <webElementGuid>8a2c6071-4818-4e4c-89fa-b5ad3f7bb924</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>label</name>
       <type>Main</type>
-      <value>Sign In</value>
-      <webElementGuid>78919b92-0c27-4b16-bb21-69db5e9e17b6</webElementGuid>
+      <value>Done</value>
+      <webElementGuid>4397970a-91f2-40f6-86c6-e7e3abb922db</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>Sign In</value>
-      <webElementGuid>c31a9116-6005-48fb-8b61-0651f55da788</webElementGuid>
+      <value>Done</value>
+      <webElementGuid>9c39459f-0584-4313-83c6-325c4028e5ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>768.0</value>
-      <webElementGuid>aa429d97-dd6b-472a-9a45-646d80974e8b</webElementGuid>
+      <value>722.0</value>
+      <webElementGuid>adc32292-41be-4348-91d0-125cfb681581</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
-      <value>10.0</value>
-      <webElementGuid>b90940ff-2135-45f3-959c-994c77056f83</webElementGuid>
+      <value>32.0</value>
+      <webElementGuid>bbab4357-96fa-497e-9ee0-b598bf66721a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>
-      <value>720.0</value>
-      <webElementGuid>8a2c92d7-2af4-49f1-bdfd-58df284e0caf</webElementGuid>
+      <value>308.0</value>
+      <webElementGuid>530df238-b576-4060-b078-e2c05166b4ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeWebView[1]/XCUIElementTypeWebView[1]/XCUIElementTypeWebView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]</value>
-      <webElementGuid>442e8e86-607f-467c-9eb1-8901513da2ec</webElementGuid>
+      <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]</value>
+      <webElementGuid>8c66c3af-4a3e-481f-a71f-3ae572690cb1</webElementGuid>
    </webElementProperties>
-   <locator>//*[@type = 'XCUIElementTypeButton' and @label = 'Sign In' and @name = 'Sign In']</locator>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locator>Done</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
