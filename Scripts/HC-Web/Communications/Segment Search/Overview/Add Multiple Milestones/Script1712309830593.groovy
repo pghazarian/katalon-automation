@@ -106,7 +106,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 'Click on the Edit button next to Milestones'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Milestones Edit Button'))
 
-'Scroll to remove button'
+'Scroll to Milestones header'
 WebUI.scrollToElement(findTestObject('HC-Web/Communications/Segment Search/Overview/Milestones/Add Milestone/Milestones Label'), 
     0)
 
