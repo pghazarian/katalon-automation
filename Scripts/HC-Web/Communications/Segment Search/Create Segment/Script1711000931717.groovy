@@ -95,13 +95,20 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Gender Value', [('Gender') : 'N/A']), 
     'N/A')
 
-'Verify Gender label is displayed'
+'Verify Student label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Student Label'), 
     'Student')
 
-'Verify default value of Gender is displayed'
+'Verify default value of Student is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Student Value', [
             ('Student') : 'N/A']), 'N/A')
+
+'Verify Grade label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Grade Label'), 'Grade')
+
+'Verify default value of Grade is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Student Grade Value', 
+        [('StudentGrade') : 'N/A']), 'N/A')
 
 'Verify Age label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Label'), 'Age')

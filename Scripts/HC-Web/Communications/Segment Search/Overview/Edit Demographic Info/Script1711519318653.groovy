@@ -41,6 +41,10 @@ WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demogr
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Student Checkbox', 
         [('index') : 2]))
 
+'Select student grade from dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'student-grade-selector\']/descendant::div[@class=\'Select-control\']', 
+    'Grade 6')
+
 'Enter minimum age'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Demographic Info/Add Demographic Info/Minimum Age Input Field'), 
     '13')
@@ -86,6 +90,10 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 'Verify the updated Student? value'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Student Value', [
             ('Student') : 'Include Students']), 'Include Students')
+
+'Verify the updated Student Grade value'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Student Grade Value', 
+        [('StudentGrade') : 'Sixth']), 'Sixth')
 
 'Verify the updated Age value'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Age Value', [('Age') : '13 - 99']), 
