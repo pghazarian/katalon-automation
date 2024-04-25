@@ -17,12 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Ministry App/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Ministry App/Shared TCs/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='
+        , ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
 
-'To enter into user\'s profile drawer (top right) '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/User Profile Avatar'), 0)
+Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
 
-'To open user\'s profile drawer '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/X Button'), 0)
+'To open Trending page'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Trending tab'), 0)
+
+'To open  Service Check-Ins Trending Reports'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Service Check-Ins tile'), 0)
 
