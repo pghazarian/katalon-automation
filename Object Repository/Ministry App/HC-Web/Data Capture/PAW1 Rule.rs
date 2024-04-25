@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_PG</name>
+   <name>PAW1 Rule</name>
    <tag></tag>
-   <elementGuidId>1a050ca5-48ce-48d0-a4d5-b00fd07c4caa</elementGuidId>
+   <elementGuidId>45e014de-bbe7-45a8-9aa7-76fb029fac14</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='user-dropdown']/span/span/div/span/div</value>
+         <key>CSS</key>
+         <value>div.cmui.grid--column.jss45.jss625</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>div.ui.image.image-avatar.image-avatar-person</value>
+         <key>XPATH</key>
+         <value>//td[@id='data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0']/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;PG&quot;i]</value>
+         <value>internal:text=&quot;PAW1 rule&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,102 +29,102 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>4ca9e9e8-fce2-4530-ba77-9c747be7916d</webElementGuid>
+      <webElementGuid>ef81b052-3962-42a2-ab1c-55af84c3d189</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui image image-avatar image-avatar-person</value>
-      <webElementGuid>3d410369-19f8-45cc-8c9d-6249efd7abf5</webElementGuid>
+      <value>cmui grid--column jss45 jss625</value>
+      <webElementGuid>74c47a9a-a21d-44f2-bf9d-55a6403a7634</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-testid</name>
       <type>Main</type>
-      <value>cmui-image</value>
-      <webElementGuid>f0b25458-3575-49b9-a039-57cf93c0fe67</webElementGuid>
+      <value>cmui-grid_column</value>
+      <webElementGuid>6a975750-e672-4f43-bd46-2d35c0fd3dfd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>PG</value>
-      <webElementGuid>54dd6e85-1ecd-4f83-8229-1d7de7237943</webElementGuid>
+      <value>PAW1 rule</value>
+      <webElementGuid>a5132b36-b7ba-494b-8bd4-207e89b4bf06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;user-dropdown&quot;)/span[@class=&quot;button-inner-container jss253&quot;]/span[1]/div[@class=&quot;user-menu-avatar_container&quot;]/span[1]/div[@class=&quot;ui image image-avatar image-avatar-person&quot;]</value>
-      <webElementGuid>eb2db0f7-b485-4f81-a9c6-828e6a52d1ec</webElementGuid>
+      <value>id(&quot;data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0&quot;)/div[@class=&quot;cmui grid jss7 jss623 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss625&quot;]</value>
+      <webElementGuid>533ebd90-2107-47ac-83ab-b79026c625b5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='user-dropdown']/span/span/div/span/div</value>
-      <webElementGuid>7e42d2ac-5621-4cb6-bf46-b094cdf6a887</webElementGuid>
+      <value>//td[@id='data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0']/div/div[2]</value>
+      <webElementGuid>51c7574c-c34c-4e62-a3f8-1776f62f9f22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[2]/following::div[10]</value>
-      <webElementGuid>7fdb1ea4-9979-4176-a6e1-68dd8f7f8ac4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Created On/By'])[1]/following::div[4]</value>
+      <webElementGuid>59e1d241-f450-4000-be0c-185e9b4be927</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(beta)'])[6]/following::div[18]</value>
-      <webElementGuid>f2bd2cb7-3377-4c9d-b656-22e4d1e2879a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modified'])[1]/following::div[4]</value>
+      <webElementGuid>5c551d4b-bde7-45ed-9b05-32032513955b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[1]/preceding::div[1]</value>
-      <webElementGuid>ed0c906f-ab9f-4326-ac11-32dbf403e007</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::div[1]</value>
+      <webElementGuid>995d4a01-3087-46c7-9124-96c09227571d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notification Preferences'])[1]/preceding::div[3]</value>
-      <webElementGuid>b765ca5f-843a-4816-b0df-367be66e2bd4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[2]/preceding::div[1]</value>
+      <webElementGuid>7f47295a-aaf5-4f50-aca6-dcc5cd779a99</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='PG']/parent::*</value>
-      <webElementGuid>f5041ca7-4859-472b-9cfd-4568014c18a5</webElementGuid>
+      <value>//*/text()[normalize-space(.)='PAW1 rule']/parent::*</value>
+      <webElementGuid>22a13b34-3b10-487e-addf-cffb342bbe42</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/span/div</value>
-      <webElementGuid>8c9cc303-5c41-49a6-bd82-44d908c2f932</webElementGuid>
+      <value>//td/div/div[2]</value>
+      <webElementGuid>c2279519-ea3d-4b60-a12e-964668295ce8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'PG' or . = 'PG')]</value>
-      <webElementGuid>0c8efa7d-41f8-4b81-87ae-be4f094f0d68</webElementGuid>
+      <value>//div[(text() = 'PAW1 rule' or . = 'PAW1 rule')]</value>
+      <webElementGuid>083dcb02-bd9c-4e9c-be89-8ad89fc5eb84</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

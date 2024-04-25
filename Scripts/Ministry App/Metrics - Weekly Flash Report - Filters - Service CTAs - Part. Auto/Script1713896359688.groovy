@@ -22,9 +22,8 @@ WebUI.callTestCase(findTestCase('Ministry App/Login'), [('UserName') : 'Pareng@S
 
 Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Search icon'), 0)
+'To open Trending page'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Trending tab'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/People icon'), 0)
-
-Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
+Mobile.tap(findTestObject('Ministry App/Metrics/Service CTAs tile'), 0)
 

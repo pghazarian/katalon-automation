@@ -23,6 +23,7 @@ import java.time.Duration as Duration
 import io.appium.java_client.android.AndroidDriver as AndroidDriver
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
+import io.appium.java_client.MultiTouchAction as MultiTouchAction
 
 if (ForceLogin) {
     'Open the App'
@@ -47,4 +48,18 @@ if (ForceLogin) {
 } else {
     Mobile.startExistingApplication(GlobalVariable.Ministry_App_ID, FailureHandling.STOP_ON_FAILURE)
 }
+
+not_run: AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+
+not_run: MultiTouchAction multiTouch = new MultiTouchAction(driver)
+
+not_run: TouchAction action1 = new TouchAction(driver)
+
+not_run: int startX = 30
+
+not_run: int startY = 30
+
+not_run: action1.tap(PointOption.point(startX, startY))
+
+not_run: action1.perform()
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Backlog Item 108254: Notifications - Back Office - Enable Instant Push Notifications - Engine</description>
+   <name>Verify Instant Push Notifications can be send to task assignees</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>47d3775d-bcad-459f-a9f5-a8317c173367</testCaseGuid>
+</TestCaseEntity>
