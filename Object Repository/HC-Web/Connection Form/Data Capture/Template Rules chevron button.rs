@@ -6,12 +6,12 @@
    <elementGuidId>c83e92be-a63d-4835-986d-127140252d5d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>span.button-inner-container.jss246</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='layout']/div[2]/div/main/div/section/div/div[2]/div/div/div/div/div[2]/div/div[3]/button/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.button-inner-container.jss246</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

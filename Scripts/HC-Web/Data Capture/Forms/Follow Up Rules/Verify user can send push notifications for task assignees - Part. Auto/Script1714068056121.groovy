@@ -22,26 +22,25 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
 
 'Navigate to Data Capture - Connection Forms'
-WebUI.click(findTestObject('Ministry App/HC-Web/Data Capture/Data Capture - Connection Forms'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Data Capture - Connection Forms'))
 
 'Enter "Paren Anaheim Worship 1" in Search field '
-WebUI.setText(findTestObject('Ministry App/HC-Web/Data Capture/Search field'), 'Paren Anaheim Worship 1')
+WebUI.setText(findTestObject('HC-Web/Connection Form/Data Capture/Search field'), 'Paren Anaheim Worship 1')
 
 'Hit the Enter Key on Keyboard '
-WebUI.sendKeys(findTestObject('Ministry App/HC-Web/Data Capture/Search field'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Connection Form/Data Capture/Search field'), Keys.chord(Keys.ENTER))
 
 'Click to open "Paren Anaheim Worship 1" Connection Form '
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Data Capture/Paren Anaheim Worship 1'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Paren Anaheim Worship 1'))
 
 'Navigate to Follow Up tab \r\n\t\t\t\t'
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Data Capture/Follow Ups tab'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Follow Ups tab'))
 
 'To open "Follow Up Rules" drawer'
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Data Capture/Template Rules chevron button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Template Rules chevron button'))
 
 'To open "PAW1" follow up rule '
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Data Capture/PAW1 Rule'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/PAW1 Rule'))
 
-'To navigate to "PAW1" task\'s Rule Builder section'
-WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/Data Capture/PAW1 Task'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/PAW1 Task'))
 

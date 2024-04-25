@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>User Profile</name>
+   <name>Cancel button</name>
    <tag></tag>
-   <elementGuidId>1a050ca5-48ce-48d0-a4d5-b00fd07c4caa</elementGuidId>
+   <elementGuidId>0adc7f2a-4afa-4603-b23b-1181c1ba468d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.ui.image.image-avatar.image-avatar-person</value>
+         <key>XPATH</key>
+         <value>//button[@id='btn-cancel']/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='user-dropdown']/span/span/div/span/div</value>
+         <key>CSS</key>
+         <value>#btn-cancel > span.button-inner-container.jss25</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;PG&quot;i]</value>
+         <value>internal:role=button[name=&quot;Cancel&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,103 +28,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>4ca9e9e8-fce2-4530-ba77-9c747be7916d</webElementGuid>
+      <value>span</value>
+      <webElementGuid>b25e7e0b-9f25-4d91-b89f-76715a727a0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui image image-avatar image-avatar-person</value>
-      <webElementGuid>3d410369-19f8-45cc-8c9d-6249efd7abf5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-testid</name>
-      <type>Main</type>
-      <value>cmui-image</value>
-      <webElementGuid>f0b25458-3575-49b9-a039-57cf93c0fe67</webElementGuid>
+      <value>button-inner-container jss25</value>
+      <webElementGuid>83d6114f-56e1-40ae-a4dd-ab0bc03b04a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>PG</value>
-      <webElementGuid>54dd6e85-1ecd-4f83-8229-1d7de7237943</webElementGuid>
+      <value>Cancel</value>
+      <webElementGuid>42ae4999-9675-4a9a-ad4a-275de39eb0de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;user-dropdown&quot;)/span[@class=&quot;button-inner-container jss253&quot;]/span[1]/div[@class=&quot;user-menu-avatar_container&quot;]/span[1]/div[@class=&quot;ui image image-avatar image-avatar-person&quot;]</value>
-      <webElementGuid>eb2db0f7-b485-4f81-a9c6-828e6a52d1ec</webElementGuid>
+      <value>id(&quot;btn-cancel&quot;)/span[@class=&quot;button-inner-container jss25&quot;]</value>
+      <webElementGuid>c7f7229c-dcdf-4365-9d72-ce3e7acb1e65</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='user-dropdown']/span/span/div/span/div</value>
-      <webElementGuid>7e42d2ac-5621-4cb6-bf46-b094cdf6a887</webElementGuid>
+      <value>//button[@id='btn-cancel']/span</value>
+      <webElementGuid>c929619b-d704-49ea-a60d-81fa53f579b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[2]/following::div[10]</value>
-      <webElementGuid>7fdb1ea4-9979-4176-a6e1-68dd8f7f8ac4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save &amp; Update'])[1]/following::span[1]</value>
+      <webElementGuid>094bf80e-7cac-4f67-8b5b-c1a4eb77dfc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(beta)'])[6]/following::div[18]</value>
-      <webElementGuid>f2bd2cb7-3377-4c9d-b656-22e4d1e2879a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[65]/following::span[2]</value>
+      <webElementGuid>12fb0901-26fd-4723-8599-ee6db5d0206c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[1]/preceding::div[1]</value>
-      <webElementGuid>ed0c906f-ab9f-4326-ac11-32dbf403e007</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::span[1]</value>
+      <webElementGuid>44dc2b72-0db7-485d-be55-e96a51f8744b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notification Preferences'])[1]/preceding::div[3]</value>
-      <webElementGuid>b765ca5f-843a-4816-b0df-367be66e2bd4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Content Management'])[2]/preceding::span[2]</value>
+      <webElementGuid>946574f4-a490-4602-8499-061fdaa88ee3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='PG']/parent::*</value>
-      <webElementGuid>f5041ca7-4859-472b-9cfd-4568014c18a5</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cancel']/parent::*</value>
+      <webElementGuid>3d5b5029-eb23-4786-8fce-92fa5a251148</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/span/div</value>
-      <webElementGuid>8c9cc303-5c41-49a6-bd82-44d908c2f932</webElementGuid>
+      <value>//div[2]/button/span</value>
+      <webElementGuid>f3ebf1a3-4bce-42d2-a6b9-7709b44f3b79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'PG' or . = 'PG')]</value>
-      <webElementGuid>0c8efa7d-41f8-4b81-87ae-be4f094f0d68</webElementGuid>
+      <value>//span[(text() = 'Cancel' or . = 'Cancel')]</value>
+      <webElementGuid>bfbe40a4-5aa7-483f-86d6-6dafe0dcfdc6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

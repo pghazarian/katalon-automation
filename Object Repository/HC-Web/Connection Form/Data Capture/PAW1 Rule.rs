@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Notification Preferences</name>
+   <name>PAW1 Rule</name>
    <tag></tag>
-   <elementGuidId>3235d6cc-fbd2-476c-8aee-39519ae4d911</elementGuidId>
+   <elementGuidId>45e014de-bbe7-45a8-9aa7-76fb029fac14</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#notificationPreferences > div.dropdown_menu--option_inner</value>
+         <key>XPATH</key>
+         <value>//td[@id='data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0']/div/div[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='notificationPreferences']/div</value>
+         <key>CSS</key>
+         <value>div.cmui.grid--column.jss45.jss625</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;Notification Preferences&quot;s]</value>
+         <value>internal:text=&quot;PAW1 rule&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,94 +29,102 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>d99e9086-ccae-44ed-b73e-9da6ad35a279</webElementGuid>
+      <webElementGuid>ef81b052-3962-42a2-ab1c-55af84c3d189</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dropdown_menu--option_inner</value>
-      <webElementGuid>b66ef4bb-d8a6-4256-9938-dff34ddbec7a</webElementGuid>
+      <value>cmui grid--column jss45 jss625</value>
+      <webElementGuid>74c47a9a-a21d-44f2-bf9d-55a6403a7634</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>cmui-grid_column</value>
+      <webElementGuid>6a975750-e672-4f43-bd46-2d35c0fd3dfd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Notification Preferences</value>
-      <webElementGuid>654e2f08-5d3b-45da-b2b4-b745daafec3e</webElementGuid>
+      <value>PAW1 rule</value>
+      <webElementGuid>a5132b36-b7ba-494b-8bd4-207e89b4bf06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;notificationPreferences&quot;)/div[@class=&quot;dropdown_menu--option_inner&quot;]</value>
-      <webElementGuid>0407f0b6-100a-48b8-8087-3715baf82a97</webElementGuid>
+      <value>id(&quot;data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0&quot;)/div[@class=&quot;cmui grid jss7 jss623 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss625&quot;]</value>
+      <webElementGuid>533ebd90-2107-47ac-83ab-b79026c625b5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='notificationPreferences']/div</value>
-      <webElementGuid>e208d3f2-b32a-4fa6-94cb-361e5267ef84</webElementGuid>
+      <value>//td[@id='data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0']/div/div[2]</value>
+      <webElementGuid>51c7574c-c34c-4e62-a3f8-1776f62f9f22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[1]/following::div[2]</value>
-      <webElementGuid>39e1d8ff-69e5-4bd8-896d-4f31307b7614</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Created On/By'])[1]/following::div[4]</value>
+      <webElementGuid>59e1d241-f450-4000-be0c-185e9b4be927</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='PG'])[1]/following::div[5]</value>
-      <webElementGuid>bedf5310-3e47-42d8-b2c8-c599be1cd9dd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modified'])[1]/following::div[4]</value>
+      <webElementGuid>5c551d4b-bde7-45ed-9b05-32032513955b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview Feature'])[1]/preceding::div[1]</value>
-      <webElementGuid>070fe0a1-d71f-4d1c-b66b-1941b2c1cd6f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::div[1]</value>
+      <webElementGuid>995d4a01-3087-46c7-9124-96c09227571d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Preferences'])[1]/preceding::div[3]</value>
-      <webElementGuid>a6f29366-7792-4953-8086-9378848006b1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[2]/preceding::div[1]</value>
+      <webElementGuid>7f47295a-aaf5-4f50-aca6-dcc5cd779a99</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Notification Preferences']/parent::*</value>
-      <webElementGuid>46ae9b41-9a0e-41a9-b037-cce8dded0651</webElementGuid>
+      <value>//*/text()[normalize-space(.)='PAW1 rule']/parent::*</value>
+      <webElementGuid>22a13b34-3b10-487e-addf-cffb342bbe42</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//span/div/div[2]/div</value>
-      <webElementGuid>ffbe2ef6-849d-46df-97a3-f8f617a9d2d1</webElementGuid>
+      <value>//td/div/div[2]</value>
+      <webElementGuid>c2279519-ea3d-4b60-a12e-964668295ce8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Notification Preferences' or . = 'Notification Preferences')]</value>
-      <webElementGuid>bd164760-5291-494c-8019-80508bbd0066</webElementGuid>
+      <value>//div[(text() = 'PAW1 rule' or . = 'PAW1 rule')]</value>
+      <webElementGuid>083dcb02-bd9c-4e9c-be89-8ad89fc5eb84</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

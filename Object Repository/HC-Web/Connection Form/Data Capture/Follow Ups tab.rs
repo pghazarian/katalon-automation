@@ -6,12 +6,12 @@
    <elementGuidId>3de264eb-45f7-464a-bd18-27a8c9994b12</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-4 > span.MuiTypography-root.jss509.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@id='tab-navigation_tab--key-item-4']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tab-navigation_tab--key-item-4 > span.MuiTypography-root.jss509.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

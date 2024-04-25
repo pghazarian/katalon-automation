@@ -6,12 +6,12 @@
    <elementGuidId>86bfcd08-68f9-4048-ab91-7ced0b88c673</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#connection_forms_list_page--page_action_bar_search</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#connection_forms_list_page--page_action_bar_search</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,12 @@
    <elementGuidId>331a70c1-e423-45d9-8fc7-95be22f3283d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.cmui.grid--column.jss45.jss292</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_0']/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.cmui.grid--column.jss45.jss292</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

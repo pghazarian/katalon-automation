@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PAW1 Task</name>
+   <name>User Profile</name>
    <tag></tag>
-   <elementGuidId>44aa02f2-021d-4996-9228-d35e6d392063</elementGuidId>
+   <elementGuidId>1a050ca5-48ce-48d0-a4d5-b00fd07c4caa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#follow_up_rule_editor_drawer--task_details_panel_item_902 > div.cmui.grid.jss7.jss35 > div.cmui.grid--column.jss45.jss65 > p.MuiTypography-root.MuiTypography-body1</value>
+         <key>XPATH</key>
+         <value>//button[@id='user-dropdown']/span/span/div/span/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='follow_up_rule_editor_drawer--task_details_panel_item_902']/div/div[2]/p[2]</value>
+         <key>CSS</key>
+         <value>div.ui.image.image-avatar.image-avatar-person</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;PAW1 Task&quot;i</value>
+         <value>internal:role=button[name=&quot;PG&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,95 +28,103 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>5bd21a79-7afc-4a28-8d92-44b06aadbbaf</webElementGuid>
+      <value>div</value>
+      <webElementGuid>4ca9e9e8-fce2-4530-ba77-9c747be7916d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root MuiTypography-body1</value>
-      <webElementGuid>67515082-65d9-4de0-bb51-86f4905ede0e</webElementGuid>
+      <value>ui image image-avatar image-avatar-person</value>
+      <webElementGuid>3d410369-19f8-45cc-8c9d-6249efd7abf5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>cmui-image</value>
+      <webElementGuid>f0b25458-3575-49b9-a039-57cf93c0fe67</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>PAW1 Task</value>
-      <webElementGuid>2f3219d1-9234-422f-ac2d-06248a54094f</webElementGuid>
+      <value>PG</value>
+      <webElementGuid>54dd6e85-1ecd-4f83-8229-1d7de7237943</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;follow_up_rule_editor_drawer--task_details_panel_item_902&quot;)/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss65&quot;]/p[@class=&quot;MuiTypography-root MuiTypography-body1&quot;]</value>
-      <webElementGuid>c29a0788-e9c6-46ef-9221-e50dec01a64c</webElementGuid>
+      <value>id(&quot;user-dropdown&quot;)/span[@class=&quot;button-inner-container jss253&quot;]/span[1]/div[@class=&quot;user-menu-avatar_container&quot;]/span[1]/div[@class=&quot;ui image image-avatar image-avatar-person&quot;]</value>
+      <webElementGuid>eb2db0f7-b485-4f81-a9c6-828e6a52d1ec</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='follow_up_rule_editor_drawer--task_details_panel_item_902']/div/div[2]/p[2]</value>
-      <webElementGuid>3f46d4f5-3903-4932-847a-d9a85ddde820</webElementGuid>
+      <value>//button[@id='user-dropdown']/span/span/div/span/div</value>
+      <webElementGuid>7e42d2ac-5621-4cb6-bf46-b094cdf6a887</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Action Details'])[1]/following::p[2]</value>
-      <webElementGuid>98bca978-01b3-4c50-87fa-1714c54a7772</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[2]/following::div[10]</value>
+      <webElementGuid>7fdb1ea4-9979-4176-a6e1-68dd8f7f8ac4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Trigger'])[1]/following::p[2]</value>
-      <webElementGuid>0a7ae09e-d5b7-4c01-9a9d-c26588025f06</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(beta)'])[6]/following::div[18]</value>
+      <webElementGuid>f2bd2cb7-3377-4c9d-b656-22e4d1e2879a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/preceding::p[1]</value>
-      <webElementGuid>0a8cdf6c-f6cf-4759-8dab-d9b8770ba49c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[1]/preceding::div[1]</value>
+      <webElementGuid>ed0c906f-ab9f-4326-ac11-32dbf403e007</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Task'])[1]/preceding::p[1]</value>
-      <webElementGuid>bc5fc388-b7df-41be-b673-d4dbc0aa9401</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notification Preferences'])[1]/preceding::div[3]</value>
+      <webElementGuid>b765ca5f-843a-4816-b0df-367be66e2bd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='PAW1 Task']/parent::*</value>
-      <webElementGuid>f7740590-f85b-4574-840b-b8d14b1885a8</webElementGuid>
+      <value>//*/text()[normalize-space(.)='PG']/parent::*</value>
+      <webElementGuid>f5041ca7-4859-472b-9cfd-4568014c18a5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div/div[2]/p[2]</value>
-      <webElementGuid>e4b5debc-5e55-4168-8fc5-3e6d5c62efbf</webElementGuid>
+      <value>//div/span/div</value>
+      <webElementGuid>8c9cc303-5c41-49a6-bd82-44d908c2f932</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'PAW1 Task' or . = 'PAW1 Task')]</value>
-      <webElementGuid>cf86089d-0406-465a-9475-3beb24b77be6</webElementGuid>
+      <value>//div[(text() = 'PG' or . = 'PG')]</value>
+      <webElementGuid>0c8efa7d-41f8-4b81-87ae-be4f094f0d68</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

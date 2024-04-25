@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Data Capture Navigation Item</name>
+   <name>Notification Preferences</name>
    <tag></tag>
-   <elementGuidId>c51bb07c-6e0b-4bdd-a48b-d92b0582fb45</elementGuidId>
+   <elementGuidId>3235d6cc-fbd2-476c-8aee-39519ae4d911</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='notificationPreferences']/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
+         <key>CSS</key>
+         <value>#notificationPreferences > div.dropdown_menu--option_inner</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>p >> internal:has-text=&quot;Data Capture&quot;i</value>
+         <value>internal:role=button[name=&quot;Notification Preferences&quot;s]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,87 +28,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>94472b72-0c36-4da8-b695-7a24f210bd2c</webElementGuid>
+      <value>div</value>
+      <webElementGuid>d99e9086-ccae-44ed-b73e-9da6ad35a279</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root section-label MuiTypography-body1</value>
-      <webElementGuid>acc5b819-3f4a-429b-88c2-8664d0322a10</webElementGuid>
+      <value>dropdown_menu--option_inner</value>
+      <webElementGuid>b66ef4bb-d8a6-4256-9938-dff34ddbec7a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Data Capture</value>
-      <webElementGuid>f18d2438-a20b-42f1-bc10-6465981b5d1d</webElementGuid>
+      <value>Notification Preferences</value>
+      <webElementGuid>654e2f08-5d3b-45da-b2b4-b745daafec3e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]/p[@class=&quot;MuiTypography-root section-label MuiTypography-body1&quot;]</value>
-      <webElementGuid>eef742c6-1c59-49e5-b7ea-7a3a7bb20834</webElementGuid>
+      <value>id(&quot;notificationPreferences&quot;)/div[@class=&quot;dropdown_menu--option_inner&quot;]</value>
+      <webElementGuid>0407f0b6-100a-48b8-8087-3715baf82a97</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
-      <webElementGuid>bf63989d-a9f3-463f-a3dd-2c317f830a95</webElementGuid>
+      <value>//div[@id='notificationPreferences']/div</value>
+      <webElementGuid>e208d3f2-b32a-4fa6-94cb-361e5267ef84</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Designations'])[1]/following::p[1]</value>
-      <webElementGuid>6a41c3c8-93a5-4bbc-b7d2-532feece3722</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[1]/following::div[2]</value>
+      <webElementGuid>39e1d8ff-69e5-4bd8-896d-4f31307b7614</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Giving'])[1]/following::p[1]</value>
-      <webElementGuid>da4c29e9-12c5-4b25-b7ef-f7881f40f8d5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PG'])[1]/following::div[5]</value>
+      <webElementGuid>bedf5310-3e47-42d8-b2c8-c599be1cd9dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Connection Forms'])[1]/preceding::p[1]</value>
-      <webElementGuid>a2f14732-7d83-4f85-aaca-72063ecd247c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview Feature'])[1]/preceding::div[1]</value>
+      <webElementGuid>070fe0a1-d71f-4d1c-b66b-1941b2c1cd6f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Connection Cards'])[1]/preceding::p[1]</value>
-      <webElementGuid>598d66d1-7819-4c60-b926-392579b0e590</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Preferences'])[1]/preceding::div[3]</value>
+      <webElementGuid>a6f29366-7792-4953-8086-9378848006b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Notification Preferences']/parent::*</value>
+      <webElementGuid>46ae9b41-9a0e-41a9-b037-cce8dded0651</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[9]/div/p</value>
-      <webElementGuid>0e55c6fb-1c10-42d9-aa84-02884edabac1</webElementGuid>
+      <value>//span/div/div[2]/div</value>
+      <webElementGuid>ffbe2ef6-849d-46df-97a3-f8f617a9d2d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Data Capture' or . = 'Data Capture')]</value>
-      <webElementGuid>6bd421a9-f961-414a-99a7-8200a8532ce9</webElementGuid>
+      <value>//div[(text() = 'Notification Preferences' or . = 'Notification Preferences')]</value>
+      <webElementGuid>bd164760-5291-494c-8019-80508bbd0066</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
