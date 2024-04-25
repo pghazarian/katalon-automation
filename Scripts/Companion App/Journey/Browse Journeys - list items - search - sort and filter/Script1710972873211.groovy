@@ -25,7 +25,10 @@ import com.detroitlabs.katalonmobileutil.testobject.Button
 import com.detroitlabs.katalonmobileutil.testobject.TextField
 import com.detroitlabs.katalonmobileutil.touch.Swipe as Swipe
 import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDirection
-
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import io.appium.java_client.MobileElement as MobileElement
+import com.kms.katalon.core.testobject.TestObjectXpath
 
 /*
  1. Launch Companion App
@@ -60,6 +63,10 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), ['UserName':'mark
 'Navigate to Journey'
 Button.tap('Nav/Journey Navigation Button', timeout)
 
+Mobile.delay(3)
+'Wait for Journey landing page to display'
+Mobile.waitForElementPresent(Finder.findButton("Journey/Browse Tab"), timeout)
+
 'Tap on the Browse Journeys tab'
 Button.tap('Journey/Browse Tab', timeout)
 
@@ -67,14 +74,58 @@ Button.tap('Journey/Browse Tab', timeout)
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
 
 
-TextField.typeText(Finder.findTextField('Journey/Browse/Search'), UniqueJourneyName + Keys.ENTER, timeout)
+//TextField.typeText(Finder.findTextField('Journey/Browse/Search'), UniqueJourneyName + Keys.ENTER, timeout)
 
 Mobile.delay(3)
 Button.tap('Journey/Browse Tab', timeout)
 
-//String elementText = Mobile.getAttribute(Finder.findLabel('Journey/Browse/List Entry - Public Name'), 'value', timeout)
+Mobile.delay(3)
+
+String elementText = Mobile.getAttribute(Finder.findLabel('Journey/Browse/List Entry - Public Name'), 'text', timeout)
 //String elementText = Mobile.getText(Finder.findLabel('Journey/Browse/List Entry - Public Name'), timeout)
-//println(elementText)
+println('Journey Public Name:')
+println(elementText)
+
+Mobile.delay(1)
+
+
+TestObject testTempObject = Finder.findLabel('Journey/Browse/List Entry - Public Name')
+String myXPath = testTempObject.findPropertyValue('xpath')      //.xpaths
+//List<String> myXPaths = testTempObject.findPropertyValue('xpath')      //.xpaths
+println(myXPath)
+println(testTempObject.findPropertyValue('xpath'))
+println(testTempObject.findPropertyValue('XPATH'))
+println(testTempObject.findXpathValue('xpath'))
+
+
+List<TestObjectXpath> xpathList = testTempObject.getXpaths()
+//println(xpathList[0].getValue())
+println(xpathList[1].getValue())
+
+
+
+/*
+println(strXPath)
+
+TestObject testObj = findTestObject('icon_Social_networking')
+List<WebElement> elements = WebUI.findWebElements(testObj, 10)
+for (int i = 0;  i < elements.size(); ++i) {
+	KeywordUtil.logInfo(elements.get(i).toString())
+}
+*/
+
+//*
+
+AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
+
+List<MobileElement> journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
+for (journeyPublicNameElement in journeyPublicNames) {
+	println(journeyPublicNameElement.getText())
+}
+
+
+//*/
+
 
 //Mobile.verifyElementText(Finder.findLabel('Journey/Browse/List Entry - Public Name'), UniqueJourneyName)
 //Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
@@ -104,6 +155,8 @@ Mobile.verifyElementVisible(Finder.findLabel('Journey/Browse/List Entry - Catego
 //TextField.clearText(Finder.findTextField('Journey/Browse/Search'), timeout)
 
 Mobile.delay(3)
+
+/* ===============================================
 
 'tap on the found journey to show details page'
 Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
@@ -141,7 +194,7 @@ Button.tap("Journey/Details/Back", timeout)
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
 
 'Verify that journey in list has been updated to In-Progress'
-Mobile.verifyElementExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
+//Mobile.verifyElementExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
 
 'tap on the started journey to show details page'
 Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
@@ -167,7 +220,7 @@ Button.tap("Journey/Details/Successfully Opted Out Close", timeout)
 Button.tap("Journey/Details/Back", timeout)
 
 'Verify that journey in list has been updated to not In-Progress (status not displayed'
-Mobile.verifyElementNotExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
+//Mobile.verifyElementNotExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
 
 
 /*

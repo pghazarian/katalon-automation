@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Browse Tab</name>
+   <name>Search</name>
    <tag></tag>
-   <elementGuidId>e42c327c-e3a5-4133-b0f6-42efd0362221</elementGuidId>
+   <elementGuidId>8f984222-c8bc-4b64-90be-24b778488867</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[@text=&quot;Browse Journeys&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-header--journey_search_text</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Browse Tab</name>
+   <name>Back</name>
    <tag></tag>
-   <elementGuidId>e42c327c-e3a5-4133-b0f6-42efd0362221</elementGuidId>
+   <elementGuidId>37743f30-c841-4998-b360-d9db1cbb0c20</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[@text=&quot;Browse Journeys&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-button--back</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

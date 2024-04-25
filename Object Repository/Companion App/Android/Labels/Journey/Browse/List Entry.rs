@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Browse Tab</name>
+   <name>List Entry</name>
    <tag></tag>
-   <elementGuidId>e42c327c-e3a5-4133-b0f6-42efd0362221</elementGuidId>
+   <elementGuidId>e6ca6fe7-47b3-4c9e-a9a6-2fe5098c30b2</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[@text=&quot;Browse Journeys&quot;]</locator>
+   <locator>(//android.view.ViewGroup[@content-desc=&quot;card-journey_undefined-wrapper&quot;])[1]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
