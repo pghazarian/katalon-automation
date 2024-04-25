@@ -17,22 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-not_run: WebUI.callTestCase(findTestCase('HC-Web/Communications/Segment Search/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
-
-SearchTerm = 'ST Segment For Event Test 4'
-
-'Type Search term'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), SearchTerm)
-
-'Initiate Search'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), Keys.chord(Keys.ENTER))
-
-'Open the segment record from the search results'
-WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : SearchTerm]))
+WebUI.callTestCase(findTestCase('HC-Web/Communications/Segment Search/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Edit button next to Events'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Events Edit Button'))
@@ -64,7 +49,30 @@ WebUI.setText(findTestObject('HC-Web/Communications/Segment Search/Overview/Even
 WebUI.setText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Add Event/Data Picker', [('index') : 4]), 
     '04/22/2024')
 
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Events/Add Event/Event Save Button'))
+'Click button to save'
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Events/Add Event/Event Save Button'))
 
-not_run: WebUI.closeBrowser()
+'Verify Event label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Label', [('Event') : 'Event Type']), 
+    'Event Type')
+
+'Verify Event Category is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Event Value', [('EventName') : 'Baptism']), 
+    'Baptism')
+
+'Verify Streak or Count is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Streak or Count Label', [('StreakOrCount') : 'Count']), 
+    'Count')
+
+'Verify Attendance Status and Count are displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Count Attendance Status And Count'), 
+    'Attended 1')
+
+'Verify Date Range Label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Data Range Label'), 'Date Range')
+
+'Verify Date Range is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Data Range Value'), '04/01/2024 - 04/22/2024')
+
+WebUI.closeBrowser()
 
