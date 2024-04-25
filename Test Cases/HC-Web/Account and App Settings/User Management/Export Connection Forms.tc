@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Export Connection Forms</name>
-   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
+   <tag>QA,Dev,Stage2,Stage</tag>
    <comment></comment>
    <testCaseGuid>edab3805-4186-4696-adea-25ccd4b09e26</testCaseGuid>
    <variableLinks>

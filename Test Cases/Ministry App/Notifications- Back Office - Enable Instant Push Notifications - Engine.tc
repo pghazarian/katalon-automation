@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Ability to sent and receive Push Notifications for both Back Office &amp; Ministry App instantly or as part of a daily batch&#xd;
-So we can ensure that emergency type follow up tasks can result in instant push notifications for follow up users</description>
-   <name>Notifications- Back Office - Enable Instant Push Notifications - Engine</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>47d3775d-bcad-459f-a9f5-a8317c173367</testCaseGuid>
-</TestCaseEntity>

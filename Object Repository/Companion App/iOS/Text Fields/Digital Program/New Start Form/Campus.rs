@@ -3,10 +3,20 @@
    <description></description>
    <name>Campus</name>
    <tag></tag>
-   <elementGuidId>d4774178-6bab-4362-98ef-795ea0ebbc48</elementGuidId>
+   <elementGuidId>ef1d337d-797e-4715-b46f-182c82f89c2d</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//XCUIElementTypeStaticText[@name=&quot;Campus&quot;]/../following-sibling::XCUIElementTypeOther[1]</locator>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>XPATH</name>
+      <type>Main</type>
+      <value>(//XCUIElementTypeStaticText[@name=&quot;Campus&quot;]/../following-sibling::XCUIElementTypeTextField)[1]
+</value>
+      <webElementGuid>7333cf54-e604-4555-aaa9-e1967bc1c3c1</webElementGuid>
+   </webElementProperties>
+   <locator>(//XCUIElementTypeStaticText[@name=&quot;Campus&quot;]/../following-sibling::XCUIElementTypeTextField)[1]
+</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

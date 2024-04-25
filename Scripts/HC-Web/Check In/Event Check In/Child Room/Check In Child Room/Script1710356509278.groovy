@@ -44,8 +44,7 @@ if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check
     WebUI.click(findTestObject('HC-Web/Event/Check In/Find Volunteers Button'))
 
     'Switch to person search'
-    CustomKeywords.'FormHelper.setMultipleChoiceControlValueByXPath'('//div[contains(@class,\'radio-pill\')]', 
-        'Person Search')
+    CustomKeywords.'FormHelper.setMultipleChoiceControlValueByXPath'('//div[contains(@class,\'radio-pill\')]', 'Person Search')
 
     'Search for volunteers'
     WebUI.setText(findTestObject('HC-Web/Event/Check In/Volunteer Person Search Bar'), VolunteerSearchName + Keys.chord(
@@ -117,6 +116,8 @@ WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Check In/Attendee Nam
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Confirmation Yes Button'))
+
+WebUI.delay(3)
 
 WebUI.closeBrowser()
 
