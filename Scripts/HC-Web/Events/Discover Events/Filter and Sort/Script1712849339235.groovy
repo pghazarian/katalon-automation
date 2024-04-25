@@ -120,7 +120,7 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration Subnav'))
 
 'Verify registration required'
-WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration Required Yes Radio Option'), 0)
+WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration/Registration Required Yes Radio Option'), 0)
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
@@ -138,7 +138,7 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration Subnav'))
 
 'Verify registration not required'
-WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration Required No Radio Option'), 0)
+WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration/Registration Required No Radio Option'), 0)
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
