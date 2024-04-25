@@ -16,6 +16,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.util.CryptoUtil as CryptoUtil
+
+import com.detroitlabs.katalonmobileutil.device.App
+import com.detroitlabs.katalonmobileutil.device.Device
+import com.detroitlabs.katalonmobileutil.testobject.Finder
+import com.detroitlabs.katalonmobileutil.testobject.Button
+import com.detroitlabs.katalonmobileutil.testobject.TextField
+import com.detroitlabs.katalonmobileutil.touch.Swipe as Swipe
+import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDirection
+
 
 /*
  1. Launch Companion App
@@ -38,3 +48,147 @@ import org.openqa.selenium.Keys as Keys
  17. Verify that the Journey Details are as defined proper content.
  14. close the app
  */
+
+
+def timeout = 3
+def UniqueJourneyName = '21 DAYS OF PRAYER & FASTING'
+
+'Open existing app by the app bundle id'
+WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), ['UserName':'markh@saddleback.com', 'Password':(CryptoUtil.encode(CryptoUtil.getDefault('P@$$w0rd!')))], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+'Navigate to Journey'
+Button.tap('Nav/Journey Navigation Button', timeout)
+
+'Tap on the Browse Journeys tab'
+Button.tap('Journey/Browse Tab', timeout)
+
+'Verify that journey entries exist'
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
+
+
+TextField.typeText(Finder.findTextField('Journey/Browse/Search'), UniqueJourneyName + Keys.ENTER, timeout)
+
+Mobile.delay(3)
+Button.tap('Journey/Browse Tab', timeout)
+
+//String elementText = Mobile.getAttribute(Finder.findLabel('Journey/Browse/List Entry - Public Name'), 'value', timeout)
+//String elementText = Mobile.getText(Finder.findLabel('Journey/Browse/List Entry - Public Name'), timeout)
+//println(elementText)
+
+//Mobile.verifyElementText(Finder.findLabel('Journey/Browse/List Entry - Public Name'), UniqueJourneyName)
+//Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
+//String JourneyNameText = Mobile.getText(Finder.findLabel('Journey/Details/Heading'), timeout)
+//String JourneyNameText = Mobile.getAttribute(Finder.findLabel('Journey/Details/Heading'), 'text', timeout)
+//println(JourneyNameText)
+
+//Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Heading'), timeout)
+
+//Mobile.delay(10)
+
+/*
+Mobile.verifyElementVisible(Finder.findLabel('Journey/Browse/List Entry'), timeout)
+
+Mobile.verifyElementVisible(Finder.findLabel('Journey/Browse/List Entry - Public Name'), timeout)
+
+Mobile.verifyElementVisible(Finder.findLabel('Journey/Browse/List Entry - Image'), timeout)
+
+Mobile.verifyElementVisible(Finder.findLabel('Journey/Browse/List Entry - Subtitle'), timeout)
+
+Mobile.verifyElementVisible(Finder.findLabel('Journey/Browse/List Entry - Category'), timeout)
+*/
+
+//TextField.typeText(Finder.findTextField('Journey/Browse/Search'), UniqueJourneyName, timeout)
+//Mobile.sendKeys(searchJourney, Keys.RETURN)
+
+//TextField.clearText(Finder.findTextField('Journey/Browse/Search'), timeout)
+
+Mobile.delay(3)
+
+'tap on the found journey to show details page'
+Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
+//Mobile.tap(Finder.findTextField('Journey/Browse/Search'), timeout)
+
+Mobile.delay(3)
+
+'wait for details page to fully displayed'
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
+
+'Verify Journey Details header'
+Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Heading'), timeout)
+
+if (Device.isIOS())
+	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+	
+'tap Start button'
+Button.tap("Journey/Details/Start Journey", timeout)
+
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Pathway View/Pathway Header"), timeout)
+
+'tap on the back button from pathway view page'
+Button.tap("Journey/Pathway View/Back", timeout)
+
+'wait for details page to fully displayed'
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
+
+'Verify that the Journey Browse are as defined with In Progress status text and View Pathway and Stop Journey Buttons are displayed.'
+Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
+
+'Tap on Back button to get back to the Journey List'
+Button.tap("Journey/Details/Back", timeout)
+
+'Wait for Browse page to display'
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
+
+'Verify that journey in list has been updated to In-Progress'
+Mobile.verifyElementExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
+
+'tap on the started journey to show details page'
+Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
+
+'wait for details page to fully displayed'
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
+
+'swipe up to make stop journey button visible and accessible'
+//if (!(Mobile.verifyElementVisible(Finder.findButton("Journey/Details/Stop Journey"), timeout)))
+if (Device.isIOS())
+	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+	
+'tap on Stop Journey button'
+Button.tap("Journey/Details/Stop Journey", timeout)
+
+'tap on Stop Journey Yes confirmation button'
+Button.tap("Journey/Details/Prompt Stop Journey Yes", timeout)
+
+'tap on Journey Opted Out confirmation close button'
+Button.tap("Journey/Details/Successfully Opted Out Close", timeout)
+
+'Tap on Back button to get back to the Journey List'
+Button.tap("Journey/Details/Back", timeout)
+
+'Verify that journey in list has been updated to not In-Progress (status not displayed'
+Mobile.verifyElementNotExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
+
+
+/*
+'Tap on a Journey that has been completed'
+
+'Verify that the Journey Details are as defined with Completed status text and only View Pathway Button is displayed'
+
+'Tap on Back button to get back to the Journey List'
+*/
+
+'Verify that there are unpublished journeys that the logged in user has authored'
+
+'Tap on one of the unpublished journeys.'
+
+
+'Navigate to Home'
+Button.tap('Nav/Home Navigation Button', timeout)
+
+'Log out'
+Button.tap('Logout Button', timeout)
+
+Mobile.closeApplication()
+
+
