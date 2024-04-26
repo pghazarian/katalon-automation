@@ -17,14 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Ministry App/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='
-        , ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+Mobile.startApplication(GlobalVariable.ME_App_Path, false)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
+Mobile.tap(findTestObject('Object Repository/ME App/Android/Campus Selector/Continue As Guest Button'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Search icon'), 0)
+Mobile.tap(findTestObject('ME App/Android/Campus Selector/Campus Selector Anaheim Option'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/People icon'), 0)
+Mobile.tap(findTestObject('Object Repository/ME App/Android/Campus Selector/Campus Selector Continue Button'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
+Mobile.tap(findTestObject('ME App/Android/Worship Page/Recent Messages Tab'), 0)
+
+Mobile.tap(findTestObject('Object Repository/ME App/Android/Worship Page/Latest Messages First Listed Item'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/ME App/Android/Worship Page/Message Header'), 'Message & Notes')
+
+Mobile.closeApplication()
 

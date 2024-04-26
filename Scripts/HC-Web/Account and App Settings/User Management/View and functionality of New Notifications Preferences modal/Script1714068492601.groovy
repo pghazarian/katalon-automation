@@ -17,14 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Ministry App/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='
-        , ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/HC User Profile/User Profile'))
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Search icon'), 0)
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/HC User Profile/Notification Preferences'))
 
-Mobile.tap(findTestObject('Ministry App/Navigation/People icon'), 0)
+WebUI.delay(7)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
+WebUI.click(findTestObject('Object Repository/Ministry App/HC-Web/HC User Profile/Cancel button'))
+
+WebUI.closeBrowser()
 

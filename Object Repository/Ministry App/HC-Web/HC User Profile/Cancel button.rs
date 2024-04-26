@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Data Capture Navigation Item</name>
+   <name>Cancel button</name>
    <tag></tag>
-   <elementGuidId>c51bb07c-6e0b-4bdd-a48b-d92b0582fb45</elementGuidId>
+   <elementGuidId>0adc7f2a-4afa-4603-b23b-1181c1ba468d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#btn-cancel > span.button-inner-container.jss25</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
+         <value>//button[@id='btn-cancel']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>p >> internal:has-text=&quot;Data Capture&quot;i</value>
+         <value>internal:role=button[name=&quot;Cancel&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,87 +28,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>94472b72-0c36-4da8-b695-7a24f210bd2c</webElementGuid>
+      <value>span</value>
+      <webElementGuid>b25e7e0b-9f25-4d91-b89f-76715a727a0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root section-label MuiTypography-body1</value>
-      <webElementGuid>acc5b819-3f4a-429b-88c2-8664d0322a10</webElementGuid>
+      <value>button-inner-container jss25</value>
+      <webElementGuid>83d6114f-56e1-40ae-a4dd-ab0bc03b04a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Data Capture</value>
-      <webElementGuid>f18d2438-a20b-42f1-bc10-6465981b5d1d</webElementGuid>
+      <value>Cancel</value>
+      <webElementGuid>42ae4999-9675-4a9a-ad4a-275de39eb0de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]/p[@class=&quot;MuiTypography-root section-label MuiTypography-body1&quot;]</value>
-      <webElementGuid>eef742c6-1c59-49e5-b7ea-7a3a7bb20834</webElementGuid>
+      <value>id(&quot;btn-cancel&quot;)/span[@class=&quot;button-inner-container jss25&quot;]</value>
+      <webElementGuid>c7f7229c-dcdf-4365-9d72-ce3e7acb1e65</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
-      <webElementGuid>bf63989d-a9f3-463f-a3dd-2c317f830a95</webElementGuid>
+      <value>//button[@id='btn-cancel']/span</value>
+      <webElementGuid>c929619b-d704-49ea-a60d-81fa53f579b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Designations'])[1]/following::p[1]</value>
-      <webElementGuid>6a41c3c8-93a5-4bbc-b7d2-532feece3722</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save &amp; Update'])[1]/following::span[1]</value>
+      <webElementGuid>094bf80e-7cac-4f67-8b5b-c1a4eb77dfc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Giving'])[1]/following::p[1]</value>
-      <webElementGuid>da4c29e9-12c5-4b25-b7ef-f7881f40f8d5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[65]/following::span[2]</value>
+      <webElementGuid>12fb0901-26fd-4723-8599-ee6db5d0206c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Connection Forms'])[1]/preceding::p[1]</value>
-      <webElementGuid>a2f14732-7d83-4f85-aaca-72063ecd247c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::span[1]</value>
+      <webElementGuid>44dc2b72-0db7-485d-be55-e96a51f8744b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Connection Cards'])[1]/preceding::p[1]</value>
-      <webElementGuid>598d66d1-7819-4c60-b926-392579b0e590</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Content Management'])[2]/preceding::span[2]</value>
+      <webElementGuid>946574f4-a490-4602-8499-061fdaa88ee3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Cancel']/parent::*</value>
+      <webElementGuid>3d5b5029-eb23-4786-8fce-92fa5a251148</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[9]/div/p</value>
-      <webElementGuid>0e55c6fb-1c10-42d9-aa84-02884edabac1</webElementGuid>
+      <value>//div[2]/button/span</value>
+      <webElementGuid>f3ebf1a3-4bce-42d2-a6b9-7709b44f3b79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Data Capture' or . = 'Data Capture')]</value>
-      <webElementGuid>6bd421a9-f961-414a-99a7-8200a8532ce9</webElementGuid>
+      <value>//span[(text() = 'Cancel' or . = 'Cancel')]</value>
+      <webElementGuid>bfbe40a4-5aa7-483f-86d6-6dafe0dcfdc6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

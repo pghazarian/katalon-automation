@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Data Capture Navigation Item</name>
+   <name>Data Capture - Connection Forms</name>
    <tag></tag>
-   <elementGuidId>c51bb07c-6e0b-4bdd-a48b-d92b0582fb45</elementGuidId>
+   <elementGuidId>c5db5161-42fc-4891-82a7-a62d467b4242</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>94472b72-0c36-4da8-b695-7a24f210bd2c</webElementGuid>
+      <webElementGuid>d9d69cd2-1a6d-4444-a759-3f30a722f15c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiTypography-root section-label MuiTypography-body1</value>
-      <webElementGuid>acc5b819-3f4a-429b-88c2-8664d0322a10</webElementGuid>
+      <webElementGuid>38d98355-8ba3-4278-9b9c-920383e919ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Data Capture</value>
-      <webElementGuid>f18d2438-a20b-42f1-bc10-6465981b5d1d</webElementGuid>
+      <webElementGuid>b98508a9-858a-439e-b643-25602c41e21e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]/p[@class=&quot;MuiTypography-root section-label MuiTypography-body1&quot;]</value>
-      <webElementGuid>eef742c6-1c59-49e5-b7ea-7a3a7bb20834</webElementGuid>
+      <webElementGuid>81f42c40-f860-40ad-997c-7df8656592f9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +60,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
-      <webElementGuid>bf63989d-a9f3-463f-a3dd-2c317f830a95</webElementGuid>
+      <webElementGuid>3b419b1b-54bc-46e9-b65a-eb1332c1e74f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Designations'])[1]/following::p[1]</value>
-      <webElementGuid>6a41c3c8-93a5-4bbc-b7d2-532feece3722</webElementGuid>
+      <webElementGuid>3f739427-44a9-40e3-84c1-a41c600272ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='All Giving'])[1]/following::p[1]</value>
-      <webElementGuid>da4c29e9-12c5-4b25-b7ef-f7881f40f8d5</webElementGuid>
+      <webElementGuid>2566a897-7547-4df4-82a5-6b59f35d6398</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Connection Forms'])[1]/preceding::p[1]</value>
-      <webElementGuid>a2f14732-7d83-4f85-aaca-72063ecd247c</webElementGuid>
+      <webElementGuid>a0033871-7904-466b-98c7-1038a77a8a59</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Connection Cards'])[1]/preceding::p[1]</value>
-      <webElementGuid>598d66d1-7819-4c60-b926-392579b0e590</webElementGuid>
+      <webElementGuid>0c9efdd9-89ae-4420-8922-139c72d8c67e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[9]/div/p</value>
-      <webElementGuid>0e55c6fb-1c10-42d9-aa84-02884edabac1</webElementGuid>
+      <webElementGuid>ec83e196-1472-457d-8ade-ee6e619e34f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +108,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'Data Capture' or . = 'Data Capture')]</value>
-      <webElementGuid>6bd421a9-f961-414a-99a7-8200a8532ce9</webElementGuid>
+      <webElementGuid>c3a16b0a-3085-48ff-9327-131d3c9571b0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -17,14 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Ministry App/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='
-        , ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+Mobile.startApplication('/Users/crisfrancisco/Downloads/Saddleback1.ipa', true)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
+Mobile.tap(findTestObject('Object Repository/ME App/iOS/XCUIElementTypeStaticText - link-label'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Search icon'), 0)
+Mobile.tap(findTestObject('Object Repository/ME App/iOS/XCUIElementTypeStaticText - item-label'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/People icon'), 0)
+Mobile.tap(findTestObject('Object Repository/ME App/iOS/XCUIElementTypeStaticText - styled-label-button-continue'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Navigation/Home icon'), 0)
+Mobile.tap(findTestObject('Object Repository/ME App/iOS/XCUIElementTypeButton - Quick Scan'), 0)
+
+Mobile.closeApplication()
 

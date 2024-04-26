@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Data Capture Navigation Item</name>
+   <name>Follow Ups tab</name>
    <tag></tag>
-   <elementGuidId>c51bb07c-6e0b-4bdd-a48b-d92b0582fb45</elementGuidId>
+   <elementGuidId>3de264eb-45f7-464a-bd18-27a8c9994b12</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#tab-navigation_tab--key-item-4 > span.MuiTypography-root.jss509.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
+         <value>//button[@id='tab-navigation_tab--key-item-4']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>p >> internal:has-text=&quot;Data Capture&quot;i</value>
+         <value>internal:role=tab[name=&quot;Follow Ups&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,87 +28,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>94472b72-0c36-4da8-b695-7a24f210bd2c</webElementGuid>
+      <value>span</value>
+      <webElementGuid>4f6ae892-7c90-4916-b24f-4e05a4d51456</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root section-label MuiTypography-body1</value>
-      <webElementGuid>acc5b819-3f4a-429b-88c2-8664d0322a10</webElementGuid>
+      <value>MuiTypography-root jss509 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
+      <webElementGuid>05dd9c22-e993-431d-84bb-f645b9fdccca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Data Capture</value>
-      <webElementGuid>f18d2438-a20b-42f1-bc10-6465981b5d1d</webElementGuid>
+      <value>Follow Ups</value>
+      <webElementGuid>21660ee3-c45a-4fa0-a881-4f613225e2b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]/p[@class=&quot;MuiTypography-root section-label MuiTypography-body1&quot;]</value>
-      <webElementGuid>eef742c6-1c59-49e5-b7ea-7a3a7bb20834</webElementGuid>
+      <value>id(&quot;tab-navigation_tab--key-item-4&quot;)/span[@class=&quot;MuiTypography-root jss509 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
+      <webElementGuid>6861e4b0-c970-4e16-9550-d402215c8fb9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[9]/div/p</value>
-      <webElementGuid>bf63989d-a9f3-463f-a3dd-2c317f830a95</webElementGuid>
+      <value>//button[@id='tab-navigation_tab--key-item-4']/span</value>
+      <webElementGuid>b8be607e-bbcc-47c9-a001-4a6455747ffb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Designations'])[1]/following::p[1]</value>
-      <webElementGuid>6a41c3c8-93a5-4bbc-b7d2-532feece3722</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auto-Reply Email'])[1]/following::span[1]</value>
+      <webElementGuid>5a3d3791-bb8b-475a-9343-cc45e6d7c489</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Giving'])[1]/following::p[1]</value>
-      <webElementGuid>da4c29e9-12c5-4b25-b7ef-f7881f40f8d5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Form Builder'])[1]/following::span[2]</value>
+      <webElementGuid>da977eda-55eb-455c-96a3-948ea8a50190</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Connection Forms'])[1]/preceding::p[1]</value>
-      <webElementGuid>a2f14732-7d83-4f85-aaca-72063ecd247c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PG'])[1]/preceding::span[2]</value>
+      <webElementGuid>5fb4381c-a483-4343-a6a2-21d38503b89b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Connection Cards'])[1]/preceding::p[1]</value>
-      <webElementGuid>598d66d1-7819-4c60-b926-392579b0e590</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[1]/preceding::span[4]</value>
+      <webElementGuid>51de1546-9658-4d43-bab1-f6f62b5f0478</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Follow Ups']/parent::*</value>
+      <webElementGuid>fb5ea581-d713-4315-8f42-32f899f95b4a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[9]/div/p</value>
-      <webElementGuid>0e55c6fb-1c10-42d9-aa84-02884edabac1</webElementGuid>
+      <value>//button[5]/span</value>
+      <webElementGuid>410b9bbb-6eec-4573-9df4-db55d5422db3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Data Capture' or . = 'Data Capture')]</value>
-      <webElementGuid>6bd421a9-f961-414a-99a7-8200a8532ce9</webElementGuid>
+      <value>//span[(text() = 'Follow Ups' or . = 'Follow Ups')]</value>
+      <webElementGuid>1c3bcc7c-bab3-41f3-9187-d4dae3d01d1c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
