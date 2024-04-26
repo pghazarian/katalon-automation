@@ -198,17 +198,37 @@ class TestObjectHelper {
 	@Keyword
 	def TestObject setDropDownValueWithClick(String id, String value) {
 
-		def xpath = "//div[@id='${id}']/descendant::div[@class='Select-control']"
+		def xpath = "//div[contains(@id,'$id')]/descendant::div[@class='Select-control']"
 
 		def dropdown = getTestObjectWithXpath(xpath)
 
 		WebUI.click(dropdown)
 
-		xpath = "//div[@id='$id']/descendant::div[@class='Select-menu-outer' and not(contains(@style,'visibility: hidden'))]/descendant::div[text()='$value']"
+		xpath = "//div[contains(@id,'$id')]/descendant::div[@class='Select-menu-outer' and not(contains(@style,'visibility: hidden'))]/descendant::div[text()='$value']"
 
 		def dropdownInput = getTestObjectWithXpath(xpath)
 
 		// Type Dropdown value
+		WebUI.click(dropdownInput)
+	}
+	
+	/**
+	 * Set value for Drop Down component
+	 */
+	@Keyword
+	def TestObject setDropDownValueByName(String name, String value) {
+
+		def xpath = "//div[@name='${name}']/descendant::div[@class='Select-control']"
+
+		def dropdown = getTestObjectWithXpath(xpath)
+
+		WebUI.click(dropdown)
+
+		xpath = "//div[@name='$name']/descendant::div[@class='Select-menu-outer' and not(contains(@style,'visibility: hidden'))]/descendant::div[text()='$value']"
+
+		def dropdownInput = getTestObjectWithXpath(xpath)
+
+		// Select Dropdown value
 		WebUI.click(dropdownInput)
 	}
 

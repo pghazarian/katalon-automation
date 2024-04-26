@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PAW1 Rule</name>
+   <tag></tag>
+   <elementGuidId>45e014de-bbe7-45a8-9aa7-76fb029fac14</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.cmui.grid--column.jss45.jss625</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0']/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;PAW1 rule&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ef81b052-3962-42a2-ab1c-55af84c3d189</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cmui grid--column jss45 jss625</value>
+      <webElementGuid>74c47a9a-a21d-44f2-bf9d-55a6403a7634</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>cmui-grid_column</value>
+      <webElementGuid>6a975750-e672-4f43-bd46-2d35c0fd3dfd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PAW1 rule</value>
+      <webElementGuid>a5132b36-b7ba-494b-8bd4-207e89b4bf06</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0&quot;)/div[@class=&quot;cmui grid jss7 jss623 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss625&quot;]</value>
+      <webElementGuid>533ebd90-2107-47ac-83ab-b79026c625b5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0']/div/div[2]</value>
+      <webElementGuid>51c7574c-c34c-4e62-a3f8-1776f62f9f22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Created On/By'])[1]/following::div[4]</value>
+      <webElementGuid>59e1d241-f450-4000-be0c-185e9b4be927</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modified'])[1]/following::div[4]</value>
+      <webElementGuid>5c551d4b-bde7-45ed-9b05-32032513955b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::div[1]</value>
+      <webElementGuid>995d4a01-3087-46c7-9124-96c09227571d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[2]/preceding::div[1]</value>
+      <webElementGuid>7f47295a-aaf5-4f50-aca6-dcc5cd779a99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='PAW1 rule']/parent::*</value>
+      <webElementGuid>22a13b34-3b10-487e-addf-cffb342bbe42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/div[2]</value>
+      <webElementGuid>c2279519-ea3d-4b60-a12e-964668295ce8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'PAW1 rule' or . = 'PAW1 rule')]</value>
+      <webElementGuid>083dcb02-bd9c-4e9c-be89-8ad89fc5eb84</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
