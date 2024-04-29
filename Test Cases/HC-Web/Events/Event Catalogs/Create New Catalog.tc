@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create New Catalog</name>
+   <tag>QA,Dev,Stage2,Stage</tag>
+   <comment></comment>
+   <testCaseGuid>37e731f1-7ff5-4e0d-adfe-68ea18854992</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6b1696f1-a7ad-42bf-8341-2dfb35c431cb</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Baptism'</defaultValue>
+      <description></description>
+      <id>6b1696f1-a7ad-42bf-8341-2dfb35c431cb</id>
+      <masked>false</masked>
+      <name>Tag</name>
+   </variable>
+</TestCaseEntity>

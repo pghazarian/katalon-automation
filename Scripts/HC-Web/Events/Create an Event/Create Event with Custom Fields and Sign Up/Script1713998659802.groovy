@@ -66,7 +66,7 @@ WebUI.click(findTestObject('HC-Web/Event/Event Creation/Create Button'))
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration Subnav'))
 
 'Click button to require registration'
-WebUI.click(findTestObject('HC-Web/Event/Details/Registration/Registration Required Yes Radio Option'))
+WebUI.click(findTestObject('HC-Web/Event/Details/Registration/Registration Required Yes Radio Option Button'))
 
 'Open custom questions drawer'
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration/Add Custom Question Button'))

@@ -308,4 +308,17 @@
          <variableId>d12aab0d-60c7-4627-a374-a247702e1de4</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>0ea2f0d8-5bc4-48b9-85ae-53149b567087</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/Event Catalogs/Create New Catalog</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6b1696f1-a7ad-42bf-8341-2dfb35c431cb</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
