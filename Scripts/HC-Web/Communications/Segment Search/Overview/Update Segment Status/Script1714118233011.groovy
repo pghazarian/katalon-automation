@@ -23,7 +23,7 @@ not_run: WebUI.callTestCase(findTestCase('HC-Web/Communications/Segment Search/S
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
 
-SearchTerm = 'ST Segment 1'
+SearchTerm = 'ST Segment - 2024-03-26 19:33:34'
 
 'Type Search term'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Search Text Field'), SearchTerm)
@@ -34,31 +34,48 @@ WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segment S
 'Open the segment record from the search results'
 WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Table Row', [('SegmentName') : SearchTerm]))
 
-if (WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Target Campus Value', 
-        [('TargetCampus') : 'Anaheim']), 'Anaheim') == true) {
-	
-	'Click button to edit segment info'
-	WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Segment Edit Button'))
+TargetCampus = WebUI.getText(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Segmen Target Campus Value'), 
+    FailureHandling.STOP_ON_FAILURE)
 
-	'Click button to select Status'
-	WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Status Radio Button',
-			[('Status') : 'Active']))
+if (TargetCampus != 'N/A') {
+    'Click button to edit segment info'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Segment Edit Button'))
 
-	'Click button to save segment info'
-	WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Save Button'))
+    'Click button to select Status'
+    WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Status Radio Button', 
+            [('Status') : 'Active']))
 
-	'Verify segment record updated toast is displayed'
-	WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.OPTIONAL)
+    'Click button to save segment info'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Save Button'))
 
-	'Verify the text in the toast message'
-	WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Updated Toast Text'),
-		'Segment data updated successfully', FailureHandling.OPTIONAL)
+    'Verify segment record updated toast is displayed'
+    WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.OPTIONAL)
 
-	'Verify the updated status of segment is visible in the Overview page'
-	WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status', [('SegmentStatus') : 'Active']),
-		'Active')
-	
-} else {	
+    'Verify the text in the toast message'
+    WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Updated Toast Text'), 
+        'Segment data updated successfully', FailureHandling.OPTIONAL)
+
+    'Verify the updated status of segment is visible in the Overview page'
+    WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status', [('SegmentStatus') : 'Active']), 
+        'Active')
+
+    'Click button to edit segment info'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Segment Edit Button'))
+
+    'Click button to select Status'
+    WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Status Radio Button', 
+            [('Status') : 'Inactive']))
+
+    'Click button to save segment info'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Save Button'))
+
+    'Verify segment record updated toast is displayed'
+    WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.OPTIONAL)
+
+    'Verify the text in the toast message'
+    WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Updated Toast Text'), 
+        'Segment data updated successfully', FailureHandling.OPTIONAL)
+} else {
     'Click on the Edit button next to Demographic Info'
     WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Demographic Info/Demographic Info Edit Button'))
 
@@ -103,6 +120,23 @@ if (WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search
     'Verify the updated status of segment is visible in the Overview page'
     WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Status', [('SegmentStatus') : 'Active']), 
         'Active')
+
+    'Click button to edit segment info'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Segment Edit Button'))
+
+    'Click button to select Status'
+    WebUI.click(findTestObject('HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Status Radio Button', 
+            [('Status') : 'Inactive']))
+
+    'Click button to save segment info'
+    WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Edit Segment Info/Edit Segment Save Button'))
+
+    'Verify segment record updated toast is displayed'
+    WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Toast'), FailureHandling.OPTIONAL)
+
+    'Verify the text in the toast message'
+    WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Segment Record Updated Toast Text'), 
+        'Segment data updated successfully', FailureHandling.OPTIONAL)
 }
 
 WebUI.closeBrowser()
