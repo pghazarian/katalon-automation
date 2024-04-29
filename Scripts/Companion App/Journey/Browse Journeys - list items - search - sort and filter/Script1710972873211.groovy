@@ -94,18 +94,6 @@ Button.tap("Journey/Browse/Sort And Filter", timeout)
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Sort By"), timeout)
 
-'Tap on the Cancel Sort and Filter button'
-//Button.tap("Journey/Browse/SortFilter/Cancel", timeout)
-
-'wait for Sort and Filter page to fully displayed'
-//Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
-
-'Tap on the Sort and Filter button'
-//Button.tap("Journey/Browse/Sort And Filter", timeout)
-
-'wait for Sort and Filter page to fully displayed'
-//Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Sort By"), timeout)
-
 'Tap on the Sort By button'
 Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
 
@@ -121,26 +109,26 @@ Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), time
 'Verify that sort order has been applied'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
-String previousJourneyName = ''
-String currentJourneyName = ''
-Boolean SortOrderIsValid = true
-List<MobileElement> journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
-for (journeyPublicNameElement in journeyPublicNames) {
-	//println(journeyPublicNameElement.getText())
-	currentJourneyName = journeyPublicNameElement.getText()
-	if (!previousJourneyName.isEmpty()) {
-		//if (currentJourneyName > previousJourneyName)
-		if (currentJourneyName.compareTo(previousJourneyName) > 0)
-		{
-			'sorting has failed'
-			SortOrderIsValid = false
-			break
-		}
-	}
-	previousJourneyName = currentJourneyName
-}
-//Mobile.verifyEqual(SortOrderIsValid, true)
+String firstJourneyName = ''
+String lastJourneyName = ''
 
+Boolean SortOrderIsValid = true
+int compareResult
+
+List<MobileElement> journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
+int listLength = journeyPublicNames.size()
+
+firstJourneyName = journeyPublicNames[1].text
+lastJourneyName = journeyPublicNames[listLength-1].text
+
+if (lastJourneyName.compareToIgnoreCase(firstJourneyName) < 0)
+{
+	'sorting has failed'
+	SortOrderIsValid = false
+}
+
+'verify that sorting is correct'
+Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Tap on the Sort and Filter button'
 Button.tap("Journey/Browse/Sort And Filter", timeout)
@@ -151,8 +139,89 @@ Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Clear 
 'Tap on the Sort By button'
 Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
 
+'Tap on the Sort A-Z button'
+Button.tap("Journey/Browse/SortFilter/Sort Z-A", timeout)
+
+'Tap on the Apply button'
+Button.tap("Journey/Browse/SortFilter/Apply", timeout)
+
+'Verify that journey browse page visible'
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
+
+'Verify that sort order has been applied'
+
+firstJourneyName = ''
+lastJourneyName = ''
+
+SortOrderIsValid = true
+
+journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
+listLength = journeyPublicNames.size()
+
+firstJourneyName = journeyPublicNames[1].text
+lastJourneyName = journeyPublicNames[listLength-1].text
+
+if (lastJourneyName.compareToIgnoreCase(firstJourneyName) > 0)
+{
+	'sorting has failed'
+	SortOrderIsValid = false
+}
+
+Mobile.verifyEqual(SortOrderIsValid, true)
+
+'Tap on the Sort and Filter button'
+Button.tap("Journey/Browse/Sort And Filter", timeout)
+
+'wait for Sort and Filter page to fully displayed'
+Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Clear Filters"), timeout)
+
+'Tap on the Categories button'
+Button.tap("Journey/Browse/SortFilter/Categories", timeout)
+
+'Tap on the Descipleship entry'
+Button.tap("Journey/Browse/SortFilter/Category/Discipleship", timeout)
+
+'Tap on the Category page back button'
+Button.tap("Journey/Browse/SortFilter/Category/Back", timeout)
+
+'Tap on the Apply button'
+Button.tap("Journey/Browse/SortFilter/Apply", timeout)
+
+'Verify that journey browse page visible'
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
+
+'Verify that category filtering has been applied'
+
+String firstJourneyCategory = ''
+String lastJourneyCategory = ''
+
+Boolean CategoryFilteringIsValid = true
+
+List<MobileElement> journeyCategories = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-categories"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
+listLength = journeyCategories.size()
+
+firstJourneyCategory = journeyCategories[1].text
+lastJourneyCategory = journeyCategories[listLength-1].text
+
+if (firstJourneyCategory.compareToIgnoreCase("Discipleship") != 0 || lastJourneyCategory.compareToIgnoreCase("Discipleship") != 0)
+{
+	'filtering has failed'
+	CategoryFilteringIsValid = false
+}
+
+Mobile.verifyEqual(CategoryFilteringIsValid, true)
+
+'Tap on the Sort and Filter button'
+Button.tap("Journey/Browse/Sort And Filter", timeout)
+
+'wait for Sort and Filter page to fully displayed'
+Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Clear Filters"), timeout)
+
+'Tap on the Sort By button'
+//Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
+
 'Tap on the Sort Relevance button'
-Button.tap("Journey/Browse/SortFilter/Sort Relevance", timeout)
+Button.tap("Journey/Browse/SortFilter/Clear Filters", timeout)
 
 'Tap on the Apply button'
 Button.tap("Journey/Browse/SortFilter/Apply", timeout)
