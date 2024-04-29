@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Backlog Item 108359: Metrics - Service Check-Ins - Add CTAs To Popups</description>
+   <name>Verify Service Check-Ins CTAs Popups - Part. Auto</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6061dc4-f375-4a79-b4bf-0dff6d5f479b</testCaseGuid>
+</TestCaseEntity>

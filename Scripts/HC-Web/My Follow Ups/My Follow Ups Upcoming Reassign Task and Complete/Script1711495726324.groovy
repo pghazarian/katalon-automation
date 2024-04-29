@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add
 'Click the "I\'m Done" button to advance to this point'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Im Done Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Navigation Logo Image Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Navigation Logo Image Button'))
 
 //WebUI.refresh()
 'Click on the My Follow Up menu item'

@@ -15,7 +15,7 @@
       <guid>5ea041c2-550d-4d40-a06f-72eca02c3004</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Ministry App/Navigation</testCaseId>
+      <testCaseId>Test Cases/Ministry App/Shared TCs/Navigation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

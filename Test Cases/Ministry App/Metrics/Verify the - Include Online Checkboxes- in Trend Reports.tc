@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Backlog Item 108982: Metrics - Trend Reports - 8 Week Attendance - Include Online Checkbox&#xd;
+Product Backlog Item 108983: Metrics - Trend Reports - 8 Week Baptisms - Include Online Checkbox&#xd;
+Product Backlog Item 108984: Metrics - Trend Reports - 8 Week Decisions - Include Online Checkbox&#xd;
+Product Backlog Item 109050: Metrics - Trend Reports - M/Q/Y Attendance - Include Online Checkbox&#xd;
+Product Backlog Item 109051: Metrics - Trend Reports - M/Q/Y Baptisms - Include Online Checkbox&#xd;
+Product Backlog Item 109052: Metrics - Trend Reports - M/Q/Y Decisions - Include Online Checkbox</description>
+   <name>Verify the - Include Online Checkboxes- in Trend Reports</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4d9d276e-34a7-4ba2-a97a-3805e2e3cf5a</testCaseGuid>
+</TestCaseEntity>

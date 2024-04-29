@@ -17,16 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Ministry App/Shared TCs/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='
+        , ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/HC User Profile/User Profile'))
+Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/HC User Profile/Notification Preferences'))
+'To open Trending page'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Trending tab'), 0)
 
-WebUI.delay(7)
+'To open Attendance menu options of Trending Reports '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Attendance tile'), 0)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/HC User Profile/Cancel button'))
+'To choose "Attendance Trend Report" menu option '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Attendance Trend Report - menu option'), 0)
 
-WebUI.closeBrowser()
+'To open the Filtering page for the Attendance trend reports  '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Filter icon'), 0)
+
+'To see all available Campus(es) - based on the logged in user\'s Permissions in HC admin '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus - chevron icon'), 0)
 

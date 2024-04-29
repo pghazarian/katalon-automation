@@ -17,16 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Ministry App/Shared TCs/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/HC User Profile/User Profile'))
+'To enter into user\'s profile drawer (top right) '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/User Profile Avatar'), 0)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/HC User Profile/Notification Preferences'))
-
-WebUI.delay(7)
-
-WebUI.click(findTestObject('Object Repository/HC-Web/HC User Profile/Cancel button'))
-
-WebUI.closeBrowser()
+'To open user\'s profile drawer '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Navigation/X Button'), 0)
 
