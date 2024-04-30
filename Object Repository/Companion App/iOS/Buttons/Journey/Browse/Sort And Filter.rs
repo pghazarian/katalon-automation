@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Successfully Opted Out Close</name>
+   <name>Sort And Filter</name>
    <tag></tag>
-   <elementGuidId>c65173cd-6635-4e2c-9eec-e6c9b348081c</elementGuidId>
+   <elementGuidId>86bb687c-5947-4d3c-9e51-8d3e0f15ab61</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.view.ViewGroup[@resource-id=&quot;bottom-sheet-close-button&quot;]/android.widget.ImageView</locator>
+   <locator>(//XCUIElementTypeOther[@name=&quot;pressable-right_filter_action&quot;])[3]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

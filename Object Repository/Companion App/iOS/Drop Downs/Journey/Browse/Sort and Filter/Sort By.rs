@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Successfully Opted Out Close</name>
+   <name>Sort By</name>
    <tag></tag>
-   <elementGuidId>c65173cd-6635-4e2c-9eec-e6c9b348081c</elementGuidId>
+   <elementGuidId>2678d031-6ab9-4d49-b2f9-f257d112ca21</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.view.ViewGroup[@resource-id=&quot;bottom-sheet-close-button&quot;]/android.widget.ImageView</locator>
+   <locator>(//XCUIElementTypeOther[@name=&quot;Sort By &quot;])[3]/XCUIElementTypeOther</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Successfully Opted Out Close</name>
+   <name>Search</name>
    <tag></tag>
-   <elementGuidId>c65173cd-6635-4e2c-9eec-e6c9b348081c</elementGuidId>
+   <elementGuidId>e132da78-0078-4bd1-bce1-daebde1715b1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.view.ViewGroup[@resource-id=&quot;bottom-sheet-close-button&quot;]/android.widget.ImageView</locator>
+   <locator>//XCUIElementTypeTextField[@name=&quot;ui-header--weekend-messages-search-text&quot;]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Successfully Opted Out Close</name>
+   <name>List Entry</name>
    <tag></tag>
-   <elementGuidId>c65173cd-6635-4e2c-9eec-e6c9b348081c</elementGuidId>
+   <elementGuidId>e6ca6fe7-47b3-4c9e-a9a6-2fe5098c30b2</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.view.ViewGroup[@resource-id=&quot;bottom-sheet-close-button&quot;]/android.widget.ImageView</locator>
+   <locator>(//android.view.ViewGroup[@content-desc=&quot;card-journey_undefined-wrapper&quot;])[1]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
