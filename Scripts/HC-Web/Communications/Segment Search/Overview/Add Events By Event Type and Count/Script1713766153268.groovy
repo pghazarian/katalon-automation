@@ -17,6 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def PastDate = new Date().minus(30)
+
+def StartDate = CustomKeywords.'StringHelper.getUSFormatDateForControl'(PastDate)
+
+def CurrentDate = new Date()
+
+def EndDate = CustomKeywords.'StringHelper.getUSFormatDateForControl'(CurrentDate)
+
 WebUI.callTestCase(findTestCase('HC-Web/Communications/Segment Search/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Edit button next to Events'
@@ -41,13 +49,13 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-occurrence-atten
 'Select attendance count from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-occurence-count-selector', '1')
 
-'Click on the date picker'
+'Select start date from date picker'
 WebUI.setText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Add Event/Data Picker', [('index') : 3]), 
-    '04/01/2024')
+    StartDate)
 
-'Click on the date picker'
+'Select end date from date picker'
 WebUI.setText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Add Event/Data Picker', [('index') : 4]), 
-    '04/22/2024')
+    EndDate)
 
 'Click button to save'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segment Search/Overview/Events/Add Event/Event Save Button'))
@@ -72,7 +80,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Ove
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Data Range Label'), 'Date Range')
 
 'Verify Date Range is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Data Range Value'), '04/01/2024 - 04/22/2024')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segment Search/Overview/Events/Data Range Value'), "$StartDate - $EndDate")
 
 WebUI.closeBrowser()
 
