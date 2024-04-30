@@ -120,7 +120,8 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration Subnav'))
 
 'Verify registration required'
-WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration/Registration Required Yes Radio Option'), 0)
+WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration/Registration Required Yes Radio Option Label'), 
+    0)
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
@@ -138,7 +139,8 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration Subnav'))
 
 'Verify registration not required'
-WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration/Registration Required No Radio Option'), 0)
+WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration/Registration Required No Radio Option Label'), 
+    0)
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
@@ -150,7 +152,8 @@ WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Published Fi
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify event is published'
-WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains('Published'))
+WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains(
+        'Published'))
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
@@ -162,7 +165,8 @@ WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Unpublished 
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify event is unpublished'
-WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains('Unpublished'))
+WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains(
+        'Unpublished'))
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))

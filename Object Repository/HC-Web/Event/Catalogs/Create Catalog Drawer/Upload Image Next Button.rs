@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Registration Required Yes Radio Option</name>
+   <name>Upload Image Next Button</name>
    <tag></tag>
-   <elementGuidId>0d38867f-9cfb-4f81-a09c-87cd26c71309</elementGuidId>
+   <elementGuidId>758b6db9-1f05-4b5c-b806-4b4a0c49d061</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='event-details--registration_allowed_yes']/..</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@id='image_uploader--next_stepper']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
