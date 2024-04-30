@@ -96,9 +96,14 @@ Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Sort B
 
 'Tap on the Sort By button'
 Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
-
+Mobile.delay(5)
 'Tap on the Sort A-Z button'
-Button.tap("Journey/Browse/SortFilter/Sort A-Z", timeout)
+if (Device.isIOS()) {
+	Button.tap("Journey/Browse/SortFilter/Next Down Sort Item", timeout)
+}
+else {
+	Button.tap("Journey/Browse/SortFilter/Sort A-Z", timeout)
+}
 
 'Tap on the Apply button'
 Button.tap("Journey/Browse/SortFilter/Apply", timeout)
@@ -115,7 +120,7 @@ String lastJourneyName = ''
 Boolean SortOrderIsValid = true
 int compareResult
 
-List<MobileElement> journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
+List<MobileElement> journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      
 int listLength = journeyPublicNames.size()
 
 firstJourneyName = journeyPublicNames[1].text
@@ -139,8 +144,13 @@ Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Clear 
 'Tap on the Sort By button'
 Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
 
-'Tap on the Sort A-Z button'
-Button.tap("Journey/Browse/SortFilter/Sort Z-A", timeout)
+'Tap on the Sort Z-A button'
+if (Device.isIOS()) {
+	Button.tap("Journey/Browse/SortFilter/Next Down Sort item", timeout)
+}
+else {
+	Button.tap("Journey/Browse/SortFilter/Sort Z-A", timeout)
+}
 
 'Tap on the Apply button'
 Button.tap("Journey/Browse/SortFilter/Apply", timeout)
@@ -261,9 +271,8 @@ Button.tap("Journey/Pathway View/Back", timeout)
 'wait for details page to fully displayed'
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
 
-//Mobile.delay(2)
 'Verify that the Journey Browse are as defined with In Progress status text and View Pathway and Stop Journey Buttons are displayed.'
-//Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
+Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Journey In Progress Status'), timeout)
 
 'Tap on Back button to get back to the Journey List'
 Button.tap("Journey/Details/Back", timeout)
@@ -272,7 +281,7 @@ Button.tap("Journey/Details/Back", timeout)
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
 
 'Verify that journey in list has been updated to In-Progress'
-//Mobile.verifyElementExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
+Mobile.verifyElementExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
 
 'tap on the started journey to show details page'
 Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
@@ -307,61 +316,7 @@ Button.tap("Journey/Details/Successfully Opted Out Close", timeout)
 Button.tap("Journey/Details/Back", timeout)
 
 'Verify that journey in list has been updated to not In-Progress (status not displayed'
-//Mobile.verifyElementNotExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
-
-//===========================================================================
-/*
-Mobile.delay(3)
-
-String elementText = Mobile.getAttribute(Finder.findLabel('Journey/Browse/List Entry - Public Name'), 'text', timeout)
-//String elementText = Mobile.getText(Finder.findLabel('Journey/Browse/List Entry - Public Name'), timeout)
-println('Journey Public Name:')
-println(elementText)
-
-Mobile.delay(1)
-
-TestObject testTempObject = Finder.findLabel('Journey/Browse/List Entry - Public Name')
-String myXPath = testTempObject.findPropertyValue('xpath')      //.xpaths
-//List<String> myXPaths = testTempObject.findPropertyValue('xpath')      //.xpaths
-println(myXPath)
-println(testTempObject.findPropertyValue('xpath'))
-println(testTempObject.findPropertyValue('XPATH'))
-println(testTempObject.findXpathValue('xpath'))
-
-
-List<TestObjectXpath> xpathList = testTempObject.getXpaths()
-//println(xpathList[0].getValue())
-println(xpathList[1].getValue())
-
-println(strXPath)
-
-TestObject testObj = findTestObject('icon_Social_networking')
-List<WebElement> elements = WebUI.findWebElements(testObj, 10)
-for (int i = 0;  i < elements.size(); ++i) {
-	KeywordUtil.logInfo(elements.get(i).toString())
-}
-
-AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
-
-List<MobileElement> journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
-for (journeyPublicNameElement in journeyPublicNames) {
-	println(journeyPublicNameElement.getText())
-}
-=============================================== */
-
-
-/*
-'Tap on a Journey that has been completed'
-
-'Verify that the Journey Details are as defined with Completed status text and only View Pathway Button is displayed'
-
-'Tap on Back button to get back to the Journey List'
-*/
-
-'Verify that there are unpublished journeys that the logged in user has authored'
-
-'Tap on one of the unpublished journeys.'
-
+Mobile.verifyElementNotExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
