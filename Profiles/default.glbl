@@ -124,4 +124,9 @@
       <initValue>'App Files\\ME App\\Android\\hc-android-release.apk'</initValue>
       <name>ME_App_Path</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://saddleback.com'</initValue>
+      <name>Saddleback_URL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
