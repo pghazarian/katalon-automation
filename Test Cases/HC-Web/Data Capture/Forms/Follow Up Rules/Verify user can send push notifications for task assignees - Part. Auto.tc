@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Product Backlog Item 108073: Notifications - Back Office - Task Rule Toggle - UI Design</description>
-   <name>Verify user can send push notifications for task assignees - Part. Auto</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>62cffbc9-2603-4546-9c38-334f9737787d</testCaseGuid>
-</TestCaseEntity>
