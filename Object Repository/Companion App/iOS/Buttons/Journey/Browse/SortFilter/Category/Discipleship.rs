@@ -3,9 +3,9 @@
    <description></description>
    <name>Discipleship</name>
    <tag></tag>
-   <elementGuidId>403cdb0c-edbd-4930-8e15-829fa1ec4270</elementGuidId>
+   <elementGuidId>76a00537-c9da-4600-bf56-05c36acfc723</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//XCUIElementTypeStaticText[@name=&quot;heading&quot; and @label=&quot;Discipleship&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>Discipleship</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
