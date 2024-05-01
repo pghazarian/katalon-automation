@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Sort And Filter</name>
+   <name>Sort By</name>
    <tag></tag>
-   <elementGuidId>b83b4fb7-4062-4d09-8a67-49fd593ce054</elementGuidId>
+   <elementGuidId>2e6214c7-8f62-401e-9364-dc2d98daa575</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//XCUIElementTypeOther[@name=&quot;pressable-right_filter_action&quot;])[3]</locator>
+   <locator>(//XCUIElementTypeOther[@name=&quot;Sort By &quot;])[3]/XCUIElementTypeOther</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
