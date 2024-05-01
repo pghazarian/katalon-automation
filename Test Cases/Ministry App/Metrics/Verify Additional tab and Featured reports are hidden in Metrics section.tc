@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Product Backlog Item 109394: Metrics - UI Access - Hide Additional Tab and Featured Reports</description>
+   <description></description>
    <name>Verify Additional tab and Featured reports are hidden in Metrics section</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>dac4f92a-bb71-4c3c-a3f0-ff64172cd5c9</testCaseGuid>
+   <testCaseGuid>a5954418-49e7-435b-9be7-23e87895ef1c</testCaseGuid>
 </TestCaseEntity>

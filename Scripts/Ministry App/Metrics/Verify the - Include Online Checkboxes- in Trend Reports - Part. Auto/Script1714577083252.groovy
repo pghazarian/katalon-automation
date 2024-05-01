@@ -17,11 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/*
- * 1. Open Ministry App
- * 2. Login
- * 3. Tap on Metrics icon
- * 4. Verify that the "Additional" tab is no longer displayed to the right of the Trending tab
- * 5. Tap on Trending tab
- * 6. Verify that the Featured reports are no longer displayed 
- */
