@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Sort And Filter</name>
+   <name>Sort Z-A</name>
    <tag></tag>
-   <elementGuidId>b83b4fb7-4062-4d09-8a67-49fd593ce054</elementGuidId>
+   <elementGuidId>e9f22e5d-c403-4165-be05-ec8b61362d58</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//XCUIElementTypeOther[@name=&quot;pressable-right_filter_action&quot;])[3]</locator>
+   <locator>//android.widget.CheckedTextView[@resource-id=&quot;android:id/text1&quot; and @text=&quot;Journey Name ( Z - A )&quot;]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

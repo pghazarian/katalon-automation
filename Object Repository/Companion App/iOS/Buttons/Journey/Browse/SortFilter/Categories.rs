@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Sort And Filter</name>
+   <name>Categories</name>
    <tag></tag>
-   <elementGuidId>b83b4fb7-4062-4d09-8a67-49fd593ce054</elementGuidId>
+   <elementGuidId>1313ab82-e48a-492a-a71d-5467b0481f42</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//XCUIElementTypeOther[@name=&quot;pressable-right_filter_action&quot;])[3]</locator>
+   <locator>//XCUIElementTypeStaticText[@name=&quot;heading&quot; and @label=&quot;Discipleship&quot;]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
