@@ -32,31 +32,176 @@ import org.openqa.selenium.WebElement
  * 9. Verify the App Download link
 */
 // Open the URL https://saddleback.com/connect/digital-program
+
+def campusLocation = 'Lake Forest'
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl("$GlobalVariable.Saddleback_URL/connect/digital-program")
 
-WebUI.click(findTestObject('Saddleback Legacy/Digital Program/Campus Selector By Name Match', [('textToMatch') : 'Lake Forest']))
+WebUI.click(findTestObject('Saddleback Legacy/Digital Program/Campus Selector By Name Match', [('textToMatch') : campusLocation]))
 
 WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Continue Button'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Digital Buttons'), 2)
 
-// Click everyone of those buttons
-List<WebElement> elements = WebUI.findWebElements(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Digital Buttons'), 0)
+def digitalProgramByLocationUrl = WebUI.getUrl() 
 
-//for (int i = 0;  i < elements.size(); ++i) {
-//	KeywordUtil.logInfo(i.toString())
-//	KeywordUtil.logInfo(elements.get(i).toString())
-//}
+KeywordUtil.logInfo("validating program by location at: ${digitalProgramByLocationUrl}")
 
-for (element in elements) {
-	KeywordUtil.logInfo("Text: " + element.getText())
-	KeywordUtil.logInfo("Href: " + element.getAttribute('href'))
+// Click every button
+List<WebElement> digitalButtons = WebUI.findWebElements(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Digital Buttons'), 0)
+
+for (int index = 0; index < digitalButtons.size(); index++) {
+	
+	digitalButtons = WebUI.findWebElements(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Digital Buttons'), 0)
+	def digitalButton = digitalButtons.get(index)
+	def buttonText = digitalButton.getText().toLowerCase().trim()
+	def buttonTarget = digitalButton.getAttribute('href')
+
+	if (buttonText != null && !buttonText.empty) {
+		KeywordUtil.logInfo("processing button: ${buttonText}")
+		
+		switch (buttonText) {
+			case "check-in":
+				// click on the check in button
+				digitalButton.click()
+				
+				// verify that the Campus is displayed on the form in the header
+				WebUI.waitForElementPresent(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form Header By Campus Match', [('textToMatch') : campusLocation]), 3, FailureHandling.CONTINUE_ON_FAILURE)
+				
+				def url = WebUI.getUrl()
+				WebUI.verifyEqual(url.contains("/public/connection-form"), true)
+				
+				// verify that the fields are present (FirstName, LastName and Submit button)
+				WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
+				WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Last Name Text Field'))
+				WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Submit Button'))
+				
+				// click Cancel and get back to the Digital program
+				WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
+				break
+				
+			case "notes":
+			
+				digitalButton.click()
+				
+				WebUI.waitForElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Notes/Notes Popup'), 0)
+				WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Notes/Header'))
+				
+				def pdfLinkElement = WebUI.findWebElement(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Notes/PDF link'), 0)
+				def pdfLink = pdfLinkElement.getAttribute("href")
+				
+				WebUI.verifyEqual(!pdfLink.empty, true)
+		
+				WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Notes/Close Button'))
+				
+				break
+				
+			case "give":
+				
+				digitalButton.click()
+				
+				WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Giving Container'), 5)
+				
+				WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/First Name Textfield'), 0)
+				WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Last Name Textfield'), 0)
+				
+				WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Submit Gift Button'), 0)
+				
+				WebUI.back()
+				
+				break
+				
+			case "what's happening":
+				def announcementButton = digitalButton;
+				
+				// click Cancel and get back to the Digital program
+				announcementButton.click()
+				
+				// look at the announcements				
+				List<WebElement> announcementLinks = WebUI.findWebElements(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Announcements/Announcement Links'), 0)
+				
+				int announcementCount = announcementLinks.size()
+				
+				for (int i = 0; i < announcementCount; i++) {
+					announcementLinks = WebUI.findWebElements(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Announcements/Announcement Links'), 0)
+					
+					announcementLink = announcementLinks.get(i)
+
+					def linkText = announcementLink.getText().toLowerCase().trim()
+					def linkTarget = announcementLink.getAttribute('href')
+					
+					KeywordUtil.logInfo("go to announcement: ${linkTarget}")
+					
+					announcementLink.click()
+					WebUI.delay(2)
+					def announcementUrl = WebUI.getUrl()
+					WebUI.verifyTextPresent(campusLocation, false, FailureHandling.CONTINUE_ON_FAILURE)
+					
+					WebUI.back()
+					
+					if (CustomKeywords.'TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Announcements/Announcement Header'))) {
+						// do nothing
+					}
+					else
+					{
+						WebUI.waitForElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Announcement Button'), 0)
+						WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Announcement Button'))
+					}
+				}
+				
+				WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Announcements/Back Button'))
+				break
+				
+			default:
+				
+				// For buttons that lead to a URL external from this page
+				if (buttonTarget != null && buttonTarget.startsWith('http'))
+				{
+					KeywordUtil.logInfo("processing button: ${buttonText} (${buttonTarget})")
+					
+					// click button
+					digitalButton.click()
+				
+					def url = WebUI.getUrl()
+					// inspect URL
+					
+					if (url.contains("/public/connection-form/")) {
+						
+						// verify that the fields are present (FirstName, LastName and Submit button)
+						WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
+						WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Last Name Text Field'))
+						WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Submit Button'))
+						
+						// click Cancel and get back to the Digital program
+						WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
+						
+					} else if (url.contains("saddleback.com/event/")) {
+						
+						WebUI.back()
+						
+					}
+					
+					else {
+						
+						WebUI.back()
+						
+					}
+				} else {
+					
+					// do nothing
+					KeywordUtil.logInfo("processing button: ${buttonText} which has no URL target")
+					
+				}
+			
+				break
+		}
+	}
 }
 
 List<String> hrefs =
-elements.stream()
+digitalButtons.stream()
 	.filter { we -> we.getAttribute('href') != null }
 	.map { we -> we.getAttribute('href') }
 	.collect()
@@ -70,14 +215,5 @@ for (url in hrefs) {
 		WebUI.verifyEqual(statusCode, 200)
 	}
 }
-
-
-//def statusCode = LinkTestUtils.getResponseStatus("$GlobalVariable.Saddleback_URL/connect/digital-program")
-//
-//WebUI.verifyEqual(statusCode, 200)
-//
-//statusCode = LinkTestUtils.getResponseStatus("$GlobalVariable.Saddleback_URL/connect/digital-program1")
-//
-//WebUI.verifyNotEqual(statusCode, 200)
-
+	
 
