@@ -321,4 +321,18 @@
          <variableId>6b1696f1-a7ad-42bf-8341-2dfb35c431cb</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>937dc69a-868a-4907-83ba-1be3a3132e89</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/Managing an Event/Accommodations</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>481f0b4b-002b-4407-8780-7b32d2d85d2d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/Managing an Event/Tags</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
