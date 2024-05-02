@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>PBI 108073: Notifications - Back Office - Task Rule Toggle - UI Design&#xd;
-&amp; the following API PBIs:&#xd;
+   <description>Covers the following PBIs:&#xd;
+PBI 108073: Notifications - Back Office - Task Rule Toggle - UI Design&#xd;
 PBI 108079: Notifications - Back Office - Task Rule Toggle - Data/Backend&#xd;
 PBI 108255: Notifications - Back Office - Task Rule Toggle - API&#xd;
 PBI 108076: Account Settings - Notifications Screen - API Data Pull&#xd;

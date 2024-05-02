@@ -17,3 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Ministry App/Shared TCs/Login'), [('UserName') : 'Pareng@Saddleback.com', ('Password') : 'bGzvpoZCcaztWWDnaA3/tA=='
+        , ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
+
+'To open Trending page'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Trending tab'), 0)
+
+'To open Attendance menu options of Trending Reports '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Attendance tile'), 0)
+
+'To choose "Attendance Trend Report" menu option '
+Mobile.tap(findTestObject('Ministry App/Metrics/Attendance Trend Report - menu option'), 0)
+

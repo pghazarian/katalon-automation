@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers the following PBIs:&#xd;
+Product Backlog Item 108979: Notifications - Back Office - Push Notification Template Design&#xd;
+Product Backlog Item 108980: Notifications - Back Office - Push Notification Template Data Pull / Merge&#xd;
+Product Backlog Item 108981: Notifications - Back Office - Push Notification Template Implementation</description>
+   <name>Verify view and functionality of Push Notifications Templates - Script</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a98a94bd-73d2-44fa-8fd2-af9e14e359b9</testCaseGuid>
+</TestCaseEntity>

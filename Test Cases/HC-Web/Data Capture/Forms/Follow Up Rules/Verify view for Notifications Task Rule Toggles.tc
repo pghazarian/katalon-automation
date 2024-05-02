@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>PBI 108073: Notifications - Back Office - Task Rule Toggle - UI Design&#xd;
-&amp; the following API PBIs:</description>
+   <description>Covers PBI 108073: Notifications - Back Office - Task Rule Toggle - UI Design</description>
    <name>Verify view for Notifications Task Rule Toggles</name>
    <tag></tag>
    <comment></comment>
