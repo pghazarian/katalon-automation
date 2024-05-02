@@ -72,7 +72,7 @@ Button.tap('Journey/Browse Tab', timeout)
 
 'Verify that journey entries exist'
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
-
+//*
 'Verify that the list has entries'
 Mobile.verifyElementVisible(Finder.findLabel('Journey/Browse/List Entry'), timeout)
 
@@ -96,10 +96,11 @@ Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Sort B
 
 'Tap on the Sort By button'
 Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
-Mobile.delay(5)
+
 'Tap on the Sort A-Z button'
 if (Device.isIOS()) {
-	Button.tap("Journey/Browse/SortFilter/Next Down Sort Item", timeout)
+	TextField.typeText(Finder.findTextField('Journey/Browse/SortFilter/Sort By Picker Wheel'), "Journey Name (A - Z)", timeout)
+	Button.tap("Journey/Browse/SortFilter/Sort Done", timeout)
 }
 else {
 	Button.tap("Journey/Browse/SortFilter/Sort A-Z", timeout)
@@ -120,7 +121,13 @@ String lastJourneyName = ''
 Boolean SortOrderIsValid = true
 int compareResult
 
-List<MobileElement> journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      
+List<MobileElement> journeyPublicNames
+if (Device.isIOS()) {
+	journeyPublicNames = driver.findElementsByXPath('//XCUIElementTypeOther[@name="card-journey_undefined-title"]')
+}
+else {
+	journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')
+}      
 int listLength = journeyPublicNames.size()
 
 firstJourneyName = journeyPublicNames[1].text
@@ -146,7 +153,8 @@ Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
 
 'Tap on the Sort Z-A button'
 if (Device.isIOS()) {
-	Button.tap("Journey/Browse/SortFilter/Next Down Sort item", timeout)
+	TextField.typeText(Finder.findTextField('Journey/Browse/SortFilter/Sort By Picker Wheel'), "Journey Name ( Z - A )", timeout)
+	Button.tap("Journey/Browse/SortFilter/Sort Done", timeout)
 }
 else {
 	Button.tap("Journey/Browse/SortFilter/Sort Z-A", timeout)
@@ -159,13 +167,17 @@ Button.tap("Journey/Browse/SortFilter/Apply", timeout)
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
 
 'Verify that sort order has been applied'
-
 firstJourneyName = ''
 lastJourneyName = ''
 
 SortOrderIsValid = true
 
-journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
+if (Device.isIOS()) {
+	journeyPublicNames = driver.findElementsByXPath('//XCUIElementTypeOther[@name="card-journey_undefined-title"]')
+}
+else {
+	journeyPublicNames = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-title"]/android.widget.TextView')
+} 
 listLength = journeyPublicNames.size()
 
 firstJourneyName = journeyPublicNames[1].text
@@ -200,14 +212,19 @@ Button.tap("Journey/Browse/SortFilter/Apply", timeout)
 'Verify that journey browse page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
 
-'Verify that category filtering has been applied'
-
+'Verify that sort order has been applied'
 String firstJourneyCategory = ''
 String lastJourneyCategory = ''
 
 Boolean CategoryFilteringIsValid = true
 
-List<MobileElement> journeyCategories = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-categories"]/android.widget.TextView')      //''.findElementsById(Finder.findLabel('Journey/Browse/List Entry - Public Name'))
+List<MobileElement> journeyCategories
+if (Device.isIOS()) {
+	journeyCategories = driver.findElementsByXPath('//XCUIElementTypeOther[@name="card-journey_undefined-categories"]/XCUIElementTypeStaticText')      
+}
+else {
+	journeyCategories = driver.findElementsByXPath('//android.view.ViewGroup[@content-desc="card-journey_undefined-categories"]/android.widget.TextView')      
+}
 listLength = journeyCategories.size()
 
 firstJourneyCategory = journeyCategories[1].text
@@ -226,9 +243,6 @@ Button.tap("Journey/Browse/Sort And Filter", timeout)
 
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Clear Filters"), timeout)
-
-'Tap on the Sort By button'
-//Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
 
 'Tap on the Sort Relevance button'
 Button.tap("Journey/Browse/SortFilter/Clear Filters", timeout)
@@ -281,7 +295,7 @@ Button.tap("Journey/Details/Back", timeout)
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
 
 'Verify that journey in list has been updated to In-Progress'
-Mobile.verifyElementExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
+Mobile.verifyElementExist(Finder.findLabel('Journey/Browse/In-Progress Status'), timeout)
 
 'tap on the started journey to show details page'
 Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
@@ -299,8 +313,6 @@ else {
 
 'wait for details page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Journey/Details/Stop Journey"), timeout)
-
-Mobile.delay(3)
 	
 'tap on Stop Journey button'
 Button.tap("Journey/Details/Stop Journey", timeout)
@@ -315,8 +327,11 @@ Button.tap("Journey/Details/Successfully Opted Out Close", timeout)
 'Tap on Back button to get back to the Journey List'
 Button.tap("Journey/Details/Back", timeout)
 
+'Wait for Browse page to display'
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
+
 'Verify that journey in list has been updated to not In-Progress (status not displayed'
-Mobile.verifyElementNotExist(Finder.findLabel('Journey/Browse/Journey In Progress Status'), timeout)
+Mobile.verifyElementNotExist(Finder.findLabel('Journey/Browse/In-Progress Status'), timeout)
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
@@ -325,5 +340,6 @@ Button.tap('Nav/Home Navigation Button', timeout)
 Button.tap('Logout Button', timeout)
 
 Mobile.closeApplication()
+
 
 
