@@ -129,4 +129,9 @@
       <initValue>'https://saddleback.com'</initValue>
       <name>Saddleback_URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/Image Files/Test Photo.jpg'</initValue>
+      <name>Stock_Image_Path</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

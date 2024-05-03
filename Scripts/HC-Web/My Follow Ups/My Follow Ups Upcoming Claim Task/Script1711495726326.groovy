@@ -57,7 +57,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Im Done Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Navigation Logo Image Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Navigation Logo Image Button'))
 
 WebUI.refresh()
 

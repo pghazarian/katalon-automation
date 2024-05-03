@@ -3,7 +3,7 @@
    <description></description>
    <name>Successfully Opted Out Close</name>
    <tag></tag>
-   <elementGuidId>c4dd4909-64fe-430b-9a28-55ba8ff62b20</elementGuidId>
+   <elementGuidId>c65173cd-6635-4e2c-9eec-e6c9b348081c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <locator>//android.view.ViewGroup[@resource-id=&quot;bottom-sheet-close-button&quot;]/android.widget.ImageView</locator>
