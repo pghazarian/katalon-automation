@@ -31,33 +31,37 @@ import io.appium.java_client.MobileElement as MobileElement
 import com.kms.katalon.core.testobject.TestObjectXpath
 
 /*
-Prerequisite: Create a Journey on HC back office that includes multiple sections and has a Register for 
-	Ministry where the catalog filters down to a single Ministry.
+Prerequisite:  *Create a Journey in the HC Back Office that contains a required Readable Text step with multiple pages*.  
+Make sure every type of formatting and content is implemented in the test step.
 
 
 1. Log into CA App
 2. Navigate to Journey Browse page
-3. Select a Journey that contains a Link out Step matching prerequisite
+3. Select a Journey that contains a Readable Text Step matching prerequisite
 4. Select Start Journey at the bottom of the screen
 5. Select Got It at the bottom of the modal to clear it.  Select the first section from the Journey pathway.
-6. Complete the required steps to reach the Link out step in the section.
+6. Complete the required steps to reach the Readable Text step in the section.
 7. Tap on the Readable Text step in the pathway view
-8. Tap on the Link out button
-9. Verify that a new web browser button is generated and linked to the proper location defined in the step
-10. Close the Web Browser 
-11. Exit the application
-
+8. Verify that all the formatting of the text on the page is proper
+9. Move the second page of text via buttons and swiping.
+10. Verify that all the formatting of the text on the page is proper
+11. Exit out of the readable text step
+12. return back to the readable text step
+13. Exit out of the Journey
+14. Return back the same journey and tap on the readable text step
+15. Complete the required steps to reach the Readable Text step in the section.
+16. Click Finished button
+17. Exit the application
 */
 
 
 def timeout = 3
-def UniqueJourneyName = 'QA Automation Journey - Link Out'
+def UniqueJourneyName = 'QA Automation Journey - Read Text'
 
 'Open existing app by the app bundle id'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), ['UserName':'markh@saddleback.com', 'Password':(CryptoUtil.encode(CryptoUtil.getDefault('P@$$w0rd!')))], FailureHandling.STOP_ON_FAILURE)
 //WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(3)
 'Navigate to Journey'
 Button.tap('Nav/Journey Navigation Button', timeout)
 
@@ -99,44 +103,30 @@ Mobile.waitForElementPresent(Finder.findLabel("Journey/Pathway View/Pathway Head
 Mobile.tap(Finder.findLabel("Journey/Pathway View/First Section"), timeout)
 
 'tap on first step'
-Mobile.waitForElementPresent(Finder.findLabel("Journey/Pathway View/First Step - Link Out"), timeout)
-Mobile.tap(Finder.findLabel("Journey/Pathway View/First Step - Link Out"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Journey/Pathway View/First Step - Read Text"), timeout)
+Mobile.tap(Finder.findLabel("Journey/Pathway View/First Step - Read Text"), timeout)
 
-//Mobile.delay(3)
+Button.tap("Journey/Pathway View/Read Text/Next Page", timeout)
 
-//Mobile.switchToWebView()
+Button.tap("Journey/Pathway View/Read Text/Previous Page", timeout)
 
-Mobile.delay(10)
+Button.tap("Journey/Pathway View/Read Text/Next Page", timeout)
 
-'tap on webview Done button'
-//Mobile.waitForElementPresent(Finder.findLabel("Journey/Pathway View/Link Out Done"), timeout)
-//Mobile.tap(Finder.findLabel("Journey/Pathway View/Link Out Done"), timeout)
+Button.tap("Journey/Pathway View/Read Text/Next Page", timeout)
 
-//Mobile.switchToNative()
+Button.tap("Journey/Pathway View/Read Text/Finish", timeout)
+
+Mobile.delay(5)
 
 'reset the journey'
 Button.tap("Journey/Pathway View/Reset", timeout)
 Button.tap("Journey/Pathway View/Reset Confirmation", timeout)
-
-Mobile.delay(10)
 
 'tap on the back button from pathway view page'
 Button.tap("Journey/Pathway View/Back", timeout)
 
 'wait for details page to fully displayed'
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
-
-'Tap on Back button to get back to the Journey List'
-//Button.tap("Journey/Details/Back", timeout)
-
-'Wait for Browse page to display'
-//Mobile.waitForElementPresent(Finder.findLabel("Journey/Browse/List Entry"), timeout)
-
-'tap on the started journey to show details page'
-//Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
-
-'wait for details page to fully displayed'
-//Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
 
 'swipe up to make stop journey button visible and accessible'
 if (Device.isIOS()) {
