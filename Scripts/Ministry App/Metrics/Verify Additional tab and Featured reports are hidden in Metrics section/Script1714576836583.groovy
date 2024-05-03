@@ -22,30 +22,8 @@ WebUI.callTestCase(findTestCase('Ministry App/Shared TCs/Login'), [('UserName') 
 
 Mobile.tap(findTestObject('Ministry App/Navigation/Metrics icon'), 0)
 
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
 'To open Trending page'
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Trending tab'), 0)
-
-'To open  Service Check-Ins Trending Reports'
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Service Check-Ins tile'), 0)
-
-'To open the Filtering page for the Attendance trend reports  '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Filter icon'), 0)
-
-'To see all available Campus(es) - based on the logged in user\'s Permissions in HC admin '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus - chevron icon'), 0)
-
-'Anahiem Campus '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup'), 0)
-
-'Back Button '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup (1)'), 0)
-
-Mobile.tap(findTestObject('Ministry App/Metrics/android.view.ViewGroup (2)'), 0)
-
-'Search button '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup (3)'), 0)
-
-Mobile.tap(findTestObject('Ministry App/Metrics/8 Week Trend button'), 0)
-
-Mobile.scrollToText('Latest Weeks', FailureHandling.CONTINUE_ON_FAILURE)
 
