@@ -19,42 +19,42 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/events-central/category-settings'], FailureHandling.STOP_ON_FAILURE)
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/events-central/room-settings'], FailureHandling.STOP_ON_FAILURE)
 
 'If category to be added already exists, remove it'
-if (WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Added Category', 
+if (WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Added Category', 
         [('CategoryTitle') : 'QA Automation Test Category']), 5)) {
-    WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Remove Category Button', [('CategoryTitle') : 'QA Automation Test Category']), 
+    WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Remove Category Button', [('CategoryTitle') : 'QA Automation Test Category']), 
         FailureHandling.STOP_ON_FAILURE)
 }
 
 'Enter a name for a new category'
-WebUI.setText(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Add Category Text Field'), 'QA Automation Test Category')
+WebUI.setText(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Add Category Text Field'), 'QA Automation Test Category')
 
 'Click button to add category'
-WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Add Category Button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Add Category Button'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify that the added category appears in the list'
-WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Added Category', [('CategoryTitle') : 'QA Automation Test Category']), 
+WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Added Category', [('CategoryTitle') : 'QA Automation Test Category']), 
     0)
 
 'Enter the same name for the added category'
-WebUI.setText(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Add Category Text Field'), 'QA Automation Test Category')
+WebUI.setText(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Add Category Text Field'), 'QA Automation Test Category')
 
 'Click button to add category'
-WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Add Category Button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Add Category Button'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify that duplicate categories cannot be added'
-WebUI.verifyElementText(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Category Already Exists Banner'), 
-    'Event Category "QA Automation Test Category" already exists')
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Category Already Exists Banner'), 
+    'Room Category "QA Automation Test Category" already exists')
 
 'Click button to remove previously added category'
-WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Remove Category Button', [('CategoryTitle') : 'QA Automation Test Category']), 
+WebUI.click(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Remove Category Button', [('CategoryTitle') : 'QA Automation Test Category']), 
     FailureHandling.STOP_ON_FAILURE)
 
 'Verify that the category was removed from the list'
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Settings and Preferences/Event Categories/Added Category', [
-            ('CategoryTitle') : 'QA Automation Test Category']), 0)
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Settings and Preferences/Room Categories/Added Category', [('CategoryTitle') : 'QA Automation Test Category']), 
+    0)
 
 WebUI.closeBrowser()
 
