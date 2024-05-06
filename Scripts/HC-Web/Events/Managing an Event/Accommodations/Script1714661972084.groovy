@@ -21,6 +21,13 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/events-central/accommodation-settings'], FailureHandling.STOP_ON_FAILURE)
 
+'If accommodation to be added already exists, remove it'
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Accommodations/Added Accommodation', 
+        [('AccommodationTitle') : 'QA Automation Test Accommodation']), 5)) {
+    WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Accommodations/Remove Accommodation Button', [('AccommodationTitle') : 'QA Automation Test Accommodation']), 
+        FailureHandling.STOP_ON_FAILURE)
+}
+
 'Enter a name for a new accommodation'
 WebUI.setText(findTestObject('HC-Web/Event/Settings and Preferences/Accommodations/Add Accommodation Text Field'), 'QA Automation Test Accommodation')
 

@@ -21,6 +21,13 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/events-central/tag-settings'], FailureHandling.STOP_ON_FAILURE)
 
+'If tag to be added already exists, remove it'
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Tags/Added Tag', 
+        [('TagTitle') : 'QA Automation Test Tag']), 5)) {
+    WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Tags/Remove Tag Button', [('TagTitle') : 'QA Automation Test Tag']), 
+        FailureHandling.STOP_ON_FAILURE)
+}
+
 'Enter a name for a new tag'
 WebUI.setText(findTestObject('HC-Web/Event/Settings and Preferences/Tags/Add Tag Text Field'), 'QA Automation Test Tag')
 
