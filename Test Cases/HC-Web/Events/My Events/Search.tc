@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search</name>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>2473f060-544b-489b-88f7-15697a5e71b7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6be775ec-265d-40fe-9e35-c0b5cef548a8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b097f026-f6d3-435b-a5e9-20388fcca993</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef760e21-e1e3-4e1a-b29e-a3648b22d916</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1ae4b041-752a-4116-8f56-6eee55eabe6d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'QA Automation Event Recurring Daily Does Not End'</defaultValue>
+      <description></description>
+      <id>6be775ec-265d-40fe-9e35-c0b5cef548a8</id>
+      <masked>false</masked>
+      <name>SearchTerm</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.EventCampus</defaultValue>
+      <description></description>
+      <id>b097f026-f6d3-435b-a5e9-20388fcca993</id>
+      <masked>false</masked>
+      <name>EventCampus</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.EventCategory</defaultValue>
+      <description></description>
+      <id>ef760e21-e1e3-4e1a-b29e-a3648b22d916</id>
+      <masked>false</masked>
+      <name>EventCategory</name>
+   </variable>
+   <variable>
+      <defaultValue>'Event used by QA Automation which repeats daily and does not end (do not delete)'</defaultValue>
+      <description></description>
+      <id>1ae4b041-752a-4116-8f56-6eee55eabe6d</id>
+      <masked>false</masked>
+      <name>EventDescription</name>
+   </variable>
+</TestCaseEntity>
