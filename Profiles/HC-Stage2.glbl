@@ -99,4 +99,9 @@
       <initValue>'Baptisms'</initValue>
       <name>EventCategory</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Anaheim'</initValue>
+      <name>EventCampus</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

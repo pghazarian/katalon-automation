@@ -159,4 +159,9 @@
       <initValue>'Adult Ministries'</initValue>
       <name>EventCategory_Edited</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lake Forest'</initValue>
+      <name>EventCampus</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
