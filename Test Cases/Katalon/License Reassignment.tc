@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>License Reassignment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>85ff0310-2560-4f91-bbf5-1fe333636a44</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a15fc360-5c7f-46df-acb4-187e2081a609</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7d01cfff-e21b-4e5e-b688-b714f1e18180</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'pareng@saddleback.com'</defaultValue>
+      <description></description>
+      <id>a15fc360-5c7f-46df-acb4-187e2081a609</id>
+      <masked>false</masked>
+      <name>EmailToRevoke</name>
+   </variable>
+   <variable>
+      <defaultValue>'pareng@saddleback.com'</defaultValue>
+      <description></description>
+      <id>7d01cfff-e21b-4e5e-b688-b714f1e18180</id>
+      <masked>false</masked>
+      <name>EmailToAssign</name>
+   </variable>
+</TestCaseEntity>

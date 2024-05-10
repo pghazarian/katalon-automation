@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 def todaysDateMonthAbbreviated = new Date().format('MMM').toString()
 
-def todaysDateDay = new Date().format('dd').toString()
+def todaysDateDay = new Date().format('d').toString()
 
 def todaysDateAbbreviated = "$todaysDateMonthAbbreviated $todaysDateDay"
 

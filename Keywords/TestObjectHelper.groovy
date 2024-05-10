@@ -211,7 +211,7 @@ class TestObjectHelper {
 		// Type Dropdown value
 		WebUI.click(dropdownInput)
 	}
-	
+
 	/**
 	 * Set value for Drop Down component
 	 */
@@ -287,6 +287,23 @@ class TestObjectHelper {
 
 		// verify the field value'
 		WebUI.verifyEqual(value, valueToCompare)
+	}
+	
+	@Keyword
+	def verifyTextFieldHasValue(TestObject object) {
+		
+		// get the value attribute from the text field
+		def value = getTextFieldValue(object)
+
+		// verify the field value'
+		WebUI.verifyEqual(value != null && value.length() > 0, true)
+	}
+	
+	@Keyword
+	def getTextFieldValue(TestObject object) {
+		
+		// get the value attribute from the text field and return it
+		return WebUI.getAttribute(object, 'value')
 	}
 
 	@Keyword

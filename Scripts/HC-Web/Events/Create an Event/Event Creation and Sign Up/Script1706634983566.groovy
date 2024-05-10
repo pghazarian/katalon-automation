@@ -60,6 +60,10 @@ WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Occurrence Schedule
 'Click button to add attendee'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Button'))
 
+'Click button to add attendee'
+WebUI.waitForElementNotHasAttribute(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Button'), 'disabled', 
+    0)
+
 'Add attendee for this occurrence only'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/For This Occurrence Option'))
 

@@ -177,6 +177,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Upcoming Radio
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Table Row Serving Opp'))
 
 'Add volunteer to SO'
+WebUI.waitForElementNotHasAttribute(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Button'), 'disabled', 
+    0)
+
+'Add volunteer to SO'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Button'))
 
 'Add to this occurrence'
