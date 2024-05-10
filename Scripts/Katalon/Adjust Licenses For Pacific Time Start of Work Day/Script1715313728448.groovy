@@ -17,34 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/* Write me a test case that:
-* 1. Open a browser to a URL
-* 2. Log in to the website
-* 3. Click the login button
-* 4. Input username and password
-* 5. Close the browser
-*/
-/*
- *  This test case opens a browser to a specified URL, logs in to the website, clicks the login button,
- *  inputs the username and password, and then closes the browser.
- *
- *  @param url The URL of the website to be opened
- *  @param username The username to be inputted
- *  @param password The password to be inputted
- */
+WebUI.callTestCase(findTestCase('Katalon/License Reassignment'), [('EmailToRevoke') : 'sanchita@optimumfuturist.com', ('EmailToAssign') : 'crisf@saddleback.com'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-'Open browser to URL'
-WebUI.openBrowser('https://www.example.com')
-
-'Log in to the website'
-WebUI.click(findTestObject('Page_Login/button_Login'))
-
-'Click the login button'
-WebUI.click(findTestObject('Page_Login/button_Login'))
-
-'Input username and password'
-WebUI.setText(findTestObject('Page_Login/input_Username'), 'username')
-WebUI.setText(findTestObject('Page_Login/input_Password'), 'password')
-
-// Close the browser
-WebUI.closeBrowser()
