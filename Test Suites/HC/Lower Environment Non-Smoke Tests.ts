@@ -363,4 +363,35 @@
       <testCaseId>Test Cases/HC-Web/Events/My Events/Filter and Sort</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>70b47435-32df-44eb-9969-f1d305ef3ad8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/My Events/My Events Search</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6be775ec-265d-40fe-9e35-c0b5cef548a8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b097f026-f6d3-435b-a5e9-20388fcca993</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ef760e21-e1e3-4e1a-b29e-a3648b22d916</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1ae4b041-752a-4116-8f56-6eee55eabe6d</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
