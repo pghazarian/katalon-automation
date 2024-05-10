@@ -17,9 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'TestCaseHelper.isBrowserOpen'()
-
-WebUI.openBrowser('https://hc-stage.saddleback.com')
-
-CustomKeywords.'TestCaseHelper.isBrowserOpen'()
+WebUI.callTestCase(findTestCase('Katalon/License Reassignment'), [('EmailToRevoke') : 'crisf@saddleback.com', ('EmailToAssign') : 'sanchita@optimumfuturist.com'], 
+    FailureHandling.STOP_ON_FAILURE)
 

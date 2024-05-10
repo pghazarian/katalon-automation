@@ -11,13 +11,38 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObjectXpath as TestObjectXpath
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('HC-Web/Navigation/People Nav'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser(GlobalVariable.HC_HostUrl)
 
-WebUI.callTestCase(findTestCase('HC-Web/Navigation/People Nav'), [:], FailureHandling.STOP_ON_FAILURE)
+def to = findTestObject('Object Repository/HC-Web/Login/Email Address Textfield')
 
+WebUI.verifyElementPresent(to, 5)
+
+println(to.properties.size())
+
+for(item in to.properties) {
+	println(item.name)
+	println(item.value)
+}
+	
+
+println(to.getXpaths().size())
+
+for(item in to.getXpaths()) {
+	println(item.name)
+	println(item.value)
+}
+
+List<TestObjectXpath> txp = to.getXpaths()
+println(txp.size())
+
+def searchResults = txp.find { it.name  == "xpath:attributes" }
+
+if (searchResults != null)
+	println(searchResults.value)
