@@ -164,4 +164,9 @@
       <initValue>'Lake Forest'</initValue>
       <name>EventCampus</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'9492'</initValue>
+      <name>SO_Id_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
