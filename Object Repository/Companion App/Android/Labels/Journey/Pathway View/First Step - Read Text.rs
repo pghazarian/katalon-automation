@@ -3,9 +3,9 @@
    <description></description>
    <name>First Step - Read Text</name>
    <tag></tag>
-   <elementGuidId>0ec90a4d-873a-42d4-b433-e4a31dd81be9</elementGuidId>
+   <elementGuidId>d1582d67-90df-461a-96c3-556eaf37bb3c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Read Document, Read Text Step Test</locator>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locator>//android.view.ViewGroup[starts-with(@content-desc, &quot;journey-step-&quot;)]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

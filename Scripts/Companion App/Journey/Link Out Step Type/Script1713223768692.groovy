@@ -102,17 +102,18 @@ Mobile.tap(Finder.findLabel("Journey/Pathway View/First Section"), timeout)
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Pathway View/First Step - Link Out"), timeout)
 Mobile.tap(Finder.findLabel("Journey/Pathway View/First Step - Link Out"), timeout)
 
-//Mobile.delay(3)
-
-//Mobile.switchToWebView()
-
 Mobile.delay(10)
+
+Mobile.switchToNative()
+
+Mobile.delay(5)
 
 'tap on webview Done button'
 //Mobile.waitForElementPresent(Finder.findLabel("Journey/Pathway View/Link Out Done"), timeout)
-//Mobile.tap(Finder.findLabel("Journey/Pathway View/Link Out Done"), timeout)
+Mobile.tap(Finder.findLabel("Journey/Pathway View/Link Out Done"), timeout)
 
 //Mobile.switchToNative()
+Mobile.delay(5)
 
 'reset the journey'
 Button.tap("Journey/Pathway View/Reset", timeout)

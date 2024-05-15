@@ -59,8 +59,8 @@ def timeout = 3
 def UniqueJourneyName = 'QA Automation Journey - Read Text'
 
 'Open existing app by the app bundle id'
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), ['UserName':'markh@saddleback.com', 'Password':(CryptoUtil.encode(CryptoUtil.getDefault('P@$$w0rd!')))], FailureHandling.STOP_ON_FAILURE)
-//WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), ['UserName':'markh@saddleback.com', 'Password':(CryptoUtil.encode(CryptoUtil.getDefault('P@$$w0rd!')))], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Navigate to Journey'
 Button.tap('Nav/Journey Navigation Button', timeout)
@@ -87,11 +87,41 @@ Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeou
 'Verify Journey Details header'
 Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Heading'), timeout)
 
+/*
 if (Device.isIOS()) {
 	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
 }
 else {
 	Mobile.scrollToText('Start Journey', FailureHandling.STOP_ON_FAILURE)
+}
+*/
+
+if (Device.isIOS()) {
+	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+}
+else {
+	if (Mobile.verifyElementVisible(Finder.findButton("Journey/Details/Stop Journey"), 3, FailureHandling.OPTIONAL)) {
+		Mobile.scrollToText('Stop Journey', FailureHandling.STOP_ON_FAILURE)
+	}
+	else {
+		Mobile.scrollToText('Start Journey', FailureHandling.STOP_ON_FAILURE)
+	}
+}
+
+'stop the journey if previously started'
+if(Mobile.verifyElementVisible(Finder.findButton("Journey/Details/Stop Journey"), 3, FailureHandling.OPTIONAL)) {
+	'wait for details page to fully displayed'
+	Mobile.waitForElementPresent(Finder.findButton("Journey/Details/Stop Journey"), timeout)
+		
+	'tap on Stop Journey button'
+	Button.tap("Journey/Details/Stop Journey", timeout)
+	
+	'tap on Stop Journey Yes confirmation button'
+	Button.tap("Journey/Details/Prompt Stop Journey Yes", timeout)
+	
+	Mobile.delay(3)
+	'tap on Journey Opted Out confirmation close button'
+	Button.tap("Journey/Details/Successfully Opted Out Close", timeout)
 }
 	
 'tap Start button'
@@ -116,7 +146,12 @@ Button.tap("Journey/Pathway View/Read Text/Next Page", timeout)
 
 Button.tap("Journey/Pathway View/Read Text/Finish", timeout)
 
-Mobile.delay(5)
+//Mobile.delay(5)
+
+'tap on back to journey button'
+if(Mobile.verifyElementVisible(Finder.findButton('Journey/Pathway View/Up Next Mode/Back to Journey'), 3, FailureHandling.OPTIONAL)) {
+	Button.tap('Journey/Pathway View/Up Next Mode/Back to Journey', timeout)
+}
 
 'reset the journey'
 Button.tap("Journey/Pathway View/Reset", timeout)

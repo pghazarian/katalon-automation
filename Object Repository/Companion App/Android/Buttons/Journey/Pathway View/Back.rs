@@ -3,9 +3,9 @@
    <description></description>
    <name>Back</name>
    <tag></tag>
-   <elementGuidId>ca3ecca6-ebda-4e34-9207-709e54d86fae</elementGuidId>
+   <elementGuidId>ea2055c3-4ae0-4493-81a8-7aaf86e5ea3c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-button--back</locator>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locator>//android.widget.TextView[@text=&quot;Back&quot;]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
