@@ -31,10 +31,6 @@ import io.appium.java_client.MobileElement as MobileElement
 import com.kms.katalon.core.testobject.TestObjectXpath
 
 /*
-Prerequisite:  *Create a Journey in the HC Back Office that contains a required Readable Text step with multiple pages*.  
-Make sure every type of formatting and content is implemented in the test step.
-
-
 1. Log into CA App
 2. Navigate to Journey Browse page
 3. Select a Journey that contains a Readable Text Step matching prerequisite
