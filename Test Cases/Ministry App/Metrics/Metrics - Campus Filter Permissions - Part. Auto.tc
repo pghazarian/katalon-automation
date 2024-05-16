@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Product Backlog Item 109145: Metrics - Trend Reports - Filter by Campus Permissions</description>
    <name>Metrics - Campus Filter Permissions - Part. Auto</name>
    <tag></tag>
    <comment></comment>

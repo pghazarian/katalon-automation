@@ -28,8 +28,7 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Trending tab')
 'To open Attendance menu options of Trending Reports '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Attendance tile'), 0)
 
-'To choose "Attendance Trend Report" menu option '
-Mobile.tap(findTestObject('Ministry App/Metrics/Attendance Trend Report - menu option'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Attendance Trend Report - menu option'), 0)
 
 'To open the Filtering page for the Attendance trend reports  '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Filter icon'), 0)
@@ -37,14 +36,16 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Filter icon'),
 'To see all available Campus(es) - based on the logged in user\'s Permissions in HC admin '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus - chevron icon'), 0)
 
-'Anahiem Campus '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup'), 0)
+'To select Anahiem campus '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Anahiem Campus'), 0)
 
-'Back Button '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup (1)'), 0)
+'To go back to the main Filters screen '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Back button'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Metrics/android.view.ViewGroup (2)'), 0)
+Mobile.tap(findTestObject('Ministry App/Metrics/Campus selections screen - Back button'), 0)
 
-'Search button '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup (3)'), 0)
+'To return Search results\r\n\t\t'
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Search button'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/8 Week Trend button'), 0)
 
