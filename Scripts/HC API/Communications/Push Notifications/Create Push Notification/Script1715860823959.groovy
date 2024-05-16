@@ -19,10 +19,16 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    response = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Get Push Notifications'))
+response = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Post Push Notification'))
 
-    // Validate the response was successful (HTTP Code 200 == Status)
-    WS.verifyResponseStatusCode(response, 200)
+// Validate the response was successful (HTTP Code 200 == Status)
+WS.verifyResponseStatusCode(response, 200)
 
-    WS.verifyElementPropertyValue(response, 'results[6].name', 'ST Push Notifications 1')
+WS.verifyElementPropertyValue(response, 'audienceType', 'AllDevices')
+
+WS.verifyElementPropertyValue(response, 'name', null)
+
+WS.verifyElementPropertyValue(response, 'description', null)
+
+WS.verifyElementPropertyValue(response, 'sendPush', true)
 
