@@ -38,6 +38,8 @@ WebUI.openBrowser('https://my.katalon.com/')
  * 8. Revoke Access for Old User By Email Address, pareng@saddleback.com
  * 9. Add Access for New User By Email Address, crisf@saddleback.com
  */
+WebUI.waitForElementPresent(findTestObject('Object Repository/Katalon Web/Login/Continue with email Link'), timeout) 
+
 WebUI.click(findTestObject('Object Repository/Katalon Web/Login/Continue with email Link'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Katalon Web/Login/Log in Header'), timeout)
@@ -54,30 +56,37 @@ WebUI.click(findTestObject('Object Repository/Katalon Web/License Link'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Katalon Web/License Management/Header'), timeout)
 
-WebUI.click(findTestObject('Katalon Web/License Management/Person Row Checkbox By Email Match', [('textToMatch') : EmailToRevoke]))
-
-WebUI.click(findTestObject('Object Repository/Katalon Web/License Management/Revoke Button'))
-
-WebUI.click(findTestObject('Object Repository/Katalon Web/License Management/Revoke Remove Confirm Button'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Katalon Web/License Management/Loading Spinner'), timeout)
-
-WebUI.waitForElementNotVisible(findTestObject('Object Repository/Katalon Web/License Management/Loading Spinner'), timeout)
+if (WebUI.waitForElementPresent(findTestObject('Katalon Web/License Management/Person Row Checkbox By Email Match', [('textToMatch') : EmailToRevoke]), timeout, FailureHandling.OPTIONAL)) {
+	
+	WebUI.click(findTestObject('Katalon Web/License Management/Person Row Checkbox By Email Match', [('textToMatch') : EmailToRevoke]))
+	
+	WebUI.click(findTestObject('Object Repository/Katalon Web/License Management/Revoke Button'))
+	
+	WebUI.click(findTestObject('Object Repository/Katalon Web/License Management/Revoke Remove Confirm Button'))
+	
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Katalon Web/License Management/Loading Spinner'), timeout)
+	
+	WebUI.waitForElementNotVisible(findTestObject('Object Repository/Katalon Web/License Management/Loading Spinner'), timeout)
+}
 
 WebUI.click(findTestObject('Object Repository/Katalon Web/License Management/Assign Button'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Katalon Web/Assign License/Assign License Button'), timeout)
 
-WebUI.click(findTestObject('Object Repository/Katalon Web/Assign License/Person Row Checkbox By Email Match', [('textToMatch') : EmailToAssign]))
-
-WebUI.click(findTestObject('Object Repository/Katalon Web/Assign License/Assign License Button'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Katalon Web/Assign License/Assign Success Banner'), timeout)
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/Katalon Web/Assign License/Person Row Checkbox By Email Match', [('textToMatch') : EmailToAssign]), timeout, FailureHandling.OPTIONAL)) {
+	
+	WebUI.click(findTestObject('Object Repository/Katalon Web/Assign License/Person Row Checkbox By Email Match', [('textToMatch') : EmailToAssign]))
+	
+	WebUI.click(findTestObject('Object Repository/Katalon Web/Assign License/Assign License Button'))
+	
+	WebUI.waitForElementPresent(findTestObject('Object Repository/Katalon Web/Assign License/Assign Success Banner'), timeout)
+	
+}
 
 WebUI.click(findTestObject('Object Repository/Katalon Web/Assign License/Close Button'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Katalon Web/License Management/Header'), timeout)
 
-WebUI.verifyTextPresent(EmailToAssign, false)
+WebUI.verifyElementPresent(findTestObject('Katalon Web/License Management/Person Row Checkbox By Email Match', [('textToMatch') : EmailToAssign]), timeout)
 
 
