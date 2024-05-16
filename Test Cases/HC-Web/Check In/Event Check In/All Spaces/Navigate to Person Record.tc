@@ -11,11 +11,24 @@
       <value></value>
       <variableId>797c436d-2307-4c18-9702-b97d2d3add11</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>308c629d-d5a3-4eb9-a33a-0d3fcea8c34e</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
       <description></description>
       <id>797c436d-2307-4c18-9702-b97d2d3add11</id>
       <masked>false</masked>
       <name>EventId</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.SO_GeneralRoom</defaultValue>
+      <description></description>
+      <id>308c629d-d5a3-4eb9-a33a-0d3fcea8c34e</id>
+      <masked>false</masked>
+      <name>RoomName</name>
    </variable>
 </TestCaseEntity>
