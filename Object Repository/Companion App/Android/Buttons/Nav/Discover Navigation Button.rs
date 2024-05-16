@@ -3,9 +3,9 @@
    <description></description>
    <name>Discover Navigation Button</name>
    <tag></tag>
-   <elementGuidId>d5107422-cd0b-47e4-89f2-c7e57f759b31</elementGuidId>
+   <elementGuidId>a2ef7606-2fd2-4684-a6bf-11e70482baf0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-icon--buttom-nav-Discover</locator>
+   <locator>Discover</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
