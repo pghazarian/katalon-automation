@@ -27,6 +27,26 @@ CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('My Stuff', 'Hom
 
 CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('My Stuff', 'My Follow Ups', 'My Follow Ups')
 
+'Verify Categories Sub Nav'
+WebUI.click(findTestObject("Object Repository/HC-Web/My Follow Ups/Subnavigation Button By Name Match", [('textToMatch') : 'Active']))
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/My Follow Ups/Past 7 Days Heading Label'), 0)
+
+'Verify Tags Sub Nav'
+WebUI.click(findTestObject("Object Repository/HC-Web/My Follow Ups/Subnavigation Button By Name Match", [('textToMatch') : 'Escalated']))
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/My Follow Ups/Past 7 Days Heading Label'), 0)
+
+'Verify Tags Sub Nav'
+WebUI.click(findTestObject("Object Repository/HC-Web/My Follow Ups/Subnavigation Button By Name Match", [('textToMatch') : 'Unclaimed']))
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/My Follow Ups/Past 7 Days Heading Label'), 0)
+
+'Verify Tags Sub Nav'
+WebUI.click(findTestObject("Object Repository/HC-Web/My Follow Ups/Subnavigation Button By Name Match", [('textToMatch') : 'Completed']))
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/My Follow Ups/Past 7 Days Heading Label'), 0)
+
+'Verify Tags Sub Nav'
+WebUI.click(findTestObject("Object Repository/HC-Web/My Follow Ups/Subnavigation Button By Name Match", [('textToMatch') : 'My Teams']))
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/My Follow Ups/Follow Ups Heading Label'), 0)
+
 CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('My Stuff', 'All Follow Ups', 'All Follow Ups')
 
 // This will open the My Ministries page if the user has no ministries assigned or two or more ministries assigned
