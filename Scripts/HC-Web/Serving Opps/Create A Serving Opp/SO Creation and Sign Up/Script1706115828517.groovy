@@ -48,13 +48,15 @@ try {
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/What and Why Option'))
 
     'Name SO'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Name Text Field'), 'Katalon Test SO')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Name Text Field'), ServOppName)
 
     'Give SO a short description'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Short Description Text Field'), 'Katalon Test SO')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Short Description Text Field'), 
+        'QA automation SO created by Katalon test')
 
     'Give SO a long description'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Long Description Text Field'), 'SO Created for Katalon Testing')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Long Description Text Field'), 
+        'One-time SO at Saddleback location created by a QA automation test. Can be deleted.')
 
     'Click button to add a contact'
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Add Contact Button'))
@@ -86,7 +88,8 @@ try {
 
     WebUI.delay(2)
 
-    def expanded = WebUI.getAttribute(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Expand Venue List Button'), 'aria-expanded')
+    def expanded = WebUI.getAttribute(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Expand Venue List Button'), 
+        'aria-expanded')
 
     'Verify venue list is expanded'
     if (expanded == 'false') {
@@ -101,7 +104,8 @@ try {
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/When and Where Next Section Chevron Button'))
 
     'Enter volunteer capacity'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Volunteer Capacity Text Field'), '10')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Volunteer Capacity Text Field'), 
+        '10')
 
     'Open custom question editor drawer'
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Edit Custom Questions Button'))
@@ -174,7 +178,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/List View Serv
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Upcoming Radio Option Serving Opps'))
 
 'Select first SO in list'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Table Row Serving Opp'))
+WebUI.click(findTestObject('HC-Web/Serving Opps/Table Row Serving Opp', [('ServOppName') : ServOppName]))
 
 'Add volunteer to SO'
 WebUI.waitForElementNotHasAttribute(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Button'), 'disabled', 
