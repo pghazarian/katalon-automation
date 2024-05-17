@@ -48,13 +48,15 @@ try {
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/What and Why Option'))
 
     'Name SO'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Name Text Field'), 'Katalon Test SO')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Name Text Field'), ServOppName)
 
     'Give SO a short description'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Short Description Text Field'), 'Katalon Test SO')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Short Description Text Field'), 
+        'QA automation SO created by Katalon test')
 
     'Give SO a long description'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Long Description Text Field'), 'SO Created for Katalon Testing')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Long Description Text Field'), 
+        'One-time SO at custom location created by a QA automation test. Can be deleted.')
 
     'Click button to add a contact'
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Add Contact Button'))
@@ -88,8 +90,8 @@ try {
     WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Radio Option'))
 
     'If venue to be created exists, remove it'
-    if (WebUI.waitForElementPresent(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Venue List Item Name', [('VenueName') : 'QA Automation Custom Venue']), 
-        5)) {
+    if (WebUI.waitForElementPresent(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Venue List Item Name', 
+            [('VenueName') : 'QA Automation Custom Venue']), 5)) {
         'Select Venue to be created'
         WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Venue List Item Checkbox', [('VenueName') : 'QA Automation Custom Venue']))
 
@@ -106,31 +108,38 @@ try {
     WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Add Off Campus Venue Button'))
 
     'Enter Venue Name'
-    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Name Text Field'), 'QA Automation Custom Venue')
+    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Name Text Field'), 
+        'QA Automation Custom Venue')
 
     'Enter venue address'
-    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Address Text Field'), '123 Bug Ave')
+    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Address Text Field'), 
+        '123 Bug Ave')
 
     'Enter venue city'
-    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/City Text Field'), 'Lake Forest')
+    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/City Text Field'), 
+        'Lake Forest')
 
     'Select venue state'
     CustomKeywords.'TestObjectHelper.setDropDownValue'('off_campus_space_drawer--region', 'California')
 
     'Enter venue zip code'
-    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Zip Code Text Field'), '92690')
+    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Zip Code Text Field'), 
+        '92690')
 
     'Enter venue capacity'
-    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Capacity Text Field'), '10')
+    WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Capacity Text Field'), 
+        '10')
 
     'Save venue'
-    WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Save Button'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Save Button'), 
+        FailureHandling.STOP_ON_FAILURE)
 
     'Move to next section'
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/When and Where Next Section Chevron Button'))
 
     'Enter volunteer capacity'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Volunteer Capacity Text Field'), '10')
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Volunteer Capacity Text Field'), 
+        '10')
 
     'Open custom question editor drawer'
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Edit Custom Questions Button'))
@@ -203,7 +212,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/List View Serv
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Upcoming Radio Option Serving Opps'))
 
 'Select first SO in list'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Table Row Serving Opp'))
+WebUI.click(findTestObject('HC-Web/Serving Opps/Table Row Serving Opp', [('ServOppName') : ServOppName]))
 
 'Add volunteer to SO'
 WebUI.waitForElementNotHasAttribute(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Button'), 'disabled', 

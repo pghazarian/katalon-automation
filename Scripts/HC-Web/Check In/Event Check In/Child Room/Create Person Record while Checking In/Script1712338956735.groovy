@@ -36,15 +36,15 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/O
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Check In Button'))
 
 'Select first room designated for children in list'
-WebUI.click(findTestObject('HC-Web/Event/Check In/Second Room'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Room In List', [('RoomName') : RoomName]))
 
 'If event has not started, open room early'
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Check In/Open Room Early Yes Button'), 5)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'))
 }
 
 'If room has not been opened, open a child room and add volunteers'
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Child Room Button'), 5)) {
     'Select child room'
     WebUI.click(findTestObject('HC-Web/Event/Check In/Child Room Button'))
 
@@ -62,7 +62,7 @@ if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check
     WebUI.click(findTestObject('HC-Web/Event/Check In/Add and Check In Button'), FailureHandling.STOP_ON_FAILURE)
 
     'If volunteer is not signed up for event, add them anyway'
-    if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Add and Proceed Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+    if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Add and Proceed Button'), 5)) {
         WebUI.click(findTestObject('HC-Web/Event/Check In/Add and Proceed Button'))
     }
     
@@ -70,7 +70,7 @@ if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check
     WebUI.click(findTestObject('HC-Web/Event/Check In/Add and Check In Button'), FailureHandling.STOP_ON_FAILURE)
 
     'If volunteer is not signed up for event, add them anyway'
-    if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Add and Proceed Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+    if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Add and Proceed Button'), 5)) {
         WebUI.click(findTestObject('HC-Web/Event/Check In/Add and Proceed Button'))
     }
     
@@ -119,7 +119,8 @@ WebUI.click(findTestObject('HC-Web/Event/Check In/Check In and Print Labels Butt
 WebUI.click(findTestObject('HC-Web/Event/Check In/Confirm Check In Button'))
 
 'If the child is out of the age range for the room, click button to check them in anyway'
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Check In Child Anyway Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Check In Child Anyway Button'), 
+    5)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Check In Child Anyway Button'))
 }
 
@@ -142,6 +143,21 @@ WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Check In/Attendee Nam
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Confirmation Yes Button'))
+
+def flag = false
+def i = 0
+
+'Wait until room status icon indicates that the room has been closed'
+while(!flag && i < 5) {
+	flag = WebUI.getAttribute(findTestObject('HC-Web/Event/Check In/Room Status Icon', [('RoomName') : RoomName]), "class").contains('icon-minus-circle')
+	WebUI.delay(1)
+	i++
+}
+
+'If room status icon does not indicate room has been closed, fail test'
+if(!flag) {
+	throw new Exception("Room status icon did not indicate the room was closed.")
+}
 
 WebUI.closeBrowser()
 
