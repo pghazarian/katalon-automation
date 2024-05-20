@@ -25,13 +25,13 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/O
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Check In Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/First Room'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Room In List', [('RoomName') : RoomName]))
 
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'))
 }
 
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'), 5)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'))
 }
 

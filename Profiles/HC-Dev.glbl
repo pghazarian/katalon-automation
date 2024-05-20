@@ -104,4 +104,19 @@
       <initValue>'Anaheim'</initValue>
       <name>EventCampus</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Room 1'</initValue>
+      <name>SO_GeneralRoom</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Room 2'</initValue>
+      <name>SO_ChildRoom_1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Room 3'</initValue>
+      <name>SO_ChildRoom_2</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

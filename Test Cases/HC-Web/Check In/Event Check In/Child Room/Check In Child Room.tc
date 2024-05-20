@@ -29,6 +29,12 @@
       <value></value>
       <variableId>00724f45-620d-4024-9cc3-49a93c04cc04</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>251af015-d724-4d99-8ed6-62c3742e9b54</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'QA Automation'</defaultValue>
       <description></description>
@@ -56,5 +62,12 @@
       <id>00724f45-620d-4024-9cc3-49a93c04cc04</id>
       <masked>false</masked>
       <name>EventId</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.SO_ChildRoom_1</defaultValue>
+      <description></description>
+      <id>251af015-d724-4d99-8ed6-62c3742e9b54</id>
+      <masked>false</masked>
+      <name>RoomName</name>
    </variable>
 </TestCaseEntity>

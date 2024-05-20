@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='occurrence_schedule--check_in_button']</value>
+         <value>//button[@id='occurrence_schedule--check_in_button' and not(@disabled)]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>0fa08ff2-7553-4903-abea-3ea2389c0954</webElementGuid>
+      <webElementGuid>41e29b54-cf00-44d5-baa9-75232ba1dde9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Check In</value>
-      <webElementGuid>e92d5aa6-8c68-4c41-a805-2e51878cf344</webElementGuid>
+      <webElementGuid>d10dcaff-7f44-49d1-bf42-ef421598ecbe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,6 +38,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;occurrence_schedule--check_in_button&quot;)/span[@class=&quot;button-inner-container jss244&quot;]/span[1]</value>
-      <webElementGuid>24093e4e-e762-43fc-af90-caa52918d912</webElementGuid>
+      <webElementGuid>e16094e1-7bb6-4285-ab18-fbd00626ff9c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
