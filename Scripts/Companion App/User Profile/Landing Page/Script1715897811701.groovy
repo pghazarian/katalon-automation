@@ -37,7 +37,8 @@ import org.openqa.selenium.Keys as Keys
  * 16. My Serving Opportunities tile, with its icon in it 
  * 17. My Events tile, with its icon in it 
  * 18. My Giving tile, with its icon in it 
- * 19. FYI: all the tiles above will link to a place holder for now
- * 20. Global navigation bar should appear at the bottom of the screen
- * 21. FYI: Only My Ministries and My Events will be active by the end of CA Sprint 1)
+ * 19. Global navigation bar should appear at the bottom of the screen should work, and take the user to the correct destinations
+ * 20. FYI Notes: tapping on all the tiles above will link to a place holder for now with the exception of My Ministries and My Events
+ * 21. Tapping on the "My Ministries" button should navigate the user to the My Ministries screen
+ * 22. Tapping on the "My Events" button should navigate the user to the My Events Screen
  */
