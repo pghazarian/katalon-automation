@@ -17,7 +17,46 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/*
- * 1. Click "+ New Digital Program" button > Verify Create Program modal opens up 
- * 2. 
- */
+def randText = String.format('%tF %<tH:%<tM', java.time.LocalDateTime.now())
+randText="Dig Prog "+ randText;
+
+'Open Browser'
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.HC_HostUrl)
+
+'Login'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Saddleback Identity Server/input_Email Address_Username'), 
+    UserName)
+
+WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Saddleback Identity Server/input_Password_Password'), 
+    UserPwd)
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Saddleback Identity Server/button_Sign In'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/p_Mobile Engagement'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/div_Digital Programs(beta)'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/h4_Digital Programs'), 
+    'Digital Programs')
+
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/span_New Digital Program'), 
+    'New Digital Program')
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/span_New Digital Program'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/h2_Create New Program'), 
+    'Create New Program')
+
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/h3_Program Details'), 
+    'Program Details')
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/input__digital_programs_add_drawer--title'), 
+    randText)
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/span_Save'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/div_Successful'), 
+    'Successful')
+

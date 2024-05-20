@@ -31,91 +31,91 @@ WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Mobile Engagemen
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Saddleback Identity Server/button_Sign In'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/img_Collapse Menu_navigation--logo-image'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/img_Collapse Menu_navigation--logo-image'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/img_Collapse Menu_navigation--logo-image'), 
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/img_Collapse Menu_navigation--logo-image'), 
     '')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/Avatar Icon'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/Avatar Icon'), 
     0)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/Avatar Icon'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/Avatar Icon'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Preview Feature'), 
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Preview Feature'), 
     'Preview Feature')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Preview Feature'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Preview Feature'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/h3_Preview Feature'), 
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/h3_Preview Feature'), 
     'Preview Feature')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/span_Preview Feature_button-inner-container jss240'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/span_Preview Feature_button-inner-container jss240'), 
     0)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Digital Program Management'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Digital Program Management'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Digital Program Management'), 
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Digital Program Management'), 
     'Digital Program Management')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/label_OnOffcheck'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/label_OnOffcheck'), 
     0)
 
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/label_OnOffcheck'), 
+not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/label_OnOffcheck'), 
     'OnOffcheck')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/span_Preview Feature_button-inner-container jss240'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/span_Preview Feature_button-inner-container jss240'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/p_Mobile Engagement'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/p_Mobile Engagement'), 
     0)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/p_Mobile Engagement'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/p_Mobile Engagement'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/Avatar Icon'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/Avatar Icon'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Preview Feature'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Preview Feature'))
 
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Digital Program/Digital Program Toggle'))
 
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/label_OnOffcheck'), 
+not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/label_OnOffcheck'), 
     'OnOffcheck')
 
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/span_On'), 
+not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/span_On'), 
     'On')
 
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/span_Preview Feature_button-inner-container jss240_1'))
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/span_Preview Feature_button-inner-container jss240_1'))
 
-not_run: WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Digital Programs(beta)'), 
+not_run: WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Digital Programs(beta)'), 
     0)
 
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Digital Programs(beta)'), 
+not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Digital Programs(beta)'), 
     'Digital Programs(beta)')
 
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Digital Programs(beta)'))
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Digital Programs(beta)'))
 
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/h4_Digital Programs'), 
+not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/h4_Digital Programs'), 
     'Digital Programs')
 
-not_run: WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/span_New Digital Program'), 
+not_run: WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/span_New Digital Program'), 
     0)
 
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/span_New Digital Program'), 
+not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/span_New Digital Program'), 
     'New Digital Program')
 
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/Avatar Icon'))
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/Avatar Icon'))
 
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Preview Feature'))
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Preview Feature'))
 
 not_run: WebUI.click(findTestObject('HC-Web/Mobile Engagement/Digital Program/Digital Program Toggle'))
 
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/span_Off'), 
+not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/span_Off'), 
     'Off')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/span_Preview Feature_button-inner-container jss240_1_2'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/span_Preview Feature_button-inner-container jss240_1_2'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/Avatar Icon'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/Avatar Icon'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Page_Healthy Church/div_Log Out'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Digital Program Feature Toggle/div_Log Out'))
 
 WebUI.closeBrowser()
 
