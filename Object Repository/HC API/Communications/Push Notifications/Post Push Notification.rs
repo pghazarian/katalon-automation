@@ -34,7 +34,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?AudienceType=${AudienceType}&amp;ChurchEntityId=${ChurchEntityId}&amp;CommunicationCategoryId=${CommunicationCategoryId}&amp;Description=${Description}&amp;Name=${Name}&amp;SendPush=${SendPush}</restUrl>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;ChurchEntityId=${ChurchEntityId}&amp;CommunicationCategoryId=${CommunicationCategoryId}&amp;Description=${Description}&amp;Name=${Name}&amp;SendPush=${SendPush}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -43,6 +43,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>'Push'</defaultValue>
+      <description></description>
+      <id>59d3499c-0a3e-416d-931f-df16ea1a752d</id>
+      <masked>false</masked>
+      <name>JobType</name>
+   </variables>
    <variables>
       <defaultValue>'AllDevices'</defaultValue>
       <description></description>
@@ -65,14 +72,14 @@
       <name>CommunicationCategoryId</name>
    </variables>
    <variables>
-      <defaultValue>'KS API Test 1 Description'</defaultValue>
+      <defaultValue>'ST Push Notification 1 Description'</defaultValue>
       <description></description>
       <id>2ef0c2f9-d55d-4b58-a8e3-461271106e54</id>
       <masked>false</masked>
       <name>Description</name>
    </variables>
    <variables>
-      <defaultValue>'KS API Test 1'</defaultValue>
+      <defaultValue>'ST Push Notification 1'</defaultValue>
       <description></description>
       <id>96edda75-e2a0-458a-bdbb-aec5f3a96fcc</id>
       <masked>false</masked>

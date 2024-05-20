@@ -17,12 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def date = new Date()
+
+def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
+
+def PushNotificationName = "ST Push Notification - $CurrentDateTime"
+
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Post Push Notification'))
+response = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Post Push Notification', [('JobType') : 'Push'
+            , ('AudienceType') : 'AllDevices', ('ChurchEntityId') : '10', ('CommunicationCategoryId') : '1', ('Description') : "$PushNotificationName Description"
+            , ('Name') : PushNotificationName, ('SendPush') : true]))
 
 // Validate the response was successful (HTTP Code 200 == Status)
 WS.verifyResponseStatusCode(response, 200)
+
+WS.verifyElementPropertyValue(response, 'jobType', null)
 
 WS.verifyElementPropertyValue(response, 'audienceType', 'AllDevices')
 
