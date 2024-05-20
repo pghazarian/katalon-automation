@@ -23,11 +23,21 @@ import org.openqa.selenium.Keys as Keys
  * 2. Login
  * 3. Tap on user Profile icon in the main landing page of CA 
  * 4. User should navigate to the main landing page of their profile
- * 5. Verify the following:
- * 6. Greeting and user's first name is displayed
- * 7. User's photo is displayed (if applicable)
- * 8. Settings icon link is displayed (placeholder for now)
- * 9. Giving icon link is displayed (placeholder for now)
- * 10. User's QR Code is displayed when the button is tapped
- * 11. Links to all other areas of the user's profile should also be displayed (only My Ministries and My Events will be active by the end of CA Sprint 1)
+ * 5. Verify the following are dipslayed:
+ * 6. User's photo is displayed (if applicable)
+ * 7. Hey, [user first name]! greeting 
+ * 8. Gear icon: Tapping will link the user to the Settings area inside the profile 
+ * 9. Gift icon: Tapping will link the user to the Giving area outside the profile 
+ * 10. My QR Code button: Tapping will bring up the user's QR code in a drawer 
+ * 11. My Notes tile, with its icon in it 
+ * 12. My Prayers tile, with its icon in it 
+ * 13. My Groups tile, with its icon in it 
+ * 14. My Ministries tile, with its icon in it 
+ * 15. My Serving Activity tile, with its icon in it 
+ * 16. My Serving Opportunities tile, with its icon in it 
+ * 17. My Events tile, with its icon in it 
+ * 18. My Giving tile, with its icon in it 
+ * 19. FYI: all the tiles above will link to a place holder for now
+ * 20. Global navigation bar should appear at the bottom of the screen
+ * 21. FYI: Only My Ministries and My Events will be active by the end of CA Sprint 1)
  */
