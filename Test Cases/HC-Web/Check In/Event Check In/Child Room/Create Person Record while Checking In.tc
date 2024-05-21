@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Person Record while Checking In</name>
+   <tag>QA,Dev,Stage2,Stage</tag>
+   <comment></comment>
+   <testCaseGuid>5ba951d9-2190-4726-8c02-35e8acd0cd79</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>87266c3d-1136-4712-ba48-9a26165a2720</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>84f3078d-896d-4fa0-8d84-b78073dbdfe0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f9b9cd4c-1443-4a31-a9cb-fcf0b1cd43af</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f056f715-2214-4bcf-a482-824f00785e06</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ec022273-745a-42df-b449-4402c4a06653</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ae50b2a6-8b8a-47d9-b111-afef5be73b67</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
+      <description></description>
+      <id>87266c3d-1136-4712-ba48-9a26165a2720</id>
+      <masked>false</masked>
+      <name>EventId</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Parent'</defaultValue>
+      <description></description>
+      <id>84f3078d-896d-4fa0-8d84-b78073dbdfe0</id>
+      <masked>false</masked>
+      <name>ParentFirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Child'</defaultValue>
+      <description></description>
+      <id>f9b9cd4c-1443-4a31-a9cb-fcf0b1cd43af</id>
+      <masked>false</masked>
+      <name>ChildFirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation'</defaultValue>
+      <description></description>
+      <id>f056f715-2214-4bcf-a482-824f00785e06</id>
+      <masked>false</masked>
+      <name>VolunteerSearchName</name>
+   </variable>
+   <variable>
+      <defaultValue>'12345678900'</defaultValue>
+      <description></description>
+      <id>ec022273-745a-42df-b449-4402c4a06653</id>
+      <masked>false</masked>
+      <name>PhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.SO_ChildRoom_2</defaultValue>
+      <description></description>
+      <id>ae50b2a6-8b8a-47d9-b111-afef5be73b67</id>
+      <masked>false</masked>
+      <name>RoomName</name>
+   </variable>
+</TestCaseEntity>

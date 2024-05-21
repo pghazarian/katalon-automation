@@ -43,14 +43,14 @@ MessageHeadingTranslated = 'LETZTE PREDIGTEN'
 WatchNowTranslated = 'Ansehen'
 
 'If the Menu button is NOT displayed, use the Header navigation'
-if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
+if (!CustomKeywords.'TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
 
 	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), 'English')
 	
 	// This logic is inconsistent in Safari (sometimes it works and sometimes it doesn't)
 	WebUI.click(findTestObject('Saddleback Web/Home/Language/Language Selector'))
 	
-	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'desktop-center')]/div[@class='header-lang-select']//descendant::ul/li[text()='$TargetLanguageTranslated']"))
+	WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'desktop-center')]/div[@class='header-lang-select']//descendant::ul/li[text()='$TargetLanguageTranslated']"))
 	
 	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Language/Language Selected'), TargetLanguageTranslated)
 	
@@ -68,7 +68,7 @@ if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestOb
 	
 	WebUI.click(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selector'))
 	
-	WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'footer-language')]/div[@class='header-lang-select']//descendant::ul/li[text()='$TargetLanguageTranslated']"))
+	WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[contains(@class, 'footer-language')]/div[@class='header-lang-select']//descendant::ul/li[text()='$TargetLanguageTranslated']"))
 	
 	WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Footer Nav/Language Selected'), TargetLanguageTranslated)
 	
@@ -104,7 +104,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Saddleback Web/Home/Wa
 
 'Switch back to English '
 //If the Menu button is NOT displayed, use the Header navigation'
-if (!CustomKeywords.'customUtility.TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
+if (!CustomKeywords.'TestObjectHelper.isElementVisible'(findTestObject('Object Repository/Saddleback Web/Home/Nav/Menu Button'))) {
 	
 	// This logic is inconsistent in Safari (sometimes it works and sometimes it doesn't)
 	WebUI.click(findTestObject('Saddleback Web/Home/Language/Language Selector'))

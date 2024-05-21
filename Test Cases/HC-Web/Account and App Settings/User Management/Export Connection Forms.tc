@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Export Connection Forms</name>
+   <tag>QA,Dev,Stage2,Stage</tag>
+   <comment></comment>
+   <testCaseGuid>edab3805-4186-4696-adea-25ccd4b09e26</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2ac76392-1831-4065-ae1e-6f994c559c01</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fbddfb86-2405-429d-8e58-ceaa80b5cd06</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>16014e38-bd12-48d7-a1d1-01cc024c7542</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Anaheim'</defaultValue>
+      <description></description>
+      <id>2ac76392-1831-4065-ae1e-6f994c559c01</id>
+      <masked>false</masked>
+      <name>Campus</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.ConnectionForm_SearchName</defaultValue>
+      <description></description>
+      <id>fbddfb86-2405-429d-8e58-ceaa80b5cd06</id>
+      <masked>false</masked>
+      <name>ConnectionForm</name>
+   </variable>
+   <variable>
+      <defaultValue>'C:\\Users\\gclov\\Downloads'</defaultValue>
+      <description></description>
+      <id>16014e38-bd12-48d7-a1d1-01cc024c7542</id>
+      <masked>false</masked>
+      <name>DownloadPath</name>
+   </variable>
+</TestCaseEntity>

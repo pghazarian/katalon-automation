@@ -6,12 +6,12 @@
    <elementGuidId>fc5b7a7a-f82d-452e-9920-b27745d216b3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#serving_opportunities--dropdown_button</value>
+         <key>XPATH</key>
+         <value>//button[@id='serving_opportunities--dropdown_button' and not(@disabled)]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='serving_opportunities--dropdown_button']</value>
+         <key>CSS</key>
+         <value>#serving_opportunities--dropdown_button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>d8d6ba63-3060-482a-8769-7398320ac7d3</webElementGuid>
+      <webElementGuid>63987171-24cb-410c-b5bd-0ff94dda6075</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>c289b342-389f-4994-995b-62f42f0df4e6</webElementGuid>
+      <webElementGuid>aa9bd133-5b0f-420b-9f7c-01dab199f678</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>cmui button jss207 jss2027 jss205 button_dropdown jss215 jss217 jss206</value>
-      <webElementGuid>214498ac-312c-42eb-9269-cf5516d219c7</webElementGuid>
+      <webElementGuid>36e37c31-b703-47cb-b99f-0ccce6ebb9c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>serving_opportunities--dropdown_button</value>
-      <webElementGuid>bd7c4eb8-f3aa-4db4-a2b9-faabb81eccb1</webElementGuid>
+      <webElementGuid>e65b7391-596e-466f-9343-c67ddb971d50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>636a48f6-3d11-476a-8275-696e0777fe1d</webElementGuid>
+      <webElementGuid>038e04da-77a7-4821-b4ac-908a5aa99ad9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>text</name>
       <type>Main</type>
       <value>plusAdd VolunteerTo This OccurrenceTo All Occurrences</value>
-      <webElementGuid>1b21728a-ef68-4e35-a84f-53e3c187847e</webElementGuid>
+      <webElementGuid>c305d478-fad8-4d6c-86e2-965d3a7354f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;serving_opportunities--dropdown_button&quot;)</value>
-      <webElementGuid>14f44e69-9c96-4cf7-90fb-79c36338caf8</webElementGuid>
+      <webElementGuid>f948b38d-7776-4ed3-a778-23bba3c51d85</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

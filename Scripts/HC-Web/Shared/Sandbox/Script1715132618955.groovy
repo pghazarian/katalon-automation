@@ -1,0 +1,48 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObjectXpath as TestObjectXpath
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser(GlobalVariable.HC_HostUrl)
+
+def to = findTestObject('Object Repository/HC-Web/Login/Email Address Textfield')
+
+WebUI.verifyElementPresent(to, 5)
+
+println(to.properties.size())
+
+for(item in to.properties) {
+	println(item.name)
+	println(item.value)
+}
+	
+
+println(to.getXpaths().size())
+
+for(item in to.getXpaths()) {
+	println(item.name)
+	println(item.value)
+}
+
+List<TestObjectXpath> txp = to.getXpaths()
+println(txp.size())
+
+def searchResults = txp.find { it.name  == "xpath:attributes" }
+
+if (searchResults != null)
+	println(searchResults.value)

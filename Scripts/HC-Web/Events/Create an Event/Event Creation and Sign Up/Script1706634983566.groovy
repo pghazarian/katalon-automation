@@ -27,17 +27,17 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/New Ev
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Create New Event Button'))
 
 'Select campus'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', campus)
+CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', campus)
 
 'Switch to campus event'
-CustomKeywords.'customUtility.FormHelper.setMultipleChoiceControlValueByXPath'('//div[@class=\'event_details_event_type\']/descendant::div[@class=\'radio-item\']', 
+CustomKeywords.'FormHelper.setMultipleChoiceControlValueByXPath'('//div[@class=\'event_details_event_type\']/descendant::div[@class=\'radio-item\']', 
     'Campus Event')
 
 'Name event'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/Event Name Text Field'), 'QA Automation Test Event')
 
 'Select category'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
     category)
 
 'Give event a description'
@@ -50,13 +50,19 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Venue 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Venue Dropdown Option'))
 
 'Save event'
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Create Button'))
+WebUI.click(findTestObject('HC-Web/Event/Event Creation/Location Label'))
+
+WebUI.click(findTestObject('HC-Web/Event/Event Creation/Create Button'))
 
 'Navigate to occurrence schedule'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Occurrence Schedule Tab'))
 
 'Click button to add attendee'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Button'))
+
+'Click button to add attendee'
+WebUI.waitForElementNotHasAttribute(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Button'), 'disabled', 
+    0)
 
 'Add attendee for this occurrence only'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/For This Occurrence Option'))

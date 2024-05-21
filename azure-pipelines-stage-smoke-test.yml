@@ -1,0 +1,20 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+pool:
+#  This is an override attempt 
+  vmImage: ubuntu-20.04
+#  This is the original code that was included in the example
+#  vmImage: ubuntu-latest
+
+steps:
+- task: katalonTask@1
+  inputs:
+    version: '9.3.1'
+    executeArgs: '-testSuitePath="Test Suites/$(test_suite_pathname)" -browserType="Chrome" -apiKey=$(katalon_api_key) --config -webui.autoUpdateDrivers=true -executionProfile="$(execution_profile)"'
+    xvfbConfiguration: '-s "-screen 0 1024x768x24"'
+  env:
+    JAVA_HOME: $(JAVA_HOME_17_X64)
+    PATH: $(JAVA_HOME_17_X64)/bin:$(PATH)

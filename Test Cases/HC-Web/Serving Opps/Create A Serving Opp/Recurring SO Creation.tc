@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Recurring SO Creation</name>
+   <tag>Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>397ac597-c3b1-422f-89ce-bee1baba27e7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c0e5a102-b756-445b-8b62-7095d8be94d4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b2e72f31-ce1c-470b-a8f4-f0d0c7b10205</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>c0e5a102-b756-445b-8b62-7095d8be94d4</id>
+      <masked>false</masked>
+      <name>VolunteerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Recurring SO'</defaultValue>
+      <description></description>
+      <id>b2e72f31-ce1c-470b-a8f4-f0d0c7b10205</id>
+      <masked>false</masked>
+      <name>ServOppName</name>
+   </variable>
+</TestCaseEntity>

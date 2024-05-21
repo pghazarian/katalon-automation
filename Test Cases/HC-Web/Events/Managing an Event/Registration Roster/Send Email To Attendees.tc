@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Send Email To Attendees</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9851cdc-f570-400b-9511-b1631502e199</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d69ec155-cdff-452b-9e59-f04cfce8d639</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.EventId_Recurring_DoesNotEnd</defaultValue>
+      <description></description>
+      <id>d69ec155-cdff-452b-9e59-f04cfce8d639</id>
+      <masked>false</masked>
+      <name>EventId</name>
+   </variable>
+</TestCaseEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[contains(@class,'table-row-clickable')]</value>
+         <value>//h4[text()='${ServOppName}']/ancestor::tr[contains(@class,'table-row-clickable')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
