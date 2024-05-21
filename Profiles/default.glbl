@@ -139,4 +139,14 @@
       <initValue>'Garrett Clover'</initValue>
       <name>SO_PersonSearch_Name</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'hagopg@saddleback.com,pareng@saddleback.com,sreenia@saddleback.com,crisf@saddleback.com,jessicat@saddleback.com'</initValue>
+      <name>KatalonLicenseEmailsPacificLive</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'sanchita@optimumfuturist.com'</initValue>
+      <name>KatalonLicenseEmailsPacificOff</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

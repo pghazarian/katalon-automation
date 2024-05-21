@@ -17,6 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Katalon/License Reassignment'), [('EmailToRevoke') : 'sanchita@optimumfuturist.com', ('EmailToAssign') : 'crisf@saddleback.com'], 
+WebUI.callTestCase(findTestCase('Katalon/License Reassignment'), [('EmailToRevoke') : GlobalVariable.KatalonLicenseEmailsPacificOff, ('EmailToAssign') : GlobalVariable.KatalonLicenseEmailsPacificLive], 
     FailureHandling.STOP_ON_FAILURE)
 
