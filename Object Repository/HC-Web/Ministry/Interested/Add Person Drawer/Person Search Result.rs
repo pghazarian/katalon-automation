@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Volunteer Checkbox</name>
+   <name>Person Search Result</name>
    <tag></tag>
-   <elementGuidId>9f0f4656-f5a7-4b0f-b069-e25b11c0b1ed</elementGuidId>
+   <elementGuidId>4b5bd879-844a-4a03-a0bb-e080d921b86d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space(text())='${volunteerName}']/ancestor::tr/td</value>
+         <value>//h4[contains(normalize-space(text()),'${SearchName}')]/ancestor::div[contains(@class,'person_panel--summary')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

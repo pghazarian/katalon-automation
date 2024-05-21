@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[normalize-space(text()='${volunteerName}')]/ancestor::tr</value>
+         <value>//p[normalize-space(text())='${volunteerName}']/ancestor::tr</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

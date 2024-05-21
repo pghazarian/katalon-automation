@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Volunteer Checkbox</name>
+   <name>Person Search Bar</name>
    <tag></tag>
-   <elementGuidId>9f0f4656-f5a7-4b0f-b069-e25b11c0b1ed</elementGuidId>
+   <elementGuidId>67cb8360-a1db-48da-85ca-ae03a05f2854</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space(text())='${volunteerName}']/ancestor::tr/td</value>
+         <value>//input[@id='person_search_form--search_input']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

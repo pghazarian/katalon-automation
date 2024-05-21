@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Volunteer Checkbox</name>
+   <name>Save Button</name>
    <tag></tag>
-   <elementGuidId>9f0f4656-f5a7-4b0f-b069-e25b11c0b1ed</elementGuidId>
+   <elementGuidId>c58245a4-7690-4b2d-8310-367c5a05b1c6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space(text())='${volunteerName}']/ancestor::tr/td</value>
+         <value>//button[@id='ui-button--save_person_lite']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

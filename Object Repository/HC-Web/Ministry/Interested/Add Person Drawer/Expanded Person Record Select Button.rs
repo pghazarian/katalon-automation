@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Volunteer Checkbox</name>
+   <name>Expanded Person Record Select Button</name>
    <tag></tag>
-   <elementGuidId>9f0f4656-f5a7-4b0f-b069-e25b11c0b1ed</elementGuidId>
+   <elementGuidId>898975c8-1339-42b8-bf51-9389204f1cd6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space(text())='${volunteerName}']/ancestor::tr/td</value>
+         <value>//div[contains(@class,'MuiCollapse-entered')]/descendant::button[@id='person_panel--select_record_btn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

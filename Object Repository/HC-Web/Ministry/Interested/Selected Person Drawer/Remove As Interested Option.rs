@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Volunteer Checkbox</name>
+   <name>Remove As Interested Option</name>
    <tag></tag>
-   <elementGuidId>9f0f4656-f5a7-4b0f-b069-e25b11c0b1ed</elementGuidId>
+   <elementGuidId>4087a759-c159-4d60-8f9c-f9252f2d03d8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space(text())='${volunteerName}']/ancestor::tr/td</value>
+         <value>//div[text()='Remove as interested']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
