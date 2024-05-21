@@ -134,4 +134,9 @@
       <initValue>'/Image Files/Test Photo.jpg'</initValue>
       <name>Stock_Image_Path</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Garrett Clover'</initValue>
+      <name>SO_PersonSearch_Name</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

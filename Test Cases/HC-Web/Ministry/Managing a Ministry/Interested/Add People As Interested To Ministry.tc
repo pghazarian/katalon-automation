@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Add People As Interested To Ministry</name>
-   <tag></tag>
+   <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>c732ca14-3ef4-488d-8f26-90135ca6d82e</testCaseGuid>
    <variableLinks>
@@ -38,7 +38,7 @@
       <name>CampusId</name>
    </variable>
    <variable>
-      <defaultValue>GlobalVariable.Admin2_FullName</defaultValue>
+      <defaultValue>GlobalVariable.SO_PersonSearch_Name</defaultValue>
       <description></description>
       <id>e127d649-5df3-4157-b3b4-a518038dc06f</id>
       <masked>false</masked>

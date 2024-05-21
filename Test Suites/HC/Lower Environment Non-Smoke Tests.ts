@@ -412,4 +412,11 @@
          <variableId>1ae4b041-752a-4116-8f56-6eee55eabe6d</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>fb0dcf7b-1305-4873-a310-ae262d2e539e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Serving Opps/Managing A Serving Opp/View Email History</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

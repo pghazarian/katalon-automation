@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h4[normalize-space(text()='${SearchName}')]/ancestor::div[contains(@class,'person_panel--summary')]</value>
+         <value>//h4[contains(normalize-space(text()),'${SearchName}')]/ancestor::div[contains(@class,'person_panel--summary')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

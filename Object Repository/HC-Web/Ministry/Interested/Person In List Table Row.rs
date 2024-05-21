@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space(text()='${PersonName}')]/ancestor::tr[contains(@id,'ui-table_row--volunteer')]</value>
+         <value>//div[contains(normalize-space(text()),'${PersonName}')]/ancestor::tr[contains(@id,'ui-table_row--volunteer')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
