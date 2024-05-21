@@ -418,5 +418,11 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/HC-Web/Serving Opps/Managing A Serving Opp/View Email History</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b644430d-b616-4b84-b55c-68b03a8c1508</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
