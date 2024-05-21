@@ -22,30 +22,32 @@ not_run: WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : 
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/push-notification'], FailureHandling.STOP_ON_FAILURE)
 
 /*
- * Log in as a non-admin user that does not have permission to "Manage Push Notification"
+ * Log in as a non-admin user that does not have permission to "Manage Promotional Push Communication Job"
  * Click on "Communications" in the Navigation pane
- * Verify "Push Notification" sub-menu does not appear under "Communications"
+ * Verify "Push Notifications" sub-menu does not appear under "Communications"
  * Log out
  * Log in as Admin
  * Click on "System > User & Teams"
- * Type the name of the non-admin user you want to give the "Manage Push Notification" permission to and hit the Enter key
+ * Type the name of the non-admin user you want to give the "Manage Promotional Push Communication Job" permission to and hit the Enter key
  * Click on the user
  * Click on the "Edit" button
  * Expand the "Scoped Roles"
- * Select "Manage Push Notification" from the dropdown under "Extra Permissions"
+ * Select "Manage Promotional Push Communication Job" from the dropdown under "Extra Permissions"
  * Click on the "Save" button
  * Log out
- * Log in as the non-admin user you gave the "Manage Push Notification" permission to
+ * Log in as the non-admin user you gave the "Manage Promotional Push Communication Job" permission to
  * Click on "Communications" in the Navigation pane
- * Verify "Push Notification" sub-menu appears under "Communications" and click on it
+ * Verify "Push Notifications" sub-menu appears under "Communications"
+ * Click on "Push Notifications"
+ * Verify user is navigated to the "Push Notifications" page
  * Log out
  * Log in as Admin
  * Click on "System > User & Teams"
- * Type the name of the non-admin user you gave the "Manage Push Notification" permission to and hit the Enter key
+ * Type the name of the non-admin user you gave the "Manage Promotional Push Communication Job" permission to and hit the Enter key
  * Click on the user
  * Click on the "Edit" button
  * Expand the "Scoped Roles"
- * Click on the [ x ] icon next to "Manage Push Notification" to remove it from "Extra Permissions"
+ * Click on the [ x ] icon next to "Manage Promotional Push Communication Job" to remove it from "Extra Permissions"
  * Click on the "Save" button
  * Log out
  */

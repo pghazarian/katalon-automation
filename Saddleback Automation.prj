@@ -4,6 +4,7 @@
    <name>Saddleback Automation</name>
    <tag></tag>
    <UUID>02ed8624-ef5d-4bac-813d-e16cf3e0a800</UUID>
+   <createdVersion>9.3.1</createdVersion>
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
