@@ -35,15 +35,15 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Filter icon'),
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus - chevron icon'), 0)
 
 'Anahiem Campus '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Anahiem Campus'), 0)
 
 'Back Button '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Back button'), 0)
 
-Mobile.tap(findTestObject('Ministry App/Metrics/android.view.ViewGroup (2)'), 0)
+Mobile.tap(findTestObject('Ministry App/Metrics/Campus selections screen - Back button'), 0)
 
 'Search button '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/android.view.ViewGroup (3)'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Search button'), 0)
 
 Mobile.tap(findTestObject('Ministry App/Metrics/8 Week Trend button'), 0)
 
