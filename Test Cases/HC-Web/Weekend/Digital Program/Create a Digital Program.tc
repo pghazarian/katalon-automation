@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create a Digital Program</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2300d691-66b9-43f1-be14-9a2a479390fe</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1b6cebdd-29ba-412e-b873-d1d77fe31677</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60f8222a-84cb-438b-94c6-d1322b3bf436</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0b7d212f-febb-440d-a3e0-7e9b9bda80aa</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'shcqa1+six@gmail.com'</defaultValue>
+      <description></description>
+      <id>1b6cebdd-29ba-412e-b873-d1d77fe31677</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+   <variable>
+      <defaultValue>'T62yYySZkYyh6V728arnFg=='</defaultValue>
+      <description></description>
+      <id>60f8222a-84cb-438b-94c6-d1322b3bf436</id>
+      <masked>false</masked>
+      <name>UserPwd</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0b7d212f-febb-440d-a3e0-7e9b9bda80aa</id>
+      <masked>false</masked>
+      <name>DigitalProgramTitle</name>
+   </variable>
+</TestCaseEntity>

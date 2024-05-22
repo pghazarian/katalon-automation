@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Off</name>
+   <tag></tag>
+   <elementGuidId>2702464c-af7a-4ea1-a132-60052d08a36c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#feature-27-toggle > label.checkbox-label > div.checkbox-toggle-text > span.checkbox-toggle-text-off</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='feature-27-toggle']/label/div/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#feature-27-toggle >> internal:text=&quot;Off&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1c86707b-9365-4399-ad4d-d97f2a859bfc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>checkbox-toggle-text-off</value>
+      <webElementGuid>72130021-1250-44a3-a375-ffeb7ce72b83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Off</value>
+      <webElementGuid>32e10646-fbe7-4429-bbbe-4083f737b852</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;feature-27-toggle&quot;)/label[@class=&quot;checkbox-label&quot;]/div[@class=&quot;checkbox-toggle-text&quot;]/span[@class=&quot;checkbox-toggle-text-off&quot;]</value>
+      <webElementGuid>4825b8d5-d368-4216-a2b0-66f88e429c9d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='feature-27-toggle']/label/div/span[2]</value>
+      <webElementGuid>c6aba300-fbc7-4a3e-97ce-57508d88d07d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='On'])[5]/following::span[1]</value>
+      <webElementGuid>0bbe9b36-2bd7-4cb9-9d10-19dd6fb90942</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Digital Program Management'])[1]/following::span[2]</value>
+      <webElementGuid>2a8124b5-daf3-4afa-9b3b-604a92cd81a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='The ability to manage Digital Programs'])[1]/preceding::span[1]</value>
+      <webElementGuid>71f4a7a2-3047-4ba1-a7f0-62b5e19c6edd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div[2]/div/label/div/span[2]</value>
+      <webElementGuid>33e3bddd-8f85-4945-a63f-7c59a06bf86b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Off' or . = 'Off')]</value>
+      <webElementGuid>6338ca79-fd7a-449e-b01e-1a6909a61d50</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
