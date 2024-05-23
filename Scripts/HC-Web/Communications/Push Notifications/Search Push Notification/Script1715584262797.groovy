@@ -17,18 +17,40 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/*
- * Log in as Admin or a non-admin user that has permission to "Manage Push Notification"
- * Click on "Communications Central > Push Notification"
- * Verify "Notification" column is visible
- * Verify "Recipients" column is visible
- * Verify "Campus" column is visible
- * Verify "Send Date" column is visible
- * Verify "Status" column is visible
- * Verify "Application" column is visible
- * Verify "Created By" column is visible
- * Type the name of the push notification into the Search bar and hit the Enter key
- * Verify the push notification is visible
- * Click on the push notification
- * Verify user is redirected to the Detail page
- */
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/push-notification'], FailureHandling.STOP_ON_FAILURE)
+
+SearchTerm = 'ST Push Notification'
+
+SearchDescription = "$SearchTerm Description"
+
+'Type Search term'
+WebUI.setText(findTestObject('HC-Web/Communications/Push Notifications/Search Text Field'), SearchTerm)
+
+'Initiate Search'
+WebUI.sendKeys(findTestObject('HC-Web/Communications/Push Notifications/Search Text Field'), Keys.chord(Keys.ENTER))
+
+'Verify the Notification column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Notification'), FailureHandling.STOP_ON_FAILURE)
+
+'Verify the Created By column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Created By'), FailureHandling.STOP_ON_FAILURE)
+
+'Verify the Recipients column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Recipients'), FailureHandling.STOP_ON_FAILURE)
+
+'Verify the Send Date column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Send Date'), FailureHandling.STOP_ON_FAILURE)
+
+'Verify the Status column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Status'), FailureHandling.STOP_ON_FAILURE)
+
+'Verify the Application column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Application'), FailureHandling.STOP_ON_FAILURE)
+
+'Open the segment record from the search results'
+WebUI.click(findTestObject('HC-Web/Communications/Segments/Table Row', [('PushNotificationName') : SearchTerm]))
+
+WebUI.closeBrowser()
+
