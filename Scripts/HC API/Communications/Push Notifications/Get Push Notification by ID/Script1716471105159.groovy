@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Get Push Notifications by ID', [('JobId') : '1']))
+response = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Get Push Notification by ID', [('JobId') : '16']))
 
 // Validate the response was successful (HTTP Code 200 == Status)
 WS.verifyResponseStatusCode(response, 200)
