@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Covers PBI 108977: Notifications - Back Office - Task Rule Toggle - Notification Previews</description>
-   <name>Verify Task Rule Toggles - Notification Previews - Part. Auto</name>
+   <name>Task Rule Toggles and Notification Templates - Part. Auto</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>12526db5-fd4d-4806-a657-606b7e964ec7</testCaseGuid>

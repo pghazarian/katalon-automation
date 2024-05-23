@@ -6,8 +6,8 @@ PBI 108079: Notifications - Back Office - Task Rule Toggle - Data/Backend&#xd;
 PBI 108255: Notifications - Back Office - Task Rule Toggle - API&#xd;
 PBI 108076: Account Settings - Notifications Screen - API Data Pull&#xd;
 PBI 108078: Account Settings - Notifications Screen - API/DB Apply Setting Updates</description>
-   <name>Verify user can send all available types of push notifications for task assignees - Script</name>
+   <name>Verify All types of push notifications - Part. Auto</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>35b7edd9-7587-43b2-8cdc-6d9ec1292c57</testCaseGuid>
+   <testCaseGuid>62cffbc9-2603-4546-9c38-334f9737787d</testCaseGuid>
 </TestCaseEntity>

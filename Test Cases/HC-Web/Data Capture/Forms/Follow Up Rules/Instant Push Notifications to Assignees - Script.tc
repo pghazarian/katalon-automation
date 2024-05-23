@@ -8,7 +8,7 @@ Dependent on the following PBIs:&#xd;
 PBI  108979: Notifications - Back Office - Push Notification Template Design&#xd;
 PBI 108980: Notifications - Back Office - Push Notification Template Data Pull / Merge&#xd;
 PBI 108981: Notifications - Back Office - Push Notification Template Implementation</description>
-   <name>Verify Instant Push Notifications can be send to task assignees - Script</name>
+   <name>Instant Push Notifications to Assignees - Script</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>47d3775d-bcad-459f-a9f5-a8317c173367</testCaseGuid>
