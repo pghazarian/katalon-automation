@@ -33,9 +33,9 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/System/Migration Settings/Impo
 
 WebUI.click(findTestObject('HC-Web/System/Migration Settings/Export People Tab'))
 
-WebUI.verifyElementText(findTestObject('HC-Web/System/Migration Settings/Person Data Extracts Header'), 'Person Data Extracts')
-
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Migration Settings/Person Data Extract Rows'))
+
+WebUI.verifyElementText(findTestObject('HC-Web/System/Migration Settings/Person Data Extracts Header'), 'Person Data Extracts')
 
 WebUI.click(findTestObject('HC-Web/System/Migration Settings/New Extract Button'))
 

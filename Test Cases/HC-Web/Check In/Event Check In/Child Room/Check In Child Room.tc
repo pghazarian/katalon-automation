@@ -36,7 +36,7 @@
       <variableId>251af015-d724-4d99-8ed6-62c3742e9b54</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'QA Automation'</defaultValue>
+      <defaultValue>'QA Automation Note'</defaultValue>
       <description></description>
       <id>6221b712-e314-4bd5-af29-d1a32bc62392</id>
       <masked>false</masked>

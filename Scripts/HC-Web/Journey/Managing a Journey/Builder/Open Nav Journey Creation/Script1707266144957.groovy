@@ -44,9 +44,17 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/Cre
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_Continue'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb'), JourneyName)
+WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb', [('JourneyName') : JourneyName]), 
+    3)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Builder'))
+WebUI.verifyElementText(findTestObject('HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb', [('JourneyName') : JourneyName]), 
+    JourneyName)
+
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 20)
+
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3)
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/Builder Tab'))
 
 'Add first section to support each step type addition'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
@@ -68,11 +76,15 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step 
 
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Connection Form Search Bar'), 2)
+
 WebUI.setText(findTestObject('HC-Web/Journey/BuilderPage/Connection Form Search Bar'), 'Response Card' + Keys.ENTER)
 
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Search Results'))
 
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Select Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Done Button'), 2)
 
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Done Button'))
 

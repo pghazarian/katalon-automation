@@ -29,6 +29,6 @@
       <description></description>
       <id>b2e72f31-ce1c-470b-a8f4-f0d0c7b10205</id>
       <masked>false</masked>
-      <name>ServOppName</name>
+      <name>ServingOppName</name>
    </variable>
 </TestCaseEntity>

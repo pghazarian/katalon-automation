@@ -22,33 +22,44 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/ministries-central'], FailureHandling.STOP_ON_FAILURE)
 
 'Search for ministry used for SO'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Ministry Search Bar'), 'Event SO Test')
+WebUI.setText(findTestObject('HC-Web/Ministry/Search/Search Input'), 'Event SO Test')
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Serving Opps/Ministry Search Bar'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/Search Input'), Keys.chord(Keys.ENTER))
 
 'Open ministry'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Event SO Test Ministry'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Search/Event SO Test Ministry'))
 
 'Select Anaheim campus'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Anaheim Campus Option'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Search/Selected Ministry Drawer/Anaheim Campus Option'))
 
 'View ministry dashboard'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/View Dashboard Button'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Ministry/Search/Selected Ministry Drawer/View Dashboard Button'), 
+    2)
+
+'View ministry dashboard'
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Search/Selected Ministry Drawer/View Dashboard Button'))
 
 'Navigate to serving opps'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Opps Tab'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/Serving Opps Tab'))
 
 WebUI.delay(3)
 
 'Click button to create new SO'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/New Opportunity Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/New Opportunity Button'))
 
 try {
+    'View ministry dashboard'
+    WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/What and Why Option'), 2)
+
     'Open What and Why Section'
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/What and Why Option'))
 
     'Name SO'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Name Text Field'), ServOppName)
+    WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Name Text Field'), 
+        2)
+
+    'Name SO'
+    WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Name Text Field'), ServingOppName)
 
     'Give SO a short description'
     WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Short Description Text Field'), 
@@ -108,6 +119,10 @@ try {
     WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Add Off Campus Venue Button'))
 
     'Enter Venue Name'
+    WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Name Text Field'), 
+        2)
+
+    'Enter Venue Name'
     WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Off Campus Venue Creation Drawer/Name Text Field'), 
         'QA Automation Custom Venue')
 
@@ -145,6 +160,10 @@ try {
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Edit Custom Questions Button'))
 
     try {
+        'Add a new question'
+        WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/New Question Button'), 
+            2)
+
         'Add a new question'
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/New Question Button'))
 
@@ -197,84 +216,102 @@ catch (Exception e) {
 } 
 
 'Finish final section of SO creation'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Done Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Done Button'))
 
 'Save SO'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Save Button'))
 
 'Navigate to SO tab'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Opps Tab'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/Serving Opps Tab'))
 
 'View SO\'s in list view'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/List View Serving Ops'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/List View Serving Ops'))
 
 'Select upcoming SO\'s'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Upcoming Radio Option Serving Opps'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/Upcoming Radio Option Serving Opps'))
 
 'Select first SO in list'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Table Row Serving Opp', [('ServOppName') : ServOppName]))
+WebUI.click(findTestObject('HC-Web/Ministry/Serving Opps Page/Table Row Serving Opp', [('ServingOppName') : ServingOppName]))
 
 'Add volunteer to SO'
-WebUI.waitForElementNotHasAttribute(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Button'), 'disabled', 
-    0)
+WebUI.waitForElementNotHasAttribute(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Button'), 
+    'disabled', 0)
 
 'Add volunteer to SO'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Button'))
 
 'Add to this occurrence'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/To This Occurrence Option'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/To This Occurrence Option'))
 
 'Switch to person search'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Drawer/Person Search Tab'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Person Search Tab'), 
+    2)
+
+'Switch to person search'
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Person Search Tab'))
 
 'Search for a volunteer'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Drawer/Person Search Bar'), VolunteerName)
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Person Search Bar'), 
+    2)
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Drawer/Person Search Bar'), Keys.chord(
-        Keys.ENTER))
+'Search for a volunteer'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Person Search Bar'), 
+    VolunteerName)
 
-WebUI.waitForElementClickable(findTestObject('HC-Web/Serving Opps/Add Volunteer Drawer/Person Search Results'), 0)
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Person Search Bar'), 
+    Keys.chord(Keys.ENTER))
+
+WebUI.waitForElementClickable(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Person Search Results'), 
+    2)
 
 'Select searched volunteer'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Drawer/Person Search Results'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Person Search Results'))
 
 'Confirm selection'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Drawer/Select Person Button'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'), 
+    2)
 
-WebUI.click(findTestObject('HC-Web/Serving Opps/Add Volunteer Drawer/Select Person Confirmation Yes Button'))
+'Confirm selection'
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'))
+
+WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'))
 
 'Click required custom question checkbox'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Drawer/Custom Question Checkbox'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Question Checkbox'), 
+    2)
+
+'Click required custom question checkbox'
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Question Checkbox'))
 
 'Save custom question responses'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Add Volunteer Drawer/Save Custom Question Responses Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Save Custom Question Responses Button'))
 
 'Verify volunteer appears in list'
 WebUI.verifyTextPresent(VolunteerName, false)
 
 'Select added volunteer'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Added Volunteer Checkbox'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Added Volunteer Checkbox'))
 
 'Open actions for selected volunteer'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Actions Dropdown Serving Schedule'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Actions Dropdown'))
 
 'Remove volunteer from occurrence'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Remove From This Occurrence Option'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Remove From This Occurrence Option'))
 
 'Confirm volunteer removal'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Remove From This Occurence Confirmation Yes Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Remove From This Occurence Confirmation Yes Button'))
 
 'Navigate to SO settings'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Settings Tab'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Settings Page/Settings Tab'))
 
 'Open SO actions dropdown'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Actions Dropdown Settings'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Settings Page/Actions Dropdown Settings'))
 
 'Select option to close SO'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Close Opportunity Dropdown Option'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Settings Page/Close Opportunity Dropdown Option'))
 
 'Confirm selection'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Close Opportunity Confirmation Yes Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Settings Page/Close Opportunity Confirmation Yes Button'))
 
 WebUI.closeBrowser()
 

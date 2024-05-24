@@ -37,11 +37,17 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/C
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Search or Add Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Occurrence Schedule Tab'), 2)
+
 WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Occurrence Schedule Tab'))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/First Listed Person'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Edit Person Record Button'), 2)
+
 WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Edit Person Record Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Person/Edit/Personal Details Panel'), 2)
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Edit/Personal Details Panel'))
 
