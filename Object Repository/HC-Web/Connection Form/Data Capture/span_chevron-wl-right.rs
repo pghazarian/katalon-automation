@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_chevron-wl-right</name>
+   <tag></tag>
+   <elementGuidId>271f6c53-e7f2-4d51-b634-bbcdd5a800d1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div/main/div/section/div/div[2]/div/div/div/div/div[5]/table/tbody/tr[3]/td[4]/button/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.ui.button.jss245.jss510.jss492.jss250.jss260 > span.button-inner-container.jss246</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e092dd85-3857-423f-86eb-485f1822f607</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss246</value>
+      <webElementGuid>23da2d5e-cc83-4ceb-94d2-813b236db3b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>chevron-wl-right</value>
+      <webElementGuid>5b15edd7-1d3c-4b51-a9b1-5f9f012f999c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss403 jss494&quot;]/div[@class=&quot;cmui container jss497 ui page--container jss496&quot;]/section[@class=&quot;cmui content jss500 ui page--content jss499&quot;]/div[@class=&quot;jss487&quot;]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss68 jss93 jss104&quot;]/div[@class=&quot;ui card jss244 jss491&quot;]/div[@class=&quot;card-content&quot;]/div[1]/div[5]/table[@class=&quot;ui jss504 table table-basic table-font-size-xsmall table-full-width table-selectable jss486&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell table-cell-one jss489&quot;]/button[@class=&quot;ui button jss245 jss510 jss492 jss250 jss260&quot;]/span[@class=&quot;button-inner-container jss246&quot;]</value>
+      <webElementGuid>727997a3-b2f5-4b3b-b670-c84d2562c4b7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div/section/div/div[2]/div/div/div/div/div[5]/table/tbody/tr[3]/td[4]/button/span</value>
+      <webElementGuid>8539f70f-af34-416a-8bf0-c898f4c12120</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Checkbox'])[1]/following::span[1]</value>
+      <webElementGuid>0752260e-2a9d-442f-b91e-81fae9e6abde</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CTA Single Check Box'])[1]/following::span[1]</value>
+      <webElementGuid>ce4dc180-ac03-4041-acc8-6faa4d64ad2f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::span[1]</value>
+      <webElementGuid>358925a6-e257-4d6a-9345-59976974a7fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Content Management'])[2]/preceding::span[2]</value>
+      <webElementGuid>11453b15-87db-4b6e-b1aa-d210af14e488</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td[4]/button/span</value>
+      <webElementGuid>a42e4a7e-ea99-4a48-b453-bedd4fedc5a5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'chevron-wl-right' or . = 'chevron-wl-right')]</value>
+      <webElementGuid>14121eff-27ef-4518-bfca-c27b96ab00db</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

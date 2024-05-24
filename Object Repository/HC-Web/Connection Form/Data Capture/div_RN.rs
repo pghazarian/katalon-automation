@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Paren Anaheim Worship 1</name>
+   <name>div_RN</name>
    <tag></tag>
-   <elementGuidId>331a70c1-e423-45d9-8fc7-95be22f3283d</elementGuidId>
+   <elementGuidId>81eb71c2-100f-4813-b953-6425092cdfa8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_0']/div/div[2]</value>
+         <value>//td[@id='data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0']/div/div[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.cmui.grid--column.jss45.jss292</value>
+         <value>div.cmui.grid--column.jss45.jss538</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorCollection>
-      <entry>
-         <key>SMART_LOCATOR</key>
-         <value>div >> internal:has-text=&quot;CloseFilterClear SearchNew FormNew FormSort ByName (A > Z)Name (Z > A)Creation D&quot;i >> nth=3</value>
-      </entry>
-   </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -29,15 +23,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>acb09fc9-ff85-4d3d-ae9c-0ee9a055340d</webElementGuid>
+      <webElementGuid>45e375eb-4337-4d1a-8c46-0eb55c20b344</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>cmui grid--column jss45 jss292</value>
-      <webElementGuid>e5f7b76e-9375-494f-b8d3-f97ee684ba3a</webElementGuid>
+      <value>cmui grid--column jss45 jss538</value>
+      <webElementGuid>fca5b726-e36a-4f45-af0b-9c72dffa3c80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,71 +39,71 @@
       <name>data-testid</name>
       <type>Main</type>
       <value>cmui-grid_column</value>
-      <webElementGuid>a37efb24-9c12-458d-8b70-97cb7f055e51</webElementGuid>
+      <webElementGuid>a1ff6a08-b096-4f0b-a7fa-d5a7c76a53df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Paren Anaheim Worship 1</value>
-      <webElementGuid>78088324-ade1-4583-93b6-6d4b37494589</webElementGuid>
+      <value>RN</value>
+      <webElementGuid>7c6e1064-94cb-45ea-89ca-79f0fcba7759</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_0&quot;)/div[@class=&quot;cmui grid jss7 jss288 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss292&quot;]</value>
-      <webElementGuid>2fc3afa7-7357-4959-89dc-919bc2b46f74</webElementGuid>
+      <value>id(&quot;data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0&quot;)/div[@class=&quot;cmui grid jss7 jss536 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss538&quot;]</value>
+      <webElementGuid>6d3c48d6-4a50-41fd-a789-df567da87dee</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_0']/div/div[2]</value>
-      <webElementGuid>9434e183-5e34-4469-976e-7bfe7a31121d</webElementGuid>
+      <value>//td[@id='data_grid--table_follow_up_rules_list--page_data_grid_cell_base-2_0']/div/div[2]</value>
+      <webElementGuid>ca8bf6e9-4554-4991-a16d-9b4bcdafc0bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[2]/following::div[4]</value>
-      <webElementGuid>29d77c83-fa27-4478-a204-81898697797a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Created On/By'])[1]/following::div[4]</value>
+      <webElementGuid>323c15a1-f298-4b7c-8756-74189a7ffccb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Entries'])[1]/following::div[4]</value>
-      <webElementGuid>cfdb2690-1a4f-44eb-83c4-6f97e2a930e8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modified'])[1]/following::div[4]</value>
+      <webElementGuid>e28bf300-aba9-4760-871d-8d48058431dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::div[2]</value>
-      <webElementGuid>12808bb9-a11c-4dec-bb44-9d46e390ce5f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::div[1]</value>
+      <webElementGuid>f0c12dab-d709-45ad-a345-4bfbc66358e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Worship Service'])[1]/preceding::div[3]</value>
-      <webElementGuid>5020b20a-fa02-4e69-aca8-e0c6e4cdaf1d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[2]/preceding::div[1]</value>
+      <webElementGuid>7a8b24c4-5271-4c6b-84b2-b7945176eddb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Paren Anaheim Worship 1']/parent::*</value>
-      <webElementGuid>4da944b8-4ad6-4684-814c-40ebcc17aeb3</webElementGuid>
+      <value>//*/text()[normalize-space(.)='RN']/parent::*</value>
+      <webElementGuid>8b97f839-d2e4-40b3-9081-185a3333445d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,14 +111,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/div/div[2]</value>
-      <webElementGuid>e9ace522-9f17-4196-9fcb-5b3b4784a854</webElementGuid>
+      <webElementGuid>9653c8c5-1586-47dd-bd46-9c6511a36db6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Paren Anaheim Worship 1' or . = 'Paren Anaheim Worship 1')]</value>
-      <webElementGuid>5444026a-b395-4529-93a3-b3e98208b996</webElementGuid>
+      <value>//div[(text() = 'RN' or . = 'RN')]</value>
+      <webElementGuid>dddfb51d-620b-4c7f-a6a4-40dd5f5a42ae</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

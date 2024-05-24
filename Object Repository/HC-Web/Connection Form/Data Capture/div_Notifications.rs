@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Notifications</name>
+   <name>div_Notifications</name>
    <tag></tag>
-   <elementGuidId>f5be2cf7-886b-4347-a442-c2f62defeed0</elementGuidId>
+   <elementGuidId>740fdcec-b338-4460-b0d8-4ad36876f82b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -15,12 +15,6 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorCollection>
-      <entry>
-         <key>SMART_LOCATOR</key>
-         <value>#task_action_form >> internal:text=&quot;Notifications&quot;i</value>
-      </entry>
-   </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -29,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>3e58a833-7609-4500-af0b-23f0772aad41</webElementGuid>
+      <webElementGuid>2eb421dd-7566-4d48-98af-559706c9a05d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiTypography-root MuiTypography-h3</value>
-      <webElementGuid>fa7f33d8-18ec-4cf6-b0bf-4c7a14c1b597</webElementGuid>
+      <webElementGuid>afb23760-d528-414d-9406-66af5c051ef4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +39,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Notifications</value>
-      <webElementGuid>dd78de7a-6b86-45fb-915f-c76c558372fc</webElementGuid>
+      <webElementGuid>224d7767-9921-4be9-b92c-cbd2f69be9ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +47,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;task_action_form&quot;)/div[@class=&quot;cmui grid--column jss45&quot;]/div[@class=&quot;MuiTypography-root MuiTypography-h3&quot;]</value>
-      <webElementGuid>412ea90e-931a-45fc-98b9-4725c8dbae70</webElementGuid>
+      <webElementGuid>770471f5-c433-4c51-85e9-aced698f41d7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +55,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='task_action_form']/div[10]/div</value>
-      <webElementGuid>67b964a2-ef63-48c1-98e1-955961a5e154</webElementGuid>
+      <webElementGuid>c26833fc-85b3-48c8-bab7-6ca97727c525</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,15 +63,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change'])[2]/following::div[2]</value>
-      <webElementGuid>c032f9fb-2d12-4cd9-89e6-af7a6e8fee2c</webElementGuid>
+      <webElementGuid>fffa3e48-deda-4ed4-8a1c-a2adddd849ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='sarkisiansarkis2@gmail.com'])[1]/following::div[2]</value>
-      <webElementGuid>3c058e39-ea62-4b08-81c2-9ef3c9000ba3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='bill.armstrong@technossus.com'])[1]/following::div[2]</value>
+      <webElementGuid>efd68fd6-4ea5-4b1b-bfa0-b9e79755571d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,15 +79,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='None'])[1]/preceding::div[1]</value>
-      <webElementGuid>4f79234e-51e6-40ef-853e-f7bf98d2026f</webElementGuid>
+      <webElementGuid>758d8b2b-6c00-4184-99d8-c71a377c5b4f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daily batch'])[1]/preceding::div[2]</value>
-      <webElementGuid>04b63ca2-4262-4c37-ac00-aed196413ce2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daily Batch'])[1]/preceding::div[2]</value>
+      <webElementGuid>ecd16e65-2529-4af5-93d3-602c127df26d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +95,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/div/div/div/div/div[10]/div</value>
-      <webElementGuid>6cf20369-acd0-4041-bf7c-f338d3b8ccfe</webElementGuid>
+      <webElementGuid>fa578936-d84a-4492-b8fc-dd569b3c3f9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +103,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Notifications' or . = 'Notifications')]</value>
-      <webElementGuid>4ae84638-9fe6-4346-a0fe-ba156968d4ac</webElementGuid>
+      <webElementGuid>30b9d26c-4dfd-449a-96f9-5ee1d7004762</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

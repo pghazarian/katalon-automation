@@ -17,3 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Login HC Admin'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+
+'Navigate to Data Capture - Connection Forms'
+WebUI.click(findTestObject('null'))
+
+'Enter "Paren Anaheim Worship 1" in Search field '
+WebUI.setText(findTestObject('null'), 'Paren Anaheim Worship 1')
+
+'Hit the Enter Key on Keyboard '
+WebUI.sendKeys(findTestObject('null'), Keys.chord(Keys.ENTER))
+
+'Click to open "Paren Anaheim Worship 1" Connection Form '
+WebUI.click(findTestObject('null'))
+
+'Navigate to Follow Up tab \r\n\t\t\t\t'
+WebUI.click(findTestObject('null'))
+
+'To open "Follow Up Rules" drawer'
+WebUI.click(findTestObject('null'))
+
+'To open "PAW1" follow up rule '
+WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('null'))
+
