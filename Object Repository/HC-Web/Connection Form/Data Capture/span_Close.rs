@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Notifications</name>
+   <name>span_Close</name>
    <tag></tag>
-   <elementGuidId>9a59c651-5b75-4a29-ba7d-c13087391804</elementGuidId>
+   <elementGuidId>d795d6a3-1186-4edb-b4a1-7ef88530b235</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>div.MuiTypography-root.MuiTypography-h3</value>
+         <value>#follow_up_rules_list--drawer_title_bar_close_botton > span.button-inner-container.jss246</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='task_action_form']/div[10]/div</value>
+         <value>//button[@id='follow_up_rules_list--drawer_title_bar_close_botton']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,87 +22,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>95bf1657-cee9-4061-927a-6e3227654ece</webElementGuid>
+      <value>span</value>
+      <webElementGuid>e62b00d4-b05d-4cd5-bc10-edee9d901d6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root MuiTypography-h3</value>
-      <webElementGuid>9a373d38-6312-45b9-a74e-9237261e236d</webElementGuid>
+      <value>button-inner-container jss246</value>
+      <webElementGuid>7e0d7fb6-c89a-4b8a-ad6b-68e660d39bbd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Notifications</value>
-      <webElementGuid>35a272eb-af58-4725-aa0a-bcb30988a80d</webElementGuid>
+      <value>Close</value>
+      <webElementGuid>faa7bbcd-f2a6-4c60-901f-72d3a07508cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;task_action_form&quot;)/div[@class=&quot;cmui grid--column jss45&quot;]/div[@class=&quot;MuiTypography-root MuiTypography-h3&quot;]</value>
-      <webElementGuid>1730e80f-9be8-4fb8-ba9d-f65d292202b0</webElementGuid>
+      <value>id(&quot;follow_up_rules_list--drawer_title_bar_close_botton&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
+      <webElementGuid>6844153e-03a7-4d70-a468-83166c66b137</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='task_action_form']/div[10]/div</value>
-      <webElementGuid>0fa80a3b-ffa1-4596-863e-d828b687b7f8</webElementGuid>
+      <value>//button[@id='follow_up_rules_list--drawer_title_bar_close_botton']/span</value>
+      <webElementGuid>49bad0e6-41f4-41a5-8a9a-1305a2f43837</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change'])[2]/following::div[2]</value>
-      <webElementGuid>65feaa55-66d9-409a-9f68-7291993d9d9d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Follow Up Rules'])[1]/following::span[1]</value>
+      <webElementGuid>728c69f3-2edd-45b0-ae02-24a2a523bf79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='bill.armstrong@technossus.com'])[1]/following::div[2]</value>
-      <webElementGuid>269c6670-4f9d-41de-9b46-5f36531841cf</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('It', &quot;'&quot;, 's easy to update the team name or description.')])[1]/following::span[2]</value>
+      <webElementGuid>df6276a5-51af-4d00-910d-2c4a4a43ed07</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='None'])[1]/preceding::div[1]</value>
-      <webElementGuid>abfdbb08-a1d1-4591-b5c6-b302695548ef</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New Rule'])[1]/preceding::span[1]</value>
+      <webElementGuid>d320fa88-7d72-4262-aab5-60b54a73de42</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daily Batch'])[1]/preceding::div[2]</value>
-      <webElementGuid>c14dc276-25e4-4a5e-b4f6-11f9bf8ff964</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CTA Single Check Box'])[2]/preceding::span[3]</value>
+      <webElementGuid>6151d971-98c1-4bb4-a501-c7c67c15b0fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//section/div/div/div/div/div/div[10]/div</value>
-      <webElementGuid>ccb5a692-fdeb-40f7-a0a8-e3bcdec8aa67</webElementGuid>
+      <value>//header/div/div/button/span</value>
+      <webElementGuid>9502f6ef-a34e-438b-980a-682c09759a73</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Notifications' or . = 'Notifications')]</value>
-      <webElementGuid>3c964dcc-5dd9-4ca4-b7ea-aae83abfee7c</webElementGuid>
+      <value>//span[(text() = 'Close' or . = 'Close')]</value>
+      <webElementGuid>59574470-9250-4d3f-9d3e-6c743a20772f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

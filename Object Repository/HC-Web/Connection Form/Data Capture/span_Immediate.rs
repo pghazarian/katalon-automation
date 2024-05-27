@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Notifications</name>
+   <name>span_Immediate</name>
    <tag></tag>
-   <elementGuidId>9a59c651-5b75-4a29-ba7d-c13087391804</elementGuidId>
+   <elementGuidId>c88b138e-a074-4ced-b554-6a6a9d620464</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>div.MuiTypography-root.MuiTypography-h3</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='task_action_form']/div[10]/div</value>
+         <value>//div[@id='task_action_form']/div[10]/div[4]/label/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,87 +22,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>95bf1657-cee9-4061-927a-6e3227654ece</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>MuiTypography-root MuiTypography-h3</value>
-      <webElementGuid>9a373d38-6312-45b9-a74e-9237261e236d</webElementGuid>
+      <value>span</value>
+      <webElementGuid>d026249e-9e68-44ef-aeec-a2e5108d3e51</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Notifications</value>
-      <webElementGuid>35a272eb-af58-4725-aa0a-bcb30988a80d</webElementGuid>
+      <value>Immediate</value>
+      <webElementGuid>bdea21b6-39d1-4781-97bf-611ccf1a0ec2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;task_action_form&quot;)/div[@class=&quot;cmui grid--column jss45&quot;]/div[@class=&quot;MuiTypography-root MuiTypography-h3&quot;]</value>
-      <webElementGuid>1730e80f-9be8-4fb8-ba9d-f65d292202b0</webElementGuid>
+      <value>id(&quot;task_action_form&quot;)/div[@class=&quot;cmui grid--column jss45&quot;]/div[@class=&quot;ui radio jss1632 jss1617 jss1627 radio-full-width&quot;]/label[@class=&quot;label jss1630&quot;]/span[1]</value>
+      <webElementGuid>4c5dd17b-95e1-4417-95c8-cf837ad6cf98</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='task_action_form']/div[10]/div</value>
-      <webElementGuid>0fa80a3b-ffa1-4596-863e-d828b687b7f8</webElementGuid>
+      <value>//div[@id='task_action_form']/div[10]/div[4]/label/span</value>
+      <webElementGuid>c170588e-570e-4275-989f-1bc0482cf324</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change'])[2]/following::div[2]</value>
-      <webElementGuid>65feaa55-66d9-409a-9f68-7291993d9d9d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daily Batch'])[1]/following::span[1]</value>
+      <webElementGuid>96626267-2b4e-4bb2-b600-948bf8a59a61</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='bill.armstrong@technossus.com'])[1]/following::div[2]</value>
-      <webElementGuid>269c6670-4f9d-41de-9b46-5f36531841cf</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='None'])[1]/following::span[2]</value>
+      <webElementGuid>b591224f-5558-4db5-8b6a-e4927c3d0d43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='None'])[1]/preceding::div[1]</value>
-      <webElementGuid>abfdbb08-a1d1-4591-b5c6-b302695548ef</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Notification'])[1]/preceding::span[1]</value>
+      <webElementGuid>0aabbe10-0e53-4377-8681-8b0c90c6858e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daily Batch'])[1]/preceding::div[2]</value>
-      <webElementGuid>c14dc276-25e4-4a5e-b4f6-11f9bf8ff964</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Basic'])[1]/preceding::span[1]</value>
+      <webElementGuid>8f59eaf9-1179-479a-be2e-2bb15e97062e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Immediate']/parent::*</value>
+      <webElementGuid>a6c42413-c197-49fd-bd74-fecec7642ea6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//section/div/div/div/div/div/div[10]/div</value>
-      <webElementGuid>ccb5a692-fdeb-40f7-a0a8-e3bcdec8aa67</webElementGuid>
+      <value>//div[4]/label/span</value>
+      <webElementGuid>c1d72961-3943-4d40-b5d1-6dc0bd7895c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Notifications' or . = 'Notifications')]</value>
-      <webElementGuid>3c964dcc-5dd9-4ca4-b7ea-aae83abfee7c</webElementGuid>
+      <value>//span[(text() = 'Immediate' or . = 'Immediate')]</value>
+      <webElementGuid>36d899ce-b015-42e2-87ff-8e1df89b9084</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

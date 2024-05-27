@@ -49,10 +49,6 @@ WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Daily Batch'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Immediate'))
-
 WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('null'))
@@ -71,7 +67,11 @@ WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Done'))
+WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('null'))
 

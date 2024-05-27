@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Follow Ups</name>
+   <name>div_Simple Follow Up Push Notification</name>
    <tag></tag>
-   <elementGuidId>48e66d8a-374a-40e8-a5c2-35c0216df9a4</elementGuidId>
+   <elementGuidId>503c6743-5c14-48ac-a108-6254d2e79df1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='tab-navigation_tab--key-item-4']</value>
+         <key>CSS</key>
+         <value>div.Select-option.is-focused</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-4</value>
+         <key>XPATH</key>
+         <value>(//div[@id='react-select-49--list']/div/div/div/div[5])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,8 +22,8 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>044fe5e8-61a5-4b5b-a434-d0ad41c1537e</webElementGuid>
+      <value>div</value>
+      <webElementGuid>1a80a521-e962-478c-a270-737b8e5e48ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,31 +31,23 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>0b7aa443-c5dc-4467-9765-6b2aa9aebdb5</webElementGuid>
+      <webElementGuid>281389c2-3142-4ada-a852-c9416536dd6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>jss421 navigation_sectional_tabs--tab</value>
-      <webElementGuid>9a93a90c-baa4-4a5b-b7c3-587f35c23c85</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>tab-navigation_tab--key-item-4</value>
-      <webElementGuid>386a51b9-f7ca-4bcc-b7f3-784c7b03d8df</webElementGuid>
+      <value>Select-option is-focused</value>
+      <webElementGuid>77712482-b5ed-44ee-8150-ddd203b7390b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
-      <value>tab</value>
-      <webElementGuid>673eaf6f-7158-4c1b-bae2-97141197a9ac</webElementGuid>
+      <value>option</value>
+      <webElementGuid>254d7b60-4796-4518-ab76-341bb533b06b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,86 +55,78 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>be667e7e-0a8f-438d-b1a8-18d479f21763</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>button</value>
-      <webElementGuid>51bbbf88-43cf-49e3-a9c5-d83f0f4832e1</webElementGuid>
+      <webElementGuid>97332ca2-927d-4255-8b15-b15f88b5b843</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Follow Ups</value>
-      <webElementGuid>6031dcd9-264a-4336-80ce-3eb467b02123</webElementGuid>
+      <value>Simple Follow Up Push Notification</value>
+      <webElementGuid>34baf353-095f-44f4-9a95-0419121281e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab-navigation_tab--key-item-4&quot;)</value>
-      <webElementGuid>177aa602-1974-442c-b639-4d227453c8b0</webElementGuid>
+      <value>id(&quot;task_action_form&quot;)/div[@class=&quot;cmui grid--column jss45&quot;]/div[@id=&quot;task_action_form--task_category_select&quot;]/div[@class=&quot;Select has-value is-focused is-open is-pseudo-focused Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-49--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
+      <webElementGuid>4260bf91-34dd-4bf4-9a9d-b9a4070c105b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//button[@id='tab-navigation_tab--key-item-4']</value>
-      <webElementGuid>c49962cc-ad1c-4127-a5a9-43e7d36ede65</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div/div[2]/div/div/div/div/div[2]/div/div/button[5]</value>
-      <webElementGuid>fdb93054-e58f-43c8-ab70-4ab95b8f09cd</webElementGuid>
+      <value>(//div[@id='react-select-49--list']/div/div/div/div[5])[2]</value>
+      <webElementGuid>bb5ff923-1aff-4857-ba51-7c27b756deb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auto-Reply Email'])[1]/following::button[1]</value>
-      <webElementGuid>1ff9ac17-4a4b-44b9-8370-86e2032d1ff7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Important Follow Up Push Notification'])[3]/following::div[1]</value>
+      <webElementGuid>997157a1-8c45-4ffd-a729-74af31e2f101</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Form Builder'])[1]/following::button[2]</value>
-      <webElementGuid>bb9aba04-5671-478a-9bf0-7ba4e39af33a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detailed Follow Up Push Notification'])[2]/following::div[2]</value>
+      <webElementGuid>7adedeb5-df0c-499f-877c-f580492346ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='PG'])[1]/preceding::button[2]</value>
-      <webElementGuid>f017912a-2c5e-4d84-84b7-3c6d3ba5d1d9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview'])[1]/preceding::div[5]</value>
+      <webElementGuid>003cf017-c61d-4bb4-853e-26828dd43201</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete Task'])[2]/preceding::div[6]</value>
+      <webElementGuid>5c5fa918-adda-43e2-9121-b2823a4fb0ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[5]</value>
-      <webElementGuid>033e2e54-80d8-4899-8d37-56a7e2a9ba80</webElementGuid>
+      <value>//div[3]/div/div/div/div/div[5]</value>
+      <webElementGuid>a4fd06f4-ea07-4bc0-9c2e-65b30f64c720</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@id = 'tab-navigation_tab--key-item-4' and @type = 'button' and (text() = 'Follow Ups' or . = 'Follow Ups')]</value>
-      <webElementGuid>e110e2c6-ed95-4e76-99cc-ccc4dbb87d07</webElementGuid>
+      <value>//div[(text() = 'Simple Follow Up Push Notification' or . = 'Simple Follow Up Push Notification')]</value>
+      <webElementGuid>ef489f90-6e4d-4286-b1a7-f81d6c906fb8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

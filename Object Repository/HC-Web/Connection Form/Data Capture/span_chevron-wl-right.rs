@@ -3,15 +3,15 @@
    <description></description>
    <name>span_chevron-wl-right</name>
    <tag></tag>
-   <elementGuidId>271f6c53-e7f2-4d51-b634-bbcdd5a800d1</elementGuidId>
+   <elementGuidId>ae6a5bfc-cf05-4636-aa9e-f40f0063765c</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.ui.button.jss245.jss1500.jss1488.jss250.jss260 > span.button-inner-container.jss246</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='layout']/div[2]/div/main/div/section/div/div[2]/div/div/div/div/div[5]/table/tbody/tr[3]/td[4]/button/span</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>button.ui.button.jss245.jss510.jss492.jss250.jss260 > span.button-inner-container.jss246</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>e092dd85-3857-423f-86eb-485f1822f607</webElementGuid>
+      <webElementGuid>1b5a2316-1ae6-4f31-b23f-121a66486b14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button-inner-container jss246</value>
-      <webElementGuid>23da2d5e-cc83-4ceb-94d2-813b236db3b7</webElementGuid>
+      <webElementGuid>36dc679f-5b7c-49cf-b686-a68e8041790b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,15 +39,15 @@
       <name>text</name>
       <type>Main</type>
       <value>chevron-wl-right</value>
-      <webElementGuid>5b15edd7-1d3c-4b51-a9b1-5f9f012f999c</webElementGuid>
+      <webElementGuid>59f4a586-4c6f-458d-bfc6-edc2d3b695e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss403 jss494&quot;]/div[@class=&quot;cmui container jss497 ui page--container jss496&quot;]/section[@class=&quot;cmui content jss500 ui page--content jss499&quot;]/div[@class=&quot;jss487&quot;]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss68 jss93 jss104&quot;]/div[@class=&quot;ui card jss244 jss491&quot;]/div[@class=&quot;card-content&quot;]/div[1]/div[5]/table[@class=&quot;ui jss504 table table-basic table-font-size-xsmall table-full-width table-selectable jss486&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell table-cell-one jss489&quot;]/button[@class=&quot;ui button jss245 jss510 jss492 jss250 jss260&quot;]/span[@class=&quot;button-inner-container jss246&quot;]</value>
-      <webElementGuid>727997a3-b2f5-4b3b-b670-c84d2562c4b7</webElementGuid>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss1399 jss1490&quot;]/div[@class=&quot;cmui container jss1426 ui page--container jss1425&quot;]/section[@class=&quot;cmui content jss1429 ui page--content jss1428&quot;]/div[@class=&quot;jss1483&quot;]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss68 jss93 jss104&quot;]/div[@class=&quot;ui card jss244 jss1487&quot;]/div[@class=&quot;card-content&quot;]/div[1]/div[5]/table[@class=&quot;ui jss1494 table table-basic table-font-size-xsmall table-full-width table-selectable jss1482&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell table-cell-one jss1485&quot;]/button[@class=&quot;ui button jss245 jss1500 jss1488 jss250 jss260&quot;]/span[@class=&quot;button-inner-container jss246&quot;]</value>
+      <webElementGuid>ae09c19f-f7f8-4dba-9a5c-830be15250dd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/section/div/div[2]/div/div/div/div/div[5]/table/tbody/tr[3]/td[4]/button/span</value>
-      <webElementGuid>8539f70f-af34-416a-8bf0-c898f4c12120</webElementGuid>
+      <webElementGuid>aadbb3a4-2da7-40ba-82f5-25a67546c2a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Checkbox'])[1]/following::span[1]</value>
-      <webElementGuid>0752260e-2a9d-442f-b91e-81fae9e6abde</webElementGuid>
+      <webElementGuid>f433cf0c-18a0-4588-aa56-8eb8f7fae1db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CTA Single Check Box'])[1]/following::span[1]</value>
-      <webElementGuid>ce4dc180-ac03-4041-acc8-6faa4d64ad2f</webElementGuid>
+      <webElementGuid>a513f4f4-7ed7-412e-9303-67232421af12</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::span[1]</value>
-      <webElementGuid>358925a6-e257-4d6a-9345-59976974a7fc</webElementGuid>
+      <webElementGuid>dc1c45aa-ab45-4877-80a2-2c82bef8c2ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Content Management'])[2]/preceding::span[2]</value>
-      <webElementGuid>11453b15-87db-4b6e-b1aa-d210af14e488</webElementGuid>
+      <webElementGuid>ad20b594-2341-4909-81b5-1626cb2695e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td[4]/button/span</value>
-      <webElementGuid>a42e4a7e-ea99-4a48-b453-bedd4fedc5a5</webElementGuid>
+      <webElementGuid>439863ca-36c3-4cba-8426-468a8a43eab1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +103,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'chevron-wl-right' or . = 'chevron-wl-right')]</value>
-      <webElementGuid>14121eff-27ef-4518-bfca-c27b96ab00db</webElementGuid>
+      <webElementGuid>05ce6840-980e-437f-a58b-b26654e97b8e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

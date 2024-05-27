@@ -3,15 +3,15 @@
    <description></description>
    <name>span_Detailed Follow Up Push Notification</name>
    <tag></tag>
-   <elementGuidId>dab7577c-e34c-4b8c-b8ae-28129e59703a</elementGuidId>
+   <elementGuidId>4a1be64d-a8ce-49f4-ad13-820b5da682e4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@id='react-select-11--value-item']</value>
+         <key>CSS</key>
+         <value>#react-select-49--value-item</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#react-select-11--value-item</value>
+         <key>XPATH</key>
+         <value>//span[@id='react-select-49--value-item']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>ae6ebd3a-ffce-4e09-9fee-918c6a3e5b9e</webElementGuid>
+      <webElementGuid>34f829d8-acea-4093-9b54-dc62f2169cff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Select-value-label</value>
-      <webElementGuid>dd056269-aa09-4b4a-b4f7-15b2627db8af</webElementGuid>
+      <webElementGuid>66f5dbff-f489-4408-a8f4-dac59f12ed99</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>ec4a46fa-cc05-42de-8941-7168da322df5</webElementGuid>
+      <webElementGuid>d50a938a-a503-4b50-952c-f064d8ee2a15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,15 +47,15 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>0dfe4ced-d8f8-4feb-a87f-8e3e016fd078</webElementGuid>
+      <webElementGuid>52c85bb8-eb2e-43a7-9985-bf0849a65692</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>react-select-11--value-item</value>
-      <webElementGuid>d5fd9dad-7a64-4181-a673-b19f70beecf4</webElementGuid>
+      <value>react-select-49--value-item</value>
+      <webElementGuid>d88def93-c268-4a8f-9a5b-1d6e69cfe278</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,31 +63,31 @@
       <name>text</name>
       <type>Main</type>
       <value>Detailed Follow Up Push Notification</value>
-      <webElementGuid>0ae5431a-8891-41d0-852d-89273e4fe641</webElementGuid>
+      <webElementGuid>911adf7c-0174-4da8-8203-7f96b3fa6280</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;react-select-11--value-item&quot;)</value>
-      <webElementGuid>5eb77329-cab9-44ea-a752-4a6b604e40b7</webElementGuid>
+      <value>id(&quot;react-select-49--value-item&quot;)</value>
+      <webElementGuid>48328c2a-b736-4640-a06e-cdfe47418971</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//span[@id='react-select-11--value-item']</value>
-      <webElementGuid>d555209c-8bd1-46f1-8bd9-e5afe7825b25</webElementGuid>
+      <value>//span[@id='react-select-49--value-item']</value>
+      <webElementGuid>e59c7bdc-242c-4079-846d-6094b871224a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='react-select-11--value']/div/span</value>
-      <webElementGuid>865b59b7-c45f-4ea5-a864-f12c8da805c1</webElementGuid>
+      <value>//div[@id='react-select-49--value']/div/span</value>
+      <webElementGuid>8b02c752-2c43-412b-a248-246b9c019eca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Simple Follow Up Push Notification'])[1]/following::span[1]</value>
-      <webElementGuid>608958a5-a221-4979-9d5b-7c1b97144157</webElementGuid>
+      <webElementGuid>50527e57-dcd1-48fd-a6cc-12db78024ce2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,23 +103,23 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Important Follow Up Push Notification'])[1]/following::span[1]</value>
-      <webElementGuid>392900e4-c21f-4f8a-adb2-d6ee7983ac0b</webElementGuid>
+      <webElementGuid>5681d8ee-88bb-4c9d-8928-2452d0101d0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Basic'])[2]/preceding::span[2]</value>
-      <webElementGuid>42f90766-a99f-4382-a8ca-b1b19dfd177b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview'])[1]/preceding::span[2]</value>
+      <webElementGuid>19673d0d-e931-47ec-93e3-368e0d5eae8c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Basic Follow Up Push Notification'])[2]/preceding::span[2]</value>
-      <webElementGuid>3cbe1a59-0d4c-492f-baeb-90dcb07d68f4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete Task'])[2]/preceding::span[3]</value>
+      <webElementGuid>ca739af9-d4f4-4328-8c3c-49b560fdca5f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,14 +127,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div/div[2]/div/div/span</value>
-      <webElementGuid>b69d4252-294a-4a62-b6cc-bf69e316016b</webElementGuid>
+      <webElementGuid>ce9f75b3-3cce-496c-b353-c4a5cd5e505c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[@id = 'react-select-11--value-item' and (text() = 'Detailed Follow Up Push Notification' or . = 'Detailed Follow Up Push Notification')]</value>
-      <webElementGuid>a7f72c2c-5fcf-4821-8655-6717b4bc8a83</webElementGuid>
+      <value>//span[@id = 'react-select-49--value-item' and (text() = 'Detailed Follow Up Push Notification' or . = 'Detailed Follow Up Push Notification')]</value>
+      <webElementGuid>2095fa32-a297-4d0b-b20b-9e418c1b7808</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

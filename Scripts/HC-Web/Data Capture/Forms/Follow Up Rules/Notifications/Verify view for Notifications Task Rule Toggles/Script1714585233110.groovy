@@ -21,35 +21,67 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
 
+'Go to Data Capture > Connection Forms'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/p_Data Capture'))
 
+'Click in the Connection Forms Search Field '
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/input_Log Out_connection_forms_list_page--p_046c7d'))
+
+'Type Paren Anaheim Worship 1'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/input_Log Out_connection_forms_list_page--p_046c7d'), 
-    'Paren Anaheim')
+    'Paren Anaheim Worship 1')
 
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/input_Log Out_connection_forms_list_page--p_046c7d'), 
     Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/div_Paren Anaheim Worship 1'))
+'Select Paren Anaheim Worship 1 Connection Form '
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/td_Paren Anaheim Worship 1_data_grid--table_25920f'))
 
+'Click on Follow Ups tab '
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Follow Ups'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/button_chevron-wl-right'))
+'Click on the Chevron next to a CTA check box, under the Field Rules section of Follow Ups page \r\n'
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_chevron-wl-right'))
 
+'Select RN Rule '
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/div_RN'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/p_test paren'))
+'Select Test Paren Task  '
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/p_Test Paren'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/p_Task 1'))
-
+'Go to Notifictions section of the Rule Builder '
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/div_Notifications'))
 
+'Select Daily Batch '
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Daily Batch'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Detailed Follow Up Push Notification'))
+'Select Immediate '
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Immediate'))
 
+'Click open the drop down menu, under the Select Notification (Template) section '
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/svg_Select'))
+
+'Select Basic Template'
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/div_Basic Follow Up Push Notification'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/svg_Select'))
+
+'Select Detailed Template'
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/div_Detailed Follow Up Push Notification'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/svg_Select'))
+
+'Select Important Template'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/div_Important Follow Up Push Notification'))
 
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/svg_Select'))
+
+'Select Simple Template'
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/div_Simple Follow Up Push Notification'))
+
+'Click on Done button in Rule Builder drawer '
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Done'))
 
+'Click on Save button of Rule '
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/span_Save'))
 
