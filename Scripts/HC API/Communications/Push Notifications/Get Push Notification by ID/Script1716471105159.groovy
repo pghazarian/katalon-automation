@@ -24,3 +24,4 @@ response = WS.sendRequest(findTestObject('HC API/Communications/Push Notificatio
 // Validate the response was successful (HTTP Code 200 == Status)
 WS.verifyResponseStatusCode(response, 200)
 
+WS.verifyElementPropertyValue(response, 'sendPush', true)

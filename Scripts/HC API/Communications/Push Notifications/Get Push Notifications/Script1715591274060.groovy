@@ -23,6 +23,8 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:],
 
     // Validate the response was successful (HTTP Code 200 == Status)
     WS.verifyResponseStatusCode(response, 200)
+	
+	WS.verifyElementPropertyValue(response, 'results[6].name', 'ST Push Notifications 1')
 
-    WS.verifyElementPropertyValue(response, 'results[6].name', 'ST Push Notifications 1')
+    WS.verifyElementPropertyValue(response, 'results[6].sendPush', null)
 
