@@ -17,7 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Login HC Admin'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/1 None - radio button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Expand_Important Follow Up Push Notification'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Expand_Simple Follow Up Push Notification'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/label_None'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Cancel - button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/No - button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Yes - button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Close - button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Entries tab'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/New Entry - button'))
 

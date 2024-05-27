@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Yes - button</name>
+   <tag></tag>
+   <elementGuidId>5ccc96e1-edec-46f5-b1df-933cff0cf309</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='follow_up_rule_editor_drawer--cancel_with_dirty_data_yes_button']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#follow_up_rule_editor_drawer--cancel_with_dirty_data_yes_button > span.button-inner-container.jss253</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>49e43c6f-efb9-40d3-a113-6e845c387bb5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss253</value>
+      <webElementGuid>2232916b-a180-47bd-af09-5a05ef8250fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Yes</value>
+      <webElementGuid>9e1bbcc4-aec4-4138-9edd-7abf3446a61f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;follow_up_rule_editor_drawer--cancel_with_dirty_data_yes_button&quot;)/span[@class=&quot;button-inner-container jss253&quot;]</value>
+      <webElementGuid>3a2c44c3-0ccd-4908-9df7-34a3a171c7c3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='follow_up_rule_editor_drawer--cancel_with_dirty_data_yes_button']/span</value>
+      <webElementGuid>4cc6a06e-36d2-4ba6-ab96-52b965c38e0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Are You Sure?'])[1]/following::span[2]</value>
+      <webElementGuid>ddd5484b-31fc-4547-9187-256f7a8ceb0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[2]/preceding::span[1]</value>
+      <webElementGuid>13fa031c-43dd-41a3-9370-ddb88eeb4004</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/button/span</value>
+      <webElementGuid>4ea7a272-5dd1-447a-869d-6308fe4433c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Yes' or . = 'Yes')]</value>
+      <webElementGuid>36c8803f-59cb-4322-8241-0753ead90622</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
