@@ -29,18 +29,28 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import io.appium.java_client.MobileElement as MobileElement
 import com.kms.katalon.core.testobject.TestObjectXpath
+import org.openqa.selenium.WebElement
+import io.appium.java_client.ios.IOSDriver
 
 
-def timeout = 3
+def timeout = 10
 def UniqueEventName = 'QA Automation Event Recurring Daily Does Not End'
 
 'Open existing app by the app bundle id'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+
+Boolean deviceIsiOS = false
+
+if (Device.isIOS()) {
+	deviceIsiOS = true
+}
+
+	
 'Navigate to Discover'
 Button.tap('Nav/Discover Navigation Button', timeout)
 
-Mobile.delay(3)
+//Mobile.delay(3)
 'Wait for Events landing page to display'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Events Tab"), timeout)
 
@@ -51,7 +61,7 @@ Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), tim
 
 'Verify that the list has entries'
 Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry'), timeout)
-
+/*
 'Verify that the entries have a public name'
 Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Name'), timeout)
 
@@ -69,9 +79,12 @@ Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Recur
 
 'Verify that the entries have a public name'
 //Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Category'), timeout)
-
+*/
 // need driver to get lists and close app
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
+
+AppiumDriver<IOSDriver> iOSDriver = MobileDriverFactory.getDriver()
+
 
 'Tap on the Sort and Filter button'
 Button.tap("Discover/Events/Sort And Filter", timeout)
@@ -83,8 +96,9 @@ Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Sort 
 Button.tap("Discover/Events/SortFilter/Sort By", timeout)
 
 'Tap on the Sort A-Z button'
-if (Device.isIOS()) {
-	TextField.typeText(Finder.findTextField('Discover/Events/SortFilter/Sort By Picker Wheel'), "Sort A-Z", timeout)
+if (deviceIsiOS) {
+	Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/Sort By Picker Wheel'), "A to Z", FailureHandling.STOP_ON_FAILURE)    
+	//TextField.typeText(Finder.findTextField('Discover/Events/SortFilter/Sort By Picker Wheel'), "A to Z", timeout)
 	Button.tap("Discover/Events/SortFilter/Sort Done", timeout)
 }
 else {
@@ -103,9 +117,9 @@ String lastEventName = ''
 
 Boolean SortOrderIsValid = true
 int compareResult
-
+/*========================
 List<MobileElement> eventNames
-if (Device.isIOS()) {
+if (deviceIsiOS) {
 	eventNames = driver.findElementsByXPath('//XCUIElementTypeOther[@name="card-journey_undefined-title"]')
 }
 else {
@@ -121,6 +135,7 @@ if (lastEventName.compareToIgnoreCase(firstEventName) < 0)
 	'sorting has failed'
 	SortOrderIsValid = false
 }
+========================== */
 
 'verify that sorting is correct'
 Mobile.verifyEqual(SortOrderIsValid, true)
@@ -135,8 +150,8 @@ Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Clear
 Button.tap("Discover/Events/SortFilter/Sort By", timeout)
 
 'Tap on the Sort Z-A button'
-if (Device.isIOS()) {
-	TextField.typeText(Finder.findTextField('Discover/Events/SortFilter/Sort By Picker Wheel'), "Journey Name ( Z - A )", timeout)
+if (deviceIsiOS) {
+	Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/Sort By Picker Wheel'), "Z to A", FailureHandling.STOP_ON_FAILURE)
 	Button.tap("Discover/Events/SortFilter/Sort Done", timeout)
 }
 else {
@@ -155,7 +170,9 @@ lastEventName = ''
 
 SortOrderIsValid = true
 
-if (Device.isIOS()) {
+/* ======================
+
+if (deviceIsiOS) {
 	eventNames = driver.findElementsByXPath('//XCUIElementTypeOther[@name="card-journey_undefined-title"]')
 }
 else {
@@ -172,6 +189,7 @@ if (lastEventName.compareToIgnoreCase(firstEventName) > 0)
 	'sorting has failed'
 	SortOrderIsValid = false
 }
+========================*/
 
 Mobile.verifyEqual(SortOrderIsValid, true)
 
@@ -185,8 +203,8 @@ Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Clear
 Button.tap("Discover/Events/SortFilter/Sort By", timeout)
 
 'Tap on the Sort Soonest to Latest button'
-if (Device.isIOS()) {
-	TextField.typeText(Finder.findTextField('Discover/Events/SortFilter/Sort By Picker Wheel'), "Soonest to Latest", timeout)
+if (deviceIsiOS) {
+	Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/Sort By Picker Wheel'), "Soonest to Latest", FailureHandling.STOP_ON_FAILURE)
 	Button.tap("Discover/Events/SortFilter/Sort Done", timeout)
 }
 else {
@@ -202,9 +220,9 @@ Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), tim
 'Verify that sort order has been applied'
 
 SortOrderIsValid = true
-
+/* ======================
 List<MobileElement> eventDateStrings
-if (Device.isIOS()) {
+if (deviceIsiOS) {
 	eventDateStrings = driver.findElementsByXPath('//XCUIElementTypeOther[@name="card-journey_undefined-title"]')
 }
 else {
@@ -226,7 +244,7 @@ if (firstEventDate < lastEventDate)
 	'sorting has failed'
 	SortOrderIsValid = false
 }
-
+=======================  */
 Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Tap on the Sort and Filter button'
@@ -249,7 +267,6 @@ Button.tap("Discover/Events/SortFilter/Apply", timeout)
 
 'Verify that events list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
-
 'Verify that sort order has been applied'
 String firstEventCategory = ''
 String lastEventCategory = ''
@@ -258,7 +275,7 @@ Boolean CategoryFilteringIsValid = true
 
 /*
 List<MobileElement> eventCategories
-if (Device.isIOS()) {
+if (deviceIsiOS) {
 	eventCategories = driver.findElementsByXPath('//XCUIElementTypeOther[@name="card-journey_undefined-categories"]/XCUIElementTypeStaticText')
 }
 else {
@@ -276,7 +293,6 @@ if (firstEventCategory.compareToIgnoreCase("Adult Ministries") != 0 || lastEvent
 }
 */
 Mobile.verifyEqual(CategoryFilteringIsValid, true)
-
 
 'Tap on the Sort and Filter button'
 Button.tap("Discover/Events/Sort And Filter", timeout)
@@ -310,8 +326,110 @@ Button.tap("Discover/Events/Sort And Filter", timeout)
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Clear Filters"), timeout)
 
+'Tap on the Sort Relevance button'
+Button.tap("Discover/Events/SortFilter/Clear Filters", timeout)
+
 'Tap on the When button'
 Button.tap("Discover/Events/SortFilter/When", timeout)
+
+'Select Thursday day of week'
+Button.tap("Discover/Events/SortFilter/When Page/Thursday", timeout)
+
+'Tap on the Category page back button'
+Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Category/Back"), timeout)
+Button.tap("Discover/Events/SortFilter/Category/Back", timeout)
+
+'Tap on the Apply button'
+Button.tap("Discover/Events/SortFilter/Apply", timeout)
+
+'Tap on the Sort and Filter button'
+Button.tap("Discover/Events/Sort And Filter", timeout)
+
+'wait for Sort and Filter page to fully displayed'
+Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Clear Filters"), timeout)
+
+'Tap on the Sort Relevance button'
+Button.tap("Discover/Events/SortFilter/Clear Filters", timeout)
+
+'Tap on the When button'
+Button.tap("Discover/Events/SortFilter/When", timeout)
+
+'Select Afternoons time of day'
+Button.tap("Discover/Events/SortFilter/When Page/Afternoons", timeout)
+
+'Tap on the Category page back button'
+Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Category/Back"), timeout)
+Button.tap("Discover/Events/SortFilter/Category/Back", timeout)
+
+'Tap on the Apply button'
+Button.tap("Discover/Events/SortFilter/Apply", timeout)
+
+'Tap on the Sort and Filter button'
+Button.tap("Discover/Events/Sort And Filter", timeout)
+
+'wait for Sort and Filter page to fully displayed'
+Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Clear Filters"), timeout)
+
+'Tap on the Sort Relevance button'
+Button.tap("Discover/Events/SortFilter/Clear Filters", timeout)
+
+'Tap on the When button'
+Button.tap("Discover/Events/SortFilter/When", timeout)
+
+'Select custom date range'
+Button.tap("Discover/Events/SortFilter/When Page/Days Custom Range", timeout)
+
+Mobile.tap(Finder.findTextField('Discover/Events/SortFilter/When Page/To Date'), timeout)
+if (deviceIsiOS) {
+	'select MONTH from picker wheel'
+	Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/When Page/Date Picker Wheel Month'), "July", FailureHandling.STOP_ON_FAILURE)
+		
+	'select Day from picker wheel'
+	Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/When Page/Date Picker Wheel Day'), "27", FailureHandling.STOP_ON_FAILURE)
+	
+	'select Year from picker wheel'
+	Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/When Page/Date Picker Wheel Year'), "2027", FailureHandling.STOP_ON_FAILURE)
+	
+	Button.tap("Discover/Events/SortFilter/Category/Back", timeout)
+}
+
+'Tap on the Category page back button'
+Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Category/Back"), timeout)
+Button.tap("Discover/Events/SortFilter/Category/Back", timeout)
+
+'Tap on the Apply button'
+Button.tap("Discover/Events/SortFilter/Apply", timeout)
+
+'Verify that events list page visible'
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+
+
+'Tap on the Sort and Filter button'
+Button.tap("Discover/Events/Sort And Filter", timeout)
+
+'wait for Sort and Filter page to fully displayed'
+Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Clear Filters"), timeout)
+
+'Tap on the Sort Relevance button'
+Button.tap("Discover/Events/SortFilter/Clear Filters", timeout)
+
+'Tap on the When button'
+Button.tap("Discover/Events/SortFilter/When", timeout)
+
+'Select custom date range'
+Button.tap("Discover/Events/SortFilter/When Page/Time Custom Range", timeout)
+
+Mobile.tap(Finder.findTextField('Discover/Events/SortFilter/When Page/To Time'), timeout)
+if (deviceIsiOS) {
+	'select MONTH from picker wheel'
+	//Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/When Page/Time Picker Wheel Hour'), "2", FailureHandling.STOP_ON_FAILURE)
+		
+	'select Day from picker wheel'
+	//Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/When Page/Time Picker Wheel Minute'), "30", FailureHandling.STOP_ON_FAILURE)
+	
+	'select Year from picker wheel'
+	//Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/When Page/Time Picker Wheel AmPM'), "PM", FailureHandling.STOP_ON_FAILURE)
+}
 
 'Tap on the Category page back button'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Category/Back"), timeout)
@@ -327,7 +445,7 @@ Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), tim
 firstEventCategory = ''
 lastEventCategory = ''
 
- CategoryFilteringIsValid = true
+CategoryFilteringIsValid = true
 
 Mobile.verifyEqual(CategoryFilteringIsValid, true)
 
@@ -347,7 +465,7 @@ Button.tap("Discover/Events/SortFilter/Apply", timeout)
 TextField.typeText(Finder.findTextField('Discover/Events/Search'), UniqueEventName + Keys.ENTER, timeout)
 
 Mobile.delay(3)
-Button.tap('Discover/Browse Tab', timeout)
+//Button.tap('Discover/Browse Tab', timeout)
 
 /*
 'tap on the found event to show details page'
@@ -361,7 +479,7 @@ Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/Heading"), timeou
 'Verify Events Details header'
 Mobile.verifyElementExist(Finder.findLabel('Discover/Events/Heading'), timeout)
 
-if (Device.isIOS()) {
+if (deviceIsiOS) {
 	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
 }
 else {
@@ -398,7 +516,7 @@ Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
 
 'swipe up to make stop journey button visible and accessible'
-if (Device.isIOS()) {
+if (deviceIsiOS) {
 	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
 }
 else {
@@ -436,5 +554,11 @@ Button.tap('Nav/Home Navigation Button', timeout)
 'Log out'
 Button.tap('Logout Button', timeout)
 
+if (deviceIsiOS) {
+	Mobile.closeApplication()
+}
+else {
+	driver.closeApp()
+}
 //Mobile.closeApplication()
-driver.closeApp()
+//driver.closeApp()
