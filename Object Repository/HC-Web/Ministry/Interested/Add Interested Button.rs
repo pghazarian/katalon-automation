@@ -6,12 +6,11 @@
    <elementGuidId>f6bd9a2c-81d2-432b-a29c-32ececa1a38c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@id='ui--button-add_person' and not(@disabled)]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='ui--button-add_person']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

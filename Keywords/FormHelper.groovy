@@ -115,6 +115,7 @@ public class FormHelper {
 
 		def dropdown = helper.getTestObjectWithXpath(xpath)
 
+		WebUI.waitForElementVisible(dropdown, 3)
 		WebUI.click(dropdown)
 
 		xpath = "//label[text() = '$label']/following-sibling::div/descendant::input"

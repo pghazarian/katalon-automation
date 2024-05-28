@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'person_relationship_card')]/div[contains(@class,'card-content')]</value>
+         <value>//div[contains(@class,'person_relationship_card')]/div[contains(@class,'card-content') and not(@disabled)]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

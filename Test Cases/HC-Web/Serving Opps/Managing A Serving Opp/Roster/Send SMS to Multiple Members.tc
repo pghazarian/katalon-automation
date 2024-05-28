@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Send SMS to Multiple Members</name>
+   <tag>Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>1725411f-390c-4622-b5d4-48ae91707f80</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0bb32f13-b6c2-4754-838b-4b06ccebb3e1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>706b1884-8127-44e1-ab99-46a7d8033e59</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d4e14f3f-5153-41cd-8c79-073a2c67c50c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.SO_Id_Recurring_DoesNotEnd</defaultValue>
+      <description></description>
+      <id>0bb32f13-b6c2-4754-838b-4b06ccebb3e1</id>
+      <masked>false</masked>
+      <name>ServingOppId</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.Ministry_CampusId</defaultValue>
+      <description></description>
+      <id>706b1884-8127-44e1-ab99-46a7d8033e59</id>
+      <masked>false</masked>
+      <name>CampusId</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Test Text'</defaultValue>
+      <description></description>
+      <id>d4e14f3f-5153-41cd-8c79-073a2c67c50c</id>
+      <masked>false</masked>
+      <name>TextMessage</name>
+   </variable>
+</TestCaseEntity>

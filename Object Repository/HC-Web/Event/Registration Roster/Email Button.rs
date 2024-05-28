@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='registration_roster--email_button']</value>
+         <value>//button[@id='registration_roster--email_button' and not(@disabled)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

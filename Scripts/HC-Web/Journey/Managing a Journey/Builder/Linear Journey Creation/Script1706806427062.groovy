@@ -48,11 +48,19 @@ CustomKeywords.'TestObjectHelper.setDropDownValue'('journeys_list_page--field_ca
 'Continue to journey builder'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Continue'))
 
+WebUI.waitForElementPresent(findTestObject('HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb', [('JourneyName') : JourneyName]), 
+    10)
+
 'Verify journey name'
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb'), JourneyName)
+WebUI.verifyElementText(findTestObject('HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb', [('JourneyName') : JourneyName]), 
+    JourneyName)
 
 'Navigate to journey builder'
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/span_Builder'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/Builder Tab'))
+
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 20)
+
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3)
 
 'Add a new section'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
@@ -80,8 +88,11 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step 
 'Click button to add a connection form'
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Button'))
 
-'Search for a connection form to attach'
-WebUI.setText(findTestObject('HC-Web/Journey/BuilderPage/Connection Form Search Bar'), 'Response Card' + Keys.ENTER)
+WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Connection Form Search Bar'), 2)
+
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 5)
+
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 5)
 
 'Select a connection form from search results'
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Search Results'))
@@ -106,6 +117,8 @@ WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/First Video Search Result
 
 'Click button to save video selection'
 WebUI.click(findTestObject('HC-Web/Journey/BuilderPage/Add Attachment Drawer Select Button'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'), 2)
 
 'Save video step'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Done Button'))

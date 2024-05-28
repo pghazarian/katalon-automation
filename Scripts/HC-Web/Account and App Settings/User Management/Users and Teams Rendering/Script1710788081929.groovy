@@ -23,7 +23,10 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 WebUI.setText(findTestObject('HC-Web/System/Users and Teams/Search Bar'), SearchUser + Keys.ENTER)
 
-WebUI.click(findTestObject('HC-Web/System/Users and Teams/Search Result Rows'), FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('HC-Web/System/Users and Teams/Search Result Row', [('SearchName') : UserDisplayName]), 
+    2)
+
+WebUI.click(findTestObject('HC-Web/System/Users and Teams/Search Result Row', [('SearchName') : UserDisplayName]), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Users and Teams/Audit Log Button'), FailureHandling.STOP_ON_FAILURE)
 

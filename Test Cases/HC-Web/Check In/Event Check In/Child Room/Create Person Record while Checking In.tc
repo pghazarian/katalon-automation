@@ -63,7 +63,7 @@
       <name>ChildFirstName</name>
    </variable>
    <variable>
-      <defaultValue>'QA Automation'</defaultValue>
+      <defaultValue>'QA Automation Note'</defaultValue>
       <description></description>
       <id>f056f715-2214-4bcf-a482-824f00785e06</id>
       <masked>false</masked>
