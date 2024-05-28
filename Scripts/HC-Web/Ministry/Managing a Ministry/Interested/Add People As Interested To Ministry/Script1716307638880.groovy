@@ -25,11 +25,16 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 'Click button to add a person as interested to ministry'
 WebUI.click(findTestObject('HC-Web/Ministry/Interested/Add Interested Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Person Search Bar'), 2)
+
 'Search for a person to add'
 WebUI.setText(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Person Search Bar'), PersonSearchName + Keys.ENTER)
 
 'Click on person in search results'
 WebUI.click(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Person Search Result', [('SearchName') : PersonSearchName]))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Expanded Person Record Select Button'), 
+    2)
 
 'Click button to add selected person as interested'
 WebUI.click(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Expanded Person Record Select Button'))

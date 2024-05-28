@@ -30,6 +30,9 @@ def SubjectText = 'QA Automation Note ' + UUID.randomUUID()
 WebUI.click(findTestObject('HC-Web/Person/Notes/Open Notes Button'))
 
 'Click button to create a new note'
+WebUI.waitForElementVisible(findTestObject('HC-Web/Person/Notes/New Note Button'), 2)
+
+'Click button to create a new note'
 WebUI.click(findTestObject('HC-Web/Person/Notes/New Note Button'))
 
 'Select a note category'
@@ -44,11 +47,11 @@ WebUI.setText(findTestObject('HC-Web/Person/Notes/Note Text Field'), NoteText)
 'Save note'
 WebUI.click(findTestObject('HC-Web/Person/Notes/Save Button'))
 
-'Verify the note appears in the list'
-WebUI.verifyTextPresent(SubjectText, false)
+'Verify that note appears in the list'
+WebUI.waitForElementVisible(findTestObject('HC-Web/Person/Notes/Created Note', [('SubjectText') : SubjectText]), 3)
 
 'Click button to edit previously created note'
-WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$SubjectText']/following-sibling::div[@class='person_notes_drawer--note_footer']/descendant::button[@id='person_notes_drawer--note--edit_person_note']"))
+WebUI.click(findTestObject('HC-Web/Person/Notes/Created Note Edit Button', [('SubjectText') : SubjectText]))
 
 'Edit note text'
 NoteText = (NoteText + ' - EDITED')
@@ -66,18 +69,16 @@ WebUI.setText(findTestObject('HC-Web/Person/Notes/Note Text Field'), ' - EDITED'
 WebUI.click(findTestObject('HC-Web/Person/Notes/Save Button'))
 
 'Verify that note with new subject appears in the list'
-WebUI.verifyTextPresent(SubjectText, false)
+WebUI.waitForElementVisible(findTestObject('HC-Web/Person/Notes/Created Note', [('SubjectText') : SubjectText]), 3)
 
 'Click button to delete edited note'
-WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$SubjectText']/following-sibling::div[@class='person_notes_drawer--note_footer']/descendant::div[@id='person_notes_drawer--note--remove_person_note']"))
+WebUI.click(findTestObject('HC-Web/Person/Notes/Created Note Delete Button', [('SubjectText') : SubjectText]))
 
 'Verify deletion'
 WebUI.click(findTestObject('HC-Web/Person/Notes/Delete Note Confirmation Yes Button'))
 
-WebUI.delay(2)
-
-'Verify note has been removed from list'
-WebUI.verifyTextNotPresent(NoteText, false)
+'Verify that note appears in the list'
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Person/Notes/Created Note', [('SubjectText') : SubjectText]), 3)
 
 WebUI.closeBrowser()
 

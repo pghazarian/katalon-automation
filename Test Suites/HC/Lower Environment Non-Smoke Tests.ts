@@ -129,6 +129,12 @@
          <value></value>
          <variableId>3bfb7932-feb8-4813-b05f-a8c0ff409e73</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>79fd93c3-afff-4d12-8d42-f8966cec1f7c</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>dcce6cdf-7ad0-4fc1-ad40-1e256d85e33f</guid>
@@ -416,13 +422,19 @@
       <guid>fb0dcf7b-1305-4873-a310-ae262d2e539e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Serving Opps/Managing A Serving Opp/View Email History</testCaseId>
+      <testCaseId>Test Cases/HC-Web/Serving Opps/Managing A Serving Opp/Communications/View Email History</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
          <variableId>b644430d-b616-4b84-b55c-68b03a8c1508</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>517636fe-6f43-48db-ad30-c28f0ea39118</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

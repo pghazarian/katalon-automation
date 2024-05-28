@@ -17,6 +17,12 @@
       <value></value>
       <variableId>7b83ad30-4713-46f9-8ac9-6a6d9f0935db</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6f36f17c-327a-4da6-8b66-f9bf6820c64b</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Garrett Clover'</defaultValue>
       <description></description>
@@ -30,5 +36,12 @@
       <id>7b83ad30-4713-46f9-8ac9-6a6d9f0935db</id>
       <masked>false</masked>
       <name>Campus</name>
+   </variable>
+   <variable>
+      <defaultValue>'Garrett (Student) Clover'</defaultValue>
+      <description></description>
+      <id>6f36f17c-327a-4da6-8b66-f9bf6820c64b</id>
+      <masked>false</masked>
+      <name>UserDisplayName</name>
    </variable>
 </TestCaseEntity>

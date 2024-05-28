@@ -29,8 +29,15 @@ def currentYear = new Date().format('yyyy')
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/my-dashboard/my-events'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Search/Filters and Sorting/Cancelled Filter'), 2)
+
 'Click cancelled filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Cancelled Filter'))
+
+WebUI.delay(2)
+
+WebUI.waitForElementAttributeValue(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'class', 'event-card-title canceled-event', 
+    0)
 
 'Verify first event in list was cancelled'
 WebUI.verifyElementAttributeValue(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'class', 'event-card-title canceled-event', 
@@ -59,6 +66,8 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click upcoming filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Upcoming Filter'))
 
+WebUI.delay(2)
+
 'Verify event not cancelled'
 WebUI.verifyEqual(false, WebUI.getAttribute(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'class').contains(
         'canceled-event'))
@@ -74,11 +83,15 @@ WebUI.verifyEqual(false, WebUI.getText(findTestObject('HC-Web/Event/Search/Searc
 'Sort by ascending date'
 CustomKeywords.'TestObjectHelper.setDropDownValue'('events_overview--filter_panel-sort_dropdown', 'Event Date (Ascending)')
 
+WebUI.delay(2)
+
 'Verify first event is today'
 WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Search/Search Results First Event Date')).contains(todaysDateAbbreviated))
 
 'Click paid filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Paid Filter'))
+
+WebUI.delay(3)
 
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
@@ -86,8 +99,10 @@ WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), Fa
 'Navigate to event details'
 WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Paid Event Radio Option'), 5)
+
 'Verify event is paid'
-WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Paid Event Radio Option'), 0)
+WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Paid Event Radio Option'), 2)
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
@@ -101,14 +116,18 @@ WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), Fa
 'Navigate to event details'
 WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Free Event Radio Option'), 2)
+
 'Verify event is free'
-WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Free Event Radio Option'), 0)
+WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Free Event Radio Option'), 2)
 
 'Return to event search'
 WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 
 'Click required registration filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Registration Required Filter'))
+
+WebUI.delay(3)
 
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
@@ -118,6 +137,9 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 
 'Navigate to registration area'
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration Subnav'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Registration/Registration Required Yes Radio Option Button'), 
+    5)
 
 'Verify registration required'
 WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration/Registration Required Yes Radio Option Label'), 
@@ -129,6 +151,8 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click registration not required filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Registration Not Required Filter'))
 
+WebUI.delay(3)
+
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
 
@@ -137,6 +161,9 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 
 'Navigate to registration area'
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration Subnav'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Registration/Registration Required No Radio Option Label'), 
+    5)
 
 'Verify registration not required'
 WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Registration/Registration Required No Radio Option Label'), 
@@ -148,8 +175,12 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click published filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Published Filter'))
 
+WebUI.delay(3)
+
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), 5)
 
 'Verify event is published'
 WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains(
@@ -161,8 +192,12 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click unpublished filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Unpublished Filter'))
 
+WebUI.delay(3)
+
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), 5)
 
 'Verify event is unpublished'
 WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Overview/Publish Status Text Area'), FailureHandling.STOP_ON_FAILURE).contains(

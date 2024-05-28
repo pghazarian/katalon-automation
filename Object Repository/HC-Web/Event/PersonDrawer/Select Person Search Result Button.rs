@@ -6,12 +6,11 @@
    <elementGuidId>11a40196-c94b-4e53-8a34-87f2a1236f65</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'MuiCollapse-entered')]/descendant::button[@id='person_panel--select_record_btn']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='person_panel--select_record_btn']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

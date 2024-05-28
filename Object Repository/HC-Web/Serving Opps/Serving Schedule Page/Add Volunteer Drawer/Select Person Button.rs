@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Select Person Button</name>
+   <tag></tag>
+   <elementGuidId>d431c8ec-eeb2-48b3-ad33-821740557a10</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='person_panel--select_record_btn']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#person_panel--select_record_btn</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>4a959748-44a2-4998-ba83-b460b68ac2fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cmui button jss207 jss2192 person_panel--details_action_button jss2190 jss212 jss206</value>
+      <webElementGuid>2a3547c3-5e2b-4884-8c7c-500489981f72</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>person_panel--select_record_btn</value>
+      <webElementGuid>a3bf1261-538b-4dd1-bfc2-10f5451febe3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>f7a98385-63d3-4eab-a614-229c408ab445</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Select</value>
+      <webElementGuid>aff8bae8-bc8a-446a-b143-c0c797f0a4b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;people_search_drawer--results&quot;)/div[@class=&quot;jss2057 jss2052 cmui person_panel&quot;]/div[@class=&quot;jss2084 jss2050 jss2055 cmui person_panel--details jss2082&quot;]/div[@class=&quot;MuiCollapse-root MuiCollapse-entered&quot;]/div[@class=&quot;MuiCollapse-wrapper&quot;]/div[@class=&quot;MuiCollapse-wrapperInner&quot;]/div[@class=&quot;jss2081&quot;]/div[@class=&quot;jss2079&quot;]/div[@class=&quot;ui prompt jss1927 jss2191 prompt-inline&quot;]/div[1]/button[@id=&quot;person_panel--select_record_btn&quot;]</value>
+      <webElementGuid>c034b79d-37ac-499b-a2d4-484def2f9124</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

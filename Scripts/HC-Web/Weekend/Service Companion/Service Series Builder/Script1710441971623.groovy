@@ -26,6 +26,8 @@ ServiceSeriesName = ('QA Automation Service Series ' + UUID.randomUUID())
 
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/New Service Series Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Name Text Field'), 2)
+
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Name Text Field'), ServiceSeriesName)
 
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Description Text Field'), 'Service Series created by QA Automation')
@@ -34,9 +36,14 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Save
 
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search Bar'), ServiceSeriesName + Keys.ENTER)
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Search Result Row', [('SearchName') : ServiceSeriesName]), 
+    2)
+
 WebUI.verifyTextPresent(ServiceSeriesName, false)
 
-WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Search Result Rows'))
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Search Result Row', [('SearchName') : ServiceSeriesName]))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Inactive Radio Option'), 2)
 
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Inactive Radio Option'))
 
@@ -44,6 +51,10 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Save
 
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Deactivate Confirmation Yes Button'))
 
+WebUI.waitForElementAttributeValue(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Search Result Active Field'), 
+    'text()', 'False', 3)
+
 WebUI.verifyElementText(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Search Result Active Field'), 'False')
 
 WebUI.closeBrowser()
+

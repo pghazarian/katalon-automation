@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='check_in_page--open_room_modal_open_general_button']</value>
+         <value>//button[@id='check_in_page--open_room_modal_open_general_button' and not(@disabled)]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7f0a0e15-606b-45ed-aa66-27920d9e3c67</webElementGuid>
+      <webElementGuid>a6000f2d-5194-4ca6-a8cb-9309bc9f441a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>jss669</value>
-      <webElementGuid>0c520ccb-38f8-4fed-83e8-3c17d4999204</webElementGuid>
+      <webElementGuid>1f599740-fd6d-41c3-b08b-7c904c98b8d9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>check_in_page--open_room_modal_open_general_button</value>
-      <webElementGuid>11fb0d20-8016-4432-af89-4fe0e979ede7</webElementGuid>
+      <webElementGuid>69b8b4a0-4ce6-4378-9178-e6a313ea3c95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>1d028e83-309e-4e93-830a-7d14b79a5c39</webElementGuid>
+      <webElementGuid>8458b503-6846-4083-90d2-0c7ef2294ccf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>478394a7-be99-454c-bef7-40ff3ef6268f</webElementGuid>
+      <webElementGuid>678d0828-7266-4c5a-8349-4437694a01c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>text</name>
       <type>Main</type>
       <value>team</value>
-      <webElementGuid>680b2fe6-a483-42c9-a917-ae1ed58000e8</webElementGuid>
+      <webElementGuid>255e7665-3757-41bf-85f4-135bef1f6bc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;check_in_page--open_room_modal_open_general_button&quot;)</value>
-      <webElementGuid>0166e32f-6f5e-4572-b0cb-6440dfffc3b2</webElementGuid>
+      <webElementGuid>f3b9495d-b795-495e-8363-98beb8886b6c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

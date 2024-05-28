@@ -31,6 +31,6 @@ Approved for Stage</description>
       <description></description>
       <id>c630ecb6-9a82-474c-a25f-a148cf110ff8</id>
       <masked>false</masked>
-      <name>ServOppName</name>
+      <name>ServingOppName</name>
    </variable>
 </TestCaseEntity>
