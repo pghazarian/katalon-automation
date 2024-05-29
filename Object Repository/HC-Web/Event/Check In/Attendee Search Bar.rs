@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='check_in_person_search--search_input']</value>
+         <value>//input[@id='check_in_person_search--search_input' and not(@disabled)]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>b793b2ed-4bd3-4838-8367-92af6f54d802</webElementGuid>
+      <webElementGuid>e509b9d4-2c37-42ac-b7b6-9fb30d1da38c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>data-testid</name>
       <type>Main</type>
       <value>cmui--search_input</value>
-      <webElementGuid>b457a5f1-1839-4bbc-9bef-e66dcc84ea35</webElementGuid>
+      <webElementGuid>e753bc38-2abb-4133-b289-64c7b8e02819</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>check_in_person_search--search_input</value>
-      <webElementGuid>34fa7ca0-e957-4293-a291-7468e2a72d91</webElementGuid>
+      <webElementGuid>5773e01b-1288-4368-b72b-14f7545b5653</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search by Name or Phone Number</value>
-      <webElementGuid>9190666d-91ff-4ba6-8c90-0d286de00dad</webElementGuid>
+      <webElementGuid>c72f2350-d8b5-4f47-ba67-544a273d97f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>1ffda06b-e92a-4e1f-99c4-f863c32c5863</webElementGuid>
+      <webElementGuid>8970a437-0098-4c94-a37c-61917a16c765</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Q</value>
-      <webElementGuid>c8ade497-1939-4799-aeb9-1fb61bb4e4c2</webElementGuid>
+      <webElementGuid>86dd02a5-3ef7-439a-9475-5b3e34d47043</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;check_in_person_search--search_input&quot;)</value>
-      <webElementGuid>333a968e-6e24-459a-a7c8-12dc9475b2d7</webElementGuid>
+      <webElementGuid>6d01de90-9a6f-4b00-af43-5d3cd6ba0f0b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

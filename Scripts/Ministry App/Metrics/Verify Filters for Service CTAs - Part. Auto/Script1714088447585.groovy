@@ -33,8 +33,8 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Filter icon'),
 'To see all available Campus(es) - based on the logged in user\'s Permissions in HC admin '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus - chevron icon'), 0)
 
-'Anahiem Campus '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Anahiem Campus'), 0)
+'Anaheim Campus '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Anaheim Campus'), 0)
 
 'Back Button '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Back button'), 0)

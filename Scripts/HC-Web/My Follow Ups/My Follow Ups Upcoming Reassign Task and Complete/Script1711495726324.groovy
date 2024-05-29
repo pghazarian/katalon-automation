@@ -38,6 +38,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Ent
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Entry Button'))
 
 'Select the "No Event Associated" button'
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Event Association Modal/No Event Associated Button'), 
+    2)
+
+'Select the "No Event Associated" button'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Event Association Modal/No Event Associated Button'))
 
 'Click Next button'
@@ -60,6 +64,10 @@ WebUI.delay(3)
 'Select the person summary row'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Summary Panel Name Match', 
         [('textToMatch') : FollowUpTaskPersonName]))
+
+'After that, click the Select button button on that person summary row'
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Details Panel Button Match', 
+        [('textToMatch') : FollowUpTaskPersonName]), 2)
 
 'After that, click the Select button button on that person summary row'
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Details Panel Button Match', 
@@ -100,6 +108,11 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Active Tab Bu
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Unclaimed/QA Automation Follow Up Rule Task List Item'))
 
+WebUI.delay(1)
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', 
+        [('textToMatch') : FollowUpTaskPersonName]), 5)
+
 'Select follow ups record by person name to open drawer'
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', [('textToMatch') : FollowUpTaskPersonName]))
 
@@ -109,10 +122,17 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Shared Component/Person Rec
 'Click Reassign button'
 WebUI.click(findTestObject('Object Repository/HC-Web/Shared Component/Person Record Drawer/Actions/Reassign Button'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/Reassign Drawer/All Pill Button'), 2)
+
 'Click "All" Pill Button'
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Reassign Drawer/All Pill Button'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/My Follow Ups/Reassign Drawer/Assignee Name Text Field'), GlobalVariable.Admin2_FullName)
+
+WebUI.delay(1)
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/Reassign Drawer/Person Suggestion Name Match', 
+        [('textToMatch') : GlobalVariable.Admin2_FullName]), 2)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Reassign Drawer/Person Suggestion Name Match', [('textToMatch') : GlobalVariable.Admin2_FullName]))
 
@@ -141,6 +161,9 @@ WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Shared Componen
     FollowUpTaskPersonName)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Shared Component/Person Record Drawer/Actions/Successful Button'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Status Updated Success Banner'), 
+    2)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Status Updated Success Banner'))
 

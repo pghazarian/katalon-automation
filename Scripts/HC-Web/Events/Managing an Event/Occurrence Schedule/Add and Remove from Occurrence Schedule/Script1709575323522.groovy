@@ -23,8 +23,8 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
     FailureHandling.STOP_ON_FAILURE)
 
 'If person record is already listed in occurrence schedule, remove them'
-if (CustomKeywords.'TestObjectHelper.isElementPresent'(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'(
-        "//div[normalize-space(.)='$SearchName']"), 5)) {
+if (CustomKeywords.'TestObjectHelper.isElementPresent'(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']"), 
+    5)) {
     WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
 
     WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
@@ -33,7 +33,9 @@ if (CustomKeywords.'TestObjectHelper.isElementPresent'(CustomKeywords.'TestObjec
 
     WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Remove from this Occurrence Confirmation Yes Button'))
 
-    WebUI.verifyTextNotPresent(SearchName, false)
+    'Click "yes" to confirm selection'
+    WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
+        0)
 }
 
 'Click button to add a person record to the occurrence schedule'
@@ -41,6 +43,9 @@ WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Butto
 
 'Add person record to this occurrence only'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/For This Occurrence Option'))
+
+'Search for person record'
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), 2)
 
 'Search for person record'
 WebUI.setText(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), SearchName + Keys.ENTER)
@@ -54,8 +59,9 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Resul
 'Click "yes" to confirm selection'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
-'Verify person record is in occurrence schedule'
-WebUI.verifyTextPresent(SearchName, false)
+'Click "yes" to confirm selection'
+WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
+    0)
 
 'Click checkbox for recently added person record'
 WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
@@ -69,8 +75,13 @@ WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Remove from this Oc
 'Confirm removal from this occurrence'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Remove from this Occurrence Confirmation Yes Button'))
 
-'Verify person record was removed from occurrence schedule'
-WebUI.verifyTextNotPresent(SearchName, false)
+'Click "yes" to confirm selection'
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
+    0)
+
+'Click "yes" to confirm selection'
+WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
+    0)
 
 WebUI.closeBrowser()
 

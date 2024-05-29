@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/serving-opportunity/$ServingOppId/10/schedule/"], 
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/serving-opportunity/$ServingOppId/$CampusId/schedule/"], 
     FailureHandling.STOP_ON_FAILURE)
 
 'Click button to add volunteer to SO'
@@ -29,7 +29,15 @@ WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunt
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/To This Occurrence Option'))
 
 'Go to ministry members tab to add volunteer'
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Ministry Members Tab'), 
+    2)
+
+'Go to ministry members tab to add volunteer'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Ministry Members Tab'))
+
+'Select volunteer to be added'
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Volunteer Checkbox', 
+        [('volunteerName') : MemberName]), 2)
 
 'Select volunteer to be added'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Volunteer Checkbox', [('volunteerName') : MemberName]))
@@ -38,7 +46,7 @@ WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunt
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Add Volunteer Button'))
 
 'Verify volunteer was added to serving schedule'
-WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List', [('volunteerName') : MemberName]), 
+WebUI.waitForElementPresent(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List', [('volunteerName') : MemberName]), 
     0)
 
 'Select added volunteer'
@@ -54,13 +62,18 @@ WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Remove Fro
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Remove From Occurrence Prompt Yes Button'))
 
 'Verify volunteer removed from serving schedule'
-WebUI.waitForElementNotVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List'), 0)
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List', [('volunteerName') : MemberName]), 
+    0)
 
 'Navigate to roster'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Tab'))
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Roster Tab'))
 
 'Click on added volunteer to open member drawer'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member In List', [('memberName') : MemberName]))
+
+'Open actions menu'
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Member Name', [('MemberName') : MemberName]), 
+    2)
 
 'Open actions menu'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Actions Button'))
@@ -72,7 +85,7 @@ WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Remove
 WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Remove From Opportunity Confirmation Yes Button'))
 
 'Verify member removed from roster'
-WebUI.waitForElementNotVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Member In List', [('memberName') : MemberName]), 
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Serving Opps/Roster Page/Member In List', [('memberName') : MemberName]), 
     0)
 
 WebUI.closeBrowser()

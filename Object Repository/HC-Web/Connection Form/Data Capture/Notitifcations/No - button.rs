@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>No - button</name>
+   <tag></tag>
+   <elementGuidId>c29a0bc6-a85a-4570-874d-f1512fd13089</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='follow_up_rule_editor_drawer--cancel_with_dirty_data_no_button']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#follow_up_rule_editor_drawer--cancel_with_dirty_data_no_button > span.button-inner-container.jss253</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>9249263e-ac1a-45d6-a37f-d78b85ab86ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss253</value>
+      <webElementGuid>c7c40f7b-6629-42d2-a08f-4c0d9391260f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>No</value>
+      <webElementGuid>df56053e-d250-484a-9ef5-dd6941f236e5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;follow_up_rule_editor_drawer--cancel_with_dirty_data_no_button&quot;)/span[@class=&quot;button-inner-container jss253&quot;]</value>
+      <webElementGuid>c006dd1d-35da-409e-a205-914af04332d5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='follow_up_rule_editor_drawer--cancel_with_dirty_data_no_button']/span</value>
+      <webElementGuid>e72502c5-ebcd-40fb-983f-130a87291bdf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[2]/following::span[1]</value>
+      <webElementGuid>41796198-c06a-4ced-8aed-48848e0de24d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div[2]/button/span</value>
+      <webElementGuid>18c06bba-071c-4e81-b2cb-70d2affe405e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'No' or . = 'No')]</value>
+      <webElementGuid>7b34c9a8-faa7-4e05-90a5-f921196cd11d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

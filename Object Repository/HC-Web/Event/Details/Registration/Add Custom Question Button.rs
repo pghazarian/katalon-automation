@@ -6,12 +6,11 @@
    <elementGuidId>a8e0667e-e71d-4b39-9584-19fce31ca066</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='event_details_registration_question_custom_questions_button']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@id='event_details_registration_question_custom_questions_button' and not(@disabled)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

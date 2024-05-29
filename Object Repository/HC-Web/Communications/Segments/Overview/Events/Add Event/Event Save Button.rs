@@ -6,12 +6,12 @@
    <elementGuidId>a0708278-2f5e-4ea7-b1a9-9d4303515873</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.cmui.button.jss207.jss550.jss215.jss206 > span.button-inner-container.jss208 > span</value>
+         <key>XPATH</key>
+         <value>//button[@id='follow_up_rule_editor_drawer--action_bar_save']/span/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div/main/div/div[2]/section/div/div/button[2]/span/span</value>
+         <key>CSS</key>
+         <value>#follow_up_rule_editor_drawer--action_bar_save > span.button-inner-container.jss246 > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>bec548f9-8b50-4ae6-bb0c-ddc2ae6c349b</webElementGuid>
+      <webElementGuid>72994ee0-d819-4c42-9938-874adffc0c49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,23 +37,23 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
-      <webElementGuid>d8143950-f340-4940-a753-f17e434f4338</webElementGuid>
+      <webElementGuid>bcfa3f78-7091-4b70-9873-d437c0ea1a2b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss485 jss488 jss473&quot;]/div[@class=&quot;cmui grid jss7 jss474&quot;]/div[@class=&quot;container&quot;]/section[@class=&quot;jss524&quot;]/div[@class=&quot;jss523&quot;]/div[@class=&quot;jss525&quot;]/button[@class=&quot;cmui button jss207 jss550 jss215 jss206&quot;]/span[@class=&quot;button-inner-container jss208&quot;]/span[1]</value>
-      <webElementGuid>799b0af9-6a37-4d0f-a670-285e2c2ceb63</webElementGuid>
+      <value>id(&quot;follow_up_rule_editor_drawer--action_bar_save&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
+      <webElementGuid>73cd904b-96ee-45a5-8e1b-ed315c3fc889</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/div/div[2]/section/div/div/button[2]/span/span</value>
-      <webElementGuid>f8b923ff-4a79-45ec-aef2-f6ce67a3220f</webElementGuid>
+      <value>//button[@id='follow_up_rule_editor_drawer--action_bar_save']/span/span</value>
+      <webElementGuid>2a4f14d0-6ba2-4846-8739-b0a24d91ca9f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,55 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[2]</value>
-      <webElementGuid>aa11a435-196c-4b2e-8fd3-277e778084d1</webElementGuid>
+      <webElementGuid>6977d3db-2f26-4c32-a956-c325768af71e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New Rule'])[2]/following::span[4]</value>
+      <webElementGuid>c200ebfe-a177-40a0-ae38-878f8c923eef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rule Details'])[1]/preceding::span[1]</value>
+      <webElementGuid>5ab6d587-92a1-489e-a9e3-2e4d883aac22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Save']/parent::*</value>
+      <webElementGuid>5568dfad-1a5a-429f-b1d3-6c219f5232f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button/span/span</value>
+      <webElementGuid>02a8491a-e814-44bf-8895-82358ae8f3d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Save' or . = 'Save')]</value>
+      <webElementGuid>aa7d4245-4164-4886-a942-5cd0b1ed2a2f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div/div[2]/section/div/div/button[2]/span/span</value>
+      <webElementGuid>f8b923ff-4a79-45ec-aef2-f6ce67a3220f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,25 +138,9 @@
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Save']/parent::*</value>
-      <webElementGuid>198bf223-a8da-4edf-9299-316923681b5a</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]/span/span</value>
       <webElementGuid>7befaa43-fb48-44bc-ae3d-597bb468325d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//span[(text() = 'Save' or . = 'Save')]</value>
-      <webElementGuid>0b887987-6573-4e96-b0eb-abfcebb97bac</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
