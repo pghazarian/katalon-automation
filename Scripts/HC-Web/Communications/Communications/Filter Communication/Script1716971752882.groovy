@@ -24,8 +24,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Filters/Filter Icon'))
 
 'Select campus from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'communication--select_campus\']/descendant::div[@class=\'Select-multi-value-wrapper\']', 
-    'Anaheim')
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('communication--select_campus', 'Anaheim')
 
 'Click on Active under Status'
 WebUI.click(findTestObject('HC-Web/Communications/Communications/Filters/Status Radio Button', [('index') : 1]))
@@ -36,15 +35,14 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communicatio
 'Verify communications are filtered per given filter criteria'
 WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Communications/Filtered Communication'), 0)
 
-'Open the communication record from the search results'
-not_run: WebUI.click(findTestObject('HC-Web/Communications/Communications/Filtered Communication'))
+'Verify only active communications are displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Table Column Status Value'), 'Active')
 
 'Click button to clear filters'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Filters/Clear All Button'))
 
 'Select campus from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'communication--select_campus\']/descendant::div[@class=\'Select-multi-value-wrapper\']', 
-    'Anaheim')
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('communication--select_campus', 'Anaheim')
 
 'Click on Inactive under Status'
 WebUI.click(findTestObject('HC-Web/Communications/Communications/Filters/Status Radio Button', [('index') : 2]))
@@ -55,8 +53,8 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communicatio
 'Verify communications are filtered per given filter criteria'
 WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Communications/Filtered Communication'), 0)
 
-'Open the communication record from the search results'
-not_run: WebUI.click(findTestObject('HC-Web/Communications/Communications/Filtered Communication'))
+'Verify only inactive communications are displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Table Column Status Value'), 'Inactive')
 
 WebUI.closeBrowser()
 
