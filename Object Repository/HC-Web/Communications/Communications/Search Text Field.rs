@@ -3,7 +3,7 @@
    <description></description>
    <name>Search Text Field</name>
    <tag></tag>
-   <elementGuidId>6a266cd1-099a-47d2-aeed-26b0b9a85255</elementGuidId>
+   <elementGuidId>d654c6ac-797e-4e0e-bfeb-ebd4ce3e8ca9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='push_notification--search_input']</value>
+         <value>//input[@id='communication--search_input']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>4e3cb472-33bd-4eee-a0ff-e481c57c0ab8</webElementGuid>
+      <webElementGuid>76876413-41a2-4ed3-9580-6eb320ca7f82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>data-testid</name>
       <type>Main</type>
       <value>cmui--search_input</value>
-      <webElementGuid>35e3e773-d510-4279-a2e9-70cc1323989a</webElementGuid>
+      <webElementGuid>2ddd0939-3806-446e-a266-0f9edc8d0c3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>id</name>
       <type>Main</type>
       <value>segment--search_input</value>
-      <webElementGuid>31d4a7d0-c55a-4ddc-aaa1-14937d83b9ac</webElementGuid>
+      <webElementGuid>a825451c-2443-46e4-8b8b-fa736cbfd031</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search</value>
-      <webElementGuid>d1dfc16f-5e1b-40fa-85c8-7e72ec3e05a4</webElementGuid>
+      <webElementGuid>c2605235-e285-4e5f-bb19-787fc5ba495e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>e5883096-4077-4884-a63b-cf6b23ad819d</webElementGuid>
+      <webElementGuid>96367553-0064-4ad3-8a17-e8c124c46d23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,6 +63,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;segment--search_input&quot;)</value>
-      <webElementGuid>3945ce68-76f3-449f-8009-1a9d6837ac6e</webElementGuid>
+      <webElementGuid>c25c5650-8c74-4834-9ccf-e7feb9e6ed12</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

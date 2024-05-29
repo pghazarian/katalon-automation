@@ -72,14 +72,14 @@
       <name>CommunicationCategoryId</name>
    </variables>
    <variables>
-      <defaultValue>'ST Push Notification 1 Description'</defaultValue>
+      <defaultValue>'New Push Notification 3 Description'</defaultValue>
       <description></description>
       <id>2ef0c2f9-d55d-4b58-a8e3-461271106e54</id>
       <masked>false</masked>
       <name>Description</name>
    </variables>
    <variables>
-      <defaultValue>'ST Push Notification 1'</defaultValue>
+      <defaultValue>'New Push Notification 3 '</defaultValue>
       <description></description>
       <id>96edda75-e2a0-458a-bdbb-aec5f3a96fcc</id>
       <masked>false</masked>

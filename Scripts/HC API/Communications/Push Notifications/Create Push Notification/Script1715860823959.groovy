@@ -32,7 +32,7 @@ response = WS.sendRequest(findTestObject('HC API/Communications/Push Notificatio
 // Validate the response was successful (HTTP Code 200 == Status)
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementPropertyValue(response, 'jobType', null)
+WS.verifyElementPropertyValue(response, 'jobType', 0)
 
 WS.verifyElementPropertyValue(response, 'audienceType', 'AllDevices')
 
@@ -40,5 +40,5 @@ WS.verifyElementPropertyValue(response, 'name', null)
 
 WS.verifyElementPropertyValue(response, 'description', null)
 
-WS.verifyElementPropertyValue(response, 'sendPush', true)
+WS.verifyElementPropertyValue(response, 'sendPush', null)
 

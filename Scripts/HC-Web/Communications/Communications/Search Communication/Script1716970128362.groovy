@@ -19,38 +19,35 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/push-notification'], FailureHandling.STOP_ON_FAILURE)
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/communication'], FailureHandling.STOP_ON_FAILURE)
 
-SearchTerm = 'ST Push Notifications 1'
+SearchTerm = 'ST Communication'
 
 SearchDescription = "$SearchTerm Description"
 
 'Type Search term'
-WebUI.setText(findTestObject('HC-Web/Communications/Push Notifications/Search Text Field'), SearchTerm)
+WebUI.setText(findTestObject('HC-Web/Communications/Communications/Search Text Field'), SearchTerm)
 
 'Initiate Search'
-WebUI.sendKeys(findTestObject('HC-Web/Communications/Push Notifications/Search Text Field'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Communications/Communications/Search Text Field'), Keys.chord(Keys.ENTER))
 
-'Verify the Notification column is visible'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Notification'), FailureHandling.STOP_ON_FAILURE)
+'Verify the Title column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Communications/Table Column Title'), FailureHandling.STOP_ON_FAILURE)
 
-'Verify the Created By column is visible'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Created By'), FailureHandling.STOP_ON_FAILURE)
+'Verify the Segment Record column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Communications/Table Column Segment Record'), FailureHandling.STOP_ON_FAILURE)
 
-'Verify the Recipients column is visible'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Recipients'), FailureHandling.STOP_ON_FAILURE)
+'Verify the Created On column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Communications/Table Column Created On'), FailureHandling.STOP_ON_FAILURE)
 
-'Verify the Send Date column is visible'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Send Date'), FailureHandling.STOP_ON_FAILURE)
+'Verify the Modified On column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Communications/Table Column Modified On'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the Status column is visible'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Status'), FailureHandling.STOP_ON_FAILURE)
 
-'Verify the Application column is visible'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notifications/Table Column Application'), FailureHandling.STOP_ON_FAILURE)
-
-'Open the push notification record from the search results'
-WebUI.click(findTestObject('HC-Web/Communications/Push Notifications/Table Row', [('PushNotificationName') : SearchTerm]))
+'Open the communication record from the search results'
+WebUI.click(findTestObject('HC-Web/Communications/Communications/Table Row', [('CommunicationName') : SearchTerm]))
 
 WebUI.closeBrowser()
 

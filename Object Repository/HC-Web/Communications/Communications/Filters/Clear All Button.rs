@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Clear All Button</name>
+   <tag></tag>
+   <elementGuidId>b3718fd0-9b70-4f3f-912a-dd4b3287a17c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='communication--filters_rail']/div/div[2]/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.ui.a.jss345.clear-filters.jss291.font-size-xsmall</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Clear All&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>7590ae9f-adc9-4c88-baac-5e1d6b5a48be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui a jss345 clear-filters jss291 font-size-xsmall</value>
+      <webElementGuid>6a01b3a3-4f92-465b-96ea-d7bfdd1d4fc1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>f142bde8-2c7d-4032-8ef6-8b99327e174e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>fd0e07bd-6bfe-4cd8-a108-828aad45349b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Clear All</value>
+      <webElementGuid>13b627b6-3b7f-44ae-b5cf-14bf618f8479</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;communication--filters_rail&quot;)/div[@class=&quot;ui rail jss304 jss292 jss298 jss299 jss293 jss302&quot;]/div[@class=&quot;filters_rail--action-buttons-container jss290&quot;]/div[@class=&quot;filters_rail--action-buttons jss289&quot;]/span[@class=&quot;ui a jss345 clear-filters jss291 font-size-xsmall&quot;]</value>
+      <webElementGuid>4cebf7e7-a09f-4784-9b9d-5d7d72447216</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='communication--filters_rail']/div/div[2]/div/span</value>
+      <webElementGuid>f808f4ba-fb32-4ed4-bfcc-35a500f4635c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inactive'])[1]/following::span[1]</value>
+      <webElementGuid>3ba8e68c-17c7-4dd4-b691-927f1f92eeab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[1]/following::span[2]</value>
+      <webElementGuid>9dcca929-b1db-4522-8ae4-e8db02d17370</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply Filters'])[1]/preceding::span[1]</value>
+      <webElementGuid>00710570-f9bf-45fb-80cc-0a05e3e29387</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/preceding::span[2]</value>
+      <webElementGuid>c1a23f94-a7d7-410d-9d47-69f4401a8a6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Clear All']/parent::*</value>
+      <webElementGuid>c97f71c4-e4cb-48ee-a7b7-1bdfd52922f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/span</value>
+      <webElementGuid>15bb8494-9e42-4b9d-a413-ae2021c1c8c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Clear All' or . = 'Clear All')]</value>
+      <webElementGuid>40a53864-39a8-439b-a9bd-a82de0bd4cac</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

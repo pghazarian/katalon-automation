@@ -34,7 +34,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs/${JobId}</restUrl>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs/${JobId}?JobType=Push</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
