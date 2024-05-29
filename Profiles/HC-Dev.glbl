@@ -119,4 +119,9 @@
       <initValue>'Room 3'</initValue>
       <name>SO_ChildRoom_2</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'RN'</initValue>
+      <name>FollowUp_RuleName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

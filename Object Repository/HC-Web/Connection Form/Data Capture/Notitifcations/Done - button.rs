@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='task_action_form--done_button']/span/span</value>
+         <value>//span[(text() = 'Done' or . = 'Done')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>0ae59f05-e960-4d54-ab8a-cbfad3ac0162</webElementGuid>
+      <webElementGuid>eac498d2-4350-4713-b698-22a781bc09aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Done</value>
-      <webElementGuid>9b6c9fe3-21a7-47bb-9efe-7a21525d0d4a</webElementGuid>
+      <webElementGuid>26b5b6e7-232e-43c8-b03f-66e2322c1e95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;task_action_form--done_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
-      <webElementGuid>e7ca9ec0-f76e-4c37-8613-ac3ae1f6bbc4</webElementGuid>
+      <webElementGuid>b519b01b-4658-4d82-b71f-d53131c0cc1e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='task_action_form--done_button']/span/span</value>
-      <webElementGuid>f68e3266-51b7-48dd-8eaa-1cf1f500836d</webElementGuid>
+      <webElementGuid>f40f589a-fca9-40b6-a8b3-cfb3b88e6007</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete Task'])[2]/following::span[2]</value>
-      <webElementGuid>a7c5e251-4b06-485c-a5b2-27aba9e19f4c</webElementGuid>
+      <webElementGuid>05a6b229-dcd9-43dc-b7a9-4cd9dd5006df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview'])[1]/following::span[4]</value>
-      <webElementGuid>62eaa220-0347-41ba-ac32-024f61d729e2</webElementGuid>
+      <webElementGuid>96f60f8d-c1c5-43a9-af2c-738e0ea50253</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rule Details'])[1]/preceding::span[1]</value>
-      <webElementGuid>603660e4-e9a5-4091-8749-c3869fcf613c</webElementGuid>
+      <webElementGuid>0e4a9565-eb26-4b1a-b057-34e1df1525bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Done']/parent::*</value>
-      <webElementGuid>382fe09e-77bb-420f-9cd7-efd2da03347c</webElementGuid>
+      <webElementGuid>a894fc00-84f7-4cca-9518-0fd3319e75af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]/span/span</value>
-      <webElementGuid>762ea802-97f0-4f84-b332-671094515cf0</webElementGuid>
+      <webElementGuid>868460b1-8321-436a-9a8c-5b1cf23dedc3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Done' or . = 'Done')]</value>
-      <webElementGuid>f6eb2fb4-3572-48ab-943b-95435347bbcd</webElementGuid>
+      <webElementGuid>461f8bd7-c050-4d0a-a302-cda0e01bd3b3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

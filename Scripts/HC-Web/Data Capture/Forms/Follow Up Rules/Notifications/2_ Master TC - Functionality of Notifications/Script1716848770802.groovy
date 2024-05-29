@@ -19,23 +19,20 @@ import org.openqa.selenium.Keys as Keys
 
 'Login HC Admin'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '', ('ForceLogin') : false], FailureHandling.STOP_ON_FAILURE)
-
-'Go to Data Capture > Connection Forms'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Data Capture - Connection Forms'))
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/data-capture/connection-forms', ('ForceLogin') : false], 
+    FailureHandling.STOP_ON_FAILURE)
 
 'Click in the Connection Forms Search Field '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Click in Search field - input - PAW1 - Enter key'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Search Field'))
 
 'Type Paren Anaheim Worship 1'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Click in Search field - input - PAW1 - Enter key'), 
-    'Paren Anaheim Worship 1')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Search Field'), 'Paren Anaheim Worship 1')
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Click in Search field - input - PAW1 - Enter key'), 
-    Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Search Field'), Keys.chord(
+        Keys.ENTER))
 
 'Select Paren Anaheim Worship 1 Connection Form '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Paren Anaheim Worship 1 - Connection Form'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Connection Form row'))
 
 WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Follow Ups tab'))
 
@@ -43,10 +40,10 @@ WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/F
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Chevron icon - to the right of CTA question'))
 
 'Select RN Rule '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/RN Rule'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Rule row', [('name') : GlobalVariable.FollowUp_RuleName]))
 
 'Select Test Paren Task  '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Test Paren - task'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Action Details Task', [('name') : GlobalVariable.FollowUp_TaskName]))
 
 WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/2 Daily Batch - radio button'))
 

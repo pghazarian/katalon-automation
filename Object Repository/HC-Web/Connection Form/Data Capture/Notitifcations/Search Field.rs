@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Click in Search field - input - PAW1 - Enter key</name>
+   <name>Search Field</name>
    <tag></tag>
    <elementGuidId>56e12928-133b-41d2-9359-919fc98c54b9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#connection_forms_list_page--page_action_bar_search</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

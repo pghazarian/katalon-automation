@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Paren Anaheim Worship 1 - Connection Form</name>
+   <name>Connection Form row</name>
    <tag></tag>
    <elementGuidId>b1df921e-c3a1-4146-8ac8-f54280c431bb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
