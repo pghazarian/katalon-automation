@@ -80,11 +80,17 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Catalogs/Create Catal
 'Search for catalog in list'
 WebUI.setText(findTestObject('HC-Web/Event/Catalogs/Search Bar'), catalogName + Keys.ENTER)
 
+WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Catalogs/Loading Indicator'), 5)
+
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Catalogs/Loading Indicator'), 5)
+
 'Verify catalog appears in search results'
 WebUI.verifyTextPresent(catalogName, false)
 
 'Open catalog'
 WebUI.click(findTestObject('HC-Web/Event/Catalogs/First Catalog Row'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Catalogs/Create Catalog Drawer/Title Text Field'), 5)
 
 'Verify catalog name'
 WebUI.verifyElementAttributeValue(findTestObject('HC-Web/Event/Catalogs/Create Catalog Drawer/Title Text Field'), 'value', 

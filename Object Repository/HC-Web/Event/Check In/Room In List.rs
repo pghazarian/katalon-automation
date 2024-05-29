@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Room In List</name>
+   <tag></tag>
+   <elementGuidId>6189eebc-392f-488e-99e9-15ac235fd213</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//h4[text()=&quot;${RoomName}&quot;]/ancestor::tr</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#data_grid--table_check-in--rooms_cell_base-2_1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>030bacff-0d91-48ee-9966-3efd192e51e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>table-cell sticky-cell sticky-cell-resizable</value>
+      <webElementGuid>037cd1af-1dd8-4779-bcb0-982f65aca8f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>data_grid--table_check-in--rooms_cell_base-2_1</value>
+      <webElementGuid>8cfd21e3-d50a-4af5-bcc7-080306654291</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>The space is closedAnaheim Main Worship Center</value>
+      <webElementGuid>6a76ee4b-7d07-4521-8b9e-de336100528a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;data_grid--table_check-in--rooms_cell_base-2_1&quot;)</value>
+      <webElementGuid>009e2a42-61f7-4f46-b558-211f68a97292</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Close Opportunity Confirmation Yes Button</name>
+   <tag></tag>
+   <elementGuidId>0fae686e-b875-4b7f-b33f-8b64d20d8def</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(@class,'btn-yes')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.btn-inner > span.copy</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>81bf2e62-7890-4ffc-99dd-ad7eaf15fef1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>copy</value>
+      <webElementGuid>7dec460e-0ffb-4304-9def-20136530c2fa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Yes</value>
+      <webElementGuid>91970ba5-b2db-4498-8360-e6a08e21da39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss3479 jss3482 settings page-has_action_bar&quot;]/header[@class=&quot;ui page--action_bar action_bar&quot;]/div[1]/div[@class=&quot;cmui grid jss7 action_bar--grid jss13 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 action_bar--grid_column&quot;]/div[@class=&quot;btn-confirmation-container is-active&quot;]/div[@class=&quot;btn-confirmation animate-from-right&quot;]/div[@class=&quot;btn-inner&quot;]/a[@class=&quot;btn btn-yes btn-primary btn-inline&quot;]/span[@class=&quot;btn-inner&quot;]/span[@class=&quot;copy&quot;]</value>
+      <webElementGuid>210451a7-2fa8-4ebe-bd0c-7a49bd7c73b5</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

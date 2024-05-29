@@ -25,25 +25,27 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/O
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Check In Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/First Room'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Room In List', [('RoomName') : RoomName]))
 
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'))
 }
 
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'), 5)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'))
 }
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Search or Add Button'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Bar'), 'QA Automation Admin')
+WebUI.waitForElementClickable(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Bar'), 2)
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Bar'), AttendeeName)
 
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Bar'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Results'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Search Results', [('AttendeeName') : AttendeeName]))
 
-WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Attendee Names'), 'QA Automation Admin')
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Attendee Names', [('AttendeeName') : AttendeeName]), AttendeeName)
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Back to All Spaces Button'))
 
@@ -62,9 +64,9 @@ WebUI.click(findTestObject('HC-Web/Event/Check In/Notification Drawer Send Butto
 
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/SMS Sent Banner'), 'SMS sent successfully')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/First Room'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Room In List', [('RoomName') : RoomName]))
 
-WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes', [('AttendeeName') : AttendeeName]))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Checkout Button'))
 
@@ -73,6 +75,25 @@ WebUI.click(findTestObject('HC-Web/Event/Check In/Checkout Confirmation Yes Butt
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Confirmation Yes Button'))
+
+def flag = false
+
+def i = 0
+
+'Wait until room status icon indicates that the room has been closed'
+while (!(flag) && (i < 5)) {
+    flag = WebUI.getAttribute(findTestObject('HC-Web/Event/Check In/Room Status Icon', [('RoomName') : RoomName]), 'class').contains(
+        'icon-minus-circle')
+
+    WebUI.delay(1)
+
+    i++
+}
+
+'If room status icon does not indicate room has been closed, fail test'
+if (!(flag)) {
+    throw new Exception('Room status icon did not indicate the room was closed.')
+}
 
 WebUI.closeBrowser()
 

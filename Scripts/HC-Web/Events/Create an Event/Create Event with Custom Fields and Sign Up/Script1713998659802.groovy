@@ -71,6 +71,9 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Registration/Registration Requi
 'Open custom questions drawer'
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration/Add Custom Question Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Registration/Custom Question Drawer/New Question Button'), 
+    2)
+
 'Click button to create a new question'
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration/Custom Question Drawer/New Question Button'))
 
@@ -213,6 +216,8 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Leave This Page Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Add to Roster Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), 2)
+
 WebUI.setText(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), attendee + Keys.ENTER)
 
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Results'))
@@ -220,6 +225,9 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Searc
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Requred Question Asterisk'), 
+    2)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Requred Question Asterisk'), 
     '*')
@@ -241,6 +249,8 @@ WebUI.setText(findTestObject('HC-Web/Event/Registration Roster/Custom Questions 
 
 WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Save Responses Button'))
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Registration Roster/Person Rows'), 5)
+
 'Verify person record appears in registration roster'
 WebUI.verifyTextPresent(attendee, false)
 
@@ -252,6 +262,8 @@ WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Actions Dropdown'))
 
 'Select option to remove person record from registration roster'
 WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Remove from Event Dropdown Option'))
+
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/HC-Web/Event/Registration Roster/Person Rows'), 5)
 
 'Verify person record was removed from registration roster'
 WebUI.verifyTextNotPresent(attendee, false)
@@ -265,6 +277,8 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/Cancel Event Button'))
 WebUI.click(findTestObject('HC-Web/Event/Overview/Cancel Event Confirmation Yes Button'))
 
 WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Overview/Successfully Cancelled Banner'), 0)
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Close Email Drawer Button'), 2)
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Close Email Drawer Button'))
 

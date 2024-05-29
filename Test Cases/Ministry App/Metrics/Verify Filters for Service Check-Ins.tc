@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Product Backlog Item 108337: Metrics - Weekly Flash Report - Filters UI for Service Check-Ins/CTAs</description>
-   <name>Verify Filters for Service Check-Ins</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a31f4bea-dbc2-4fb2-ae56-237cc589712f</testCaseGuid>
-</TestCaseEntity>

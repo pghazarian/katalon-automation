@@ -25,23 +25,29 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/O
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Check In Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/First Room'))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Room In List', [('RoomName') : RoomName]))
 
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'))
 }
 
-if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'), 5)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'))
 }
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Search or Add Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Occurrence Schedule Tab'), 2)
+
 WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Occurrence Schedule Tab'))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/First Listed Person'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Edit Person Record Button'), 2)
+
 WebUI.click(findTestObject('HC-Web/Event/Check In/Add Attendee Drawer/Edit Person Record Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Person/Edit/Personal Details Panel'), 2)
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Edit/Personal Details Panel'))
 

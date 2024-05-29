@@ -159,4 +159,29 @@
       <initValue>'Adult Ministries'</initValue>
       <name>EventCategory_Edited</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lake Forest'</initValue>
+      <name>EventCampus</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'9492'</initValue>
+      <name>SO_Id_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Anaheim Main Worship Center'</initValue>
+      <name>SO_GeneralRoom</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Children\'s Room 1'</initValue>
+      <name>SO_ChildRoom_1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Children\'s Room 2'</initValue>
+      <name>SO_ChildRoom_2</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

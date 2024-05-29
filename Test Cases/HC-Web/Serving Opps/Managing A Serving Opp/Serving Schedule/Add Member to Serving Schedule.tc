@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Member to Serving Schedule</name>
+   <tag>Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>3493ab4d-79ba-4950-ab22-02aeb43a9dd5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>119c51bc-6556-45ed-a30a-baf55539cff1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>33103c4b-4e3e-4037-a39b-5c2596fa67e1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dd62a615-6b83-4bda-8cac-45c7ad1ddc82</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.SO_Id_Recurring_DoesNotEnd</defaultValue>
+      <description></description>
+      <id>119c51bc-6556-45ed-a30a-baf55539cff1</id>
+      <masked>false</masked>
+      <name>ServingOppId</name>
+   </variable>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>33103c4b-4e3e-4037-a39b-5c2596fa67e1</id>
+      <masked>false</masked>
+      <name>MemberName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.Ministry_CampusId</defaultValue>
+      <description></description>
+      <id>dd62a615-6b83-4bda-8cac-45c7ad1ddc82</id>
+      <masked>false</masked>
+      <name>CampusId</name>
+   </variable>
+</TestCaseEntity>

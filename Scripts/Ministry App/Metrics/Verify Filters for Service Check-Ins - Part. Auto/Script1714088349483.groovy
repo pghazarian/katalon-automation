@@ -28,3 +28,24 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Trending tab')
 'To open  Service Check-Ins Trending Reports'
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Service Check-Ins tile'), 0)
 
+'To open the Filtering page for the Attendance trend reports  '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Filter icon'), 0)
+
+'To see all available Campus(es) - based on the logged in user\'s Permissions in HC admin '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus - chevron icon'), 0)
+
+'Anahiem Campus '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Anahiem Campus'), 0)
+
+'Back Button '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Back button'), 0)
+
+Mobile.tap(findTestObject('Ministry App/Metrics/Campus selections screen - Back button'), 0)
+
+'Search button '
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Search button'), 0)
+
+Mobile.tap(findTestObject('Ministry App/Metrics/8 Week Trend button'), 0)
+
+Mobile.scrollToText('Latest Weeks', FailureHandling.CONTINUE_ON_FAILURE)
+

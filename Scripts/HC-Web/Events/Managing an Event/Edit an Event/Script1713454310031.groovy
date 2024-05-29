@@ -35,10 +35,8 @@ CustomKeywords.'TestObjectHelper.setDropDownValue'('event_location_on_campus-whe
 
 def hasVenue = !(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Details/Selected Venues'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())
 
-if(hasVenue) {
-
-	WebUI.click(findTestObject('HC-Web/Event/Details/Change Campus Prompt Yes Button'))
-	
+if (hasVenue) {
+    WebUI.click(findTestObject('HC-Web/Event/Details/Change Campus Prompt Yes Button'))
 }
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Venue Dropdown'))
@@ -51,7 +49,11 @@ WebUI.setText(findTestObject('HC-Web/Event/Details/Event Description Text Area')
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Save Edits Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Close Email Drawer Button'), 2)
+
 WebUI.click(findTestObject('HC-Web/Event/Details/Close Email Drawer Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Event Description Text Area'), 2)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Details/Event Description Text Area'), 'Event created by qa automation for edit event test - Edited')
 
@@ -76,10 +78,8 @@ hasVenue = !(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Even
 
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_location_on_campus-where_campus', 'Anaheim')
 
-if(hasVenue) {
-
-	WebUI.click(findTestObject('HC-Web/Event/Details/Change Campus Prompt Yes Button'))
-	
+if (hasVenue) {
+    WebUI.click(findTestObject('HC-Web/Event/Details/Change Campus Prompt Yes Button'))
 }
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Venue Dropdown'))
@@ -92,6 +92,8 @@ WebUI.setText(findTestObject('HC-Web/Event/Details/Event Description Text Area')
     'Event created by qa automation for edit event test')
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Save Edits Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Close Email Drawer Button'), 2)
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Close Email Drawer Button'))
 

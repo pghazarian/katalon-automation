@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(@id,'check_in_all_volunteers_data_grid--check_in_button-')]</value>
+         <value>//button[contains(@id,'check_in_all_volunteers_data_grid--check_in_button-') and not(@disabled)]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -85,6 +85,12 @@
          <value></value>
          <variableId>ec022273-745a-42df-b449-4402c4a06653</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ae50b2a6-8b8a-47d9-b111-afef5be73b67</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>a3ae7047-b387-4d0d-ba6a-8e046f9e0a7d</guid>
@@ -98,6 +104,12 @@
          <value></value>
          <variableId>797c436d-2307-4c18-9702-b97d2d3add11</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>308c629d-d5a3-4eb9-a33a-0d3fcea8c34e</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>6599de59-e361-4ed6-ad37-723c78302b78</guid>
@@ -110,6 +122,18 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>3031cc4b-e97e-44b0-b03c-ee54afeb8afb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3bfb7932-feb8-4813-b05f-a8c0ff409e73</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>79fd93c3-afff-4d12-8d42-f8966cec1f7c</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -319,6 +343,98 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>6b1696f1-a7ad-42bf-8341-2dfb35c431cb</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>937dc69a-868a-4907-83ba-1be3a3132e89</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/Managing an Event/Accommodations</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>481f0b4b-002b-4407-8780-7b32d2d85d2d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/Managing an Event/Tags</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>51a62145-a9d6-41c9-9112-f47d92a3c8e9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/Managing an Event/Event Categories</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fc054961-a5bb-404c-a89a-ee06cf74d93c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/Managing an Event/Room Categories</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f5e7fe00-f244-4e82-8330-1669209fb69a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/Managing an Event/Service Categories</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d2ea51d9-8c72-45d0-a790-4327cf36d2c9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/My Events/Filter and Sort</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>70b47435-32df-44eb-9969-f1d305ef3ad8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Events/My Events/My Events Search</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6be775ec-265d-40fe-9e35-c0b5cef548a8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b097f026-f6d3-435b-a5e9-20388fcca993</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ef760e21-e1e3-4e1a-b29e-a3648b22d916</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1ae4b041-752a-4116-8f56-6eee55eabe6d</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fb0dcf7b-1305-4873-a310-ae262d2e539e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Serving Opps/Managing A Serving Opp/Communications/View Email History</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b644430d-b616-4b84-b55c-68b03a8c1508</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>517636fe-6f43-48db-ad30-c28f0ea39118</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

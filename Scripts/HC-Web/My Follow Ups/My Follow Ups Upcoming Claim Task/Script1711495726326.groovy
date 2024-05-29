@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def strFollowUpTaskPersonName = GlobalVariable.Follow_Up_Task_Person_First_Name + "  " + GlobalVariable.Follow_Up_Task_Person_Last_Name
+def strFollowUpTaskPersonName = (GlobalVariable.Follow_Up_Task_Person_First_Name + '  ') + GlobalVariable.Follow_Up_Task_Person_Last_Name
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
@@ -49,6 +49,9 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Add Entry First Search Results'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Select Button'), 
+    2)
+
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Select Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Yes Confirmation Button'))
@@ -60,6 +63,8 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Im 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Navigation Logo Image Button'))
 
 WebUI.refresh()
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Menu Item'), 2)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Menu Item'))
 
@@ -84,6 +89,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups
 WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$strFollowUpTaskPersonName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Follow Up Successful Button'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Active Follow Up Completed Banner'), 
+    2)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Active/Active Follow Up Completed Banner'))
 

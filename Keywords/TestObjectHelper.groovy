@@ -158,6 +158,7 @@ class TestObjectHelper {
 
 		def dropdown = getTestObjectWithXpath(xpath)
 
+		WebUI.waitForElementVisible(dropdown, 3)
 		WebUI.click(dropdown)
 
 		xpath = xpath + "/descendant::input"
@@ -198,10 +199,11 @@ class TestObjectHelper {
 	@Keyword
 	def TestObject setDropDownValueWithClick(String id, String value) {
 
-		def xpath = "//div[contains(@id,'$id')]/descendant::div[@class='Select-control']"
+		def xpath = "//div[contains(@id,'$id')]/descendant::div[contains(@class,'Select--single') and not(contains(@class,'is-disabled'))]"
 
 		def dropdown = getTestObjectWithXpath(xpath)
 
+		WebUI.waitForElementClickable(dropdown, 3)
 		WebUI.click(dropdown)
 
 		xpath = "//div[contains(@id,'$id')]/descendant::div[@class='Select-menu-outer' and not(contains(@style,'visibility: hidden'))]/descendant::div[text()='$value']"
@@ -209,23 +211,26 @@ class TestObjectHelper {
 		def dropdownInput = getTestObjectWithXpath(xpath)
 
 		// Type Dropdown value
+		WebUI.waitForElementClickable(dropdownInput, 3)
 		WebUI.click(dropdownInput)
 	}
-	
+
 	/**
 	 * Set value for Drop Down component
 	 */
 	@Keyword
 	def TestObject setDropDownValueByName(String name, String value) {
 
-		def xpath = "//div[@name='${name}']/descendant::div[@class='Select-control']"
+		def xpath = "//div[@name='${name}']/descendant::div[contains(@class,'Select--single') and not(contains(@class,'is-disabled'))]"
 
 		def dropdown = getTestObjectWithXpath(xpath)
 
+		WebUI.waitForElementClickable(dropdown, 3)
 		WebUI.click(dropdown)
 
 		xpath = "//div[@name='$name']/descendant::div[@class='Select-menu-outer' and not(contains(@style,'visibility: hidden'))]/descendant::div[text()='$value']"
 
+		WebUI.waitForElementClickable(dropdownInput, 3)
 		def dropdownInput = getTestObjectWithXpath(xpath)
 
 		// Select Dropdown value
@@ -287,6 +292,23 @@ class TestObjectHelper {
 
 		// verify the field value'
 		WebUI.verifyEqual(value, valueToCompare)
+	}
+
+	@Keyword
+	def verifyTextFieldHasValue(TestObject object) {
+
+		// get the value attribute from the text field
+		def value = getTextFieldValue(object)
+
+		// verify the field value'
+		WebUI.verifyEqual(value != null && value.length() > 0, true)
+	}
+
+	@Keyword
+	def getTextFieldValue(TestObject object) {
+
+		// get the value attribute from the text field and return it
+		return WebUI.getAttribute(object, 'value')
 	}
 
 	@Keyword

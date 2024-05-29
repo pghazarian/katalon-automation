@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='check_in_page--open_room_modal_open_child_button']</value>
+         <value>//button[@id='check_in_page--open_room_modal_open_child_button' and not(@disabled)]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
