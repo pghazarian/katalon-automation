@@ -15,6 +15,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>7afa2692-e535-431a-90de-f41937417daf</webElementGuid>
+      <webElementGuid>36ea82a2-72b4-42f8-b57c-a1aeb5593549</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button-inner-container jss246</value>
-      <webElementGuid>5347be9b-3edd-4dce-bc4d-cdb5b3a11803</webElementGuid>
+      <webElementGuid>ea06a8e4-25d7-4bb9-b144-5d741cd38f27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +39,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Next</value>
-      <webElementGuid>4a08e509-5c96-4332-9229-1d9e31a543c9</webElementGuid>
+      <webElementGuid>8ec9d75e-bd03-4190-8113-d36487bec51d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +47,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;person_entry_type_modal--next_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
-      <webElementGuid>823af925-ba1c-4e07-bedd-abb11c4bd635</webElementGuid>
+      <webElementGuid>05e1f8fd-dffd-4e72-8669-2f3c4849d29a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +55,23 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='person_entry_type_modal--next_button']/span</value>
-      <webElementGuid>f8fafafc-4c7f-4767-988c-7789be1fd48a</webElementGuid>
+      <webElementGuid>976261db-44ca-451a-a77b-80b84a970ba9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[1]</value>
+      <webElementGuid>73e28029-7e07-469c-b0d4-277421962d00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anonymous Person'])[1]/following::span[2]</value>
+      <webElementGuid>46a54c99-9cbf-4f89-bce5-a88c42eaff60</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button[2]/span</value>
-      <webElementGuid>efd80cd3-f3f7-4c46-8817-214b065c5619</webElementGuid>
+      <webElementGuid>044530c4-65b4-4d44-923e-b2377cfb4073</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +87,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Next' or . = 'Next')]</value>
-      <webElementGuid>c7a70967-5130-49c6-ac54-ec289e7dada2</webElementGuid>
+      <webElementGuid>4ce4b6ca-972b-4fa4-8c5b-a05d81465b1e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

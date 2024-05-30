@@ -23,41 +23,41 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
     FailureHandling.STOP_ON_FAILURE)
 
 'Click in the Connection Forms Search Field '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Search Field'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Search Field'))
 
 'Type Paren Anaheim Worship 1'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Search Field'), 'Paren Anaheim Worship 1')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Search Field'), 'Paren Anaheim Worship 1')
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Search Field'), Keys.chord(
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Search Field'), Keys.chord(
         Keys.ENTER))
 
 'Select Paren Anaheim Worship 1 Connection Form '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Connection Form row'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Connection Form row'))
 
-WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Follow Ups tab'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/Follow Ups tab'))
 
 'Click on the Chevron next to a CTA check box, under the Field Rules section of Follow Ups page \r\n'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Chevron icon - to the right of CTA question'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Chevron icon - to the right of CTA question'))
 
 'Select RN Rule '
-WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Rule row', [('name') : GlobalVariable.FollowUp_RuleName]))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/Rule row', [('name') : GlobalVariable.FollowUp_RuleName]))
 
 'Select Test Paren Task  '
-WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Action Details Task', [('name') : GlobalVariable.FollowUp_TaskName]))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/Action Details Task', [('name') : GlobalVariable.FollowUp_TaskName]))
 
-WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/2 Daily Batch - radio button'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/2 Daily Batch - radio button'))
 
 'Go to Notifictions section of the Rule Builder '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/label_Select Notification'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/label_Select Notification'))
 
-WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Expand_Basic Follow Up Push Notification'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/Expand_Basic Follow Up Push Notification'))
 
 'Select Daily Batch '
-WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Select_Basic Follow Up Push Notification'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/Select_Basic Follow Up Push Notification'))
 
 'Click on Done button in Rule Builder drawer '
-WebUI.click(findTestObject('HC-Web/Connection Form/Data Capture/Notitifcations/Done - button'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/Done - button'))
 
 'Click on Save button of Rule '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Data Capture/Notitifcations/Save - button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Save - button'))
 

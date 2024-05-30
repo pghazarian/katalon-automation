@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/List/QA Aut
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Entries Tab Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Entry Button'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Event Association Modal/No Event Associated Button'))
 
@@ -59,7 +59,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Yes Confirmation Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Button'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Im Done Button'))
 

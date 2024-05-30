@@ -17,23 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/1 None - radio button'))
+'Login HC Admin'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/data-capture/connection-forms', ('ForceLogin') : false], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Expand_Important Follow Up Push Notification'))
+'Click in the Connection Forms Search Field '
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Search Field'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Expand_Simple Follow Up Push Notification'))
+'Type Paren Anaheim Worship 1'
+WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Search Field'), 'Paren Anaheim Worship 1')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/label_None'))
+WebUI.sendKeys(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/Search Field'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Cancel - button'))
+'Select Paren Anaheim Worship 1 Connection Form '
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Connection Form row'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/No - button'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Entries Tab Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Yes - button'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Close - button'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Entry - button'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/New Entry - button'))
 

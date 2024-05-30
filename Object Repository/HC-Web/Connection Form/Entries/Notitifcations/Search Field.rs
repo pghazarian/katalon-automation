@@ -6,12 +6,12 @@
    <elementGuidId>56e12928-133b-41d2-9359-919fc98c54b9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#connection_forms_list_page--page_action_bar_search</value>
+         <key>XPATH</key>
+         <value>//input[@id = 'connection_forms_list_page--page_action_bar_search' and @placeholder = 'Search' and @type = 'text']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
+         <key>CSS</key>
+         <value>#connection_forms_list_page--page_action_bar_search</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>c2111db5-6eb7-4ed6-b67a-d26260611bff</webElementGuid>
+      <webElementGuid>63d8d5fa-9ee7-4cb3-91d7-aa2605edbeb8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>data-testid</name>
       <type>Main</type>
       <value>cmui--search_input</value>
-      <webElementGuid>7a4cc9bb-a34d-4061-a8ba-65dcb05d7bc5</webElementGuid>
+      <webElementGuid>ebd7ff51-034d-426b-9c9f-c57b0d608c7a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>id</name>
       <type>Main</type>
       <value>connection_forms_list_page--page_action_bar_search</value>
-      <webElementGuid>c5ae6d73-30b0-4b6b-8364-f1d19264c80f</webElementGuid>
+      <webElementGuid>23d7829f-5b46-44c3-b122-fd3d53c384f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search</value>
-      <webElementGuid>6adbb868-674c-4e56-afcf-6e2f9c6a8059</webElementGuid>
+      <webElementGuid>1e215d8a-43fa-4c33-8cfb-30997a85e44a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>8d78c6fa-1dbc-4e6e-801d-2dbea04894cb</webElementGuid>
+      <webElementGuid>1cd0adef-195a-4ad5-9a3e-e7bfe63326b6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;connection_forms_list_page--page_action_bar_search&quot;)</value>
-      <webElementGuid>2ab56da0-a495-4317-9d1e-661207e19b46</webElementGuid>
+      <webElementGuid>9ebbeb09-2a51-4af5-91ee-a23b83058282</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
-      <webElementGuid>0e3c7cb3-f55d-4fd3-9401-00388e4cf90d</webElementGuid>
+      <webElementGuid>9d54f76f-6922-4ca4-b072-6a665be3a644</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/header/div/div/div[3]/div/div/input</value>
-      <webElementGuid>83d67db3-4c51-4683-8890-ef2b2749d78c</webElementGuid>
+      <webElementGuid>42de4f51-5df1-489a-9dfa-ae2827b5bf0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div/input</value>
-      <webElementGuid>a745bbad-c56e-4351-b4d1-5dcfd48aac3b</webElementGuid>
+      <webElementGuid>5728a1ea-69fe-4285-a86d-fd8ce4647156</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'connection_forms_list_page--page_action_bar_search' and @placeholder = 'Search' and @type = 'text']</value>
-      <webElementGuid>a84a3c1b-f664-41c3-8137-d7c5c08c4fee</webElementGuid>
+      <webElementGuid>3efcd8f9-096c-47ca-a839-90fd73e7ba19</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

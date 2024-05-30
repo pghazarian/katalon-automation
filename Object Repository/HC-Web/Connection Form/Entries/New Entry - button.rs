@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='connection_form_entries_list_page--new_entry_button']/span/span</value>
+         <value>//span[(text() = 'New Entry' or . = 'New Entry')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>20059a8b-cd16-4227-a95c-2444a6b8f065</webElementGuid>
+      <webElementGuid>ac9dcc9a-ac3b-4133-b3a0-3e054983eb47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>text</name>
       <type>Main</type>
       <value>New Entry</value>
-      <webElementGuid>9f5e9b04-d39c-421b-94c3-95aa26efddbc</webElementGuid>
+      <webElementGuid>7cb22b86-cc56-4718-b808-b9c93c155f0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;connection_form_entries_list_page--new_entry_button&quot;)/span[@class=&quot;button-inner-container jss253&quot;]/span[1]</value>
-      <webElementGuid>a3da257e-d70b-45b4-8e37-0c2f1344a75e</webElementGuid>
+      <webElementGuid>586f199a-9b85-49bd-a320-e94589e18c15</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='connection_form_entries_list_page--new_entry_button']/span/span</value>
-      <webElementGuid>20ef9182-68d2-4764-88f4-8697bceb1969</webElementGuid>
+      <webElementGuid>35a9eb78-54eb-4d79-a3df-7dd08ee80f27</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::span[2]</value>
-      <webElementGuid>13b3cfd0-b89a-4afb-8874-368281decf1a</webElementGuid>
+      <webElementGuid>25c77cb6-4c3f-432b-8293-aee98c0a28e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/following::span[4]</value>
-      <webElementGuid>0bd56f09-e257-41ed-a7f2-cdffd6c7b45e</webElementGuid>
+      <webElementGuid>23f59621-4245-4390-abc6-c78014d830f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sort By'])[1]/preceding::span[1]</value>
-      <webElementGuid>bc7b5acc-5c2d-4e00-854b-9f0211fa47dd</webElementGuid>
+      <webElementGuid>fdd5ecf2-7e90-41bb-a227-3bdeb1647178</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Updated (Newest - Oldest)'])[1]/preceding::span[1]</value>
-      <webElementGuid>d3bab17b-cc42-4d1b-9937-3a521590b223</webElementGuid>
+      <webElementGuid>ff0b1f0d-9ea7-4e60-b99e-73b569539318</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='New Entry']/parent::*</value>
-      <webElementGuid>07b7fe51-472e-4af9-b63e-38dd8dd4ffda</webElementGuid>
+      <webElementGuid>29f6d266-8b3e-4bab-8552-550b4207f557</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/button/span/span</value>
-      <webElementGuid>545c492c-1370-467b-a26f-e376a0eebd9c</webElementGuid>
+      <webElementGuid>860854a3-656a-4787-beeb-3ff2cddd1ee1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +103,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'New Entry' or . = 'New Entry')]</value>
-      <webElementGuid>a663cb29-ba3a-4c3a-ab56-092bfd2cd2da</webElementGuid>
+      <webElementGuid>1ece086a-8069-4f1f-8dad-c892e60b2874</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

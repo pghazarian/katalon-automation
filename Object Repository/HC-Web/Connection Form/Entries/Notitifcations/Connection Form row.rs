@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Entries tab</name>
+   <name>Connection Form row</name>
    <tag></tag>
-   <elementGuidId>03650aaf-4644-4678-b435-f9004cfc61df</elementGuidId>
+   <elementGuidId>b1df921e-c3a1-4146-8ac8-f54280c431bb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
+         <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss300.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+         <value>#data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+      </entry>
+   </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -22,95 +27,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>f3883f24-6626-4a71-b83f-85acb676179d</webElementGuid>
+      <value>td</value>
+      <webElementGuid>e4313a7c-f70e-4c59-9acd-d18244cf921d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTypography-root jss300 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>aae04731-f42d-48a5-9f79-cae1f63a2cbd</webElementGuid>
+      <value>table-cell jss1119</value>
+      <webElementGuid>2a9eff2a-728c-47c6-925b-15af0d386e4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>id</name>
       <type>Main</type>
-      <value>Entries</value>
-      <webElementGuid>2b328c3e-02e2-4719-b287-4d908c2a39d0</webElementGuid>
+      <value>data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1</value>
+      <webElementGuid>f15c9395-25df-4c11-9938-23a7e8a86394</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss300 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>450d09f1-6302-45e5-b9df-95bc6ed99ed8</webElementGuid>
+      <value>id(&quot;data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1&quot;)</value>
+      <webElementGuid>bb7c77c4-19bb-44ed-bcc9-7fafe3856665</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1']</value>
+      <webElementGuid>c202b05e-39c5-4241-bcad-ce51718a9e2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
-      <webElementGuid>0331213f-c041-4fd6-8968-36aadc0a02ff</webElementGuid>
+      <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/div/div/table/tbody/tr/td[2]</value>
+      <webElementGuid>e2c341f5-925c-43a2-847e-b7479ac29335</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Overview'])[1]/following::span[1]</value>
-      <webElementGuid>6a3e26aa-7925-422d-a096-7d22c982db60</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paren Anaheim Worship 1'])[1]/following::td[1]</value>
+      <webElementGuid>8e37ca41-92db-4a18-8568-75d2237ff929</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='/'])[1]/following::span[2]</value>
-      <webElementGuid>9007d57d-00ad-48e9-8c72-0dd885f07556</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[2]/following::td[2]</value>
+      <webElementGuid>96c3b28f-6ef2-4fbd-b6fa-ba5b5274b30b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Form Builder'])[1]/preceding::span[1]</value>
-      <webElementGuid>7b43d3b1-f42b-4a9e-9ff6-8eff4b2ba0fb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::td[2]</value>
+      <webElementGuid>56c472b0-b0e0-4e73-a33f-217a0642cbd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auto-Reply Email'])[1]/preceding::span[2]</value>
-      <webElementGuid>7c5bd23a-3859-4900-9cdb-e40f6e5ae1ec</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Entries']/parent::*</value>
-      <webElementGuid>6727d2f6-7298-445d-b84b-9f5dd7f17f1d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Worship Service'])[1]/preceding::td[2]</value>
+      <webElementGuid>5d3331b1-9133-4278-86bb-89f060fd74aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[2]/span</value>
-      <webElementGuid>1b32cccf-7162-4727-afdc-6f7e074650dc</webElementGuid>
+      <value>//td[2]</value>
+      <webElementGuid>ffb58e28-6855-4938-acfe-787f671dbafb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Entries' or . = 'Entries')]</value>
-      <webElementGuid>8c5a80d5-b8f9-4938-a336-7d8e1dc35120</webElementGuid>
+      <value>//td[@id = 'data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1']</value>
+      <webElementGuid>16b5c7fa-9587-4bbd-b832-2f4290f29e09</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

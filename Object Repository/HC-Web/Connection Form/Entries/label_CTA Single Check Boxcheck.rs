@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Search Button</name>
+   <name>label_CTA Single Check Boxcheck</name>
    <tag></tag>
-   <elementGuidId>783414ff-8576-4662-8a35-a02447a85cfb</elementGuidId>
+   <elementGuidId>236d3ea3-7f04-489c-843f-b3e353b84c20</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='person_search_form--search_btn']/span</value>
+         <value>//div[@id='form_entry_editor--question_22947']/label</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#person_search_form--search_btn > span.button-inner-container.jss246</value>
+         <value>label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,71 +22,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>b0d86302-5d59-42bd-9225-eb40024e64e2</webElementGuid>
+      <value>label</value>
+      <webElementGuid>a8322323-3e9d-467a-83f3-bbdf594da664</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>button-inner-container jss246</value>
-      <webElementGuid>32cf6a8c-7f0a-4206-802c-9e867b9ed075</webElementGuid>
+      <value>checkbox-label</value>
+      <webElementGuid>6792eb6e-82d2-40a2-86bd-4fd069b60450</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Search</value>
-      <webElementGuid>5d46272e-b9f6-48a7-bdf3-e5cbdb7885ff</webElementGuid>
+      <value>CTA Single Check Boxcheck</value>
+      <webElementGuid>76f54b2e-a251-45f4-b516-f272c0de67b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;person_search_form--search_btn&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
-      <webElementGuid>9e472055-f2ca-4081-ad9d-3e68278d2e38</webElementGuid>
+      <value>id(&quot;form_entry_editor--question_22947&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>cbbecc05-140d-4ac0-b39a-9f84312c46a8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='person_search_form--search_btn']/span</value>
-      <webElementGuid>48b68850-dc05-4a63-b6d5-887f93b7bb17</webElementGuid>
+      <value>//div[@id='form_entry_editor--question_22947']/label</value>
+      <webElementGuid>9e4a50ee-fd66-4cf8-bc7b-8d3a74ccff48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Phone'])[1]/following::span[1]</value>
-      <webElementGuid>d31a03cd-1ed5-4b5f-b769-bd2cd6a2225a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Single Check Box Question'])[1]/following::label[1]</value>
+      <webElementGuid>1b7ffe36-6d28-4de2-a9b3-c7686da17983</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[2]/following::span[1]</value>
-      <webElementGuid>13372761-009e-4d6f-8b47-864e05a6c25b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::label[1]</value>
+      <webElementGuid>4819efdd-1054-4303-804e-5c1a7cec6d64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::label[1]</value>
+      <webElementGuid>df5a216d-655e-4244-9620-68bb39ef13fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/button/span</value>
-      <webElementGuid>6c1ee27a-493f-49a4-82ed-7e0daa35e3b5</webElementGuid>
+      <value>//div[4]/div/div/div/div/label</value>
+      <webElementGuid>82339d18-daea-4bba-b856-7e769e7ea9dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Search' or . = 'Search')]</value>
-      <webElementGuid>e2b05036-da38-41cf-8c56-e08930f513e1</webElementGuid>
+      <value>//label[(text() = 'CTA Single Check Boxcheck' or . = 'CTA Single Check Boxcheck')]</value>
+      <webElementGuid>bbb39c9a-a7e6-4441-a0ae-c050d97f17c6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
