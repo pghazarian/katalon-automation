@@ -19,9 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 'Set Local Date and Time to the variable'
 def randText = String.format('%tF %<tH:%<tM', java.time.LocalDateTime.now())
+def uniqueTxt = new Random().with {(1..9).collect {(('a'..'z')).join()[ nextInt((('a'..'z')).join().length())]}.join()}
 
 'Set the Digital Program Title variable with the Date time values in it'
-randText = ('Dig Prog ' + randText)
+randText = ('Dig Prog ' + randText + " " + uniqueTxt)
 
 'Login and Navigate to Digital Programs Page'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
