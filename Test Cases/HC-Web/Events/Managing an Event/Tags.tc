@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Tags</name>
+   <tag>QA,Dev,Stage2,Stage</tag>
+   <comment></comment>
+   <testCaseGuid>ded553a9-d53a-4da3-8dc2-bd8d99680d63</testCaseGuid>
+</TestCaseEntity>

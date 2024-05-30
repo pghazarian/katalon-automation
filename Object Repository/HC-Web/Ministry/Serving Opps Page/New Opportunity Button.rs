@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>New Opportunity Button</name>
+   <tag></tag>
+   <elementGuidId>7fba3111-7549-48c1-a1c5-1f3606c48814</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='serving_opportunity_action_bar--new_opportunity_button']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#serving_opportunity_action_bar--new_opportunity_button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>39068546-b068-4eb1-9c0a-23d4fc7c9f50</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui button jss243 jss573 jss255</value>
+      <webElementGuid>49089b5f-0ddd-47bd-8c85-5f713308d2a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>serving_opportunity_action_bar--new_opportunity_button</value>
+      <webElementGuid>4bd663e8-1866-41da-9557-e586d06f566b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>plusNew Opportunity</value>
+      <webElementGuid>3aea2e1e-9bf1-491d-8eb7-ded4a42b087c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;serving_opportunity_action_bar--new_opportunity_button&quot;)</value>
+      <webElementGuid>cfaedad2-e28c-461f-8c27-55bb8f854b93</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

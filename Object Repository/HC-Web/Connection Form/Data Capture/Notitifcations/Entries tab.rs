@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Entries tab</name>
+   <tag></tag>
+   <elementGuidId>03650aaf-4644-4678-b435-f9004cfc61df</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss300.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f3883f24-6626-4a71-b83f-85acb676179d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root jss300 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
+      <webElementGuid>aae04731-f42d-48a5-9f79-cae1f63a2cbd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Entries</value>
+      <webElementGuid>2b328c3e-02e2-4719-b287-4d908c2a39d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss300 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
+      <webElementGuid>450d09f1-6302-45e5-b9df-95bc6ed99ed8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
+      <webElementGuid>0331213f-c041-4fd6-8968-36aadc0a02ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Overview'])[1]/following::span[1]</value>
+      <webElementGuid>6a3e26aa-7925-422d-a096-7d22c982db60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='/'])[1]/following::span[2]</value>
+      <webElementGuid>9007d57d-00ad-48e9-8c72-0dd885f07556</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Form Builder'])[1]/preceding::span[1]</value>
+      <webElementGuid>7b43d3b1-f42b-4a9e-9ff6-8eff4b2ba0fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auto-Reply Email'])[1]/preceding::span[2]</value>
+      <webElementGuid>7c5bd23a-3859-4900-9cdb-e40f6e5ae1ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Entries']/parent::*</value>
+      <webElementGuid>6727d2f6-7298-445d-b84b-9f5dd7f17f1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/span</value>
+      <webElementGuid>1b32cccf-7162-4727-afdc-6f7e074650dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Entries' or . = 'Entries')]</value>
+      <webElementGuid>8c5a80d5-b8f9-4938-a336-7d8e1dc35120</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

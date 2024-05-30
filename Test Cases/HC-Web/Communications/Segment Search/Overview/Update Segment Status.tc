@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to update status of a segment record</description>
+   <name>Update Segment Status</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>62fc0f2b-94ad-4996-b35e-834faaea4274</testCaseGuid>
+</TestCaseEntity>

@@ -25,51 +25,67 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Button'))
 
 'Attempt to remove journey to be added in case it is already suggested'
-if (CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(text(),'${JourneyName}')]/preceding-sibling::div/descendant::div[contains(@class,'icon-check')]"), 0)) {
-	
-    WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(text(),'${JourneyName}')]/preceding-sibling::div/descendant::div[contains(@class,'icon-check')]"))
+if (WebUI.waitForElementPresent(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Journey Checkbox', 
+        [('JourneyName') : JourneyName]), 2)) {
+    WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Journey Checkbox', 
+            [('JourneyName') : JourneyName]))
 
-    WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Button'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Delete Suggested Journey Button'))
 
-    WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Confirmation Yes Button'))
+    WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Delete Suggested Journey Confirmation Yes Button'))
 
     WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Button'))
 
-    CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject(null), 0)
+    WebUI.waitForElementNotPresent(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Journey Checkbox', 
+            [('JourneyName') : JourneyName]), 3)
 }
 
 'Add new suggested journey'
-WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Add Journey Button'))
+WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Add Journey Button'), 
+    0)
+
+'Add new suggested journey'
+WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Add Journey Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Add Journey Search Bar'), 
+    2)
 
 'Search for desired journey by name'
-WebUI.setText(findTestObject('HC-Web/Journey/Settings and Preferences/Add Journey Search Bar'), JourneyName + Keys.chord(
-        Keys.ENTER))
+WebUI.setText(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Add Journey Search Bar'), 
+    JourneyName + Keys.chord(Keys.ENTER))
 
-'Click checkbox to select first search result'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//td[contains(text(),'${JourneyName}')]/preceding-sibling::td/descendant::div[contains(@class,'icon-check')]"))
+'Click checkbox to select desired search result'
+WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Journey Search Result', 
+        [('JourneyName') : JourneyName]))
 
 'Click button to add selected journey'
-WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Add Selected Journeys'))
+WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Add Selected Journeys'))
 
 'Close edit suggested journeys drawer'
-WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Close Journey Search Drawer Button'))
+WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Close Journey Search Drawer Button'))
 
 'Verify selected journey appears in suggested journeys'
-WebUI.verifyTextPresent(JourneyName, false)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Journey/Settings and Preferences/Suggested Journey Row', [('JourneyName') : JourneyName]), 
+    3, FailureHandling.STOP_ON_FAILURE)
 
 'Reopen drawer to edit suggested journeys'
 WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Button'))
 
 'Select previously added journey'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[contains(text(),'${JourneyName}')]/preceding-sibling::div/descendant::div[contains(@class,'icon-check')]"))
+WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Journey Checkbox', 
+        [('JourneyName') : JourneyName]), 2)
+
+'Select previously added journey'
+WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Journey Checkbox', [('JourneyName') : JourneyName]))
 
 'Delete added journey from suggested journeys'
-WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Button'))
+WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Delete Suggested Journey Button'))
 
-WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Delete Suggested Journey Confirmation Yes Button'))
+WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Delete Suggested Journey Confirmation Yes Button'))
 
 'Verify journey is no longer in list'
-WebUI.verifyTextNotPresent(JourneyName, false)
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Journey Checkbox', 
+        [('JourneyName') : JourneyName]), 3, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

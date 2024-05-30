@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Duplicate an Event</name>
+   <tag>QA,Dev,Stage2,Stage</tag>
+   <comment></comment>
+   <testCaseGuid>ce6fe9dd-0139-485a-8c0a-23efc82a8a58</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6e51b521-9a0f-4dc1-9470-d849379b4901</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dcde9c14-b43b-4d60-bb5d-9275381ab01b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8f20aa76-3e73-4dba-9e71-743d301921f9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b462d966-ef34-4e38-95b4-8e1f68f19055</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>79786b5a-a439-4109-b735-0ed0122a55cf</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.EventId_OneTime_ForDuplication</defaultValue>
+      <description></description>
+      <id>6e51b521-9a0f-4dc1-9470-d849379b4901</id>
+      <masked>false</masked>
+      <name>EventId</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Event for Duplication'</defaultValue>
+      <description></description>
+      <id>dcde9c14-b43b-4d60-bb5d-9275381ab01b</id>
+      <masked>false</masked>
+      <name>EventName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Event created to be duplicated by QA Automation test'</defaultValue>
+      <description></description>
+      <id>8f20aa76-3e73-4dba-9e71-743d301921f9</id>
+      <masked>false</masked>
+      <name>EventDescription</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.EventCategory</defaultValue>
+      <description></description>
+      <id>b462d966-ef34-4e38-95b4-8e1f68f19055</id>
+      <masked>false</masked>
+      <name>EventCategory</name>
+   </variable>
+   <variable>
+      <defaultValue>'Anaheim'</defaultValue>
+      <description></description>
+      <id>79786b5a-a439-4109-b735-0ed0122a55cf</id>
+      <masked>false</masked>
+      <name>EventCampus</name>
+   </variable>
+</TestCaseEntity>

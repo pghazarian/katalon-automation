@@ -1,0 +1,74 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/people/search-or-add'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.clearText(findTestObject('HC-Web/Person/Search/SearchInput'))
+
+'Type Search term'
+WebUI.setText(findTestObject('HC-Web/Person/Search/SearchInput'), SearchTerm)
+
+'Initiate Search'
+WebUI.sendKeys(findTestObject('HC-Web/Person/Search/SearchInput'), Keys.chord(Keys.ENTER))
+
+SearchTableCellObject = findTestObject('Object Repository/HC-Web/Person/Search/Search Results Person Name Match', [('textToMatch') : VerificationName])
+
+PersonName = WebUI.getAttribute(SearchTableCellObject, 'innerText')
+
+'Verify a row contains the expected name'
+WebUI.verifyElementText(SearchTableCellObject, VerificationName)
+
+'Verify that the Personal Details Column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_PersonalDetails'))
+
+'Verify that the Email Column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_Email'))
+
+'Verify that the DOB Column is visible'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Person/Search/TableColumn_DOB'))
+
+'Open the person record from the search results'
+WebUI.click(SearchTableCellObject)
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Person/Details/Person Name Label Match', [('textToMatch') : VerificationName]), 3)
+
+'Verify the name in the details page'
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Person/Details/Person Name Label Match', [('textToMatch') : VerificationName]), 0)
+
+'Open the Person Edit page'
+WebUI.click(findTestObject('HC-Web/Person/Details/EditButton'))
+
+'Verify the first name field value'
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/First Name Input'), 
+    FirstName)
+
+'Verify the last name field value'
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Person/Edit/Last Name Input'), 
+    LastName)
+
+'Verify the birthdate label is present'
+WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/Birthdate_Label'), 0)
+
+'Verify the birthdate text field is present'
+WebUI.verifyElementPresent(findTestObject('HC-Web/Person/Details/Birthdate_TextField'), 0)
+
+WebUI.closeBrowser()
+

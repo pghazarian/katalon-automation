@@ -11,11 +11,37 @@
       <value></value>
       <variableId>c680a00c-3e40-43aa-a7e3-7c25f678dbcc</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>520cb921-1010-467b-a221-124a1ce092d2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>90e4e044-44e0-4a0c-ab8c-bbd16e0c5612</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>GlobalVariable.EventId_CheckIn</defaultValue>
       <description></description>
       <id>c680a00c-3e40-43aa-a7e3-7c25f678dbcc</id>
       <masked>false</masked>
       <name>EventId</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.SO_GeneralRoom</defaultValue>
+      <description></description>
+      <id>520cb921-1010-467b-a221-124a1ce092d2</id>
+      <masked>false</masked>
+      <name>RoomName</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Admin'</defaultValue>
+      <description></description>
+      <id>90e4e044-44e0-4a0c-ab8c-bbd16e0c5612</id>
+      <masked>false</masked>
+      <name>AttendeeName</name>
    </variable>
 </TestCaseEntity>

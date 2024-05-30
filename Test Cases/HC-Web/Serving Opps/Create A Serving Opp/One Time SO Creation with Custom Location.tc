@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Creates a Serving Op with a custom venue, signs up a user, then removes user and closes serving op&#xd;
+&#xd;
+Approved for Stage</description>
+   <name>One Time SO Creation with Custom Location</name>
+   <tag>Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>1cfa807b-1346-4590-9a81-efddea885c36</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bea16e4a-846c-46d1-b41f-ecc5f1368ca1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d3e7eb73-c915-4ca5-a62c-193ca1a0df24</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>73feb5ec-5148-4d92-8632-3d9382fc97b9</id>
+      <masked>false</masked>
+      <name>VolunteerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation SO with Custom Location'</defaultValue>
+      <description></description>
+      <id>d3e7eb73-c915-4ca5-a62c-193ca1a0df24</id>
+      <masked>false</masked>
+      <name>ServingOppName</name>
+   </variable>
+</TestCaseEntity>

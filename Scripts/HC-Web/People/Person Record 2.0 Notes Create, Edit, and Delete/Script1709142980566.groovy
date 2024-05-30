@@ -33,7 +33,7 @@ WebUI.click(findTestObject('HC-Web/Person/Notes/Open Notes Button'))
 WebUI.click(findTestObject('HC-Web/Person/Notes/New Note Button'))
 
 'Select a note category'
-CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('person_notes_drawer_note_form--category_select', 'General')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('person_notes_drawer_note_form--category_select', 'General')
 
 'Enter subject'
 WebUI.setText(findTestObject('HC-Web/Person/Notes/Subject Text Field'), SubjectText)
@@ -48,7 +48,7 @@ WebUI.click(findTestObject('HC-Web/Person/Notes/Save Button'))
 WebUI.verifyTextPresent(SubjectText, false)
 
 'Click button to edit previously created note'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$SubjectText']/following-sibling::div[@class='person_notes_drawer--note_footer']/descendant::button[@id='person_notes_drawer--note--edit_person_note']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$SubjectText']/following-sibling::div[@class='person_notes_drawer--note_footer']/descendant::button[@id='person_notes_drawer--note--edit_person_note']"))
 
 'Edit note text'
 NoteText = (NoteText + ' - EDITED')
@@ -69,7 +69,7 @@ WebUI.click(findTestObject('HC-Web/Person/Notes/Save Button'))
 WebUI.verifyTextPresent(SubjectText, false)
 
 'Click button to delete edited note'
-WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$SubjectText']/following-sibling::div[@class='person_notes_drawer--note_footer']/descendant::div[@id='person_notes_drawer--note--remove_person_note']"))
+WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$SubjectText']/following-sibling::div[@class='person_notes_drawer--note_footer']/descendant::div[@id='person_notes_drawer--note--remove_person_note']"))
 
 'Verify deletion'
 WebUI.click(findTestObject('HC-Web/Person/Notes/Delete Note Confirmation Yes Button'))
