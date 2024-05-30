@@ -65,3 +65,21 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital P
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Created Successful Message'), 
     'Successful')
 
+WebUI.verifyElementText(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/DIgital Program Title in Builder'), 
+    randText)
+
+WebUI.verifyElementText(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program TItle in Top NAV'), 
+    randText)
+
+WebUI.verifyElementPresent(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Builder Template dropdown'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Builder Header Text'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Builder Add a Button Header Text'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Edit Details Button'), 
+    0)
+
