@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Save</name>
+   <name>Create New Program Header Text</name>
    <tag></tag>
-   <elementGuidId>471cb461-edca-4853-a690-2a334e1423df</elementGuidId>
+   <elementGuidId>899ef616-c371-4ae9-a699-e6fedcf56f65</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='digital_programs_add_drawer--action_bar_add_button']/span</value>
+         <value>//h2[(text() = 'Create New Program' or . = 'Create New Program')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#digital_programs_add_drawer--action_bar_add_button > span.button-inner-container.jss208</value>
+         <value>h2.ui.header.title</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,95 +22,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>647f428c-a9f5-4ab8-8bd6-139e704291e1</webElementGuid>
+      <value>h2</value>
+      <webElementGuid>9d6adf46-e29f-4d1b-bbbb-c0899d73acf0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>button-inner-container jss208</value>
-      <webElementGuid>73b81779-df72-4774-90d0-e687488370a3</webElementGuid>
+      <value>ui header title</value>
+      <webElementGuid>d84e5f5a-3c80-424d-bd28-5e18b68d1cd3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Save</value>
-      <webElementGuid>cbeea24d-0362-40ec-9ffa-caa698d8feaf</webElementGuid>
+      <value>Create New Program</value>
+      <webElementGuid>60a496de-d719-4452-ab7b-4a3d152ec639</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;digital_programs_add_drawer--action_bar_add_button&quot;)/span[@class=&quot;button-inner-container jss208&quot;]</value>
-      <webElementGuid>ffa30086-76cd-4f8a-a8de-47118c724551</webElementGuid>
+      <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;design-v1 drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 digital_programs_add_drawer--add_drawer drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/header[@class=&quot;ui drawer--title_bar&quot;]/div[@class=&quot;drawer--title_bar_inner&quot;]/h2[@class=&quot;ui header title&quot;]</value>
+      <webElementGuid>bb32692d-5f6b-4967-a50e-8c0375fd02f1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//button[@id='digital_programs_add_drawer--action_bar_add_button']/span</value>
-      <webElementGuid>e6a3f875-1b18-4b06-809e-bfd5404c6cca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('It', &quot;'&quot;, 's simple to switch a series on or off.')])[1]/following::h2[1]</value>
+      <webElementGuid>116a03b1-962f-4353-838e-893825818f3a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[1]</value>
-      <webElementGuid>07bd1be3-765e-407f-a4a0-36b92f7ba156</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='How do I make a Service Series active or inactive?'])[1]/following::h2[1]</value>
+      <webElementGuid>5b1b9487-eeed-4924-a2ab-48e0951e82bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create New Program'])[1]/following::span[2]</value>
-      <webElementGuid>b0eb7fbd-6ab1-47b4-b33d-d787e969b43b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::h2[1]</value>
+      <webElementGuid>32d14c95-80a7-472c-bf92-84eebd297aa0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Program Image'])[1]/preceding::span[1]</value>
-      <webElementGuid>c24a7891-4f6e-4fa0-948c-f6c2f9ea463c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/preceding::h2[1]</value>
+      <webElementGuid>5c64a633-1071-4f39-a433-77db451e7592</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upload an image for each platform or use a single image that can be cropped and resized.'])[1]/preceding::span[1]</value>
-      <webElementGuid>ed8247be-8590-4e12-9c38-4225a8dd567a</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Save']/parent::*</value>
-      <webElementGuid>d84eae68-2cce-490f-8fdd-4f9087be0adb</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Create New Program']/parent::*</value>
+      <webElementGuid>63d71af4-b041-40cb-ac0b-5984819a1b79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//header/div/div/div[2]/button/span</value>
-      <webElementGuid>ef5198a8-3d7f-4935-90b4-beb86a5ced02</webElementGuid>
+      <value>//header/div/h2</value>
+      <webElementGuid>9eb0ec02-8186-43db-b8cc-38d664e06dd9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Save' or . = 'Save')]</value>
-      <webElementGuid>e26bb1da-1777-42f9-9f01-47e2f719eea8</webElementGuid>
+      <value>//h2[(text() = 'Create New Program' or . = 'Create New Program')]</value>
+      <webElementGuid>6f46b290-cfec-43f8-bb3d-e6270eb2881a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

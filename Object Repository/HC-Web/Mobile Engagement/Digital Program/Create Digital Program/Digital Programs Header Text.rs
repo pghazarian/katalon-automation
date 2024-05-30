@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h4_Digital Programs</name>
+   <name>Digital Programs Header Text</name>
    <tag></tag>
    <elementGuidId>009b3718-47cd-4fe7-879f-8c00c50c34da</elementGuidId>
    <selectorCollection>
