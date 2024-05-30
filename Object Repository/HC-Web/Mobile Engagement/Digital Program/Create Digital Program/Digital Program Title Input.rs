@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__digital_programs_add_drawer--title</name>
+   <name>Digital Program Title Input</name>
    <tag></tag>
    <elementGuidId>9dd4c4b6-d7bf-403f-b6a8-b38aed7dd8a9</elementGuidId>
    <selectorCollection>

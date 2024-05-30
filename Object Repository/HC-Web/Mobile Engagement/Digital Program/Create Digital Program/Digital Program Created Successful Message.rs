@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Successful</name>
+   <name>Digital Program Created Successful Message</name>
    <tag></tag>
    <elementGuidId>a4d704ea-ae3e-4be7-aa28-b0ceb7495792</elementGuidId>
    <selectorCollection>
@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

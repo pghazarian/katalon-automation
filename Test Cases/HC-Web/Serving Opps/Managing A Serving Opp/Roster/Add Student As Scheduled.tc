@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Student As Scheduled</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8e68ba80-07ea-48ba-a85e-8ad5e05e537b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e3e59a7c-1a8e-48eb-846d-a1785117e59c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>da7f53ba-3500-4f07-abd8-3affc2e71dfa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>91879d2d-990f-412b-92fa-f59fef079b72</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8cd58520-5b0d-42a4-9797-9696c67cbec3</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.SO_Id_Recurring_DoesNotEnd</defaultValue>
+      <description></description>
+      <id>0bb32f13-b6c2-4754-838b-4b06ccebb3e1</id>
+      <masked>false</masked>
+      <name>ServingOppId</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.Ministry_CampusId</defaultValue>
+      <description></description>
+      <id>706b1884-8127-44e1-ab99-46a7d8033e59</id>
+      <masked>false</masked>
+      <name>CampusId</name>
+   </variable>
+   <variable>
+      <defaultValue>'Garrett (Student) Clover'</defaultValue>
+      <description></description>
+      <id>91879d2d-990f-412b-92fa-f59fef079b72</id>
+      <masked>false</masked>
+      <name>VolunteerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>8cd58520-5b0d-42a4-9797-9696c67cbec3</id>
+      <masked>false</masked>
+      <name>MemberName</name>
+   </variable>
+</TestCaseEntity>
