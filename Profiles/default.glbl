@@ -106,47 +106,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'App Files\\Ministry App\\MA Latest.apk'</initValue>
-      <name>Ministry_App_Path</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'com.healthychurch.companion.development'</initValue>
       <name>CompanionApp_BundleId</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'com.healthychurch.ministry'</initValue>
-      <name>Ministry_App_ID</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'App Files\\ME App\\Android\\hc-android-release.apk'</initValue>
-      <name>ME_App_Path</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://saddleback.com'</initValue>
-      <name>Saddleback_URL</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'/Image Files/Test Photo.jpg'</initValue>
-      <name>Stock_Image_Path</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Garrett Clover'</initValue>
-      <name>SO_PersonSearch_Name</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'hagopg@saddleback.com,pareng@saddleback.com,sreenia@saddleback.com,crisf@saddleback.com,jessicat@saddleback.com'</initValue>
-      <name>KatalonLicenseEmailsPacificLive</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'sanchita@optimumfuturist.com'</initValue>
-      <name>KatalonLicenseEmailsPacificOff</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

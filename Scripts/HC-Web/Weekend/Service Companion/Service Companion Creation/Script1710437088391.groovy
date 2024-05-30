@@ -33,16 +33,16 @@ WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Name Te
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Description Text Field'), 'Service Companion Created by Katalon Test')
 
 'Select a speaker from the dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValue'('react-select-3--value', Speaker)
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('react-select-3--value', Speaker)
 
 'Select a series from the dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValue'('react-select-4--value', Series)
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('react-select-4--value', Series)
 
 'Click button to attach a service outline'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Outline Button'))
 
 'Select a service outline from the dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValue'('ui-dropdown--edit_sermon_outline_category', '')
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('ui-dropdown--edit_sermon_outline_category', '')
 
 'Add a description to the service outline'
 WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Edit Service Outline Body'), 'Test Description')
@@ -76,14 +76,6 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/First Ann
 'Confirm announcement attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Selected Announcement Button'))
 
-WebUI.scrollToElement(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Button'), 0)
-
-'Click remove button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove button'))
-
-'Remove prompt yes button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove Prompt Yes button'))
-
 'Click the button to add a song as an attachment'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song Button'))
 
@@ -92,12 +84,6 @@ WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Song 
 
 'Confirm song attachment selection'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Song Search Add Button'))
-
-'Click remove button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove button'))
-
-'Remove prompt yes button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Service Companion/Remove Prompt Yes button'))
 
 'Click the button to add a service'
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Companion/Add Service Association Button'))
@@ -119,8 +105,8 @@ WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search 
 
 WebUI.sendKeys(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search Bar'), Keys.chord(Keys.ENTER))
 
-CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//td[@id=\'data_grid--table_page_cell_base-2_0\']', ServiceCompanionName, 
-    1)
+CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpathTextMatch'('//td[@id=\'data_grid--table_page_cell_base-2_0\']', 
+    ServiceCompanionName, 1)
 
 WebUI.closeBrowser()
 

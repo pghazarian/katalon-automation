@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Accounting2Accounting2Accounting2Accounting2</name>
+   <tag></tag>
+   <elementGuidId>c20b2a9f-0766-4eca-809b-da16bb2192c9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div/div[2]/div/div/div/div/div/ul/li[2]/div[2]/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.jss454.jss460.navigation_breadcrumbs--breadcrumb.jss455.navigation_breadcrumbs--breadcrumb_is_last > div.jss458.navigation_breadcrumbs--breadcrumb_title > p.MuiTypography-root.jss459.navigation_breadcrumbs--breadcrumb_title_typography.MuiTypography-body1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>b4b3cfae-7703-4ef4-ac2f-213fcf821d39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root jss459 navigation_breadcrumbs--breadcrumb_title_typography MuiTypography-body1</value>
+      <webElementGuid>8f9004d0-f9d8-485e-b649-01df3ed011e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Accounting2Accounting2Accounting2Accounting2</value>
+      <webElementGuid>5429670f-4edf-4dfb-b1b6-253b3792eddb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;jss2&quot;]/div[@class=&quot;ui sticky app-header app-header-desktop&quot;]/div[1]/div[@class=&quot;cmui app_bar jss391 jss392&quot;]/div[@class=&quot;MuiBox-root jss393&quot;]/div[1]/div[@class=&quot;jss451&quot;]/ul[@class=&quot;navigation_breadcrumbs--list jss453&quot;]/li[@class=&quot;jss454 jss460 navigation_breadcrumbs--breadcrumb jss455 navigation_breadcrumbs--breadcrumb_is_last&quot;]/div[@class=&quot;jss458 navigation_breadcrumbs--breadcrumb_title&quot;]/p[@class=&quot;MuiTypography-root jss459 navigation_breadcrumbs--breadcrumb_title_typography MuiTypography-body1&quot;]</value>
+      <webElementGuid>1b2a273f-84b3-4813-a12a-081dba7cffdd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div/div[2]/div/div/div/div/div/ul/li[2]/div[2]/p</value>
+      <webElementGuid>a912107c-00e7-41d6-b16b-ecb5b4abc614</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/div[2]/p</value>
+      <webElementGuid>d3aa74d6-715b-4e45-97fe-a199e804cae0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Accounting2Accounting2Accounting2Accounting2' or . = 'Accounting2Accounting2Accounting2Accounting2')]</value>
+      <webElementGuid>c95e74f8-019a-437c-9221-cc6837874290</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

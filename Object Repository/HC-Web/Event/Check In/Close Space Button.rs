@@ -6,11 +6,11 @@
    <elementGuidId>93f0cbc0-25e6-41be-9ba9-fb42f94c374b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@data-testid='room-attendee-details-close-space-btn']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@data-testid='room-attendee-details-close-space-btn' and not(@disabled)]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

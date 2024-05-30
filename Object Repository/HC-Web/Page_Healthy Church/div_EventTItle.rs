@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_EventTItle</name>
+   <tag></tag>
+   <elementGuidId>ba63b6c7-e2d1-4904-9044-4b997797f1dc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='events-details-view']/div/div[2]/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.event-card-title.campus-event</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>fec10b47-6000-4290-9bf4-c7868bb493e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>event-card-title campus-event</value>
+      <webElementGuid>4862bdf5-fe01-4c03-b630-23c53f96371f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>HC Test Private Event</value>
+      <webElementGuid>72201d6a-1989-4085-bfaf-7852aa2739aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;events-details-view&quot;)/div[1]/div[@class=&quot;jss344&quot;]/div[@class=&quot;jss388&quot;]/div[@class=&quot;event-card-title campus-event&quot;]</value>
+      <webElementGuid>0d23f3b9-dca7-43c8-8470-6d4e09b25b11</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='events-details-view']/div/div[2]/div/div[2]</value>
+      <webElementGuid>122761be-5237-4e15-90c3-44038fe39468</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div/div/div/div[2]/div/div[2]</value>
+      <webElementGuid>87a466fc-2030-4d79-bc38-48080f5a5420</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'HC Test Private Event' or . = 'HC Test Private Event')]</value>
+      <webElementGuid>f6c6614e-0e57-4350-a37b-e479a163d58e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

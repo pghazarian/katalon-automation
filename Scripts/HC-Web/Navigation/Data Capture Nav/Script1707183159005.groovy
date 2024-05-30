@@ -21,11 +21,11 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Data Capture', 'Connection Forms')
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Forms', 'Connection Forms')
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Cards', 'Connection Cards')
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Questions', 'Connection Questions')
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Weekend Metrics Capture', 'Weekend Metrics Capture')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Data Capture', 'Connection Forms')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Forms', 'Connection Forms')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Cards', 'Connection Cards')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Connection Questions', 'Connection Questions')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Data Capture', 'Weekend Metrics Capture', 'Weekend Metrics Capture')
 
 /*
  *  This code is for logging into a web application and performing various navigation actions.

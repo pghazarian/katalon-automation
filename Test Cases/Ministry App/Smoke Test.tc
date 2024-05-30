@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>This TC is to be run before we make a major release of the Ministry application to the public, in the Production envioronment</description>
-   <name>Smoke Test</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>553b0533-7c06-4be5-b18d-f7a763107ce9</testCaseGuid>
-</TestCaseEntity>

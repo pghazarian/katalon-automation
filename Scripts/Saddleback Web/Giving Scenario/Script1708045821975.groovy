@@ -137,7 +137,7 @@ if (!(WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback We
 // Click the Give Tithe button
 def count = 1
 
-while ((count < 5) && !(CustomKeywords.'TestObjectHelper.isElementPresent'(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Designation Section'), 
+while ((count < 5) && !(CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Designation Section'), 
     1))) {
     WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Giving/Give Tithe Button'))
 

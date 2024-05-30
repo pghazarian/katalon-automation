@@ -7,10 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='check_in_page--room_volunteers_modal-open_room_button' and not(@disabled)]</value>
+         <value>//button[@id='check_in_page--room_volunteers_modal-open_room_button']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

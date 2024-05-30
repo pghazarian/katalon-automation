@@ -36,7 +36,7 @@ WebUI.setText(findTestObject('HC-Web/Mobile Engagement/Service Companion/Search 
 
 WebUI.verifyTextPresent(ServiceSeriesName, false)
 
-WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Search Result Row'))
+WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Search Result Rows'))
 
 WebUI.click(findTestObject('HC-Web/Mobile Engagement/Service Series Builder/Inactive Radio Option'))
 

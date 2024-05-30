@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Campus Settings/Add Campus Button'))
 
-WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text()='$campus']"))
+WebUI.click(CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text()='$campus']"))
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Campus Settings/Location Map'))
 

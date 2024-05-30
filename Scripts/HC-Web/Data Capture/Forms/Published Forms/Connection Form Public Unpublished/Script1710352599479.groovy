@@ -25,7 +25,7 @@ WebUI.openBrowser(FormPath)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Connection Form Public/FormClosed_Title'), 'Form Closed')
 
-DescriptionObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text() = 'This form has been closed and is no longer accepting submissions. If you think it has been closed in error, please contact the form’s owner.']")
+DescriptionObject = CustomKeywords.'customUtility.TestObjectHelper.getTestObjectWithXpath'("//div[text() = 'This form has been closed and is no longer accepting submissions. If you think it has been closed in error, please contact the form’s owner.']")
 
 WebUI.verifyElementPresent(DescriptionObject, 0)
 

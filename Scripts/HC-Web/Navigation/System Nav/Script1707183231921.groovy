@@ -21,15 +21,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('System', 'Platform Settings')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('System', 'Platform Settings')
 
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Platform Settings', 'Platform Settings')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Platform Settings', 'Platform Settings')
 
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Campus Settings', 'Campus Settings')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Campus Settings', 'Campus Settings')
 
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Users & Teams', 'Users & Teams')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Users & Teams', 'Users & Teams')
 
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Security & Permissions', 'Security & Permissions')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Security & Permissions', 'Security & Permissions')
 
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Migration Settings', 'Migration Settings')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('System', 'Migration Settings', 'Migration Settings')
 

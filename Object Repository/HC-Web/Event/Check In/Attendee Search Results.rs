@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//p[contains(normalize-space(text()),'${AttendeeName}')]/ancestor::tr</value>
+         <value>//div[@class='drawer-container']/descendant::tbody/tr</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>9287c942-81cc-4abd-a718-fcc7581f43d2</webElementGuid>
+      <webElementGuid>c6d0d35d-6fde-4158-9ed4-cdd92fea67e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiTypography-root jss816 jss814 MuiTypography-body1</value>
-      <webElementGuid>17cb45c0-6131-4f78-994f-7f76a83400e2</webElementGuid>
+      <webElementGuid>680550e1-e1f7-4048-8dd3-de9b554b3fb0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>QA Automation Admin</value>
-      <webElementGuid>5d2a212c-8854-4ad6-b2b0-8b45f59a840a</webElementGuid>
+      <webElementGuid>33aed0af-68b5-4920-9067-74d19586bb83</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +46,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;data_grid--table_schedule--page_data_grid_cell_base-2_1&quot;)/div[1]/p[@class=&quot;MuiTypography-root jss816 jss814 MuiTypography-body1&quot;]</value>
-      <webElementGuid>906f7f7e-009a-4518-b25b-53ef9f849d00</webElementGuid>
+      <webElementGuid>4da3a852-2ddf-4e9d-ae6e-3a94e11550d4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

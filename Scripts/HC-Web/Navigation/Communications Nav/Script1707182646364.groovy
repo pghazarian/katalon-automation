@@ -22,6 +22,10 @@ import com.kms.katalon.core.configuration.RunConfiguration
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
 		, ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Communications', 'Segments')
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segments', 'Segments')
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Email Templates', 'Email Templates')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Communications', 'Email Templates')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Email Templates', 'Email Templates')
+
+// (2024-02-13) These tests are not available in production because they are still in development
+if (RunConfiguration.getExecutionProfile() != "HC-Production") {
+	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Communications', 'Segment Search', 'Segment Search')
+}

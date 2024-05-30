@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_This is a demo event for Bryant StoneHo_6b4ac0</name>
+   <tag></tag>
+   <elementGuidId>f55f37c3-acdb-4aec-b5cd-c33c774ecfd7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div/main/section/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.overlayed-image.overlay.blue</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>b01717ce-8174-4879-99c4-2a760be7e8e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>overlayed-image overlay blue</value>
+      <webElementGuid>f97a39bd-27f4-4df0-ab55-7503daaf3c64</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>This is a demo event for Bryant StoneHosted By: Bryant's Test CampusRecurringDaily on 11/30/2023 at 07:00 am - 06:00 pm123 Atotallyrealplace Rd, Somewhere, CA 12345</value>
+      <webElementGuid>11de16a5-0fe6-404c-939e-54ace66acdf2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss285 jss502 jss469 page-has_action_bar&quot;]/section[@class=&quot;cmui content jss525 ui page--content jss524&quot;]/div[1]/div[@class=&quot;overlayed-image overlay blue&quot;]</value>
+      <webElementGuid>97818859-a17e-4a7d-b21e-6d176e5446aa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/section/div/div</value>
+      <webElementGuid>ad83123a-f553-4e1e-b29e-740a776e8a0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div</value>
+      <webElementGuid>87d7f6e5-ffe5-4eb5-bcc0-12cc50f26a6f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = concat(&quot;This is a demo event for Bryant StoneHosted By: Bryant&quot; , &quot;'&quot; , &quot;s Test CampusRecurringDaily on 11/30/2023 at 07:00 am - 06:00 pm123 Atotallyrealplace Rd, Somewhere, CA 12345&quot;) or . = concat(&quot;This is a demo event for Bryant StoneHosted By: Bryant&quot; , &quot;'&quot; , &quot;s Test CampusRecurringDaily on 11/30/2023 at 07:00 am - 06:00 pm123 Atotallyrealplace Rd, Somewhere, CA 12345&quot;))]</value>
+      <webElementGuid>82b65b43-8085-4327-bfb5-e0417ac6fe2e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

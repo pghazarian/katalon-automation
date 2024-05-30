@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Nikhilesh  Walwatkar</name>
+   <tag></tag>
+   <elementGuidId>ee195c88-bd89-40d3-83df-a4f71dd59e55</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='ministry_volunteers_list--personal_info_cell_53790']/span/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.jss1197</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>56c0d367-becf-4e63-a5cb-f11b67ca5925</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jss1197</value>
+      <webElementGuid>a4fdf2a0-c303-4a48-9fd2-0e4eb6820ddb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nikhilesh  Walwatkar</value>
+      <webElementGuid>fd2d108e-0725-4613-8361-335a9824de7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ministry_volunteers_list--personal_info_cell_53790&quot;)/span[@class=&quot;MuiBox-root jss1195&quot;]/div[@class=&quot;jss1196&quot;]/div[@class=&quot;jss1197&quot;]</value>
+      <webElementGuid>87fc6dbe-baf0-43dc-be70-e789e2b3bb5c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='ministry_volunteers_list--personal_info_cell_53790']/span/div/div</value>
+      <webElementGuid>313e726b-7dd5-4a7d-a0fb-edf9a243ec69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/span/div/div</value>
+      <webElementGuid>e6e2bb93-e1c6-41c4-8c58-7054886bdd12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Nikhilesh  Walwatkar' or . = 'Nikhilesh  Walwatkar')]</value>
+      <webElementGuid>6546de7a-062e-42d5-8f84-5a47344da5ac</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

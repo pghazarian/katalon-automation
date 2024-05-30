@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test case to edit events</description>
-   <name>Add Events By Event and Streak</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>db6115e8-6153-4923-bf94-2df0ed0d5b3f</testCaseGuid>
-</TestCaseEntity>

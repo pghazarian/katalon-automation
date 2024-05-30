@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_chevron-downNew EventCreate New EventR_321259</name>
+   <tag></tag>
+   <elementGuidId>6739fff4-88bb-4a86-a09e-2d9d4e8d038a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='ui-dropdown--events_new_event']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.button-inner-container.jss239</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>988933c8-4a6c-442c-8f1e-a00edf09f5a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss239</value>
+      <webElementGuid>55cf9506-255c-400a-ae40-d11a0eba3b4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>chevron-downNew EventCreate New EventRequest Paid Event</value>
+      <webElementGuid>82b995e7-3991-4641-9877-51afe17ce24c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-dropdown--events_new_event&quot;)/span[@class=&quot;button-inner-container jss239&quot;]</value>
+      <webElementGuid>a8d4d3cd-68ec-4cb9-8f50-0ddc4f6f2908</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='ui-dropdown--events_new_event']/span</value>
+      <webElementGuid>72979ad1-d51d-4c5e-bb28-01654e61845f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/button/span</value>
+      <webElementGuid>56424770-7d1f-4e83-95df-98aef08b0120</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'chevron-downNew EventCreate New EventRequest Paid Event' or . = 'chevron-downNew EventCreate New EventRequest Paid Event')]</value>
+      <webElementGuid>57003802-5f75-4a08-a618-2d4963bbc474</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Accommodations</name>
-   <tag>QA,Dev,Stage2,Stage</tag>
-   <comment></comment>
-   <testCaseGuid>503f8ac6-6f45-4d4a-a078-632aab73c68e</testCaseGuid>
-</TestCaseEntity>

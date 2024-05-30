@@ -25,10 +25,10 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 // (2024-02-13) These tests are not available in production because they are still in development
 if (RunConfiguration.getExecutionProfile() != "HC-Production") {
 	
-	CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Giving Central', 'All Giving')
+	CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Giving Central', 'All Giving')
 	
-	CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'All Giving', 'All Giving')
+	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'All Giving', 'All Giving')
 	
-	CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'Designations', 'Designations')
+	CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Giving Central', 'Designations', 'Designations')
 	
 }

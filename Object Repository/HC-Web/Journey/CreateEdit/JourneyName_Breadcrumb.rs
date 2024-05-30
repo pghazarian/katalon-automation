@@ -6,12 +6,12 @@
    <elementGuidId>98290bb8-9fe9-484a-b695-772d77c89a93</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.MuiTypography-root.jss732.MuiTypography-h4</value>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div/main/div/div[2]/div/div[2]/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[text()='${JourneyName}']</value>
+         <key>CSS</key>
+         <value>div.MuiTypography-root.jss732.MuiTypography-h4</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>be60d4df-875a-47c2-9985-96e3e2a6cbad</webElementGuid>
+      <webElementGuid>2b9c7beb-8062-452a-87dd-189c15d564b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiTypography-root jss732 MuiTypography-h4</value>
-      <webElementGuid>7d9da864-97d1-4ad8-bf37-edd04a5e3953</webElementGuid>
+      <webElementGuid>7aaaff8e-c576-4b69-9f97-7b0eddf052dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Katalon Test Journey</value>
-      <webElementGuid>2d767a29-936f-4979-a4df-1b42c0295f01</webElementGuid>
+      <webElementGuid>7e97d2cb-d8f1-41e8-8189-42698325d00a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +46,30 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss735 jss725 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss292 ui page--container jss291&quot;]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss723 jss62 jss50&quot;]/div[@class=&quot;jss722&quot;]/div[@class=&quot;MuiTypography-root jss732 MuiTypography-h4&quot;]</value>
-      <webElementGuid>aad23e9d-fa43-4aec-a4a0-674a49220623</webElementGuid>
+      <webElementGuid>8768926e-9a17-46a0-8994-54942f0a9897</webElementGuid>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div/div[2]/div/div[2]/div</value>
+      <webElementGuid>8b8c0fe9-922e-46d6-944f-cc00c8f2b394</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div/div[2]/div/div[2]/div</value>
+      <webElementGuid>720e2ed1-fd81-449e-8d04-2597af2e2d69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Katalon Test Journey' or . = 'Katalon Test Journey')]</value>
+      <webElementGuid>70841e6a-e664-43b1-85b3-7b2527d55455</webElementGuid>
+   </webElementXpaths>
 </WebElementEntity>

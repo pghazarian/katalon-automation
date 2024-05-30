@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 
 values = 'a, b - c; d,  e,f'
 
-def list = CustomKeywords.'StringHelper.parseItems'(values)
+def list = CustomKeywords.'customUtility.StringHelper.parseItems'(values)
 
 assert list.size() == 6
 assert list.get(0) == 'a'
@@ -33,7 +33,7 @@ assert list.get(5) == 'f'
 
 values = 'Cris Francisco,Mark Hamilton,Garrett Clover'
 
-list = CustomKeywords.'StringHelper.parseItemsWithDelimiter'(values, ',')
+list = CustomKeywords.'customUtility.StringHelper.parseItemsWithDelimiter'(values, ',')
 
 assert list.size() == 3
 assert list.get(0) == 'Cris Francisco'

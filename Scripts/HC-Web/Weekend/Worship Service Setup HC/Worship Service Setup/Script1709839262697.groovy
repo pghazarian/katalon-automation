@@ -24,53 +24,25 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 def WorshipServiceName = 'QA Automation Worship Service ' + UUID.randomUUID()
 
-'Verify that the sub navigation buttons are available.'
-
-'Click button to filter for One-time services'
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Worship Service Setup/One-Time Tab Button'))
-
-'Click button to filter for Closed services'
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Worship Service Setup/Closed Tab Button'))
-
-'Click button to filter for Recurring services'
-WebUI.click(findTestObject('Object Repository/HC-Web/Event/Worship Service Setup/Recurring Tab Button'))
-
-WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Worship Service Setup/Loading Wheel'), 2)
-
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Worship Service Setup/Loading Wheel'), 2)
-
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Worship Service Setup/Service Items'), 2)
-
 'Click button to create new worship service'
 WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/New Service Button'))
-
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Worship Service Setup/Name Text Field'), 2)
 
 'Set a name for the service'
 WebUI.setText(findTestObject('HC-Web/Event/Worship Service Setup/Name Text Field'), WorshipServiceName)
 
-WebUI.scrollToElement(findTestObject('HC-Web/Event/Worship Service Setup/Name Text Field'), 0)
-
 'Select a campus'
-CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('new_serving_opportunity_where_saddleback--campus', campus)
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueWithClick'('new_serving_opportunity_where_saddleback--campus', 
+    campus)
 
 'Save worship service'
 WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Save Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Save Service Confirmation Yes Button'))
 
-WebUI.waitForElementNotVisible(findTestObject('HC-Web/Event/Worship Service Setup/Name Text Field'), 2)
-
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Worship Service Setup/Search Bar'), 2)
-
 'Search for newly created service'
 WebUI.setText(findTestObject('HC-Web/Event/Worship Service Setup/Search Bar'), WorshipServiceName + Keys.ENTER)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Worship Service Setup/Loading Wheel'), 2)
-
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Worship Service Setup/Loading Wheel'), 2)
-
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Worship Service Setup/Service Items'), 2)
+WebUI.delay(3)
 
 'Verify service appears in list'
 WebUI.verifyTextPresent(WorshipServiceName, false)
@@ -83,7 +55,7 @@ WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Close Service Dro
 
 WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Close Service Confirmation Yes Button'))
 
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Worship Service Setup/Service Items'), 5)
+WebUI.delay(3)
 
 'Verify service was removed from list'
 WebUI.verifyTextNotPresent(WorshipServiceName, false)

@@ -21,9 +21,9 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'NavigationHelper.clickTopMenuAndValidateHeader'('Journey', 'Journeys')
+CustomKeywords.'customUtility.NavigationHelper.clickTopMenuAndValidateHeader'('Journey', 'Journeys')
 
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Journey', 'Journeys', 'Journeys')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Journey', 'Journeys', 'Journeys')
 
-CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Journey', 'Settings & Preferences', 'Settings & Preferences')
+CustomKeywords.'customUtility.NavigationHelper.clickSubmenuAndValidateHeader'('Journey', 'Settings & Preferences', 'Settings & Preferences')
 

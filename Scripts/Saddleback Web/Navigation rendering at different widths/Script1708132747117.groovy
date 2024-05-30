@@ -13,7 +13,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword as WebUIAbstractKeyword
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
@@ -32,34 +32,34 @@ WebUI.setViewPortSize(width, 768)
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [('null') : null], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [null:null], FailureHandling.STOP_ON_FAILURE)
 
 'verify the navigation at the max width of the screen'
 WebUI.maximizeWindow()
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [('null') : null], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [null:null], FailureHandling.STOP_ON_FAILURE)
 
 'verify the navigation under the 1024 width breakpoint'
 WebUI.setViewPortSize(1023, 768)
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [('null') : null], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [null:null], FailureHandling.STOP_ON_FAILURE)
 
 'verify the navigation at the mobile width breakpoint'
 WebUI.setViewPortSize(744, 768)
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [('null') : null], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [null:null], FailureHandling.STOP_ON_FAILURE)
 
 'verify the navigation at the mobile width breakpoint'
 WebUI.setViewPortSize(375, 768)
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [('null') : null], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Saddleback Web/Helper/Validate Nav Menu'), [null:null], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()

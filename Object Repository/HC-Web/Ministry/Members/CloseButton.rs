@@ -6,9 +6,6 @@
    <elementGuidId>9d3f4b63-72a8-4fee-aefc-c408525d91fd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@class=&quot;close-button&quot;]/button</value>
       </entry>
@@ -18,6 +15,9 @@
       </entry>
       <entry>
          <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

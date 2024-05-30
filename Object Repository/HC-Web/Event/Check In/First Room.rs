@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>First Room</name>
+   <tag></tag>
+   <elementGuidId>6189eebc-392f-488e-99e9-15ac235fd213</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tbody/tr</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#data_grid--table_check-in--rooms_cell_base-2_1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>5307b4f7-4931-4f1a-9756-701c477bc0de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>table-cell sticky-cell sticky-cell-resizable</value>
+      <webElementGuid>a36168e6-a703-42bd-8af8-46cad678d013</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>data_grid--table_check-in--rooms_cell_base-2_1</value>
+      <webElementGuid>cdc94b2f-0ba9-4e09-a0c0-98e758094466</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>The space is closedAnaheim Main Worship Center</value>
+      <webElementGuid>8371ef57-e135-484c-a877-de5cbffe0cb3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;data_grid--table_check-in--rooms_cell_base-2_1&quot;)</value>
+      <webElementGuid>593cbfef-49eb-4277-86ce-a78b1f6454b2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -6,11 +6,12 @@
    <elementGuidId>8dec7fad-cc8d-4a6c-8484-b7244f57c4d9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='occurrence_schedule--roster_actions_dropdown_button' and not(@disabled)]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@id='occurrence_schedule--roster_actions_dropdown_button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

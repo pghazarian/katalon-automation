@@ -28,7 +28,7 @@ https://hc-dev.saddleback.com/data-capture/connection-forms/226/overview
  */
 def date = new Date()
 
-def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
+def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
 
 'Define values to use in the controls to enter and then verify'
 def DateSelected = new Date().plus(3)
@@ -65,11 +65,11 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password], FailureHandling.STOP_ON_FAILURE)
 
 'Go to the Connection Form Admin screen'
-CustomKeywords.'NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
 
 def PublishButton = findTestObject('Object Repository/HC-Web/Connection Form/Overview/PublishLinkButton')
 
-if (CustomKeywords.'TestObjectHelper.isElementPresent'(PublishButton, 0)) {
+if (CustomKeywords.'customUtility.TestObjectHelper.isElementPresent'(PublishButton, 0)) {
     'Check that the form is unpublished'
     WebUI.verifyElementText(PublishButton, 'Publish')
 
@@ -79,9 +79,7 @@ if (CustomKeywords.'TestObjectHelper.isElementPresent'(PublishButton, 0)) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Overview/div_Yes'))
 }
 
-WebUI.waitForElementVisible(findTestObject("Object Repository/HC-Web/Connection Form/Overview/UnpublishLinkButton"), 10)
-
-CustomKeywords.'NavigationHelper.goToHCUrl'(PublicConnectionFormPath)
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(PublicConnectionFormPath)
 
 WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form Public/FirstNameField'), 2)
 
@@ -101,25 +99,25 @@ Email = WebUI.getAttribute(findTestObject('HC-Web/Connection Form Public/EmailFi
 WebUI.verifyNotEqual(Email, '')
 
 'Update the Single Line Text field'
-CustomKeywords.'FormHelper.setTextfieldValue'(LabelValueSingleLineText, SingleTextValue)
+CustomKeywords.'customUtility.FormHelper.setTextfieldValue'(LabelValueSingleLineText, SingleTextValue)
 
 'Update the Paragraph Text field'
-CustomKeywords.'FormHelper.setTextAreaValue'(LabelValueParagraphText, ParagraphTextValue)
+CustomKeywords.'customUtility.FormHelper.setTextAreaValue'(LabelValueParagraphText, ParagraphTextValue)
 
 'Check item(s) in the single checkbox list'
-CustomKeywords.'FormHelper.setGroupCheckboxValue'(LabelValueSingleCheckbox, SingleCheckBoxSelection)
+CustomKeywords.'customUtility.FormHelper.setGroupCheckboxValue'(LabelValueSingleCheckbox, SingleCheckBoxSelection)
 
 'Check item(s) in the group checkbox list'
-CustomKeywords.'FormHelper.setGroupCheckboxValue'(LabelValueGroupCheckbox, GroupCheckBoxSelection)
+CustomKeywords.'customUtility.FormHelper.setGroupCheckboxValue'(LabelValueGroupCheckbox, GroupCheckBoxSelection)
 
 'Select the multiple choice (radio button) value'
-CustomKeywords.'FormHelper.setMultipleChoiceControlValue'(LabelValueRadioButton, RadioButtonSelection)
+CustomKeywords.'customUtility.FormHelper.setMultipleChoiceControlValue'(LabelValueRadioButton, RadioButtonSelection)
 
 'Select the drop down value'
-CustomKeywords.'FormHelper.setDropDownValue'(LabelValueDropDown, DropDownSelection)
+CustomKeywords.'customUtility.FormHelper.setDropDownValue'(LabelValueDropDown, DropDownSelection)
 
 'Set the date control value'
-CustomKeywords.'FormHelper.setDateFieldValue'(LabelValueDate, DateSelected)
+CustomKeywords.'customUtility.FormHelper.setDateFieldValue'(LabelValueDate, DateSelected)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form Public/span_Submit'))
 
@@ -134,7 +132,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Connection Form
     'Your form has been received')
 
 'Go to the Connection Form Admin screen'
-CustomKeywords.'NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
 
 'Click on the Entries menu'
 WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Entries'))
@@ -143,40 +141,40 @@ WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Entries'))
 WebUI.click(findTestObject('HC-Web/Connection Form/Entries/FirstRow'))
 
 'Verify the first name field value'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'),
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'),
 	FirstName)
 
 'Verify the last name'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'), 
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'), 
     LastName)
 
 'Verify the email'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/Email Text Field'), 
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/Email Text Field'), 
     Email)
 
 'Verify single line text'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'FormHelper.getTextInputByLabel'(
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextInputByLabel'(
         LabelValueSingleLineText), SingleTextValue)
 
 'Verify paragraph text'
-CustomKeywords.'TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'FormHelper.getTextAreaByLabel'(
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextAreaByLabel'(
         LabelValueParagraphText), ParagraphTextValue)
 
 'Verify date text'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'FormHelper.getTextInputByLabel'(
-        LabelValueDate), CustomKeywords.'StringHelper.getUSFormatDateForControl'(DateSelected))
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextInputByLabel'(
+        LabelValueDate), CustomKeywords.'customUtility.StringHelper.getUSFormatDateForControl'(DateSelected))
 
 'Verify radio selection'
-WebUI.verifyEqual(CustomKeywords.'FormHelper.getRadioInputSelectionByLabel'(LabelValueRadioButton), RadioButtonSelection)
+WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getRadioInputSelectionByLabel'(LabelValueRadioButton), RadioButtonSelection)
 
 'Verify Single checkbox selection'
-WebUI.verifyEqual(CustomKeywords.'FormHelper.getCheckBoxSelectionByLabel'(LabelValueSingleCheckbox), SingleCheckBoxSelection)
+WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getCheckBoxSelectionByLabel'(LabelValueSingleCheckbox), SingleCheckBoxSelection)
 
 'Verify multiple checkbox selection'
-WebUI.verifyEqual(CustomKeywords.'FormHelper.getCheckBoxSelectionByLabel'(LabelValueGroupCheckbox), GroupCheckBoxSelection)
+WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getCheckBoxSelectionByLabel'(LabelValueGroupCheckbox), GroupCheckBoxSelection)
 
 'Verify dropdown selection'
-WebUI.verifyEqual(CustomKeywords.'FormHelper.getDropDownSelectionByLabel'(LabelValueDropDown), DropDownSelection)
+WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getDropDownSelectionByLabel'(LabelValueDropDown), DropDownSelection)
 
 'Delete the form entry'
 WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/ActionsButton'))
@@ -190,7 +188,7 @@ WebUI.delay(3)
 WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form/Entries/EntriesHeader'), 3)
 
 'Go to the Connection Form Admin screen'
-CustomKeywords.'NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Connection Form/Overview/Form Details Header'), 2)
 

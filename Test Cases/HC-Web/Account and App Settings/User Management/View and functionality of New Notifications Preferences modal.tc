@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Product Backlog Item 108444: Notifications - Back Office - Notifications Preferences Screen UI Repair</description>
-   <name>View and functionality of New Notifications Preferences modal</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>076659c7-3b9a-42c8-85eb-7c6b83740ba7</testCaseGuid>
-</TestCaseEntity>

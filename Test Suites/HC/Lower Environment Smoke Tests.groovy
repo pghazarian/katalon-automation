@@ -61,7 +61,7 @@ def tearDownTestCase() {
 	KeywordUtil.logInfo("tearing down test case")
 	
 	// Put your code here.
-	if (CustomKeywords.'TestCaseHelper.isBrowserOpen'()) {
+	if (CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'()) {
 		KeywordUtil.logInfo("Browser is still open after this case execution. Attempting to close")
 		WebUI.closeBrowser()
 		KeywordUtil.logInfo("Closing successful")

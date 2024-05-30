@@ -16,28 +16,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil
 
-CustomKeywords.'TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
+CustomKeywords.'customUtility.TestCaseHelper.isCurrentTestCaseEnvironmentValid'()
 
 'Append the HostUrl and TargetPath for the initial target URL'
 TargetUrl = "$HostUrl$TargetPath"
 
-if (CustomKeywords.'TestCaseHelper.isBrowserOpen'() && !(ForceLogin)) {
-    KeywordUtil.logInfo('Browser is open')
-} else {
-    'Open the browser at the target URL'
-    WebUI.openBrowser(TargetUrl)
-
-    WebUI.maximizeWindow()
-
-    'Fill in the user name'
-    WebUI.setText(findTestObject('Object Repository/HC-Web/Login/Email Address Textfield'), UserName)
-
-    'Fill in the password'
-    WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Login/Password Textfield'), Password)
-
-    'Sign the sign button'
-    WebUI.click(findTestObject('Object Repository/HC-Web/Login/Sign In Button'))
+if (CustomKeywords.'customUtility.TestCaseHelper.isBrowserOpen'() && !ForceLogin) {
+	KeywordUtil.logInfo("Browser is open")
 }
 
+else {
+
+	'Open the browser at the target URL'
+	WebUI.openBrowser(TargetUrl)
+	
+	'Fill in the user name'
+	WebUI.setText(findTestObject('Object Repository/HC-Web/Login/Email Address Textfield'), UserName)
+	
+	'Fill in the password'
+	WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Login/Password Textfield'), Password)
+	
+	'Sign the sign button'
+	WebUI.click(findTestObject('Object Repository/HC-Web/Login/Sign In Button'))
+
+}

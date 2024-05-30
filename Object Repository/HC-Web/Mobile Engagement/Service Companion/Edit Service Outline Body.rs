@@ -6,11 +6,12 @@
    <elementGuidId>2e8672ce-b5e7-4bd3-a7a9-8160398d6303</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'ck-content')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class,'ck-content')]/p</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

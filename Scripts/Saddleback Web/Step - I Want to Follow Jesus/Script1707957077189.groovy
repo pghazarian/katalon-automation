@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 def date = new Date()
 
-def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
+def CurrentDateTime = CustomKeywords.'customUtility.StringHelper.getIsoFormatDate'(date)
 
 def Note = "This is my story: $CurrentDateTime"
 
@@ -51,7 +51,7 @@ WebUI.setText(findTestObject('Object Repository/Saddleback Web/Follow Jesus Page
 WebUI.setText(findTestObject('Object Repository/Saddleback Web/Follow Jesus Page/Form/Last Name Text Field'), LastName)
 
 'Select the drop down value'
-CustomKeywords.'FormHelper.setDropDownValue'('Campus', Campus)
+CustomKeywords.'customUtility.FormHelper.setDropDownValue'('Campus', Campus)
 
 WebUI.setText(findTestObject('Object Repository/Saddleback Web/Follow Jesus Page/Form/Email Text Field'), Email)
 
@@ -63,7 +63,7 @@ WebUI.setText(findTestObject('Object Repository/Saddleback Web/Follow Jesus Page
     Note)
 
 'Select the drop down value'
-CustomKeywords.'FormHelper.setDropDownValue'('Campus you normally attend:', Campus)
+CustomKeywords.'customUtility.FormHelper.setDropDownValue'('Campus you normally attend:', Campus)
 
 WebUI.click(findTestObject('Object Repository/Saddleback Web/Follow Jesus Page/Form/span_Submit'))
 
@@ -72,7 +72,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 		, ('Password') : GlobalVariable.Admin_Password, ('ForceLogin') : true], FailureHandling.STOP_ON_FAILURE)
 
 'Go to the Connection Form Admin screen'
-CustomKeywords.'NavigationHelper.goToHCUrl'(GlobalVariable.ConnectionForm_FollowJesus)
+CustomKeywords.'customUtility.NavigationHelper.goToHCUrl'(GlobalVariable.ConnectionForm_FollowJesus)
 
 'Click on the Entries menu'
 WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Entries'))
@@ -82,28 +82,28 @@ WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Entries'))
 WebUI.click(findTestObject('HC-Web/Connection Form/Entries/FirstRow'))
 
 'Verify the first name field value'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'),
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'),
 	FirstName)
 
 'Verify the last name'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'),
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'),
 	LastName)
 
 'Verify the email'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/Email Text Field'),
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/Email Text Field'),
 	Email)
 
 'Verify dropdown selection'
-WebUI.verifyEqual(CustomKeywords.'FormHelper.getDropDownSelectionByLabel'('Campus'), Campus)
+WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getDropDownSelectionByLabel'('Campus'), Campus)
 
 'Verify dropdown selection'
-WebUI.verifyEqual(CustomKeywords.'FormHelper.getDropDownSelectionByLabel'('Campus you normally attend:'), Campus)
+WebUI.verifyEqual(CustomKeywords.'customUtility.FormHelper.getDropDownSelectionByLabel'('Campus you normally attend:'), Campus)
 
 'Verify paragraph text'
-CustomKeywords.'TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'FormHelper.getTextAreaByLabel'('Tell us a little about your story.'), Note)
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'customUtility.FormHelper.getTextAreaByLabel'('Tell us a little about your story.'), Note)
 
 'Verify the phone'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('Object Repository/HC-Web/Connection Form/Entry/PhoneTextField'),
+CustomKeywords.'customUtility.TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('Object Repository/HC-Web/Connection Form/Entry/PhoneTextField'),
 	Phone)
 
 'Delete the form entry'

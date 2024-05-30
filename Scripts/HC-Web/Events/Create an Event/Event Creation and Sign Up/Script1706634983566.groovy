@@ -27,17 +27,17 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/New Ev
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Create New Event Button'))
 
 'Select campus'
-CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', campus)
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValue'('event_details_event_type--host_campus', campus)
 
 'Switch to campus event'
-CustomKeywords.'FormHelper.setMultipleChoiceControlValueByXPath'('//div[@class=\'event_details_event_type\']/descendant::div[@class=\'radio-item\']', 
+CustomKeywords.'customUtility.FormHelper.setMultipleChoiceControlValueByXPath'('//div[@class=\'event_details_event_type\']/descendant::div[@class=\'radio-item\']', 
     'Campus Event')
 
 'Name event'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Event Creation/Event Name Text Field'), 'QA Automation Test Event')
 
 'Select category'
-CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
+CustomKeywords.'customUtility.TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'event_details_basic_info--event_category\']/descendant::div[@class=\'Select-control\']', 
     category)
 
 'Give event a description'
@@ -50,18 +50,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Venue 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Venue Dropdown Option'))
 
 'Save event'
-WebUI.click(findTestObject('HC-Web/Event/Event Creation/Location Label'))
-
-WebUI.click(findTestObject('HC-Web/Event/Event Creation/Create Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Create Button'))
 
 'Navigate to occurrence schedule'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Occurrence Schedule Tab'))
-
-'Click button to add attendee'
-WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 5, FailureHandling.STOP_ON_FAILURE)
-
-'Click button to add attendee'
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 2, FailureHandling.STOP_ON_FAILURE)
 
 'Click button to add attendee'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Button'))
@@ -70,18 +62,9 @@ WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Butto
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/For This Occurrence Option'))
 
 'Search for an attendee'
-WebUI.waitForElementClickable(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), 2)
-
-'Search for an attendee'
 WebUI.setText(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), attendee)
 
 WebUI.sendKeys(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), Keys.chord(Keys.ENTER))
-
-'Click button to add attendee'
-WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 5, FailureHandling.STOP_ON_FAILURE)
-
-'Click button to add attendee'
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 2, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Event Creation/First Person Record Result'), 0)
 
@@ -89,19 +72,15 @@ WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Event Creation/First 
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First Person Record Result'))
 
 'Select attendee'
-WebUI.waitForElementClickable(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'), 0)
-
-'Select attendee'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
 'Verify attendee appears in list'
-WebUI.verifyElementText(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : attendee]), 
-    attendee)
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Attendee Names'), attendee)
 
 'Select previously added attendee'
-WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Attendee Checkboxes', [('AttendeeName') : attendee]))
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Attendee Checkboxes'))
 
 'Open actions for selected attendee'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
@@ -109,17 +88,11 @@ WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
 'Mark attendee as attended'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Mark Attended Option'))
 
-'Click button to add attendee'
-WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 5, FailureHandling.STOP_ON_FAILURE)
-
-'Click button to add attendee'
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 2, FailureHandling.STOP_ON_FAILURE)
-
 'Verify attendee is listed as attended'
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Attendance Field'), 'Attended')
 
 'Select attendee again'
-WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Attendee Checkboxes', [('AttendeeName') : attendee]))
+WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Attendee Checkboxes'))
 
 'Open actions for selected attendee'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
@@ -142,10 +115,6 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/Cancel Event Confirmation Yes 
 
 'Verify banner appears for event cancellation'
 WebUI.verifyElementVisible(findTestObject('Object Repository/HC-Web/Event/Overview/Successfully Cancelled Banner'), FailureHandling.STOP_ON_FAILURE)
-
-'Close email to attendees drawer'
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Event/Event Creation/Close Email Drawer Chevron Button'), 
-    2)
 
 'Close email to attendees drawer'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/Close Email Drawer Chevron Button'))

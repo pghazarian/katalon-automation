@@ -15,14 +15,14 @@
       <guid>ecea43f3-fd01-4022-bd89-f1006de6bbd2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/ME App/iOS/Open App and Select Campus</testCaseId>
+      <testCaseId>Test Cases/Mobile/iOS/Open App and Select Campus</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e1b8afc7-5866-4e49-887c-8b991598ce43</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/ME App/iOS/Login on iOS</testCaseId>
+      <testCaseId>Test Cases/Mobile/iOS/Login on iOS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

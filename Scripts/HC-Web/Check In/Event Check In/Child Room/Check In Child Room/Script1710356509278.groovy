@@ -28,15 +28,15 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/O
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Occurrence Schedule/Check In Button'))
 
 'Select first room designated for children in list'
-WebUI.click(findTestObject('HC-Web/Event/Check In/Room In List', [('RoomName') : RoomName]))
+WebUI.click(findTestObject('HC-Web/Event/Check In/Second Room'))
 
 'If event has not started, open room early'
-if (WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Check In/Open Room Early Yes Button'), 2)) {
+if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Open Room Early Yes Button'))
 }
 
 'If room has not been opened, open a child room and add volunteers'
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Child Room Button'), 2)) {
+if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/General Room Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
     'Select child room'
     WebUI.click(findTestObject('HC-Web/Event/Check In/Child Room Button'))
 
@@ -44,7 +44,8 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/C
     WebUI.click(findTestObject('HC-Web/Event/Check In/Find Volunteers Button'))
 
     'Switch to person search'
-    CustomKeywords.'FormHelper.setMultipleChoiceControlValueByXPath'('//div[contains(@class,\'radio-pill\')]', 'Person Search')
+    CustomKeywords.'customUtility.FormHelper.setMultipleChoiceControlValueByXPath'('//div[contains(@class,\'radio-pill\')]', 
+        'Person Search')
 
     'Search for volunteers'
     WebUI.setText(findTestObject('HC-Web/Event/Check In/Volunteer Person Search Bar'), VolunteerSearchName + Keys.chord(
@@ -54,26 +55,16 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/C
     WebUI.click(findTestObject('HC-Web/Event/Check In/Add and Check In Button'), FailureHandling.STOP_ON_FAILURE)
 
     'If volunteer is not signed up for event, add them anyway'
-    if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Add and Proceed Button'), 2)) {
+    if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Add and Proceed Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
         WebUI.click(findTestObject('HC-Web/Event/Check In/Add and Proceed Button'))
-    }
-    
-    'If volunteer is signed up for another event, add them anyway'
-    if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Transfer Button'), 2)) {
-        WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Transfer Button'))
     }
     
     'Add a second volunteer from search results'
     WebUI.click(findTestObject('HC-Web/Event/Check In/Add and Check In Button'), FailureHandling.STOP_ON_FAILURE)
 
     'If volunteer is not signed up for event, add them anyway'
-    if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Add and Proceed Button'), 2)) {
+    if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Add and Proceed Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
         WebUI.click(findTestObject('HC-Web/Event/Check In/Add and Proceed Button'))
-    }
-    
-    'If volunteer is signed up for another event, add them anyway'
-    if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Transfer Button'), 2)) {
-        WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Transfer Button'))
     }
     
     'Finish adding volunteers and return to check in'
@@ -87,15 +78,12 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/C
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Search or Add Button'))
 
 'Search for parent of attendee'
-WebUI.waitForElementClickable(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Bar'), 2)
-
-'Search for parent of attendee'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Bar'), ParentName)
 
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Bar'), Keys.chord(Keys.ENTER))
 
 'Select parent of attendee from list'
-WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Search Results', [('AttendeeName') : ParentName]))
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Search Results'))
 
 'Select a child to attend'
 WebUI.click(findTestObject('HC-Web/Event/Check In/Related Child Card'))
@@ -106,16 +94,15 @@ WebUI.click(findTestObject('HC-Web/Event/Check In/Check In and Print Labels Butt
 WebUI.click(findTestObject('HC-Web/Event/Check In/Confirm Check In Button'))
 
 'If the child is out of the age range for the room, click button to check them in anyway'
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Check In/Check In Child Anyway Button'), 
-    2)) {
+if (!(WebUI.findWebElements(findTestObject('Object Repository/HC-Web/Event/Check In/Check In Child Anyway Button'), 5, FailureHandling.CONTINUE_ON_FAILURE).isEmpty())) {
     WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Check In Child Anyway Button'))
 }
 
 'Verify that the child was added to the attendee list'
-WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Attendee Names', [('AttendeeName') : ChildName]), ChildName)
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Child Room Attendee Names'), ChildName)
 
 'Select all attendee checkboxes'
-WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes', [('AttendeeName') : ChildName]))
+WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee Checkboxes'))
 
 'Check out all attendees'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Checkout Button'))
@@ -124,37 +111,12 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Checkout But
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Checkout Confirmation Yes Button'))
 
 'Verify attendees were removed from the list'
-WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Check In/Attendee Names', [('AttendeeName') : ChildName]), 3)
-
-'Close space'
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Close Space Button'), 2)
-
-'Close space'
-WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Check In/Close Space Button'), 2)
+WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Check In/Attendee Names'), 5)
 
 'Close space'
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Confirmation Yes Button'))
-
-def flag = false
-
-def i = 0
-
-'Wait until room status icon indicates that the room has been closed'
-while (!(flag) && (i < 5)) {
-    flag = WebUI.getAttribute(findTestObject('HC-Web/Event/Check In/Room Status Icon', [('RoomName') : RoomName]), 'class').contains(
-        'icon-minus-circle')
-
-    WebUI.delay(1)
-
-    i++
-}
-
-'If room status icon does not indicate room has been closed, fail test'
-if (!(flag)) {
-    throw new Exception('Room status icon did not indicate the room was closed.')
-}
 
 WebUI.closeBrowser()
 

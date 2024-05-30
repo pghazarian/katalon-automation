@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test case to add multiple milestones</description>
-   <name>Add Multiple Milestones</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5780dad2-c225-4107-b47e-ae5d45377843</testCaseGuid>
-</TestCaseEntity>

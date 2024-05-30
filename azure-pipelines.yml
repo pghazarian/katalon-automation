@@ -15,7 +15,7 @@ pool:
 steps:
 - task: katalonTask@1
   inputs:
-    version: '9.3.1'
+    version: '9.0.0'
     executeArgs: '-testSuitePath="Test Suites/$(test_suite_pathname)" -browserType="Chrome" -apiKey=$(katalon_api_key) --config -webui.autoUpdateDrivers=true -executionProfile="$(execution_profile)"'
     xvfbConfiguration: '-s "-screen 0 1024x768x24"'
   env:

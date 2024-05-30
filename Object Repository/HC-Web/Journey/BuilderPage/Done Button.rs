@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='journeys_list_page--step_done_button' and not(@disabled)]</value>
+         <value>//button[@id='journeys_list_page--step_done_button']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>a6929243-8ca7-46e6-aee5-f1589026b9ca</webElementGuid>
+      <webElementGuid>8044f3e1-b26f-41d7-8a17-73e72bf4c4e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>data-testid</name>
       <type>Main</type>
       <value>journey_step_done_button</value>
-      <webElementGuid>37d6c77b-9140-463c-8f6a-c8f94d896841</webElementGuid>
+      <webElementGuid>fb4536fd-06e0-4c8f-b868-0a17da39e79d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui button jss243 jss855 jss255</value>
-      <webElementGuid>6fdbef64-46b9-4f18-98e5-1906467dacca</webElementGuid>
+      <webElementGuid>bcb3835c-56db-4be9-91a6-df3b3cd7a613</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>journeys_list_page--step_done_button</value>
-      <webElementGuid>c9d69624-ac36-410e-b4c6-28c36e7ac405</webElementGuid>
+      <webElementGuid>9daa74ed-f924-41ef-abe0-ee84e072f34f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Done</value>
-      <webElementGuid>14d1d601-2c8b-4909-87bf-db166a795b9d</webElementGuid>
+      <webElementGuid>b117cbe1-9cf3-4206-b960-de9bae39c398</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;journeys_list_page--step_done_button&quot;)</value>
-      <webElementGuid>e0661a3a-f395-48c7-bae0-9eba9135d28b</webElementGuid>
+      <webElementGuid>f7fcdbb6-8899-434e-8ba4-b2fdf8516d34</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@id='journeys_list_page--step_done_button']</value>
-      <webElementGuid>b82c37e7-c8d3-42d0-9373-71e9586395c5</webElementGuid>
+      <webElementGuid>1cc2c3c0-7668-474d-93ab-26a0062d0f1c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/div/div/div/div[2]/div[7]/button[2]</value>
-      <webElementGuid>f3bd20cd-a4c8-4ecf-a5da-d7eb26d60c82</webElementGuid>
+      <webElementGuid>1651fe97-710e-4b99-983f-08f30990d8b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[7]/button[2]</value>
-      <webElementGuid>e6a7dec8-2111-4856-af78-e36520263df8</webElementGuid>
+      <webElementGuid>a3223daf-b308-4f8f-8754-ac621b75c0ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@id = 'journeys_list_page--step_done_button' and (text() = 'Done' or . = 'Done')]</value>
-      <webElementGuid>a26e9abd-52aa-481e-aa67-8a993ccfaf91</webElementGuid>
+      <webElementGuid>b0f28393-bba5-45e2-86dc-5d48146ddbad</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

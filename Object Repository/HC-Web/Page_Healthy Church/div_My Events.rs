@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_My Events</name>
+   <tag></tag>
+   <elementGuidId>41c7c5d4-9dc9-4bc9-83c0-f215f52f2790</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li/div[2]/div/div/ul/li/ul/li[6]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>aa313023-7eff-4eba-8850-87f03571308e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root navigation-sub-section-item-label MuiTypography-body2</value>
+      <webElementGuid>cd67b4a9-7a8a-4d19-83ec-67c4c5043da6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>My Events</value>
+      <webElementGuid>e3626d95-d389-44e7-bb9c-fb4f51cda431</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss273&quot;]/li[@class=&quot;navigation-main-item is-active is-hover&quot;]/div[@class=&quot;MuiCollapse-root navigation-level-one-collapse-my-stuff MuiCollapse-entered&quot;]/div[@class=&quot;MuiCollapse-wrapper&quot;]/div[@class=&quot;MuiCollapse-wrapperInner&quot;]/ul[@class=&quot;navigation-sub-items my-stuff&quot;]/li[@class=&quot;navigation-sub-item&quot;]/ul[@class=&quot;navigation-sub-section-items&quot;]/li[@class=&quot;navigation-sub-section-item&quot;]/div[@class=&quot;MuiTypography-root navigation-sub-section-item-label MuiTypography-body2&quot;]</value>
+      <webElementGuid>c89add80-cdae-40e1-8398-31210262e6ea</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li/div[2]/div/div/ul/li/ul/li[6]/div</value>
+      <webElementGuid>970e25d4-1585-4050-a1f9-2b7b09c546a4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li/ul/li[6]/div</value>
+      <webElementGuid>dec9df54-56e6-496a-9e7f-bee74c1e33a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'My Events' or . = 'My Events')]</value>
+      <webElementGuid>48c96281-1795-4cca-85d2-5ea28141a41b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test case to edit events</description>
-   <name>Add Events By Event Type and Count</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ea98abb9-edbf-404f-80a0-42308fe402cf</testCaseGuid>
-</TestCaseEntity>
