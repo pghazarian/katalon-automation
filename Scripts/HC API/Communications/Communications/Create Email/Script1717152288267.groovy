@@ -21,13 +21,13 @@ def date = new Date()
 
 def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
 
-def PushNotificationName = "ST Push Notification - $CurrentDateTime"
+def CommunicationName = "ST Communication - $CurrentDateTime"
 
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Post Push Notification', [('JobType') : 'Push'
-            , ('AudienceType') : 'AllDevices', ('ChurchEntityId') : '10', ('CommunicationCategoryId') : '1', ('Description') : "$PushNotificationName Description"
-            , ('Name') : PushNotificationName, ('SendPush') : true]))
+response = WS.sendRequest(findTestObject('HC API/Communications/Communications/Post Email', [('JobType') : 'Email', ('AudienceType') : 'AllDevices'
+            , ('ChurchEntityId') : '10', ('CommunicationCategoryId') : '1', ('Description') : "$CommunicationName Description"
+            , ('Name') : "$CommunicationName", ('SendEmail') : true]))
 
 // Validate the response was successful (HTTP Code 200 == Status)
 WS.verifyResponseStatusCode(response, 200)
@@ -40,6 +40,4 @@ WS.verifyElementPropertyValue(response, 'name', null)
 
 WS.verifyElementPropertyValue(response, 'description', null)
 
-WS.verifyElementPropertyValue(response, 'sendPush', null)
-
-
+WS.verifyElementPropertyValue(response, 'sendEmail', null)

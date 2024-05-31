@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Push Notifications</name>
+   <name>Get Email by ID</name>
    <tag></tag>
-   <elementGuidId>0ec94cd3-03e2-422e-b338-c6fc0a021f00</elementGuidId>
+   <elementGuidId>790e1191-4028-4da6-9498-2cec4c6ea139</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -34,7 +34,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;CategoryIds=${CategoryIds}</restUrl>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs/${JobId}?JobType=${JobType}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -44,25 +44,18 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'Push'</defaultValue>
-      <description></description>
-      <id>fe6ca084-041e-4461-a8d1-30ffda42e134</id>
-      <masked>false</masked>
-      <name>JobType</name>
-   </variables>
-   <variables>
-      <defaultValue>'AllDevices'</defaultValue>
-      <description></description>
-      <id>3168d94d-33b4-436b-850b-0a08c6072064</id>
-      <masked>false</masked>
-      <name>AudienceType</name>
-   </variables>
-   <variables>
-      <defaultValue>'1'</defaultValue>
+      <defaultValue>'58'</defaultValue>
       <description></description>
       <id>9ba27f06-c6fe-41b1-9b89-f912a8160270</id>
       <masked>false</masked>
-      <name>CategoryIds</name>
+      <name>JobId</name>
+   </variables>
+   <variables>
+      <defaultValue>'Email'</defaultValue>
+      <description></description>
+      <id>69aad9f0-a39e-4958-9037-7c8171b11255</id>
+      <masked>false</masked>
+      <name>JobType</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -76,12 +69,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-WS.verifyResponseStatusCode(response, 200)
-
-assertThat(response.getStatusCode()).isEqualTo(200)
-
-WS.verifyElementPropertyValue(response, 'results[6].name', 'ST Push Notifications 1')</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

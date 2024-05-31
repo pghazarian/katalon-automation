@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Push Notifications</name>
+   <name>Get Emails</name>
    <tag></tag>
-   <elementGuidId>0ec94cd3-03e2-422e-b338-c6fc0a021f00</elementGuidId>
+   <elementGuidId>1b26164d-5563-4d0d-9518-13304651abb0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -44,7 +44,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'Push'</defaultValue>
+      <defaultValue>'Email'</defaultValue>
       <description></description>
       <id>fe6ca084-041e-4461-a8d1-30ffda42e134</id>
       <masked>false</masked>
@@ -82,6 +82,6 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'results[6].name', 'ST Push Notifications 1')</verificationScript>
+WS.verifyElementPropertyValue(response, 'results[18].name', 'ST Communication')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

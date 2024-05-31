@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Push Notifications</name>
+   <name>Update Email</name>
    <tag></tag>
-   <elementGuidId>0ec94cd3-03e2-422e-b338-c6fc0a021f00</elementGuidId>
+   <elementGuidId>0c303028-3bf0-4110-972d-698dbcee86f5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;audienceType\&quot;: \&quot;Segment\&quot;,\n  \&quot;campusIds\&quot;: [],\n  \&quot;communicationCategoryId\&quot;: 1,\n  \&quot;ctaApplicationType\&quot;: \&quot;HealthyChurch\&quot;,\n  \&quot;description\&quot;: \&quot;ST Push Notification - 2024-05-20 19:01:29 Description Edited\&quot;,\n  \&quot;id\&quot;: 16,\n  \&quot;name\&quot;: \&quot;ST Push Notification - 2024-05-20 19:01:29 Edited\&quot;,\n  \&quot;isActive\&quot;: true,\n  \&quot;templateValue\&quot;: \&quot;Template Value\&quot;,\n  \&quot;segmentIds\&quot;: [],\n  \&quot;sendEmail\&quot;: true,\n  \&quot;sendPush\&quot;: true,\n  \&quot;sendSms\&quot;: true,\n  \&quot;tagIds\&quot;: [\n    1\n  ],\n  \&quot;targetApplicationType\&quot;: \&quot;HealthyChurch\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>f839eec4-a604-400a-92cf-7057cd2dd65c</webElementGuid>
+      <webElementGuid>13f32737-93f3-4593-9364-f5ea847bb1a8</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -33,8 +37,8 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;CategoryIds=${CategoryIds}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs/${JobId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -44,25 +48,11 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'Push'</defaultValue>
-      <description></description>
-      <id>fe6ca084-041e-4461-a8d1-30ffda42e134</id>
-      <masked>false</masked>
-      <name>JobType</name>
-   </variables>
-   <variables>
-      <defaultValue>'AllDevices'</defaultValue>
-      <description></description>
-      <id>3168d94d-33b4-436b-850b-0a08c6072064</id>
-      <masked>false</masked>
-      <name>AudienceType</name>
-   </variables>
-   <variables>
-      <defaultValue>'1'</defaultValue>
+      <defaultValue>'16'</defaultValue>
       <description></description>
       <id>9ba27f06-c6fe-41b1-9b89-f912a8160270</id>
       <masked>false</masked>
-      <name>CategoryIds</name>
+      <name>JobId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -76,12 +66,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-WS.verifyResponseStatusCode(response, 200)
-
-assertThat(response.getStatusCode()).isEqualTo(200)
-
-WS.verifyElementPropertyValue(response, 'results[6].name', 'ST Push Notifications 1')</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
