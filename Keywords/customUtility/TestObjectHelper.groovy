@@ -190,6 +190,24 @@ class TestObjectHelper {
 		// Press <Enter> to select the value
 		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
 	}
+	
+	/**
+	 * Set value for Drop Down component
+	 */
+	@Keyword
+	def TestObject setDPDropDownValueByXPath(String xpath) {
+
+		def dropdown = getTestObjectWithXpath(xpath)
+
+		WebUI.click(dropdown)
+
+		xpath = "//div[@id='$id']/descendant::div[@class='Select-value']/descendant::div[@aria-activedescendant='react-select-78--option-1']"
+
+		def dropdownInput = getTestObjectWithXpath(xpath)
+
+		// Type Dropdown value
+		WebUI.click(dropdownInput)
+	}
 
 	/**
 	 * Set value for Drop Down component

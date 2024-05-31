@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Digital Program Actions Dropdown Clickable Span</name>
+   <tag></tag>
+   <elementGuidId>1aaf5921-1e70-465b-8b97-6cfa237e0c11</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='digital_programs_details_page--action_button']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.button-inner-container.jss292</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>42f3b65b-9f18-4526-8c9a-a9d9671d7727</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss292</value>
+      <webElementGuid>aa4f851b-b87a-4001-a52a-46ba1d42e329</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>chevron-downActionsEdit Details</value>
+      <webElementGuid>181d4fdc-dd6d-4e65-8ad2-a830ac144735</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;digital_programs_details_page--action_button&quot;)/span[@class=&quot;button-inner-container jss292&quot;]</value>
+      <webElementGuid>3464cd6a-0ade-48b2-b2b1-03c4d45650c2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='digital_programs_details_page--action_button']/span</value>
+      <webElementGuid>5d7a8c5f-9aef-46d9-bb2b-94730ddf6127</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log Out'])[1]/following::span[2]</value>
+      <webElementGuid>501029e0-d80f-4c19-a80b-499787ea3a61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::span[2]</value>
+      <webElementGuid>7b4277d9-4e87-44b7-9e80-cc9ce1a6c18e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//header/div/div/div/button/span</value>
+      <webElementGuid>4dbcd7d7-0cbd-4ce9-bd10-5a3971a9683d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'chevron-downActionsEdit Details' or . = 'chevron-downActionsEdit Details')]</value>
+      <webElementGuid>d23c3bc1-9512-4560-b39e-5d946473093a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
