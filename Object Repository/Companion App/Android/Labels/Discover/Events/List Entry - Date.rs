@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - DateTime</name>
+   <name>List Entry - Date</name>
    <tag></tag>
-   <elementGuidId>124af8ae-9ce5-4144-9b7f-f2f2b846b6e4</elementGuidId>
+   <elementGuidId>28f6e0f7-0d3e-4a31-8d4c-54c9a7c69683</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.view.ViewGroup[ends-with(@content-desc,&quot;-datetime&quot;)]</locator>
+   <locator>//android.widget.TextView[ends-with(@content-desc,&quot;-date&quot;)]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

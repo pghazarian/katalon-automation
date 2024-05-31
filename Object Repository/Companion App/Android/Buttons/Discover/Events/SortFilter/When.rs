@@ -3,9 +3,9 @@
    <description></description>
    <name>When</name>
    <tag></tag>
-   <elementGuidId>da2752d1-3a73-40a1-8282-356a17e9de91</elementGuidId>
+   <elementGuidId>5f38a073-ad69-4c96-bd1a-65303e69c503</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>When</locator>
+   <locator>ui-filter_list_item--When</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

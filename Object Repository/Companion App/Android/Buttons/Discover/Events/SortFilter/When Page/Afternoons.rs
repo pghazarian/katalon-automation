@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Where</name>
+   <name>Afternoons</name>
    <tag></tag>
-   <elementGuidId>dcd11631-f92a-47fe-a4aa-bd5eed0f60bf</elementGuidId>
+   <elementGuidId>c7dfdacc-79dd-45bc-be31-3d7492ad684f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-filter_list_item--Where</locator>
+   <locator>ui-event_filters--times-2</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

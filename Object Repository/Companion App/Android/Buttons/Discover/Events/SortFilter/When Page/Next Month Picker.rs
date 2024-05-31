@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Time</name>
+   <name>Next Month Picker</name>
    <tag></tag>
-   <elementGuidId>5494b0f1-bc11-4235-a041-030f2809f253</elementGuidId>
+   <elementGuidId>baed0b90-1513-4ee1-873e-f7f92f826487</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[ends-with(@content-desc,&quot;-time&quot;)]</locator>
+   <locator>//android.widget.LinearLayout[@resource-id=&quot;android:id/pickers&quot;]/android.widget.NumberPicker[1]/android.widget.Button</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

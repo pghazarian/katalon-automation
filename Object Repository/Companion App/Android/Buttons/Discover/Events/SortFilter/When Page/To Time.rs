@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Where</name>
+   <name>To Time</name>
    <tag></tag>
-   <elementGuidId>dcd11631-f92a-47fe-a4aa-bd5eed0f60bf</elementGuidId>
+   <elementGuidId>d1216b04-24a2-4dca-91ab-4e2854326ffe</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-filter_list_item--Where</locator>
+   <locator>ui-date_picker--custom_time_to_time</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

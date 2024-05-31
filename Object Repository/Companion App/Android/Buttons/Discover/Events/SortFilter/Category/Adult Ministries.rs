@@ -3,9 +3,9 @@
    <description></description>
    <name>Adult Ministries</name>
    <tag></tag>
-   <elementGuidId>2d44cf39-d361-42e4-9546-8c599078f157</elementGuidId>
+   <elementGuidId>4e4c9dd1-d272-4692-8e8e-e87cb5160e08</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Adult Ministries</locator>
+   <locator>ui-categories-filter--item-Adult Ministries</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

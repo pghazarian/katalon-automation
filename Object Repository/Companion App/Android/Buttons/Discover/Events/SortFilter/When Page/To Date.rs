@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Time</name>
+   <name>To Date</name>
    <tag></tag>
-   <elementGuidId>5494b0f1-bc11-4235-a041-030f2809f253</elementGuidId>
+   <elementGuidId>d648eecd-c6f3-42b7-bacb-211ad19c90d2</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[ends-with(@content-desc,&quot;-time&quot;)]</locator>
+   <locator>(//android.widget.TextView[@resource-id=&quot;text&quot;])[4]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
