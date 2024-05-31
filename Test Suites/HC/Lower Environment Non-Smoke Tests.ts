@@ -437,4 +437,29 @@
          <variableId>517636fe-6f43-48db-ad30-c28f0ea39118</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>8bd5acec-52e3-4eab-92e1-a27fab1d7f4f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Serving Opps/Managing A Serving Opp/Roster/Send SMS to Multiple Members</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0bb32f13-b6c2-4754-838b-4b06ccebb3e1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>706b1884-8127-44e1-ab99-46a7d8033e59</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d4e14f3f-5153-41cd-8c79-073a2c67c50c</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

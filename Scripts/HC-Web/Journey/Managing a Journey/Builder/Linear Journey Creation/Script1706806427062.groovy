@@ -65,6 +65,9 @@ WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity 
 'Add a new section'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
 
+'Add a new section'
+WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+
 'Give section a name and subtitle'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Section 1')
 
