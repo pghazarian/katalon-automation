@@ -39,6 +39,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Ministry/Se
 'View ministry dashboard'
 WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Search/Selected Ministry Drawer/View Dashboard Button'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/Serving Opps Tab'), 3)
+
 'Navigate to serving opps'
 WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/Serving Opps Tab'))
 
