@@ -152,9 +152,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Checkout Con
 'Verify attendees were removed from the list'
 WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Check In/Attendee Names', [('AttendeeName') : ChildName]), 3)
 
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Close Space Button'), 2)
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Close Space Button'), 3)
 
-WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Check In/Close Space Button'), 2)
+WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Check In/Close Space Button'), 3)
 
 'Close space'
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))

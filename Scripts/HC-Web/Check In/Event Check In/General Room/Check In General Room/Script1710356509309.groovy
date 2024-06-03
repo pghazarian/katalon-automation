@@ -57,10 +57,10 @@ WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Check In/Attendee Nam
     3)
 
 'Close space'
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Close Space Button'), 2)
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Close Space Button'), 3)
 
 'Close space'
-WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Check In/Close Space Button'), 2)
+WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Check In/Close Space Button'), 3)
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))
 

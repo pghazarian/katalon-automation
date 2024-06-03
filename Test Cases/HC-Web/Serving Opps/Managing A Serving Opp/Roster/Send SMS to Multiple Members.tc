@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Send SMS to Multiple Members</name>
-   <tag>Stage,Smoke</tag>
+   <tag>Stage</tag>
    <comment></comment>
    <testCaseGuid>1725411f-390c-4622-b5d4-48ae91707f80</testCaseGuid>
    <variableLinks>

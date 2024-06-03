@@ -62,6 +62,8 @@ WebUI.setText(findTestObject('HC-Web/Event/Check In/Notification Message Text Ar
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Notification Drawer Send Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/SMS Sent Banner'), 5)
+
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/SMS Sent Banner'), 'SMS sent successfully')
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Room In List', [('RoomName') : RoomName]))
@@ -71,6 +73,15 @@ WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes', [('Atten
 WebUI.click(findTestObject('HC-Web/Event/Check In/Checkout Button'))
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Checkout Confirmation Yes Button'))
+
+WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Check In/Attendee Names', [('AttendeeName') : AttendeeName]), 
+    3)
+
+'Close space'
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Close Space Button'), 3)
+
+'Close space'
+WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Check In/Close Space Button'), 3)
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))
 

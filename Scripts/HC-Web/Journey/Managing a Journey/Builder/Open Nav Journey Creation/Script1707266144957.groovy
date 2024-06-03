@@ -45,19 +45,26 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/Cre
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/AllJourneysPage/CreateEdit/span_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb', [('JourneyName') : JourneyName]), 
-    3)
+    30)
 
 WebUI.verifyElementText(findTestObject('HC-Web/Journey/CreateEdit/JourneyName_Breadcrumb', [('JourneyName') : JourneyName]), 
     JourneyName)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 20)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3)
 
 WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/CreateEdit/Builder Tab'))
 
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 30)
+
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3)
+
 'Add first section to support each step type addition'
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Add New Section Button'))
+
+'Add a new section'
+WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Journey/BuilderPage/Step Title'), 'Section 1')
 

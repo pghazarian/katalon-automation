@@ -3,9 +3,9 @@
    <description></description>
    <name>Events Tab</name>
    <tag></tag>
-   <elementGuidId>f7560991-ec13-4b1f-8d39-5455734500a6</elementGuidId>
+   <elementGuidId>bbe235ba-7a1f-428a-b05c-f580b3ad4b82</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[@text=&quot;Events&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>Events</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

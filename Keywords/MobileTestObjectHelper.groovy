@@ -45,14 +45,14 @@ class MobileTestObjectHelper {
 	@Keyword
 	static String getXPath(TestObject to) {
 		MobileTestObject mto = (MobileTestObject)to
-		
+
 		if ("XPATH".equals(mto.getMobileLocatorStrategy().getLocatorStrategy())) {
 			def locator = mto.getMobileLocator()
-			
+
 			KeywordUtil.logInfo("$to.objectId XPATH: $locator")
 			return locator
 		}
-		
+
 		return null
 	}
 }
