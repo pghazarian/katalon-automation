@@ -6,12 +6,12 @@
    <elementGuidId>7fba3111-7549-48c1-a1c5-1f3606c48814</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='serving_opportunity_action_bar--new_opportunity_button']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#serving_opportunity_action_bar--new_opportunity_button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='serving_opportunity_action_bar--new_opportunity_button' and not(@disabled)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>39068546-b068-4eb1-9c0a-23d4fc7c9f50</webElementGuid>
+      <webElementGuid>666cf73b-8325-4d32-b2c1-321d15484b9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui button jss243 jss573 jss255</value>
-      <webElementGuid>49089b5f-0ddd-47bd-8c85-5f713308d2a9</webElementGuid>
+      <webElementGuid>bd99d549-c125-48fd-a326-ba1aa4f10a2d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>serving_opportunity_action_bar--new_opportunity_button</value>
-      <webElementGuid>4bd663e8-1866-41da-9557-e586d06f566b</webElementGuid>
+      <webElementGuid>449d5abc-fea8-4806-a90c-60d40d2b56c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>plusNew Opportunity</value>
-      <webElementGuid>3aea2e1e-9bf1-491d-8eb7-ded4a42b087c</webElementGuid>
+      <webElementGuid>82498120-7e02-4f16-946a-cf134bf51818</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,6 +54,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;serving_opportunity_action_bar--new_opportunity_button&quot;)</value>
-      <webElementGuid>cfaedad2-e28c-461f-8c27-55bb8f854b93</webElementGuid>
+      <webElementGuid>9a3a42c7-d8f3-4907-8554-f6eef8e59660</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
