@@ -23,15 +23,15 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
     FailureHandling.STOP_ON_FAILURE)
 
 'Click in the Connection Forms Search Field '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Search Field'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notifications/Search Field'))
 
 'Type Paren Anaheim Worship 1'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Search Field'), 'Paren Anaheim Worship 1')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notifications/Search Field'), 'Paren Anaheim Worship 1')
 
-WebUI.sendKeys(findTestObject('HC-Web/Connection Form/Entries/Notitifcations/Search Field'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Connection Form/Entries/Notifications/Search Field'), Keys.chord(Keys.ENTER))
 
 'Select Paren Anaheim Worship 1 Connection Form '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notitifcations/Connection Form row'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Notifications/Connection Form row'))
 
 WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Entries Tab Button'))
 

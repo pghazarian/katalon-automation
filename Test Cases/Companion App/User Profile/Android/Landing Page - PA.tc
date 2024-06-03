@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>1_Temp. Notfications Objects to complete other TCs</name>
+   <name>Landing Page - PA</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>4b0f306d-8ce0-4667-b55f-f959e1e3bacb</testCaseGuid>
+   <testCaseGuid>d5b11121-770c-4176-ab28-0e225d601b64</testCaseGuid>
 </TestCaseEntity>

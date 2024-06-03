@@ -23,6 +23,8 @@ def strFollowUpTaskPersonName = (GlobalVariable.Follow_Up_Task_Person_First_Name
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/data-capture/connection-forms'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.click(findTestObject('HC-Web/Connection Form/List/Search Text Entry'))
+
 WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), GlobalVariable.Follow_Up_Connection_Form_Name)
 
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), Keys.chord(Keys.ENTER))
@@ -31,7 +33,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/List/QA Aut
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Entries Tab Button'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/New Entry - button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Event Association Modal/No Event Associated Button'))
 
@@ -58,10 +60,6 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Connection 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Select Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Yes Confirmation Button'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Im Done Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Navigation Logo Image Button'))
 
