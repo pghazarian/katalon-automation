@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Email Send Button</name>
+   <name>Publish Opportunity No Button</name>
    <tag></tag>
-   <elementGuidId>f7d5661f-5214-4737-a7b0-bf5f626bd6d0</elementGuidId>
+   <elementGuidId>f7e0d9c6-0d77-4793-978e-ecd38ba7fe93</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='Send']/ancestor::button[not(@disabled)]</value>
+         <value>//button[@id='publish_banner--btn_publish_no']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
