@@ -88,10 +88,7 @@ else {
 	
 	//Mobile.scrollToText("Lake Forest")
 	Scroll.scrollListToElementWithText('item', 'Lake Forest', timeout)
-	
 	//Mobile.swipe(500, 1940, 500, 761)
-
-	
 }
 
 'tap on a different campus'
