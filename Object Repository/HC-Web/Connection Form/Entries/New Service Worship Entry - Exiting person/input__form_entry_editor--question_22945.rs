@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Search Text Entry</name>
+   <name>input__form_entry_editor--question_22945</name>
    <tag></tag>
-   <elementGuidId>9fb58ed7-d673-4db9-8d74-92f228ee1be7</elementGuidId>
+   <elementGuidId>409d08e0-2b00-4fc0-b0c2-400e3c291a81</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
+         <value>//input[@id='form_entry_editor--question_22945']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#connection_forms_list_page--page_action_bar_search</value>
+         <value>#form_entry_editor--question_22945</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorCollection>
-      <entry>
-         <key>SMART_LOCATOR</key>
-         <value>[data-testid=&quot;cmui--search_input&quot;]</value>
-      </entry>
-   </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -29,31 +23,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>85bd53cb-8749-490d-9422-b1afd673b221</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-testid</name>
-      <type>Main</type>
-      <value>cmui--search_input</value>
-      <webElementGuid>3b15fde5-e74e-4e6a-bf31-49fdcee93ad2</webElementGuid>
+      <webElementGuid>1ce3f1c1-a212-4b85-bb8f-0599a3c15086</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>connection_forms_list_page--page_action_bar_search</value>
-      <webElementGuid>badfb1d5-e076-41da-85cf-8439c39cd9dd</webElementGuid>
+      <value>form_entry_editor--question_22945</value>
+      <webElementGuid>2953661c-b87f-4a13-aef9-b621dd840083</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>Search</value>
-      <webElementGuid>25bcb9a4-5439-459c-8e9a-7f31b80d1d13</webElementGuid>
+      <value>PHT</value>
+      <webElementGuid>aa26bee7-95bd-4256-ab0a-253529f24689</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>cf864169-e8c7-4007-a8e3-e4f068a15386</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,46 +55,46 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>f8c475c5-2df3-41ea-bd60-560dfb2168cc</webElementGuid>
+      <webElementGuid>790c9207-c153-4f26-9632-e39c423a4085</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;connection_forms_list_page--page_action_bar_search&quot;)</value>
-      <webElementGuid>e9f80486-691a-4920-b434-63ff3f63b89f</webElementGuid>
+      <value>id(&quot;form_entry_editor--question_22945&quot;)</value>
+      <webElementGuid>c28d218d-2eb3-4e4c-a4d2-0de17ce63780</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
-      <webElementGuid>592fa8ba-67f1-4702-8f1e-ad6a981e863f</webElementGuid>
+      <value>//input[@id='form_entry_editor--question_22945']</value>
+      <webElementGuid>e254dbdf-84ff-4422-83fe-6c61f3277ac4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='layout']/div[2]/div/main/header/div/div/div[3]/div/div/input</value>
-      <webElementGuid>ae7675b7-c200-4fb5-a8b2-997608c63f4d</webElementGuid>
+      <value>//div[@id='layout']/div[2]/div/main/div/section/div[2]/div/div/div/div[3]/div/div/div/div/input</value>
+      <webElementGuid>c08b68b5-c1f7-43ac-b3b8-de7dcc6d17e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/input</value>
-      <webElementGuid>df8d126b-3fec-44bd-96c8-442711d2d2b7</webElementGuid>
+      <value>//div[3]/div/div/div/div/input</value>
+      <webElementGuid>39a4f800-1fe9-43e0-be4f-9cdb757f9e45</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'connection_forms_list_page--page_action_bar_search' and @placeholder = 'Search' and @type = 'text']</value>
-      <webElementGuid>f161c6d8-905a-4577-bbbe-9e4b1b7224b4</webElementGuid>
+      <value>//input[@id = 'form_entry_editor--question_22945' and @placeholder = 'PHT' and @type = 'text']</value>
+      <webElementGuid>a94cf037-6ddb-45c8-aeab-5a940e6e427b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Backlog Item 109706: [Companion App - Profile] - My Ministries - Lift &amp; Shift&#xd;
+Product Backlog Item 109707: [Companion App - Profile] - My Ministries - UI Design&#xd;
+Product Backlog Item 109708: [Companion App - Profile] - My Ministries - Merge Design &amp; Functionality</description>
+   <name>My Ministries - Script</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>410e87f2-61fe-43dc-aec2-bf16a02eb60d</testCaseGuid>
+</TestCaseEntity>

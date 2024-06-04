@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Search Text Entry</name>
+   <name>input_Log Out_connection_forms_list_page--p_046c7d</name>
    <tag></tag>
-   <elementGuidId>9fb58ed7-d673-4db9-8d74-92f228ee1be7</elementGuidId>
+   <elementGuidId>3cd78253-a89c-47ec-b1a5-7a41b64fab98</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -15,12 +15,6 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorCollection>
-      <entry>
-         <key>SMART_LOCATOR</key>
-         <value>[data-testid=&quot;cmui--search_input&quot;]</value>
-      </entry>
-   </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -29,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>85bd53cb-8749-490d-9422-b1afd673b221</webElementGuid>
+      <webElementGuid>07a10c09-0b88-4963-872e-8f063a92aa0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +31,7 @@
       <name>data-testid</name>
       <type>Main</type>
       <value>cmui--search_input</value>
-      <webElementGuid>3b15fde5-e74e-4e6a-bf31-49fdcee93ad2</webElementGuid>
+      <webElementGuid>28c85437-b4ab-407a-bb4f-df05c53db043</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +39,7 @@
       <name>id</name>
       <type>Main</type>
       <value>connection_forms_list_page--page_action_bar_search</value>
-      <webElementGuid>badfb1d5-e076-41da-85cf-8439c39cd9dd</webElementGuid>
+      <webElementGuid>a15500c9-d8ad-4f84-9442-8fbe62bb0635</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +47,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search</value>
-      <webElementGuid>25bcb9a4-5439-459c-8e9a-7f31b80d1d13</webElementGuid>
+      <webElementGuid>c1a64e34-6465-4f55-a2ae-af00bdb17890</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +55,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>f8c475c5-2df3-41ea-bd60-560dfb2168cc</webElementGuid>
+      <webElementGuid>07843e48-050b-47bd-ac4a-ab4416293609</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +63,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;connection_forms_list_page--page_action_bar_search&quot;)</value>
-      <webElementGuid>e9f80486-691a-4920-b434-63ff3f63b89f</webElementGuid>
+      <webElementGuid>5f821e88-c0d2-4c1a-b3d1-6d42c78a697c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +71,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='connection_forms_list_page--page_action_bar_search']</value>
-      <webElementGuid>592fa8ba-67f1-4702-8f1e-ad6a981e863f</webElementGuid>
+      <webElementGuid>ece5a99f-46d7-4f59-b8c6-d1cbc0297792</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +79,39 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/header/div/div/div[3]/div/div/input</value>
-      <webElementGuid>ae7675b7-c200-4fb5-a8b2-997608c63f4d</webElementGuid>
+      <webElementGuid>53142a72-95b8-47a3-b86b-c69c56aca609</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log Out'])[1]/following::input[1]</value>
+      <webElementGuid>41ac38d5-4b98-4d8e-8c6b-6c73ff89dd25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::input[1]</value>
+      <webElementGuid>d5ef8bac-49c7-4f17-8839-49e0ca599212</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New Form'])[2]/preceding::input[1]</value>
+      <webElementGuid>a9031b92-6255-4052-958a-d5a04d664996</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sort By'])[1]/preceding::input[1]</value>
+      <webElementGuid>ec09864a-94e0-4dbc-9861-7142f8e43dc0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +119,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div/input</value>
-      <webElementGuid>df8d126b-3fec-44bd-96c8-442711d2d2b7</webElementGuid>
+      <webElementGuid>be2064b6-a06b-4821-8f2c-b93c311b047e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +127,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'connection_forms_list_page--page_action_bar_search' and @placeholder = 'Search' and @type = 'text']</value>
-      <webElementGuid>f161c6d8-905a-4577-bbbe-9e4b1b7224b4</webElementGuid>
+      <webElementGuid>da3c3c35-95b0-499b-9ba2-2401fc0b047b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

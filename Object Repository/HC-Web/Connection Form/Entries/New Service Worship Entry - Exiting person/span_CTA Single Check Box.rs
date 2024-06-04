@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Person Search First Name Text Entry</name>
+   <name>span_CTA Single Check Box</name>
    <tag></tag>
-   <elementGuidId>7c02a705-5dfb-46f3-819f-8e77bfaf8dc1</elementGuidId>
+   <elementGuidId>a2cfcbc5-7622-4e40-b855-91d2b42e9a95</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='person_search_form--firstname_input']</value>
+         <value>//div[@id='form_entry_editor--question_22947']/label/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#person_search_form--firstname_input</value>
+         <value>span.checkbox-label-text.checkbox-label-text-weight-normal</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,95 +22,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>ee750961-f71a-4a01-9c67-610169d22994</webElementGuid>
+      <value>span</value>
+      <webElementGuid>57d1029e-5277-4c12-934f-804c3abbca51</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>checkbox-label-text checkbox-label-text-weight-normal</value>
+      <webElementGuid>abc2944a-0f7a-4cf8-bea4-41f8d37b91c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>text</name>
       <type>Main</type>
-      <value>person_search_form--firstname_input</value>
-      <webElementGuid>1beaf517-8cf3-432c-a577-d0853ee5eeda</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>9be1d84b-4647-46b6-8479-ecd6d4abab0e</webElementGuid>
+      <value>CTA Single Check Box</value>
+      <webElementGuid>32108dd5-cede-4e6e-9f85-7dd7644fca56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;person_search_form--firstname_input&quot;)</value>
-      <webElementGuid>f141ace5-13f4-44dc-a5e3-7b8e90a4947a</webElementGuid>
+      <value>id(&quot;form_entry_editor--question_22947&quot;)/label[@class=&quot;checkbox-label&quot;]/span[@class=&quot;checkbox-label-text checkbox-label-text-weight-normal&quot;]</value>
+      <webElementGuid>2bdab226-bf0d-4507-bea7-a5d18900d41a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='person_search_form--firstname_input']</value>
-      <webElementGuid>d31855fd-6790-48cb-8dc5-a8efcca2047e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='person_search_form']/div/div/div/div/input</value>
-      <webElementGuid>0e7801cc-6505-4b14-8f8d-22f0dbbef862</webElementGuid>
+      <value>//div[@id='form_entry_editor--question_22947']/label/span</value>
+      <webElementGuid>9c52ab79-88b6-48ec-808c-793c10194cbd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='First Name'])[1]/following::input[1]</value>
-      <webElementGuid>970e08a6-cb5c-4c0b-abfa-7e838354d6e6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Single Check Box Question'])[1]/following::span[1]</value>
+      <webElementGuid>8936e418-3902-4ed3-89a9-40efe8bb805c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No Record'])[1]/following::input[1]</value>
-      <webElementGuid>438def1c-e80f-48c5-9ae4-1e9b588cf151</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::span[2]</value>
+      <webElementGuid>94d04e5f-4309-4c7c-954b-1a693ffaa26f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Name'])[1]/preceding::input[1]</value>
-      <webElementGuid>b8401039-1b98-419c-9d66-3a7c70110135</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::span[1]</value>
+      <webElementGuid>ca8ae51d-ce36-4547-8c20-1bef02554b78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nick Name'])[1]/preceding::input[2]</value>
-      <webElementGuid>e13149f5-def8-462b-beb3-a316302732d5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Content Management'])[2]/preceding::span[2]</value>
+      <webElementGuid>3842350b-c6b0-4e34-98af-6807cd2dcfee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='CTA Single Check Box']/parent::*</value>
+      <webElementGuid>7fbb85b2-dbf8-42b1-89a5-df47445c1681</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//section/div/div/div/div/div/div/input</value>
-      <webElementGuid>22efab13-dde6-4d27-bb71-2f1d36d7555a</webElementGuid>
+      <value>//div[4]/div/div/div/div/label/span</value>
+      <webElementGuid>d946c70e-8f18-4012-9774-01ce0d62be1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'person_search_form--firstname_input' and @type = 'text']</value>
-      <webElementGuid>13e164c9-76bc-4862-9418-88fbfc3fdc65</webElementGuid>
+      <value>//span[(text() = 'CTA Single Check Box' or . = 'CTA Single Check Box')]</value>
+      <webElementGuid>12810434-3bd2-4903-8dab-76c62a237d5d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

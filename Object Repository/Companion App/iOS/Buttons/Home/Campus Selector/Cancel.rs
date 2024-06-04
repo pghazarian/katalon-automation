@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Campus</name>
+   <name>Cancel</name>
    <tag></tag>
-   <elementGuidId>330b2380-5c2e-42be-be95-6530e253af25</elementGuidId>
+   <elementGuidId>402e45a2-1920-41c6-a673-f172f770bf1b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>selected-campus</locator>
+   <locator>ui-button--select-campus-cancel</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
