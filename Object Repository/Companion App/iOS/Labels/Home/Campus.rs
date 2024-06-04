@@ -3,7 +3,7 @@
    <description></description>
    <name>Campus</name>
    <tag></tag>
-   <elementGuidId>330b2380-5c2e-42be-be95-6530e253af25</elementGuidId>
+   <elementGuidId>f631c745-8366-4776-af86-37e9718602c3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <locator>selected-campus</locator>

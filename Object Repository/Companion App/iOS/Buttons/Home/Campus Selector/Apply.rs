@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Campus</name>
+   <name>Apply</name>
    <tag></tag>
-   <elementGuidId>330b2380-5c2e-42be-be95-6530e253af25</elementGuidId>
+   <elementGuidId>e9629dbc-f35e-40b1-a9e4-0fb87e4b7507</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>selected-campus</locator>
+   <locator>ui-button--select-campus-continue</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

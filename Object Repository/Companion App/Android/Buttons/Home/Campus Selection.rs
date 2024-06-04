@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Campus</name>
+   <name>Campus Selection</name>
    <tag></tag>
-   <elementGuidId>330b2380-5c2e-42be-be95-6530e253af25</elementGuidId>
+   <elementGuidId>63d38f26-d1d7-45b9-9428-874b3f072b1e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <locator>selected-campus</locator>
