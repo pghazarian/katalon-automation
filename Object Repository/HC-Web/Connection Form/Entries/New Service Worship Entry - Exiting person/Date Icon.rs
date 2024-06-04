@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_text</name>
+   <name>Date Icon</name>
    <tag></tag>
    <elementGuidId>11df20cd-55b0-4174-a1be-39bc6b56969c</elementGuidId>
    <selectorCollection>

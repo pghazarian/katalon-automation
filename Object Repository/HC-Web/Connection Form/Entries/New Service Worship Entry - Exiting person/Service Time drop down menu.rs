@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div__Select-placeholder</name>
+   <name>Service Time drop down menu</name>
    <tag></tag>
    <elementGuidId>90785a8a-d454-4cb4-8480-f60cee117bf7</elementGuidId>
    <selectorCollection>

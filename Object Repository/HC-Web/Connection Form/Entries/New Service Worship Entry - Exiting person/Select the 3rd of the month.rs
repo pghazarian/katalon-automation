@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_3</name>
+   <name>Select the 3rd of the month</name>
    <tag></tag>
    <elementGuidId>3635ca60-0a89-4fdf-9f76-c9c5c5bba82f</elementGuidId>
    <selectorCollection>
