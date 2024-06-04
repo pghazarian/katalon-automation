@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Im Done Button</name>
+   <name>label_CTA Single Check Boxcheck</name>
    <tag></tag>
-   <elementGuidId>e47b7a92-a64a-427f-ab55-5625d59a2f7e</elementGuidId>
+   <elementGuidId>236d3ea3-7f04-489c-843f-b3e353b84c20</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'I’m Done' or . = 'I’m Done')]</value>
+         <value>//div[@id='form_entry_editor--question_22947']/label</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#new_entry_confirmation_modal--done_button > span.button-inner-container.jss246</value>
+         <value>label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,71 +22,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>090f1b7c-f701-4f10-8c35-1043664a3264</webElementGuid>
+      <value>label</value>
+      <webElementGuid>a8322323-3e9d-467a-83f3-bbdf594da664</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>button-inner-container jss246</value>
-      <webElementGuid>89a67895-c7d8-4669-b183-9f74bb03eca6</webElementGuid>
+      <value>checkbox-label</value>
+      <webElementGuid>6792eb6e-82d2-40a2-86bd-4fd069b60450</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>I’m Done</value>
-      <webElementGuid>6f023d9f-00cc-4f38-bd34-dfe4a679f3f3</webElementGuid>
+      <value>CTA Single Check Boxcheck</value>
+      <webElementGuid>76f54b2e-a251-45f4-b516-f272c0de67b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;new_entry_confirmation_modal--done_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
-      <webElementGuid>00f31716-09e7-4158-9663-2e2b79593e7e</webElementGuid>
+      <value>id(&quot;form_entry_editor--question_22947&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>cbbecc05-140d-4ac0-b39a-9f84312c46a8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='new_entry_confirmation_modal--done_button']/span</value>
-      <webElementGuid>ada1e9a6-2019-4d33-b13b-93598466cf1a</webElementGuid>
+      <value>//div[@id='form_entry_editor--question_22947']/label</value>
+      <webElementGuid>9e4a50ee-fd66-4cf8-bc7b-8d3a74ccff48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Another Entry'])[1]/following::span[1]</value>
-      <webElementGuid>6216ade5-805b-432c-909c-cade992bfc4c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Single Check Box Question'])[1]/following::label[1]</value>
+      <webElementGuid>1b7ffe36-6d28-4de2-a9b3-c7686da17983</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Success'])[1]/following::span[2]</value>
-      <webElementGuid>037565f5-677e-4b1c-8812-449b8b99d4ff</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::label[1]</value>
+      <webElementGuid>4819efdd-1054-4303-804e-5c1a7cec6d64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::label[1]</value>
+      <webElementGuid>df5a216d-655e-4244-9620-68bb39ef13fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/button[2]/span</value>
-      <webElementGuid>9baca4e4-c57a-4de4-8637-56fff41fd22b</webElementGuid>
+      <value>//div[4]/div/div/div/div/label</value>
+      <webElementGuid>82339d18-daea-4bba-b856-7e769e7ea9dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'I’m Done' or . = 'I’m Done')]</value>
-      <webElementGuid>54cfcdbf-1626-46f2-82e8-a253d8add1a4</webElementGuid>
+      <value>//label[(text() = 'CTA Single Check Boxcheck' or . = 'CTA Single Check Boxcheck')]</value>
+      <webElementGuid>bbb39c9a-a7e6-4441-a0ae-c050d97f17c6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

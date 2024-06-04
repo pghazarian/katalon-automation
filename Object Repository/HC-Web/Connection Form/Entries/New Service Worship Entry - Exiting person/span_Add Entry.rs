@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Entries Tab Button</name>
+   <name>span_Add Entry</name>
    <tag></tag>
-   <elementGuidId>e5daff06-2859-4669-bddd-2c742c7ef34b</elementGuidId>
+   <elementGuidId>5b41c1e4-dd84-438f-9598-c002da11097b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
+         <value>//button[@id='form_entry_editor--add_entry_button']/span/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tab-navigation_tab--key-item-1 > span.MuiTypography-root.jss422.navigation_sectional_tabs--tab-label.MuiTypography-h5</value>
+         <value>#form_entry_editor--add_entry_button > span.button-inner-container.jss246 > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,86 +23,78 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>d01d44c9-5609-4e4d-9d86-4d34747e5df9</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>MuiTypography-root jss422 navigation_sectional_tabs--tab-label MuiTypography-h5</value>
-      <webElementGuid>f7773c62-f2ce-4ed0-bd3c-bb3b6a6208e9</webElementGuid>
+      <webElementGuid>e781e445-8c72-4f2e-bfa7-752dc508d748</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Entries</value>
-      <webElementGuid>99c1908e-ad95-45e8-ba6c-aa8119497d8e</webElementGuid>
+      <value>Add Entry</value>
+      <webElementGuid>f4bdbbe3-6259-48fc-bcd5-9cf3e26adc9d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab-navigation_tab--key-item-1&quot;)/span[@class=&quot;MuiTypography-root jss422 navigation_sectional_tabs--tab-label MuiTypography-h5&quot;]</value>
-      <webElementGuid>c8f002e2-e5ae-43a1-a191-4427990a4ee4</webElementGuid>
+      <value>id(&quot;form_entry_editor--add_entry_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
+      <webElementGuid>2e0b9552-64d7-4bdb-89ce-ab904f8fda7a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='tab-navigation_tab--key-item-1']/span</value>
-      <webElementGuid>e3df1aff-0009-44cc-8878-d11e8d299619</webElementGuid>
+      <value>//button[@id='form_entry_editor--add_entry_button']/span/span</value>
+      <webElementGuid>13e03e62-aeca-4279-bb56-2066a9daf1e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Overview'])[1]/following::span[1]</value>
-      <webElementGuid>88c34a55-094e-4322-86f7-e42cd6cf39b7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[2]</value>
+      <webElementGuid>e3b76a98-d82e-4b53-99ca-1eef5187a04e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='/'])[1]/following::span[2]</value>
-      <webElementGuid>4bf7496b-21a0-4466-aae2-1445d5d05c49</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/following::span[4]</value>
+      <webElementGuid>94ef3d72-0f1b-4d12-84d8-904c28bb8cdd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Form Builder'])[1]/preceding::span[1]</value>
-      <webElementGuid>b5360d50-1952-4d71-b373-0be724d8e782</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Service Date &amp; Time'])[1]/preceding::span[1]</value>
+      <webElementGuid>ce0cd3b5-aea6-4e6b-b46c-6ab571680422</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auto-Reply Email'])[1]/preceding::span[2]</value>
-      <webElementGuid>6f958e26-a2cf-49ec-b088-fc6e6f96acea</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Person Record'])[1]/preceding::span[1]</value>
+      <webElementGuid>18220cb7-7b60-4d16-8b8b-78bf6cc972e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[2]/span</value>
-      <webElementGuid>ccc6d43f-dfe2-4433-8d6e-c54c9c78fa76</webElementGuid>
+      <value>//div[4]/button/span/span</value>
+      <webElementGuid>9ad2ef49-42c5-4a2b-90b5-134de8498e17</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Entries' or . = 'Entries')]</value>
-      <webElementGuid>83b20b9b-d327-448d-9bcf-41c4a862a256</webElementGuid>
+      <value>//span[(text() = 'Add Entry' or . = 'Add Entry')]</value>
+      <webElementGuid>1ff051dd-2e75-481c-a258-05342693ba72</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

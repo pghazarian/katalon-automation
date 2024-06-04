@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Im Done Button</name>
+   <name>Apply Button</name>
    <tag></tag>
-   <elementGuidId>e47b7a92-a64a-427f-ab55-5625d59a2f7e</elementGuidId>
+   <elementGuidId>2c8443e0-29df-4f1d-91f3-b5f6ece539a2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'I’m Done' or . = 'I’m Done')]</value>
+         <value>//button[@id='worship_service_selector_modal--apply_button']/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#new_entry_confirmation_modal--done_button > span.button-inner-container.jss246</value>
+         <value>#worship_service_selector_modal--apply_button > span.button-inner-container.jss246</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>090f1b7c-f701-4f10-8c35-1043664a3264</webElementGuid>
+      <webElementGuid>34de27f1-466f-4a13-97b3-773198af694e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,47 +31,55 @@
       <name>class</name>
       <type>Main</type>
       <value>button-inner-container jss246</value>
-      <webElementGuid>89a67895-c7d8-4669-b183-9f74bb03eca6</webElementGuid>
+      <webElementGuid>6cb5ffeb-5e7b-4852-8716-bcb06e4701e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>I’m Done</value>
-      <webElementGuid>6f023d9f-00cc-4f38-bd34-dfe4a679f3f3</webElementGuid>
+      <value>Apply</value>
+      <webElementGuid>f3afe8c8-2176-4ab6-a196-6b519fbb5d7d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;new_entry_confirmation_modal--done_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
-      <webElementGuid>00f31716-09e7-4158-9663-2e2b79593e7e</webElementGuid>
+      <value>id(&quot;worship_service_selector_modal--apply_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
+      <webElementGuid>eb275911-6e94-4528-974b-0e1f035adf7b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='new_entry_confirmation_modal--done_button']/span</value>
-      <webElementGuid>ada1e9a6-2019-4d33-b13b-93598466cf1a</webElementGuid>
+      <value>//button[@id='worship_service_selector_modal--apply_button']/span</value>
+      <webElementGuid>b5676044-fe81-4fb1-9be7-8c705509006f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Another Entry'])[1]/following::span[1]</value>
-      <webElementGuid>6216ade5-805b-432c-909c-cade992bfc4c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[1]</value>
+      <webElementGuid>ba232e7b-5a97-413c-ab9e-fd4a968604e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Success'])[1]/following::span[2]</value>
-      <webElementGuid>037565f5-677e-4b1c-8812-449b8b99d4ff</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Service Time'])[1]/following::span[5]</value>
+      <webElementGuid>aa877aec-9efd-446d-a101-513798d776cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Apply']/parent::*</value>
+      <webElementGuid>8ba4f951-1bb3-47d8-8afd-6928f2da775a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,14 +87,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button[2]/span</value>
-      <webElementGuid>9baca4e4-c57a-4de4-8637-56fff41fd22b</webElementGuid>
+      <webElementGuid>e48c378f-b9d3-4da5-a738-8bbff5e248fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'I’m Done' or . = 'I’m Done')]</value>
-      <webElementGuid>54cfcdbf-1626-46f2-82e8-a253d8add1a4</webElementGuid>
+      <value>//span[(text() = 'Apply' or . = 'Apply')]</value>
+      <webElementGuid>9e9dbc1f-fe20-4207-895a-ecd398087b1f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

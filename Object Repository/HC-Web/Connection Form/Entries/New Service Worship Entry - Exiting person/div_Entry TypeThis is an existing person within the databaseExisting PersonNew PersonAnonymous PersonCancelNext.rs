@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Im Done Button</name>
+   <name>div_Entry TypeThis is an existing person within the databaseExisting PersonNew PersonAnonymous PersonCancelNext</name>
    <tag></tag>
-   <elementGuidId>e47b7a92-a64a-427f-ab55-5625d59a2f7e</elementGuidId>
+   <elementGuidId>3010205f-0c8b-495e-ad4c-319ab719cf7c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'I’m Done' or . = 'I’m Done')]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::div[7]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#new_entry_confirmation_modal--done_button > span.button-inner-container.jss246</value>
+         <value>div.jss1669.jss1667</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,71 +22,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>090f1b7c-f701-4f10-8c35-1043664a3264</webElementGuid>
+      <value>div</value>
+      <webElementGuid>5f558549-6c31-48cf-8770-73844a7ad07a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>button-inner-container jss246</value>
-      <webElementGuid>89a67895-c7d8-4669-b183-9f74bb03eca6</webElementGuid>
+      <value>jss1669 jss1667</value>
+      <webElementGuid>6b0e5292-9e57-4c8a-b45b-2d974bb7e796</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>I’m Done</value>
-      <webElementGuid>6f023d9f-00cc-4f38-bd34-dfe4a679f3f3</webElementGuid>
+      <value>Entry TypeThis is an existing person within the databaseExisting PersonNew PersonAnonymous PersonCancelNext</value>
+      <webElementGuid>9ebe39e8-c521-443d-a19d-fcbbb3edbe73</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;new_entry_confirmation_modal--done_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
-      <webElementGuid>00f31716-09e7-4158-9663-2e2b79593e7e</webElementGuid>
+      <value>/html[@class=&quot;hc-ui safari&quot;]/body[1]/div[7]/div[@class=&quot;cmui modal jss1668 jss1687&quot;]/div[@class=&quot;modal--inner_container jss1666&quot;]/div[1]/div[1]/div[@class=&quot;jss1669 jss1667&quot;]</value>
+      <webElementGuid>c0d077fe-bafa-4249-b340-b5654c633bcf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//button[@id='new_entry_confirmation_modal--done_button']/span</value>
-      <webElementGuid>ada1e9a6-2019-4d33-b13b-93598466cf1a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::div[7]</value>
+      <webElementGuid>71669dea-53ed-42df-ba8d-c65bb7447b64</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Another Entry'])[1]/following::span[1]</value>
-      <webElementGuid>6216ade5-805b-432c-909c-cade992bfc4c</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Success'])[1]/following::span[2]</value>
-      <webElementGuid>037565f5-677e-4b1c-8812-449b8b99d4ff</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[2]/following::div[7]</value>
+      <webElementGuid>c4e92db4-1808-42da-85b3-50ca1502de98</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/button[2]/span</value>
-      <webElementGuid>9baca4e4-c57a-4de4-8637-56fff41fd22b</webElementGuid>
+      <value>//div[7]/div/div/div/div/div</value>
+      <webElementGuid>c4c4ee90-b4e2-4d22-9f79-ccac83676bba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'I’m Done' or . = 'I’m Done')]</value>
-      <webElementGuid>54cfcdbf-1626-46f2-82e8-a253d8add1a4</webElementGuid>
+      <value>//div[(text() = 'Entry TypeThis is an existing person within the databaseExisting PersonNew PersonAnonymous PersonCancelNext' or . = 'Entry TypeThis is an existing person within the databaseExisting PersonNew PersonAnonymous PersonCancelNext')]</value>
+      <webElementGuid>129f8ea1-ea32-4d3e-b0f4-2621ee147ebb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

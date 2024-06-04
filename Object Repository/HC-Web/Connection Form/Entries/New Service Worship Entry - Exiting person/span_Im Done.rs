@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Im Done Button</name>
+   <name>span_Im Done</name>
    <tag></tag>
-   <elementGuidId>e47b7a92-a64a-427f-ab55-5625d59a2f7e</elementGuidId>
+   <elementGuidId>d2f54b85-f0a7-4cf0-a5c2-4bff556b88b0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'I’m Done' or . = 'I’m Done')]</value>
+         <value>//button[@id='new_entry_confirmation_modal--done_button']/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>090f1b7c-f701-4f10-8c35-1043664a3264</webElementGuid>
+      <webElementGuid>fee1c1ed-e3ce-4929-8072-9b8e112d80b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button-inner-container jss246</value>
-      <webElementGuid>89a67895-c7d8-4669-b183-9f74bb03eca6</webElementGuid>
+      <webElementGuid>50bc0e0e-2a2b-4e80-bcac-0df966ffddce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>text</name>
       <type>Main</type>
       <value>I’m Done</value>
-      <webElementGuid>6f023d9f-00cc-4f38-bd34-dfe4a679f3f3</webElementGuid>
+      <webElementGuid>25afe4e0-cf9c-4537-8c6f-b2c263c3130b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;new_entry_confirmation_modal--done_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
-      <webElementGuid>00f31716-09e7-4158-9663-2e2b79593e7e</webElementGuid>
+      <webElementGuid>47788843-5f3b-4aa7-97fd-af105a52d489</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='new_entry_confirmation_modal--done_button']/span</value>
-      <webElementGuid>ada1e9a6-2019-4d33-b13b-93598466cf1a</webElementGuid>
+      <webElementGuid>7f951b9e-9f11-486a-8ce3-3653ca5b6b0b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Another Entry'])[1]/following::span[1]</value>
-      <webElementGuid>6216ade5-805b-432c-909c-cade992bfc4c</webElementGuid>
+      <webElementGuid>aa74ad06-9aa7-4dbb-8104-2bf5b6fb50dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Success'])[1]/following::span[2]</value>
-      <webElementGuid>037565f5-677e-4b1c-8812-449b8b99d4ff</webElementGuid>
+      <webElementGuid>9d1c73ae-bb0b-4048-8f3c-b78a4ef77f08</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='I’m Done']/parent::*</value>
+      <webElementGuid>6d9f3fba-5225-4ba5-b466-ed0f39297c3b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +87,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button[2]/span</value>
-      <webElementGuid>9baca4e4-c57a-4de4-8637-56fff41fd22b</webElementGuid>
+      <webElementGuid>f2eb4967-b063-4227-9a68-30a981211ee3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,6 +95,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'I’m Done' or . = 'I’m Done')]</value>
-      <webElementGuid>54cfcdbf-1626-46f2-82e8-a253d8add1a4</webElementGuid>
+      <webElementGuid>5d97fad5-53d1-4c5d-b7ea-6c060c99018b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

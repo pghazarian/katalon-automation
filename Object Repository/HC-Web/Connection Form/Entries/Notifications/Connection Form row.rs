@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Person Search First Name Text Entry</name>
+   <name>Connection Form row</name>
    <tag></tag>
-   <elementGuidId>7c02a705-5dfb-46f3-819f-8e77bfaf8dc1</elementGuidId>
+   <elementGuidId>b1df921e-c3a1-4146-8ac8-f54280c431bb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='person_search_form--firstname_input']</value>
+         <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#person_search_form--firstname_input</value>
+         <value>#data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+      </entry>
+   </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -22,95 +27,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>ee750961-f71a-4a01-9c67-610169d22994</webElementGuid>
+      <value>td</value>
+      <webElementGuid>e4313a7c-f70e-4c59-9acd-d18244cf921d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>table-cell jss1119</value>
+      <webElementGuid>2a9eff2a-728c-47c6-925b-15af0d386e4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>person_search_form--firstname_input</value>
-      <webElementGuid>1beaf517-8cf3-432c-a577-d0853ee5eeda</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>9be1d84b-4647-46b6-8479-ecd6d4abab0e</webElementGuid>
+      <value>data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1</value>
+      <webElementGuid>f15c9395-25df-4c11-9938-23a7e8a86394</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;person_search_form--firstname_input&quot;)</value>
-      <webElementGuid>f141ace5-13f4-44dc-a5e3-7b8e90a4947a</webElementGuid>
+      <value>id(&quot;data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1&quot;)</value>
+      <webElementGuid>bb7c77c4-19bb-44ed-bcc9-7fafe3856665</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='person_search_form--firstname_input']</value>
-      <webElementGuid>d31855fd-6790-48cb-8dc5-a8efcca2047e</webElementGuid>
+      <value>//td[@id='data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1']</value>
+      <webElementGuid>c202b05e-39c5-4241-bcad-ce51718a9e2e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='person_search_form']/div/div/div/div/input</value>
-      <webElementGuid>0e7801cc-6505-4b14-8f8d-22f0dbbef862</webElementGuid>
+      <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/div/div/table/tbody/tr/td[2]</value>
+      <webElementGuid>e2c341f5-925c-43a2-847e-b7479ac29335</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='First Name'])[1]/following::input[1]</value>
-      <webElementGuid>970e08a6-cb5c-4c0b-abfa-7e838354d6e6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paren Anaheim Worship 1'])[1]/following::td[1]</value>
+      <webElementGuid>8e37ca41-92db-4a18-8568-75d2237ff929</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No Record'])[1]/following::input[1]</value>
-      <webElementGuid>438def1c-e80f-48c5-9ae4-1e9b588cf151</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[2]/following::td[2]</value>
+      <webElementGuid>96c3b28f-6ef2-4fbd-b6fa-ba5b5274b30b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Name'])[1]/preceding::input[1]</value>
-      <webElementGuid>b8401039-1b98-419c-9d66-3a7c70110135</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[2]/preceding::td[2]</value>
+      <webElementGuid>56c472b0-b0e0-4e73-a33f-217a0642cbd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nick Name'])[1]/preceding::input[2]</value>
-      <webElementGuid>e13149f5-def8-462b-beb3-a316302732d5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Worship Service'])[1]/preceding::td[2]</value>
+      <webElementGuid>5d3331b1-9133-4278-86bb-89f060fd74aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//section/div/div/div/div/div/div/input</value>
-      <webElementGuid>22efab13-dde6-4d27-bb71-2f1d36d7555a</webElementGuid>
+      <value>//td[2]</value>
+      <webElementGuid>ffb58e28-6855-4938-acfe-787f671dbafb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'person_search_form--firstname_input' and @type = 'text']</value>
-      <webElementGuid>13e164c9-76bc-4862-9418-88fbfc3fdc65</webElementGuid>
+      <value>//td[@id = 'data_grid--table_connection_forms_list_page--page_data_grid_cell_base-2_1']</value>
+      <webElementGuid>16b5c7fa-9587-4bbd-b832-2f4290f29e09</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

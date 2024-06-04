@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Person Search First Name Text Entry</name>
+   <name>New Entry - button</name>
    <tag></tag>
-   <elementGuidId>7c02a705-5dfb-46f3-819f-8e77bfaf8dc1</elementGuidId>
+   <elementGuidId>12793687-2e61-4d4e-84be-7c83a344714f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='person_search_form--firstname_input']</value>
+         <value>//button[@id='connection_form_entries_list_page--new_entry_button']/span/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#person_search_form--firstname_input</value>
+         <value>#connection_form_entries_list_page--new_entry_button > span.button-inner-container.jss253 > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,95 +22,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>ee750961-f71a-4a01-9c67-610169d22994</webElementGuid>
+      <value>span</value>
+      <webElementGuid>7e4e9ac5-42aa-4827-8c78-83cb98f48557</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>text</name>
       <type>Main</type>
-      <value>person_search_form--firstname_input</value>
-      <webElementGuid>1beaf517-8cf3-432c-a577-d0853ee5eeda</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>9be1d84b-4647-46b6-8479-ecd6d4abab0e</webElementGuid>
+      <value>New Entry</value>
+      <webElementGuid>a83bc657-1ebb-45e3-bd93-312124b92b60</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;person_search_form--firstname_input&quot;)</value>
-      <webElementGuid>f141ace5-13f4-44dc-a5e3-7b8e90a4947a</webElementGuid>
+      <value>id(&quot;connection_form_entries_list_page--new_entry_button&quot;)/span[@class=&quot;button-inner-container jss253&quot;]/span[1]</value>
+      <webElementGuid>c48de1ce-c8ae-4389-a2d0-c1a331bafe26</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='person_search_form--firstname_input']</value>
-      <webElementGuid>d31855fd-6790-48cb-8dc5-a8efcca2047e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='person_search_form']/div/div/div/div/input</value>
-      <webElementGuid>0e7801cc-6505-4b14-8f8d-22f0dbbef862</webElementGuid>
+      <value>//button[@id='connection_form_entries_list_page--new_entry_button']/span/span</value>
+      <webElementGuid>dbd6deb6-fdce-4961-bc00-a8c6ae426267</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='First Name'])[1]/following::input[1]</value>
-      <webElementGuid>970e08a6-cb5c-4c0b-abfa-7e838354d6e6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::span[2]</value>
+      <webElementGuid>10108437-5e28-428c-b548-ce4b1d260016</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No Record'])[1]/following::input[1]</value>
-      <webElementGuid>438def1c-e80f-48c5-9ae4-1e9b588cf151</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/following::span[4]</value>
+      <webElementGuid>2dba21a2-45dc-4a7b-95a6-8eaa6ff81d5c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Name'])[1]/preceding::input[1]</value>
-      <webElementGuid>b8401039-1b98-419c-9d66-3a7c70110135</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sort By'])[1]/preceding::span[1]</value>
+      <webElementGuid>94ed5748-8976-48af-8ebe-574eccd7dba1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nick Name'])[1]/preceding::input[2]</value>
-      <webElementGuid>e13149f5-def8-462b-beb3-a316302732d5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Updated (Newest - Oldest)'])[1]/preceding::span[1]</value>
+      <webElementGuid>0651c3b9-58c9-4e6c-91f6-288dde674742</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='New Entry']/parent::*</value>
+      <webElementGuid>952495c4-5d19-45d8-a276-3ce33d79582b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//section/div/div/div/div/div/div/input</value>
-      <webElementGuid>22efab13-dde6-4d27-bb71-2f1d36d7555a</webElementGuid>
+      <value>//div[5]/button/span/span</value>
+      <webElementGuid>5aef99a4-9ba6-4d3f-8f3d-d44db40a3e1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'person_search_form--firstname_input' and @type = 'text']</value>
-      <webElementGuid>13e164c9-76bc-4862-9418-88fbfc3fdc65</webElementGuid>
+      <value>//span[(text() = 'New Entry' or . = 'New Entry')]</value>
+      <webElementGuid>6c9324a3-c6d1-4cdb-bc0a-9731435edc2f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
