@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Campus</name>
+   <name>Close</name>
    <tag></tag>
-   <elementGuidId>330b2380-5c2e-42be-be95-6530e253af25</elementGuidId>
+   <elementGuidId>43d209a5-96ff-4c99-a1c5-53554954f6a5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>selected-campus</locator>
+   <locator>ui-button--select-campus-close</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
