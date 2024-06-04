@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/List/List I
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Entries Tab Button'))
 
 'Click the New Entry button'
-WebUI.click(findTestObject('HC-Web/Connection Form/Entries/New Entry - button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Entry Button'))
 
 'Select the "No Event Associated" button'
 WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Event Association Modal/No Event Associated Button'), 
@@ -78,7 +78,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add E
         [('textToMatch') : FollowUpTaskPersonName]))
 
 'Click the Add Entry Button'
-WebUI.click(findTestObject('HC-Web/Connection Form/Entries/New Entry - button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Button'))
+
+'Click the "I\'m Done" button to advance to this point'
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Im Done Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Navigation Logo Image Button'))
 
@@ -105,7 +108,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Active Tab Bu
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Unclaimed/QA Automation Follow Up Rule Task List Item'))
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', 
         [('textToMatch') : FollowUpTaskPersonName]), 5)
