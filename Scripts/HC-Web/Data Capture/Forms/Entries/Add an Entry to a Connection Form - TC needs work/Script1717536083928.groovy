@@ -39,13 +39,13 @@ WebUI.click(findTestObject('HC-Web/Connection Form/Entries/New Entry - button'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('HC-Web/Connection Form/Entries/New Service Worship Entry - Exiting person/Date Icon'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/Date Icon'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry - Exiting person/Select the 3rd of the month'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/Select the 3rd of the month'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry - Exiting person/Service Time drop down menu'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/Service Time drop down menu'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry - Exiting person/5 AM Service'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/5 AM Service'))
 
