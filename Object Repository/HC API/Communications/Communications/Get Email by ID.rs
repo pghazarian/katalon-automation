@@ -69,6 +69,14 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyResponseStatusCode(response, 200)
+
+assertThat(response.getStatusCode()).isEqualTo(200)
+
+WS.verifyElementPropertyValue(response, 'name', 'New Email Notification 1')
+
+WS.verifyElementPropertyValue(response, 'id', '58')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
