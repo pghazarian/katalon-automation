@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Save</name>
+   <tag></tag>
+   <elementGuidId>5c8d092f-3fde-4827-a603-1ce2d88fdcfd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id='journeys_list_page--edit_details_button']/span)[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6d8b2395-e7ba-422e-8cac-26837fb689b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss244</value>
+      <webElementGuid>96dc7eb8-1a00-4430-bb58-7f4ac2762365</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Save</value>
+      <webElementGuid>9de1fad6-0f77-4494-99b2-6d86be748668</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss237 jss777&quot;]/header[@class=&quot;ui page--action_bar action_bar&quot;]/div[1]/div[@class=&quot;cmui grid jss7 action_bar--grid jss13 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 action_bar--grid_column&quot;]/button[@id=&quot;journeys_list_page--edit_details_button&quot;]/span[@class=&quot;button-inner-container jss244&quot;]</value>
+      <webElementGuid>81e50e7f-3aa5-4f8f-abe7-afc140309ca7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//button[@id='journeys_list_page--edit_details_button']/span)[2]</value>
+      <webElementGuid>6796f90d-00de-48e7-9b2e-e32af2ac6783</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button/span</value>
+      <webElementGuid>2700e8e1-e872-4173-88ed-5533929b9a23</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Save' or . = 'Save')]</value>
+      <webElementGuid>8260f0fb-11d1-40b8-ad45-3d519a1a6ad4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
