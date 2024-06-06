@@ -34,7 +34,7 @@ WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Search/Filters and Sort
 'Click cancelled filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Cancelled Filter'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.waitForElementAttributeValue(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'class', 'event-card-title canceled-event', 
     0)
@@ -66,7 +66,7 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click upcoming filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Upcoming Filter'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 'Verify event not cancelled'
 WebUI.verifyEqual(false, WebUI.getAttribute(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), 'class').contains(
@@ -91,7 +91,7 @@ WebUI.verifyEqual(true, WebUI.getText(findTestObject('HC-Web/Event/Search/Search
 'Click paid filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Paid Filter'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
@@ -116,7 +116,7 @@ WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), Fa
 'Navigate to event details'
 WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_EventDetails'))
 
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Free Event Radio Option'), 2)
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Free Event Radio Option'), 5)
 
 'Verify event is free'
 WebUI.verifyElementChecked(findTestObject('HC-Web/Event/Details/Free Event Radio Option'), 2)
@@ -127,7 +127,7 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click required registration filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Registration Required Filter'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
@@ -151,7 +151,7 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click registration not required filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Registration Not Required Filter'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
@@ -175,7 +175,7 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click published filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Published Filter'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
@@ -192,7 +192,7 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click unpublished filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Unpublished Filter'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)

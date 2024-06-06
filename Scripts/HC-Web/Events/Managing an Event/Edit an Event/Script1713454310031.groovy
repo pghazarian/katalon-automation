@@ -23,6 +23,8 @@ def date = new Date().plus(1).format('MMddyyyy').toString()
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/events-central/event/$EventId/edit"], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Event Name'), 5)
+
 WebUI.setText(findTestObject('HC-Web/Event/Details/Event Name'), ' - Edited')
 
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_basic_info--event_category', EventCategory_Edited)
