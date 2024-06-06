@@ -6,12 +6,11 @@
    <elementGuidId>55c26e04-8c11-4680-bc46-f414ce4bcad9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@class,&quot;event-card-title&quot;) and contains(text(),&quot;${SearchTerm}&quot;)]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class,'event-card-title') and contains(text(),'${SearchTerm}')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

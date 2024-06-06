@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Email Send Button</name>
+   <name>Circular Loader Icon</name>
    <tag></tag>
-   <elementGuidId>f7d5661f-5214-4737-a7b0-bf5f626bd6d0</elementGuidId>
+   <elementGuidId>c8a61ca7-f031-42ce-ad94-b9163d0febbf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='Send']/ancestor::button[not(@disabled)]</value>
+         <value>//div[contains(@class,'loader')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
