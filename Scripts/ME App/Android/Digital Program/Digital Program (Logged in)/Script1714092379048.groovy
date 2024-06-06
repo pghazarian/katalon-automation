@@ -33,7 +33,7 @@ Mobile.setText(findTestObject('Object Repository/Companion App/Android/Text Fiel
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Password Edit Text'), 0)
+Mobile.tap(findTestObject('Object Repository/ME App/Android/Digital Program/Login/Password Edit Text'), 0)
 
 Mobile.setEncryptedText(findTestObject('Object Repository/Ministry App/Login/Password Text Field'), 'p4y+y39Ir5OTdtOb306gDg==', 
     0)

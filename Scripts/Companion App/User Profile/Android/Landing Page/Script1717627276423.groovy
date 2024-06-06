@@ -42,18 +42,14 @@ import org.openqa.selenium.Keys as Keys
  * 21. Tapping on the "My Ministries" button should navigate the user to the My Ministries screen
  * 22. Tapping on the "My Events" button should navigate the user to the My Events Screen
  */
-
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
 'Profile photo icon - on lower navigation menu '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/android.view.View'), 0)
 
 'Settings icon '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/android.view.ViewGroup'), 0)
 
-'Profile photo icon - on lower navigation menu '
-not_run: Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/android.widget.ImageView'), 0)
-
 'My QR Code '
-not_run: Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/android.view.ViewGroup (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/android.view.ViewGroup (1)'), 0)
 
