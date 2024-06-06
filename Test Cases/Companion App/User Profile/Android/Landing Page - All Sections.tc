@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Master TC to test CA Profile page, with all of its sections &#xd;
+For all the PBIs under &quot;CA Sprint 1&quot; sprint of Team Mandalorian</description>
+   <name>Landing Page - All Sections</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>154bb569-83a5-4865-9243-8988a0ee6634</testCaseGuid>
+</TestCaseEntity>
