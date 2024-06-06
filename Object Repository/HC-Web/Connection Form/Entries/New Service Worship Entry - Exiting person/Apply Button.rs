@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Apply Button</name>
+   <tag></tag>
+   <elementGuidId>2c8443e0-29df-4f1d-91f3-b5f6ece539a2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='worship_service_selector_modal--apply_button']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#worship_service_selector_modal--apply_button > span.button-inner-container.jss246</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>34de27f1-466f-4a13-97b3-773198af694e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss246</value>
+      <webElementGuid>6cb5ffeb-5e7b-4852-8716-bcb06e4701e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Apply</value>
+      <webElementGuid>f3afe8c8-2176-4ab6-a196-6b519fbb5d7d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;worship_service_selector_modal--apply_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]</value>
+      <webElementGuid>eb275911-6e94-4528-974b-0e1f035adf7b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='worship_service_selector_modal--apply_button']/span</value>
+      <webElementGuid>b5676044-fe81-4fb1-9be7-8c705509006f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[1]</value>
+      <webElementGuid>ba232e7b-5a97-413c-ab9e-fd4a968604e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Service Time'])[1]/following::span[5]</value>
+      <webElementGuid>aa877aec-9efd-446d-a101-513798d776cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Apply']/parent::*</value>
+      <webElementGuid>8ba4f951-1bb3-47d8-8afd-6928f2da775a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button[2]/span</value>
+      <webElementGuid>e48c378f-b9d3-4da5-a738-8bbff5e248fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Apply' or . = 'Apply')]</value>
+      <webElementGuid>9e9dbc1f-fe20-4207-895a-ecd398087b1f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

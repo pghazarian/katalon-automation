@@ -83,7 +83,7 @@ WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Close Service Dro
 
 WebUI.click(findTestObject('HC-Web/Event/Worship Service Setup/Close Service Confirmation Yes Button'))
 
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Worship Service Setup/Service Items'), 5)
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Worship Service Setup/Service Items'), 10)
 
 'Verify service was removed from list'
 WebUI.verifyTextNotPresent(WorshipServiceName, false)

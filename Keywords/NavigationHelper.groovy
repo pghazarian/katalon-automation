@@ -52,6 +52,7 @@ public class NavigationHelper {
 	def clickSubMenu(String menuLabel, String submenuLabel) {
 		def to = new TestObjectHelper()
 
+		WebUI.waitForElementVisible(to.getTestObjectWithXpathTextMatch("//ul/li/div//p[text()='$menuLabel' or . = '$menuLabel']/parent::div/following-sibling::div/descendant::ul/li/div", submenuLabel), 2)
 		WebUI.click(to.getTestObjectWithXpathTextMatch("//ul/li/div//p[text()='$menuLabel' or . = '$menuLabel']/parent::div/following-sibling::div/descendant::ul/li/div", submenuLabel))
 	}
 

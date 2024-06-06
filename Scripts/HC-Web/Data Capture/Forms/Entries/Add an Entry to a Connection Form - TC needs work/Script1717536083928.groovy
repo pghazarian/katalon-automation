@@ -48,4 +48,3 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/Service Time drop down menu'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/5 AM Service'))
-
