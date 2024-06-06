@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to edit events</description>
+   <name>Add Flag to Events To Return Parent Data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>faeb778f-70b7-4a69-a444-cdb4f6caaffb</testCaseGuid>
+</TestCaseEntity>
