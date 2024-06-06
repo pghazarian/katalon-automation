@@ -176,7 +176,7 @@ class TestObjectHelper {
 	 * Set value for Drop Down component
 	 */
 	@Keyword
-	def TestObject setDPDropDownValueByClick(String id, String value) {
+	def TestObject selectMultipleValuesInDropDownByClick(String id, String value) {
 
 		def xpath = "//div[contains(@id,'$id')]/descendant::div[contains(@class,'Select') and not(contains(@class,'is-disabled'))]"
 

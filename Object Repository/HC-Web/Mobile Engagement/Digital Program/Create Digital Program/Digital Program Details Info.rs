@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='${Label}']/preceding-sibling::div</value>
+         <value>//div[text()='${LabelV}']/preceding-sibling::div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

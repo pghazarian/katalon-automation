@@ -18,10 +18,13 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Set Local Date and Time to the variable'
-def randText = String.format('%tF', java.time.LocalDateTime.now())
+def randText = new Date().format('MM-dd-yyyy')
 
 'Set the Digital Program Title variable with the Date time values in it'
 randText = ('Dig Prog ' + randText)
+
+'Set Speaker Name to the variable'
+def speaker = "Rick Warren"
 
 'Login and Navigate to Digital Programs Page'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
@@ -51,43 +54,27 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital P
 'Click on Edit Details button under Actions dropdown in Details page'
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Details page Edit Details button'))
 
-'Click Upload for All button to upload the Image'
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Upload for all button'))
-
-'Click Next button on Image Upload for all modal (Web Header)'
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Image Upload Next button'))
-
-'Click Next button on Image Upload for all modal (Companion App Header)'
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Image Upload Next button'))
-
-'Click Save button on Image Upload for all modal (Thumbnail)'
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Image Upload Save Button'))
-
-'Click on Speaker Dropdown'
-not_run: WebUI.click(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Speaker Dropdown button'))
-
 'Select a speaker from the dropdown'
-CustomKeywords.'TestObjectHelper.setDPDropDownValueByClick'('digital_programs_add_drawer--speaker', 'Rick Warren')
-
-'Set Speaker(s) as needed'
-not_run: WebUI.click(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Select Speaker'))
+CustomKeywords.'TestObjectHelper.selectMultipleValuesInDropDownByClick'('digital_programs_add_drawer--speaker', speaker)
 
 'Click on Save button to Save the Updated details onto the Digital Program'
-not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Edit Details page Save Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Edit Details page Save Button'))
+
+'Verify Successful message is displayed when a digital program is updated'
+WebUI.verifyElementText(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Action Update Messages',
+		[('LabelS') : 'Successful']), 'Successful')
 
 'Getting today\'s date into a variable for comparison '
-not_run: def lastUpdate = new Date().format('MM/dd/yyyy')
+def lastUpdate = new Date().format('MM/dd/yyyy', TimeZone.getTimeZone('UTC'))
+
+WebUI.waitForElementPresent(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Details Lable', 
+        [('LabelP') : 'Last Update']), 0)
 
 'Verify Today\'s Date is populated in Last Update field'
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Details Last Update Date'), 
-    lastUpdate)
-
 WebUI.verifyElementText(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Details Info', 
-        [('Label') : 'Last Update']), lastUpdate)
+        [('LabelV') : 'Last Update']), lastUpdate)
 
-'Verify Speaker name is updated as what user set'
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Select Speaker'), 
-    'Andy Wood')
-
-not_run: WebUI.closeBrowser()
+'Verify Speaker\'s Name is populated in Speaker field'
+WebUI.verifyElementText(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Details Info', 
+        [('LabelV') : 'Speaker']), speaker)
 

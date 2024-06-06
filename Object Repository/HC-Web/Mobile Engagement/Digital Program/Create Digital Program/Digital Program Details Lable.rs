@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Digital Program Details Last Update Date</name>
+   <name>Digital Program Details Lable</name>
    <tag></tag>
    <elementGuidId>0554d419-c9cd-4da6-afc6-d25ee333b9ec</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='Last Update']/preceding-sibling::div</value>
+         <value>//div[text()='${LabelP}']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>8c0a08b8-cbec-436f-b247-b13366d20e53</webElementGuid>
+      <webElementGuid>7380a1be-463b-41cc-9abb-9f04c2535dfe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiTypography-root jss1191 MuiTypography-h4</value>
-      <webElementGuid>4a4693a9-84ae-48a6-bae5-e73fb9f258f4</webElementGuid>
+      <webElementGuid>cf90ec15-8565-4e28-b623-6f7f9fecc62a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>05/30/2024</value>
-      <webElementGuid>6c5b5fca-5231-4080-92cd-e8b1f32a3b39</webElementGuid>
+      <webElementGuid>4bf7cda3-f0f6-4cfd-82b0-649e97c0480b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss240 jss1194 jss1190 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss248 ui page--container jss247&quot;]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss1189 jss68 jss76&quot;]/div[@class=&quot;jss1188&quot;]/div[@class=&quot;MuiTypography-root jss1191 MuiTypography-h4&quot;]</value>
-      <webElementGuid>22bc82f0-e499-4283-94a8-07618d39a062</webElementGuid>
+      <webElementGuid>73e4375c-cc17-4ef1-b0d5-7c3bdad6620a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/div/div[2]/div[4]/div</value>
-      <webElementGuid>389e755d-4435-4d3f-883a-c9935e5f8282</webElementGuid>
+      <webElementGuid>68d7b093-243d-4e27-a1d5-33e02ac840b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Created By'])[1]/following::div[2]</value>
-      <webElementGuid>05c9db08-6b39-46fe-93ce-f7af2a9bb2ea</webElementGuid>
+      <webElementGuid>b29beae0-219b-4a6e-8fb3-0ef310129c66</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='QA Automation Default Member'])[1]/following::div[3]</value>
-      <webElementGuid>9c8cb091-65f6-43ca-8648-2f3117782b41</webElementGuid>
+      <webElementGuid>6c288246-d831-44b1-8012-c8039fc2d365</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Update'])[1]/preceding::div[1]</value>
-      <webElementGuid>e4d3335e-52a2-4d70-ac84-7c53fb90d906</webElementGuid>
+      <webElementGuid>1f4c2568-0a57-4251-b90d-5c68d8260213</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sreenivasulu Arveti'])[1]/preceding::div[2]</value>
-      <webElementGuid>195497b3-f0da-4520-8c00-3dbc078eb623</webElementGuid>
+      <webElementGuid>d1c29684-6358-42a6-96c5-d52f0c6a4cac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[4]/div</value>
-      <webElementGuid>c0c9151e-c9cc-4308-a7b2-a8cdc2c9e387</webElementGuid>
+      <webElementGuid>f6aaafde-a54f-4a15-9de4-44fb87613262</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = '05/30/2024' or . = '05/30/2024')]</value>
-      <webElementGuid>5fb25c41-cd9c-49db-b1e7-09a15dc0d7eb</webElementGuid>
+      <webElementGuid>9a85cc41-02c2-4037-a195-8f6dd72190f0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

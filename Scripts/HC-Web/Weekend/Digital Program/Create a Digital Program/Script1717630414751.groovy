@@ -18,16 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Set Local Date and Time to the variable'
-def randText = String.format('%tF %<tH:%<tM', java.time.LocalDateTime.now())
-
-def uniqueTxt = new Random().with({ 
-        (1..9).collect({ 
-                ('a'..'z').join()[nextInt(('a'..'z').join().length())]
-            }).join()
-    })
+def randText = new Date().format('MM-dd-yyyy hh-mm-ss')
 
 'Set the Digital Program Title variable with the Date time values in it'
-randText = ((('Dig Prog ' + randText) + ' ') + uniqueTxt)
+randText = ('Dig Prog ' + randText)
 
 'Login and Navigate to Digital Programs Page'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
@@ -66,8 +60,8 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Save New Digital Program Button'))
 
 'Verify Successful message is displayed when a digital program is created'
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Created Successful Message'), 
-    'Successful')
+WebUI.verifyElementText(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Action Update Messages', 
+        [('LabelS') : 'Successful']), 'Successful')
 
 'Verify the Digital Program title displayed in the builder'
 WebUI.verifyElementText(findTestObject('HC-Web/Mobile Engagement/Digital Program/Create Digital Program/DIgital Program Title in Builder'), 
