@@ -40,9 +40,9 @@ WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Succ
 
 WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Roster Page/Success Banner Text Area'), 'Successfully added selected volunteers to the selected groups')
 
-WebUI.navigateToUrl("https://hc-stage.saddleback.com/my-ministry/settings/membership-settings/$MinistryId/$CampusId/")
+WebUI.navigateToUrl(GlobalVariable.HC_HostUrl + "/my-ministry/settings/membership-settings/$MinistryId/$CampusId/")
 
-WebUI.click(findTestObject('HC-Web/Ministry/Settings Page/Group Actions Elipsis Button', [('groupName') : GroupName]))
+WebUI.click(findTestObject('HC-Web/Ministry/Settings Page/Group Actions Ellipsis Button', [('groupName') : GroupName]))
 
 WebUI.click(findTestObject('HC-Web/Ministry/Settings Page/Manage Group Option'))
 

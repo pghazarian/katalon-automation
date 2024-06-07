@@ -40,7 +40,7 @@ WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Succ
 
 WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Roster Page/Success Banner Text Area'), 'Successfully Added Volunteer To Ministry')
 
-WebUI.navigateToUrl("https://hc-stage.saddleback.com/my-ministry/volunteers/members/$MinistryId/$CampusId")
+WebUI.navigateToUrl(GlobalVariable.HC_HostUrl + "/my-ministry/volunteers/members/$MinistryId/$CampusId")
 
 WebUI.click(findTestObject('HC-Web/Ministry/Members/Member Checkbox', [('memberName') : MemberName]))
 
