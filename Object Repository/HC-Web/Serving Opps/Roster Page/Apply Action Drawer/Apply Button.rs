@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Checkbox</name>
+   <name>Apply Button</name>
    <tag></tag>
-   <elementGuidId>4194f872-dfd3-41ab-9249-1bf5cc9a9007</elementGuidId>
+   <elementGuidId>39827d71-9266-4675-b5e2-a6443f01a16a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[normalize-space(text())='${memberName}']/ancestor::tr/descendant::div[@id='ui-schedule--grid-checkbox']/label/div</value>
+         <value>//button[@id='my_ministry_volunteers--bulk-action-drawer--action_bar_apply']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

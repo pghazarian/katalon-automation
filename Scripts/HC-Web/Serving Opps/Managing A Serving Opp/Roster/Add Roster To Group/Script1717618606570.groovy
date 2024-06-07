@@ -26,11 +26,11 @@ WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Checkbox', [(
 
 WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Actions Button'))
 
-WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Add To Ministry Option'))
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Add To Group Option'))
 
 WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Apply Action Drawer/Apply Button'), 2)
 
-CustomKeywords.'TestObjectHelper.setDropDownValue'('ui-dropdown--bulk_move_to_member_status', 'Active')
+CustomKeywords.'TestObjectHelper.setDropDownValue'('ui-dropdown--bulk_move_to_member_groups', GroupName)
 
 WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Apply Action Drawer/Apply Button'))
 
@@ -38,23 +38,25 @@ WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Apply Action Drawer/
 
 WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Success Banner Text Area'), 5)
 
-WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Roster Page/Success Banner Text Area'), 'Successfully Added Volunteer To Ministry')
+WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Roster Page/Success Banner Text Area'), 'Successfully added selected volunteers to the selected groups')
 
-WebUI.navigateToUrl("$GlobalVariable.HC_HostUrl/my-ministry/volunteers/members/$MinistryId/$CampusId")
+WebUI.navigateToUrl("$GlobalVariable.HC_HostUrl/my-ministry/settings/membership-settings/$MinistryId/$CampusId/")
 
-WebUI.click(findTestObject('HC-Web/Ministry/Members/Member Checkbox', [('memberName') : MemberName]))
+WebUI.click(findTestObject('HC-Web/Ministry/Settings Page/Group Actions Ellipsis Button', [('groupName') : GroupName]))
 
-WebUI.click(findTestObject('HC-Web/Ministry/Members/Actions Dropdown'))
+WebUI.click(findTestObject('HC-Web/Ministry/Settings Page/Manage Group Option'))
 
-WebUI.click(findTestObject('HC-Web/Ministry/Members/Remove From Ministry Option'))
+WebUI.click(findTestObject('HC-Web/Ministry/Settings Page/Group Settings Drawer/Member Checkbox', [('memberName') : MemberFirstName]))
 
-WebUI.click(findTestObject('HC-Web/Ministry/Members/Remove From Ministry Confirmation Yes Button'))
+WebUI.click(findTestObject('HC-Web/Ministry/Settings Page/Group Settings Drawer/Remove Button'))
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 10)
+WebUI.click(findTestObject('HC-Web/Ministry/Settings Page/Group Settings Drawer/Remove Confirmation Yes Button'))
 
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 5)
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Ministry/Settings Page/Group Settings Drawer/Member Checkbox', [('memberName') : MemberName]), 
+    10)
 
-WebUI.verifyTextNotPresent(MemberName, false)
+WebUI.verifyElementNotPresent(findTestObject('HC-Web/Ministry/Settings Page/Group Settings Drawer/Member Checkbox', [('memberName') : MemberName]), 
+    10)
 
 WebUI.closeBrowser()
 

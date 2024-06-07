@@ -184,4 +184,9 @@
       <initValue>'Children\'s Room 2'</initValue>
       <name>SO_ChildRoom_2</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2206'</initValue>
+      <name>MinistryId_SOTests</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

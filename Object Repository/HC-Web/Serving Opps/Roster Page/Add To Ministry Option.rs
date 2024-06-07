@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Checkbox</name>
+   <name>Add To Ministry Option</name>
    <tag></tag>
-   <elementGuidId>4194f872-dfd3-41ab-9249-1bf5cc9a9007</elementGuidId>
+   <elementGuidId>9ece113b-61af-4b30-87c4-131f05b51e7c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[normalize-space(text())='${memberName}']/ancestor::tr/descendant::div[@id='ui-schedule--grid-checkbox']/label/div</value>
+         <value>//div[@id='serving_opportunities--actions_add_to_ministry']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

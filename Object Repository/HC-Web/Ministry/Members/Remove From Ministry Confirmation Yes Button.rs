@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Checkbox</name>
+   <name>Remove From Ministry Confirmation Yes Button</name>
    <tag></tag>
-   <elementGuidId>4194f872-dfd3-41ab-9249-1bf5cc9a9007</elementGuidId>
+   <elementGuidId>907a4c8a-75d1-4b4c-a06d-60b00e0069a6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[normalize-space(text())='${memberName}']/ancestor::tr/descendant::div[@id='ui-schedule--grid-checkbox']/label/div</value>
+         <value>//button[@id='modal_prompt--confirm_action']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

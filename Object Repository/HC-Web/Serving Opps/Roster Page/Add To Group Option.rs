@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Checkbox</name>
+   <name>Add To Group Option</name>
    <tag></tag>
-   <elementGuidId>4194f872-dfd3-41ab-9249-1bf5cc9a9007</elementGuidId>
+   <elementGuidId>4c89be48-44f0-46ca-b45c-bf4d48cbda56</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[normalize-space(text())='${memberName}']/ancestor::tr/descendant::div[@id='ui-schedule--grid-checkbox']/label/div</value>
+         <value>//div[@id='serving_opportunities--actions_add_to_groups']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
