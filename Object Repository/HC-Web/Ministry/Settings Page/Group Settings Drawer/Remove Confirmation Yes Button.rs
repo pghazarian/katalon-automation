@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Member Checkbox</name>
+   <name>Remove Confirmation Yes Button</name>
    <tag></tag>
-   <elementGuidId>4194f872-dfd3-41ab-9249-1bf5cc9a9007</elementGuidId>
+   <elementGuidId>b1afaf5f-f5fd-4083-9af9-853c89ea457e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[normalize-space(text())='${memberName}']/ancestor::tr/descendant::div[@id='ui-schedule--grid-checkbox']/label/div</value>
+         <value>//a[contains(@class,'btn-yes')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
