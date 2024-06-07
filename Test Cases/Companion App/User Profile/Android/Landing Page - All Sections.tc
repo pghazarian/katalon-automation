@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Master TC to test CA Profile page, with all of its sections &#xd;
-For all the PBIs under &quot;CA Sprint 1&quot; sprint of Team Mandalorian</description>
+   <description>Master TC to test CA User Profile page, with all of its sections, buttons, &amp; tiles&#xd;
+Note: TC will cover the main asks in the requirements for all the PBIs under &quot;CA Sprints 1 &amp; 2 &quot;  of Team Mandalorian boards backlog</description>
    <name>Landing Page - All Sections</name>
    <tag></tag>
    <comment></comment>

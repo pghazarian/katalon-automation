@@ -89,5 +89,15 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 
 WebUI.delay(3)
 
+'My Notes Tile '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Notes Tile'), 0)
+
+WebUI.delay(3)
+
+'Back chevron "<" Icon, to the left of the Profile text top left '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+
+WebUI.delay(5)
+
 Mobile.closeApplication()
 
