@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry</name>
+   <name>Anaheim</name>
    <tag></tag>
-   <elementGuidId>df027eb8-f2f6-4b1b-94d0-24639a51ce70</elementGuidId>
+   <elementGuidId>15527613-2e50-4e55-96a9-5c6cd06cbcb1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-list--events-this-week-item</locator>
+   <locator>ui-campuses-filter--item-Anaheim</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry</name>
+   <name>First Series</name>
    <tag></tag>
-   <elementGuidId>df027eb8-f2f6-4b1b-94d0-24639a51ce70</elementGuidId>
+   <elementGuidId>b3b4850f-16d3-458f-923f-ce60652d3873</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-list--events-this-week-item</locator>
+   <locator>ui-series-filter--item-62</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry</name>
+   <name>Sort And Filter</name>
    <tag></tag>
-   <elementGuidId>df027eb8-f2f6-4b1b-94d0-24639a51ce70</elementGuidId>
+   <elementGuidId>b11af802-9e18-4150-b3f2-453b96cbe451</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-list--events-this-week-item</locator>
+   <locator>pressable-right_filter_action</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
