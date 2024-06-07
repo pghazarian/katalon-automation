@@ -11,10 +11,11 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.ui.prompt.jss494.jss836.prompt-show.prompt-inline > div.prompt-actions.jss493 > div.prompt-yes-btn</value>
+         <value>div.ui.prompt.jss498.jss1185.prompt-show.prompt-inline > div.prompt-actions.jss497 > div.prompt-yes-btn</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>d84bb469-3457-49d0-8499-072900118968</webElementGuid>
+      <webElementGuid>788e2873-4fb7-4734-9fc7-1e2f0fc731b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>prompt-yes-btn</value>
-      <webElementGuid>2e4d42fa-78b3-4262-8c78-efa87abf4b23</webElementGuid>
+      <webElementGuid>c2443704-6766-4f4e-b780-fe36db4f2815</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +39,7 @@
       <name>role</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>6c200467-718f-459d-960b-a85a33f8d81d</webElementGuid>
+      <webElementGuid>21bda9fd-6716-4384-b0aa-dd7702413a10</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +47,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>78bd1713-4d56-45e2-872f-1401ad84f322</webElementGuid>
+      <webElementGuid>2d10f641-b9de-4f74-8f12-0096fd7dba59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,15 +55,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Yes</value>
-      <webElementGuid>3783cf81-1c9f-46b6-9a09-76421be98407</webElementGuid>
+      <webElementGuid>c5ee7cd0-4cee-4837-b6ef-333c8c6aa45d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;people_search_drawer--results&quot;)/div[@class=&quot;jss792 jss787 cmui person_panel&quot;]/div[@class=&quot;jss819 jss785 jss790 cmui person_panel--details jss817&quot;]/div[@class=&quot;MuiCollapse-root MuiCollapse-entered&quot;]/div[@class=&quot;MuiCollapse-wrapper&quot;]/div[@class=&quot;MuiCollapse-wrapperInner&quot;]/div[@class=&quot;jss816&quot;]/div[@class=&quot;jss814&quot;]/div[@class=&quot;ui prompt jss494 jss836 prompt-show prompt-inline&quot;]/div[@class=&quot;prompt-actions jss493&quot;]/div[@class=&quot;prompt-yes-btn&quot;]</value>
-      <webElementGuid>f685f3b3-6e34-4ae7-897f-5874795ddc62</webElementGuid>
+      <value>id(&quot;people_search_drawer--results&quot;)/div[@class=&quot;jss1141 jss1136 cmui person_panel&quot;]/div[@class=&quot;jss1168 jss1134 jss1139 cmui person_panel--details jss1166&quot;]/div[@class=&quot;MuiCollapse-root MuiCollapse-entered&quot;]/div[@class=&quot;MuiCollapse-wrapper&quot;]/div[@class=&quot;MuiCollapse-wrapperInner&quot;]/div[@class=&quot;jss1165&quot;]/div[@class=&quot;jss1163&quot;]/div[@class=&quot;ui prompt jss498 jss1185 prompt-show prompt-inline&quot;]/div[@class=&quot;prompt-actions jss497&quot;]/div[@class=&quot;prompt-yes-btn&quot;]</value>
+      <webElementGuid>08f77155-9506-4cd4-97a1-d15bfc7f4357</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +71,39 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='people_search_drawer--results']/div/div[2]/div/div/div/div/div[3]/div/div[2]/div[2]</value>
-      <webElementGuid>018884ee-1bca-474b-b299-04b1de250fdb</webElementGuid>
+      <webElementGuid>53201338-3d04-4bff-a789-693aec91646e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Are you sure?'])[1]/following::div[1]</value>
+      <webElementGuid>bd77696e-5184-4b42-b843-8e5fa6999b4e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select'])[2]/following::div[3]</value>
+      <webElementGuid>e7e7847a-8fe2-414d-852b-018ae705ca28</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[2]/preceding::div[1]</value>
+      <webElementGuid>808294d3-6feb-4679-8531-1b8372dbff47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='View Record'])[1]/preceding::div[2]</value>
+      <webElementGuid>757b0aff-3d19-44a4-beb5-f5e0f6e1fbdb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +111,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/div[3]/div/div[2]/div[2]</value>
-      <webElementGuid>51aa3dc5-ba83-4ad7-8403-653235b903a9</webElementGuid>
+      <webElementGuid>25794b45-1fae-4ac5-954a-958c75d535a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +119,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Yes' or . = 'Yes')]</value>
-      <webElementGuid>81cf723f-1914-4a3a-9a41-6db0036d6a70</webElementGuid>
+      <webElementGuid>7c0e35a5-e83f-48b1-817d-cb2f3e704db8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -37,6 +37,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Con
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Person Entry Type Modal/Next Button'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
+    3)
+
 WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
     GlobalVariable.Follow_Up_Task_Person_First_Name)
 

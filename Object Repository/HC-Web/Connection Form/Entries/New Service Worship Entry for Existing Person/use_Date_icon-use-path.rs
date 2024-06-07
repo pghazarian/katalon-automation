@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>use_Date_icon-use-path</name>
+   <tag></tag>
+   <elementGuidId>3bfc9a0f-c901-429a-8bd7-e4cb897dd890</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.cmui.ui.icon.icon-calendar.icon-align-left.icon-clickable.icon-color-highlight.icon-compact > svg > g > use.icon-use-path</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>use</value>
+      <webElementGuid>2ef8a4d9-3566-455d-8a21-30746283b09d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-use-path</value>
+      <webElementGuid>03085dc4-f72e-4628-a27e-d74bcd629e0a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xlink:href</name>
+      <type>Main</type>
+      <value>#icon-svg-path-calendar-0340603173</value>
+      <webElementGuid>04959f8f-df00-443d-84f2-05f8e486545b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;worship_service_selector_modal--date_picker_input&quot;)/div[@class=&quot;date-picker-tether-target date-picker-tether-enabled date-picker-tether-abutted date-picker-tether-abutted-left date-picker-tether-element-attached-top date-picker-tether-element-attached-left date-picker-tether-target-attached-bottom date-picker-tether-target-attached-left&quot;]/div[@class=&quot;ui input input-icon input-focused input-type-text&quot;]/div[@class=&quot;input-actions&quot;]/div[@class=&quot;input-icon-custom&quot;]/button[@class=&quot;cmui ui icon icon-calendar icon-align-left icon-clickable icon-color-highlight icon-compact&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
+      <webElementGuid>76f953a1-6dc6-433d-b1ad-c7e146269c1a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

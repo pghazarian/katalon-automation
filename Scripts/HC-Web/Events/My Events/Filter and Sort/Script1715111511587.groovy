@@ -110,6 +110,8 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click free filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Free Filter'))
 
+WebUI.delay(5)
+
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)
 
@@ -127,7 +129,7 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/BreadcrumbText1'))
 'Click required registration filter'
 WebUI.click(findTestObject('HC-Web/Event/Search/Filters and Sorting/Registration Required Filter'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 'Open first event in list'
 WebUI.click(findTestObject('HC-Web/Event/Search/SearchResultsFirstRowTitle'), FailureHandling.STOP_ON_FAILURE)

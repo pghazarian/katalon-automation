@@ -108,10 +108,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Active Tab Bu
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups Unclaimed/QA Automation Follow Up Rule Task List Item'))
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', 
-        [('textToMatch') : FollowUpTaskPersonName]), 5)
+        [('textToMatch') : FollowUpTaskPersonName]), 10)
 
 'Select follow ups record by person name to open drawer'
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', [('textToMatch') : FollowUpTaskPersonName]))

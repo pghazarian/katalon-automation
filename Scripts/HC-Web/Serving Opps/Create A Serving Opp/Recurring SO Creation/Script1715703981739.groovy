@@ -19,30 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/ministries-central'], FailureHandling.STOP_ON_FAILURE)
-
-'Search for ministry used for SO'
-WebUI.setText(findTestObject('HC-Web/Ministry/Search/Search Input'), 'Event SO Test')
-
-WebUI.sendKeys(findTestObject('HC-Web/Ministry/Search/Search Input'), Keys.chord(Keys.ENTER))
-
-'Open ministry'
-WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Search/Event SO Test Ministry'))
-
-'Select Anaheim campus'
-WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Search/Selected Ministry Drawer/Anaheim Campus Option'))
-
-'View ministry dashboard'
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Ministry/Search/Selected Ministry Drawer/View Dashboard Button'), 
-    2)
-
-'View ministry dashboard'
-WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Search/Selected Ministry Drawer/View Dashboard Button'))
-
-'Navigate to serving opps'
-WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/Serving Opps Tab'))
-
-WebUI.delay(3)
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/serving-opportunities/$MinistryId/$CampusId"], 
+    FailureHandling.STOP_ON_FAILURE)
 
 'Click button to create new SO'
 WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/New Opportunity Button'))
@@ -121,6 +99,10 @@ try {
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/When and Where Next Section Chevron Button'))
 
     'Enter volunteer capacity'
+    WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Volunteer Capacity Text Field'), 
+        5)
+
+    'Enter volunteer capacity'
     WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Volunteer Capacity Text Field'), 
         '10')
 
@@ -189,6 +171,12 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving
 'Save SO'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Save Button'))
 
+'If banner appears asking if SO should be published, click no'
+if (WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Publish Opportunity No Button'), 
+    3)) {
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Publish Opportunity No Button'))
+}
+
 'Navigate to SO tab'
 WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/Serving Opps Tab'))
 
@@ -239,6 +227,10 @@ WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'))
 
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'))
+
+if(WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Missing Requirements Modal Yes Button'), 3)) {
+	WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Missing Requirements Modal Yes Button'))
+}
 
 'Click required custom question checkbox'
 WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Question Checkbox'), 

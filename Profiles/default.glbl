@@ -149,4 +149,14 @@
       <initValue>'sanchita@optimumfuturist.com'</initValue>
       <name>KatalonLicenseEmailsPacificOff</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'RN'</initValue>
+      <name>FollowUp_RuleName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Test Paren'</initValue>
+      <name>FollowUp_TaskName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
