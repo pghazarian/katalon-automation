@@ -45,6 +45,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/Select the 3rd of the month'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/Service Time drop down menu'))
+CustomKeywords.'FormHelper.setDropDownValue'('Service Time', 'PDT')
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Service Worship Entry for Existing Person/5 AM Service'))
+WebUI.click(findTestObject('HC-Web/Connection Form/Entries/Add Entry Drawer/Apply Button'))
+

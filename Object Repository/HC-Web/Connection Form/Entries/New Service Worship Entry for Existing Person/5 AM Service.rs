@@ -6,12 +6,12 @@
    <elementGuidId>a563240d-055b-4439-a936-4c7d77bfecc2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='react-select-10--value']/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#react-select-10--value > div.Select-value</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(text(),'PDT')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>511286bb-b359-431b-ada5-a7d2107188d4</webElementGuid>
+      <webElementGuid>3cd722f9-dd8c-4258-b0cf-bc5b4ee78fb6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>4b20885b-7672-45be-8d51-ccb38f15ada6</webElementGuid>
+      <webElementGuid>35169848-d497-4918-bc28-144914efad3b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Select-value</value>
-      <webElementGuid>d95d2b6b-f363-4f7d-8464-b667b37c18a8</webElementGuid>
+      <webElementGuid>8410e69b-cdc6-48c9-88d1-b63c286f78e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>45505d97-4a38-421f-a809-383986a14b8f</webElementGuid>
+      <webElementGuid>7ac41269-82f9-47b4-bb22-d162c3e2c628</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>2729bad2-9c35-422c-8ac9-c43b1d4532d6</webElementGuid>
+      <webElementGuid>1b26ca95-4ed7-4c55-8bdc-dd440de2ff57</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>text</name>
       <type>Main</type>
       <value>06/03/2024 5:00 AM PDT</value>
-      <webElementGuid>4b2a60d2-256c-4392-afc8-cf08b014860e</webElementGuid>
+      <webElementGuid>3f6f1e69-df4b-40ee-bc22-14716a3be47a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;react-select-10--value&quot;)/div[@class=&quot;Select-value&quot;]</value>
-      <webElementGuid>d9582510-0b0a-4068-b092-cc5ff1005a69</webElementGuid>
+      <webElementGuid>68a1feb1-6018-47b2-b3bc-91f5fce7da4c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='react-select-10--value']/div</value>
-      <webElementGuid>78fbe071-2799-431c-8fef-f030b85fc115</webElementGuid>
+      <webElementGuid>8ffc7d1c-f68b-4c85-9e2e-67bb1daf3d5c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Service Time'])[2]/following::div[15]</value>
-      <webElementGuid>0cdec4ec-84f9-403b-a04a-f871461a53e9</webElementGuid>
+      <webElementGuid>ec76bde3-90c4-4799-ba53-46f0e28d9db2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::div[19]</value>
-      <webElementGuid>bd931961-4969-411e-9b6c-fd07f46a30a1</webElementGuid>
+      <webElementGuid>bc3f785f-e9b6-41b6-93ca-c151a9454504</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::div[18]</value>
-      <webElementGuid>e2d9115b-f338-4652-bd42-16dc0415e78d</webElementGuid>
+      <webElementGuid>c8d5e27a-e75d-4b99-80f4-c0a3ca341a80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[1]/preceding::div[18]</value>
-      <webElementGuid>8c429e14-730e-4144-83e6-554fac345a15</webElementGuid>
+      <webElementGuid>5c031e3c-0847-46e7-93c2-9cc9f3baf633</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +119,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/div/div/div[2]/div/div/div[2]/div/div</value>
-      <webElementGuid>bbacf70e-fd1e-4eab-b362-90b58e3ffad4</webElementGuid>
+      <webElementGuid>c9d364fa-a970-4f9b-a324-4f43c26487d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +127,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = '06/03/2024 5:00 AM PDT' or . = '06/03/2024 5:00 AM PDT')]</value>
-      <webElementGuid>f0e172f8-88e3-471a-8323-d33546127a5d</webElementGuid>
+      <webElementGuid>7896ddac-e0e5-4ba8-9747-488abc3437d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,7 +135,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='react-select-6--list']/div/div/div/div)[5]</value>
-      <webElementGuid>b579cf4c-96e5-47f3-b98b-0616d7e1d2e7</webElementGuid>
+      <webElementGuid>2b25f852-d05f-4d5e-a362-80b628f6c172</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -143,7 +143,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::div[25]</value>
-      <webElementGuid>8d8f58fc-db4f-4e22-8594-f3638acc019e</webElementGuid>
+      <webElementGuid>d6fcf43f-3a92-4a1c-bda1-0d7361ef3b95</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -151,7 +151,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::div[6]</value>
-      <webElementGuid>3e182bf4-7fbd-4213-b734-e70f8a1bccd8</webElementGuid>
+      <webElementGuid>2c042c53-747f-4781-a575-5b9ad8ede49c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -159,7 +159,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[1]/preceding::div[6]</value>
-      <webElementGuid>c0a4565d-7855-4c49-aa9c-587f2baf32f7</webElementGuid>
+      <webElementGuid>bda2dfbb-0b55-441b-912f-b0514001f3e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -167,6 +167,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div[3]/div/div/div/div/div</value>
-      <webElementGuid>6db0988f-fb38-4f4f-a49d-9283c92a0192</webElementGuid>
+      <webElementGuid>4e4aef7f-9c5b-4932-a62d-c286bb6cde5d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
