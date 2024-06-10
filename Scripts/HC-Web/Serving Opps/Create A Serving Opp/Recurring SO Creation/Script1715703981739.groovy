@@ -223,13 +223,16 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedu
 WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'), 
     2)
 
+WebUI.scrollToPosition(0, 1300)
+
 'Confirm selection'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'))
 
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'))
 
-if(WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Missing Requirements Modal Yes Button'), 3)) {
-	WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Missing Requirements Modal Yes Button'))
+if (WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Missing Requirements Modal Yes Button'), 
+    3)) {
+    WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Missing Requirements Modal Yes Button'))
 }
 
 'Click required custom question checkbox'
