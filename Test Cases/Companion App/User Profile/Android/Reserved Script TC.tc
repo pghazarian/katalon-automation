@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Reserved Script TC - for all New CA &quot;User&quot; Profile PBIs under T.M. CA Sprint 2 board</description>
-   <name>Reserved Script TC</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9440b7a7-41c6-4934-b6f1-cfd4cead5ac6</testCaseGuid>
-</TestCaseEntity>

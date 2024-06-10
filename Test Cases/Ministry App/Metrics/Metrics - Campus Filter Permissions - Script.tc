@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Product Backlog Item 109145: Metrics - Trend Reports - Filter by Campus Permissions</description>
-   <name>Metrics - Campus Filter Permissions - Script</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4109710a-3436-44cf-8261-28e51e955b22</testCaseGuid>
-</TestCaseEntity>
