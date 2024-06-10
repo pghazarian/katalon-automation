@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers PBI 110659: [Global Ministry App - Notifications] - Notification Badges for iOS Devices&#xd;
+&#xd;
+You must run the following HC-Web TCs first as prerequisites&#xd;
+&#xd;
+1Master TC - Functionality of Notifications (after adding a new TC for Immediate PN) &#xd;
+&#xd;
+Add an Entry to a Connection Form</description>
+   <name>Notification Badges for iOS Devices</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>383d6964-d887-4511-a41d-8e9689462bd5</testCaseGuid>
+</TestCaseEntity>

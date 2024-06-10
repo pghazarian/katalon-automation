@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Ability to have an area in the Ministry App to manage account settings.&#xd;
-So I can set behaviors in my app the way I want them</description>
+So I can set behaviors in my app the way I want them&#xd;
+This is the TC where I've used Cris' - Studio Assist > Generate Code  (After right clicking on the comments in the Script tab of TC)&#xd;
+Needs Objects</description>
    <name>Acct Settings - Profile and Notifications - Needs Objects</name>
    <tag></tag>
    <comment></comment>
