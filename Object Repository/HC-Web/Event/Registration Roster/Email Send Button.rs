@@ -6,12 +6,11 @@
    <elementGuidId>f7d5661f-5214-4737-a7b0-bf5f626bd6d0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[text()='Send']/ancestor::button[not(@disabled)]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[text()='Send']/ancestor::button</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

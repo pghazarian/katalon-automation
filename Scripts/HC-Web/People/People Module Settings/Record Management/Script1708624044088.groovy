@@ -24,8 +24,8 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 'Search for a person record in audit logs'
 WebUI.setText(findTestObject('HC-Web/Person/Record Management/Audit Logs/Search Bar'), AuditLogName + Keys.ENTER)
 
-'Click on the first search result'
-WebUI.click(findTestObject('HC-Web/Person/Record Management/Audit Logs/Search Result Rows'))
+'Click on the search result with a matching name'
+WebUI.click(findTestObject('HC-Web/Person/Record Management/Audit Logs/Search Result Row', [('SearchName') : AuditLogName]))
 
 'Verify that the audit log displays the person\'s name'
 WebUI.verifyTextPresent(AuditLogName, false)

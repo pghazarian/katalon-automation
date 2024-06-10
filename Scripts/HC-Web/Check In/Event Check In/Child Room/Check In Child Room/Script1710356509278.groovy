@@ -127,10 +127,13 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Check In/Checkout Con
 WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Check In/Attendee Names', [('AttendeeName') : ChildName]), 3)
 
 'Close space'
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Close Space Button'), 2)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Circular Loader Icon'), 3)
 
 'Close space'
-WebUI.waitForElementClickable(findTestObject('HC-Web/Event/Check In/Close Space Button'), 2)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Circular Loader Icon'), 3)
+
+'Close space'
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Close space'
 WebUI.click(findTestObject('HC-Web/Event/Check In/Close Space Button'))

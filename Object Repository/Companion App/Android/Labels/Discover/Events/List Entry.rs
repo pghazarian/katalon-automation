@@ -3,8 +3,9 @@
    <description></description>
    <name>List Entry</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>df027eb8-f2f6-4b1b-94d0-24639a51ce70</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-list--events-this-week-item</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

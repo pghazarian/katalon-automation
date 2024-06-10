@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='occurrence_schedule--roster_actions_dropdown_button' and not(@disabled)]</value>
+         <value>//div[@id='occurrence_schedule--roster_actions_dropdown_button' and not(contains(@class, 'dropdown-disable'))]</value>
       </entry>
       <entry>
          <key>BASIC</key>

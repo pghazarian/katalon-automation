@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Updating the Digital program details like Name of the service, series, Media ID or Speaker as needed</description>
+   <name>Edit a Digital Program Details</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4f3b7fea-7376-4680-9323-fb1f58d27b8b</testCaseGuid>
+</TestCaseEntity>
