@@ -39,9 +39,6 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus - chevr
 'To select Anaheim campus '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Anaheim Campus'), 0)
 
-'To go back to the main Filters screen '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Back button'), 0)
-
 Mobile.tap(findTestObject('Ministry App/Metrics/Campus selections screen - Back button'), 0)
 
 'To return Search results\r\n\t\t'

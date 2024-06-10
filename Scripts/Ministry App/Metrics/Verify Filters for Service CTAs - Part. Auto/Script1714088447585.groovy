@@ -37,9 +37,7 @@ Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus - chevr
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Anaheim Campus'), 0)
 
 'Back Button '
-Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Back button'), 0)
-
-Mobile.tap(findTestObject('Ministry App/Metrics/Campus selections screen - Back button'), 0)
+Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Campus selections screen - Back button'), 0)
 
 'Search button '
 Mobile.tap(findTestObject('Object Repository/Ministry App/Metrics/Search button'), 0)

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_chevron-wl-right</name>
+   <tag></tag>
+   <elementGuidId>3bf20c81-924b-4f8a-9f9a-d2b69de06a51</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div/main/div/section/div/table/tbody/tr/td[6]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.table-cell.table-cell-hide.table-cell-mobile-medium-show</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=&quot;FilterClear SearchemailEmailplusAdd UserAccount StatusActiveInactivecheckIDLast &quot;i >> nth=3</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>86b8afdf-54bf-4031-84a7-0f6aafea4848</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>table-cell table-cell-hide table-cell-mobile-medium-show</value>
+      <webElementGuid>eabf9cbe-994b-46e7-95d5-bcc9a6fcb759</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>chevron-wl-right</value>
+      <webElementGuid>7670a677-4a2d-4826-b0df-0245582da9dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss302 jss305 user-search system_users jss300 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss311 ui page--container jss310&quot;]/section[@class=&quot;cmui content jss338 ui page--content jss337&quot;]/div[1]/table[@class=&quot;ui jss340 table table-basic table-font-size-xsmall table-selectable table-stretch-very&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell table-cell-hide table-cell-mobile-medium-show&quot;]</value>
+      <webElementGuid>a7bfa06f-3596-4503-a63b-a759c8f5e2d2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/div/section/div/table/tbody/tr/td[6]</value>
+      <webElementGuid>417ad632-5345-473d-931b-f307ba30b0bb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anaheim'])[1]/following::td[1]</value>
+      <webElementGuid>48b0f970-8a2d-4419-acbe-e8a8f9e99346</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ravinder.kumar@technossus.com'])[1]/following::td[2]</value>
+      <webElementGuid>4bdeb361-e6bc-49a4-afd8-d0475af0f955</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='System'])[3]/preceding::td[1]</value>
+      <webElementGuid>bd99148c-93eb-40d7-8144-d78a6ce2c4bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='How do I add a new campus to my church?'])[1]/preceding::td[1]</value>
+      <webElementGuid>2482f9f6-c018-402d-a3c3-d71a470335fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[6]</value>
+      <webElementGuid>27624d9c-eaf4-47b3-bd25-6b2ea7711e9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'chevron-wl-right' or . = 'chevron-wl-right')]</value>
+      <webElementGuid>0d075b04-1eb5-4d0d-b4fc-464cfd8fa674</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
