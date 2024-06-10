@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Adding an Entry to a Form which is setup with Worship Service</description>
    <name>Add an Entry to a Connection Form - TC needs work</name>
    <tag></tag>
    <comment></comment>

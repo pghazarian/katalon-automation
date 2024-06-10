@@ -3,9 +3,9 @@
    <description></description>
    <name>Search</name>
    <tag></tag>
-   <elementGuidId>147dd9af-292c-4dfe-9b62-8722521e2161</elementGuidId>
+   <elementGuidId>011327fb-7054-424b-97c6-38ebbeeafc20</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-header--journey_search_text</locator>
+   <locator>ui-header--events_search_text</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

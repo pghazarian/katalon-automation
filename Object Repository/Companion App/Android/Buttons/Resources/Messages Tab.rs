@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry</name>
+   <name>Messages Tab</name>
    <tag></tag>
-   <elementGuidId>df027eb8-f2f6-4b1b-94d0-24639a51ce70</elementGuidId>
+   <elementGuidId>9730c031-a3cb-4adf-a527-98736defa2bf</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-list--events-this-week-item</locator>
+   <locator>ui-upper_nav-Messages</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
