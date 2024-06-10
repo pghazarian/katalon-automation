@@ -3,14 +3,15 @@
    <description></description>
    <name>Member Checkbox</name>
    <tag></tag>
-   <elementGuidId>4194f872-dfd3-41ab-9249-1bf5cc9a9007</elementGuidId>
+   <elementGuidId>53fe82a3-03f3-45d8-a053-d8477a186a7d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[normalize-space(text())='${memberName}']/ancestor::tr/descendant::div[@id='ui-schedule--grid-checkbox']/label/div</value>
+         <value>//div[normalize-space(text())='${memberName}']/ancestor::tr/descendant::div[contains(@class,'icon-check')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
