@@ -75,22 +75,22 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 CustomKeywords.'NavigationHelper.goToHCUrl'(GlobalVariable.ConnectionForm_FollowJesus)
 
 'Click on the Entries menu'
-WebUI.click(findTestObject('HC-Web/Connection Form/SubNav/Entries'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/SubNav/Entries'))
 
 //TODO: update this to search for the entry by name
 'Open an entry'
-WebUI.click(findTestObject('HC-Web/Connection Form/Entries/FirstRow'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/FirstRow'))
 
 'Verify the first name field value'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/FirstNameTextField'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/FirstNameTextField'),
 	FirstName)
 
 'Verify the last name'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/LastNameTextField'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/LastNameTextField'),
 	LastName)
 
 'Verify the email'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Connection Form/Entry/Email Text Field'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Email Text Field'),
 	Email)
 
 'Verify dropdown selection'
@@ -103,19 +103,19 @@ WebUI.verifyEqual(CustomKeywords.'FormHelper.getDropDownSelectionByLabel'('Campu
 CustomKeywords.'TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'FormHelper.getTextAreaByLabel'('Tell us a little about your story.'), Note)
 
 'Verify the phone'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('Object Repository/HC-Web/Connection Form/Entry/PhoneTextField'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/PhoneTextField'),
 	Phone)
 
 'Delete the form entry'
-WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/ActionsButton'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Actions/ActionsButton'))
 
-WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/DeleteEntry'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Actions/DeleteEntry'))
 
-WebUI.click(findTestObject('HC-Web/Connection Form/Entry/Actions/Confirmation/Yes'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Confirmation/Yes'))
 
 WebUI.delay(3)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Connection Form/Entries/EntriesHeader'), 3)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/EntriesHeader'), 3)
 
 
 
