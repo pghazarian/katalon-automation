@@ -36,6 +36,25 @@ import org.openqa.selenium.Keys as Keys
  * 7. 1a-If the user has events to check into within the next [TBD] days, the user will be taken to the Event Check In screen
  * 8. 1b-If the user has one or more children currently checked into an event, the user will be taken to the Event Check In screen, so they can check out their child
  * 9. 2- If neither of these are true, tapping this button will generate the full-length drawer with the user's QR code showing, so they can use it to Check In Events & SOs 
+ * 10. Additional Verification in the Check In Screen:
+ * 11. If the user taps on the "Check-In" button & has upcoming events or children currently checked into an event, the following elements should be displayed:
+ * 12. < Back button (user will go back to their profile home screen, when tapped on)
+ * 13. Title: Check-In
+ * 14. Gift Icon: Tapping on it will link out the user to the Giving page (placeholder for now)
+ * 15. Following Text should be displayed below the Check In Title: "Check in and out of weekend services, events, childcare, serving opps and more with ease."
+ * 16. Following Check-In Objects should also be displayed:
+ * 17. Quick Check In with:
+ * 18. Check in icon (always shown)
+ * 19. Text "Quick Check in"
+ * 20. Generates drawer with user's QR code when tapped on
+ * 21. Event Check In (if applicable)
+ * 22. Event icon
+ * 23. "Event Check In" category text, When tapped on the event check-in process initiates
+ * 24. Event title
+ * 25. "Checked-In" Status with green check mark circle icon (if checked in)
+ * 26. Child Check Out (if applicable)
+ * 27. "Child Check Out" category text, When tapped on the child check-out process initiates
+ * 28. Child name
  */
 
  
