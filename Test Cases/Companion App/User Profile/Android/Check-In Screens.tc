@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers the following PBIs:&#xd;
+Product Backlog Item 110595: [Companion App - Profile] - Main Screen - Check-In Logic&#xd;
+Product Backlog Item 110598: [Companion App - Profile] - Check-In Screen - Lift &amp; Shift&#xd;
+&#xd;
+Note: This is a Script TC, which will  need to be automated, once the feature is test ready</description>
+   <name>Check-In Screens</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5dc5f8cf-7412-4311-89cf-4a0dcdb2df5b</testCaseGuid>
+</TestCaseEntity>

@@ -18,7 +18,15 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /*
- * Prerequisite: User must have a valid account on ME app to use on the Companion App to login
+ * Prerequisites: 
+ * - User must have a valid account on ME app to use on the Companion App to login
+ * - Verify a lift-and-shift effort has been completed (PBI 110598) from the ME App to the Companion App to support the following functionality:
+ *   Display link that generates users QR code in a full-sized drawer open from the bottom
+ *   Display upcoming events for the user that can be checked into
+ * 	 Display events where the user's child(ren) are currently checked in
+ * 	 Display the user's QR Code when that item is tapped
+ * 
+ *  
  * 1. Download and Open the Companion App (CA) from the home screen of the device
  * 2. Login
  * 3. Tap on user profile web avatar icon in the bottom of the main landing page of CA
