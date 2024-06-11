@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Covers Product Backlog Item 110593: [Companion App - Profile] - Main Screen - Language Selection&#xd;
 &#xd;
-Note: TC needs to be automated</description>
+Note: This is a Script TC, which will  need to be automated, once the feature is test ready</description>
    <name>Language Selection Page</name>
    <tag></tag>
    <comment></comment>
