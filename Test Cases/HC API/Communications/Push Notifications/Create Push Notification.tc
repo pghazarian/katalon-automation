@@ -9,78 +9,13 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>49a147ac-f4b5-4c2b-a796-a45e5f5b2d74</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>6a63f520-c3c0-4c12-943b-ddaf44ddded4</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>6cdbaa00-ac31-4322-8a5d-6ffd8bec8807</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>1d59c2a3-bdd3-450c-8204-342f3573d641</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>505e3a75-538a-44af-a9a9-20c8e013fd4d</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>8d45fe2a-13ed-4bfa-ac0b-a81b3fba7617</variableId>
+      <variableId>0ebe4dc9-1213-4a64-af4c-cf099ffc8128</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'AllDevices'</defaultValue>
+      <defaultValue>'ST Push Notification'</defaultValue>
       <description></description>
-      <id>49a147ac-f4b5-4c2b-a796-a45e5f5b2d74</id>
+      <id>0ebe4dc9-1213-4a64-af4c-cf099ffc8128</id>
       <masked>false</masked>
-      <name>AudienceType</name>
-   </variable>
-   <variable>
-      <defaultValue>'10'</defaultValue>
-      <description></description>
-      <id>6a63f520-c3c0-4c12-943b-ddaf44ddded4</id>
-      <masked>false</masked>
-      <name>ChurchEntityID</name>
-   </variable>
-   <variable>
-      <defaultValue>'1'</defaultValue>
-      <description></description>
-      <id>6cdbaa00-ac31-4322-8a5d-6ffd8bec8807</id>
-      <masked>false</masked>
-      <name>CommunicationCategoryId</name>
-   </variable>
-   <variable>
-      <defaultValue>'ST Push Notification 1 Description'</defaultValue>
-      <description></description>
-      <id>1d59c2a3-bdd3-450c-8204-342f3573d641</id>
-      <masked>false</masked>
-      <name>Description</name>
-   </variable>
-   <variable>
-      <defaultValue>'ST Push Notification 1'</defaultValue>
-      <description></description>
-      <id>505e3a75-538a-44af-a9a9-20c8e013fd4d</id>
-      <masked>false</masked>
-      <name>Name</name>
-   </variable>
-   <variable>
-      <defaultValue>true</defaultValue>
-      <description></description>
-      <id>8d45fe2a-13ed-4bfa-ac0b-a81b3fba7617</id>
-      <masked>false</masked>
-      <name>SendPush</name>
+      <name>PNName</name>
    </variable>
 </TestCaseEntity>

@@ -12,7 +12,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;audienceType\&quot;: \&quot;Segment\&quot;,\n  \&quot;campusIds\&quot;: [],\n  \&quot;communicationCategoryId\&quot;: 1,\n  \&quot;ctaApplicationType\&quot;: \&quot;HealthyChurch\&quot;,\n  \&quot;description\&quot;: \&quot;ST Push Notification - 2024-05-20 19:01:29 Description Edited\&quot;,\n  \&quot;id\&quot;: 16,\n  \&quot;name\&quot;: \&quot;ST Push Notification - 2024-05-20 19:01:29 Edited\&quot;,\n  \&quot;isActive\&quot;: true,\n  \&quot;templateValue\&quot;: \&quot;Template Value\&quot;,\n  \&quot;segmentIds\&quot;: [],\n  \&quot;sendEmail\&quot;: true,\n  \&quot;sendPush\&quot;: true,\n  \&quot;sendSms\&quot;: true,\n  \&quot;tagIds\&quot;: [\n    1\n  ],\n  \&quot;targetApplicationType\&quot;: \&quot;HealthyChurch\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;audienceType\&quot;: \&quot;Segment\&quot;,\n  \&quot;campusIds\&quot;: [],\n  \&quot;communicationCategoryId\&quot;: 1,\n  \&quot;communicationTemplateId\&quot;: 1284,\n  \&quot;ctaApplicationType\&quot;: null,\n  \&quot;description\&quot;: \&quot;ST Communication - 2024-06-11 13:32:55 Description Edited\&quot;,\n  \&quot;emailFromId\&quot;: 6,\n  \&quot;emailReplyToId\&quot;: 6,\n  \&quot;emailFromDislayName\&quot;: \&quot;Display Name\&quot;,\n  \&quot;id\&quot;: 85,\n  \&quot;isActive\&quot;: true,\n  \&quot;jobType\&quot;: \&quot;Email\&quot;,\n  \&quot;layout\&quot;: \&quot;ST Communication - 2024-06-11 13:32:55\&quot;,\n  \&quot;name\&quot;: \&quot;ST Communication - 2024-06-11 13:32:55 Edited\&quot;,\n  \&quot;message\&quot;: \&quot;ST Communication - 2024-06-11 13:32:55\&quot;,\n  \&quot;scopedCampusId\&quot;: 10,\n  \&quot;segmentIds\&quot;: [],\n  \&quot;sendSms\&quot;: true,\n  \&quot;tagIds\&quot;: [],\n  \&quot;targetApplicationType\&quot;: \&quot;HealthyChurch\&quot;,\n  \&quot;subject\&quot;: \&quot;ST Communication - 2024-06-11 13:32:55\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;text/plain&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -48,7 +48,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'16'</defaultValue>
+      <defaultValue>'85'</defaultValue>
       <description></description>
       <id>9ba27f06-c6fe-41b1-9b89-f912a8160270</id>
       <masked>false</masked>
@@ -66,6 +66,10 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyResponseStatusCode(response, 200)
+
+assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

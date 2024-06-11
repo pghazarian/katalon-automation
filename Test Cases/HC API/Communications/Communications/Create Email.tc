@@ -9,78 +9,13 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8647b08a-715c-414f-92b9-93e4ac390938</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>3f5e3d7e-7834-4b12-a27c-d755cdff91c4</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>bca81544-cbd7-4762-aaf7-8b22666eb666</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>5128e467-a9dc-4855-b4e4-02c13898ce91</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>9358e9e4-39f6-4653-b579-c66fdbfcfceb</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>7634502b-7bd5-45be-94cb-71dff42d61c2</variableId>
+      <variableId>e79146e0-ca9e-4697-8cdb-0f0391432649</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'AllDevices'</defaultValue>
+      <defaultValue>'ST Communication'</defaultValue>
       <description></description>
-      <id>8647b08a-715c-414f-92b9-93e4ac390938</id>
+      <id>e79146e0-ca9e-4697-8cdb-0f0391432649</id>
       <masked>false</masked>
-      <name>AudienceType</name>
-   </variable>
-   <variable>
-      <defaultValue>'10'</defaultValue>
-      <description></description>
-      <id>3f5e3d7e-7834-4b12-a27c-d755cdff91c4</id>
-      <masked>false</masked>
-      <name>ChurchEntityID</name>
-   </variable>
-   <variable>
-      <defaultValue>'1'</defaultValue>
-      <description></description>
-      <id>bca81544-cbd7-4762-aaf7-8b22666eb666</id>
-      <masked>false</masked>
-      <name>CommunicationCategoryId</name>
-   </variable>
-   <variable>
-      <defaultValue>'ST Push Notification 1 Description'</defaultValue>
-      <description></description>
-      <id>5128e467-a9dc-4855-b4e4-02c13898ce91</id>
-      <masked>false</masked>
-      <name>Description</name>
-   </variable>
-   <variable>
-      <defaultValue>'ST Push Notification 1'</defaultValue>
-      <description></description>
-      <id>9358e9e4-39f6-4653-b579-c66fdbfcfceb</id>
-      <masked>false</masked>
-      <name>Name</name>
-   </variable>
-   <variable>
-      <defaultValue>true</defaultValue>
-      <description></description>
-      <id>7634502b-7bd5-45be-94cb-71dff42d61c2</id>
-      <masked>false</masked>
-      <name>SendEmail</name>
+      <name>CommName</name>
    </variable>
 </TestCaseEntity>

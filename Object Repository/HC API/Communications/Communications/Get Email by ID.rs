@@ -44,7 +44,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'58'</defaultValue>
+      <defaultValue>'85'</defaultValue>
       <description></description>
       <id>9ba27f06-c6fe-41b1-9b89-f912a8160270</id>
       <masked>false</masked>
@@ -75,8 +75,8 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'name', 'New Email Notification 1')
+WS.verifyElementPropertyValue(response, 'name', 'ST Communication - 2024-06-11 13:32:55')
 
-WS.verifyElementPropertyValue(response, 'id', '58')</verificationScript>
+WS.verifyElementPropertyValue(response, 'id', '85')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

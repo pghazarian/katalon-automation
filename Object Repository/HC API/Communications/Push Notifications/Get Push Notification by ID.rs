@@ -44,11 +44,18 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'7'</defaultValue>
+      <defaultValue>'78'</defaultValue>
       <description></description>
       <id>9ba27f06-c6fe-41b1-9b89-f912a8160270</id>
       <masked>false</masked>
       <name>JobId</name>
+   </variables>
+   <variables>
+      <defaultValue>'Push'</defaultValue>
+      <description></description>
+      <id>eb6264be-10a2-4c79-80c0-0a291ec210b6</id>
+      <masked>false</masked>
+      <name>JobType</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -68,8 +75,8 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'name', 'First Test Push Notification Template Edited')
+WS.verifyElementPropertyValue(response, 'name', 'ST Push Notification - 2024-05-20 19:01:29 Edited')
 
-WS.verifyElementPropertyValue(response, 'id', '7')</verificationScript>
+WS.verifyElementPropertyValue(response, 'id', '78')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

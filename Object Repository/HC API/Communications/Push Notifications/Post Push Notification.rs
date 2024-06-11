@@ -7,19 +7,23 @@
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;audienceType\&quot;: \&quot;Segment\&quot;,\n  \&quot;churchEntityId\&quot;: 10,\n  \&quot;communicationCategoryId\&quot;: 1,\n  \&quot;description\&quot;: \&quot;${PushNotificationName} Description\&quot;,\n  \&quot;name\&quot;: \&quot;${PushNotificationName}\&quot;,\n  \&quot;isActive\&quot;: true,\n  \&quot;sendEmail\&quot;: false,\n  \&quot;sendPush\&quot;: true,\n  \&quot;tagIds\&quot;: [\n    1\n  ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>cf2fc854-4688-4d85-94ca-e144941c28ea</webElementGuid>
+      <webElementGuid>fe06dc42-e66c-49e4-8542-4d435facfd9c</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -34,7 +38,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;ChurchEntityId=${ChurchEntityId}&amp;CommunicationCategoryId=${CommunicationCategoryId}&amp;Description=${Description}&amp;Name=${Name}&amp;SendPush=${SendPush}</restUrl>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -44,53 +48,11 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'Push'</defaultValue>
+      <defaultValue>'ST Push Notification Test'</defaultValue>
       <description></description>
-      <id>59d3499c-0a3e-416d-931f-df16ea1a752d</id>
+      <id>a0ace17e-fa56-4c1e-b362-2e559e9400ed</id>
       <masked>false</masked>
-      <name>JobType</name>
-   </variables>
-   <variables>
-      <defaultValue>'AllDevices'</defaultValue>
-      <description></description>
-      <id>451c03f1-647b-43d1-9d61-2c542a6284d0</id>
-      <masked>false</masked>
-      <name>AudienceType</name>
-   </variables>
-   <variables>
-      <defaultValue>'10'</defaultValue>
-      <description></description>
-      <id>eb2ab66f-08a1-40d5-9439-cdd338232bd6</id>
-      <masked>false</masked>
-      <name>ChurchEntityId</name>
-   </variables>
-   <variables>
-      <defaultValue>'1'</defaultValue>
-      <description></description>
-      <id>6ac6e7e1-6c05-4c3c-ba73-47f9f7552cb2</id>
-      <masked>false</masked>
-      <name>CommunicationCategoryId</name>
-   </variables>
-   <variables>
-      <defaultValue>'New Push Notification 3 Description'</defaultValue>
-      <description></description>
-      <id>2ef0c2f9-d55d-4b58-a8e3-461271106e54</id>
-      <masked>false</masked>
-      <name>Description</name>
-   </variables>
-   <variables>
-      <defaultValue>'New Push Notification 3 '</defaultValue>
-      <description></description>
-      <id>96edda75-e2a0-458a-bdbb-aec5f3a96fcc</id>
-      <masked>false</masked>
-      <name>Name</name>
-   </variables>
-   <variables>
-      <defaultValue>true</defaultValue>
-      <description></description>
-      <id>ef4941fe-9603-4e84-8e6e-46b51e2df65e</id>
-      <masked>false</masked>
-      <name>SendPush</name>
+      <name>PushNotificationName</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -101,8 +63,6 @@ import com.kms.katalon.core.webservice.verification.WSResponseManager
 
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
-
-RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
