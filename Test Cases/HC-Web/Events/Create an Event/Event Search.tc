@@ -4,6 +4,7 @@
    <name>Event Search</name>
    <tag>QA,Dev,Stage,Smoke,Stage2,Production</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ce456e66-09e6-48fd-81d9-492ab400d213</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
