@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Digital Program Image Upload Save Button</name>
+   <tag></tag>
+   <elementGuidId>bedf8402-4aa6-47a5-8d58-a8e26425fee4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='image_uploader--next_stepper']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#image_uploader--next_stepper > span.button-inner-container.jss208</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>42e07e5c-4368-47a5-a8cc-28e123c77791</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss208</value>
+      <webElementGuid>c5a78ab0-f26f-4c1a-a4cd-10e95b26da27</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Done</value>
+      <webElementGuid>58a11f31-b9f2-46c5-bb53-fcdc405df686</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;image_uploader--next_stepper&quot;)/span[@class=&quot;button-inner-container jss208&quot;]</value>
+      <webElementGuid>42676891-a3ac-498d-9f2e-0fac04a7fab8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='image_uploader--next_stepper']/span</value>
+      <webElementGuid>be8a5e34-6739-47cf-9c3e-e01af1e20d52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/following::span[1]</value>
+      <webElementGuid>0fabaad6-b337-44ca-a1ba-7c3036fe4b6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/following::span[2]</value>
+      <webElementGuid>b67c6287-42d6-4cfb-89a5-e03579d8eac0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Done']/parent::*</value>
+      <webElementGuid>7f3d2ba8-0ca4-416f-a369-cb751b10395a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button[2]/span</value>
+      <webElementGuid>631120ad-002b-4124-a741-b65d95b4a33d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Done' or . = 'Done')]</value>
+      <webElementGuid>52932bf4-780a-44dd-87b3-711a90594c3a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
