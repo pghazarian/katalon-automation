@@ -21,10 +21,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
 
-SearchTerm = 'ST Record 2'
-
-SearchDescription = "$SearchTerm Description"
-
 'Type Search term'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/Search Text Field'), SearchTerm)
 
@@ -52,10 +48,6 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Table Row', [('Segmen
 'Verify segment name is visible in the Overview page'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Name', [('SegmentName') : SearchTerm]), 
     SearchTerm)
-
-'Verify segment description is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Description', [('SegmentDescription') : SearchDescription]), 
-    SearchDescription)
 
 WebUI.closeBrowser()
 

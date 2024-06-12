@@ -29,7 +29,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Fil
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'campuses\']/descendant::div[@class=\'Select-multi-value-wrapper\']', 
-    'Anaheim')
+    Campus)
 
 'Check Male under Gender'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Add Demographic Info/Gender Checkbox', 
@@ -73,7 +73,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Demographic 
 
 'Select grade from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'filters-grade-selector\']/descendant::div[@class=\'Select-control\']', 
-    'None')
+    Grade)
 
 'Click on icon to collapse Demographic'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Filters/Demographic Expand Collapse Icon'))
@@ -83,7 +83,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Filters/Milestones Ex
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@id=\'milestone-selector\']/descendant::div[@class=\'Select-multi-value-wrapper\']', 
-    'Accepted Christ')
+    Milestone)
 
 'Click on Complete under Select Milestone Status'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
@@ -120,8 +120,8 @@ WebUI.verifyElementPresent(findTestObject('HC-Web/Communications/Segments/Filter
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Filtered Segment'))
 
 'Verify the updated Target Campus value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Target Campus Value', 
-        [('TargetCampus') : 'Anaheim']), 'Anaheim')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Target Campus Value', [
+            ('TargetCampus') : 'Anaheim']), Campus)
 
 'Verify the updated Gender value'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Gender Value', [('Gender') : 'Male, Female']), 
@@ -136,12 +136,12 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
         [('MaritalStatus') : 'Divorced, Married, Single, Widowed']), 'Divorced, Married, Single, Widowed')
 
 'Verify the updated Children value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Children Value', 
-        [('Children') : 'None']), 'None')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Children Value', [('Children') : 'None']), 
+    Grade)
 
 'Verify Milestone/Status label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestone Label', [('Milestone') : 'Accepted Christ']), 
-    'Accepted Christ')
+    Milestone)
 
 'Verify default value of Milestone/Status is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'Complete']), 

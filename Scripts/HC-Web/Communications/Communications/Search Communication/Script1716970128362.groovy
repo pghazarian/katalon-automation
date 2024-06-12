@@ -21,10 +21,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/communication'], FailureHandling.STOP_ON_FAILURE)
 
-SearchTerm = 'ST Communication'
-
-SearchDescription = "$SearchTerm Description"
-
 'Type Search term'
 WebUI.setText(findTestObject('HC-Web/Communications/Communications/Search Text Field'), SearchTerm)
 

@@ -24,7 +24,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/M
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
-    'Accepted Christ')
+    FirstMilestone)
 
 'Click on Complete under Select Milestone Status'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
@@ -42,7 +42,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 
 'Verify Milestone/Status label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestone Label', [('Milestone') : 'Accepted Christ']), 
-    'Accepted Christ')
+    FirstMilestone)
 
 'Verify default value of Milestone/Status is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'Complete']), 
@@ -53,7 +53,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/M
 
 'Select milestone from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'milestone-selector\']/descendant::div[@class=\'Select-control\']', 
-    'Baptism')
+    SecondMilestone)
 
 'Click on Incomplete under Select Milestone Status'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Add Milestone/Milestone Status Radio Button', 
@@ -71,7 +71,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 
 'Verify Milestone/Status label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestone Label', [('Milestone') : 'Baptism']), 
-    'Baptism')
+    SecondMilestone)
 
 'Verify default value of Milestone/Status is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestone Status', [('MilestoneStatus') : 'Incomplete']), 

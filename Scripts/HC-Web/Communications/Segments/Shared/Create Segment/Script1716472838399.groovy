@@ -31,14 +31,16 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Create Segment Button'))
 
 'Enter Segment name'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/Create Segment Record/Segment Name Input Field'), SegmentName)
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/Create Segment Record/Segment Name Input Field'), 
+    SegmentName)
 
 'Enter Segment description'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/Create Segment Record/Segment Description Text Area'), "$SegmentName Description")
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/Create Segment Record/Segment Description Text Area'), 
+    "$SegmentName Description")
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
-    'Anaheim')
+    Campus)
 
 'Click button to save a new segment'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Create Segment Record/Create Button'))
@@ -47,10 +49,8 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Cre
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Header'), 
-    'Segment record added')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Header'), 'Segment record added')
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Text'), 
-    'You’ve successfully created and linked a new record')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Text'), 'You’ve successfully created and linked a new record')
 

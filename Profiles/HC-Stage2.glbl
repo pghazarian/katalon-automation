@@ -119,4 +119,19 @@
       <initValue>'Room 222'</initValue>
       <name>SO_ChildRoom_2</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Push Notification 1'</initValue>
+      <name>PushNotifications_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Communication 1'</initValue>
+      <name>Communications_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Segment 1'</initValue>
+      <name>Segments_SearchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -40,7 +40,7 @@ WebUI.setText(findTestObject('HC-Web/Communications/Communications/Create New Co
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'communication_create--select_campus\']/descendant::div[@class=\'Select-control\']', 
-    'Anaheim')
+    Campus)
 
 'Click button to save a new communication'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Create New Communication/Save Button'))

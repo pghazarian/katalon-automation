@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8dad13e8-638c-4f24-8dd7-a19679120a31</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c165007c-57d5-42b0-a723-86c832ba1010</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9cdabef6-7fdf-4e7f-8481-ec4acbce1086</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Accepted Christ'</defaultValue>
+      <description></description>
+      <id>c165007c-57d5-42b0-a723-86c832ba1010</id>
+      <masked>false</masked>
+      <name>FirstMilestone</name>
+   </variable>
+   <variable>
+      <defaultValue>'Baptism'</defaultValue>
+      <description></description>
+      <id>9cdabef6-7fdf-4e7f-8481-ec4acbce1086</id>
+      <masked>false</masked>
+      <name>SecondMilestone</name>
+   </variable>
 </TestCaseEntity>

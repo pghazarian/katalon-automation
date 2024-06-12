@@ -21,8 +21,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
 
-SearchTerm = 'ST Record 1'
-
 EditSegmentName = (SearchTerm + ' Edited')
 
 EditSegmentDescription = (SearchTerm + ' Description Edited')
@@ -65,7 +63,7 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/O
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_primary_details_edit--church_campus\']/descendant::div[@class=\'Select-control\']', 
-    'Lake Forest')
+    CampusAfterUpdate)
 
 'Click button to save segment info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Save Button'))
@@ -74,8 +72,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Ove
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Updated Toast Text'), 
-    'Segment data updated successfully')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Updated Toast Text'), 'Segment data updated successfully')
 
 'Verify the updated segment name is visible in the Overview page'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Name', [('SegmentName') : EditSegmentName]), 
@@ -86,8 +83,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
     EditSegmentDescription)
 
 'Verify the updated segment campus is visible in the Overview page'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Campus', [('SegmentCampus') : "Lake Forest"]), 
-    'Lake Forest')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Campus', [('SegmentCampus') : 'Lake Forest']), 
+    CampusAfterUpdate)
 
 'Return to segment search'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Return To Segment Search Button'))
@@ -135,7 +132,7 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/O
 
 'Select original campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_primary_details_edit--church_campus\']/descendant::div[@class=\'Select-control\']', 
-    'Anaheim')
+    CampusBeforeUpdate)
 
 'Click button to save segment info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Save Button'))
@@ -144,8 +141,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Ove
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Updated Toast Text'), 
-    'Segment data updated successfully')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Updated Toast Text'), 'Segment data updated successfully')
 
 WebUI.closeBrowser()
 

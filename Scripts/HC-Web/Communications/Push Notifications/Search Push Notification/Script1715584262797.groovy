@@ -21,10 +21,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/push-notification'], FailureHandling.STOP_ON_FAILURE)
 
-SearchTerm = 'ST Push Notifications 1'
-
-SearchDescription = "$SearchTerm Description"
-
 'Type Search term'
 WebUI.setText(findTestObject('HC-Web/Communications/Push Notifications/Search Text Field'), SearchTerm)
 

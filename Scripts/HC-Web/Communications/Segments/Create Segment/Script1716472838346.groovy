@@ -40,7 +40,7 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/C
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'segment_create--church_campus\']/descendant::div[@class=\'Select-control\']', 
-    'Anaheim')
+    Campus)
 
 'Click button to save a new segment'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Create Segment Record/Create Button'))
@@ -49,12 +49,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Cre
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Header'), 
-    'Segment record added')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Header'), 'Segment record added')
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Text'), 
-    'You’ve successfully created and linked a new record')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Text'), 'You’ve successfully created and linked a new record')
 
 'Verify segment name is visible in the Overview page'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Name', [('SegmentName') : SegmentName]), 
@@ -66,7 +64,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 
 'Verify segment campus is visible in the Overview page'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Campus', [('SegmentCampus') : 'Anaheim']), 
-    'Anaheim')
+    Campus)
 
 'Verify default status of segment is visible in the Overview page'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Status', [('SegmentStatus') : 'Inactive']), 
@@ -85,8 +83,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
     'Target Campus')
 
 'Verify default value of Target Campus is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Target Campus Value', 
-        [('TargetCampus') : 'N/A']), 'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Target Campus Value', [
+            ('TargetCampus') : 'N/A']), 'N/A')
 
 'Verify Gender label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Gender Label'), 'Gender')
@@ -96,19 +94,18 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
     'N/A')
 
 'Verify Student label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Label'), 
-    'Student')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Label'), 'Student')
 
 'Verify default value of Student is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Value', [
-            ('Student') : 'N/A']), 'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Value', [('Student') : 'N/A']), 
+    'N/A')
 
 'Verify Grade label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Grade Label'), 'Grade')
 
 'Verify default value of Grade is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Grade Value', 
-        [('StudentGrade') : 'N/A']), 'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Grade Value', [
+            ('StudentGrade') : 'N/A']), 'N/A')
 
 'Verify Age label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Age Label'), 'Age')
@@ -126,12 +123,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
         [('MaritalStatus') : 'N/A']), 'N/A')
 
 'Verify Children label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Children Label'), 
-    'Children')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Children Label'), 'Children')
 
 'Verify default value of Children is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Children Value', 
-        [('Children') : 'N/A']), 'N/A')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Children Value', [('Children') : 'N/A']), 
+    'N/A')
 
 'Verify Events label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Events Header'), 'Events')

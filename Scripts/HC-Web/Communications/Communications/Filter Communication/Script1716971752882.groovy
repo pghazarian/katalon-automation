@@ -24,7 +24,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Filters/Filter Icon'))
 
 'Select campus from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('communication--select_campus', 'Anaheim')
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('communication--select_campus', Campus)
 
 'Click on Active under Status'
 WebUI.click(findTestObject('HC-Web/Communications/Communications/Filters/Status Radio Button', [('index') : 1]))
@@ -42,7 +42,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Tab
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Filters/Clear All Button'))
 
 'Select campus from dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('communication--select_campus', 'Anaheim')
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('communication--select_campus', Campus)
 
 'Click on Inactive under Status'
 WebUI.click(findTestObject('HC-Web/Communications/Communications/Filters/Status Radio Button', [('index') : 2]))

@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>62fc0f2b-94ad-4996-b35e-834faaea4274</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60f7728d-dc2c-4aec-93c2-435695fd8791</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.Segments_SearchTerm</defaultValue>
+      <description></description>
+      <id>60f7728d-dc2c-4aec-93c2-435695fd8791</id>
+      <masked>false</masked>
+      <name>SearchTerm</name>
+   </variable>
 </TestCaseEntity>
