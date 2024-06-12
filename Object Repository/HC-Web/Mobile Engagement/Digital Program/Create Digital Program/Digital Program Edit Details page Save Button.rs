@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Digital Program Edit Details page Save Button</name>
+   <tag></tag>
+   <elementGuidId>792eec94-c256-43d2-8241-82568755ac30</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='digital_programs_add_drawer--action_bar_add_button']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#digital_programs_add_drawer--action_bar_add_button > span.button-inner-container.jss208</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>209400a0-3e7d-4a5a-8842-98c2f4b26ef3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss208</value>
+      <webElementGuid>5b232623-30aa-404c-bd94-d738f8ade823</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Save</value>
+      <webElementGuid>75431164-6f0a-419a-be8f-d51afca1e0f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;digital_programs_add_drawer--action_bar_add_button&quot;)/span[@class=&quot;button-inner-container jss208&quot;]</value>
+      <webElementGuid>bacf8dad-683a-49e4-8669-373c8e7e161e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='digital_programs_add_drawer--action_bar_add_button']/span</value>
+      <webElementGuid>368447c4-cecb-4d1e-be7d-df6dc0d4a39e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[1]</value>
+      <webElementGuid>3c3c7184-5eee-4268-b06d-ea2223f61641</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Program Details'])[1]/following::span[2]</value>
+      <webElementGuid>1002bfc1-1e9a-4201-b13b-7b2dced6e87d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Program Image'])[1]/preceding::span[1]</value>
+      <webElementGuid>c7999108-7ca9-42b0-a7bf-38748c7fc7cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upload an image for each platform or use a single image that can be cropped and resized.'])[1]/preceding::span[1]</value>
+      <webElementGuid>f856960a-950f-4540-8377-b9a9070b047a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Save']/parent::*</value>
+      <webElementGuid>37dae5a8-579f-4c4b-9a94-235004d5904f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//header/div/div/div[2]/button/span</value>
+      <webElementGuid>311bf039-273f-447e-8243-1b623eb7345d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Save' or . = 'Save')]</value>
+      <webElementGuid>b2593bc1-afb6-4ca9-bb9d-796bdf51bcf9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -176,6 +176,28 @@ class TestObjectHelper {
 	 * Set value for Drop Down component
 	 */
 	@Keyword
+	def TestObject selectMultipleValuesInDropDownByClick(String id, String value) {
+
+		def xpath = "//div[contains(@id,'$id')]/descendant::div[contains(@class,'Select') and not(contains(@class,'is-disabled'))]"
+
+		def dropdown = getTestObjectWithXpath(xpath)
+
+		WebUI.waitForElementClickable(dropdown, 3)
+		WebUI.click(dropdown)
+
+		xpath = "//div[contains(@id,'$id')]/descendant::div[@class='Select-menu-outer' and not(contains(@style,'visibility: hidden'))]/descendant::div[text()='$value']"
+
+		def dropdownInput = getTestObjectWithXpath(xpath)
+
+		// Type Dropdown value
+		WebUI.waitForElementClickable(dropdownInput, 3)
+		WebUI.click(dropdownInput)
+	}
+	
+	/**
+	 * Set value for Drop Down component
+	 */
+	@Keyword
 	def TestObject setDropDownValueByXPath(String xpath, String value) {
 
 		def dropdown = getTestObjectWithXpath(xpath)

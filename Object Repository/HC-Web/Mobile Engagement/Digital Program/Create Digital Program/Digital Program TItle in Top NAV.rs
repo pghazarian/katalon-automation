@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Digital Program TItle in Top NAV</name>
+   <name>Digital Program Title in Top NAV</name>
    <tag></tag>
    <elementGuidId>15b302d8-e07e-4288-a775-b229278db47e</elementGuidId>
    <selectorCollection>

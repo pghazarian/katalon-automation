@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Digital Program Created Successful Message</name>
+   <name>Digital Program Action Update Messages</name>
    <tag></tag>
    <elementGuidId>a4d704ea-ae3e-4be7-aa28-b0ceb7495792</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[(text() = 'Successful' or . = 'Successful')]</value>
+         <value>//div[(text() = '${LabelS}']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>aefadb8b-33a6-45c6-88fc-e17b61eb92f8</webElementGuid>
+      <webElementGuid>031e4eab-b5ae-4423-b44b-a01095a7eca3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui header header-size-small</value>
-      <webElementGuid>44a04996-7137-4127-9f7e-265f6c8a5b72</webElementGuid>
+      <webElementGuid>f6bb5e22-92ad-4e0b-9cd2-05926cc6b7f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Successful</value>
-      <webElementGuid>58da8840-2639-4c3c-93c0-e60ec7477ee0</webElementGuid>
+      <webElementGuid>4c748245-9e38-46ed-91ba-b6f480a3efbb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/div[@id=&quot;digital_programs_add_drawer--program_successfully_saved&quot;]/div[@class=&quot;banner-container banner-custom&quot;]/div[@class=&quot;banner-message-container&quot;]/div[@class=&quot;ui header header-size-small&quot;]</value>
-      <webElementGuid>305f5c19-2fd4-44b5-8cfa-c6c1718219be</webElementGuid>
+      <webElementGuid>62cf3c0c-8219-4ed0-8dab-cc1bc8714b15</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,6 +54,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Successful' or . = 'Successful')]</value>
-      <webElementGuid>a8f1ef16-c0ae-4939-9950-996d511abdf0</webElementGuid>
+      <webElementGuid>f157542a-9c1c-41b9-80a3-b14886e8e486</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

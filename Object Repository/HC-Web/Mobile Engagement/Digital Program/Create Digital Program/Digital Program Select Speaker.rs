@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Digital Program Select Speaker</name>
+   <tag></tag>
+   <elementGuidId>a3cf3d42-af42-43e6-a84a-10595fbd97c3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Tom Holladay'])[2]/following::div[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.Select-option.is-focused</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ac491c83-3d6b-4d86-ac80-1bd614b15c60</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-selected</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>72cd9e61-d70d-4786-92c1-24f4cd1ca8e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Select-option is-focused</value>
+      <webElementGuid>64cf5900-4618-4f23-ad64-e8c4edfca3a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>option</value>
+      <webElementGuid>a29bc351-ebb4-417d-b2b0-19dca274632b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>277f00db-f6a1-4c4f-b2fb-4116db1d6345</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Andy Wood</value>
+      <webElementGuid>7bb56adf-def5-490a-932d-daf9b059a0dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;digital_programs_add_drawer--speaker&quot;)/div[@class=&quot;Select has-value is-focused is-open Select--multi&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-12--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
+      <webElementGuid>0e8aa6c9-2f34-4651-8479-72dd6733c082</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//div[@id='react-select-12--list']/div/div/div/div[7])[2]</value>
+      <webElementGuid>77e834de-81f8-40cd-95b3-4779d8fc302a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tom Holladay'])[2]/following::div[1]</value>
+      <webElementGuid>25f4488f-a5f9-4aa5-8297-e305cc186304</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='HC-QA Sreeni DP Speaker'])[2]/preceding::div[1]</value>
+      <webElementGuid>e312cd7b-e7df-4527-bb07-fc1d84f4215c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New Speaker'])[2]/preceding::div[2]</value>
+      <webElementGuid>06b6e2b9-56f1-45d1-a45c-25b10b93425b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div/div[7]</value>
+      <webElementGuid>dc2496e5-c794-4717-b781-04a4252ab97e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Andy Wood' or . = 'Andy Wood')]</value>
+      <webElementGuid>d8f6d96b-e33d-4e4d-b16d-f6d0050378d9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
