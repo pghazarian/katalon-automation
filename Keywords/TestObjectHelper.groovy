@@ -230,10 +230,10 @@ class TestObjectHelper {
 
 		xpath = "//div[@name='$name']/descendant::div[@class='Select-menu-outer' and not(contains(@style,'visibility: hidden'))]/descendant::div[text()='$value']"
 
-		WebUI.waitForElementClickable(dropdownInput, 3)
 		def dropdownInput = getTestObjectWithXpath(xpath)
 
 		// Select Dropdown value
+		WebUI.waitForElementClickable(dropdownInput, 3)
 		WebUI.click(dropdownInput)
 	}
 
