@@ -27,7 +27,7 @@ WebUI.scrollToPosition(0, 0)
 
 'Select campus from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'campus-selector\']/descendant::div[@class=\'Select-control\']', 
-    'Anaheim')
+    Campus)
 
 'Select Male using the checkbox'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Add Demographic Info/Gender Checkbox', 
@@ -43,7 +43,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Demographic 
 
 'Select student grade from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'student-grade-selector\']/descendant::div[@class=\'Select-control\']', 
-    'Grade 6')
+    StudentGrade)
 
 'Enter minimum age'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Demographic Info/Add Demographic Info/Minimum Age Input Field'), 
@@ -63,37 +63,35 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Demographic 
 
 'Select grade from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'grade-selector\']/descendant::div[@class=\'Select-control\']', 
-    'Grade 1')
+    ChildGrade)
 
 'Click button to save demographic info'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Demographic Info/Add Demographic Info/Demographic Info Save Button'))
 
 'Verify demographic info updated toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info Updated Toast'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info Updated Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info Updated Toast Text'), 
-    'Demographic info updated successfully')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info Updated Toast Text'), 'Demographic info updated successfully')
 
 'Scroll to top of the Demographic Info section'
 WebUI.scrollToPosition(0, 0)
 
 'Verify the updated Target Campus value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Target Campus Value', 
-        [('TargetCampus') : 'Anaheim']), 'Anaheim')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Target Campus Value', [
+            ('TargetCampus') : Campus]), Campus)
 
 'Verify the updated Gender value'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Gender Value', [('Gender') : 'Male, Female']), 
     'Male, Female')
 
 'Verify the updated Student? value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Value', [
-            ('Student') : 'Include Students']), 'Include Students')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Value', [('Student') : 'Include Students']), 
+    'Include Students')
 
 'Verify the updated Student Grade value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Grade Value', 
-        [('StudentGrade') : 'Sixth']), 'Sixth')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Student Grade Value', [
+            ('StudentGrade') : StudentGradeValue]), StudentGradeValue)
 
 'Verify the updated Age value'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Age Value', [('Age') : '13 - 99']), 
@@ -104,8 +102,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
         [('MaritalStatus') : 'Divorced, Married, Single, Widowed']), 'Divorced, Married, Single, Widowed')
 
 'Verify the updated Children value'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Children Value', 
-        [('Children') : 'First']), 'First')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Children Value', [('Children') : ChildGradeValue]), 
+    ChildGradeValue)
 
 WebUI.closeBrowser()
 

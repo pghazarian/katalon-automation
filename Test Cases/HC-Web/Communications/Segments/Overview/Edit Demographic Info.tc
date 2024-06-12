@@ -5,4 +5,69 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d0c02132-322f-4a6e-96b7-ec5fcb889736</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>89668beb-9549-40b0-b1ed-09e368979eb3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>985ed95d-c7d3-4de6-a7be-33568a47ea1c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b8891e6d-1c59-4edb-9c5a-2c178c38a76a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7d5af7b9-f7fd-4040-ad96-daf4af9cc75b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e683688c-e19f-4688-815f-637a2e7cd6ae</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Anaheim'</defaultValue>
+      <description></description>
+      <id>89668beb-9549-40b0-b1ed-09e368979eb3</id>
+      <masked>false</masked>
+      <name>Campus</name>
+   </variable>
+   <variable>
+      <defaultValue>'Grade 6'</defaultValue>
+      <description></description>
+      <id>985ed95d-c7d3-4de6-a7be-33568a47ea1c</id>
+      <masked>false</masked>
+      <name>StudentGrade</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sixth'</defaultValue>
+      <description></description>
+      <id>b8891e6d-1c59-4edb-9c5a-2c178c38a76a</id>
+      <masked>false</masked>
+      <name>StudentGradeValue</name>
+   </variable>
+   <variable>
+      <defaultValue>'Grade 1'</defaultValue>
+      <description></description>
+      <id>7d5af7b9-f7fd-4040-ad96-daf4af9cc75b</id>
+      <masked>false</masked>
+      <name>ChildGrade</name>
+   </variable>
+   <variable>
+      <defaultValue>'First'</defaultValue>
+      <description></description>
+      <id>e683688c-e19f-4688-815f-637a2e7cd6ae</id>
+      <masked>false</masked>
+      <name>ChildGradeValue</name>
+   </variable>
 </TestCaseEntity>
