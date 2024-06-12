@@ -124,4 +124,19 @@
       <initValue>'RN'</initValue>
       <name>FollowUp_RuleName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Push Notification'</initValue>
+      <name>PushNotifications_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Communication'</initValue>
+      <name>Communications_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Segment Record 1'</initValue>
+      <name>Segments_SearchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to filter communications</description>
+   <name>Filter Communication</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0b5a6f91-e862-4f9b-bbc0-a8f6324f2472</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>460ddd70-297a-4ab5-ab60-ddea321517ec</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Anaheim'</defaultValue>
+      <description></description>
+      <id>460ddd70-297a-4ab5-ab60-ddea321517ec</id>
+      <masked>false</masked>
+      <name>Campus</name>
+   </variable>
+</TestCaseEntity>

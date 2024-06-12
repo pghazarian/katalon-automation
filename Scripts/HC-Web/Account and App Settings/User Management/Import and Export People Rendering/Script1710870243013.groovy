@@ -47,6 +47,8 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/System/Migration Settings/Expo
 
 WebUI.click(findTestObject('HC-Web/System/Migration Settings/CSV Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/System/Migration Settings/People Data Export Modal Header'), 3)
+
 WebUI.verifyElementText(findTestObject('HC-Web/System/Migration Settings/People Data Export Modal Header'), 'People Data Export')
 
 WebUI.verifyElementVisible(findTestObject('HC-Web/System/Migration Settings/Download Link'))

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Communication</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>889b37e6-4452-497e-89fe-6667bf325de2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>27b926d4-de73-4ffb-820e-6092ac5fe836</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Anaheim'</defaultValue>
+      <description></description>
+      <id>27b926d4-de73-4ffb-820e-6092ac5fe836</id>
+      <masked>false</masked>
+      <name>Campus</name>
+   </variable>
+</TestCaseEntity>

@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5e31d9f7-16d0-4a1e-bc3b-5ab331ef9fa0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bdcad38e-40b9-46c6-9a18-5ae9add4077e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.PushNotifications_SearchTerm</defaultValue>
+      <description></description>
+      <id>bdcad38e-40b9-46c6-9a18-5ae9add4077e</id>
+      <masked>false</masked>
+      <name>SearchTerm</name>
+   </variable>
 </TestCaseEntity>

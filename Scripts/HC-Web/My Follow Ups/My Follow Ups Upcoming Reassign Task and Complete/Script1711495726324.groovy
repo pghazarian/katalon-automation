@@ -24,64 +24,64 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/data-capture/connection-forms'], FailureHandling.STOP_ON_FAILURE)
 
 'Search for the Connection Form (for followup)'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), GlobalVariable.Follow_Up_Connection_Form_Name)
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/List/Search Text Entry'), GlobalVariable.Follow_Up_Connection_Form_Name)
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Connection Form/List/Search Text Entry'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/List/Search Text Entry'), Keys.chord(Keys.ENTER))
 
 'Open Connection Form record'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/List/List Item By Name Match', [('textToMatch') : GlobalVariable.Follow_Up_Connection_Form_Name]))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/List/List Item By Name Match', [('textToMatch') : GlobalVariable.Follow_Up_Connection_Form_Name]))
 
 'Go to the Entries tab'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Entries Tab Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Entries Tab Button'))
 
 'Click the New Entry button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/New Entry Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/New Entry Button'))
 
 'Select the "No Event Associated" button'
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Event Association Modal/No Event Associated Button'), 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Connection Form Event Association Modal/No Event Associated Button'), 
     2)
 
 'Select the "No Event Associated" button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Event Association Modal/No Event Associated Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Connection Form Event Association Modal/No Event Associated Button'))
 
 'Click Next button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Connection Form Person Entry Type Modal/Next Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Connection Form Person Entry Type Modal/Next Button'))
 
 WebUI.delay(3)
 
 'Enter the Person\'s name to be assigned to the Connection Form Entry'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
     GlobalVariable.Follow_Up_Task_Person_First_Name)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Person Search LastName Text Entry'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search LastName Text Entry'), 
     GlobalVariable.Follow_Up_Task_Person_Last_Name)
 
 'Search for the Person'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Drawer/Search Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Search Button'))
 
 WebUI.delay(3)
 
 'Select the person summary row'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Summary Panel Name Match', 
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Summary Panel Name Match', 
         [('textToMatch') : FollowUpTaskPersonName]))
 
 'After that, click the Select button button on that person summary row'
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Details Panel Button Match', 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Details Panel Button Match', 
         [('textToMatch') : FollowUpTaskPersonName]), 2)
 
 'After that, click the Select button button on that person summary row'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Details Panel Button Match', 
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Details Panel Button Match', 
         [('textToMatch') : FollowUpTaskPersonName]))
 
 'Confirm the Selection '
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entry/Add Entry Drawer/Person Search Results Summary Panel Yes Confirmation Button Match', 
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Summary Panel Yes Confirmation Button Match', 
         [('textToMatch') : FollowUpTaskPersonName]))
 
 'Click the Add Entry Button'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Add Entry Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/SubNav/Add Entry Button'))
 
 'Click the "I\'m Done" button to advance to this point'
-WebUI.click(findTestObject('Object Repository/HC-Web/Connection Form/Entries/Im Done Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Im Done Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Navigation Logo Image Button'))
 
@@ -111,7 +111,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/My Follow Ups
 WebUI.delay(5)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', 
-        [('textToMatch') : FollowUpTaskPersonName]), 5)
+        [('textToMatch') : FollowUpTaskPersonName]), 10)
 
 'Select follow ups record by person name to open drawer'
 WebUI.click(findTestObject('Object Repository/HC-Web/My Follow Ups/Table Row Person Name By Name Match', [('textToMatch') : FollowUpTaskPersonName]))

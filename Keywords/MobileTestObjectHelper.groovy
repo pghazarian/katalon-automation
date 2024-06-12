@@ -38,7 +38,7 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import com.kms.katalon.core.testobject.MobileTestObject.MobileLocatorStrategy
 import com.kms.katalon.core.testobject.MobileTestObject
-import com.kms.katalon.core.util.KeywordUtil
+
 
 class MobileTestObjectHelper {
 

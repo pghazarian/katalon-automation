@@ -184,4 +184,24 @@
       <initValue>'Children\'s Room 2'</initValue>
       <name>SO_ChildRoom_2</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2206'</initValue>
+      <name>MinistryId_SOTests</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Push Notification Test 1'</initValue>
+      <name>PushNotifications_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Communication'</initValue>
+      <name>Communications_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Segment 1'</initValue>
+      <name>Segments_SearchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
