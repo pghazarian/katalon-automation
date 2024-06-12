@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Covers the following PBIs:&#xd;
+PBI 110607: [Companion App - Profile] - My Prayer Requests Screen - Lift &amp; Shift&#xd;
+PBI 110609: [Companion App - Profile] - My Prayer Requests Screen - UI/UX &amp; Implementation&#xd;
+&#xd;
+Note: This is a Script TC, which will  need to be automated, once the feature is test ready</description>
    <name>My Prayer Requests</name>
    <tag></tag>
    <comment></comment>
