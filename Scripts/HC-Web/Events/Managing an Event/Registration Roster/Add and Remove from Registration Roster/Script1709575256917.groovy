@@ -23,8 +23,8 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
     FailureHandling.STOP_ON_FAILURE)
 
 'If person record is already listed in registration roster, remove them'
-if (CustomKeywords.'TestObjectHelper.isElementPresent'(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']"), 
-    5)) {
+if (WebUI.waitForElementPresent(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']"), 
+    10)) {
     WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
 
     WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Actions Dropdown'))
@@ -54,7 +54,11 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Resul
 'Confirm person record selection'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
-'Click "yes" to confirm selection'
+'Wait for attendee name in list'
+WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
+    5)
+
+'Verify attendee name in list'
 WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
     3)
 
@@ -67,11 +71,11 @@ WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Actions Dropdown'))
 'Select option to remove person record from registration roster'
 WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Remove from Event Dropdown Option'))
 
-'Click "yes" to confirm selection'
+'Wait for attendee name to be removed'
 WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
-    3)
+    5)
 
-'Click "yes" to confirm selection'
+'Verify attendee name was removed'
 WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
     0)
 
