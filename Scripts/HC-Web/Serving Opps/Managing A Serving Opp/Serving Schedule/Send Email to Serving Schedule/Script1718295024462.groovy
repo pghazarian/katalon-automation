@@ -16,10 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration
+
+def profile = RunConfiguration.getExecutionProfile()
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/serving-opportunity/$ServingOppId/$CampusId/schedule/"], 
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/serving-opportunity/$ServingOppId/$CampusId/schedule"], 
     FailureHandling.STOP_ON_FAILURE)
 
 'Click button to add volunteer to SO'
@@ -49,8 +52,30 @@ WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunt
 WebUI.waitForElementPresent(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List', [('volunteerName') : MemberName]), 
     0)
 
-'Select added volunteer'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer Checkbox', [('volunteerName') : MemberName]))
+'Select all members to receive email'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/All Members Checkbox'))
+
+'Click button to send an email to selected members'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Send Email Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Subject Text Field'), 2)
+
+'Enter an email subject'
+WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Subject Text Field'), 'QA Automation Test Email')
+
+'Enter an email message'
+WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Main Body Text Field'), "Email created by QA Automation test Serving Opps/Managing a Serving Opp/Serving Schedule/Send Email to Serving Schedule from $profile.")
+
+'Click button to send email'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Send Button'))
+
+'Confirm sending email'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Send Email Confirmation Yes Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Email Sent Banner'), 5)
+
+'Verify banner is displayed stating email was scheduled for delivery'
+WebUI.verifyElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Email Sent Banner'), FailureHandling.STOP_ON_FAILURE)
 
 'Open actions menu'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Actions Button'))
