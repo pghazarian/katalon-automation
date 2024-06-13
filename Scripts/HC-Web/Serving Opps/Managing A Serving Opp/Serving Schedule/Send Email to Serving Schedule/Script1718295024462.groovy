@@ -61,7 +61,7 @@ WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/New 
 WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Subject Text Field'), 'QA Automation Test Email')
 
 'Enter an email message'
-WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Main Body Text Field'), 'Email created by QA Automation test')
+WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Main Body Text Field'), 'Email created by QA Automation test Serving Opps/Managing a Serving Opp/Serving Schedule/Send Email to Serving Schedule')
 
 'Click button to send email'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Send Button'))
