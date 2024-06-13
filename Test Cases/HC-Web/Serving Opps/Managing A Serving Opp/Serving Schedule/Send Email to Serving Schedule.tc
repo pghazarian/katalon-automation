@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Send Email to Serving Schedule</name>
-   <tag></tag>
+   <tag>Stage,Smoke</tag>
    <comment></comment>
    <testCaseGuid>c0485890-e8c9-4fba-b120-6b2129a5a009</testCaseGuid>
    <variableLinks>

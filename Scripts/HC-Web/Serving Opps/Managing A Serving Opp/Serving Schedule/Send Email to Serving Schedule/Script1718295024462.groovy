@@ -78,7 +78,7 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Email
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Actions Button'))
 
 'Select option to remove volunteer from this occurrence'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Remove From This Ocurrence Option'))
+WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Remove From This Occurrence Option'))
 
 'Confirm removal from serving schedule'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Remove From Occurrence Prompt Yes Button'))
