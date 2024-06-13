@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Schedule Email Notification</name>
-   <tag></tag>
+   <name>Send Email to Serving Schedule</name>
+   <tag>Stage,Smoke</tag>
    <comment></comment>
-   <testCaseGuid>92513441-b060-472a-bbe3-ddc87cc7426d</testCaseGuid>
+   <testCaseGuid>c0485890-e8c9-4fba-b120-6b2129a5a009</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
@@ -16,6 +16,12 @@
       <type>DEFAULT</type>
       <value></value>
       <variableId>7b625b23-d546-4e07-8c65-01a263e32f81</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>33103c4b-4e3e-4037-a39b-5c2596fa67e1</variableId>
    </variableLinks>
    <variable>
       <defaultValue>GlobalVariable.SO_Id_Recurring_DoesNotEnd</defaultValue>
@@ -30,5 +36,12 @@
       <id>7b625b23-d546-4e07-8c65-01a263e32f81</id>
       <masked>false</masked>
       <name>CampusId</name>
+   </variable>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>33103c4b-4e3e-4037-a39b-5c2596fa67e1</id>
+      <masked>false</masked>
+      <name>MemberName</name>
    </variable>
 </TestCaseEntity>
