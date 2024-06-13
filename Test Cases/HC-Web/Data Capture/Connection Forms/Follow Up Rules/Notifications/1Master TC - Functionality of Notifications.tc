@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Covers PBI 108073: Notifications - Back Office - Task Rule Toggle - UI Design</description>
+   <description>Covers all Notifications PBIs</description>
    <name>1Master TC - Functionality of Notifications</name>
    <tag></tag>
    <comment></comment>

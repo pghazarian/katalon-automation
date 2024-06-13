@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Person Search First Name Text Entry</name>
+   <name>First Name Field</name>
    <tag></tag>
    <elementGuidId>7c02a705-5dfb-46f3-819f-8e77bfaf8dc1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='person_search_form--firstname_input']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#person_search_form--firstname_input</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id = 'person_search_form--firstname_input' and @type = 'text']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>ee750961-f71a-4a01-9c67-610169d22994</webElementGuid>
+      <webElementGuid>32e2a6a5-88c1-4a89-8630-4f95b9864c3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>id</name>
       <type>Main</type>
       <value>person_search_form--firstname_input</value>
-      <webElementGuid>1beaf517-8cf3-432c-a577-d0853ee5eeda</webElementGuid>
+      <webElementGuid>8e44ebbb-91bd-4589-b738-feea6e6fadd3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>9be1d84b-4647-46b6-8479-ecd6d4abab0e</webElementGuid>
+      <webElementGuid>ddb95f2d-640c-4974-81c1-680f37791bd6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;person_search_form--firstname_input&quot;)</value>
-      <webElementGuid>f141ace5-13f4-44dc-a5e3-7b8e90a4947a</webElementGuid>
+      <webElementGuid>23180a99-7d4a-4b8e-bcc8-7895063b0e2f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='person_search_form--firstname_input']</value>
-      <webElementGuid>d31855fd-6790-48cb-8dc5-a8efcca2047e</webElementGuid>
+      <webElementGuid>b68bb6a4-5158-4669-aa82-fadba4dea6eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='person_search_form']/div/div/div/div/input</value>
-      <webElementGuid>0e7801cc-6505-4b14-8f8d-22f0dbbef862</webElementGuid>
+      <webElementGuid>684993fd-cb99-4c3f-9450-139264479e82</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='First Name'])[1]/following::input[1]</value>
-      <webElementGuid>970e08a6-cb5c-4c0b-abfa-7e838354d6e6</webElementGuid>
+      <webElementGuid>d0b0abbd-2fff-4454-a0cc-e7c9ce6ac15d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No Record'])[1]/following::input[1]</value>
-      <webElementGuid>438def1c-e80f-48c5-9ae4-1e9b588cf151</webElementGuid>
+      <webElementGuid>09643ca8-22d1-4a92-ada0-f933582034e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Name'])[1]/preceding::input[1]</value>
-      <webElementGuid>b8401039-1b98-419c-9d66-3a7c70110135</webElementGuid>
+      <webElementGuid>2326eb75-3569-4722-b4b3-51bc0bf04474</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nick Name'])[1]/preceding::input[2]</value>
-      <webElementGuid>e13149f5-def8-462b-beb3-a316302732d5</webElementGuid>
+      <webElementGuid>b4c9aa1f-421a-4b25-b0c0-ee4acb60c271</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/div/div/div/div/div/input</value>
-      <webElementGuid>22efab13-dde6-4d27-bb71-2f1d36d7555a</webElementGuid>
+      <webElementGuid>c4448428-df4f-49a8-8b15-2ab53cfa74ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,6 +111,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'person_search_form--firstname_input' and @type = 'text']</value>
-      <webElementGuid>13e164c9-76bc-4862-9418-88fbfc3fdc65</webElementGuid>
+      <webElementGuid>a6a27dfa-a2bc-4553-b727-119c7fb88347</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

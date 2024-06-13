@@ -37,13 +37,13 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection For
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Connection Form Person Entry Type Modal/Next Button'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 
     3)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 
     GlobalVariable.Follow_Up_Task_Person_First_Name)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search LastName Text Entry'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Last Name Field'), 
     GlobalVariable.Follow_Up_Task_Person_Last_Name)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Search Button'))

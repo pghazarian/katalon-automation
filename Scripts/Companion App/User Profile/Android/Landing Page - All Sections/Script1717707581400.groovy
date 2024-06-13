@@ -44,69 +44,80 @@ import org.openqa.selenium.Keys as Keys
  */
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
+Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Profile Web Avatar'), 1)
+
 'Profile photo icon - on lower navigation menu '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Profile Web Avatar'), 0)
 
-WebUI.delay(3)
+WebUI.delay(1)
+
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings'), 1)
 
 'Settings icon, top right of User Profile page'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Settings Icon'), 0)
 
-WebUI.delay(3)
+WebUI.delay(1)
 
 'Back chevron "<" Icon, to the left of the Profile text top left '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
 
-WebUI.delay(3)
+WebUI.delay(1)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My QR Code Button'), 0)
-
-WebUI.delay(3)
-
-'X button in QR code modal'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/X Icon - QR Code modal'), 0)
-
-WebUI.delay(3)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Gift'), 1)
 
 'Gift Icon, TO Inside  the circle '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Gift Icon'), 0)
 
-WebUI.delay(3)
+WebUI.delay(1)
 
 'X icon on top right of Giving page '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/X icon'), 0)
 
-WebUI.delay(3)
+WebUI.delay(1)
 
-'My Ministries Tile '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Ministries Tile'), 0)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/QR Code'), 1)
 
-WebUI.delay(3)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My QR Code Button'), 0)
 
-'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+WebUI.delay(1)
 
-WebUI.delay(3)
+'X button in QR code modal'
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/X Icon - QR Code modal'), 0)
 
-'My Events Tile '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Events Tile'), 0)
+WebUI.delay(1)
 
-WebUI.delay(3)
-
-'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
-
-WebUI.delay(3)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Notes'), 1)
 
 'My Notes Tile '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Notes Tile'), 0)
 
-WebUI.delay(3)
+WebUI.delay(1)
 
 'Back chevron "<" Icon, to the left of the Profile text top left '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
 
-WebUI.delay(5)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Ministries'), 1)
+
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Ministries Tile'), 0)
+
+WebUI.delay(1)
+
+'Back chevron "<" Icon, to the left of the Profile text top left '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+
+WebUI.delay(1)
+
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Events'), 1)
+
+'My Events Tile '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Events Tile'), 0)
+
+WebUI.delay(1)
+
+'Back chevron "<" Icon, to the left of the Profile text top left '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+
+WebUI.delay(2)
 
 Mobile.closeApplication()
 

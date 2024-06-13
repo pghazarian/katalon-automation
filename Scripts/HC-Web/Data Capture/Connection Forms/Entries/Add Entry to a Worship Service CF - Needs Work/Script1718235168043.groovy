@@ -37,23 +37,20 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Entries
 
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/New Entry Button'))
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Date Icon'))
-
-WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/3rd of the month'))
 
 CustomKeywords.'FormHelper.setDropDownValue'('Service Time', 'PDT')
 
-WebUI.maximizeWindow()
-
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Apply Button'))
 
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Connection Form Person Entry Type Modal/Next Button'))
 
-WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search First Name Text Entry'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'))
 
-WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search LastName Text Entry'))
+WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 'Test')
+
+WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), Keys.chord(
+        Keys.ENTER))
 

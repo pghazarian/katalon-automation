@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Person Search LastName Text Entry</name>
+   <name>Last Name Field</name>
    <tag></tag>
    <elementGuidId>0e95bb0f-df41-46fe-bef6-dfaca0c0be9c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='person_search_form--lastname_input']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#person_search_form--lastname_input</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='person_search_form--lastname_input']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

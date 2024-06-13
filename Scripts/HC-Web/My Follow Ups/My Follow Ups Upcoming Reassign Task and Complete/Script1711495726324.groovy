@@ -50,10 +50,10 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection For
 WebUI.delay(3)
 
 'Enter the Person\'s name to be assigned to the Connection Form Entry'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search First Name Text Entry'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 
     GlobalVariable.Follow_Up_Task_Person_First_Name)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search LastName Text Entry'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Last Name Field'), 
     GlobalVariable.Follow_Up_Task_Person_Last_Name)
 
 'Search for the Person'
