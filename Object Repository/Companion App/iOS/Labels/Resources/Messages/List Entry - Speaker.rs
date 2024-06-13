@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Day of Week</name>
+   <name>List Entry - Speaker</name>
    <tag></tag>
-   <elementGuidId>06b9ca33-d3a5-4608-a12b-8da744deccdf</elementGuidId>
+   <elementGuidId>580d8580-3808-480a-9358-7da4bcef638c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-card--events-day_of_week</locator>
+   <locator>item-description</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Day of Week</name>
+   <name>Sort And Filter</name>
    <tag></tag>
-   <elementGuidId>06b9ca33-d3a5-4608-a12b-8da744deccdf</elementGuidId>
+   <elementGuidId>d4ed544e-d415-46fe-b7f3-74530f62f609</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-card--events-day_of_week</locator>
+   <locator>pressable-right_filter_action</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

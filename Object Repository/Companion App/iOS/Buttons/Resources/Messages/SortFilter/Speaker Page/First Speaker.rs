@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Recurring Freqency</name>
+   <name>First Speaker</name>
    <tag></tag>
-   <elementGuidId>14b1e34e-63ea-406d-8432-586a3ada9455</elementGuidId>
+   <elementGuidId>5eccb3b9-f934-446b-adc5-1b6652e624d6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//XCUIElementTypeStaticText[@name=&quot;ui-card--events-frequency&quot;])[4]</locator>
+   <locator>//android.view.ViewGroup[starts-with(@content-desc,&quot;ui-speaker-filter--item-&quot;)][1]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
