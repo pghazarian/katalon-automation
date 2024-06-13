@@ -25,7 +25,7 @@ import org.openqa.selenium.Keys as Keys
  *   Collect & show details of the event(s) where the user's child(ren) may be currently checked in
  *   Collect child(ren)'s QR code
  *   Display all of the above information
- * - Make sure that there is a Child Checked in, for the Event testing on (from HC admin side) before running the TC 
+ *
  *
  * 1. Download and Open the Companion App (CA) from the home screen of the device
  * 2. Login

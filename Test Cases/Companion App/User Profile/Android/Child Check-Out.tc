@@ -5,9 +5,8 @@ Product Backlog Item 110613: [Companion App - Profile] - Child Check-Out Screen 
 Product Backlog Item 110614: [Companion App - Profile] - Child Check-Out Screen - Lift &amp; Shift&#xd;
 &#xd;
 Note: This is a Script TC, which will  need to be automated, once the feature is test ready</description>
-   <name>Child Check In - Check Out</name>
+   <name>Child Check-Out</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>68bde2a6-ee84-4f66-858a-4e66c482fb63</testCaseGuid>
 </TestCaseEntity>
