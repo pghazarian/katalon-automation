@@ -2,7 +2,8 @@
 <TestCaseEntity>
    <description>Exercise the navigation for the System menu and all of its submenus</description>
    <name>System Nav</name>
-   <tag>Production,Stage</tag>
+   <tag>Production,Stage,Smoke</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>2c04011b-738a-488e-a302-4326e9e676c6</testCaseGuid>
 </TestCaseEntity>

@@ -2,7 +2,8 @@
 <TestCaseEntity>
    <description>Exercise the navigation for the Communications menu and all of its submenus</description>
    <name>Communications Nav</name>
-   <tag>Stage,QA,Dev,Stage2,Production</tag>
+   <tag>Stage,Smoke,QA,Dev,Stage2,Production</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8c8820e3-d9ce-4764-9c86-ed91be0a07d9</testCaseGuid>
 </TestCaseEntity>

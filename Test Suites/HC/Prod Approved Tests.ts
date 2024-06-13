@@ -119,13 +119,6 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>ccdd1f9a-aa0b-4d88-a067-409d4ec6d0b5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/Navigation/All Nav</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1a7028f8-53d2-49b1-9b50-95d23f9ef43e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -155,5 +148,89 @@
          <value></value>
          <variableId>80ed7adf-9029-49e4-adef-b8aafd501455</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f67f7dbd-d4df-444e-a4a7-6a83accc0a99</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Communications Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e7db2e62-6a95-4f00-bc70-77f7c580d326</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Data Capture Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>be3e43b6-29e7-4128-8e23-15c742e08ec5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Dev Tools Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8a918c2b-1bc5-483d-839c-ba1af6fce417</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Events Central Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4a398016-2623-474c-9f40-ae695668399c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Giving Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0f3f3a6a-fb47-4691-9ddb-8ec09733ed3c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Insight Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e57a7787-95ea-486b-a6e0-3bf3752d81c0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Journey Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>91818f8f-572b-45b2-8c50-b990c4acdcad</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Ministries Central Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>73a5eba2-e977-48a8-86fc-d7efeeadf3a2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/People Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c83bb306-b2d3-4787-ae6a-efefca1ca6b8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/Mobile Engagement Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b73466cd-2300-4414-983c-66b0706e0d93</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/My Stuff Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d1935f25-a9cc-4b5a-be50-eb2828b1b4b6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Navigation/System Nav</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

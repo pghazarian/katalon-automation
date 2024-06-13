@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to create a push notification</description>
+   <name>Create Email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7f5e734-e4c2-4245-9c4c-fadcc62585ae</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e79146e0-ca9e-4697-8cdb-0f0391432649</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'ST Communication'</defaultValue>
+      <description></description>
+      <id>e79146e0-ca9e-4697-8cdb-0f0391432649</id>
+      <masked>false</masked>
+      <name>CommName</name>
+   </variable>
+</TestCaseEntity>

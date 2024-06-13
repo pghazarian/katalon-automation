@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to edit segment record</description>
+   <name>Edit Segment</name>
+   <tag>Dev</tag>
+   <comment></comment>
+   <testCaseGuid>8bcf928f-2736-4fd1-bb13-bebf4b58c3e8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f0b77378-228f-4ecd-9224-97d1f68b93a5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5b9df1bc-ea49-450d-a4dd-8a3d1fd64775</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>87433a28-6d08-4ec6-bfdb-5193288ebde1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.Segments_SearchTerm</defaultValue>
+      <description></description>
+      <id>f0b77378-228f-4ecd-9224-97d1f68b93a5</id>
+      <masked>false</masked>
+      <name>SearchTerm</name>
+   </variable>
+   <variable>
+      <defaultValue>'Anaheim'</defaultValue>
+      <description></description>
+      <id>5b9df1bc-ea49-450d-a4dd-8a3d1fd64775</id>
+      <masked>false</masked>
+      <name>CampusBeforeUpdate</name>
+   </variable>
+   <variable>
+      <defaultValue>'Lake Forest'</defaultValue>
+      <description></description>
+      <id>87433a28-6d08-4ec6-bfdb-5193288ebde1</id>
+      <masked>false</masked>
+      <name>CampusAfterUpdate</name>
+   </variable>
+</TestCaseEntity>

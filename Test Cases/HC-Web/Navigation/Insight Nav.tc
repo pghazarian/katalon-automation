@@ -2,7 +2,8 @@
 <TestCaseEntity>
    <description>Exercise the navigation for the Insights menu and all of its submenus</description>
    <name>Insight Nav</name>
-   <tag>Production,Stage,QA,Dev,Stage2</tag>
+   <tag>Production,Stage,Smoke,QA,Dev,Stage2</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>37473704-58e2-4e30-b75e-ff97da0ea379</testCaseGuid>
 </TestCaseEntity>

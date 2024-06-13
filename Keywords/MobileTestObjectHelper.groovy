@@ -41,7 +41,6 @@ import com.kms.katalon.core.testobject.MobileTestObject
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import io.appium.java_client.MobileElement as MobileElement
 
-
 class MobileTestObjectHelper {
 
 	@Keyword
