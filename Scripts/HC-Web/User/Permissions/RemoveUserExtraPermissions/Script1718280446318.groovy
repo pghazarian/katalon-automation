@@ -41,9 +41,41 @@ WebUI.waitForElementClickable(findTestObject('HC-Web/User/Permission/User_Profil
 
 WebUI.click(findTestObject('HC-Web/User/Permission/User_Profile_Page/EditButton'))
 
-WebUI.waitForPageLoad(5)
+'Wait for page load'
+WebUI.delay(4)
+
+WebUI.waitForElementPresent(findTestObject('HC-Web/User/Permission/User_Profile_Page/ApplicationAdmin_Link'), 0)
+
+WebUI.scrollToElement(findTestObject('HC-Web/User/Permission/User_Profile_Page/ApplicationAdmin_Link'), 0)
+
 'Click Application Link'
 WebUI.click(findTestObject('HC-Web/User/Permission/User_Profile_Page/ApplicationAdmin_Link'))
 
+WebUI.delay(4)
 
+WebUI.scrollToElement(findTestObject('HC-Web/User/Permission/User_Profile_Page/ApplicationAdmin_Link'), 0)
+
+//Split the Extra Permissions into an array
+String[] permissionsToRemove = PermissionsToRemove.split(',')
+
+UserExtraPermissionInputBox = findTestObject('HC-Web/User/Permission/User_Profile_Page/User_ExtraPermissions_InputBox')
+
+for (int i = 0; i < permissionsToRemove.length; i++) {
+    permissionRemoveObject = findTestObject('HC-Web/User/Permission/User_Profile_Page/User_ExistingPermission_Remove', [
+            ('textToMatch') : permissionsToRemove[i]])
+
+    if (permissionRemoveObject == null) {
+        continue
+    }
+    
+    WebUI.click(permissionRemoveObject)
+}
+
+SaveButton = findTestObject('HC-Web/User/Permission/User_Profile_Page/SaveButton')
+
+WebUI.waitForElementClickable(SaveButton, 1)
+
+WebUI.click(SaveButton)
+
+WebUI.closeBrowser().s
 

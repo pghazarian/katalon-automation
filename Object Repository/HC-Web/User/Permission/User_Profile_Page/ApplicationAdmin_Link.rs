@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='Application Admin']/..</value>
+         <value>//div[contains(normalize-space(text()), 'Application Admin')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>32fd21db-5b41-4df9-ae95-87c1ae97c3af</webElementGuid>
+      <webElementGuid>ec2ab435-9e03-4ae9-9df3-250d19d0fe84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>caret-rightApplication Admin, ... at Anaheim, ...</value>
-      <webElementGuid>c81b46fd-b078-4c6b-b5fa-4c1ed9f40952</webElementGuid>
+      <webElementGuid>37578ce4-7316-4665-b45b-b6c55b28b4e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss430 jss433 jss428 jss429 page-has_action_bar&quot;]/div[@class=&quot;cmui container jss439 ui page--container jss438&quot;]/section[@class=&quot;cmui content jss442 ui page--content jss441&quot;]/div[@class=&quot;ui card jss244&quot;]/div[@class=&quot;card-content&quot;]/div[1]/div[2]/div[1]/div[@class=&quot;security-scope-manager&quot;]/div[@class=&quot;ui accordion accordion-basic accordion-inclusive&quot;]/div[@class=&quot;accordion-item&quot;]/div[@class=&quot;accordion-item-summary&quot;]/div[@class=&quot;scope-row&quot;]/div[1]</value>
-      <webElementGuid>fbb414a0-608c-4235-aa52-ac53f98003ac</webElementGuid>
+      <webElementGuid>37cfaa5f-4ce5-4356-a0d1-392d6802283d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/section/div/div/div/div[2]/div/div[3]/div[2]/div[13]/div/div/div</value>
-      <webElementGuid>90865453-b6a8-4e6a-a3c2-1b1f8b8718ae</webElementGuid>
+      <webElementGuid>e0ad2f16-a7f2-4aef-b111-5c70cb372cd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Scope of Role(s)'])[12]/following::div[18]</value>
-      <webElementGuid>8cd5d996-5f33-4f18-95e2-d38534b943d1</webElementGuid>
+      <webElementGuid>d4d745da-3503-4711-8ff1-33737e14cdf9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='List Owner'])[1]/following::div[19]</value>
-      <webElementGuid>67ccf1d5-1e0a-4acf-b1f9-1f2dd7711d16</webElementGuid>
+      <webElementGuid>fa4d3eaf-9f23-44ff-8458-c2d63ec21db1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/preceding::div[3]</value>
-      <webElementGuid>d458e166-3f6b-48d6-8a36-6466927c6014</webElementGuid>
+      <webElementGuid>82c2f0ef-4a29-4c65-b89f-b5809f9f111d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[13]/div/div/div</value>
-      <webElementGuid>8b033201-eea4-4dec-a237-cb2d6d9b38cd</webElementGuid>
+      <webElementGuid>74260bfb-f3a8-4243-a91e-1406181efab1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'caret-rightApplication Admin, ... at Anaheim, ...' or . = 'caret-rightApplication Admin, ... at Anaheim, ...')]</value>
-      <webElementGuid>496c8160-8336-4ff6-a584-3a62b47bdd77</webElementGuid>
+      <webElementGuid>47f9c5bc-c494-4ea4-96a2-46641b292b21</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

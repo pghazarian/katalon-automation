@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RemoveUserExtraPermissions</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1bca825c-a4e9-46c9-a831-a00364cdd50e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ca44ee64-29d1-4bc7-9837-0abae992edec</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3cbfd0f5-fb01-4955-b93f-87a1c42a8838</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>43395bef-fcae-4fa4-9209-6fec731e5f84</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Ravinder Kumar'</defaultValue>
+      <description></description>
+      <id>ca44ee64-29d1-4bc7-9837-0abae992edec</id>
+      <masked>false</masked>
+      <name>VerificationName</name>
+   </variable>
+   <variable>
+      <defaultValue>'ravinder.kumar@technossus.com'</defaultValue>
+      <description></description>
+      <id>3cbfd0f5-fb01-4955-b93f-87a1c42a8838</id>
+      <masked>false</masked>
+      <name>UserEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>'View Weekly Flash Reports,View Standard Trending Reports,View Leadership Trending Reports,Access Weekend Flash Report,Access church insights Dashboard'</defaultValue>
+      <description></description>
+      <id>43395bef-fcae-4fa4-9209-6fec731e5f84</id>
+      <masked>false</masked>
+      <name>PermissionsToRemove</name>
+   </variable>
+</TestCaseEntity>

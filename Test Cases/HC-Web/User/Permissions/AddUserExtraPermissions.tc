@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>AddUserPermissions</name>
+   <name>AddUserExtraPermissions</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
@@ -18,6 +18,12 @@
       <value></value>
       <variableId>de3c41bf-5ab9-4ff2-95ec-786ad1c021c5</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>51359311-0761-49f9-8619-cee9b69962ac</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Ravinder Kumar'</defaultValue>
       <description></description>
@@ -31,5 +37,12 @@
       <id>de3c41bf-5ab9-4ff2-95ec-786ad1c021c5</id>
       <masked>false</masked>
       <name>UserEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>'View Weekly Flash Reports,View Standard Trending Reports,View Leadership Trending Reports,Access Weekend Flash Report,Access church insights Dashboard'</defaultValue>
+      <description></description>
+      <id>51359311-0761-49f9-8619-cee9b69962ac</id>
+      <masked>false</masked>
+      <name>PermissionsToAdd</name>
    </variable>
 </TestCaseEntity>
