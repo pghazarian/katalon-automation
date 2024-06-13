@@ -16,6 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration
+
+def profile = RunConfiguration.getExecutionProfile()
 
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
@@ -34,7 +37,7 @@ WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/New 
 WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Subject Text Field'), 'QA Automation Test Email')
 
 'Enter an email message'
-WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Main Body Text Field'), 'Email created by QA Automation test Serving Opps/Communications/Schedule Email Notification')
+WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Main Body Text Field'), "Email created by QA Automation test Serving Opps/Communications/Schedule Email Notification from $profile")
 
 'Click button to send email'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/New Email Drawer/Send Button'))
