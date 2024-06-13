@@ -2,7 +2,8 @@
 <TestCaseEntity>
    <description>Exercise the navigation for the My Stuff menu and all of its submenus</description>
    <name>My Stuff Nav</name>
-   <tag>Stage</tag>
+   <tag>Stage,Smoke</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b9977175-4a8d-41c5-a98e-b76fd4e40b13</testCaseGuid>
 </TestCaseEntity>

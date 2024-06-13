@@ -2,7 +2,8 @@
 <TestCaseEntity>
    <description>Exercise the navigation for the People menu and all of its submenus</description>
    <name>People Nav</name>
-   <tag>Production,Stage</tag>
+   <tag>Production,Stage,Smoke</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>3c210d6d-09d4-447e-88df-5e77e2a897af</testCaseGuid>
 </TestCaseEntity>
