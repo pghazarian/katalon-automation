@@ -70,6 +70,10 @@ WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Worship Service Setup/L
 
 WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Worship Service Setup/Loading Wheel'), 2)
 
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Worship Service Setup/Service Items'), 3)
+
+WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Worship Service Setup/Service Items'), 2)
+
 WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Worship Service Setup/Service Items'), 2)
 
 'Verify service appears in list'
