@@ -183,9 +183,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/
 'Select first SO in list'
 WebUI.click(findTestObject('HC-Web/Ministry/Serving Opps Page/Table Row Serving Opp', [('ServingOppName') : ServingOppName]))
 
-'Add volunteer to SO'
-WebUI.waitForElementNotHasAttribute(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Button'), 
-    'disabled', 0)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3, FailureHandling.STOP_ON_FAILURE)
 
 'Add volunteer to SO'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Button'))
