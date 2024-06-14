@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>User_ExistingPermission_Remove</name>
+   <name>Check_ExistingPermission</name>
    <tag></tag>
-   <elementGuidId>c8e05ae3-c5b4-43d9-b668-109a0bae11e1</elementGuidId>
+   <elementGuidId>828d9357-cc48-4850-97f3-2452822bea9f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(text(),'Extra Permissions')]/following-sibling::div//div[@class='Select-control']//div[@class='Select-value']//span[text() = '${textToMatch}' or normalize-space(.) = '${textToMatch}']/../span[@class='Select-value-icon']</value>
+         <value>//div[contains(text(),'Extra Permissions')]/following-sibling::div//div[@class='Select-control']//div[@class='Select-value']//span[text() = '${textToMatch}']</value>
       </entry>
       <entry>
          <key>BASIC</key>

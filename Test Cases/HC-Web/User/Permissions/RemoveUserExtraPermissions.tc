@@ -4,6 +4,7 @@
    <name>RemoveUserExtraPermissions</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1bca825c-a4e9-46c9-a831-a00364cdd50e</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -38,7 +39,7 @@
       <name>UserEmail</name>
    </variable>
    <variable>
-      <defaultValue>'View Weekly Flash Reports,View Standard Trending Reports,View Leadership Trending Reports,Access Weekend Flash Report,Access church insights Dashboard'</defaultValue>
+      <defaultValue>'View Weekly Flash Reports,View Standard Trending Reports,View Leadership Trending Reports,Access Weekend Flash Report,Access Church Insights Dashboard'</defaultValue>
       <description></description>
       <id>43395bef-fcae-4fa4-9209-6fec731e5f84</id>
       <masked>false</masked>

@@ -32,19 +32,21 @@ WebUI.sendKeys(findTestObject('HC-Web/User/Search/SearchInput'), Keys.chord(Keys
 
 SearchTableCellObject = findTestObject('HC-Web/User/Search/SearchResultsPersonNameMatch', [('textToMatch') : UserEmail])
 
-WebUI.waitForElementClickable(SearchTableCellObject, 0)
+WebUI.waitForElementClickable(SearchTableCellObject, 4)
 
 'Open the person record from the search results'
 WebUI.click(SearchTableCellObject)
 
-WebUI.waitForElementClickable(findTestObject('HC-Web/User/Permission/User_Profile_Page/EditButton'), 5)
+profileEditButton = findTestObject('HC-Web/User/Permission/User_Profile_Page/EditButton')
 
-WebUI.click(findTestObject('HC-Web/User/Permission/User_Profile_Page/EditButton'))
+WebUI.waitForElementClickable(profileEditButton, 5)
+
+WebUI.click(profileEditButton)
 
 'Wait for page load'
-WebUI.delay(4)
+WebUI.waitForElementClickable(findTestObject('HC-Web/User/Permission/User_Profile_Page/ApplicationAdmin_Link'), 0)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/User/Permission/User_Profile_Page/ApplicationAdmin_Link'), 0)
+WebUI.delay(4)
 
 WebUI.scrollToElement(findTestObject('HC-Web/User/Permission/User_Profile_Page/ApplicationAdmin_Link'), 0)
 
@@ -60,19 +62,23 @@ UserExtraPermissions = findTestObject('HC-Web/User/Permission/User_Profile_Page/
 WebUI.click(UserExtraPermissions)
 
 //Split the Extra Permissions into an array
-String[] ExtraPermissionArray = PermissionsToAdd.split(',')
+String[] permissionsToAdd = PermissionsToAdd.split(',')
 
 UserExtraPermissionInputBox = findTestObject('HC-Web/User/Permission/User_Profile_Page/User_ExtraPermissions_InputBox')
 
-for (int i = 0; i < ExtraPermissionArray.length; i++) {
-    /*IsPermissionExists = findTestObject('HC-Web/User/Permission/User_Profile_Page/User_ExistingPermission_Search', [('textToMatch') : ExtraPermissionArray[
-            i]])
+for (int i = 0; i < permissionsToAdd.length; i++) {
+    // Get the current permission to match
+    currentPermission = (permissionsToAdd[i])
 
-    if (IsPermissionExists != null) {
+    // Find the test object with the dynamic variable
+    permissionTestObject = findTestObject('HC-Web/User/Permission/User_Profile_Page/Check_ExistingPermission', [('textToMatch') : currentPermission])
+
+    // If the permission exists, continue to the next iteration
+    if (permissionTestObject != null) {
         continue
-    }*/
+    }
     
-    WebUI.setText(UserExtraPermissionInputBox, ExtraPermissionArray[i])
+    WebUI.setText(UserExtraPermissionInputBox, currentPermission)
 
     WebUI.delay(2)
 
@@ -87,5 +93,7 @@ WebUI.waitForElementClickable(SaveButton, 1)
 
 WebUI.click(SaveButton)
 
-//WebUI.closeBrowser()
+WebUI.waitForElementPresent(profileEditButton, 4)
+
+WebUI.closeBrowser()
 

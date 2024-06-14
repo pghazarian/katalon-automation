@@ -37,9 +37,11 @@ WebUI.waitForElementClickable(SearchTableCellObject, 0)
 'Open the person record from the search results'
 WebUI.click(SearchTableCellObject)
 
-WebUI.waitForElementClickable(findTestObject('HC-Web/User/Permission/User_Profile_Page/EditButton'), 5)
+profileEditButton = findTestObject('HC-Web/User/Permission/User_Profile_Page/EditButton')
 
-WebUI.click(findTestObject('HC-Web/User/Permission/User_Profile_Page/EditButton'))
+WebUI.waitForElementClickable(profileEditButton, 5)
+
+WebUI.click(profileEditButton)
 
 'Wait for page load'
 WebUI.delay(4)
@@ -62,13 +64,12 @@ UserExtraPermissionInputBox = findTestObject('HC-Web/User/Permission/User_Profil
 
 for (int i = 0; i < permissionsToRemove.length; i++) {
     permissionRemoveObject = findTestObject('HC-Web/User/Permission/User_Profile_Page/User_ExistingPermission_Remove', [
-            ('textToMatch') : permissionsToRemove[i]])
-
-    if (permissionRemoveObject == null) {
-        continue
-    }
-    
-    WebUI.click(permissionRemoveObject)
+            ('textToMatch') : permissionsToRemove[i]])		
+	
+	if (permissionRemoveObject != null) {
+		// Click the element if it is clickable
+        WebUI.click(permissionRemoveObject)
+	}
 }
 
 SaveButton = findTestObject('HC-Web/User/Permission/User_Profile_Page/SaveButton')
@@ -77,5 +78,7 @@ WebUI.waitForElementClickable(SaveButton, 1)
 
 WebUI.click(SaveButton)
 
-WebUI.closeBrowser().s
+WebUI.waitForElementPresent(profileEditButton, 0)
+
+WebUI.closeBrowser()
 
