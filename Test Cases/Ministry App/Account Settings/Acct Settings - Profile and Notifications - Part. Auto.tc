@@ -4,5 +4,6 @@
    <name>Acct Settings - Profile and Notifications - Part. Auto</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6d65892b-65fd-46fa-b2c0-8f989aadccc1</testCaseGuid>
 </TestCaseEntity>

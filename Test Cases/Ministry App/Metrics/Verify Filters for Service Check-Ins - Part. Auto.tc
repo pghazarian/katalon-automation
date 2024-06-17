@@ -4,5 +4,6 @@
    <name>Verify Filters for Service Check-Ins - Part. Auto</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>beabacaa-8ddc-4ca9-9dad-4ca9bf970109</testCaseGuid>
 </TestCaseEntity>
