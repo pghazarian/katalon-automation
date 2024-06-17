@@ -50,3 +50,39 @@ import org.openqa.selenium.Keys as Keys
  * 20. Event Campus
  * 21. Verify once the child is checked out, event should no longer appear on the main "Check-In" screen
 s */
+/*
+*  This script navigates through the Companion App to check out a child from an event.
+*
+*  @param username The username for logging into the Companion App
+*  @param password The password for logging into the Companion App
+*/
+
+// Download and Open the Companion App
+// Login
+// Tap on user profile web avatar icon
+Mobile.tap(findTestObject('Object Repository/UserProfileWebAvatarIcon'))
+
+// Verify that the "Check-In" button is displayed
+Mobile.verifyElementVisible(findTestObject('Object Repository/CheckInButton'))
+
+// Tap on the "Check-In" button
+Mobile.tap(findTestObject('Object Repository/CheckInButton'))
+
+// If user taps on an Event where their child is currently checked in
+// Display Child Check-Out Screen
+Mobile.tap(findTestObject('Object Repository/CheckedInEvent'))
+
+// Verify elements on the Child Check-Out Screen
+Mobile.verifyElementVisible(findTestObject('Object Repository/ChildCheckOutIcon'))
+Mobile.verifyElementVisible(findTestObject('Object Repository/ChildCheckOutScreenTitle'))
+Mobile.verifyElementVisible(findTestObject('Object Repository/ChildCheckOutXButton'))
+Mobile.verifyElementVisible(findTestObject('Object Repository/ChildsQRCode'))
+Mobile.verifyElementVisible(findTestObject('Object Repository/EventCategory'))
+Mobile.verifyElementVisible(findTestObject('Object Repository/EventTitle'))
+Mobile.verifyElementVisible(findTestObject('Object Repository/EventDetailsLink'))
+Mobile.verifyElementVisible(findTestObject('Object Repository/CheckInDetails'))
+
+// Check out the child
+
+// Verify that the event no longer appears on the main "Check-In" screen
+Mobile.verifyElementNotPresent(findTestObject('Object Repository/CheckedInEvent'))
