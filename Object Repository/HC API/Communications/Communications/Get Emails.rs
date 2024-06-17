@@ -16,10 +16,18 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
       <webElementGuid>f839eec4-a604-400a-92cf-7057cd2dd65c</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>ab45f944-9173-4feb-8aed-3b03b31490c2</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -82,6 +90,6 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'results[18].name', 'ST Communication')</verificationScript>
+WS.verifyElementPropertyValue(response, 'results[19].name', 'ST Communication')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

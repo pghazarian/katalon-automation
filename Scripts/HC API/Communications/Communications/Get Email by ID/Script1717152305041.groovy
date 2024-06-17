@@ -19,10 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('HC API/Communications/Communications/Get Email by ID', [('JobId') : '58', ('JobType') : 'Email']))
+response = WS.sendRequest(findTestObject('HC API/Communications/Communications/Get Email by ID', [('JobId') : '85', ('JobType') : 'Email']))
 
 // Validate the response was successful (HTTP Code 200 == Status)
 WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, 'jobType', 'Email')
 
+WS.verifyElementPropertyValue(response, 'segmentIds', '[113]')
+
+WS.verifyElementPropertyValue(response, 'segmentNames', '[ST Segment Record Test 2]')
