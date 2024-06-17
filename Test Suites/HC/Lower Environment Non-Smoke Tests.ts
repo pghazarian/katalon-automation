@@ -462,4 +462,29 @@
          <variableId>d4e14f3f-5153-41cd-8c79-073a2c67c50c</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>52927145-8831-42ef-8588-4f7ea77bc042</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Serving Opps/Managing A Serving Opp/Serving Schedule/Send Email to Serving Schedule</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d250bed5-94f6-401f-8d8e-c14aaeae1bf0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7b625b23-d546-4e07-8c65-01a263e32f81</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>33103c4b-4e3e-4037-a39b-5c2596fa67e1</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
