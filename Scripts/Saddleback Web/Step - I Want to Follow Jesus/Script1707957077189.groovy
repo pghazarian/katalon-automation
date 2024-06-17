@@ -75,7 +75,7 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 CustomKeywords.'NavigationHelper.goToHCUrl'(GlobalVariable.ConnectionForm_FollowJesus)
 
 'Click on the Entries menu'
-WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/SubNav/Entries'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Entries'))
 
 //TODO: update this to search for the entry by name
 'Open an entry'
@@ -115,7 +115,7 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Confirm
 
 WebUI.delay(3)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/EntriesHeader'), 3)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Entries Header'), 3)
 
 
 
