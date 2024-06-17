@@ -42,7 +42,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;CategoryIds=${CategoryIds}</restUrl>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;CategoryIds=${CategoryIds}&amp;pageSize=</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -59,7 +59,7 @@
       <name>JobType</name>
    </variables>
    <variables>
-      <defaultValue>'AllDevices'</defaultValue>
+      <defaultValue>'Segment'</defaultValue>
       <description></description>
       <id>3168d94d-33b4-436b-850b-0a08c6072064</id>
       <masked>false</masked>
@@ -90,6 +90,6 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'results[19].name', 'ST Communication')</verificationScript>
+WS.verifyElementPropertyValue(response, 'results[0].name', 'ST Push Notification 1')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

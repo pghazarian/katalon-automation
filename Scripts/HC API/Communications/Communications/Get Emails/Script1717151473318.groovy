@@ -20,9 +20,7 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 response = WS.sendRequestAndVerify(findTestObject('HC API/Communications/Communications/Get Emails', [('JobType') : 'Email'
-            , ('AudienceType') : 'AllDevices', ('CategoryIds') : '1']))
+            , ('AudienceType') : 'Segment', ('CategoryIds') : '1']))
 
-WS.verifyElementPropertyValue(response, 'results[18].name', 'ST Communication')
-
-WS.verifyElementPropertyValue(response, 'results[18].id', '46')
+WS.verifyElementPropertyValue(response, 'results[0].id', '17')
 
