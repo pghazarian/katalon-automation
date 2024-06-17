@@ -66,14 +66,11 @@ String[] permissionsToAdd = PermissionsToAdd.split(',')
 
 UserExtraPermissionInputBox = findTestObject('HC-Web/User/Permission/User_Profile_Page/User_ExtraPermissions_InputBox')
 
-for (int i = 0; i < permissionsToAdd.length; i++) {
-    // Get the current permission to match
+for (int i = 0; i < permissionsToAdd.length; i++) {    
     currentPermission = (permissionsToAdd[i])
-
-    // Find the test object with the dynamic variable
+    
     permissionTestObject = findTestObject('HC-Web/User/Permission/User_Profile_Page/Check_ExistingPermission', [('textToMatch') : currentPermission])
 
-    // If the permission exists, continue to the next iteration
     if (permissionTestObject != null) {
         continue
     }
