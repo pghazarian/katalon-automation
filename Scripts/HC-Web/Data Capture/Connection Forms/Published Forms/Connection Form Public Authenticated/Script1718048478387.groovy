@@ -143,15 +143,15 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Entries
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/FirstRow'))
 
 'Verify the first name field value'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/FirstNameTextField'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/FirstNameTextField'),
 	FirstName)
 
 'Verify the last name'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/LastNameTextField'), 
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/LastNameTextField'), 
     LastName)
 
 'Verify the email'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Email Text Field'), 
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Email Text Field'), 
     Email)
 
 'Verify single line text'

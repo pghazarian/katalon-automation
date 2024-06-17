@@ -7,8 +7,11 @@ PBI 108072: Notifications - Back Office - All Push Notifications to Daily Batch&
 Dependent on the following PBIs:&#xd;
 PBI  108979: Notifications - Back Office - Push Notification Template Design&#xd;
 PBI 108980: Notifications - Back Office - Push Notification Template Data Pull / Merge&#xd;
-PBI 108981: Notifications - Back Office - Push Notification Template Implementation</description>
-   <name>Verify all Push notifications and Templates - PA</name>
+PBI 108981: Notifications - Back Office - Push Notification Template Implementation&#xd;
+&#xd;
+&#xd;
+TC needs additional work</description>
+   <name>Verify all Push notifications and Templates</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

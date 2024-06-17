@@ -82,15 +82,15 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Entries
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/FirstRow'))
 
 'Verify the first name field value'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/FirstNameTextField'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/FirstNameTextField'),
 	FirstName)
 
 'Verify the last name'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/LastNameTextField'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/LastNameTextField'),
 	LastName)
 
 'Verify the email'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Email Text Field'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Email Text Field'),
 	Email)
 
 'Verify dropdown selection'
@@ -103,7 +103,7 @@ WebUI.verifyEqual(CustomKeywords.'FormHelper.getDropDownSelectionByLabel'('Campu
 CustomKeywords.'TestObjectHelper.verifyTextAreaValueEqual'(CustomKeywords.'FormHelper.getTextAreaByLabel'('Tell us a little about your story.'), Note)
 
 'Verify the phone'
-CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/PhoneTextField'),
+CustomKeywords.'TestObjectHelper.verifyTextFieldValueEqual'(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/PhoneTextField'),
 	Phone)
 
 'Delete the form entry'

@@ -47,10 +47,10 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/New Ent
 
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/New Entry/Entry Type Modal/Next Button'))
 
-WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/First Name Field'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'))
 
-WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/First Name Field'), 'Test')
+WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 'Test')
 
-WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/First Name Field'), Keys.chord(
+WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), Keys.chord(
         Keys.ENTER))
 

@@ -37,27 +37,27 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection For
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/New Entry/Entry Type Modal/Next Button'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/First Name Field'), 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 
     3)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/First Name Field'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 
     GlobalVariable.Follow_Up_Task_Person_First_Name)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Last Name Field'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Last Name Field'), 
     GlobalVariable.Follow_Up_Task_Person_Last_Name)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Search Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Search Button'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Add Entry First Search Results'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Add Entry First Search Results'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Select Button'), 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Select Button'), 
     2)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Select Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Select Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Yes Confirmation Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Yes Confirmation Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/New Entry/Add Entry Button'))
 

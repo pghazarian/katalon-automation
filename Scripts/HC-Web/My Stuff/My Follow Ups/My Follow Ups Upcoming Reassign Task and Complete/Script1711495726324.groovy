@@ -50,31 +50,31 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection For
 WebUI.delay(3)
 
 'Enter the Person\'s name to be assigned to the Connection Form Entry'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/First Name Field'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 
     GlobalVariable.Follow_Up_Task_Person_First_Name)
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Last Name Field'), 
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Last Name Field'), 
     GlobalVariable.Follow_Up_Task_Person_Last_Name)
 
 'Search for the Person'
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Search Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Search Button'))
 
 WebUI.delay(3)
 
 'Select the person summary row'
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Person Search Results Summary Panel Name Match', 
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Summary Panel Name Match', 
         [('textToMatch') : FollowUpTaskPersonName]))
 
 'After that, click the Select button button on that person summary row'
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Person Search Results Details Panel Button Match', 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Details Panel Button Match', 
         [('textToMatch') : FollowUpTaskPersonName]), 2)
 
 'After that, click the Select button button on that person summary row'
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Person Search Results Details Panel Button Match', 
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Details Panel Button Match', 
         [('textToMatch') : FollowUpTaskPersonName]))
 
 'Confirm the Selection '
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Needs Sorting-------------------------------Add Entry Drawer/Person Search Results Summary Panel Yes Confirmation Button Match', 
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Summary Panel Yes Confirmation Button Match', 
         [('textToMatch') : FollowUpTaskPersonName]))
 
 'Click the Add Entry Button'

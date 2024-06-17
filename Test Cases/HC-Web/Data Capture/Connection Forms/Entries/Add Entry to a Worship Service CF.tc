@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Adding an Entry to a Form which is setup with Worship Service Event Type</description>
-   <name>Add Entry to a Worship Service CF - PA</name>
+   <description>Adding an Entry to a Form which is setup with Worship Service Event Type&#xd;
+&#xd;
+TC needs additional work</description>
+   <name>Add Entry to a Worship Service CF</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
