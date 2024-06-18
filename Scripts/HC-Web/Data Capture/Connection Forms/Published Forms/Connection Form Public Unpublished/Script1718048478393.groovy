@@ -23,7 +23,7 @@ def FormPath = GlobalVariable.HC_HostUrl + GlobalVariable.ConnectionForm_PublicF
 
 WebUI.openBrowser(FormPath)
 
-WebUI.verifyElementText(findTestObject('HC-Web/Data Capture/Connection Forms/Connection Form Public/FormClosed_Title'), 'Form Closed')
+WebUI.verifyElementText(findTestObject('HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/FormClosed_Title'), 'Form Closed')
 
 DescriptionObject = CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[text() = 'This form has been closed and is no longer accepting submissions. If you think it has been closed in error, please contact the form’s owner.']")
 
