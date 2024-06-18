@@ -22,58 +22,6 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/serving-opportunity/$ServingOppId/$CampusId/schedule/"], 
     FailureHandling.STOP_ON_FAILURE)
 
-'If volunteer that will be added is already in serving schedule, remove them'
-if(WebUI.waitForElementPresent(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List', [('volunteerName') : MemberName]), 
-    5)) {
-
-'Select desired volunteer'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer Checkbox', [('volunteerName') : MemberName]))
-
-'Open actions menu'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Actions Button'))
-
-'Select option to remove volunteer from this occurrence'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Remove From This Occurrence Option'))
-
-'Confirm removal from serving schedule'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Remove From Occurrence Prompt Yes Button'))
-
-'Verify volunteer removed from serving schedule'
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List', [('volunteerName') : MemberName]),
-	0)
-
-}
-
-'Navigate to roster'
-WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Roster Tab'))
-
-'If volunteer that will be added is already in the roster, remove them'
-if(WebUI.waitForElementPresent(findTestObject('HC-Web/Serving Opps/Roster Page/Member In List', [('memberName') : MemberName]), 5)) {
-	
-	'Click on added volunteer to open member drawer'
-	WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member In List', [('memberName') : MemberName]))
-	
-	'Open actions menu'
-	WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Member Name', [('MemberName') : MemberName]),
-		2)
-	
-	'Open actions menu'
-	WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Actions Button'))
-	
-	'Select option to remove member from roster'
-	WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Remove From Opportunity'))
-	
-	'Confirm removal from roster'
-	WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Remove From Opportunity Confirmation Yes Button'))
-	
-	'Verify member removed from roster'
-	WebUI.waitForElementNotPresent(findTestObject('HC-Web/Serving Opps/Roster Page/Member In List', [('memberName') : MemberName]),
-		0)
-	
-}
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Serving Schedule Tab'))
-
 'Click button to add volunteer to SO'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Button'))
 
@@ -97,9 +45,42 @@ WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunt
 'Click button to add selected volunteer'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Add Volunteer Button'))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Add Volunteer Drawer/Custom Questions Drawer/Response Checkbox', 
+        [('CheckboxText') : CheckboxText]), 2)
+
+'Click checkbox for custom question'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Add Volunteer Drawer/Custom Questions Drawer/Response Checkbox', 
+        [('CheckboxText') : CheckboxText]), FailureHandling.STOP_ON_FAILURE)
+
+'Answer single line custom question'
+WebUI.setText(findTestObject('HC-Web/Serving Opps/Roster Page/Add Volunteer Drawer/Custom Questions Drawer/Response Textbox', 
+        [('LabelText') : SingleLineQuestionLabel]), TextAnswer)
+
+'Save responses'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Add Volunteer Drawer/Custom Questions Drawer/Save Button'), 
+    FailureHandling.STOP_ON_FAILURE)
+
 'Verify volunteer was added to serving schedule'
 WebUI.waitForElementPresent(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List', [('volunteerName') : MemberName]), 
-    0)
+    10)
+
+'Open volunteer information drawer'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer In List', [('volunteerName') : MemberName]), 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Custom Question Response', [('QuestionText') : CheckboxQuestionLabel]), 
+    2)
+
+'Verify checkbox question was checked'
+WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Custom Question Response', [('QuestionText') : CheckboxQuestionLabel]), 
+    'True')
+
+'Verify single line response is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Custom Question Response', [('QuestionText') : SingleLineQuestionLabel]), 
+    TextAnswer)
+
+'Close drawer'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Drawer/Close Drawer Button'), FailureHandling.STOP_ON_FAILURE)
 
 'Select added volunteer'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Volunteer Checkbox', [('volunteerName') : MemberName]))
