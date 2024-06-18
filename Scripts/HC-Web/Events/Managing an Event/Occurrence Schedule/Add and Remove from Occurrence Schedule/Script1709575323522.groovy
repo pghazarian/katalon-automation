@@ -56,6 +56,7 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Searc
 'Click button to select opened record'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
 
+'Scroll confirmation button into view'
 WebUI.scrollToElement(findTestObject('HC-Web/Event/PersonDrawer/Personal Info Header'), 2)
 
 'Click "yes" to confirm selection'
