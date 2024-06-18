@@ -224,6 +224,8 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Searc
 
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
 
+WebUI.scrollToElement(findTestObject('HC-Web/Event/PersonDrawer/Personal Info Header'), 2)
+
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
 WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Requred Question Asterisk'), 

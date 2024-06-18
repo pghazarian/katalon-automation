@@ -53,10 +53,10 @@ WebUI.setText(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Sea
 'Select person record from search results'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Results'))
 
-WebUI.scrollToPosition(0, 1300)
-
 'Click button to select opened record'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
+
+WebUI.scrollToElement(findTestObject('HC-Web/Event/PersonDrawer/Personal Info Header'), 2)
 
 'Click "yes" to confirm selection'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
