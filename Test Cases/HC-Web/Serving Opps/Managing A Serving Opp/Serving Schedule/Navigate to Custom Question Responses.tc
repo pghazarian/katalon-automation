@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Navigate to Custom Question Responses</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5bd25344-c0a0-4bee-9f3b-7f9125f1b224</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>119c51bc-6556-45ed-a30a-baf55539cff1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>33103c4b-4e3e-4037-a39b-5c2596fa67e1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dd62a615-6b83-4bda-8cac-45c7ad1ddc82</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4854ef46-bb6d-4e80-9b26-cc300c9303e5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>93e5e396-b921-48c9-b918-6e6e730a7526</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>03d8b71d-1507-4785-b4f4-6cb691715b3d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c5114fb7-faa8-46d8-a883-ad2fdc066bf2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.SO_Id_CustomQuestions</defaultValue>
+      <description></description>
+      <id>119c51bc-6556-45ed-a30a-baf55539cff1</id>
+      <masked>false</masked>
+      <name>ServingOppId</name>
+   </variable>
+   <variable>
+      <defaultValue>'Garrett Clover'</defaultValue>
+      <description></description>
+      <id>33103c4b-4e3e-4037-a39b-5c2596fa67e1</id>
+      <masked>false</masked>
+      <name>MemberName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.Ministry_CampusId</defaultValue>
+      <description></description>
+      <id>dd62a615-6b83-4bda-8cac-45c7ad1ddc82</id>
+      <masked>false</masked>
+      <name>CampusId</name>
+   </variable>
+   <variable>
+      <defaultValue>'Check This Box!'</defaultValue>
+      <description></description>
+      <id>4854ef46-bb6d-4e80-9b26-cc300c9303e5</id>
+      <masked>false</masked>
+      <name>CheckboxText</name>
+   </variable>
+   <variable>
+      <defaultValue>'Check This Box?'</defaultValue>
+      <description></description>
+      <id>93e5e396-b921-48c9-b918-6e6e730a7526</id>
+      <masked>false</masked>
+      <name>CheckboxQuestionLabel</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test Question'</defaultValue>
+      <description></description>
+      <id>03d8b71d-1507-4785-b4f4-6cb691715b3d</id>
+      <masked>false</masked>
+      <name>SingleLineQuestionLabel</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test Answer'</defaultValue>
+      <description></description>
+      <id>c5114fb7-faa8-46d8-a883-ad2fdc066bf2</id>
+      <masked>false</masked>
+      <name>TextAnswer</name>
+   </variable>
+</TestCaseEntity>

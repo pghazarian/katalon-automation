@@ -204,4 +204,9 @@
       <initValue>'ST Segment 1'</initValue>
       <name>Segments_SearchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'9653'</initValue>
+      <name>SO_Id_CustomQuestions</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
