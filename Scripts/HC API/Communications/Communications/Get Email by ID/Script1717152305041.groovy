@@ -26,6 +26,6 @@ WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, 'jobType', 'Email')
 
-WS.verifyElementPropertyValue(response, 'segmentIds', '[113]')
+WS.verifyElementPropertyValue(response, 'segmentIds', '[112]')
 
-WS.verifyElementPropertyValue(response, 'segmentNames', '[ST Segment Record Test 2]')
+WS.verifyElementPropertyValue(response, 'segmentNames', '[ST Segment Record Test 1]')

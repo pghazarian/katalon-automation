@@ -42,7 +42,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;CategoryIds=${CategoryIds}&amp;pageSize=</restUrl>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;CategoryIds=${CategoryIds}&amp;PageSize=${PageSize}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -72,6 +72,13 @@
       <masked>false</masked>
       <name>CategoryIds</name>
    </variables>
+   <variables>
+      <defaultValue>'50'</defaultValue>
+      <description></description>
+      <id>68f699a0-bb8b-46f7-869c-ecf3a418d5fd</id>
+      <masked>false</masked>
+      <name>PageSize</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -90,6 +97,6 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'results[0].name', 'ST Push Notification 1')</verificationScript>
+WS.verifyElementPropertyValue(response, 'results[37].name', 'ST Communication - 2024-06-11 13:32:55 Edited')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
