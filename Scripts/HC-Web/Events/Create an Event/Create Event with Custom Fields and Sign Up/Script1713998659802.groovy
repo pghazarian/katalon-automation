@@ -89,7 +89,7 @@ WebUI.setText(findTestObject('HC-Web/Event/Details/Registration/Custom Question 
 'Select required checkbox'
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration/Custom Question Drawer/Required Checkbox'))
 
-'Select sentitive checkbox'
+'Select sensitive checkbox'
 WebUI.click(findTestObject('HC-Web/Event/Details/Registration/Custom Question Drawer/Sensitive Checkbox'))
 
 'Click done button'
@@ -218,35 +218,51 @@ WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Add to Roster Butto
 
 WebUI.waitForElementVisible(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), 2)
 
+'Search for attendee to be added'
 WebUI.setText(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Bar Input'), attendee + Keys.ENTER)
 
+'Choose person from list'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Results'))
 
+'Click button to select person'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
 
+'Scroll confirmation button into view'
+WebUI.scrollToElement(findTestObject('HC-Web/Event/PersonDrawer/Personal Info Header'), 2)
+
+'Confirm selection'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
-WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Requred Question Asterisk'), 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Required Question Asterisk'), 
     2)
 
-WebUI.verifyElementText(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Requred Question Asterisk'), 
+'Verify that the required question shows the asterisk denoting it is required'
+WebUI.verifyElementText(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Required Question Asterisk'), 
     '*')
 
+'Answer single line question'
 WebUI.setText(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Single Line Answer Text Area'), 'Answer 1')
 
+'Answer paragraph question'
 WebUI.setText(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Paragraph Answer Text Area'), 'Answer 2')
 
+'Select checkbox for single checkbox question'
 WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/First Single Checkbox Response'))
 
+'Select first checkbox for grouped checkbox question'
 WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/First Grouped Checkbox Response'))
 
+'Select first option for multiple choice question'
 WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/First Multiple Choice Response'))
 
+'Answer dropdown question'
 CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('edit_response--question_dropdown-', 'Placeholder text 1')
 
+'Answer date question'
 WebUI.setText(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Date Response Text Field'), date + 
     Keys.ENTER)
 
+'Save question responses'
 WebUI.click(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Save Responses Button'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Event/Registration Roster/Person Rows'), 5)
@@ -268,18 +284,24 @@ WebUI.waitForElementNotPresent(findTestObject('Object Repository/HC-Web/Event/Re
 'Verify person record was removed from registration roster'
 WebUI.verifyTextNotPresent(attendee, false)
 
+'Navigate to event overview'
 WebUI.click(findTestObject('HC-Web/Event/Details/Subnav_Overview'))
 
+'Open actions menu'
 WebUI.click(findTestObject('HC-Web/Event/Overview/Actions Dropdown'))
 
+'Select option to cancel event'
 WebUI.click(findTestObject('HC-Web/Event/Overview/Cancel Event Button'))
 
+'Confirm selection'
 WebUI.click(findTestObject('HC-Web/Event/Overview/Cancel Event Confirmation Yes Button'))
 
+'Verify cancellation banner appears'
 WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Overview/Successfully Cancelled Banner'), 0)
 
 WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Details/Close Email Drawer Button'), 2)
 
+'Close email drawer'
 WebUI.click(findTestObject('HC-Web/Event/Details/Close Email Drawer Button'))
 
 WebUI.closeBrowser()
