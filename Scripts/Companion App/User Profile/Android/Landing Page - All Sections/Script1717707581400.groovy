@@ -55,7 +55,7 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Set
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Settings Icon'), 0)
 
 'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Profile - Back Chevron Icon'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Gift'), 1)
 
@@ -78,22 +78,27 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Not
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Notes Tile'), 0)
 
 'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Profile - Back Chevron Icon'), 0)
+
+'My Prayers - Element '
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Prayers - Element'), 1)
+
+'My Prayer Tile '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Prayers Tile'), 0)
+
+Mobile.scrollToText('Please ')
+
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Profile back button'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Ministries'), 1)
 
 Mobile.tap(findTestObject('Companion App/Android/User Profile/My Ministries Tile'), 0)
 
-'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Back button'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Events'), 1)
 
-'My Events Tile '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Events Tile'), 0)
-
-'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Events Tile'), 0)
 
 Mobile.closeApplication()
 

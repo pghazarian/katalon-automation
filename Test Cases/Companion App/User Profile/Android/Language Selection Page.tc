@@ -6,5 +6,6 @@ Note: This is a Script TC, which will  need to be automated, once the feature is
    <name>Language Selection Page</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>60605abc-3536-4ac0-b57c-2f5eb9313442</testCaseGuid>
 </TestCaseEntity>
