@@ -60,6 +60,11 @@ CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(findTestObject('HC-Web
     findTestObject('HC-Web/Event/Details/Subnav_MoreEllipsis'), CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'(
         '//div[contains(@class, \'navigation_sectional_tabs--panel\')]/button[contains(@class, \'button_dropdown\')]/descendant::div[text() = \'Occurrence Schedule\']'))
 
+WebUI.delay(3)
+
+WebUI.waitForElementVisible(CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
+        ScheduledName), 5)
+
 'Click on name in the table to open the record in a drawer'
 WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 
         ScheduledName))
@@ -78,6 +83,11 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/CloseButton'))
 CustomKeywords.'NavigationHelper.clickPrimaryOrSecondary'(findTestObject('HC-Web/Event/Details/Subnav_RegistrationRoster'), 
     findTestObject('HC-Web/Event/Details/Subnav_MoreEllipsis'), CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'(
         '//div[contains(@class, \'navigation_sectional_tabs--panel\')]/button[contains(@class, \'button_dropdown\')]/descendant::div[text() = \'Registration Roster\']'))
+
+WebUI.delay(3)
+
+WebUI.waitForElementVisible(CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div',
+	RegistrantName), 5)
 
 'Click on name in the table to open the record in a drawer'
 WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpathTextMatch'('//main/descendant::tbody/descendant::div', 

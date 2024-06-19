@@ -54,8 +54,17 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 
 WebUI.delay(3)
 
-'Profile photo icon - on lower navigation menu '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Profile Web Avatar'), 0)
+'Back chevron "<" Icon, to the left of the Profile text top left '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Back - Chevron Icon'), 0)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My QR Code Button'), 0)
+
+WebUI.delay(3)
+
+'X button in QR code modal'
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/X Icon - QR Code modal'), 0)
 
 WebUI.delay(3)
 

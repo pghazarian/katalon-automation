@@ -54,6 +54,8 @@ WebUI.waitForElementVisible(findTestObject('HC-Web/Journey/Settings and Preferen
 WebUI.setText(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Add Journey Search Bar'), 
     JourneyName + Keys.chord(Keys.ENTER))
 
+WebUI.delay(5)
+
 'Click checkbox to select desired search result'
 WebUI.click(findTestObject('HC-Web/Journey/Settings and Preferences/Edit Suggested Journeys Drawer/Journey Search Result', 
         [('JourneyName') : JourneyName]))

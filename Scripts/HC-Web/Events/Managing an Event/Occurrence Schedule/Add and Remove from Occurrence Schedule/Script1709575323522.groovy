@@ -23,8 +23,8 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
     FailureHandling.STOP_ON_FAILURE)
 
 'If person record is already listed in occurrence schedule, remove them'
-if (CustomKeywords.'TestObjectHelper.isElementPresent'(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']"), 
-    5)) {
+if (WebUI.waitForElementPresent(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']"), 
+    10)) {
     WebUI.click(CustomKeywords.'TestObjectHelper.getTestObjectWithXpath'("//div[normalize-space(.)='$SearchName']/ancestor::tr/descendant::div[contains(@class,'icon-check')]"))
 
     WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Actions Dropdown'))
@@ -53,13 +53,19 @@ WebUI.setText(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Sea
 'Select person record from search results'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Person Search Drawer Search Results'))
 
+WebUI.scrollToPosition(0, 1300)
+
 'Click button to select opened record'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
 
 'Click "yes" to confirm selection'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
-'Click "yes" to confirm selection'
+'Wait for attendee name in list'
+WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
+    5)
+
+'Verify attendee name in list'
 WebUI.verifyElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
     0)
 
@@ -75,11 +81,11 @@ WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Remove from this Oc
 'Confirm removal from this occurrence'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Remove from this Occurrence Confirmation Yes Button'))
 
-'Click "yes" to confirm selection'
+'Wait for attendee name to be removed'
 WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
-    0)
+    5)
 
-'Click "yes" to confirm selection'
+'Verify attendee name was removed'
 WebUI.verifyElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/AttendeeName', [('AttendeeName') : SearchName]), 
     0)
 

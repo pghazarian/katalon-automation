@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Navigate to Edit Ministry Membership</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d8bd8770-963e-4581-b18e-f4df3ef47515</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d10a2371-083a-444d-82fa-0a4fd0d4a380</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2d994393-b33f-4fa6-a60e-a7a2f514dde9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4acdb29e-4173-4f4c-9327-8e01553f6986</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.SO_Id_Recurring_DoesNotEnd</defaultValue>
+      <description></description>
+      <id>d10a2371-083a-444d-82fa-0a4fd0d4a380</id>
+      <masked>false</masked>
+      <name>ServingOppId</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.Ministry_CampusId</defaultValue>
+      <description></description>
+      <id>2d994393-b33f-4fa6-a60e-a7a2f514dde9</id>
+      <masked>false</masked>
+      <name>CampusId</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Note Owner'</defaultValue>
+      <description></description>
+      <id>4acdb29e-4173-4f4c-9327-8e01553f6986</id>
+      <masked>false</masked>
+      <name>MemberName</name>
+   </variable>
+</TestCaseEntity>

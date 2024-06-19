@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test case to edit segment record</description>
-   <name>Edit Segment</name>
-   <tag>Dev</tag>
-   <comment></comment>
-   <testCaseGuid>8bcf928f-2736-4fd1-bb13-bebf4b58c3e8</testCaseGuid>
-</TestCaseEntity>
