@@ -222,7 +222,7 @@
       <guid>ee9f961f-7ff7-4e08-ba7f-f97821117010</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/My Follow Ups/My Follow Ups Upcoming Claim Task</testCaseId>
+      <testCaseId>Test Cases/HC-Web/My Stuff/My Follow Ups/My Follow Ups Upcoming Claim Task</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -235,7 +235,7 @@
       <guid>58ecaf8a-964a-4693-bc3a-fc731a02073d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/HC-Web/My Follow Ups/My Follow Ups Upcoming Reassign Task and Complete</testCaseId>
+      <testCaseId>Test Cases/HC-Web/My Stuff/My Follow Ups/My Follow Ups Upcoming Reassign Task and Complete</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

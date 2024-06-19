@@ -223,7 +223,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedu
 WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'), 
     2)
 
-WebUI.scrollToPosition(0, 1300)
+WebUI.scrollToElement(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Personal Info Header'), 2)
 
 'Confirm selection'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'))
