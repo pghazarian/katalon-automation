@@ -41,49 +41,51 @@ import org.openqa.selenium.Keys as Keys
 */
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Profile Web Avatar'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Profile Web Avatar - Element'), 1)
 
 'Profile photo icon - on lower navigation menu '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Profile Web Avatar'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Language'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Language selection/Language - Element'), 1)
 
 'Language button Object - Global icon'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Laguage Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Laguage Button'), 0)
 
 'Espanol | Spanish - selection object '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Spanish language selection'), 
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Spanish/Spanish language selection'), 
     0)
 
-'Apply button - App Language drawer'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Apply Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Profile Web Avatar'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings Icon/Settings - Element'), 1)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Settings Icon'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Settings Icon/Settings Button'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Profile - Back Chevron Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 
+    0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Gift Icon'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Gift Icon/Gift Button'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/X icon'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Gift Icon/X icon'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Notes Tile'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Notes Tile'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Profile - Back Chevron Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 
+    0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Mis Ministerios'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Spanish/Mis Ministerios'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Profile - Back Chevron Icon'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Spanish/Atras'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Events Tile'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Events Tile'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Profile - Back Chevron Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 
+    0)
 
 'Language button Object - Global icon'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Laguage Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Laguage Button'), 0)
 
 'English language selection '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/English language selection'), 
@@ -93,7 +95,7 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Apply Button'), 0)
 
 'Settings icon, top right of User Profile page'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Profile Web Avatar'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
 
 Mobile.closeApplication()
 
