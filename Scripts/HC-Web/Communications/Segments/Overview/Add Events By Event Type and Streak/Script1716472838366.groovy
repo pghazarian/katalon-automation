@@ -67,5 +67,13 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Streak Attendance Status And Count', 
         [('index') : 2]), '[AND] Unattended 1')
 
+'Verify Include Parent-Child Contact Information Label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Include Parent Child Contact Information Label', 
+        [('IncludeParentContactInformation') : 'Include Parent-Child Contact Information']), 'Include Parent-Child Contact Information')
+
+'Verify the value of Include Parent-Child Contact Information is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Include Parent Child Contact Information Value', 
+        [('index') : 5]), 'No')
+
 WebUI.closeBrowser()
 
