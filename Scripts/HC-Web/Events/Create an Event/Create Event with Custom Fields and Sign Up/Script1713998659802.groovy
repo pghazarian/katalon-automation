@@ -230,6 +230,9 @@ WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Resul
 'Scroll confirmation button into view'
 WebUI.scrollToElement(findTestObject('HC-Web/Event/PersonDrawer/Personal Info Header'), 2)
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'), 
+    2)
+
 'Confirm selection'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
