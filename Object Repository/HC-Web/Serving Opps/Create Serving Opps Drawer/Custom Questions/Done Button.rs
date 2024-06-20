@@ -6,12 +6,12 @@
    <elementGuidId>73ce221c-b7be-4855-b2e0-9aa5a282932c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#custom_question--props_done_button--1</value>
+         <key>XPATH</key>
+         <value>//button[contains(@id,'custom_question--props_done_button--')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='custom_question--props_done_button--1']</value>
+         <key>CSS</key>
+         <value>#custom_question--props_done_button--1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>260c70c8-7113-4469-bec7-4f42d65074a3</webElementGuid>
+      <webElementGuid>b2610f24-8bba-4861-a3e5-70fe6eb9644c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui button jss243 jss1184 jss253</value>
-      <webElementGuid>3666a349-f4d4-457d-942a-d393037c7918</webElementGuid>
+      <webElementGuid>d6ba549d-b1af-4292-bb8f-64d4652f7663</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>custom_question--props_done_button--1</value>
-      <webElementGuid>107cdd42-73bd-4d56-a0b4-c35ad83767ff</webElementGuid>
+      <webElementGuid>64e27cc9-21ac-4805-a285-5e262fbcda55</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Done</value>
-      <webElementGuid>8359cf81-72ca-4160-a32a-7ef9c80d6fed</webElementGuid>
+      <webElementGuid>9225eb2b-3614-40c0-8165-aa2a593b6e02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,6 +54,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;custom_question--props_done_button--1&quot;)</value>
-      <webElementGuid>469ce1b6-2ed7-4c81-a23d-a0de277c982f</webElementGuid>
+      <webElementGuid>2f3b47ce-372a-4de6-925d-4dd594bc55f2</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>01ae15c2-19d8-45e8-9c83-fecb53bf5b23</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#custom_question--props_placeholder_input--1</value>
+         <key>XPATH</key>
+         <value>//*[contains(@id,'custom_question--props_placeholder_input--')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='custom_question--props_placeholder_input--1']</value>
+         <key>CSS</key>
+         <value>#custom_question--props_placeholder_input--1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>deb6c0a9-363c-43fb-8df4-a8e85a56e633</webElementGuid>
+      <webElementGuid>cac2c6e1-ebe6-4c46-9eb7-535d524250c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>custom_question--props_placeholder_input--1</value>
-      <webElementGuid>544279e7-3e87-4933-a5ea-9efb23e60c90</webElementGuid>
+      <webElementGuid>d49c9e11-17c6-49f1-ae7d-8bbc8e1315db</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>ee96d74a-4942-43b2-8639-d7bc34560779</webElementGuid>
+      <webElementGuid>46ccc3f8-d23c-435f-9ce2-1f67d396046c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +46,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;custom_question--props_placeholder_input--1&quot;)</value>
-      <webElementGuid>6a02e142-63be-4a77-a7d2-114a4065af14</webElementGuid>
+      <webElementGuid>28c676fa-c114-46fe-87b7-9f2573fbfb98</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
