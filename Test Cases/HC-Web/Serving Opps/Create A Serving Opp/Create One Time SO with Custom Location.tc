@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
-   <name>Recurring SO Creation</name>
+   <description>Creates a Serving Op with a custom venue, signs up a user, then removes user and closes serving op&#xd;
+&#xd;
+Approved for Stage</description>
+   <name>Create One Time SO with Custom Location</name>
    <tag>Stage,Smoke</tag>
    <comment></comment>
-   <testCaseGuid>397ac597-c3b1-422f-89ce-bee1baba27e7</testCaseGuid>
+   <testCaseGuid>1cfa807b-1346-4590-9a81-efddea885c36</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c0e5a102-b756-445b-8b62-7095d8be94d4</variableId>
+      <variableId>73feb5ec-5148-4d92-8632-3d9382fc97b9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b2e72f31-ce1c-470b-a8f4-f0d0c7b10205</variableId>
+      <variableId>d3e7eb73-c915-4ca5-a62c-193ca1a0df24</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -32,14 +34,14 @@
    <variable>
       <defaultValue>'Garrett Clover'</defaultValue>
       <description></description>
-      <id>c0e5a102-b756-445b-8b62-7095d8be94d4</id>
+      <id>73feb5ec-5148-4d92-8632-3d9382fc97b9</id>
       <masked>false</masked>
       <name>VolunteerName</name>
    </variable>
    <variable>
-      <defaultValue>'QA Automation Recurring SO'</defaultValue>
+      <defaultValue>'QA Automation SO with Custom Location'</defaultValue>
       <description></description>
-      <id>b2e72f31-ce1c-470b-a8f4-f0d0c7b10205</id>
+      <id>d3e7eb73-c915-4ca5-a62c-193ca1a0df24</id>
       <masked>false</masked>
       <name>ServingOppName</name>
    </variable>

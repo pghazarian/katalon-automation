@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Save Custom Question Responses Button</name>
+   <name>Question Type Checkbox</name>
    <tag></tag>
-   <elementGuidId>9a6d27e1-04db-4d8e-90a9-67820d82ae74</elementGuidId>
+   <elementGuidId>f6785982-8109-4b05-93cc-8f0b1260d062</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='edit_response--save_button']</value>
+         <value>//div[@id='custom_question--question_selector-3']/h5</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#edit_response--save_button</value>
+         <value>#custom_question--question_selector-3 > h5.ui.header.header-icon</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,39 +21,31 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>cb2dbdcf-f0d2-4e0f-8991-3fe438f7c065</webElementGuid>
+      <value>h5</value>
+      <webElementGuid>c2e8d91d-ffe0-4d64-8ea1-be5418e3aa4c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui button jss243 jss2448 jss255</value>
-      <webElementGuid>87cd8797-cab8-4071-a6e6-fb647ae26d70</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>edit_response--save_button</value>
-      <webElementGuid>735ac574-ff2f-4ad6-ab90-6b6069ec92a6</webElementGuid>
+      <value>ui header header-icon</value>
+      <webElementGuid>778d19a5-cac5-4647-9706-462959b23bd5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Save</value>
-      <webElementGuid>98b35ad7-0cb3-49c3-9f34-5f218d843fbe</webElementGuid>
+      <value>CheckboxCheckbox</value>
+      <webElementGuid>2b9ba5e3-d6da-4bf4-a1ed-e14e970af2b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;edit_response--save_button&quot;)</value>
-      <webElementGuid>b249ff95-6d2e-44cb-8cec-adc8b3bcedbf</webElementGuid>
+      <value>id(&quot;custom_question--question_selector-3&quot;)/h5[@class=&quot;ui header header-icon&quot;]</value>
+      <webElementGuid>92bad73d-5ce4-4748-8ec6-2b18d8d9c31f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
