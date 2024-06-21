@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Custom Question Checkbox</name>
+   <name>Single Checkbox Response</name>
    <tag></tag>
    <elementGuidId>e93489f7-5023-4a0d-ae0a-da787b629f99</elementGuidId>
    <selectorCollection>

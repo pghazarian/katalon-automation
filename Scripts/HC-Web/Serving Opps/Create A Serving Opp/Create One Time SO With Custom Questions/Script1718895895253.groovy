@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def date = new Date().format('MMddyyyy').toString()
+
 'Login'
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/serving-opportunities/$MinistryId/$CampusId"], 
@@ -108,22 +110,142 @@ try {
         WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/New Question Button'), 
             2)
 
-        'Add a new question'
-        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/New Question Button'))
+        'Finish editing question'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/New Question Button'))
 
         'Select checkbox question type'
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Checkbox'))
 
         'Name the custom question'
         WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
-            'Test Question')
+            'Test Question 1')
 
         'Add a label to the checkbox'
-        WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Label Text Field'), 
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Placeholder Text Field'), 
             'Check This Box')
 
         'Make question required'
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Required Checkbox'))
+
+        'Make question sensitive'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Sensitive Checkbox'))
+
+        'Finish editing question'
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
+
+        'Add new question'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/New Question Button'))
+
+        'Select checkbox question type'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Checkbox'))
+
+        'Select grouped checkbox option'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Grouped Checkbox Radio Option'))
+
+        'Name the custom question'
+        WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
+            'Test Question 2')
+
+        'Add a label to the first checkbox'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 1 Text Field'), 
+            'Check This Box')
+
+        'Add a label to the second checkbox'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 2 Text Field'), 
+            'Or This Box')
+
+        'Finish editing question'
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
+
+        'Add new question'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/New Question Button'))
+
+        'Select single line question type'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Single Line Text'))
+
+        'Name the custom question'
+        WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
+            'Test Question 3')
+
+        'Add a placeholder'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Placeholder Text Field'), 
+            'Answer this question')
+
+        'Finish editing question'
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
+
+        'Add new question'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/New Question Button'))
+
+        'Select paragraph question type'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Paragraph Text'))
+
+        'Name the custom question'
+        WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
+            'Test Question 4')
+
+        'Add a placeholder'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Placeholder Text Field'), 
+            'Answer this question')
+
+        'Finish editing question'
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
+
+        'Add new question'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/New Question Button'))
+
+        'Select multiple choice question type'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Multiple Choice'))
+
+        'Name the custom question'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
+            'Test Question 5')
+
+        'Add a label to the first option'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 1 Text Field'), 
+            'Check This Box')
+
+        'Add a label to the second option'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 2 Text Field'), 
+            'Or This Box')
+
+        'Finish editing question'
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
+
+        'Add new question'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/New Question Button'))
+
+        'Select dropdown question type'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Dropdown'))
+
+        'Name the custom question'
+        WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
+            'Test Question 6')
+
+        'Add a placeholder'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Placeholder Text Field'), 
+            'Placeholder Text')
+
+        'Add a label to the first option'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 1 Text Field'), 
+            'Option 1')
+
+        'Add a label to the second option'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 2 Text Field'), 
+            'Option 2')
+
+        'Finish editing question'
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
+
+        'Add new question'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/New Question Button'))
+
+        'Select date question type'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Date'))
+
+        'Name the custom question'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
+            'Test Question 7')
 
         'Finish editing question'
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
@@ -223,21 +345,49 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedu
 WebUI.scrollToElement(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Personal Info Header'), 
     2)
 
+'Confirm selection'
 WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'), 
     2)
 
 'Confirm selection'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'))
 
-'Click required custom question checkbox'
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Checkbox Response'), 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Required Question Asterisk'), 
     2)
 
-'Click required custom question checkbox'
+'Verify required question asterisk is present'
+WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Required Question Asterisk'), 
+    '*')
+
+'Click single checkbox response'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Checkbox Response'))
+
+'Click grouped checkbox response'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/First Grouped Checkbox Response'))
+
+'Answer single line question'
+WebUI.setText(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Line Answer Text Area'), 
+    'Answer 3')
+
+'Answer paragraph question'
+WebUI.setText(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Paragraph Answer Text Area'), 
+    'Answer 4')
+
+'Click multiple choice option'
+WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/First Multiple Choice Response'))
+
+'Answer dropdown question'
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('edit_response--question_dropdown-', 'Option 1')
+
+'Answer date question'
+WebUI.setText(findTestObject('HC-Web/Event/Registration Roster/Custom Questions Drawer/Date Response Text Field'), date + 
+    Keys.ENTER)
 
 'Save custom question responses'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Save Responses Button'))
+
+'Select added volunteer'
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Added Volunteer Checkbox'), 5)
 
 'Verify volunteer appears in list'
 WebUI.verifyTextPresent(VolunteerName, false)
