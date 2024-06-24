@@ -6,12 +6,12 @@
    <elementGuidId>27b41c22-09fe-4424-8e09-a8a8025a669b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#custom_question--props_title_input--1</value>
+         <key>XPATH</key>
+         <value>//input[contains(@id,'custom_question--props_title_input--')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='custom_question--props_title_input--1']</value>
+         <key>CSS</key>
+         <value>#custom_question--props_title_input--1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>a1ec11f0-239d-491b-9f18-066559ecae54</webElementGuid>
+      <webElementGuid>4453d420-383c-459c-aa0a-b331f96b0a28</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>custom_question--props_title_input--1</value>
-      <webElementGuid>6a46871c-5223-476f-bf5c-889cafcc19e8</webElementGuid>
+      <webElementGuid>b68bf67e-160f-4b43-8fb6-c89b583c0fad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Your Question</value>
-      <webElementGuid>b186bf8a-df4c-4259-a247-f3ce87dd01b4</webElementGuid>
+      <webElementGuid>99680611-f2cd-45a3-b84a-c42b4924d5ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>1c59e6ea-a17a-4f37-8de9-b612c52f97a4</webElementGuid>
+      <webElementGuid>6048823e-aa6e-462b-8e15-478ae5c47cb0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,6 +54,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;custom_question--props_title_input--1&quot;)</value>
-      <webElementGuid>0a0e377b-d6b6-4044-a615-b59c3da8030c</webElementGuid>
+      <webElementGuid>fd65aa98-a17a-47ba-b659-392e618d68a8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

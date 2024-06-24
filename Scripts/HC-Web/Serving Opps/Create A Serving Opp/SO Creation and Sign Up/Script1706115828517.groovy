@@ -112,7 +112,7 @@ try {
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/New Question Button'))
 
         'Select checkbox question type'
-        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Checkbox Type Option'))
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Checkbox'))
 
         'Name the custom question'
         WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
@@ -223,18 +223,21 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedu
 WebUI.scrollToElement(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Personal Info Header'), 
     2)
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'), 
+    2)
+
 'Confirm selection'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'))
 
 'Click required custom question checkbox'
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Question Checkbox'), 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Checkbox Response'), 
     2)
 
 'Click required custom question checkbox'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Question Checkbox'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Checkbox Response'))
 
 'Save custom question responses'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Save Custom Question Responses Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Save Responses Button'))
 
 'Verify volunteer appears in list'
 WebUI.verifyTextPresent(VolunteerName, false)
