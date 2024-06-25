@@ -3,8 +3,9 @@
    <description></description>
    <name>Resources Navigation Button</name>
    <tag></tag>
-   <elementGuidId>6f6528c6-5778-4f05-8fc6-717487fe79a2</elementGuidId>
+   <elementGuidId>ee2304ec-9c51-444e-8465-8ec41669d25c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -12,7 +13,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeButton</value>
-      <webElementGuid>28d27df3-9908-486d-a0bc-285399fb76ea</webElementGuid>
+      <webElementGuid>51919104-6ed9-4791-952d-6bd71939f119</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +21,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>a47ac1ad-6ae0-4f42-bcc6-92cb76f56993</webElementGuid>
+      <webElementGuid>aa6caaba-fdba-4eec-88bb-dbc99391b50c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,7 +29,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>2e678cdc-19d1-49a0-abe1-87922f45ab86</webElementGuid>
+      <webElementGuid>bd99d9e3-dc71-455b-b479-f30e2a3a923a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +37,7 @@
       <name>height</name>
       <type>Main</type>
       <value>100.0</value>
-      <webElementGuid>02b07ed1-1cba-4cdb-adf9-a1225d6271c3</webElementGuid>
+      <webElementGuid>5b3f6192-1b43-4ca9-bb39-19cc985ed2c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +45,7 @@
       <name>index</name>
       <type>Main</type>
       <value>6</value>
-      <webElementGuid>ab76cb94-edbc-44f9-aebb-9a9ad50dc400</webElementGuid>
+      <webElementGuid>9932feef-1e5c-4900-8808-fde95aee0380</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +53,7 @@
       <name>label</name>
       <type>Main</type>
       <value>Events, tab, 7 of 7</value>
-      <webElementGuid>fe9e380f-5f5b-4481-9c08-aa76c3d4d197</webElementGuid>
+      <webElementGuid>59f3a8ea-b46a-4637-bd87-75c811fe1b31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -60,7 +61,7 @@
       <name>name</name>
       <type>Main</type>
       <value>Events, tab, 7 of 7</value>
-      <webElementGuid>11e4b457-6ae8-4283-8e5d-2d47112ddac9</webElementGuid>
+      <webElementGuid>46d599f6-5738-4e43-87b7-9c8b6847300c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,7 +69,7 @@
       <name>width</name>
       <type>Main</type>
       <value>112.0</value>
-      <webElementGuid>c0bd43a5-67fb-40fe-833c-6a42793f9510</webElementGuid>
+      <webElementGuid>93a1c077-5e3c-4e61-ba7a-4de01dc21a83</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -76,7 +77,7 @@
       <name>x</name>
       <type>Main</type>
       <value>674.0</value>
-      <webElementGuid>a2360db4-d9a4-40cf-a263-bbde35c1c77e</webElementGuid>
+      <webElementGuid>50df76c7-d379-493e-9c10-14925606768f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -84,7 +85,7 @@
       <name>y</name>
       <type>Main</type>
       <value>1546.0</value>
-      <webElementGuid>6a4ffc75-133b-488f-be1a-f3c72010d1de</webElementGuid>
+      <webElementGuid>ee384c53-428c-4e5f-8e44-2a8ce50e03e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -92,8 +93,59 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[7]</value>
-      <webElementGuid>f6bebba8-247d-411a-95d5-4f412b2984b5</webElementGuid>
+      <webElementGuid>a2837490-5a59-48d8-bdf6-80359e20d7cd</webElementGuid>
    </webElementProperties>
    <locator>Resources</locator>
+   <locatorCollection>
+      <entry>
+         <key>ATTRIBUTES</key>
+         <value>//*[@type = 'XCUIElementTypeButton' and @label = 'Events, tab, 7 of 7' and @name = 'Events, tab, 7 of 7']</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value>Events, tab, 7 of 7</value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value>type == 'XCUIElementTypeButton' AND enabled == 1 AND label == 'Events, tab, 7 of 7' AND name == 'Events, tab, 7 of 7'</value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value>XCUIElementTypeButton</value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value>Events, tab, 7 of 7</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Events, tab, 7 of 7</value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector().enabled(true).index(6)</value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value>**/XCUIElementTypeButton[`enabled == 1 AND label == 'Events, tab, 7 of 7' AND name == 'Events, tab, 7 of 7'`]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[7]</value>
+      </entry>
+   </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <platform>IOS</platform>
 </MobileElementEntity>
