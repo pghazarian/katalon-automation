@@ -40,6 +40,7 @@ WebUI.navigateToUrl("$GlobalVariable.Saddleback_URL/connect/digital-program")
 // (Tech details: the pulling of the Campus Name strings results in an ALL CAPs version of the string,
 //  which I cannot use for matching on the UI)	
 List<String> locations = [
+'Saddleback en Español',
 'Anaheim',
 'Brea',
 'Buenos Aires',
@@ -53,7 +54,6 @@ List<String> locations = [
 'Newport Mesa',
 'Online Community',
 'Rancho Capistrano',
-'Saddleback en Español',
 'San Clemente',
 'San Diego',
 'Santa Rosa',

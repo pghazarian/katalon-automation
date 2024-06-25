@@ -3,9 +3,9 @@
    <description></description>
    <name>List Entry - Name</name>
    <tag></tag>
-   <elementGuidId>371ec14f-21ab-436b-b42f-32a3076b1b50</elementGuidId>
+   <elementGuidId>aaaa8d0d-8274-4e77-ba06-6bde4238f2d6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[ends-with(@content-desc,&quot;-title&quot;)]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-card--events-title</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
