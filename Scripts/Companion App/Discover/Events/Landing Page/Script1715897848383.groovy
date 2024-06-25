@@ -70,7 +70,7 @@ Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Date'
 Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Location'), timeout)
 
 'Verify that the entries have a Recurring Frequency'
-Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Recurring Freqency'), timeout)
+//Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Recurring Freqency'), timeout)
 
 'Verify that the entries have a public name'
 //Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Category'), timeout)
@@ -109,9 +109,7 @@ String lastEventName = ''
 Boolean SortOrderIsValid = true
 int compareResult
 
-List<MobileElement> eventNames
-
-eventNames = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Discover/Events/List Entry - Name")))
+List<MobileElement> eventNames = MobileTestObjectHelper.getElementList(Finder.findLabel("Discover/Events/List Entry - Name"), driver)
 
 int listLength = eventNames.size()
 

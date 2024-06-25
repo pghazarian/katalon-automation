@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Recurring Freqency</name>
+   <name>Sorted List Entry - Name</name>
    <tag></tag>
-   <elementGuidId>14b1e34e-63ea-406d-8432-586a3ada9455</elementGuidId>
+   <elementGuidId>be2a1837-753b-4487-8026-a627b68f75de</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//XCUIElementTypeStaticText[@name=&quot;ui-card--events-frequency&quot;])[4]</locator>
+   <locator>//android.widget.TextView[ends-with(@content-desc,&quot;-title&quot;)]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
