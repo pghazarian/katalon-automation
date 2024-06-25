@@ -3,10 +3,9 @@
    <description></description>
    <name>Resources Navigation Button</name>
    <tag></tag>
-   <elementGuidId>ff2bcca4-900a-4282-8ef2-b82f1222d256</elementGuidId>
+   <elementGuidId>f250f9dd-158f-4663-9ffb-0fac55bfa3de</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Resources, tab, 2 of 6</locator>
+   <locator>Resources, tab, 2 of 5</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

@@ -30,7 +30,9 @@ WebUI.callTestCase(findTestCase('Saddleback Web/Login'), [('HostUrl') : GlobalVa
 // This campus list is hardcoded since the pulling of the Campus Names from the UI does not work
 // (Tech details: the pulling of the Campus Name strings results in an ALL CAPs version of the string,
 //  which I cannot use for matching on the UI)	
-List<String> locations = [10 //'Anaheim',
+List<String> locations = [
+    57 //'Saddleback en Español',
+    , 10 //'Anaheim',
     , 59 //'Brea',
     , 20 //'Buenos Aires',
     , 3 //'Eastvale',
@@ -43,7 +45,6 @@ List<String> locations = [10 //'Anaheim',
     , 9 //'Newport Mesa',
     , 5 //'Online Community',
     , 8 //'Rancho Capistrano',
-    , 57 //'Saddleback en Español',
     , 2 //'San Clemente',
     , 56 //'San Diego',
     , 25 //'Santa Rosa',
@@ -94,6 +95,8 @@ for (def campusLocation : locations) {
 
                     // Look for the ?t= append for the connection-form links so that the authenticated user token is passed around
                     WebUI.verifyEqual(url.contains('?t=ey'), true)
+					
+                    WebUI.delay(2)
 
                     // verify that the fields are present (FirstName, LastName and Submit button)					
                     CustomKeywords.'TestObjectHelper.verifyTextFieldHasValue'(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
@@ -215,6 +218,8 @@ for (def campusLocation : locations) {
                         if (url.contains('/public/connection-form/')) {
                             // Look for the ?t= append for the connection-form links so that the authenticated user token is passed around
                             WebUI.verifyEqual(url.contains('?t=ey'), true)
+							
+                            WebUI.delay(2)
 
                             // verify that the fields are present (FirstName, LastName and Submit button)
                             CustomKeywords.'TestObjectHelper.verifyTextFieldHasValue'(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
