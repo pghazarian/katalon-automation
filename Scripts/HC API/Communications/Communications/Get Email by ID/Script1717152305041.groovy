@@ -17,15 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def date = new Date()
+
+def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
+
+def CommName = "ST Communication - $CurrentDateTime"
+
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('HC API/Communications/Communications/Get Email by ID', [('JobId') : '85', ('JobType') : 'Email']))
+postResponse = WS.sendRequest(findTestObject('HC API/Communications/Communications/Post Email', [('CommunicationName') : "$CommName"]))
 
-// Validate the response was successful (HTTP Code 200 == Status)
-WS.verifyResponseStatusCode(response, 200)
+def slurper = new groovy.json.JsonSlurper()
 
-WS.verifyElementPropertyValue(response, 'jobType', 'Email')
+def result = slurper.parseText(postResponse.getResponseBodyContent())
 
-WS.verifyElementPropertyValue(response, 'segmentIds', '[112]')
+def value = result.id
 
-WS.verifyElementPropertyValue(response, 'segmentNames', '[ST Segment Record Test 1]')
+println(value)
+
+GlobalVariable.CommunicationID = value
+
+println(GlobalVariable.CommunicationID)
+
+getResponse = WS.sendRequestAndVerify(findTestObject('HC API/Communications/Communications/Get Email by ID', [('CommunicationID') : GlobalVariable.CommunicationID
+            , ('JobType') : 'Email']))
+
+WS.verifyElementPropertyValue(getResponse, 'id', value)
+
