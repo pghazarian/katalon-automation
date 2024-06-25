@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Roster To Group</name>
+   <tag>Stage,Smoke</tag>
+   <comment></comment>
+   <testCaseGuid>9d2867e5-d2fd-457c-a09c-789b7ffe1ab6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7c323491-896f-4e3e-88c8-4ba81a8ddeaa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>795817bd-f5eb-4565-9d03-4aed36eda13f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>15d60918-0417-4981-a8ea-9bb1748fa52f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b2843bf6-dec4-4040-bad9-138cb4470a93</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4f0c7245-6fe4-4d06-bcea-6e424eab937b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1b867909-5c58-4005-bd0a-e3d7fd559f74</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.SO_Id_Recurring_DoesNotEnd</defaultValue>
+      <description></description>
+      <id>d10a2371-083a-444d-82fa-0a4fd0d4a380</id>
+      <masked>false</masked>
+      <name>ServingOppId</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.Ministry_CampusId</defaultValue>
+      <description></description>
+      <id>2d994393-b33f-4fa6-a60e-a7a2f514dde9</id>
+      <masked>false</masked>
+      <name>CampusId</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Note Owner'</defaultValue>
+      <description></description>
+      <id>4acdb29e-4173-4f4c-9327-8e01553f6986</id>
+      <masked>false</masked>
+      <name>MemberName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.MinistryId_SOTests</defaultValue>
+      <description></description>
+      <id>95181bc0-35ab-4b38-9376-85039cd5df53</id>
+      <masked>false</masked>
+      <name>MinistryId</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation Test Group'</defaultValue>
+      <description></description>
+      <id>4f0c7245-6fe4-4d06-bcea-6e424eab937b</id>
+      <masked>false</masked>
+      <name>GroupName</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Automation'</defaultValue>
+      <description></description>
+      <id>1b867909-5c58-4005-bd0a-e3d7fd559f74</id>
+      <masked>false</masked>
+      <name>MemberFirstName</name>
+   </variable>
+</TestCaseEntity>

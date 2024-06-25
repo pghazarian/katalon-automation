@@ -36,6 +36,8 @@ WebUI.click(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Person 
 WebUI.waitForElementVisible(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Expanded Person Record Select Button'), 
     2)
 
+WebUI.scrollToPosition(0, 1300)
+
 'Click button to add selected person as interested'
 WebUI.click(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Expanded Person Record Select Button'))
 

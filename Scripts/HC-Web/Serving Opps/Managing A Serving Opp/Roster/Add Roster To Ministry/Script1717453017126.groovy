@@ -17,3 +17,44 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : "/my-ministry/serving-opportunity/$ServingOppId/$CampusId/roster"], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Member Checkbox', [('memberName') : MemberName]))
+
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Actions Button'))
+
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Add To Ministry Option'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Apply Action Drawer/Apply Button'), 2)
+
+CustomKeywords.'TestObjectHelper.setDropDownValue'('ui-dropdown--bulk_move_to_member_status', 'Active')
+
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Apply Action Drawer/Apply Button'))
+
+WebUI.click(findTestObject('HC-Web/Serving Opps/Roster Page/Apply Action Drawer/Apply Confirmation Yes Button'))
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Roster Page/Success Banner Text Area'), 5)
+
+WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Roster Page/Success Banner Text Area'), 'Successfully Added Volunteer To Ministry')
+
+WebUI.navigateToUrl("$GlobalVariable.HC_HostUrl/my-ministry/volunteers/members/$MinistryId/$CampusId")
+
+WebUI.click(findTestObject('HC-Web/Ministry/Members/Member Checkbox', [('memberName') : MemberName]))
+
+WebUI.click(findTestObject('HC-Web/Ministry/Members/Actions Dropdown'))
+
+WebUI.click(findTestObject('HC-Web/Ministry/Members/Remove From Ministry Option'))
+
+WebUI.click(findTestObject('HC-Web/Ministry/Members/Remove From Ministry Confirmation Yes Button'))
+
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 5)
+
+WebUI.verifyTextNotPresent(MemberName, false)
+
+WebUI.closeBrowser()
+

@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('HC-Web/Navigation/Journey Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/Communications Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/Data Capture Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/Dev Tools Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/Events Central Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/Giving Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/Insight Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.callTestCase(findTestCase('HC-Web/Navigation/Journey Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/Ministries Central Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/Mobile Engagement Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.callTestCase(findTestCase('HC-Web/Navigation/My Stuff Nav'), [:], FailureHandling.CONTINUE_ON_FAILURE)

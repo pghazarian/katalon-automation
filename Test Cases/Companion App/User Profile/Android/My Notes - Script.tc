@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Product Backlog Item 110314: [Companion App - Profile] - My Notes - Lift &amp; Shift&#xd;
-Product Backlog Item 110315: [Companion App - Profile] - My Notes - UI &amp; Functionality</description>
-   <name>My Notes - Script</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c5bf8eee-386e-4adb-b26c-9b517ad12061</testCaseGuid>
-</TestCaseEntity>

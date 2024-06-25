@@ -112,7 +112,7 @@ try {
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/New Question Button'))
 
         'Select checkbox question type'
-        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Checkbox Type Option'))
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Checkbox'))
 
         'Name the custom question'
         WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
@@ -166,8 +166,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Save Button'))
 
 'If banner appears asking if SO should be published, click no'
-if(WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Publish Opportunity No Button'), 3)) {
-	WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Publish Opportunity No Button'))
+if (WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Publish Opportunity No Button'), 
+    3)) {
+    WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Publish Opportunity No Button'))
 }
 
 'Navigate to SO tab'
@@ -182,9 +183,9 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Ministry/Serving Opps Page/
 'Select first SO in list'
 WebUI.click(findTestObject('HC-Web/Ministry/Serving Opps Page/Table Row Serving Opp', [('ServingOppName') : ServingOppName]))
 
-'Add volunteer to SO'
-WebUI.waitForElementNotHasAttribute(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Button'), 
-    'disabled', 0)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Shared Component/Activity Indicator'), 3, FailureHandling.STOP_ON_FAILURE)
 
 'Add volunteer to SO'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Button'))
@@ -212,24 +213,31 @@ WebUI.waitForElementClickable(findTestObject('HC-Web/Serving Opps/Serving Schedu
 'Select searched volunteer'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Person Search Results'))
 
-'Confirm selection'
 WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'), 
     2)
 
-'Confirm selection'
+'Click button to select person'
 WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Button'))
 
+'Scroll confirmation button into view'
+WebUI.scrollToElement(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Personal Info Header'), 
+    2)
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'), 
+    2)
+
+'Confirm selection'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Select Person Confirmation Yes Button'))
 
 'Click required custom question checkbox'
-WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Question Checkbox'), 
+WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Checkbox Response'), 
     2)
 
 'Click required custom question checkbox'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Question Checkbox'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Checkbox Response'))
 
 'Save custom question responses'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Save Custom Question Responses Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Save Responses Button'))
 
 'Verify volunteer appears in list'
 WebUI.verifyTextPresent(VolunteerName, false)

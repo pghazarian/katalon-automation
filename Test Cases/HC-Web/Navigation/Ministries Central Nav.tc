@@ -2,7 +2,8 @@
 <TestCaseEntity>
    <description>Exercise the navigation for the Ministries Central menu and all of its submenus</description>
    <name>Ministries Central Nav</name>
-   <tag>Production,Stage</tag>
+   <tag>Production,Stage,Smoke</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>d3e6ffff-232a-4fdf-93b3-64d835cbe0ad</testCaseGuid>
 </TestCaseEntity>

@@ -38,7 +38,8 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import com.kms.katalon.core.testobject.MobileTestObject.MobileLocatorStrategy
 import com.kms.katalon.core.testobject.MobileTestObject
-import com.kms.katalon.core.util.KeywordUtil
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import io.appium.java_client.MobileElement as MobileElement
 
 class MobileTestObjectHelper {
 
@@ -55,4 +56,26 @@ class MobileTestObjectHelper {
 
 		return null
 	}
+	
+	@Keyword
+	static List<MobileElement> getElementList(TestObject to, AppiumDriver<MobileElement> driver) {
+		MobileTestObject mto = (MobileTestObject)to
+
+		def locator  = mto.getMobileLocator()
+		def strategy = mto.getMobileLocatorStrategy().getLocatorStrategy()
+		KeywordUtil.logInfo("$to.objectId XPATH: $locator")
+		KeywordUtil.logInfo(strategy)
+									
+		switch (strategy)
+		{
+			case "XPATH":
+				return driver.findElementsByXPath(locator)
+				
+			case "Accessibility ID":
+				return driver.findElementsByAccessibilityId(locator)
+		}
+
+		return null
+	}
+
 }

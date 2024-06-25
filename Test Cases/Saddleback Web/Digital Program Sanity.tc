@@ -4,5 +4,6 @@
    <name>Digital Program Sanity</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>d006ed88-2ef6-41f3-a993-01f25b0e5b32</testCaseGuid>
 </TestCaseEntity>

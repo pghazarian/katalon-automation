@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to filter segment records by segment criteria</description>
+   <name>Filter Segment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ccd05e6a-0c4c-4687-9469-16dbc195ef54</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e019a933-3488-441f-a2ce-7c062535858f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>79082a57-8d26-49ee-a6c7-784e62bc3841</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>166300f4-3de6-46c9-83ee-9c381d794946</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Anaheim'</defaultValue>
+      <description></description>
+      <id>e019a933-3488-441f-a2ce-7c062535858f</id>
+      <masked>false</masked>
+      <name>Campus</name>
+   </variable>
+   <variable>
+      <defaultValue>'None'</defaultValue>
+      <description></description>
+      <id>79082a57-8d26-49ee-a6c7-784e62bc3841</id>
+      <masked>false</masked>
+      <name>Grade</name>
+   </variable>
+   <variable>
+      <defaultValue>'Accepted Christ'</defaultValue>
+      <description></description>
+      <id>166300f4-3de6-46c9-83ee-9c381d794946</id>
+      <masked>false</masked>
+      <name>Milestone</name>
+   </variable>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test case to export segmnt record results</description>
-   <name>Export Segment Record Results</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d6ef4494-8781-412c-b3db-f7b7a275a224</testCaseGuid>
-</TestCaseEntity>

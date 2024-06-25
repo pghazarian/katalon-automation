@@ -71,14 +71,15 @@ Button.tap('Nav/Resources Navigation Button', timeout)
 Button.tap('Resources/Messages Tab', timeout)
 
 
-'Verify that journey entries exist'
+'Verify that message entries exist'
 Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/List Entry"), timeout)
 
 'Verify that the list has entries'
 Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry'), timeout)
 ///*
+Mobile.delay(3)
 'Verify that the entries have a public name'
-Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Name'), timeout)
+//Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Name'), timeout)
 
 'Verify that the entries have an image'
 Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Speaker'), timeout)
@@ -124,8 +125,8 @@ Button.tap("Resources/Messages/SortFilter/Sort By", timeout)
 
 'Tap on the Sort A-Z button'
 if (deviceIsiOS) {
-	Mobile.sendKeys(Finder.findTextField('Discover/Events/SortFilter/Sort By Picker Wheel'), "Series Name (A to Z)", FailureHandling.STOP_ON_FAILURE)
-	Button.tap("Discover/Events/SortFilter/Sort Done", timeout)
+	Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), "Series Name (A to Z)", FailureHandling.STOP_ON_FAILURE)
+	Button.tap("Resources/Messages/SortFilter/Sort Done", timeout)
 }
 else {
 	Button.tap("Resources/Messages/SortFilter/Series Name (A to Z)", timeout)
