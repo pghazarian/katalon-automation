@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SaveButton</name>
+   <tag></tag>
+   <elementGuidId>b8a656e9-44fc-4821-96ac-57879c99c515</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.ui.button.jss245.jss353.jss257 > span.button-inner-container.jss246 > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button//span[text()='Save' or normalize-space(.) ='Save']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Edit pencil&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b840be42-625d-4801-af77-66eb46a57cf2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit</value>
+      <webElementGuid>fa596269-52f2-4333-a032-ddeccd2e4b52</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/div[1]/main[@class=&quot;ui page jss346 jss349 jss344 jss345 page-has_action_bar&quot;]/header[@class=&quot;ui page--action_bar action_bar&quot;]/div[1]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss55 jss51&quot;]/button[@class=&quot;ui button jss245 jss353 jss257&quot;]/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
+      <webElementGuid>5c7580a0-2b9f-4be2-ba3d-1f2a4d9be39b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/div/main/header/div/div/div[2]/button/span/span</value>
+      <webElementGuid>4e285bea-cf40-4a36-9edd-7d8bcc043e92</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit Log'])[1]/following::span[2]</value>
+      <webElementGuid>b870e331-8e80-421f-a0c2-1a3956739f96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/following::span[5]</value>
+      <webElementGuid>87abc334-a58c-4cb8-a04c-cee829a79087</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ravinder Kumar'])[1]/preceding::span[1]</value>
+      <webElementGuid>498d5d41-ce93-47b6-84a3-e768c58c6ae4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Campus: Anaheim'])[1]/preceding::span[2]</value>
+      <webElementGuid>431b4d5a-f6ac-4cd2-baf0-953ad956d38e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Edit']/parent::*</value>
+      <webElementGuid>0354dca7-4b47-4da5-a4ff-453bfa34b8cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button/span/span</value>
+      <webElementGuid>0bfafecf-1485-43a6-b333-4b1eb8b9dbee</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

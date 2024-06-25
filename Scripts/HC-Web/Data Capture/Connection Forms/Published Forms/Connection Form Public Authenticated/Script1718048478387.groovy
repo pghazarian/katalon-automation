@@ -83,19 +83,19 @@ WebUI.waitForElementVisible(findTestObject("Object Repository/HC-Web/Data Captur
 
 CustomKeywords.'NavigationHelper.goToHCUrl'(PublicConnectionFormPath)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Data Capture/Connection Forms/Connection Form Public/FirstNameField'), 2)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/FirstNameField'), 2)
 
-FirstName = WebUI.getAttribute(findTestObject('HC-Web/Data Capture/Connection Forms/Connection Form Public/FirstNameField'), 'value')
+FirstName = WebUI.getAttribute(findTestObject('HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/FirstNameField'), 'value')
 
 'Verify the first name field value is not blank'
 WebUI.verifyNotEqual(FirstName, '')
 
-LastName = WebUI.getAttribute(findTestObject('HC-Web/Data Capture/Connection Forms/Connection Form Public/LastNameField'), 'value')
+LastName = WebUI.getAttribute(findTestObject('HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/LastNameField'), 'value')
 
 'Verify the last name field value is not blank'
 WebUI.verifyNotEqual(LastName, '')
 
-Email = WebUI.getAttribute(findTestObject('HC-Web/Data Capture/Connection Forms/Connection Form Public/EmailField'), 'value')
+Email = WebUI.getAttribute(findTestObject('HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/EmailField'), 'value')
 
 'Verify the email field value is not blank'
 WebUI.verifyNotEqual(Email, '')
@@ -121,23 +121,23 @@ CustomKeywords.'FormHelper.setDropDownValue'(LabelValueDropDown, DropDownSelecti
 'Set the date control value'
 CustomKeywords.'FormHelper.setDateFieldValue'(LabelValueDate, DateSelected)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Connection Form Public/span_Submit'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/span_Submit'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Connection Form Public/div_Success'), 'Success')
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/div_Success'), 'Success')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Connection Form Public/div_Your form has been received'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/div_Your form has been received'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Connection Form Public/div_Your form has been received'), 
+WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Overview/Connection Form Public/div_Your form has been received'), 
     'Your form has been received')
 
 'Go to the Connection Form Admin screen'
 CustomKeywords.'NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)
 
 'Click on the Entries menu'
-WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/SubNav/Entries'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Entries'))
 
 'Open an entry'
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/FirstRow'))
@@ -187,7 +187,7 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Confirm
 
 WebUI.delay(3)
 
-WebUI.waitForElementPresent(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/EntriesHeader'), 3)
+WebUI.waitForElementPresent(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Entries Header'), 3)
 
 'Go to the Connection Form Admin screen'
 CustomKeywords.'NavigationHelper.goToHCUrl'(ConnectionFormManagementPath)

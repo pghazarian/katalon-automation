@@ -4,5 +4,6 @@
    <name>Verify Filters for Service CTAs - Part. Auto</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>9eaf7081-d105-4931-a538-fb8670c9f951</testCaseGuid>
 </TestCaseEntity>

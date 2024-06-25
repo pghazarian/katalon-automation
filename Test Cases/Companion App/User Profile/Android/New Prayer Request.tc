@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers the following PBIs:&#xd;
+PBI 110610: [Companion App - Profile] - New Prayer Request Screen - Lift &amp; Shift&#xd;
+PBI 110605: [Companion App - Profile] - New Prayer Request Screen - UI/UX &amp; Implementation&#xd;
+&#xd;
+Note: This is a Script TC, which will  need to be automated, once the feature is test ready</description>
+   <name>New Prayer Request</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0d93f27-7ce7-4c2a-a85c-3866bd41b195</testCaseGuid>
+</TestCaseEntity>

@@ -91,11 +91,16 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First 
 'Select attendee'
 WebUI.waitForElementClickable(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'), 0)
 
-WebUI.scrollToPosition(0, 1300)
-
 'Select attendee'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Button'))
 
+'Scroll confirmation button into view'
+WebUI.scrollToElement(findTestObject('HC-Web/Event/PersonDrawer/Personal Info Header'), 2)
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'), 
+    2)
+
+'Confirm selection'
 WebUI.click(findTestObject('HC-Web/Event/PersonDrawer/Select Person Search Result Confirmation Yes Button'))
 
 'Verify attendee appears in list'
