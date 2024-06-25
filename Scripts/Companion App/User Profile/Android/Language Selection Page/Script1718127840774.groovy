@@ -52,7 +52,7 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Lan
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Laguage Button'), 0)
 
 'Espanol | Spanish - selection object '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Spanish/Spanish language selection'), 
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Spanish language selection'), 
     0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Apply Button'), 0)
@@ -70,16 +70,33 @@ Mobile.tap(findTestObject('Companion App/Android/User Profile/Gift Icon/Gift But
 
 Mobile.tap(findTestObject('Companion App/Android/User Profile/Gift Icon/X icon'), 0)
 
+'Check In button in Spanish '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Registrarse Button - Check In button in Spanish'), 
+    0)
+
+'X button in Spanish QR code modal '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/X Button - Spanish Check In QR Code modal'), 
+    0)
+
 Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Notes Tile'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 
+    0)
+
+'My Prayers tile - Spanish '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Mis Oraciones'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 
     0)
 
 Mobile.tap(findTestObject('Companion App/Android/User Profile/Spanish/Mis Ministerios'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Spanish/Atras'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Events Tile'), 0)
+Mobile.scrollToText('Mis Eventos', FailureHandling.STOP_ON_FAILURE)
+
+'My Events Tile - Spanish '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Mis Eventos'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 
     0)

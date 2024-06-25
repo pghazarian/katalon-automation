@@ -86,16 +86,14 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My 
 'My Prayer Tile '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 0)
 
-Mobile.scrollToText('Please ')
-
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile back button'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Profile chevron'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Ministries - Element'), 
     1)
 
 Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Ministries Tile'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/My Ministries/Back button'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Profile chevron'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/Events - Element'), 1)
 
