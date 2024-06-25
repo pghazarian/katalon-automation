@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Search</name>
+   <name>Download Close</name>
    <tag></tag>
-   <elementGuidId>67fc99da-cfd2-4b0a-af7d-51cb42a7b8ca</elementGuidId>
+   <elementGuidId>7d26c2d5-134b-4004-9847-bdd53c168c44</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Search</locator>
+   <locator>Close</locator>
    <locatorCollection>
       <entry>
          <key>ID</key>
@@ -19,7 +19,7 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>ui-header--sermon_finder-search-text</value>
+         <value></value>
       </entry>
       <entry>
          <key>NAME</key>

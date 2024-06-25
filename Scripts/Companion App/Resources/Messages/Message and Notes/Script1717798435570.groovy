@@ -61,7 +61,7 @@ Mobile.delay(1)
 Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Image"), timeout)
 
 'Tap on the first message in the list'
-Mobile.tap(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
+Mobile.tap(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Title"), timeout)
 
 'Start the video playback'
 Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Video Start Play"), timeout)
@@ -69,62 +69,73 @@ Button.tap('Resources/Messages/Message Details/Video Start Play', timeout)
 
 Mobile.delay(15)
 
-'Stop the video playback'
-Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Video Stop Play"), timeout)
-Button.tap('Resources/Messages/Message Details/Video Stop Play', timeout)
+'process the video only for the Android'
+if (!deviceIsiOS) {
+	'Stop the video playback'
+	Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
+	Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Video Stop Play"), timeout)
+	Button.tap('Resources/Messages/Message Details/Video Stop Play', timeout)
+	
+	Mobile.delay(5)
+	
+	'Start the video playback'
+	Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Video Start Play"), timeout)
+	Button.tap('Resources/Messages/Message Details/Video Start Play', timeout)
+	
+	Mobile.delay(15)
+	
+	'Pause the video playback'
+	Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
+	Button.tap('Resources/Messages/Message Details/Video Pause and Restart', timeout)
+	
+	Mobile.delay(10)
+	
+	'restart video playback'
+	Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
+	Button.tap('Resources/Messages/Message Details/Video Pause and Restart', timeout)
+	
+	Mobile.delay(10)
 
-Mobile.delay(5)
+	'move video forward'
+	Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
+	Button.tap('Resources/Messages/Message Details/Video Go Forward', timeout)
+	
+	Mobile.delay(10)
+	
+	'move video back'
+	Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
+	Button.tap('Resources/Messages/Message Details/Video Go Back', timeout)
+	
+	Mobile.delay(10)
 
-'Start the video playback'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Video Start Play"), timeout)
-Button.tap('Resources/Messages/Message Details/Video Start Play', timeout)
 
-Mobile.delay(15)
+	'Stop the video playback'
+	Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
+	Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Video Stop Play"), timeout)
+	Button.tap('Resources/Messages/Message Details/Video Stop Play', timeout)
+	
+	Mobile.delay(5)
+}
 
-'Pause the video playback'
-Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
-Button.tap('Resources/Messages/Message Details/Video Pause and Restart', timeout)
-
-Mobile.delay(10)
-
-'restart video playback'
-Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
-Button.tap('Resources/Messages/Message Details/Video Pause and Restart', timeout)
-
-Mobile.delay(10)
-
-'move video forward'
-Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
-Button.tap('Resources/Messages/Message Details/Video Go Forward', timeout)
-
-Mobile.delay(10)
-
-'move video back'
-Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
-Button.tap('Resources/Messages/Message Details/Video Go Back', timeout)
-
-Mobile.delay(10)
-
-'Stop the video playback'
-Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Video Stop Play"), timeout)
-Button.tap('Resources/Messages/Message Details/Video Stop Play', timeout)
-
-Mobile.delay(5)
-
+'download the message notes'
 Button.tap("Resources/Messages/Message Details/Download", timeout)
 
+Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Download Original Notes"), timeout)
 Button.tap("Resources/Messages/Message Details/Download Original Notes", timeout)
+
+Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Download Close"), timeout)
+Button.tap("Resources/Messages/Message Details/Download Close", timeout)
 
 Mobile.delay(5)
 
+'Share the message notes'
 Button.tap("Resources/Messages/Message Details/Share", timeout)
 
 Button.tap("Resources/Messages/Message Details/Share Copy", timeout)
 
 Mobile.delay(5)
 
+'return back to the recent message list'
 Button.tap("Resources/Messages/Message Details/Back", timeout)
 
 'Navigate to Home'
