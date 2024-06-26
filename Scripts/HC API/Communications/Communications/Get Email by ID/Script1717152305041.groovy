@@ -42,5 +42,8 @@ println(GlobalVariable.CommunicationID)
 getResponse = WS.sendRequestAndVerify(findTestObject('HC API/Communications/Communications/Get Email by ID', [('CommunicationID') : GlobalVariable.CommunicationID
             , ('JobType') : 'Email']))
 
+printResponse = getResponse.getResponseText()
+println(printResponse)
+
 WS.verifyElementPropertyValue(getResponse, 'id', value)
 

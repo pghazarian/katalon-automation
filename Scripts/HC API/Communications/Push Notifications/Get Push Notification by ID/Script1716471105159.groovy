@@ -42,4 +42,7 @@ println(GlobalVariable.PushNotificationID)
 getResponse = WS.sendRequestAndVerify(findTestObject('HC API/Communications/Push Notifications/Get Push Notification by ID', 
         [('PushNotificationID') : GlobalVariable.PushNotificationID, ('JobType') : 'Push']))
 
+printResponse = getResponse.getResponseText()
+println(printResponse)
+
 WS.verifyElementPropertyValue(getResponse, 'id', value)
