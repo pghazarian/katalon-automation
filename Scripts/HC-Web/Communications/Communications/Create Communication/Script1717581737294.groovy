@@ -56,5 +56,57 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Ove
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Record Added Toast Text'), 
     'You’ve successfully created and linked a new communication')
 
+'Verify communication name is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Name', [('CommunicationName') : CommunicationName]), 
+    CommunicationName)
+
+'Verify communication description is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Description', [('CommunicationDescription') : "$CommunicationName Description"]), 
+    "$CommunicationName Description")
+
+'Verify communication scoped campus is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Scoped Campus', [('CommunicationScopedCampus') : Campus]), 
+    Campus)
+
+'Verify default status of communication is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Status', [('CommunicationStatus') : 'Inactive']), 
+    'Inactive')
+
+'Verify Communication Details label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Communication Details Label'), 
+    'Communication Details')
+
+'Verify From Email label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/From Email Label'), 
+    'From Email')
+
+'Verify default value of From Email is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/From Email Value', 
+        [('FromEmail') : 'N/A']), 'N/A')
+
+'Verify Recipients label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Recipients Label'), 
+    'Recipients')
+
+'Verify default value of Recipients is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Recipients Value', 
+        [('Recipients') : 'N/A']), 'N/A')
+
+'Verify Reply To is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Reply To Label'), 
+    'Reply To')
+
+'Verify default value of Reply To is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Reply To Value', 
+        [('ReplyTo') : 'N/A']), 'N/A')
+
+'Verify Email Subject label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Email Subject Label'), 
+    'Email Subject')
+
+'Verify default value of Email Subject is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Email Subject Value', 
+        [('EmailSubject') : CommunicationName]), CommunicationName)
+
 WebUI.closeBrowser()
 

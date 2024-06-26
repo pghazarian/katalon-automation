@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers all Notifications PBIs, under Team Mandalorian's  Sprints 115 &amp; 116 boards</description>
+   <name>Daily Batch Notifications</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6d066bb4-7a3f-4f06-8954-743bdb793a63</testCaseGuid>
+</TestCaseEntity>

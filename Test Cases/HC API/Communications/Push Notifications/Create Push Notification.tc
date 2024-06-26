@@ -12,7 +12,7 @@
       <variableId>0ebe4dc9-1213-4a64-af4c-cf099ffc8128</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'ST Push Notification'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>0ebe4dc9-1213-4a64-af4c-cf099ffc8128</id>
       <masked>false</masked>

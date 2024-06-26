@@ -72,7 +72,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 
 'Verify Demographic Info label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Demographic Info Header'), 
-    'Demographic info')
+    'Demographic info\nResult:0')
+
+'Verify Demographic Info record result count'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Criteria Result Count Button', [
+            ('index') : 1]), 'Result:0')
 
 'Verify Edit button next to Demographic Info is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Demographic Info Edit Button'), 
@@ -130,7 +134,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
     'N/A')
 
 'Verify Events label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Events Header'), 'Events')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Events Header'), 'Events\nResult:0')
+
+'Verify Events record result count'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Criteria Result Count Button', [
+            ('index') : 2]), 'Result:0')
 
 'Verify Edit button next to Events is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Events/Events Edit Button'), FailureHandling.STOP_ON_FAILURE)
@@ -144,7 +152,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
     'N/A')
 
 'Verify Milestones label is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestones Header'), 'Milestones')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestones Header'), 'Milestones\nResult:0')
+
+'Verify Milestones record result count'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Criteria Result Count Button', [
+            ('index') : 3]), 'Result:0')
 
 'Verify Edit button next to Milestones is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Milestones Edit Button'), 
@@ -160,7 +172,11 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 
 'Verify Additional Engagements label is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Engagements Header'), 
-    'Additional Engagements')
+    'Additional Engagements\nResult:0')
+
+'Verify Additional Engagements record result count'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Criteria Result Count Button', [
+            ('index') : 4]), 'Result:0')
 
 'Verify Edit button next to Additional Engagements is displayed'
 WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Egagements Edit Button'), 
