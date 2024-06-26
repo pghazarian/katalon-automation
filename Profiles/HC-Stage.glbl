@@ -186,6 +186,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'The Sacrifice You'</initValue>
+      <name>MessageSearch_Details</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'2206'</initValue>
       <name>MinistryId_SOTests</name>
    </GlobalVariableEntity>

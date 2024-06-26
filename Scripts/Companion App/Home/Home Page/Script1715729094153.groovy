@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -18,18 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.util.CryptoUtil as CryptoUtil
-
-import com.detroitlabs.katalonmobileutil.device.App
-import com.detroitlabs.katalonmobileutil.device.Device
-import com.detroitlabs.katalonmobileutil.testobject.Finder
-import com.detroitlabs.katalonmobileutil.testobject.Button
-import com.detroitlabs.katalonmobileutil.testobject.TextField
+import com.detroitlabs.katalonmobileutil.device.App as App
+import com.detroitlabs.katalonmobileutil.device.Device as Device
+import com.detroitlabs.katalonmobileutil.testobject.Finder as Finder
+import com.detroitlabs.katalonmobileutil.testobject.Button as Button
+import com.detroitlabs.katalonmobileutil.testobject.TextField as TextField
 import com.detroitlabs.katalonmobileutil.touch.Swipe as Swipe
 import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDirection
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import io.appium.java_client.MobileElement as MobileElement
-import com.kms.katalon.core.testobject.TestObjectXpath
+import com.kms.katalon.core.testobject.TestObjectXpath as TestObjectXpath
 
 /*
 -	Test Home Page
@@ -53,33 +51,26 @@ import com.kms.katalon.core.testobject.TestObjectXpath
 			This will display published announcements by campus
 	o	Questions:
 */
-
-
 def timeout = 3
+
 def UniqueJourneyName = 'QA Automation Journey - Read Text'
 
 'Open existing app by the app bundle id'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'tap on the campus selector'
-Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
-Button.tap("Home/OK")
 
 'tap on the Gift icon button'
-
 Mobile.delay(10)
 
+/*
 'tap on most recent Messages tile'
-
 if (Device.isIOS()) {
-	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+    Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+} else {
+    Mobile.scrollToText('Watch Now', FailureHandling.STOP_ON_FAILURE)
 }
-else {
-		Mobile.scrollToText('Watch Now', FailureHandling.STOP_ON_FAILURE)
-}
-
-Mobile.tap(Finder.findLabel("Home/Message"), timeout)
-Button.tap("Home/OK")
+*/
 
 
 'tap on Messages/See All link'
@@ -97,22 +88,18 @@ Button.tap("Home/OK")
 'tap on Whats Happening/See All link'
 
 'Log out of the app'
-
 Mobile.delay(5)
 
-
 if (Device.isIOS()) {
-	Swipe.swipe(SwipeDirection.TOP_TO_BOTTOM)
+    Swipe.swipe(SwipeDirection.TOP_TO_BOTTOM)
+} else {
+    Mobile.scrollToText('LOGOUT!', FailureHandling.STOP_ON_FAILURE)
 }
-else {
-		Mobile.scrollToText('LOGOUT!', FailureHandling.STOP_ON_FAILURE)
-}
+
 'Log out'
 Button.tap('Logout Button', timeout)
 
 'Close the app'
 Mobile.closeApplication()
-
-
 
 

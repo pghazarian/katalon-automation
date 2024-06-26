@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Messages See All</name>
+   <name>Download Close</name>
    <tag></tag>
-   <elementGuidId>cef41142-e868-46f3-8649-803cc74ad0ac</elementGuidId>
+   <elementGuidId>7d26c2d5-134b-4004-9847-bdd53c168c44</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>See All</locator>
+   <locator>Close</locator>
    <locatorCollection>
       <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -25,23 +18,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -49,12 +30,31 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//android.view.ViewGroup[@content-desc=&quot;See All&quot;])[2]</value>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

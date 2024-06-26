@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Search</name>
+   <name>Video Pause and Restart</name>
    <tag></tag>
-   <elementGuidId>84f2e6bd-3477-4445-94e3-b4d13c6199bf</elementGuidId>
+   <elementGuidId>867bd0a0-f9a1-4917-a650-2b88d2943e0d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.EditText[@text=&quot;Search&quot;]</locator>
+   <locator>ui-video-player-controls--play_pause</locator>
    <locatorCollection>
       <entry>
          <key>NAME</key>
-         <value></value>
       </entry>
       <entry>
          <key>IMAGE</key>
-         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -23,40 +21,32 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>ui-header--sermon_finder-search-text</value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>CLASS_NAME</key>
-         <value></value>
       </entry>
       <entry>
          <key>ID</key>
-         <value></value>
       </entry>
       <entry>
          <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
       <entry>
          <key>IOS_PREDICATE_STRING</key>
-         <value></value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
-         <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Messages See All</name>
+   <name>Download</name>
    <tag></tag>
-   <elementGuidId>cef41142-e868-46f3-8649-803cc74ad0ac</elementGuidId>
+   <elementGuidId>40270776-5781-4502-b268-68af24f171b8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>See All</locator>
+   <locator>(//XCUIElementTypeOther[@name=&quot;ui-sermon_details--open_download_modal&quot;])[2]</locator>
    <locatorCollection>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
@@ -29,7 +22,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -37,7 +30,19 @@
          <value></value>
       </entry>
       <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>ACCESSIBILITY</key>
+         <value>ui-sermon_details--open_download_modal</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -45,18 +50,13 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//android.view.ViewGroup[@content-desc=&quot;See All&quot;])[2]</value>
+         <key>ATTRIBUTES</key>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Messages See All</name>
+   <name>Share</name>
    <tag></tag>
-   <elementGuidId>cef41142-e868-46f3-8649-803cc74ad0ac</elementGuidId>
+   <elementGuidId>79aa39ed-0685-41d8-9fdb-965ee6893832</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>See All</locator>
+   <locator>button--header_share</locator>
    <locatorCollection>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
       <entry>
          <key>NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>CLASS_NAME</key>
@@ -33,11 +37,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
@@ -45,16 +49,12 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>(//android.view.ViewGroup[@content-desc=&quot;See All&quot;])[2]</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

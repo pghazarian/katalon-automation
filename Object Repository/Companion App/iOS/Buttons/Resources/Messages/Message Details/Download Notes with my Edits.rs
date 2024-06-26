@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Messages See All</name>
+   <name>Download Notes with my Edits</name>
    <tag></tag>
-   <elementGuidId>cef41142-e868-46f3-8649-803cc74ad0ac</elementGuidId>
+   <elementGuidId>9912aa92-8d02-47bd-9337-fc06cf6990e5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>See All</locator>
+   <locator>Download Notes with my Edits</locator>
    <locatorCollection>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[@resource-id=&quot;android:id/title&quot; and @text=&quot;Download Notes with my Edits&quot;]</value>
       </entry>
       <entry>
          <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -37,7 +30,19 @@
          <value></value>
       </entry>
       <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -45,16 +50,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//android.view.ViewGroup[@content-desc=&quot;See All&quot;])[2]</value>
+         <key>ATTRIBUTES</key>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
