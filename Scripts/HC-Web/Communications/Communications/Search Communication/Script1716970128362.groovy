@@ -45,5 +45,9 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Push Notificati
 'Open the communication record from the search results'
 WebUI.click(findTestObject('HC-Web/Communications/Communications/Table Row', [('CommunicationName') : SearchTerm]))
 
+'Verify communication name is visible in the Overview page'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Name', [('CommunicationName') : SearchTerm]), 
+    SearchTerm)
+
 WebUI.closeBrowser()
 

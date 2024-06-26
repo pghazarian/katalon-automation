@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Include Parent Child Contact Information Value</name>
+   <name>Reply To Value</name>
    <tag></tag>
-   <elementGuidId>d142bd08-ccb3-46ec-af6a-d3b3861ef43e</elementGuidId>
+   <elementGuidId>b6cc6fdb-201e-47ac-a813-8ce8d428f44d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//h5[text()=&quot;${ReplyTo}&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[2]/div[2]/div[${index}]/h5</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
