@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description>This is ro verify that the My Notes Icon element exists</description>
-   <name>Notes - Element</name>
+   <name>My Notes Header</name>
    <tag></tag>
    <elementGuidId>4e0e1437-b3c2-43a7-b1cb-88d6c45e9b3f</elementGuidId>
    <selectorCollection>
