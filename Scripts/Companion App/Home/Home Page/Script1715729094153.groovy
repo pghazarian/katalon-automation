@@ -59,9 +59,6 @@ def UniqueJourneyName = 'QA Automation Journey - Read Text'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'tap on the campus selector'
-//Mobile.tap(Finder.findLabel('Home/Campus'), timeout)
-
-//Button.tap('Home/OK')
 
 'tap on the Gift icon button'
 Mobile.delay(10)
@@ -75,29 +72,6 @@ if (Device.isIOS()) {
 }
 */
 
-//Mobile.tap(Finder.findLabel('Home/Message'), timeout)
-
-//Button.tap('Home/OK')
-
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Home Page/android.view.ViewGroup'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Home Page/android.view.ViewGroup (1)'),
-	0)
-
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Home Page/android.view.ViewGroup (2)'),
-	0)
-
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Home Page/android.view.ViewGroup (3)'),
-	0)
-
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Home Page/android.view.ViewGroup (4)'),
-	0)
-
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Home Page/android.view.ViewGroup (5)'),
-	0)
-
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Home Page/android.view.ViewGroup (6)'),
-	0)
 
 'tap on Messages/See All link'
 
