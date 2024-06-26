@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>This is to verify the My Ministries tile element exists</description>
-   <name>My Ministries</name>
+   <description></description>
+   <name>My Ministries Tile</name>
    <tag></tag>
-   <elementGuidId>8532a0ba-0029-48fe-b6df-039102dfebd6</elementGuidId>
+   <elementGuidId>c3dc6934-3ea6-4131-9dfe-bdd1effd5e9c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>

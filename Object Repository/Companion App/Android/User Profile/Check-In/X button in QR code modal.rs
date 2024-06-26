@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>This is ro verify that the My Notes Icon element exists</description>
-   <name>Notes</name>
+   <description></description>
+   <name>X button in QR code modal</name>
    <tag></tag>
-   <elementGuidId>4e0e1437-b3c2-43a7-b1cb-88d6c45e9b3f</elementGuidId>
+   <elementGuidId>218d771d-bd80-448b-a116-73157e3194d3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.view.ViewGroup[@content-desc=&quot;, My Notes&quot;]</value>
+         <value>//android.view.ViewGroup[@content-desc=&quot;touchable-callback&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>To verify that the Settings element exists</description>
-   <name>Settings</name>
+   <description>This is to verify the My Ministries tile element exists</description>
+   <name>My Ministries Header</name>
    <tag></tag>
-   <elementGuidId>d111775a-63bc-44e1-b6af-df6901b7e5c2</elementGuidId>
+   <elementGuidId>8532a0ba-0029-48fe-b6df-039102dfebd6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.view.ViewGroup[@content-desc=&quot;button--header_settings&quot;]/android.view.ViewGroup</value>
+         <value>//android.view.ViewGroup[@content-desc=&quot;, My Ministries&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
