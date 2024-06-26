@@ -31,7 +31,7 @@ not_run: WebUI.callTestCase(findTestCase('HC-Web/Communications/Segments/Shared/
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
 
-SearchTerm = 'ST Segment - 2024-04-02 21:21:34'
+SearchTerm = 'ST Segment - 2024-06-19 12:42:56'
 
 'Type Search term'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/Search Text Field'), SearchTerm)
@@ -53,7 +53,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Events/Add E
 
 'Select event from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@name=\'event-selector\']/descendant::div[@class=\'Select-control\']', 
-    'ST Event for Segment Test')
+    'ST Event 1')
 
 'Select count from dropdown'
 CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-type-selector', 'Count')
@@ -82,7 +82,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 
 'Verify Event Name is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Event Value', [('EventName') : 'ST Event for Segment Test']), 
-    'ST Event for Segment Test')
+    'ST Event 1')
 
 'Verify Streak or Count is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Streak or Count Label', [('StreakOrCount') : 'Count']), 

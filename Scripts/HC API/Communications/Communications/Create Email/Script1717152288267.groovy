@@ -28,17 +28,36 @@ def CommName = "ST Communication - $CurrentDateTime"
 
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('HC API/Communications/Communications/Post Email', [('CommunicationName') : "$CommName"]))
+'Send the post request and capture the response'
+postResponse = WS.sendRequestAndVerify(findTestObject('HC API/Communications/Communications/Post Email', [('CommunicationName') : CommName]))
 
-// Validate the response was successful (HTTP Code 200 == Status)
-WS.verifyResponseStatusCode(response, 200)
+'Parse the json post response'
+def slurper = new groovy.json.JsonSlurper()
 
-WS.verifyElementPropertyValue(response, 'jobType', 0)
+def result = slurper.parseText(postResponse.getResponseBodyContent())
 
-WS.verifyElementPropertyValue(response, 'audienceType', 'Segment')
+def value = result.id
 
-WS.verifyElementPropertyValue(response, 'name', null)
+GlobalVariable.CommunicationID = value
 
-WS.verifyElementPropertyValue(response, 'description', null)
+'Assertion for the response'
+Assertions.assertThat(postResponse.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'sendEmail', null)
+'Send the get request and capture the response'
+getResponse = WS.sendRequestAndVerify(findTestObject('HC API/Communications/Communications/Get Email by ID', [('CommunicationID') : GlobalVariable.CommunicationID
+            , ('JobType') : 'Email']))
+
+'Parse the json get response'
+JsonSlurper parser = new JsonSlurper()
+
+def responseAfterParsing = parser.parseText(getResponse.getResponseBodyContent())
+
+'Print the response at Console'
+println(getResponse.getResponseBodyContent())
+
+'Extract the name property'
+def actualName = responseAfterParsing.name
+
+'Assertion for the response'
+Assertions.assertThat(actualName).isEqualTo(CommName)
+

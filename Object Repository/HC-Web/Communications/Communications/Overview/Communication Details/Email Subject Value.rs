@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Include Parent Child Contact Information Value</name>
+   <name>Email Subject Value</name>
    <tag></tag>
-   <elementGuidId>d142bd08-ccb3-46ec-af6a-d3b3861ef43e</elementGuidId>
+   <elementGuidId>39eeda7d-d2a1-4440-a557-08b0d31c41bc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//h5[text()=&quot;${EmailSubject}&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[2]/div[2]/div[${index}]/h5</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

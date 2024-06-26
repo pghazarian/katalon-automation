@@ -17,11 +17,32 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def date = new Date()
+
+def CurrentDateTime = CustomKeywords.'StringHelper.getIsoFormatDate'(date)
+
+def PNName = "ST Push Notification - $CurrentDateTime"
+
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Validate Safe Environment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-response = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Get Push Notification by ID', [('JobId') : '16']))
+postResponse = WS.sendRequest(findTestObject('HC API/Communications/Push Notifications/Post Push Notification', [('PushNotificationName') : "$PNName"]))
 
-// Validate the response was successful (HTTP Code 200 == Status)
-WS.verifyResponseStatusCode(response, 200)
+def slurper = new groovy.json.JsonSlurper()
 
-WS.verifyElementPropertyValue(response, "jobType", "Push")
+def result = slurper.parseText(postResponse.getResponseBodyContent())
+
+def value = result.id
+
+println(value)
+
+GlobalVariable.PushNotificationID = value
+
+println(GlobalVariable.PushNotificationID)
+
+getResponse = WS.sendRequestAndVerify(findTestObject('HC API/Communications/Push Notifications/Get Push Notification by ID', 
+        [('PushNotificationID') : GlobalVariable.PushNotificationID, ('JobType') : 'Push']))
+
+printResponse = getResponse.getResponseText()
+println(printResponse)
+
+WS.verifyElementPropertyValue(getResponse, 'id', value)

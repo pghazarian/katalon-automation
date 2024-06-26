@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Include Parent Child Contact Information Value</name>
+   <name>Communication Name</name>
    <tag></tag>
-   <elementGuidId>d142bd08-ccb3-46ec-af6a-d3b3861ef43e</elementGuidId>
+   <elementGuidId>1794519e-025a-4ebb-9584-aa6efdf00bf7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//h2[text()=&quot;${CommunicationName}&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div[1]/main/div[1]/div[2]/div[2]/div[${index}]/h5</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

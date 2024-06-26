@@ -12,7 +12,7 @@
       <variableId>e79146e0-ca9e-4697-8cdb-0f0391432649</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'ST Communication'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>e79146e0-ca9e-4697-8cdb-0f0391432649</id>
       <masked>false</masked>

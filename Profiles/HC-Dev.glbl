@@ -139,4 +139,14 @@
       <initValue>'ST Segment Record 1'</initValue>
       <name>Segments_SearchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>PushNotificationID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>CommunicationID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

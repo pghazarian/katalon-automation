@@ -16,10 +16,18 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
       <webElementGuid>f839eec4-a604-400a-92cf-7057cd2dd65c</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>ab45f944-9173-4feb-8aed-3b03b31490c2</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -34,7 +42,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;CategoryIds=${CategoryIds}</restUrl>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs?JobType=${JobType}&amp;AudienceType=${AudienceType}&amp;CategoryIds=${CategoryIds}&amp;PageSize=${PageSize}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -51,7 +59,7 @@
       <name>JobType</name>
    </variables>
    <variables>
-      <defaultValue>'AllDevices'</defaultValue>
+      <defaultValue>'Segment'</defaultValue>
       <description></description>
       <id>3168d94d-33b4-436b-850b-0a08c6072064</id>
       <masked>false</masked>
@@ -63,6 +71,13 @@
       <id>9ba27f06-c6fe-41b1-9b89-f912a8160270</id>
       <masked>false</masked>
       <name>CategoryIds</name>
+   </variables>
+   <variables>
+      <defaultValue>'50'</defaultValue>
+      <description></description>
+      <id>68f699a0-bb8b-46f7-869c-ecf3a418d5fd</id>
+      <masked>false</masked>
+      <name>PageSize</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -82,6 +97,6 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'results[18].name', 'ST Communication')</verificationScript>
+WS.verifyElementPropertyValue(response, 'results[37].name', 'ST Communication - 2024-06-11 13:32:55 Edited')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
