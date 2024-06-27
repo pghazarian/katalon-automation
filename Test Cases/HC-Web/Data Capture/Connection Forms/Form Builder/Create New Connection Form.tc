@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Create New Connection Form</name>
-   <tag></tag>
+   <tag>Stage</tag>
    <comment></comment>
    <testCaseGuid>06757668-2068-4b0a-9bbf-3887351b1769</testCaseGuid>
    <variableLinks>
