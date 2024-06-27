@@ -36,10 +36,15 @@ WebUI.click(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Person 
 WebUI.waitForElementVisible(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Expanded Person Record Select Button'), 
     2)
 
-WebUI.scrollToPosition(0, 1300)
-
 'Click button to add selected person as interested'
 WebUI.click(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Expanded Person Record Select Button'))
+
+'Scroll confirmation button into view'
+WebUI.scrollToElement(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Personal Info Header'), 
+    2)
+
+WebUI.waitForElementVisible(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Add Person Prompt Yes Button'), 
+    2)
 
 'Confirm selection'
 WebUI.click(findTestObject('HC-Web/Ministry/Interested/Add Person Drawer/Add Person Prompt Yes Button'))

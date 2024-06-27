@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Sensitive Checkbox</name>
+   <name>Form Name</name>
    <tag></tag>
-   <elementGuidId>fdde8957-8a88-4ade-8b22-c12ab195c8f3</elementGuidId>
+   <elementGuidId>8292d119-7ad5-4382-a3d1-dd2b5fad96c0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@id,'custom_question--props_sensitive_checkbox--')]</value>
+         <value>//div[text()='Form Name']/preceding-sibling::div[@class='page--data_group_row_value']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
