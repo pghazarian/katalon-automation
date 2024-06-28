@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='react-select-9--value']/div</value>
+         <value>//div[@id='task_action_form--task_category_select']/label[text()='Select Notification']/..//div[@class = 'Select-control']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>a5ec3b37-5764-485d-8fd9-9cd1dcef5f57</webElementGuid>
+      <webElementGuid>4bf980cf-3907-493b-872c-a55694836f45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ff590853-f78d-45d7-9d09-3fb3b571d3ed</webElementGuid>
+      <webElementGuid>363e0763-11e0-41f0-8431-0d84725ee8a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Select-value</value>
-      <webElementGuid>f4b50c1c-d74e-49cf-aeaa-30a143843a65</webElementGuid>
+      <webElementGuid>d4dc85ad-7579-4804-931d-e32852d42c5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>317a4409-eea8-4434-9a54-d16235e46e3b</webElementGuid>
+      <webElementGuid>f6b0a444-1108-4c32-85b1-e14f0e8a09ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>9494ce8b-904c-4ef4-940c-675fe5a5543d</webElementGuid>
+      <webElementGuid>f77117ae-c225-4084-a92c-88b234033ece</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Basic Follow Up Push Notification</value>
-      <webElementGuid>21d296e0-e151-45db-bcf2-6225c1650db2</webElementGuid>
+      <webElementGuid>a0be639f-9d35-4ecc-9af6-165b36ada74d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;react-select-9--value&quot;)/div[@class=&quot;Select-value&quot;]</value>
-      <webElementGuid>fcbfbd81-2164-46dd-b8b8-941d9b8f3e23</webElementGuid>
+      <webElementGuid>e165ca55-3e86-4ead-9907-2cf32e209976</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='react-select-9--value']/div</value>
-      <webElementGuid>2e052995-d577-4db7-82b6-27c3c80534ef</webElementGuid>
+      <webElementGuid>ff994748-047e-4177-ab91-ed58b63b2383</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Simple Follow Up Push Notification'])[1]/following::div[7]</value>
-      <webElementGuid>851c5fbf-2eb3-4656-a510-f4b5ddf4f82c</webElementGuid>
+      <webElementGuid>8aeb1e32-52cf-4595-a5f3-e92e44e819cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Important Follow Up Push Notification'])[1]/following::div[8]</value>
-      <webElementGuid>df88949c-703d-43e4-81e4-218bd2292340</webElementGuid>
+      <webElementGuid>df94d1ee-fec6-4c13-9180-3b4e3b61a3b4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview'])[1]/preceding::div[4]</value>
-      <webElementGuid>bc222a00-fe5c-4c47-89e6-7674b35712f0</webElementGuid>
+      <webElementGuid>358df28b-a1b8-4d5f-adaf-2a4e11afa51e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div/div[2]/div/div</value>
-      <webElementGuid>80598f94-d506-4368-83b6-7dc2a50516ed</webElementGuid>
+      <webElementGuid>5aa14548-549f-4fed-90ce-00d19ecea1e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +119,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Basic Follow Up Push Notification' or . = 'Basic Follow Up Push Notification')]</value>
-      <webElementGuid>7f289f23-e6b1-4eea-bf49-b03d8199b87f</webElementGuid>
+      <webElementGuid>11bd89fc-006d-4afd-9eae-43a14b6b3423</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +127,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='react-select-49--list']/div/div/div/div[2])[2]</value>
-      <webElementGuid>d1af3937-044b-4341-9d74-efbe37098a7d</webElementGuid>
+      <webElementGuid>3a7eb6da-7881-4bba-8346-581361a0f11e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,7 +135,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Basic'])[2]/following::div[1]</value>
-      <webElementGuid>e4813914-d792-427e-9a01-f1670fccf288</webElementGuid>
+      <webElementGuid>4079d362-4201-44ec-955e-e3cd7c62132b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -143,7 +143,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Simple Follow Up Push Notification'])[2]/following::div[10]</value>
-      <webElementGuid>b416437c-f15c-4f34-a693-e38c0768308f</webElementGuid>
+      <webElementGuid>9661e495-2cbc-4b1f-a895-04223a7e5ba7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -151,7 +151,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Detailed Follow Up Push Notification'])[2]/preceding::div[1]</value>
-      <webElementGuid>2dad735b-4879-4467-97f2-b8e0ca64f5bf</webElementGuid>
+      <webElementGuid>e60bbce8-12f4-4287-824e-6f2c02639087</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -159,7 +159,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Important Follow Up Push Notification'])[2]/preceding::div[2]</value>
-      <webElementGuid>1d1e81ab-d93f-46e1-bae5-dd9ba49d1d9b</webElementGuid>
+      <webElementGuid>d2a2668a-f5f0-4ecb-bd3d-edf5ca0e5996</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -167,6 +167,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div/div[3]/div/div/div/div/div[2]</value>
-      <webElementGuid>3083f970-a50b-4075-b129-be2a58fa9a5d</webElementGuid>
+      <webElementGuid>fa48d020-bd9a-4b95-a9bf-832164abdeff</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
