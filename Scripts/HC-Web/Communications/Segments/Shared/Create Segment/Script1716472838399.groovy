@@ -46,13 +46,11 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Create Segment Record/Create Button'))
 
 'Verify segment record added toast is displayed'
-not_run: WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Toast'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the text in the toast message'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Header'), 
-    'Segment record added')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Header'), 'Segment record added')
 
 'Verify the text in the toast message'
-not_run: WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Text'), 
-    'You’ve successfully created and linked a new record')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Segment Record Added Toast Text'), 'You’ve successfully created and linked a new record')
 
