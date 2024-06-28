@@ -487,4 +487,23 @@
          <variableId>33103c4b-4e3e-4037-a39b-5c2596fa67e1</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1a2adc10-a21c-414f-8e9d-a29786fbb027</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Data Capture/Connection Forms/Form Builder/Create New Connection Form</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2ebbb329-fa18-411c-838e-c7ebfc83bb26</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a407740b-19b2-4adb-8128-8b5568f37064</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

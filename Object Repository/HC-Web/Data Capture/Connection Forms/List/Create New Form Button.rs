@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Sensitive Checkbox</name>
+   <name>Create New Form Button</name>
    <tag></tag>
-   <elementGuidId>fdde8957-8a88-4ade-8b22-c12ab195c8f3</elementGuidId>
+   <elementGuidId>5bed357b-f3f4-45f1-af1e-15d419ff49f9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@id,'custom_question--props_sensitive_checkbox--')]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@id='connection_forms_list_page--page_action_bar_new_form_button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
