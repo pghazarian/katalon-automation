@@ -25,22 +25,7 @@ def CurrentDate = new Date()
 
 def EndDate = CustomKeywords.'StringHelper.getUSFormatDateForControl'(CurrentDate)
 
-not_run: WebUI.callTestCase(findTestCase('HC-Web/Communications/Segments/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Login'
-WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
-        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/segment-search'], FailureHandling.STOP_ON_FAILURE)
-
-SearchTerm = 'ST Segment - 2024-06-19 12:42:56'
-
-'Type Search term'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/Search Text Field'), SearchTerm)
-
-'Initiate Search'
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Search Text Field'), Keys.chord(Keys.ENTER))
-
-'Open the segment record from the search results'
-WebUI.click(findTestObject('HC-Web/Communications/Segments/Table Row', [('SegmentName') : SearchTerm]))
+WebUI.callTestCase(findTestCase('HC-Web/Communications/Segments/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Edit button next to Events'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Events/Events Edit Button'))
@@ -81,7 +66,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
     'Event Name')
 
 'Verify Event Name is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Event Value', [('EventName') : 'ST Event for Segment Test']), 
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Event Value', [('EventName') : 'ST Event 1']), 
     'ST Event 1')
 
 'Verify Streak or Count is displayed'
@@ -103,8 +88,8 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
         [('IncludeParentContactInformation') : 'Include Parent-Child Contact Information']), 'Include Parent-Child Contact Information')
 
 'Verify the value of Include Parent-Child Contact Information is displayed'
-WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Include Parent Child Contact Information Value'), 
-    'Yes')
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Include Parent Child Contact Information Value', 
+        [('index') : 7]), 'Yes')
 
 WebUI.closeBrowser()
 

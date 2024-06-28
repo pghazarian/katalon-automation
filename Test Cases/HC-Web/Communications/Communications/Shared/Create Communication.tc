@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Communication</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>20640d46-3cd7-425f-aaa4-d3aa7ed926b4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef1885c1-cbde-47d8-8e83-f10e6e9d3259</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'ST Campus Test'</defaultValue>
+      <description></description>
+      <id>ef1885c1-cbde-47d8-8e83-f10e6e9d3259</id>
+      <masked>false</masked>
+      <name>Campus</name>
+   </variable>
+</TestCaseEntity>
