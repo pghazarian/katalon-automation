@@ -179,7 +179,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
             ('index') : 4]), 'Result:0')
 
 'Verify Edit button next to Additional Engagements is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Egagements Edit Button'), 
+WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Engagements Edit Button'), 
     FailureHandling.STOP_ON_FAILURE)
 
 'Verify In Ministry label is displayed'

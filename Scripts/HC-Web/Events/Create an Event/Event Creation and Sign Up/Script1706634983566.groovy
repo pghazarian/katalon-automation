@@ -61,7 +61,7 @@ WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Occurrence Schedule
 WebUI.waitForElementPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 5, FailureHandling.STOP_ON_FAILURE)
 
 'Click button to add attendee'
-WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 2, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementNotPresent(findTestObject('HC-Web/Event/Occurrence Schedule/Loading Indicator'), 5, FailureHandling.STOP_ON_FAILURE)
 
 'Click button to add attendee'
 WebUI.click(findTestObject('HC-Web/Event/Occurrence Schedule/Add to Roster Button'))

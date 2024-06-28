@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Sensitive Checkbox</name>
+   <name>Add Button</name>
    <tag></tag>
-   <elementGuidId>fdde8957-8a88-4ade-8b22-c12ab195c8f3</elementGuidId>
+   <elementGuidId>ee436c57-9581-4b07-8857-61f268a73031</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@id,'custom_question--props_sensitive_checkbox--')]</value>
+         <value>//button[@id='user_search_drawer--add_button' and not(@disabled)]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

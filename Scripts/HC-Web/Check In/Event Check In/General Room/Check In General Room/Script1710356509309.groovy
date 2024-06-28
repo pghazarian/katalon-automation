@@ -45,6 +45,8 @@ WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Event/Check In/Attendee 
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Search Results', [('AttendeeName') : AttendeeName]))
 
+WebUI.waitForElementVisible(findTestObject('HC-Web/Event/Check In/Attendee Names', [('AttendeeName') : AttendeeName]), 0)
+
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Check In/Attendee Names', [('AttendeeName') : AttendeeName]), AttendeeName)
 
 WebUI.click(findTestObject('HC-Web/Event/Check In/Attendee Checkboxes', [('AttendeeName') : AttendeeName]))

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Sensitive Checkbox</name>
+   <name>Search Bar</name>
    <tag></tag>
-   <elementGuidId>fdde8957-8a88-4ade-8b22-c12ab195c8f3</elementGuidId>
+   <elementGuidId>8bb70fda-f757-4d90-8ea4-d5e4b7d7f41b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@id,'custom_question--props_sensitive_checkbox--')]</value>
+         <value>//input[@id='user_search_drawer--action_bar_search']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
