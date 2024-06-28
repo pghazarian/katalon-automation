@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Name Text Field</name>
+   <name>Continue Button</name>
    <tag></tag>
-   <elementGuidId>ad551a3b-5746-4d94-8916-406f91e5cf96</elementGuidId>
+   <elementGuidId>236af649-7969-456d-a34d-eb06b29a1adb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@id='journey_add_drawer--action_bar_add_button' and not(@disabled)]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='connection_forms--connection_form_drawer-name']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

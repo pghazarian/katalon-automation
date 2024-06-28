@@ -25,7 +25,8 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/List/Search Text Entry'), GlobalVariable.Follow_Up_Connection_Form_Name)
 
-WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/List/Search Text Entry'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/List/Search Text Entry'), Keys.chord(
+        Keys.ENTER))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/List/QA Automation Follow Up Test List Item'))
 
@@ -33,7 +34,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection For
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/New Entry/New Entry Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/New Entry/Regular ET C. Form - Event Association - Modal/No Event Associated Button'))
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/New Entry/Event Association - Modal/No Event Associated Button'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Entries/New Entry/Entry Type Modal/Next Button'))
 

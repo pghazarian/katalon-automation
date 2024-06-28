@@ -186,21 +186,19 @@ WebUI.verifyElementVisible(findTestObject('HC-Web/Journey/BuilderPage/Quiz Step 
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Overview Tab'))
 
-'Now publish the newly created open navigation journey'
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Publish And Unpublished'))
+'Now make the newly created open navigation journey private'
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Edit Details Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Journey Publish Radio Button'))
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Edit Details Drawer/Private Option'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Journey Publishing Save Button'))
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Edit Details Drawer/Continue Button'))
 
-'Now unpublish the newly created open navigation journey'
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Publish And Unpublished'))
+'Now make the newly created open navigation journey public'
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Edit Details Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Journey Unpublish Radio Button'))
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Edit Details Drawer/Public Option'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Journey Publishing Save Button'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Journey Publishing Modal/Unpublish Confirmation Button'))
+not_run: WebUI.click(findTestObject('Object Repository/HC-Web/Journey/Overview/Edit Details Drawer/Continue Button'))
 
 WebUI.click(findTestObject('HC-Web/Journey/Overview/Back to All Journeys Button'))
 

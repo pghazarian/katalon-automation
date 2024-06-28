@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Name Text Field</name>
+   <name>Public Name Text Area</name>
    <tag></tag>
-   <elementGuidId>ad551a3b-5746-4d94-8916-406f91e5cf96</elementGuidId>
+   <elementGuidId>f8de98a6-a993-4140-a076-2f41a81b9625</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='connection_forms--connection_form_drawer-name']</value>
+         <value>//h2[contains(@class,'MuiTypography-root')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

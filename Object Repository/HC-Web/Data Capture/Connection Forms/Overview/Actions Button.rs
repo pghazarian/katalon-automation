@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Name Text Field</name>
+   <name>Actions Button</name>
    <tag></tag>
-   <elementGuidId>ad551a3b-5746-4d94-8916-406f91e5cf96</elementGuidId>
+   <elementGuidId>14599ca3-240c-4aeb-8b56-14a4933c064a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='connection_forms--connection_form_drawer-name']</value>
+         <value>//button[@id='connection_forms--details--actions_dropdown']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

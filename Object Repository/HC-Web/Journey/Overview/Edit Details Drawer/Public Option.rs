@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Name Text Field</name>
+   <name>Public Option</name>
    <tag></tag>
-   <elementGuidId>ad551a3b-5746-4d94-8916-406f91e5cf96</elementGuidId>
+   <elementGuidId>afd0441f-6913-4250-a076-aca006138af3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'journeys_list_page_public_radio')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='connection_forms--connection_form_drawer-name']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

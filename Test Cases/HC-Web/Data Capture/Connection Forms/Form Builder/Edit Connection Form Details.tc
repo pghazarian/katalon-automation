@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit Connection Form Details</name>
+   <tag>Stage</tag>
+   <comment></comment>
+   <testCaseGuid>94349ff8-c37c-4ece-9fa9-43dbfe6be503</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2c3f4857-164d-402b-846d-af5273e2384a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.ConnectionForm_ForEditing_Id</defaultValue>
+      <description></description>
+      <id>2c3f4857-164d-402b-846d-af5273e2384a</id>
+      <masked>false</masked>
+      <name>FormId</name>
+   </variable>
+</TestCaseEntity>

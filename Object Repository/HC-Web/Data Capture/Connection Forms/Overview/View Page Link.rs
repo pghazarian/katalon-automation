@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Name Text Field</name>
+   <name>View Page Link</name>
    <tag></tag>
-   <elementGuidId>ad551a3b-5746-4d94-8916-406f91e5cf96</elementGuidId>
+   <elementGuidId>3dea1326-209f-4fe5-b376-4ce2ff2c6a6a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='connection_forms--connection_form_drawer-name']</value>
+         <value>//a[@id='connection_forms--details--view_page_link']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
