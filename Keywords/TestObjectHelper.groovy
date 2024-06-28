@@ -193,7 +193,7 @@ class TestObjectHelper {
 		WebUI.waitForElementClickable(dropdownInput, 3)
 		WebUI.click(dropdownInput)
 	}
-	
+
 	/**
 	 * Set value for Drop Down component
 	 */
@@ -210,7 +210,7 @@ class TestObjectHelper {
 
 		// Type Dropdown value
 		WebUI.sendKeys(dropdownInput, value)
-
+		WebUI.delay(2)
 		// Press <Enter> to select the value
 		WebUI.sendKeys(dropdownInput, Keys.chord(Keys.ENTER))
 	}
