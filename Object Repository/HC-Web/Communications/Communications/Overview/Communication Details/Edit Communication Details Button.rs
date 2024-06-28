@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Edit Communication Details Button</name>
+   <tag></tag>
+   <elementGuidId>f50c7916-aea9-4fbf-8f78-3b3c3577b0f2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.cmui.grid.jss7.jss506 > #communication_details--edit_button > span.button-inner-container.jss208</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id='communication_details--edit_button']/span)[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Edit&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>407e962e-1abb-451c-8de5-542373a3c16b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss208</value>
+      <webElementGuid>509260b0-1388-4d79-9239-1c7d6885e13a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit</value>
+      <webElementGuid>5bc56538-6855-4b41-833f-aec19c039e60</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/div[@class=&quot;cmui grid jss7 jss493 jss36&quot;]/div[@class=&quot;cmui grid--column jss45 jss68 jss76&quot;]/div[@class=&quot;jss501 jss509&quot;]/div[@class=&quot;cmui grid jss7 jss506&quot;]/button[@id=&quot;communication_details--edit_button&quot;]/span[@class=&quot;button-inner-container jss208&quot;]</value>
+      <webElementGuid>8cdaff9a-b97a-4ac1-9ff2-a25c52cf1970</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//button[@id='communication_details--edit_button']/span)[2]</value>
+      <webElementGuid>d22353db-eaaf-4f1e-8ba3-17ed4d37ba48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Communication Details'])[1]/following::span[1]</value>
+      <webElementGuid>b847379f-f0f5-4f9f-a047-f0d8a0d7f935</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inactive'])[1]/following::span[1]</value>
+      <webElementGuid>3770e9e5-8ff8-4fb5-aa6b-ec9fea7dcd37</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[1]/preceding::span[1]</value>
+      <webElementGuid>800963ad-f3a1-42a3-937a-049d7f63a217</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='From Email'])[1]/preceding::span[1]</value>
+      <webElementGuid>41a1ac88-8331-4f0f-aa75-d737e22d3af1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div/div/div/button/span</value>
+      <webElementGuid>536656da-6d0b-41c6-b8d5-5df6db9af20e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Edit' or . = 'Edit')]</value>
+      <webElementGuid>8f8fbdbc-c256-443e-8005-6c2deaeba8af</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

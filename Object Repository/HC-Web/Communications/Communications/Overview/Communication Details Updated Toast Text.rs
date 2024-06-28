@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Communication Record Toast</name>
+   <name>Communication Details Updated Toast Text</name>
    <tag></tag>
-   <elementGuidId>c0274cda-64a9-4bac-bc14-77744d3a2605</elementGuidId>
+   <elementGuidId>a9bf723b-32c4-4a25-b79f-36d19a5f9421</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='banner-message-container']</value>
+         <value>//span[@class='font-size-xxsmall']</value>
       </entry>
       <entry>
          <key>BASIC</key>
