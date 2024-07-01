@@ -3,7 +3,7 @@
    <description>Covers Product Backlog Item 110593: [Companion App - Profile] - Main Screen - Language Selection&#xd;
 &#xd;
 Note: This is a Script TC, which will  need to be automated, once the feature is test ready</description>
-   <name>Language Selection Page</name>
+   <name>Language Selection</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
