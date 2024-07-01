@@ -59,9 +59,9 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings Icon/Settings - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings/Settings - Element'), 1)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Settings Icon/Settings Button'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Settings/Settings Button'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 
     0)

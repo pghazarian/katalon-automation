@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers PBI 110315: [Companion App - Profile] - My Notes - UI &amp; Functionality&#xd;
+&#xd;
+Automation completed &amp; Passed &#xd;
+&#xd;
+Note: This TC is only to be ran with a logged in user which has No notes in My Notes page</description>
+   <name>My Notes - No notes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b71519a3-a4ea-4f94-bacb-691fa203d992</testCaseGuid>
+</TestCaseEntity>

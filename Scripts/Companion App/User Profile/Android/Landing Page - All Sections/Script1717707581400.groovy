@@ -49,13 +49,13 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Pro
 'Profile photo icon - on lower navigation menu '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings Icon/Settings - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings/Settings - Element'), 1)
 
 'Settings icon, top right of User Profile page'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Settings Icon/Settings Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Settings/Settings Button'), 0)
 
 'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Profile chevron'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Gift Icon/Gift - Element'), 1)
 
@@ -76,7 +76,7 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Notes Tile'), 0)
 
 'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Profile chevron'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 0)
 
 'My Prayers - Element '
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Prayers Header'), 1)
@@ -84,13 +84,28 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My 
 'My Prayer Tile '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile chevron'), 0)
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 
+    0)
+
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 
+    0)
+
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 
+    0)
+
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 
+    0)
+
+not_run: Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 
+    0)
+
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Ministries Header'), 1)
 
 Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Ministries Tile'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/android.widget.TextView - Profile'), 
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 
     0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Events Header'), 1)
