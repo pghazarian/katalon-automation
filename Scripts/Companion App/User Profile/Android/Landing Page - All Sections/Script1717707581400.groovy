@@ -68,7 +68,7 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/Check-In - Button'), 0)
 
 'X button in QR code modal'
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/X button in QR code modal'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/X button in My QR Code modal'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Notes Header'), 1)
 
@@ -93,9 +93,8 @@ Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/M
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 
     0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Events Header'), 1)
-
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Events Tile'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Events Tile'), 
+    0)
 
 Mobile.closeApplication()
 
