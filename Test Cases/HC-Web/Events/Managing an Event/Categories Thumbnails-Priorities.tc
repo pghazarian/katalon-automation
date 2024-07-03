@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC covers the following PBIs and it is under construction:&#xd;
+PBI 110960: [News and Events][Back Office] Ability to add an Image Thumbnail to an Event Category&#xd;
+PBI 110961: [News and Events][Back Office] Ability to set Event Category Priority Order</description>
+   <name>Categories Thumbnails-Priorities</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1a91e73-53e8-47b5-a0c3-c4dfb166cf64</testCaseGuid>
+</TestCaseEntity>
