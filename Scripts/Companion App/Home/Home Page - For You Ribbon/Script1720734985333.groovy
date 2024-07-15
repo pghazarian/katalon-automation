@@ -63,12 +63,15 @@ Mobile.delay(5)
 Mobile.scrollToText('See All')
 
 'tap on the left most For You tile'
-//Button.tap('Home/Home Page/First For You Item')
+Button.tap('Home/Home Page/First For You Item')
 
 Mobile.delay(5)
 
+'tap on the CTA button'
+Button.tap('Home/Home Page/For You Detail/CTA')
+
 'tap on the back button from For You details page' 
-//Button.tap('Home/Home Page/For You Detail/Back')
+Button.tap('Home/Home Page/For You Detail/Back')
 
 Mobile.delay(5)
 

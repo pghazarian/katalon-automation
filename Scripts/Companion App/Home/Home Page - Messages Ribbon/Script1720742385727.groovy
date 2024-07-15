@@ -60,6 +60,13 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandl
 
 Mobile.delay(10)
 
+if (Device.isIOS()) {
+	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+}
+else {
+
+}
+
 'tap on the left most Message tile'
 Button.tap('Home/Home Page/First Message Item')
 
