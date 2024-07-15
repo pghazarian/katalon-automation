@@ -5,6 +5,7 @@
    <tag></tag>
    <elementGuidId>c88a1ac7-fd93-4dd1-854f-ea89f6d265b3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

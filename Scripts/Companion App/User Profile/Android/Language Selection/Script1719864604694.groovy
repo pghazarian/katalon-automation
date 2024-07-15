@@ -46,10 +46,10 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Pro
 'Profile photo icon - on lower navigation menu '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Language selection/Language - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Language selection/Language'), 1)
 
 'Language button Object - Global icon'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Laguage Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Language Button'), 0)
 
 'Espanol | Spanish - selection object '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Spanish language selection'), 
@@ -59,9 +59,9 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings Icon/Settings - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings/Settings'), 1)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/Settings Icon/Settings Button'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Settings/Settings Button'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Spanish/Perfil - Spanish Back button'), 
     0)
@@ -102,7 +102,7 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
     0)
 
 'Language button Object - Global icon'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Laguage Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Language Button'), 0)
 
 'English language selection '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/English language selection'), 

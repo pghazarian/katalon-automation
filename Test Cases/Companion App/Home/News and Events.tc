@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC will cover the testing of following PBIs &amp; it is a Script TC:&#xd;
+PBI 108930: [BE] - News &amp; Events Ribbon&#xd;
+PBI 110959: [News and Events][CA] Ability to view a list of Event Categories (thumbnail)&#xd;
+PBI 110960: [News and Events][Back Office] Ability to add an Image Thumbnail to an Event Category&#xd;
+PBI 110961: [News and Events][Back Office] Ability to set Event Category Priority Order&#xd;
+PBI 111048: [News and Events][CA] Ability to view Event Categories in Priority Order&#xd;
+PBI 111151: [News and Events] Tap See All takes Companion App User to Events Landing Page</description>
+   <name>News and Events</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e0e35b2-d7ad-4902-9a27-86adbbc85a9e</testCaseGuid>
+</TestCaseEntity>
