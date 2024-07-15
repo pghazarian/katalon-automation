@@ -58,34 +58,17 @@ def UniqueJourneyName = 'QA Automation Journey - Read Text'
 'Open existing app by the app bundle id'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'tap on the campus selector'
-
-'tap on the Gift icon button'
 Mobile.delay(10)
 
-/*
-'tap on most recent Messages tile'
-if (Device.isIOS()) {
-    Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-} else {
-    Mobile.scrollToText('Watch Now', FailureHandling.STOP_ON_FAILURE)
-}
-*/
+'tap on the left most Message tile'
+Button.tap('Home/Home Page/First Message Item')
 
+Mobile.delay(5)
 
-'tap on Messages/See All link'
+'tap on the back button from For You details page' 
+Button.tap('Resources/Messages/Message Details/Back')
 
-'scroll to For You section'
-
-'tap on the left most For You tile'
-
-'tap on For You/See All link'
-
-'scroll to Whats Happening section'
-
-'tap on the left most Whats Happening tile'
-
-'tap on Whats Happening/See All link'
+Mobile.delay(5)
 
 'Log out of the app'
 //WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
