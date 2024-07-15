@@ -85,7 +85,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Ove
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Milestones/Add Milestone/Milestone Save Button'))
 
 'Click on the Edit button next to Additional Engagements'
-WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Egagements Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Engagements Edit Button'))
 
 'Click on Yes under In Ministry'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Add Additional Engagements/In Ministry Radio Button', 

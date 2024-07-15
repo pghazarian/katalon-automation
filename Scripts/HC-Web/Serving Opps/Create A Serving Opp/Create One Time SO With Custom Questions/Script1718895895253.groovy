@@ -94,7 +94,9 @@ try {
     'Move to next section'
     WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/When and Where Next Section Chevron Button'))
 
-    'Enter volunteer capacity'
+    WebUI.waitForElementPresent(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Volunteer Capacity Text Field'), 
+        5)
+
     WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Volunteer Capacity Text Field'), 
         5)
 
@@ -116,19 +118,20 @@ try {
         'Select checkbox question type'
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Checkbox'))
 
+        'Select grouped checkbox option'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Grouped Checkbox Radio Option'))
+
         'Name the custom question'
         WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
             'Test Question 1')
 
-        'Add a label to the checkbox'
-        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Placeholder Text Field'), 
+        'Add a label to the first checkbox'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 1 Text Field'), 
             'Check This Box')
 
-        'Make question required'
-        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Required Checkbox'))
-
-        'Make question sensitive'
-        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Sensitive Checkbox'))
+        'Add a label to the second checkbox'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 2 Text Field'), 
+            'Or This Box')
 
         'Finish editing question'
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
@@ -139,20 +142,19 @@ try {
         'Select checkbox question type'
         WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Type Checkbox'))
 
-        'Select grouped checkbox option'
-        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Grouped Checkbox Radio Option'))
-
         'Name the custom question'
         WebUI.setText(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Question Title Text Field'), 
             'Test Question 2')
 
-        'Add a label to the first checkbox'
-        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 1 Text Field'), 
+        'Add a label to the checkbox'
+        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Placeholder Text Field'), 
             'Check This Box')
 
-        'Add a label to the second checkbox'
-        WebUI.setText(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Option 2 Text Field'), 
-            'Or This Box')
+        'Make question required'
+        WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Required Checkbox'))
+
+        'Make question sensitive'
+        WebUI.click(findTestObject('HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Sensitive Checkbox'))
 
         'Finish editing question'
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Done Button'))
@@ -254,7 +256,13 @@ try {
         'If custom question creation fails, back out of question editor and reset SO fields'
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Custom Questions/Cancel Button'))
 
+        WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Serving Opp Creation Cross Button'), 
+            0)
+
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Serving Opp Creation Cross Button'))
+
+        WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Start Over Button'), 
+            0)
 
         WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Create Serving Opps Drawer/Start Over Button'))
 
@@ -359,11 +367,11 @@ WebUI.waitForElementVisible(findTestObject('HC-Web/Serving Opps/Serving Schedule
 WebUI.verifyElementText(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Required Question Asterisk'), 
     '*')
 
-'Click single checkbox response'
-WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Checkbox Response'))
-
 'Click grouped checkbox response'
 WebUI.click(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/First Grouped Checkbox Response'))
+
+'Click single checkbox response'
+WebUI.click(findTestObject('Object Repository/HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Checkbox Response'))
 
 'Answer single line question'
 WebUI.setText(findTestObject('HC-Web/Serving Opps/Serving Schedule Page/Add Volunteer Drawer/Custom Questions Drawer/Single Line Answer Text Area'), 

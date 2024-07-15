@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Sensitive Checkbox</name>
+   <name>Communication Details Updated Toast Text</name>
    <tag></tag>
-   <elementGuidId>fdde8957-8a88-4ade-8b22-c12ab195c8f3</elementGuidId>
+   <elementGuidId>a9bf723b-32c4-4a25-b79f-36d19a5f9421</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@id,'custom_question--props_sensitive_checkbox--')]</value>
+         <value>//span[@class='font-size-xxsmall']</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

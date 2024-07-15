@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Demographic Info Save Button</name>
+   <name>Communication Details Save Button</name>
    <tag></tag>
-   <elementGuidId>7b9cfc57-0ef5-4071-8d2d-72618ba6601d</elementGuidId>
+   <elementGuidId>8a693b32-347c-45a8-848c-aa497ba786f7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[13]</value>
+         <key>CSS</key>
+         <value>#communication_edit--save_button</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>button.cmui.button.jss207.jss562.jss215.jss206</value>
+         <key>XPATH</key>
+         <value>//button[@id='communication_edit--save_button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;Save&quot;i]</value>
+         <value>internal:role=button[name=&quot;Save&quot;s]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>0fa13883-751c-4805-abd9-9686cb334a14</webElementGuid>
+      <webElementGuid>a7ea4a88-5043-4691-80f0-df95e1f5687f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,15 +37,23 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>6f1643f1-4167-41f8-94d5-43065886ac3a</webElementGuid>
+      <webElementGuid>71e4ecf0-1432-4cfc-a154-648cc624b3eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>cmui button jss207 jss562 jss215 jss206</value>
-      <webElementGuid>2bb58051-d73e-400b-80b5-96044f920fc5</webElementGuid>
+      <value>cmui button jss207 jss553 jss215 jss206</value>
+      <webElementGuid>7f894351-367e-457f-be25-1dfa4bd8add2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>communication_edit--save_button</value>
+      <webElementGuid>97b687e1-e6cf-4650-a541-32ffe2ed6413</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +61,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>de1ee428-456f-4448-b726-4aa40e3ef8f9</webElementGuid>
+      <webElementGuid>c20acaea-82fc-4ebc-8f98-6103fecf4115</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,23 +69,31 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
-      <webElementGuid>f9ef2421-f115-4a49-86b7-7b5ea8c3b4b0</webElementGuid>
+      <webElementGuid>7dccbf1a-10a7-41b2-9d89-94e96deda86e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/div[1]/header[@class=&quot;ui drawer--action_bar action_bar drawer--action_bar&quot;]/div[1]/div[@class=&quot;cmui grid jss7 action_bar--grid jss13 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 action_bar--grid_column&quot;]/button[@class=&quot;cmui button jss207 jss562 jss215 jss206&quot;]</value>
-      <webElementGuid>fa477448-a4ec-44c8-9c39-d7e75acfcd2d</webElementGuid>
+      <value>id(&quot;communication_edit--save_button&quot;)</value>
+      <webElementGuid>f4e79b49-001a-4d08-8682-52ac989e47fa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[12]</value>
-      <webElementGuid>eba40320-5e0d-46ec-a0e8-82240a4ac411</webElementGuid>
+      <value>//button[@id='communication_edit--save_button']</value>
+      <webElementGuid>b98dc3d7-40a9-4883-9c2a-950c8f7385a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/div[2]/div/div/div[2]/div[5]/button[2]</value>
+      <webElementGuid>378a4eed-185d-4ac3-97ee-80b118871098</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,38 +101,38 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
-      <webElementGuid>ab60db86-1f1b-4731-a9d8-f7ece276531a</webElementGuid>
+      <webElementGuid>9b3e449d-f8d1-4f97-8672-97fecfb1a396</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Demographic Info'])[1]/following::button[2]</value>
-      <webElementGuid>ff9b7096-89d7-4fbb-9505-fb05de19dde1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New Email!'])[1]/following::button[2]</value>
+      <webElementGuid>d481349c-258e-41d2-95af-e56000b53c84</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Demographic info'])[2]/preceding::button[1]</value>
-      <webElementGuid>414d0aa0-4924-4b72-b4c0-35e8765e6034</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Communication Layout'])[1]/preceding::button[1]</value>
+      <webElementGuid>8a54a307-8e4b-40bb-8e5a-ba49e4974b2e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//header/div/div/div[2]/button</value>
-      <webElementGuid>b7b756a3-2481-43d6-a42a-9b9efccd11d5</webElementGuid>
+      <value>//button[2]</value>
+      <webElementGuid>59de9448-ecac-4443-9295-6344df045f5d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = 'Save' or . = 'Save')]</value>
-      <webElementGuid>fa7bedd7-e694-4357-be22-1cff98f315c0</webElementGuid>
+      <value>//button[@id = 'communication_edit--save_button' and @type = 'button' and (text() = 'Save' or . = 'Save')]</value>
+      <webElementGuid>b09df850-d6dd-4764-b8d7-5a8c38fb8cce</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Communications/Segments/Shared/Create Segment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Edit button next to Additional Engagements'
-WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Egagements Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Engagements Edit Button'))
 
 'Click on Any under In Ministry'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Add Additional Engagements/In Ministry Radio Button', 
@@ -58,7 +58,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
         [('MemberStatus') : "Member"]), 'Member')
 
 'Click on the Edit button next to Additional Engagements'
-WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Egagements Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Engagements Edit Button'))
 
 'Click on Yes under In Ministry'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Add Additional Engagements/In Ministry Radio Button', 
@@ -100,7 +100,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
         [('MemberStatus') : "Disengaged Member, Member, Membership Review, Non-Member, Pending"]), 'Disengaged Member, Member, Membership Review, Non-Member, Pending')
 
 'Click on the Edit button next to Additional Engagements'
-WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Egagements Edit Button'))
+WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Additional Engagements Edit Button'))
 
 'Click on No under In Ministry'
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Additional Engagements/Add Additional Engagements/In Ministry Radio Button', 
