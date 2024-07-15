@@ -60,8 +60,6 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandl
 
 Mobile.delay(5)
 
-Mobile.scrollToText('See All')
-
 'tap on the left most For You tile'
 Button.tap('Home/Home Page/First For You Item')
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>First For You Item</name>
+   <name>CTA</name>
    <tag></tag>
-   <elementGuidId>25169870-afb4-41ad-9790-a9e7ad173106</elementGuidId>
+   <elementGuidId>d1400988-4070-4084-856f-dd7af14c8ae2</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>for_you_list--card_4</locator>
+   <locator>button--pathway-cta</locator>
    <locatorCollection>
       <entry>
          <key>CLASS_NAME</key>
@@ -17,12 +17,12 @@
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
+         <key>ACCESSIBILITY</key>
+         <value>hcds-mobile-btn-button--pathway-cta</value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -42,7 +42,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//android.view.ViewGroup[starts-with(@content-desc,&quot;for_you_list--card_&quot;)])[1]</value>
+         <value></value>
       </entry>
       <entry>
          <key>NAME</key>
