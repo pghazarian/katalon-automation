@@ -3,9 +3,9 @@
    <description></description>
    <name>List Entry - Day of Week</name>
    <tag></tag>
-   <elementGuidId>d10135f0-3d6a-4895-8b59-3f96c4ee33c8</elementGuidId>
+   <elementGuidId>06b9ca33-d3a5-4608-a12b-8da744deccdf</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.TextView[@resource-id=&quot;text&quot;])[1]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-card--events-day_of_week</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

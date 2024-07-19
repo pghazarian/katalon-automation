@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>Back</name>
+   <tag></tag>
+   <elementGuidId>f02df9c4-239e-439d-8bda-8fffa11116f9</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <locator>Back</locator>
+   <locatorCollection>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+      </entry>
+      <entry>
+         <key>ID</key>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+      </entry>
+      <entry>
+         <key>NAME</key>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+   </locatorCollection>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <platform>ANDROID</platform>
+</MobileElementEntity>

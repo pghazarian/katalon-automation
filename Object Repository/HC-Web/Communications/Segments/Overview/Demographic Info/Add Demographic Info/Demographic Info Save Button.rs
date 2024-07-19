@@ -6,12 +6,12 @@
    <elementGuidId>7b9cfc57-0ef5-4071-8d2d-72618ba6601d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.cmui.button.jss207.jss562.jss215.jss206</value>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[13]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[12]</value>
+         <key>CSS</key>
+         <value>button.cmui.button.jss207.jss562.jss215.jss206</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>bf9e2efb-25c2-4ea9-bfe7-399e90162a5f</webElementGuid>
+      <webElementGuid>0fa13883-751c-4805-abd9-9686cb334a14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>21030df4-b2ee-4ee5-9f37-0fd4950abe52</webElementGuid>
+      <webElementGuid>6f1643f1-4167-41f8-94d5-43065886ac3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>cmui button jss207 jss562 jss215 jss206</value>
-      <webElementGuid>b78becd3-fc26-400f-8983-fb08076dbbc8</webElementGuid>
+      <webElementGuid>2bb58051-d73e-400b-80b5-96044f920fc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>d57145e9-8c6c-4c03-9525-50cea9c85fcb</webElementGuid>
+      <webElementGuid>de1ee428-456f-4448-b726-4aa40e3ef8f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
-      <webElementGuid>19844990-1e32-48a9-8117-1b5cb3db0e86</webElementGuid>
+      <webElementGuid>f9ef2421-f115-4a49-86b7-7b5ea8c3b4b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[@class=&quot;safari&quot;]/body[@class=&quot;drawer-open drawer-dimmers&quot;]/div[6]/div[@class=&quot;ui drawer jss201 drawer-is_modal drawer-has_title_bar drawer-has_action_bar&quot;]/div[@class=&quot;drawer-container&quot;]/div[1]/div[1]/div[@class=&quot;drawer-container-inner&quot;]/div[1]/header[@class=&quot;ui drawer--action_bar action_bar drawer--action_bar&quot;]/div[1]/div[@class=&quot;cmui grid jss7 action_bar--grid jss13 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 action_bar--grid_column&quot;]/button[@class=&quot;cmui button jss207 jss562 jss215 jss206&quot;]</value>
-      <webElementGuid>81aacfc1-3149-411e-b309-831d05b5468b</webElementGuid>
+      <webElementGuid>fa477448-a4ec-44c8-9c39-d7e75acfcd2d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[12]</value>
-      <webElementGuid>9f19aca5-48ac-4b32-8ec6-6cb7ab097f78</webElementGuid>
+      <webElementGuid>eba40320-5e0d-46ec-a0e8-82240a4ac411</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
-      <webElementGuid>7b3f33b9-ccb6-4f9a-b014-193551446c6f</webElementGuid>
+      <webElementGuid>ab60db86-1f1b-4731-a9d8-f7ece276531a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Demographic Info'])[1]/following::button[2]</value>
-      <webElementGuid>50408e14-82d6-4cde-846e-96972c6164f4</webElementGuid>
+      <webElementGuid>ff9b7096-89d7-4fbb-9505-fb05de19dde1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Demographic info'])[2]/preceding::button[1]</value>
-      <webElementGuid>9396edaa-1aeb-47b3-bb43-220076a32bc0</webElementGuid>
+      <webElementGuid>414d0aa0-4924-4b72-b4c0-35e8765e6034</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//header/div/div/div[2]/button</value>
-      <webElementGuid>ef66a98e-0ed5-4672-a7dc-6097b76e0996</webElementGuid>
+      <webElementGuid>b7b756a3-2481-43d6-a42a-9b9efccd11d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Save' or . = 'Save')]</value>
-      <webElementGuid>831c2b13-7de9-4d65-9090-26f94ba8e49b</webElementGuid>
+      <webElementGuid>fa7bedd7-e694-4357-be22-1cff98f315c0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

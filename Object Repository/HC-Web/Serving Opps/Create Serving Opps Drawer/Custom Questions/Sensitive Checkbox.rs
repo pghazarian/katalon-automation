@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='custom_question--props_sensitive_checkbox--1']</value>
+         <value>//div[contains(@id,'custom_question--props_sensitive_checkbox--')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

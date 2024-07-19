@@ -16,10 +16,18 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
       <webElementGuid>f839eec4-a604-400a-92cf-7057cd2dd65c</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>b9479bea-9c63-4f2c-bcad-185cfc232202</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -34,7 +42,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs/${JobId}?JobType=${JobType}</restUrl>
+   <restUrl>${GlobalVariable.HC_HostUrl}/api/internal/promotional-communication-jobs/${CommunicationID}?JobType=${JobType}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -44,11 +52,11 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'85'</defaultValue>
+      <defaultValue>GlobalVariable.CommunicationID</defaultValue>
       <description></description>
       <id>9ba27f06-c6fe-41b1-9b89-f912a8160270</id>
       <masked>false</masked>
-      <name>JobId</name>
+      <name>CommunicationID</name>
    </variables>
    <variables>
       <defaultValue>'Email'</defaultValue>
@@ -73,10 +81,6 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.verifyResponseStatusCode(response, 200)
 
-assertThat(response.getStatusCode()).isEqualTo(200)
-
-WS.verifyElementPropertyValue(response, 'name', 'ST Communication - 2024-06-11 13:32:55')
-
-WS.verifyElementPropertyValue(response, 'id', '85')</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

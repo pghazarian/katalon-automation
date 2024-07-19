@@ -4,5 +4,6 @@
    <name>Digital Program Sanity as Logged In User</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>67a8afe2-d11a-4a5a-a225-1ea3b30f7fe6</testCaseGuid>
 </TestCaseEntity>

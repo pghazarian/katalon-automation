@@ -186,6 +186,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'The Sacrifice You'</initValue>
+      <name>MessageSearch_Details</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'2206'</initValue>
       <name>MinistryId_SOTests</name>
    </GlobalVariableEntity>
@@ -208,5 +213,10 @@
       <description></description>
       <initValue>'9653'</initValue>
       <name>SO_Id_CustomQuestions</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'3907'</initValue>
+      <name>ConnectionForm_ForEditing_Id</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

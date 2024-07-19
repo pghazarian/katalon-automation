@@ -16,10 +16,18 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
       <webElementGuid>ab56f97b-5a0e-4c49-b2da-4b946c0fbdde</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>6c5dcdc8-d841-4573-83f4-c9d3dc9cffcf</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>

@@ -6,11 +6,12 @@
    <elementGuidId>6a097f3b-bf6a-4ef1-ab0d-17122c7778f0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]/android.view.ViewGroup</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

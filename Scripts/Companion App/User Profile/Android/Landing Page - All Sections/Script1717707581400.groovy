@@ -49,14 +49,13 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Pro
 'Profile photo icon - on lower navigation menu '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings Icon/Settings - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings/Settings'), 1)
 
 'Settings icon, top right of User Profile page'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Settings Icon/Settings Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Settings/Settings Button'), 0)
 
 'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Profile chevron'), 
-    0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Gift Icon/Gift - Element'), 1)
 
@@ -66,43 +65,36 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 'X icon on top right of Gift- Giving page '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Gift Icon/X icon'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/QR Code - Check-In/QR Code - Element'), 
-    1)
-
-Mobile.tap(findTestObject('Companion App/Android/User Profile/QR Code - Check-In/My QR Code Button'), 0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/Check-In - Button'), 0)
 
 'X button in QR code modal'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/QR Code - Check-In/X Icon - QR Code modal'), 
-    0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/X button in My QR Code modal'), 0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/Notes - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Notes Header'), 1)
 
 'My Notes Tile '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Notes Tile'), 0)
 
 'Back chevron "<" Icon, to the left of the Profile text top left '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Profile chevron'), 
-    0)
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 0)
 
 'My Prayers - Element '
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Prayers - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Prayers Header'), 1)
 
 'My Prayer Tile '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 0)
 
-Mobile.scrollToText('Please ')
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile back button'), 0)
-
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Ministries - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Ministries Header'), 1)
 
 Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Ministries Tile'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/My Ministries/Back button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 
+    0)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/Events - Element'), 1)
-
-Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/My Events Tile'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Events Tile'), 
+    0)
 
 Mobile.closeApplication()
 

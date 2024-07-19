@@ -3,9 +3,9 @@
    <description></description>
    <name>List Entry - Recurring Freqency</name>
    <tag></tag>
-   <elementGuidId>ca6727d7-dd3f-4dfe-b0ba-a12e1d8fc9c9</elementGuidId>
+   <elementGuidId>14b1e34e-63ea-406d-8432-586a3ada9455</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[ends-with(@content-desc,&quot;-frequency&quot;)]</locator>
+   <locator>(//XCUIElementTypeStaticText[@name=&quot;ui-card--events-frequency&quot;])[4]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

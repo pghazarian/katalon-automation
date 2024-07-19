@@ -3,9 +3,60 @@
    <description></description>
    <name>Messages See All</name>
    <tag></tag>
-   <elementGuidId>33b4fa28-9bf1-4236-83b4-24aa507755be</elementGuidId>
+   <elementGuidId>cef41142-e868-46f3-8649-803cc74ad0ac</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.view.ViewGroup[@content-desc=&quot;See All&quot;])[2]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>See All</locator>
+   <locatorCollection>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//android.view.ViewGroup[@content-desc=&quot;See All&quot;])[2]</value>
+      </entry>
+   </locatorCollection>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <platform>ANDROID</platform>
 </MobileElementEntity>

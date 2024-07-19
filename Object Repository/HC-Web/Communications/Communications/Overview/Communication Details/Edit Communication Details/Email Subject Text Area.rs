@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Email Subject Text Area</name>
+   <tag></tag>
+   <elementGuidId>834a9a7c-e66d-4edb-9bd4-8533870c39db</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#communication_edit--email_subject</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//textarea[@id='communication_edit--email_subject']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;ST Communications ST Communications Description edit-2 Scoped Campus ST Campus Test Status Inactive Communication Details Active From Email JamesTest@saddleback.com Select Recipients ST Segment for Communications Select Reply To JamesTest@saddleback.com Select Email Subject Cancel Save Communication Layout Active Email template Browse Email Template Test Email send Send LOGO image Saddleback Logo © 2024 Saddleback Valley Community Church&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>c67d8cd6-4ad8-47d3-ad25-f5e8757c1392</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>communication_edit--email_subject</value>
+      <webElementGuid>92dccf5d-deb3-49c8-9eb9-6ef4147a10b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>250</value>
+      <webElementGuid>a79151bc-18a4-4b8e-9e90-d3109adbe68b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Email Subject</value>
+      <webElementGuid>4b82ad72-1a22-4baf-b378-074d9ebf6e62</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>New Email!</value>
+      <webElementGuid>9e1e1c65-fd24-4153-875e-1ea29bc969e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;communication_edit--email_subject&quot;)</value>
+      <webElementGuid>bb0116c4-2d64-407d-befe-ec7a48bf7c8d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//textarea[@id='communication_edit--email_subject']</value>
+      <webElementGuid>01296640-6cee-4410-9266-2d02056a6abd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/div[2]/div/div/div[2]/div[4]/div/textarea</value>
+      <webElementGuid>723a4879-057b-47f3-b13a-c6c4aa2b489e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email Subject'])[1]/following::textarea[1]</value>
+      <webElementGuid>4289b2dd-6841-4379-9209-4676dc565a12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='JamesTest@saddleback.com'])[4]/following::textarea[1]</value>
+      <webElementGuid>01d771c9-2a4b-4c4a-bda7-9a5cb0d5b86d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>80ef9b02-1cc2-49fe-b1c1-15b7c5177722</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>ed8b8ba5-97e9-4e1e-992c-93b5fc7ec787</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='New Email!']/parent::*</value>
+      <webElementGuid>2d45999b-dfe8-47e8-be2b-22ca006f61f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//textarea</value>
+      <webElementGuid>7e4758cd-9731-41ff-9d5c-73dc95a662e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[@id = 'communication_edit--email_subject' and @placeholder = 'Email Subject' and (text() = 'New Email!' or . = 'New Email!')]</value>
+      <webElementGuid>9128d5da-763a-4297-9aa4-9799d15e982b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

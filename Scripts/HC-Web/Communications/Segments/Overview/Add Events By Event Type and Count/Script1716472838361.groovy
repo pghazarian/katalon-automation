@@ -50,12 +50,10 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-occurrence-atten
 CustomKeywords.'TestObjectHelper.setDropDownValueByName'('event-occurence-count-selector', '1')
 
 'Select start date from date picker'
-WebUI.setText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Add Event/Data Picker', [('index') : 3]), 
-    StartDate)
+WebUI.setText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Add Event/Data Picker', [('index') : 3]), StartDate)
 
 'Select end date from date picker'
-WebUI.setText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Add Event/Data Picker', [('index') : 4]), 
-    EndDate)
+WebUI.setText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Add Event/Data Picker', [('index') : 4]), EndDate)
 
 'Click button to save'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Events/Add Event/Event Save Button'))
@@ -81,6 +79,14 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 
 'Verify Date Range is displayed'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Data Range Value'), "$StartDate - $EndDate")
+
+'Verify Include Parent-Child Contact Information Label is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Include Parent Child Contact Information Label', 
+        [('IncludeParentContactInformation') : 'Include Parent-Child Contact Information']), 'Include Parent-Child Contact Information')
+
+'Verify the value of Include Parent-Child Contact Information is displayed'
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/Events/Include Parent Child Contact Information Value', 
+        [('index') : 7]), 'No')
 
 WebUI.closeBrowser()
 

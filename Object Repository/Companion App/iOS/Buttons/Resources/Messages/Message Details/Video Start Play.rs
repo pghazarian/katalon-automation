@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>Video Start Play</name>
+   <tag></tag>
+   <elementGuidId>d9c66d89-834c-4f91-8965-1c3f007e87e4</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <locator>ui-button-play-sermon</locator>
+   <locatorCollection>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+      </entry>
+      <entry>
+         <key>ID</key>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+      </entry>
+      <entry>
+         <key>NAME</key>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+   </locatorCollection>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <platform>ANDROID</platform>
+</MobileElementEntity>

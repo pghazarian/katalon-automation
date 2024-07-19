@@ -3,9 +3,9 @@
    <description></description>
    <name>List Entry - Time</name>
    <tag></tag>
-   <elementGuidId>8d112eaa-045f-4efa-83c4-d42b9dc26027</elementGuidId>
+   <elementGuidId>1e416bcc-c807-4851-a6b6-285a11ad6fdf</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.TextView[@resource-id=&quot;text&quot;])[3]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-card--events-time</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

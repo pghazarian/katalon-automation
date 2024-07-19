@@ -3,10 +3,9 @@
    <description></description>
    <name>Discover Navigation Button</name>
    <tag></tag>
-   <elementGuidId>ba223a6b-5c2f-4b59-9b6d-92bf53948f87</elementGuidId>
+   <elementGuidId>4aa22a3e-036d-4b32-bb5a-a725bc71d35b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Discover, tab, 5 of 6</locator>
+   <locator>Discover, tab, 5 of 5</locator>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

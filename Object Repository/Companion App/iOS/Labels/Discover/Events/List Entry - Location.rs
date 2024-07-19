@@ -3,9 +3,9 @@
    <description></description>
    <name>List Entry - Location</name>
    <tag></tag>
-   <elementGuidId>43ae3a9c-b8cf-4c48-afa2-2d07ea045523</elementGuidId>
+   <elementGuidId>4ae857d1-467c-46e6-884b-1122bba72758</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[ends-with(@content-desc,&quot;location&quot;)]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>ui-card--events-location</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>
