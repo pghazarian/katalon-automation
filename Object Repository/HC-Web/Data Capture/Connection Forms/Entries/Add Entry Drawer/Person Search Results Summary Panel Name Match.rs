@@ -6,11 +6,11 @@
    <elementGuidId>383766b5-06a2-4324-bff1-880395a403a6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class, 'person_panel--summary')]//h4[text() = '${textToMatch}' or normalize-space(.) = '${textToMatch}']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[contains(@class, 'person_panel--summary')]//h4[text() = '${textToMatch}' or normalize-space(.) = '${textToMatch}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

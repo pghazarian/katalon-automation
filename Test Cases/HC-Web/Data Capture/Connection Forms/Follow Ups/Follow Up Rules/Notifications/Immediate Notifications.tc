@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers all Notifications PBIs, under Team Mandalorian's  Sprints 115 &amp; 116 boards</description>
+<<<<<<<< HEAD:Test Cases/HC-Web/Data Capture/Connection Forms/Follow Ups/Follow Up Rules/Notifications/Immediate Notifications.tc
+   <name>Immediate Notifications</name>
+========
+   <name>Daily Batch Notifications</name>
+>>>>>>>> main:Test Cases/HC-Web/Data Capture/Connection Forms/Follow Ups/Follow Up Rules/Notifications/Daily Batch Notifications.tc
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8065756f-d852-4f08-b6fa-642340a92dfd</testCaseGuid>
+</TestCaseEntity>
