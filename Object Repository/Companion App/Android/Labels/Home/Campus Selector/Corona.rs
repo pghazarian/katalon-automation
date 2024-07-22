@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Home Navigation Button</name>
+   <name>Corona</name>
    <tag></tag>
-   <elementGuidId>8cb9d0fc-79d3-4912-8df2-d35215bd8fb2</elementGuidId>
+   <elementGuidId>9649447a-b3c9-4709-b330-db9928a91b65</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_home</locator>
+   <locator>Corona</locator>
    <locatorCollection>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>Home</value>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>

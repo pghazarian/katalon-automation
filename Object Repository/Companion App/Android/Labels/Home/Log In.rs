@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Home Navigation Button</name>
+   <name>Log In</name>
    <tag></tag>
-   <elementGuidId>8cb9d0fc-79d3-4912-8df2-d35215bd8fb2</elementGuidId>
+   <elementGuidId>dcc953ba-27cc-4b74-8b84-8d7e5ab638a3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_home</locator>
+   <locator>log in </locator>
    <locatorCollection>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>Home</value>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>

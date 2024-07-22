@@ -214,4 +214,9 @@
       <initValue>'9653'</initValue>
       <name>SO_Id_CustomQuestions</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Will determine if CA test case will be run in Logged in or Logged out mode</description>
+      <initValue>true</initValue>
+      <name>CA_Login_Mode</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
