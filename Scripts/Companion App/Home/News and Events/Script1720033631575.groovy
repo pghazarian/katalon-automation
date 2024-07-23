@@ -40,9 +40,15 @@ import org.openqa.selenium.Keys as Keys
  */
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.scrollToText('News', FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText('Worship', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/Labels/News Heading'), 1)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Worship Service Category'), 
+    0)
 
-Mobile.swipe(68, 935, 731, 1080)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Home Icon'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Adult Ministries Category'), 
+    0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Home Icon'), 0)
 
