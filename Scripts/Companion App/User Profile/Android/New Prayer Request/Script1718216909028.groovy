@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 /*
  * Prerequisites:
  * 1- User must have a valid account on ME app to use on the Companion App to login
@@ -56,7 +55,6 @@ import org.openqa.selenium.Keys as Keys
  * 27. Learn more about our "Privacy Policy"(blue) link, which links the user out to the following link, when tapped on:
  * 28. https://welcome.saddleback.com/sections/more/privacy-policy)
  */
-
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Profile Web Avatar - Element'), 1)
@@ -71,4 +69,22 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Prayers Tile'), 0)
 
 Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Plus Button - New Prayer Request'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Request field'), 
+    0)
+
+Mobile.setText(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Input Text value'), 
+    'New Prayer Request test', 0)
+
+Mobile.hideKeyboard()
+
+'Submit Button'
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Submit Button'), 
+    0)
+
+'Done Button '
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Done Button'), 
+    0)
+
+Mobile.tap(findTestObject('Companion App/Android/User Profile/My Tiles/Buttons/Profile Back Button'), 0)
 

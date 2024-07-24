@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC Covers the testing of the following PBIs:&#xd;
+Product Backlog Item 107947: [Digital Program > Attendee-Facing] - Ability to automatically display the minimized digital program during service&#xd;
+Product Backlog Item 107953: [Digital Program > Attendee-Facing] - Ability to minimize a digital program</description>
+   <name>Digital Program</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d8edf418-09fa-49e1-ade9-05548a71eaf3</testCaseGuid>
+</TestCaseEntity>
