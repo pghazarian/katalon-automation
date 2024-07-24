@@ -38,3 +38,17 @@ import org.openqa.selenium.Keys as Keys
  * 13. Tap on the "See All" blue link button, to the right of the "Events" section's header of the Home page
  * 14. Verify that user can view ALL Events under each Category
  */
+WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.scrollToText('Worship', FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Worship Service Category'), 
+    0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Home Icon'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Adult Ministries Category'), 
+    0)
+
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Home Icon'), 0)
+
