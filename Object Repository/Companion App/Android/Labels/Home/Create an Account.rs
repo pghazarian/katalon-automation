@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Home Navigation Button</name>
+   <name>Create an Account</name>
    <tag></tag>
-   <elementGuidId>8cb9d0fc-79d3-4912-8df2-d35215bd8fb2</elementGuidId>
+   <elementGuidId>56e395ec-75cc-48c6-b599-e6e8af184957</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_home</locator>
+   <locator>create an account </locator>
    <locatorCollection>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>Home</value>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Campus Selector</name>
+   <name>Details</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>1a73ecdf-9f55-4930-be53-7e65575378c9</testCaseGuid>
+   <testCaseGuid>7876ae72-ca87-4c13-a8c4-ceafaeea95c5</testCaseGuid>
 </TestCaseEntity>

@@ -138,6 +138,10 @@ Mobile.delay(5)
 'return back to the recent message list'
 Button.tap("Resources/Messages/Message Details/Back", timeout)
 
+'if testing guest experience'
+	'Tap on the Log in to Save notes'
+	'exit out of log in page'
+
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
 
