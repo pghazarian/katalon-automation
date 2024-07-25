@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='layout']/div[2]/div/main/div/section/div/div[2]/div/div/div/div/div[5]/table/tbody/tr[3]/td[4]/button/span</value>
+         <value>//div/h2[text()='Field Rules']/../following-sibling::div/table/tbody/tr/td[contains(text(),'CTA Single Check Box')]/..</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>12c50418-54b7-427b-9a76-40c6ba5f660d</webElementGuid>
+      <webElementGuid>eadc7cad-621d-4e5b-bacb-cfe390d71de1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button-inner-container jss246</value>
-      <webElementGuid>1be1443f-c170-43f9-9bf3-e049782f8c47</webElementGuid>
+      <webElementGuid>29c59052-3e29-4798-af95-97d0e37794de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>chevron-wl-right</value>
-      <webElementGuid>7c8f8425-81ee-40d8-a0ea-8e7878c89f12</webElementGuid>
+      <webElementGuid>16a84513-fb3c-43c7-a977-7d84c0b7583d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss403 jss494&quot;]/div[@class=&quot;cmui container jss497 ui page--container jss496&quot;]/section[@class=&quot;cmui content jss500 ui page--content jss499&quot;]/div[@class=&quot;jss487&quot;]/div[@class=&quot;cmui grid jss7 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 jss68 jss93 jss104&quot;]/div[@class=&quot;ui card jss244 jss491&quot;]/div[@class=&quot;card-content&quot;]/div[1]/div[5]/table[@class=&quot;ui jss504 table table-basic table-font-size-xsmall table-full-width table-selectable jss486&quot;]/tbody[@class=&quot;table-body&quot;]/tr[@class=&quot;table-row table-row-clickable&quot;]/td[@class=&quot;table-cell table-cell-one jss489&quot;]/button[@class=&quot;ui button jss245 jss510 jss492 jss250 jss260&quot;]/span[@class=&quot;button-inner-container jss246&quot;]</value>
-      <webElementGuid>c465d14a-4338-4f45-8393-95aea36d4b27</webElementGuid>
+      <webElementGuid>38e6995e-641a-43d7-9361-c47d5d717d11</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/main/div/section/div/div[2]/div/div/div/div/div[5]/table/tbody/tr[3]/td[4]/button/span</value>
-      <webElementGuid>d08a5c05-1593-4da9-b09c-1c4edadcbc32</webElementGuid>
+      <webElementGuid>4143eb71-3482-49d3-8578-f3967b8689ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Checkbox'])[1]/following::span[1]</value>
-      <webElementGuid>763deeec-b4a9-4819-9b25-8335095588ad</webElementGuid>
+      <webElementGuid>df5f564c-b304-4a49-932c-90d2eea2611c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CTA Single Check Box'])[1]/following::span[1]</value>
-      <webElementGuid>02b6ff5a-786c-4b5c-8d1b-36f499a32591</webElementGuid>
+      <webElementGuid>79b56837-8a39-4d6a-a1d3-285baaf88581</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='All Help Resources'])[1]/preceding::span[1]</value>
-      <webElementGuid>ea77e695-47ae-4902-a7d0-10dbcfc116c6</webElementGuid>
+      <webElementGuid>0a105c74-3de5-42ae-b779-6cabc4ba73a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Content Management'])[2]/preceding::span[2]</value>
-      <webElementGuid>6702dc4d-31e8-4702-ac0d-2f3158f52bc8</webElementGuid>
+      <webElementGuid>c8f34e35-7eec-40ab-a1b9-cf38c5ea9812</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td[4]/button/span</value>
-      <webElementGuid>b0ff32df-edb3-4b17-9b7d-f93af14c7c02</webElementGuid>
+      <webElementGuid>5512c40a-8877-4071-9332-a76b03cf9587</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'chevron-wl-right' or . = 'chevron-wl-right')]</value>
-      <webElementGuid>4080d630-efaf-4061-bc96-6378be193689</webElementGuid>
+      <webElementGuid>0969a4ee-0bed-4ecf-becd-bdbb68381f21</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

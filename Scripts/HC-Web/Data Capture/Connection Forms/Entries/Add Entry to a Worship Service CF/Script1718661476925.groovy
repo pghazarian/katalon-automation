@@ -1,3 +1,4 @@
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -12,7 +13,6 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
@@ -23,15 +23,19 @@ WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVar
     FailureHandling.STOP_ON_FAILURE)
 
 'Click in the Connection Forms Search Field '
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Search Field'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Search/Search Field'))
 
 'Type Paren Anaheim Worship 1'
-WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Search Field'), 'Paren Anaheim Worship 1')
+WebUI.setText(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/Search/Search Field'), ConnectionFormName)
 
-WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Search Field'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Search/Search Field'), Keys.chord(Keys.ENTER))
 
-'Select Paren Anaheim Worship 1 Connection Form '
-WebUI.click(findTestObject('Object Repository/HC-Web/Data Capture/Connection Forms/List/Connection Form row'))
+'Validate and Select Paren Anaheim Worship 1 Connection Form '
+ConnectionFormObject = findTestObject('HC-Web/Data Capture/Connection Forms/Search/ConnectionFormNameMatch', [('textToMatch') : ConnectionFormName])
+
+WebUI.waitForElementClickable(ConnectionFormObject, 0)
+
+WebUI.click(ConnectionFormObject)
 
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Entries Tab Button'))
 
@@ -49,8 +53,61 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/New Ent
 
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'))
 
-WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), 'Test')
+WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), PersonFirstName)
 
 WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/First Name Field'), Keys.chord(
         Keys.ENTER))
+
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Last Name Field'))
+
+WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Last Name Field'), PersonLastName)
+
+WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Last Name Field'), Keys.chord(
+        Keys.ENTER))
+
+WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Search Button'))
+
+'Validate and Select Person'
+PersonFullName = ((PersonFirstName + ' ') + PersonLastName)
+
+EntryPersonObject = findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Person Search Results Summary Panel Name Match', 
+    [('textToMatch') : PersonFullName])
+
+WebUI.waitForElementClickable(EntryPersonObject, 0)
+
+WebUI.click(EntryPersonObject)
+
+PersonSelectButton = findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Select Button')
+
+WebUI.scrollToElement(PersonSelectButton, 0)
+
+WebUI.click(PersonSelectButton)
+
+ConfirmButton = findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Add Entry Drawer/Yes Confirmation Button')
+
+WebUI.scrollToElement(ConfirmButton, 0)
+
+WebUI.click(ConfirmButton)
+
+CtaCheckBox = findTestObject('HC-Web/Data Capture/Connection Forms/Entries/New Entry/CTA-Checkbox')
+
+WebUI.scrollToElement(CtaCheckBox, 0)
+
+WebUI.click(CtaCheckBox)
+
+WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Entries/New Entry/Are you ready - input'), 'Test')
+
+AddNewEntry = findTestObject('HC-Web/Data Capture/Connection Forms/Entries/New Entry/Add Entry Button')
+
+WebUI.waitForElementPresent(AddNewEntry, 0)
+
+WebUI.click(AddNewEntry)
+
+ImDoneButton = findTestObject('HC-Web/Data Capture/Connection Forms/Entries/Im Done Button')
+
+WebUI.waitForElementPresent(ImDoneButton, 0)
+
+WebUI.click(ImDoneButton)
+
+WebUI.closeBrowser()
 

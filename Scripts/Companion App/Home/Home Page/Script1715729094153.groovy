@@ -88,16 +88,7 @@ if (Device.isIOS()) {
 'tap on Whats Happening/See All link'
 
 'Log out of the app'
-Mobile.delay(5)
-
-if (Device.isIOS()) {
-    Swipe.swipe(SwipeDirection.TOP_TO_BOTTOM)
-} else {
-    Mobile.scrollToText('LOGOUT!', FailureHandling.STOP_ON_FAILURE)
-}
-
-'Log out'
-Button.tap('Logout Button', timeout)
+//WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Close the app'
 Mobile.closeApplication()

@@ -4,5 +4,6 @@
    <name>Campus Selector</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1a73ecdf-9f55-4930-be53-7e65575378c9</testCaseGuid>
 </TestCaseEntity>

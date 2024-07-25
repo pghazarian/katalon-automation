@@ -54,15 +54,23 @@ def UniqueMessageName = 'Love is Jesus'
 def UniqueMessageSeries = '62'
 def UniqueMessageSpeaker = 'Andy Wood'
 
-'Open existing app by the app bundle id'
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+boolean test = LoggedIn
+
+if (LoggedIn) {
+	'Open existing app by logging into the app bundle id'
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+else {
+	'Open existing app while logged out by the app bundle id'
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 Boolean deviceIsiOS = false
 
 if (Device.isIOS()) {
 	deviceIsiOS = true
 }
-	
+
 'Navigate to Resource'
 Button.tap('Nav/Resources Navigation Button', timeout)
 
@@ -452,6 +460,7 @@ for(int i = 0;i<listLength;i++) {
 Mobile.verifyEqual(SortOrderIsValid, true)
 
 Mobile.delay(3)
+
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)

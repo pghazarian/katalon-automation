@@ -4,7 +4,6 @@
    <name>My Follow Ups Upcoming Claim Task</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>7a545e13-f790-41c4-aa4e-e8e9a51d771a</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

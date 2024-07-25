@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='follow_up_rule_editor_drawer--action_bar_save']/span/span</value>
+         <value>//button[@id='follow_up_rule_editor_drawer--action_bar_save']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>6d7bdfdb-830f-455e-8796-ab935c8cdc28</webElementGuid>
+      <webElementGuid>c35abff3-c838-4c6b-b4a1-f51fc1db568d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
-      <webElementGuid>3303c828-58f7-4db8-b460-8b637d56f5c3</webElementGuid>
+      <webElementGuid>19676a46-0dfb-4da3-9de7-65441717d419</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;follow_up_rule_editor_drawer--action_bar_save&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
-      <webElementGuid>c8d3f17b-11ab-47ac-b26e-d6e6b5d39167</webElementGuid>
+      <webElementGuid>18f7df1a-1276-41b3-bdad-9a3a45a484e0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='follow_up_rule_editor_drawer--action_bar_save']/span/span</value>
-      <webElementGuid>ecaa0762-ee8d-4129-9b54-9b534e725191</webElementGuid>
+      <webElementGuid>d4758dd5-f8bb-4b9d-8b70-11e38557f8ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[2]</value>
-      <webElementGuid>203f293e-d006-4c07-af85-416e77dfd06b</webElementGuid>
+      <webElementGuid>28fd9ee0-0df1-4061-8881-0a764df1548b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/following::span[4]</value>
-      <webElementGuid>279ba1a7-c010-48fa-965f-1d1a732b1504</webElementGuid>
+      <webElementGuid>4bb6fe50-bbbd-424e-9e8f-1cc5ca028a51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rule Details'])[1]/preceding::span[1]</value>
-      <webElementGuid>870f4ff2-9216-47df-83a4-7c0df191dcdb</webElementGuid>
+      <webElementGuid>ba67eeca-6d36-44a2-82d7-3ef7bc469c32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Save']/parent::*</value>
-      <webElementGuid>f7ee2f11-4d6b-47ad-9529-6ac1b58d3e61</webElementGuid>
+      <webElementGuid>643167f3-3a44-4fbb-85f0-6d75c98d519a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/button/span/span</value>
-      <webElementGuid>522cff36-7735-4839-9042-aef40100540a</webElementGuid>
+      <webElementGuid>631e1aae-14a3-445b-a046-90c92a5666c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Save' or . = 'Save')]</value>
-      <webElementGuid>ebb60f1c-f2e8-43d7-a5c3-e1d242b251f8</webElementGuid>
+      <webElementGuid>85749633-c93a-48ce-bcde-2171499688c9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

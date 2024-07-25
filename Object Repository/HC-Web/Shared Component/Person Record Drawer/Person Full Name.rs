@@ -6,12 +6,11 @@
    <elementGuidId>b51e4fe7-883b-4b39-a318-f99c99253f6e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='person_record--details_window_person_info_full_name' and normalize-space(text())='${personName}']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='person_record--details_window_person_info_full_name']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
