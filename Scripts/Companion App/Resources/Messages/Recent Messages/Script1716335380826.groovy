@@ -17,20 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.util.CryptoUtil as CryptoUtil
-
-import com.detroitlabs.katalonmobileutil.device.App
-import com.detroitlabs.katalonmobileutil.device.Device
-import com.detroitlabs.katalonmobileutil.testobject.Finder
-import com.detroitlabs.katalonmobileutil.testobject.Button
-import com.detroitlabs.katalonmobileutil.testobject.TextField
+import com.detroitlabs.katalonmobileutil.device.App as App
+import com.detroitlabs.katalonmobileutil.device.Device as Device
+import com.detroitlabs.katalonmobileutil.testobject.Finder as Finder
+import com.detroitlabs.katalonmobileutil.testobject.Button as Button
+import com.detroitlabs.katalonmobileutil.testobject.TextField as TextField
 import com.detroitlabs.katalonmobileutil.touch.Swipe as Swipe
 import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDirection
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import io.appium.java_client.MobileElement as MobileElement
-import com.kms.katalon.core.testobject.TestObjectXpath
-import org.openqa.selenium.WebElement
-import io.appium.java_client.ios.IOSDriver
+import com.kms.katalon.core.testobject.TestObjectXpath as TestObjectXpath
+import org.openqa.selenium.WebElement as WebElement
+import io.appium.java_client.ios.IOSDriver as IOSDriver
+import java.lang.String as String
 
 /*
 1. Launch the Companion App
@@ -47,47 +47,57 @@ import io.appium.java_client.ios.IOSDriver
 12. Enter a unique series name on Messages landing page
 13. Enter a unique speaker name on Messages & Notes page
 */
-
-
 def timeout = 10
-def UniqueMessageName = 'Love is Jesus'
-def UniqueMessageSeries = '62'
-def UniqueMessageSpeaker = 'Andy Wood'
 
-boolean test = LoggedIn
+def UniqueMessageName = 'Marks Test DP 1'
 
-if (LoggedIn) {
-	'Open existing app by logging into the app bundle id'
-	WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+def UniqueMessageSeries = 'HG Series'
+
+def UniqueMessageSpeaker = 'Rick Warren'
+
+
+boolean CurrentlyLoggedIn 
+
+if (LoggedIn.toBoolean()) {
+	CurrentlyLoggedIn = true 
 }
 else {
-	'Open existing app while logged out by the app bundle id'
-	WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
+	CurrentlyLoggedIn = false 
+}
+
+if (CurrentlyLoggedIn) {
+    'Open existing app by logging into the app bundle id'
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    'Open existing app while logged out by the app bundle id'
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 Boolean deviceIsiOS = false
 
 if (Device.isIOS()) {
-	deviceIsiOS = true
+    deviceIsiOS = true
 }
 
 'Navigate to Resource'
 Button.tap('Nav/Resources Navigation Button', timeout)
 
-'Wait for Messages landing page to display'
 //Mobile.waitForElementPresent(Finder.findButton("Resources/Messages Tab"), timeout)
+Mobile.delay(1)
+'Wait for Messages landing page to display'
 Button.tap('Resources/Messages Tab', timeout)
 
-
 'Verify that message entries exist'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/List Entry'), timeout)
 
 'Verify that the list has entries'
 Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry'), timeout)
+
 ///*
-Mobile.delay(3)
+//Mobile.delay(3)
+
 'Verify that the entries have a public name'
-//Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Name'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Name'), timeout)
 
 'Verify that the entries have an image'
 Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Speaker'), timeout)
@@ -99,97 +109,109 @@ Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Im
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
 'Tap on See all Series'
-Button.tap("Resources/Messages/Series See All", timeout)
-Mobile.delay(1)
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Series List Page/Series Title"), timeout)
+Button.tap('Resources/Messages/Series See All', timeout)
 
-Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Series List Page/Series Title"), timeout)
-Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Series List Page/Series Image"), timeout)
+Mobile.delay(1)
+
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Series List Page/Series Title'), timeout)
+
+Mobile.verifyElementExist(Finder.findLabel('Resources/Messages/Series List Page/Series Title'), timeout)
+
+Mobile.verifyElementExist(Finder.findLabel('Resources/Messages/Series List Page/Series Image'), timeout)
 
 'Tap on Back button'
-Button.tap("Resources/Messages/Series List Page/Back", timeout)
+Button.tap('Resources/Messages/Series List Page/Back', timeout)
 
 'Tap on See all Messages'
-Button.tap("Resources/Messages/Messages See All", timeout)
+Button.tap('Resources/Messages/Messages See All', timeout)
+
 Mobile.delay(1)
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Image"), timeout)
 
-Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Image"), timeout)
-Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Title"), timeout)
-Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Dates"), timeout)
-Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Speaker"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Image'), timeout)
 
+Mobile.verifyElementExist(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Image'), timeout)
+
+Mobile.verifyElementExist(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Title'), timeout)
+
+//Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Dates"), timeout)
+//Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Speaker"), timeout)
 'Tap on Back button'
-Button.tap("Resources/Messages/Series List Page/Back", timeout)
+Button.tap('Resources/Messages/Series List Page/Back', timeout)
 
 'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
+Button.tap('Resources/Messages/Sort And Filter', timeout)
 
 'wait for Sort and Filter page to fully displayed'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/SortFilter/Sort By"), timeout)
+Mobile.waitForElementPresent(Finder.findButton('Resources/Messages/SortFilter/Sort By'), timeout)
 
 'Tap on the Sort By button'
-Button.tap("Resources/Messages/SortFilter/Sort By", timeout)
+Button.tap('Resources/Messages/SortFilter/Sort By', timeout)
 
 'Tap on the Sort A-Z button'
 if (deviceIsiOS) {
-	Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), "Series Name (A to Z)", FailureHandling.STOP_ON_FAILURE)
-	Button.tap("Resources/Messages/SortFilter/Sort Done", timeout)
-}
+    Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), 'Series Name (A to Z)', 
+        FailureHandling.STOP_ON_FAILURE)
+
+    Button.tap('Resources/Messages/SortFilter/Sort Done', timeout)
+} 
 else {
-	Button.tap("Resources/Messages/SortFilter/Series Name (A to Z)", timeout)
+    Button.tap('Resources/Messages/SortFilter/Series Name (A to Z)', timeout)
 }
 
 'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
+Button.tap('Resources/Messages/SortFilter/Apply', timeout)
 
 'Verify that journey browse page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
 
 'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
+Button.tap('Resources/Messages/Sort And Filter', timeout)
 
 'Tap on the Sort By button'
-Button.tap("Resources/Messages/SortFilter/Sort By", timeout)
+Button.tap('Resources/Messages/SortFilter/Sort By', timeout)
 
 'Tap on the Sort Z-A button'
 if (deviceIsiOS) {
-	Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), "Series Name (Z to A)", FailureHandling.STOP_ON_FAILURE)
-	Button.tap("Resources/Messages/SortFilter/Sort Done", timeout)
-}
+    Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), 'Series Name (Z to A)', 
+        FailureHandling.STOP_ON_FAILURE)
+
+    Button.tap('Resources/Messages/SortFilter/Sort Done', timeout)
+} 
 else {
-	Button.tap("Resources/Messages/SortFilter/Series Name (Z to A)", timeout)
+    Button.tap('Resources/Messages/SortFilter/Series Name (Z to A)', timeout)
 }
 
 'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
+Button.tap('Resources/Messages/SortFilter/Apply', timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
 
 'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
+Button.tap('Resources/Messages/Sort And Filter', timeout)
 
 'wait for Sort and Filter page to fully displayed'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/SortFilter/Sort By"), timeout)
+Mobile.waitForElementPresent(Finder.findButton('Resources/Messages/SortFilter/Sort By'), timeout)
 
 'Tap on the Sort By button'
-Button.tap("Resources/Messages/SortFilter/Sort By", timeout)
+Button.tap('Resources/Messages/SortFilter/Sort By', timeout)
 
 'Tap on the Sort Soonest to Latest button'
 if (deviceIsiOS) {
-	Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), "Date of Sermon (Newest First)", FailureHandling.STOP_ON_FAILURE)
-	Button.tap("Resources/Messages/SortFilter/Sort Done", timeout)
-}
+    Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), 'Date of Sermon (Newest First)', 
+        FailureHandling.STOP_ON_FAILURE)
+
+    Button.tap('Resources/Messages/SortFilter/Sort Done', timeout)
+} 
 else {
-	Button.tap("Resources/Messages/SortFilter/Date of Sermon (Newest First)", timeout)
+    Button.tap('Resources/Messages/SortFilter/Date of Sermon (Newest First)', timeout)
 }
 
 'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
+Button.tap('Resources/Messages/SortFilter/Apply', timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
 
 SortOrderIsValid = true
 
@@ -214,33 +236,33 @@ if (firstMessageDate.after(lastMessageDate))
 	SortOrderIsValid = false
 }
 */
-
 Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
+Button.tap('Resources/Messages/Sort And Filter', timeout)
 
 'wait for Sort and Filter page to fully displayed'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/SortFilter/Sort By"), timeout)
+Mobile.waitForElementPresent(Finder.findButton('Resources/Messages/SortFilter/Sort By'), timeout)
 
 'Tap on the Sort By button'
-Button.tap("Resources/Messages/SortFilter/Sort By", timeout)
+Button.tap('Resources/Messages/SortFilter/Sort By', timeout)
 
 'Tap on the Sort Soonest to Latest button'
 if (deviceIsiOS) {
-	Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), "Date of Sermon (Oldest First)", FailureHandling.STOP_ON_FAILURE)
-	Button.tap("Resources/Messages/SortFilter/Sort Done", timeout)
-}
+    Mobile.sendKeys(Finder.findTextField('Resources/Messages/SortFilter/Sort By Picker Wheel'), 'Date of Sermon (Oldest First)', 
+        FailureHandling.STOP_ON_FAILURE)
+
+    Button.tap('Resources/Messages/SortFilter/Sort Done', timeout)
+} 
 else {
-	Button.tap("Resources/Messages/SortFilter/Date of Sermon (Oldest First)", timeout)
+    Button.tap('Resources/Messages/SortFilter/Date of Sermon (Oldest First)', timeout)
 }
 
 'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
+Button.tap('Resources/Messages/SortFilter/Apply', timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
-
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
 
 /*
 'verify that messages are dated oldest to newest'
@@ -263,194 +285,197 @@ if (firstMessageDate.after(lastMessageDate))
 	SortOrderIsValid = false
 }
 */
-
 'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
+Button.tap('Resources/Messages/Sort And Filter', timeout)
 
 'wait for Sort and Filter page to fully displayed'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/SortFilter/Sort By"), timeout)
+Mobile.waitForElementPresent(Finder.findButton('Resources/Messages/SortFilter/Sort By'), timeout)
 
 'Tap on the Sort Relevance button'
-Button.tap("Resources/Messages/SortFilter/Clear Filters", timeout)
+Button.tap('Resources/Messages/SortFilter/Clear Filters', timeout)
 
 'Tap on the Campus button'
-Button.tap("Resources/Messages/SortFilter/Campus", timeout)
+Button.tap('Resources/Messages/SortFilter/Campus', timeout)
 
 ' Tap on the Anaheim campus'
-Button.tap("Resources/Messages/SortFilter/Campus Page/Anaheim", timeout)
+Button.tap('Resources/Messages/SortFilter/Campus Page/Anaheim', timeout)
 
 'Tap on the Campus page back button'
-Button.tap("Resources/Messages/SortFilter/Campus Page/Back", timeout)
+Button.tap('Resources/Messages/SortFilter/Campus Page/Back', timeout)
 
 'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
+Button.tap('Resources/Messages/SortFilter/Apply', timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
 
 'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
+Button.tap('Resources/Messages/Sort And Filter', timeout)
 
 'wait for Sort and Filter page to fully displayed'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/SortFilter/Sort By"), timeout)
+Mobile.waitForElementPresent(Finder.findButton('Resources/Messages/SortFilter/Sort By'), timeout)
 
 'Tap on the Sort Relevance button'
-Button.tap("Resources/Messages/SortFilter/Clear Filters", timeout)
+Button.tap('Resources/Messages/SortFilter/Clear Filters', timeout)
 
 'Tap on the Speaker button'
-Button.tap("Resources/Messages/SortFilter/Speaker", timeout)
+Button.tap('Resources/Messages/SortFilter/Speaker', timeout)
 
 ' Tap on the Anaheim campus'
-Button.tap("Resources/Messages/SortFilter/Speaker Page/First Speaker", timeout)
+Button.tap('Resources/Messages/SortFilter/Speaker Page/First Speaker', timeout)
 
 'get the text of the first speaker name'
-String selectedSpeakerName = Mobile.getText(Finder.findButton("Resources/Messages/SortFilter/Speaker Page/First Speaker Name"), timeout)
+String selectedSpeakerName = Mobile.getText(Finder.findButton('Resources/Messages/SortFilter/Speaker Page/First Speaker Name'), timeout)
 
 'Tap on the Campus page back button'
-Button.tap("Resources/Messages/SortFilter/Speaker Page/Back", timeout)
+Button.tap('Resources/Messages/SortFilter/Speaker Page/Back', timeout)
 
 'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
+Button.tap('Resources/Messages/SortFilter/Apply', timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
 
 'make sure entries in list have matching speaker name'
- SortOrderIsValid = true
- List<MobileElement> messageSpeakerStrings
- 
- messageSpeakerStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Speaker")))
-  
- listLength = messageSpeakerStrings.size()
- 
- String currentMessageSpeaker = ""
-  
- for(int i = 0;i<listLength;i++) {
-	 
-	 currentMessageSpeaker = messageSpeakerStrings[i].text
-	 
-	 if (!currentMessageSpeaker.equalsIgnoreCase(selectedSpeakerName))
-	 {
-		 'sorting has failed'
-		 SortOrderIsValid = false
-	 }
- }
- 
- 'Verify that all entries matched expected results'
- Mobile.verifyEqual(SortOrderIsValid, true)
- 
-'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
-
-'wait for Sort and Filter page to fully displayed'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/SortFilter/Sort By"), timeout)
-
-'Tap on the Sort Relevance button'
-Button.tap("Resources/Messages/SortFilter/Clear Filters", timeout)
-
-'Tap on the Series button'
-Button.tap("Resources/Messages/SortFilter/Series", timeout)
-
-' Tap on the Anaheim campus'
-Button.tap("Resources/Messages/SortFilter/Series Page/First Series", timeout)
-
-'Tap on the Campus page back button'
-Button.tap("Resources/Messages/SortFilter/Series Page/Back", timeout)
-
-'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
-
-'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
-
-'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
-
-'wait for Sort and Filter page to fully displayed'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/SortFilter/Sort By"), timeout)
-
-'Tap on the Sort Relevance button'
-Button.tap("Resources/Messages/SortFilter/Clear Filters", timeout)
-
-Mobile.delay(3)
-
-'Tap on the Sermons With Saved Notes checkbox'
-Button.tap("Resources/Messages/SortFilter/Sermons with Saved Notes", timeout)
-
-'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
-
-'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Sorted List Entry - Name"), timeout)
-
-
-'make sure entries in list all have the with notes icon'
 SortOrderIsValid = true
-List<MobileElement> messagesWithNotes
-List<MobileElement> messageItemsTotal
 
-messagesWithNotes = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Resources/Messages/Messages List Page/Message Item With Notes")))
-messageItemsTotal = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Resources/Messages/Sorted List Entry - Name")))
- 
-int listWithNotesLength = messagesWithNotes.size()
-int listTotalDisplayedMessagesLength = messageItemsTotal.size()
+List<MobileElement> messageSpeakerStrings
 
-	
-if (listWithNotesLength != listTotalDisplayedMessagesLength)
-{
-	'sorting has failed'
-	SortOrderIsValid = false
+messageSpeakerStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Speaker')))
+
+listLength = messageSpeakerStrings.size()
+
+String currentMessageSpeaker = ''
+
+for (int i = 0; i < listLength; i++) {
+    currentMessageSpeaker = messageSpeakerStrings[i].text
+
+    if (!(currentMessageSpeaker.equalsIgnoreCase(selectedSpeakerName))) {
+        'sorting has failed'
+        SortOrderIsValid = false
+    }
 }
-
 
 'Verify that all entries matched expected results'
 Mobile.verifyEqual(SortOrderIsValid, true)
 
-
 'Tap on the Sort and Filter button'
-Button.tap("Resources/Messages/Sort And Filter", timeout)
+Button.tap('Resources/Messages/Sort And Filter', timeout)
 
 'wait for Sort and Filter page to fully displayed'
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/SortFilter/Sort By"), timeout)
+Mobile.waitForElementPresent(Finder.findButton('Resources/Messages/SortFilter/Sort By'), timeout)
 
 'Tap on the Sort Relevance button'
-Button.tap("Resources/Messages/SortFilter/Clear Filters", timeout)
-Mobile.delay(1)
+Button.tap('Resources/Messages/SortFilter/Clear Filters', timeout)
+
+'Tap on the Series button'
+Button.tap('Resources/Messages/SortFilter/Series', timeout)
+
+' Tap on the Anaheim campus'
+Button.tap('Resources/Messages/SortFilter/Series Page/First Series', timeout)
+
+'Tap on the Campus page back button'
+Button.tap('Resources/Messages/SortFilter/Series Page/Back', timeout)
+
 'Tap on the Apply button'
-Button.tap("Resources/Messages/SortFilter/Apply", timeout)
+Button.tap('Resources/Messages/SortFilter/Apply', timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Title"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
 
-Mobile.delay(1)
+'Tap on the Sort and Filter button'
+Button.tap('Resources/Messages/Sort And Filter', timeout)
+
+'wait for Sort and Filter page to fully displayed'
+Mobile.waitForElementPresent(Finder.findButton('Resources/Messages/SortFilter/Sort By'), timeout)
+
+'Tap on the Sort Relevance button'
+Button.tap('Resources/Messages/SortFilter/Clear Filters', timeout)
+
+if (CurrentlyLoggedIn) {
+	'Tap on the Sermons With Saved Notes checkbox'
+	Button.tap('Resources/Messages/SortFilter/Sermons with Saved Notes', timeout)
+	
+	'Tap on the Apply button'
+	Button.tap('Resources/Messages/SortFilter/Apply', timeout)
+	
+	'Verify that events list page visible'
+	Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
+	
+	
+	'make sure entries in list all have the with notes icon'
+	SortOrderIsValid = true
+	
+	List<MobileElement> messagesWithNotes
+	
+	List<MobileElement> messageItemsTotal
+	
+	messagesWithNotes = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel('Resources/Messages/Messages List Page/Message Item With Notes')))
+	
+	messageItemsTotal = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel('Resources/Messages/Sorted List Entry - Name')))
+	
+	int listWithNotesLength = messagesWithNotes.size()
+	
+	int listTotalDisplayedMessagesLength = messageItemsTotal.size()
+	
+	if (listWithNotesLength != listTotalDisplayedMessagesLength) {
+	    'sorting has failed'
+	    SortOrderIsValid = false
+	}
+	
+	'Verify that all entries matched expected results'
+	Mobile.verifyEqual(SortOrderIsValid, true)
+}
+
+'Tap on the Sort and Filter button'
+Button.tap('Resources/Messages/Sort And Filter', timeout)
+
+'wait for Sort and Filter page to fully displayed'
+Mobile.waitForElementPresent(Finder.findButton('Resources/Messages/SortFilter/Sort By'), timeout)
+
+'Tap on the Sort Relevance button'
+Button.tap('Resources/Messages/SortFilter/Clear Filters', timeout)
+
+'Tap on the Apply button'
+Button.tap('Resources/Messages/SortFilter/Apply', timeout)
+
+'Verify that events list page visible'
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Title'), timeout)
 
 'Search for a unique message name'
 TextField.typeText(Finder.findTextField('Resources/Messages/Search'), UniqueMessageName + Keys.ENTER, timeout)
-Mobile.delay(1)
+
+'make sure entries in list have matching series name'
+SortOrderIsValid = true
+
+String messageNameString = Mobile.getText(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Title'), timeout)
+
+if (!(messageNameString.equalsIgnoreCase(UniqueMessageName))) {
+	'sorting has failed'
+	SortOrderIsValid = false
+}
+
+'Verify that all entries matched expected results'
+Mobile.verifyEqual(SortOrderIsValid, true)
+
+Button.tap('Resources/Messages/Clear Search', 3)
 
 'Search for a unique message series'
 TextField.typeText(Finder.findTextField('Resources/Messages/Search'), UniqueMessageSeries + Keys.ENTER, timeout)
 
-Mobile.delay(3)
-
-'Search for a unique message speaker'
-TextField.typeText(Finder.findTextField('Resources/Messages/Search'), UniqueMessageSpeaker + Keys.ENTER, timeout)
-
-'make sure entries in list have matching speaker name'
+'make sure entries in list have matching series name'
 SortOrderIsValid = true
 
-messageSpeakerStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Speaker")))
- 
-listLength = messageSpeakerStrings.size()
+messageSeriesStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Series Name')))
 
-currentMessageSpeaker = ""
- 
-for(int i = 0;i<listLength;i++) {
-	
-	currentMessageSpeaker = messageSpeakerStrings[i].text
-	
-	if (!currentMessageSpeaker.equalsIgnoreCase(UniqueMessageSpeaker))
-	{
+listLength = messageSeriesStrings.size()
+
+currentMessageSeries = ''
+
+for (int i = 0; i < listLength; i++) {
+	currentMessageSeries = messageSeriesStrings[i].text
+
+	if (!(currentMessageSeries.equalsIgnoreCase(UniqueMessageSeries))) {
 		'sorting has failed'
 		SortOrderIsValid = false
 	}
@@ -459,26 +484,42 @@ for(int i = 0;i<listLength;i++) {
 'Verify that all entries matched expected results'
 Mobile.verifyEqual(SortOrderIsValid, true)
 
-Mobile.delay(3)
+Button.tap('Resources/Messages/Clear Search', 3)
 
+'Search for a unique message speaker'
+TextField.typeText(Finder.findTextField('Resources/Messages/Search'), UniqueMessageSpeaker + Keys.ENTER, timeout)
+
+'make sure entries in list have matching speaker name'
+SortOrderIsValid = true
+
+messageSpeakerStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Speaker')))
+
+listLength = messageSpeakerStrings.size()
+
+currentMessageSpeaker = ''
+
+for (int i = 0; i < listLength; i++) {
+    currentMessageSpeaker = messageSpeakerStrings[i].text
+
+    if (!(currentMessageSpeaker.equalsIgnoreCase(UniqueMessageSpeaker))) {
+        'sorting has failed'
+        SortOrderIsValid = false
+    }
+}
+
+'Verify that all entries matched expected results'
+Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
 
 'Log out'
-if (Device.isIOS()) {
-	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-}
-else {
-	Mobile.scrollToText('LOGOUT!', FailureHandling.STOP_ON_FAILURE)
-}
-Button.tap('Logout Button', timeout)
+WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
 if (deviceIsiOS) {
-	Mobile.closeApplication()
-}
+    Mobile.closeApplication()
+} 
 else {
-	driver.closeApp()
+    driver.closeApp()
 }
-
 
