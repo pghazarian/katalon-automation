@@ -59,7 +59,7 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], Fail
 Mobile.delay(5)
 
 'validate campus was properly selected'
-Mobile.verifyElementText(Finder.findLabel('Home/Campus Text'), 'Anaheim')
+Mobile.verifyElementText(Finder.findLabel('Home/Campus Text'), 'Lake Forest')
 
 'validate that login or create account header message is visible'
 Mobile.verifyElementVisible(Finder.findLabel('Home/Log In'), timeout)
