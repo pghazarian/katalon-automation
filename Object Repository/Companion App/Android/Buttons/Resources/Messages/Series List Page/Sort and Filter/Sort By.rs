@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Discover Navigation Button</name>
+   <name>Sort By</name>
    <tag></tag>
-   <elementGuidId>0543cdcf-f807-461a-80a5-8c6af6b1be34</elementGuidId>
+   <elementGuidId>a3d4066c-8f90-4095-b97f-419979ec8fa6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_discover</locator>
+   <locator>//android.widget.Spinner[@resource-id=&quot;android_picker&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>NAME</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>Discover</value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -37,11 +26,22 @@
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -49,14 +49,14 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

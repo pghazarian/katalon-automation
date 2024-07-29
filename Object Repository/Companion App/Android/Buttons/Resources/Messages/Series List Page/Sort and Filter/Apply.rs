@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Discover Navigation Button</name>
+   <name>Apply</name>
    <tag></tag>
-   <elementGuidId>0543cdcf-f807-461a-80a5-8c6af6b1be34</elementGuidId>
+   <elementGuidId>d5f0d6c3-ca42-456e-93e2-e85d7e55ddef</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_discover</locator>
+   <locator>ui-button--save</locator>
    <locatorCollection>
       <entry>
-         <key>NAME</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>Discover</value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -37,11 +26,22 @@
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -49,11 +49,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
    </locatorCollection>

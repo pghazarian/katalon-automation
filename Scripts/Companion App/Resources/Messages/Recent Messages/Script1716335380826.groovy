@@ -119,6 +119,70 @@ Mobile.verifyElementExist(Finder.findLabel('Resources/Messages/Series List Page/
 
 Mobile.verifyElementExist(Finder.findLabel('Resources/Messages/Series List Page/Series Image'), timeout)
 
+'Tap on the Series Sort By icon button'
+Button.tap('Resources/Messages/Series List Page/Sort By', timeout)
+
+'Select Sort by Series Name (A to Z)'
+Button.tap('Resources/Messages/Series List Page/Sort and Filter/Sort By', timeout)
+Button.tap('Resources/Messages/SortFilter/Series Name (A to Z)', timeout)
+
+'Apply the Sorting selection'
+Button.tap('Resources/Messages/Series List Page/Sort and Filter/Apply', timeout)
+
+'Verify that series list page visible'
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
+
+'make sure entries in list have sorted series names'
+SortOrderIsValid = true
+
+List<MobileElement> seriesNames = MobileTestObjectHelper.getElementList(Finder.findLabel("Resources/Messages/Series List Page/Series Title"), driver)
+
+int listLength = seriesNames.size()
+
+firstSeriesName = seriesNames[1].text
+lastSeriesName = seriesNames[listLength-1].text
+
+if (lastSeriesName.compareToIgnoreCase(firstSeriesName) < 0)
+{
+	'sorting has failed'
+	SortOrderIsValid = false
+}
+
+'Verify that all entries matched expected results'
+Mobile.verifyEqual(SortOrderIsValid, true)
+
+'Tap on the Series Sort By icon button'
+Button.tap('Resources/Messages/Series List Page/Sort By', timeout)
+
+'Select Sort by Series Name (Z to A)'
+Button.tap('Resources/Messages/Series List Page/Sort and Filter/Sort By', timeout)
+Button.tap('Resources/Messages/Series List Page/Sort and Filter/Series Name (Z to A)', timeout)
+
+'Apply the Sorting selection'
+Button.tap('Resources/Messages/Series List Page/Sort and Filter/Apply', timeout)
+
+'Verify that series list page visible'
+Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
+
+'make sure entries in list have sorted series names'
+SortOrderIsValid = true
+
+seriesNames = MobileTestObjectHelper.getElementList(Finder.findLabel("Resources/Messages/Series List Page/Series Title"), driver)
+
+listLength = seriesNames.size()
+
+firstSeriesName = seriesNames[1].text
+lastSeriesName = seriesNames[listLength-1].text
+
+if (lastSeriesName.compareToIgnoreCase(firstSeriesName) >= 0)
+{
+	'sorting has failed'
+	SortOrderIsValid = false
+}
+
+'Verify that all entries matched expected results'
+Mobile.verifyEqual(SortOrderIsValid, true)
+
 'Tap on Back button'
 Button.tap('Resources/Messages/Series List Page/Back', timeout)
 
