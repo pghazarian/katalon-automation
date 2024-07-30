@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('HC-Web/Event/Details/Event Name'), ' - Edited')
 
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_basic_info--event_category', EventCategory_Edited)
 
-WebUI.setText(findTestObject('HC-Web/Event/Details/Date Text Field'), Keys.chord(Keys.CONTROL + 'a') + date)
+WebUI.setText(findTestObject('HC-Web/Event/Details/Date Text Field'), CustomKeywords.'StringHelper.selectAllText'() + date)
 
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_event_date_time--start_time', '07:00 PM')
 
@@ -70,7 +70,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Event/Details/Start Time Dropdown
 
 WebUI.verifyElementText(findTestObject('HC-Web/Event/Details/Campus Dropdown Text Area'), 'Lake Forest')
 
-WebUI.setText(findTestObject('HC-Web/Event/Details/Event Name'), (Keys.chord(Keys.CONTROL + 'a') + Keys.BACK_SPACE) + 'QA Automation Event to be Edited')
+WebUI.setText(findTestObject('HC-Web/Event/Details/Event Name'), (CustomKeywords.'StringHelper.selectAllText'() + Keys.BACK_SPACE) + 'QA Automation Event to be Edited')
 
 CustomKeywords.'TestObjectHelper.setDropDownValue'('event_details_basic_info--event_category', EventCategory)
 
@@ -90,7 +90,7 @@ WebUI.click(findTestObject('HC-Web/Event/Details/Venue Dropdown First Venue'))
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Details Subnav'))
 
-WebUI.setText(findTestObject('HC-Web/Event/Details/Event Description Text Area'), (Keys.chord(Keys.CONTROL + 'a') + Keys.BACK_SPACE) + 
+WebUI.setText(findTestObject('HC-Web/Event/Details/Event Description Text Area'), (CustomKeywords.'StringHelper.selectAllText'() + Keys.BACK_SPACE) + 
     'Event created by qa automation for edit event test')
 
 WebUI.click(findTestObject('HC-Web/Event/Details/Save Edits Button'))

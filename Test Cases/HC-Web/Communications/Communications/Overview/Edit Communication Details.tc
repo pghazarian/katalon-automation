@@ -4,6 +4,7 @@
    <name>Edit Communication Details</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8cb71672-94ac-4dd7-9728-5e08e46542ed</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

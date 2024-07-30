@@ -146,7 +146,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Baptism'</initValue>
+      <initValue>'Test'</initValue>
       <name>EventCategory</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
