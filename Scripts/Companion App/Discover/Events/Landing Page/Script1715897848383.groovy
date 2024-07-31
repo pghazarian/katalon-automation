@@ -44,16 +44,22 @@ Boolean deviceIsiOS = false
 if (Device.isIOS()) {
 	deviceIsiOS = true
 }
+
+Mobile.delay(3)
+
+Mobile.waitForElementPresent(Finder.findButton('Nav/Discover Navigation Button'), timeout)
 	
 'Navigate to Discover'
 Button.tap('Nav/Discover Navigation Button', timeout)
 
 'Wait for Events landing page to display'
-Mobile.waitForElementPresent(Finder.findButton("Discover/Events Tab"), timeout)
+Mobile.waitForElementPresent(Finder.findButton('Discover/Events Tab'), timeout)
+
+Mobile.delay(3)
 
 'Verify that journey entries exist'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
-
+Mobile.waitForElementPresent(Finder.findLabel('Discover/Events/List Entry'), timeout)
+Mobile.delay(3)
 'Verify that the list has entries'
 Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry'), timeout)
 ///*
@@ -206,12 +212,20 @@ eventTimeStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Fi
 
 listLength = eventDateStrings.size()
 
-String firstEventDateTime = eventDateStrings[1].text + " " + eventTimeStrings[1].text
-String lastEventDateTime = eventDateStrings[listLength-1].text + " " + eventTimeStrings[listLength-1].text
+String tmpTimeString = eventTimeStrings[1].text
 
-def firstEventDate = Date.parse(" MMM d, yyyy h:mmaa", firstEventDateTime)
+def (firstTimeValue1, firstTimeValue2) = tmpTimeString.tokenize('-')
 
-def lastEventDate = Date.parse(" MMM d, yyyy h:mmaa", lastEventDateTime)
+tmpTimeString = eventTimeStrings[listLength-1].text
+
+def (lastTimeValue1, lastTimeValue2) = tmpTimeString.tokenize('-')
+
+String firstEventDateTime = eventDateStrings[1].text + " " + firstTimeValue1    //eventTimeStrings[1].text
+String lastEventDateTime = eventDateStrings[listLength-1].text + " " + lastTimeValue1 //eventTimeStrings[listLength-1].text
+
+def firstEventDate = Date.parse("MMM d, yyyy h:mma", firstEventDateTime)
+
+def lastEventDate = Date.parse("MMM d, yyyy h:mma", lastEventDateTime)
 
 if (firstEventDate.after(lastEventDate))
 {
@@ -226,6 +240,7 @@ Button.tap("Discover/Events/Sort And Filter", timeout)
 
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Clear Filters"), timeout)
+Button.tap("Discover/Events/SortFilter/Clear Filters", timeout)
 
 'Tap on the Categories button'
 Button.tap("Discover/Events/SortFilter/Categories", timeout)
@@ -273,6 +288,7 @@ Button.tap("Discover/Events/Sort And Filter", timeout)
 
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Events/SortFilter/Clear Filters"), timeout)
+Button.tap("Discover/Events/SortFilter/Clear Filters", timeout)
 
 'Tap on the Where button'
 Button.tap("Discover/Events/SortFilter/Where", timeout)

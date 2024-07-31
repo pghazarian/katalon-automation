@@ -36,8 +36,26 @@ def timeout = 10
 
 String UniqueMessageName = GlobalVariable.MessageSearch_Details
 
+
+boolean CurrentlyLoggedIn
+
+if (LoggedIn.toBoolean()) {
+	CurrentlyLoggedIn = true
+}
+else {
+	CurrentlyLoggedIn = false
+}
+
+if (CurrentlyLoggedIn) {
+	'Open existing app by logging into the app bundle id'
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+	'Open existing app while logged out by the app bundle id'
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+
 'Open existing app by the app bundle id'
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Boolean deviceIsiOS = false
 
@@ -120,13 +138,18 @@ if (!deviceIsiOS) {
 'download the message notes'
 Button.tap("Resources/Messages/Message Details/Download", timeout)
 
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Download Original Notes"), timeout)
-Button.tap("Resources/Messages/Message Details/Download Original Notes", timeout)
 
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Download Close"), timeout)
-Button.tap("Resources/Messages/Message Details/Download Close", timeout)
+if (deviceIsiOS) {
+	Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Download Original Notes"), timeout)
+	Button.tap("Resources/Messages/Message Details/Download Original Notes", timeout)
+	
+	Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Download Close"), timeout)
+	Button.tap("Resources/Messages/Message Details/Download Close", timeout)
+}
+else {
+	Button.tap("Resources/Messages/Message Details/Download", timeout)
+}
 
-Mobile.delay(5)
 
 'Share the message notes'
 Button.tap("Resources/Messages/Message Details/Share", timeout)
@@ -139,20 +162,21 @@ Mobile.delay(5)
 Button.tap("Resources/Messages/Message Details/Back", timeout)
 
 'if testing guest experience'
+if (!CurrentlyLoggedIn) {
+	
 	'Tap on the Log in to Save notes'
+	Button.tap("Resources/Messages/Message Details/Log In to Save", timeout)
 	'exit out of log in page'
+	Button.tap("Resources/Messages/Message Details/Cancel Log In", timeout)
+}
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
 
-'Log out'
-if (Device.isIOS()) {
-	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+if (CurrentlyLoggedIn) {
+	'Log out'
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 }
-else {
-	Mobile.scrollToText('LOGOUT!', FailureHandling.STOP_ON_FAILURE)
-}
-Button.tap('Logout Button', timeout)
 
 if (deviceIsiOS) {
 	Mobile.closeApplication()
@@ -160,5 +184,6 @@ if (deviceIsiOS) {
 else {
 	driver.closeApp()
 }
+
 
 

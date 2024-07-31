@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Time</name>
+   <name>Cancel Log In</name>
    <tag></tag>
-   <elementGuidId>4abc9ebf-a8c7-4429-84cb-07df599c5085</elementGuidId>
+   <elementGuidId>74d5e558-88c9-4e83-b827-a8b17939dfbe</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.TextView[@content-desc=&quot;ui-card--events-time&quot;])</locator>
+   <locator>//android.widget.Button[@resource-id=&quot;android:id/button2&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.TextView[ends-with(@content-desc,&quot;-time&quot;)]</value>
+         <key>ACCESSIBILITY</key>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -22,27 +22,14 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
+         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
@@ -50,10 +37,23 @@
          <value></value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>IMAGE</key>
+         <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
    </locatorCollection>
