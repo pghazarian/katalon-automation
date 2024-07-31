@@ -40,7 +40,7 @@ CustomKeywords.'NavigationHelper.clickSubmenuAndValidateHeader'('Events Central'
 WebUI.click(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Nav/Event Categories Tab Button'))
 
 'Verify Data Header is present'
-WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Event Categories/Data Header'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/HC-Web/Event/Settings and Preferences/Event Categories/Event Category Table Row'), 
     0)
 
 'Verify Room Categories Sub Nav'
