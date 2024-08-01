@@ -1,36 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Create Account or Login</name>
+   <name>Apply</name>
    <tag></tag>
-   <elementGuidId>1b32946f-7c2a-4733-a59c-87990823d6cb</elementGuidId>
+   <elementGuidId>ecdb44aa-49b1-4c36-a386-1a1fa30f2714</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>hcds-mobile-btn-button--login</locator>
+   <locator>ui-button--select-campus-apply</locator>
    <locatorCollection>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>button--login</value>
+         <value>hcds-mobile-btn-ui-button--select-campus-apply</value>
       </entry>
       <entry>
          <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -38,14 +30,18 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
+         <key>XPATH</key>
+         <value>//XCUIElementTypeButton[@name=&quot;hcds-mobile-btn-ui-button--select-campus-apply&quot;]</value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
@@ -53,8 +49,12 @@
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>IMAGE</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

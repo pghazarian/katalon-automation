@@ -3,7 +3,7 @@
    <description></description>
    <name>Continue</name>
    <tag></tag>
-   <elementGuidId>f2083ac9-977a-4cbe-a042-6eee8e77e906</elementGuidId>
+   <elementGuidId>c3587dd9-4840-4ea9-b67e-f217d36045c1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -13,7 +13,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeButton</value>
-      <webElementGuid>b3101d71-0a4f-4775-b7df-2dde0b3efdfd</webElementGuid>
+      <webElementGuid>2bdaf560-069a-48b5-a9c9-4ffcb6ec26ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +21,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>798f197a-bc2d-49b8-b5f2-98abadf78ad3</webElementGuid>
+      <webElementGuid>7343e0cd-8ca7-4801-9aac-e45e5926e276</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>b4acefb6-3eaf-43ce-9e2e-1eec76e5ad30</webElementGuid>
+      <webElementGuid>082a6e14-85a9-4ef2-9ba5-9de7ba67ea14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>height</name>
       <type>Main</type>
       <value>90.0</value>
-      <webElementGuid>aebd23ea-b653-48f3-a7db-ceb2af7c82f6</webElementGuid>
+      <webElementGuid>b9823a35-6d7c-4779-bfdf-74a540965216</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>0137dd78-c1a9-483e-a4b6-23dea3b4ceb6</webElementGuid>
+      <webElementGuid>3eab8efb-556b-44a7-b29c-9e49ed13cd26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>label</name>
       <type>Main</type>
       <value>Continue</value>
-      <webElementGuid>b59f061b-6525-4046-acbe-57d16d85028e</webElementGuid>
+      <webElementGuid>9c423561-63f7-40dc-85d4-024402751316</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>name</name>
       <type>Main</type>
       <value>Continue</value>
-      <webElementGuid>7986c9ff-ada8-427b-8391-50d9fc3a651b</webElementGuid>
+      <webElementGuid>28fc00d0-f839-4784-84ff-6fcca14eb261</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>width</name>
       <type>Main</type>
       <value>270.0</value>
-      <webElementGuid>5c8b9cdb-bbf2-4d3d-ac07-728efc36667b</webElementGuid>
+      <webElementGuid>4ee10c32-90e8-48b0-bf1a-f1415fa953c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>x</name>
       <type>Main</type>
       <value>394.0</value>
-      <webElementGuid>dee2997d-deaa-4624-8477-747f16b9247e</webElementGuid>
+      <webElementGuid>b6653c87-0797-4689-a5ca-42a33b891514</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>y</name>
       <type>Main</type>
       <value>950.0</value>
-      <webElementGuid>60f84009-5b39-444f-9dae-2bacbd269700</webElementGuid>
+      <webElementGuid>b5eed522-46b6-4368-b051-fc7fedeb5dcd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,8 +93,59 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[17]/XCUIElementTypeOther[3]/XCUIElementTypeAlert[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]</value>
-      <webElementGuid>1176be32-9b3f-4d99-805b-b53f150bb3fd</webElementGuid>
+      <webElementGuid>c10b4669-f0dd-4411-9bcb-73209d113124</webElementGuid>
    </webElementProperties>
-   <locator>Continue</locator>
+   <locator>hcds-mobile-btn-button--guest</locator>
+   <locatorCollection>
+      <entry>
+         <key>ATTRIBUTES</key>
+         <value>//*[@type = 'XCUIElementTypeButton' and @label = 'Continue' and @name = 'Continue']</value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Continue</value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value>**/XCUIElementTypeButton[`enabled == 1 AND label == 'Continue' AND name == 'Continue'`]</value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value>XCUIElementTypeButton</value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value>Continue</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value>type == 'XCUIElementTypeButton' AND enabled == 1 AND label == 'Continue' AND name == 'Continue'</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value>Continue</value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector().enabled(true).index(0)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//XCUIElementTypeApplication/XCUIElementTypeWindow[17]/XCUIElementTypeOther[3]/XCUIElementTypeAlert[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]</value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+   </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <platform>IOS</platform>
 </MobileElementEntity>

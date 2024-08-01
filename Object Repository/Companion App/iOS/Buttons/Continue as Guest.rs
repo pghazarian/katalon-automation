@@ -3,48 +3,58 @@
    <description></description>
    <name>Continue as Guest</name>
    <tag></tag>
-   <elementGuidId>ade3275f-6d08-4961-a99c-c7370a3ad7c5</elementGuidId>
+   <elementGuidId>10b6ff5c-31e4-47fd-8591-f793fa0e5e9f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--guest</locator>
+   <locator>hcds-mobile-btn-button--guest</locator>
    <locatorCollection>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>button--guest</value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>NAME</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
-         <key>ID</key>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>CUSTOM</key>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>ID</key>
+         <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

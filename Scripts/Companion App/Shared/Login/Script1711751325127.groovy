@@ -84,6 +84,7 @@ if (Mobile.verifyElementVisible(Finder.findLabel('Splash/Welcome Heading'), time
 	Button.tap('Create Account or Login')
 	
 	if (Device.isIOS()) {
+		Mobile.delay(5)
 	    'Click the Continue Button (from the OS to approve going to an external domain)'
 	    Button.tap('Login/Continue')
 	}
