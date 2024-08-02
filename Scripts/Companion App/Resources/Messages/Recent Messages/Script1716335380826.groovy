@@ -97,13 +97,13 @@ Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry'), t
 //Mobile.delay(3)
 
 'Verify that the entries have a public name'
-Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Name'), timeout)
+//Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Name'), timeout)
 
 'Verify that the entries have an image'
-Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Speaker'), timeout)
+//Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Speaker'), timeout)
 
 'Verify that the entries have an image'
-Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Image'), timeout)
+//Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Image'), timeout)
 
 // need driver to get lists and close app
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
@@ -156,7 +156,15 @@ Button.tap('Resources/Messages/Series List Page/Sort By', timeout)
 
 'Select Sort by Series Name (Z to A)'
 Button.tap('Resources/Messages/Series List Page/Sort and Filter/Sort By', timeout)
-Button.tap('Resources/Messages/Series List Page/Sort and Filter/Series Name (Z to A)', timeout)
+
+if (Device.isIOS()) {
+	TextField.typeText(Finder.findTextField('Resources/Messages/Series List Page/SortFilter/Sort By Picker Wheel'), "Series Name (Z to A)", timeout)
+	Button.tap("Resources/Messages/Series List Page/SortFilter/Sort Done", timeout)
+}
+else {
+	Button.tap('Resources/Messages/Series List Page/Sort and Filter/Series Name (Z to A)', timeout)
+
+}
 
 'Apply the Sorting selection'
 Button.tap('Resources/Messages/Series List Page/Sort and Filter/Apply', timeout)

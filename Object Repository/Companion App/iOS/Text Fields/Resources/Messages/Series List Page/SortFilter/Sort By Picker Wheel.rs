@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Sort And Filter</name>
+   <name>Sort By Picker Wheel</name>
    <tag></tag>
-   <elementGuidId>1f48d929-f4cd-4494-8ffa-872761c37a21</elementGuidId>
+   <elementGuidId>b2b3a082-c93d-44d7-8c7d-6a1a0e139d87</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--header_filter</locator>
+   <locator>//XCUIElementTypePickerWheel</locator>
    <locatorCollection>
       <entry>
          <key>IOS_PREDICATE_STRING</key>
@@ -42,7 +42,7 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>pressable-right_filter_action</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -57,6 +57,6 @@
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

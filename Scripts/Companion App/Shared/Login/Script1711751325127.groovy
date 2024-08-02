@@ -86,8 +86,9 @@ if (Mobile.verifyElementVisible(Finder.findLabel('Splash/Welcome Heading'), time
 	if (Device.isIOS()) {
 		Mobile.delay(5)
 	    'Click the Continue Button (from the OS to approve going to an external domain)'
-	    Button.tap('Login/Continue')
-	}
+	    //Button.tap('Login/Continue')   
+		Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Buttons/Login/Continue'), timeout)
+}
 	
 	'Find the Email Address field'
 	TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')
