@@ -46,7 +46,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Bryant\'s Demo Event'</initValue>
+      <initValue>'QA Automation Event Recurring Daily Does Not End'</initValue>
       <name>EventSearch_SearchTerm</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

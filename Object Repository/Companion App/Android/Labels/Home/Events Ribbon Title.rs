@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Search</name>
+   <name>Events Ribbon Title</name>
    <tag></tag>
-   <elementGuidId>21c6001b-5dd0-4af2-bd74-d86df2977970</elementGuidId>
+   <elementGuidId>f55bd914-7bc2-4d4b-952f-4b459031ddf6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.EditText[@text=&quot;Search&quot;]</locator>
+   <locator>//android.widget.TextView[@resource-id=&quot;hcds-mobile-text-default&quot; and @text=&quot;Eventos&quot;]</locator>
    <locatorCollection>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -29,15 +21,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -45,7 +33,19 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -54,7 +54,7 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>ui-header--events_search_text</value>
+         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>

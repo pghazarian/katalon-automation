@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Search</name>
+   <name>Searched List Entry</name>
    <tag></tag>
-   <elementGuidId>21c6001b-5dd0-4af2-bd74-d86df2977970</elementGuidId>
+   <elementGuidId>58f0c7ee-47c7-4063-908c-994b14d01e59</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.EditText[@text=&quot;Search&quot;]</locator>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;ui-card--events-image, No Category, ui-card--events-title, ui-card--events-date, ui-card--events-time, ui-card--events-location, ui-card--events-frequency&quot;]</locator>
    <locatorCollection>
       <entry>
          <key>ATTRIBUTES</key>
@@ -54,7 +54,7 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>ui-header--events_search_text</value>
+         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>

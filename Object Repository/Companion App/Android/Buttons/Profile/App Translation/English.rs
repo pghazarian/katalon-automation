@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Search</name>
+   <name>English</name>
    <tag></tag>
-   <elementGuidId>21c6001b-5dd0-4af2-bd74-d86df2977970</elementGuidId>
+   <elementGuidId>ef372d2b-eb03-4df6-b3f2-88e79e075d6d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.EditText[@text=&quot;Search&quot;]</locator>
+   <locator>ui-language-select--apply_en</locator>
    <locatorCollection>
       <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -21,15 +18,31 @@
          <value></value>
       </entry>
       <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>ui-language-select--apply_es</value>
+      </entry>
+      <entry>
          <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
          <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -41,22 +54,9 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>ui-header--events_search_text</value>
+         <key>ATTRIBUTES</key>
       </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>
