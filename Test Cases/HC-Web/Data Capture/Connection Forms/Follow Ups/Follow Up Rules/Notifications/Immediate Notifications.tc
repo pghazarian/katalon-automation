@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers all Notifications PBIs, under Team Mandalorian's  Sprints 115 &amp; 116 boards</description>
+   <name>Immediate Notifications</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4bab0701-c711-4d5d-90d2-64ca6f64638b</testCaseGuid>
+</TestCaseEntity>

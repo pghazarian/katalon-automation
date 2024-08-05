@@ -214,4 +214,9 @@
       <initValue>'9653'</initValue>
       <name>SO_Id_CustomQuestions</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'3907'</initValue>
+      <name>ConnectionForm_ForEditing_Id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

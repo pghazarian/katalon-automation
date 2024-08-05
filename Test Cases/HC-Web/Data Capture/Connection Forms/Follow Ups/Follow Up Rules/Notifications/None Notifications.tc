@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers all Notifications PBIs, under Team Mandalorian's  Sprints 115 &amp; 116 boards</description>
+   <name>None Notifications</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9999c3ab-2cc7-4f46-9864-04bc450f6a49</testCaseGuid>
+</TestCaseEntity>

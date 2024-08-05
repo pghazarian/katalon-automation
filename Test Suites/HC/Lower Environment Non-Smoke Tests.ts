@@ -506,4 +506,17 @@
          <variableId>a407740b-19b2-4adb-8128-8b5568f37064</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>05ac5015-cfde-4b8a-8675-82a3257b185f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HC-Web/Data Capture/Connection Forms/Form Builder/Edit Connection Form Details</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c3f4857-164d-402b-846d-af5273e2384a</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

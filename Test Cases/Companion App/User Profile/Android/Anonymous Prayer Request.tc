@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers the following PBIs:&#xd;
+PBI 110610: [Companion App - Profile] - New Prayer Request Screen - Lift &amp; Shift&#xd;
+PBI 110605: [Companion App - Profile] - New Prayer Request Screen - UI/UX &amp; Implementation</description>
+   <name>Anonymous Prayer Request</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d6ce911e-3f6b-4b38-8528-69b8406945e1</testCaseGuid>
+</TestCaseEntity>

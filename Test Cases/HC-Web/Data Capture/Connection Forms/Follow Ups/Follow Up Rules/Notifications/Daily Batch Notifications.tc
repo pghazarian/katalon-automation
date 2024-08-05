@@ -4,6 +4,18 @@
    <name>Daily Batch Notifications</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>6d066bb4-7a3f-4f06-8954-743bdb793a63</testCaseGuid>
+   <testCaseGuid>8065756f-d852-4f08-b6fa-642340a92dfd</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>42b82b4e-fcb0-4c38-a9d0-55f5ab1bc33f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Basic Follow Up Push Notification'</defaultValue>
+      <description></description>
+      <id>42b82b4e-fcb0-4c38-a9d0-55f5ab1bc33f</id>
+      <masked>false</masked>
+      <name>NotificationTypeBasic</name>
+   </variable>
 </TestCaseEntity>

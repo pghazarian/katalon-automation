@@ -6,6 +6,44 @@ TC needs additional work</description>
    <name>Add Entry to a Worship Service CF</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>45b2a24c-4e04-41a4-91dd-b5b5f9407f01</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cc22e1b9-929d-49a5-8aec-15b35329edf0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f2903fcb-5a4c-46bb-ba41-e693f7ee5d0a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>49365766-9a80-4356-8831-bcc603845a7d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Paren Anaheim Worship 1'</defaultValue>
+      <description></description>
+      <id>cc22e1b9-929d-49a5-8aec-15b35329edf0</id>
+      <masked>false</masked>
+      <name>ConnectionFormName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>f2903fcb-5a4c-46bb-ba41-e693f7ee5d0a</id>
+      <masked>false</masked>
+      <name>PersonFirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'One'</defaultValue>
+      <description></description>
+      <id>49365766-9a80-4356-8831-bcc603845a7d</id>
+      <masked>false</masked>
+      <name>PersonLastName</name>
+   </variable>
 </TestCaseEntity>
