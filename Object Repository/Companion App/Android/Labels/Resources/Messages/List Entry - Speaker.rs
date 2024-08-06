@@ -3,14 +3,18 @@
    <description></description>
    <name>List Entry - Speaker</name>
    <tag></tag>
-   <elementGuidId>7d52ce8b-8d10-484a-8ede-61a19c22f985</elementGuidId>
+   <elementGuidId>2788d2d9-0e67-4336-957f-a18b48c91109</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <locator>(//android.widget.TextView[ends-with(@content-desc,&quot;-subtitle&quot;)])</locator>
    <locatorCollection>
       <entry>
-         <key>CUSTOM</key>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[@resource-id=&quot;item-description&quot;]</value>
+      </entry>
+      <entry>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -18,31 +22,19 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>CUSTOM</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
       </entry>
       <entry>
          <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -50,11 +42,19 @@
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.TextView[@resource-id=&quot;item-description&quot;]</value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>

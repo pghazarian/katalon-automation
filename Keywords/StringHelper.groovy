@@ -77,4 +77,25 @@ class StringHelper {
 		// Extract and combine major and minor versions
 		return parts[0..1].join('.')
 	}
+	
+	
+	/**
+	 * convert date string to Date value
+	 * Args:
+	 * 	argDateString - string containing date
+	 * 	argDateFormatString - string containing format of date string
+	 */
+	@Keyword
+	def Date getDateFromString(String argDateString, String argDateFormatString) {
+
+		String tmpDateString = (argDateString).replaceAll(/(\d+)(st|nd|rd|th)/, '$1')
+		
+		tmpDateString = tmpDateString.trim()
+
+		def firstMessageDate = Date.parse(argDateFormatString, tmpDateString)
+
+		return firstMessageDate
+	}
+
+
 }

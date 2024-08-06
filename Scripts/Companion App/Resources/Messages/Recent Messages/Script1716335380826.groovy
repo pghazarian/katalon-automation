@@ -49,12 +49,11 @@ import java.lang.String as String
 */
 def timeout = 10
 
-def UniqueMessageName = 'Marks Test DP 1'
+def UniqueMessageName = GlobalVariable.MessageSearch_UniqueMessageName
 
-def UniqueMessageSeries = 'HG Series'
+def UniqueMessageSeries = GlobalVariable.MessageSearch_UniqueMessageSeries    
 
-def UniqueMessageSpeaker = 'Rick Warren'
-
+def UniqueMessageSpeaker = GlobalVariable.MessageSearch_UniqueMessageSpeaker     
 
 boolean CurrentlyLoggedIn 
 
@@ -69,6 +68,7 @@ if (CurrentlyLoggedIn) {
     'Open existing app by logging into the app bundle id'
     WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 } else {
+	return
     'Open existing app while logged out by the app bundle id'
     WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
 }
@@ -82,7 +82,6 @@ if (Device.isIOS()) {
 'Navigate to Resource'
 Button.tap('Nav/Resources Navigation Button', timeout)
 
-//Mobile.waitForElementPresent(Finder.findButton("Resources/Messages Tab"), timeout)
 Mobile.delay(1)
 'Wait for Messages landing page to display'
 Button.tap('Resources/Messages Tab', timeout)
@@ -93,17 +92,14 @@ Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/List Entry'), 
 'Verify that the list has entries'
 Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry'), timeout)
 
-///*
-//Mobile.delay(3)
-
 'Verify that the entries have a public name'
-//Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Name'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Name'), timeout)
 
 'Verify that the entries have an image'
-//Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Speaker'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Speaker'), timeout)
 
 'Verify that the entries have an image'
-//Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Image'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Resources/Messages/List Entry - Image'), timeout)
 
 // need driver to get lists and close app
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
@@ -205,8 +201,8 @@ Mobile.verifyElementExist(Finder.findLabel('Resources/Messages/Messages List Pag
 
 Mobile.verifyElementExist(Finder.findLabel('Resources/Messages/Messages List Page/Message Item Title'), timeout)
 
-//Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Dates"), timeout)
-//Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Speaker"), timeout)
+Mobile.verifyElementExist(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Dates"), timeout)
+
 'Tap on Back button'
 Button.tap('Resources/Messages/Series List Page/Back', timeout)
 
@@ -287,27 +283,34 @@ Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List En
 
 SortOrderIsValid = true
 
-/*
-'verify that messages are dated newest to oldest'
 List<MobileElement> messageDateStrings
-List<MobileElement> messageTimeStrings
 
-messageDateStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Discover/Events/List Entry - Date")))
+Date firstMessageDate, lastMessageDate
 
-listLength = messageDateStrings.size()
+String firstSpeakerName, firstDateValue, lastSpeakerName, lastDateValue
 
-String firstMessageDate = messageDateStrings[1].text 
-String lastMessageDate = messageDateStrings[listLength-1].text
-def firstMessageDate = Date.parse(" M d, yyyy", firstMessageDateTime)
+messageDateStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Dates")))
 
-def lastMessageDate = Date.parse(" M d, yyyy", lastMessageDateTime)
+int arrayOfDatesSize = messageDateStrings.size()
 
-if (firstMessageDate.after(lastMessageDate))
+String tmpDateString = (messageDateStrings[1].text)
+
+(firstSpeakerName, firstDateValue) = tmpDateString.tokenize('|')
+
+firstMessageDate =  CustomKeywords.'StringHelper.getDateFromString'(firstDateValue,"MMMM d, y")
+
+tmpDateString = messageDateStrings[arrayOfDatesSize-1].text
+
+(lastpeakerName, lastDateValue) = tmpDateString.tokenize('|')
+
+lastMessageDate =  CustomKeywords.'StringHelper.getDateFromString'(lastDateValue,"MMMM d, y")
+
+if (lastMessageDate.after(firstMessageDate))
 {
 	'sorting has failed'
 	SortOrderIsValid = false
 }
-*/
+
 Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Tap on the Sort and Filter button'
@@ -336,27 +339,30 @@ Button.tap('Resources/Messages/SortFilter/Apply', timeout)
 'Verify that events list page visible'
 Mobile.waitForElementPresent(Finder.findLabel('Resources/Messages/Sorted List Entry - Name'), timeout)
 
-/*
-'verify that messages are dated oldest to newest'
-List<MobileElement> messageDateStrings
-List<MobileElement> messageTimeStrings
+SortOrderIsValid = true
 
 messageDateStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Resources/Messages/Messages List Page/Message Item Dates")))
 
-listLength = messageDateStrings.size()
+arrayOfDatesSize = messageDateStrings.size()
 
-String stringFirstMessageDate = messageDateStrings[1].text
-String stringLastMessageDate = messageDateStrings[listLength-1].text
-def firstMessageDate = Date.parse(" M d, yyyy", stringFirstMessageDate)
+tmpDateString = (messageDateStrings[1].text)
 
-def lastMessageDate = Date.parse(" M d, yyyy", stringLastMessageDate)
+(firstSpeakerName, firstDateValue) = tmpDateString.tokenize('|')
+
+firstMessageDate =  CustomKeywords.'StringHelper.getDateFromString'(firstDateValue,"MMMM d, y")
+
+tmpDateString = messageDateStrings[arrayOfDatesSize-1].text
+
+(lastpeakerName, lastDateValue) = tmpDateString.tokenize('|')
+
+lastMessageDate =  CustomKeywords.'StringHelper.getDateFromString'(lastDateValue,"MMMM d, y")
 
 if (firstMessageDate.after(lastMessageDate))
 {
 	'sorting has failed'
 	SortOrderIsValid = false
 }
-*/
+
 'Tap on the Sort and Filter button'
 Button.tap('Resources/Messages/Sort And Filter', timeout)
 

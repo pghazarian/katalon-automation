@@ -46,7 +46,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'QA Automation Event Recurring Daily Does Not End'</initValue>
+      <initValue>'Bryant\'s Demo Event'</initValue>
       <name>EventSearch_SearchTerm</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -218,5 +218,20 @@
       <description></description>
       <initValue>'3907'</initValue>
       <name>ConnectionForm_ForEditing_Id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Marks Test DP 1'</initValue>
+      <name>MessageSearch_UniqueMessageName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'HG Series'</initValue>
+      <name>MessageSearch_UniqueMessageSeries</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Rick Warren'</initValue>
+      <name>MessageSearch_UniqueMessageSpeaker</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

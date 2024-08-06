@@ -3,14 +3,18 @@
    <description></description>
    <name>List Entry - Name</name>
    <tag></tag>
-   <elementGuidId>0e2f4549-433e-492b-b710-466c0f74be64</elementGuidId>
+   <elementGuidId>e8dc5a88-cf34-4b03-a97c-b96905b4f164</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.TextView[ends-with(@content-desc,&quot;-title&quot;)])</locator>
+   <locator>(//android.widget.TextView[ends-with(@content-desc,&quot;-series_name&quot;)])</locator>
    <locatorCollection>
       <entry>
-         <key>CUSTOM</key>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[@resource-id=&quot;item-title&quot;]</value>
+      </entry>
+      <entry>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -18,31 +22,19 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>CUSTOM</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
       </entry>
       <entry>
          <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -50,11 +42,19 @@
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.TextView[@resource-id=&quot;item-title&quot;]</value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>
