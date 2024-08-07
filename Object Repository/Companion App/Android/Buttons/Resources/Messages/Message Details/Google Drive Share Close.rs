@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Anaheim</name>
+   <name>Google Drive Share Close</name>
    <tag></tag>
-   <elementGuidId>60d1967a-f645-471d-9bfe-f374ffb7af64</elementGuidId>
+   <elementGuidId>f680ec5b-8953-4845-825d-b42a3bf4d737</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-selectable-list--Anaheim-pressable</locator>
+   <locator>Cancel</locator>
    <locatorCollection>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>(//android.widget.LinearLayout[@resource-id=&quot;android:id/sem_chooser_grid_item_view&quot;])[6]</value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
@@ -38,7 +29,8 @@
          <value></value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>IMAGE</key>
@@ -49,12 +41,20 @@
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Anaheim</value>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
