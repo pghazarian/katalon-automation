@@ -6,4 +6,26 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>ba23558b-2402-44a0-a42d-259d0db14f93</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>95e958b2-6db7-4cfe-a1d0-c8a7dd87721f</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/Resources/Messages/Recent-Messages</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>95e958b2-6db7-4cfe-a1d0-c8a7dd87721f</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>000102e6-a0bb-46f0-83f2-98abb1fc5f7c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>000102e6-a0bb-46f0-83f2-98abb1fc5f7c</id>
+      <masked>false</masked>
+      <name>LoggedIn</name>
+   </variable>
 </TestCaseEntity>

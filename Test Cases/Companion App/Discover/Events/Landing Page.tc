@@ -4,5 +4,6 @@
    <name>Landing Page</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a2723b51-3a89-4766-8c65-8408f72b12ac</testCaseGuid>
 </TestCaseEntity>

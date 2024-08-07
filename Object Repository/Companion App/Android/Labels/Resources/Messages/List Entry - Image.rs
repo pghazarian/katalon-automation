@@ -3,9 +3,60 @@
    <description></description>
    <name>List Entry - Image</name>
    <tag></tag>
-   <elementGuidId>1bf02593-abf7-4bc0-ab2d-9b9808fb25a1</elementGuidId>
+   <elementGuidId>23a1070b-6131-46fd-af2c-96ad2259a204</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.ImageView[@resource-id=&quot;item-photo&quot;])[1]</locator>
+   <locator>(//android.view.ViewGroup[@content-desc=&quot;item-photo&quot;])[1]</locator>
+   <locatorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//android.widget.ImageView[@resource-id=&quot;item-photo&quot;])[1]</value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+   </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>
+   <platform>ANDROID</platform>
 </MobileElementEntity>

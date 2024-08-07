@@ -78,7 +78,7 @@ boolean removeAppBeforeTest = false // change this to false to keep the app stat
 
 Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 
-//Mobile.delay(timeout)
+Mobile.delay(timeout)
 Mobile.waitForElementPresent(Finder.findButton("Nav/Home Navigation Button"), 5)
 
 'if there is a user already logged in we will skip the splash screen and need to log them out'
