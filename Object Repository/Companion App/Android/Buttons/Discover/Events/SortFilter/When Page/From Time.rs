@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Time Custom Range</name>
+   <name>From Time</name>
    <tag></tag>
-   <elementGuidId>b1816eb8-f4c1-4bcf-9eb5-ece8b156b0ee</elementGuidId>
+   <elementGuidId>c7b53859-0787-456c-990a-147d3b685da1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-event_filters--times_toggle-custom_range</locator>
+   <locator>ui-date_picker--custom_time_from_time</locator>
    <locatorCollection>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>ui-event_filters--times_toggle-custom_range-label</value>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>

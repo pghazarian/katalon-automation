@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Time Custom Range</name>
+   <name>Custom Time Hour</name>
    <tag></tag>
-   <elementGuidId>b1816eb8-f4c1-4bcf-9eb5-ece8b156b0ee</elementGuidId>
+   <elementGuidId>29c97a6c-35d4-4913-bee1-f0c3c48ef0a3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-event_filters--times_toggle-custom_range</locator>
+   <locator>//android.widget.EditText[@resource-id=&quot;android:id/input_hour&quot;]</locator>
    <locatorCollection>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>ui-event_filters--times_toggle-custom_range-label</value>
-      </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
@@ -33,15 +26,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -49,14 +34,29 @@
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value></value>
       </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

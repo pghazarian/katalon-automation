@@ -8,7 +8,7 @@
    <testCaseGuid>ad2a26a5-50b2-4b2c-b823-dba5bb002165</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
-      <id>127ae03e-0a48-4043-b3a7-e228d23e7727</id>
+      <id>4bd20c2e-d0be-467d-a50e-6ec30dfb7369</id>
       <iterationEntity>
          <iterationType>ALL</iterationType>
          <value></value>
@@ -16,7 +16,7 @@
       <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
    </testDataLinks>
    <variableLinks>
-      <testDataLinkId>127ae03e-0a48-4043-b3a7-e228d23e7727</testDataLinkId>
+      <testDataLinkId>4bd20c2e-d0be-467d-a50e-6ec30dfb7369</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>LoggedIn</value>
       <variableId>466567bf-afab-4818-af96-143d02d0f1e6</variableId>

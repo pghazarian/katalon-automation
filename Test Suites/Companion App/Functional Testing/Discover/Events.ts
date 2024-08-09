@@ -30,5 +30,11 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Companion App/Discover/Events/Landing Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3721aaac-fa97-420e-9230-bef14c52f83e</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

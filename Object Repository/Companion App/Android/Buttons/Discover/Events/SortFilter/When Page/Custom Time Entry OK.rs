@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Time Custom Range</name>
+   <name>Custom Time Entry OK</name>
    <tag></tag>
-   <elementGuidId>b1816eb8-f4c1-4bcf-9eb5-ece8b156b0ee</elementGuidId>
+   <elementGuidId>173de94c-0c34-491d-a193-5a63f90c8082</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-event_filters--times_toggle-custom_range</locator>
+   <locator>//android.widget.Button[@resource-id=&quot;android:id/button1&quot;]</locator>
    <locatorCollection>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>ui-event_filters--times_toggle-custom_range-label</value>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -57,6 +57,6 @@
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>
