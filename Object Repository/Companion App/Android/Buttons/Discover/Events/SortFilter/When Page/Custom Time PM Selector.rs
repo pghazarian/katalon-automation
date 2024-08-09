@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Time Custom Range</name>
+   <name>Custom Time PM Selector</name>
    <tag></tag>
-   <elementGuidId>b1816eb8-f4c1-4bcf-9eb5-ece8b156b0ee</elementGuidId>
+   <elementGuidId>6276f338-a87c-4cb4-9584-cf212ea63b4b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-event_filters--times_toggle-custom_range</locator>
+   <locator>//android.widget.CheckedTextView[@resource-id=&quot;android:id/text1&quot; and @text=&quot;PM&quot;]</locator>
    <locatorCollection>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>ui-event_filters--times_toggle-custom_range-label</value>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -57,6 +57,6 @@
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>
