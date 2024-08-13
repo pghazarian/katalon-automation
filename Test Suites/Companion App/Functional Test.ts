@@ -46,7 +46,34 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>82121d2b-3648-430a-9779-c95d7182cdab</guid>
+      <guid>8efc0ec5-7918-4eca-b6c3-54035058c7e7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/Home/Home Page - For You Ribbon</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>df6f524d-0a1c-43f2-a29e-702ed7ebba70</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/Home/Home Page - Messages Ribbon</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0764df54-4ed7-466b-b50b-ee8e0f04a059</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/Home/Events</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ca90a4f9-c16f-4347-8801-41f0998805d4</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>59e01590-7765-4575-9f6a-2810a7d02633</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Companion App/Home/Ribbon Translations</testCaseId>

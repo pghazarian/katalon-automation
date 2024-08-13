@@ -13,12 +13,20 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import io.appium.java_client.MobileElement as MobileElement
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.detroitlabs.katalonmobileutil.device.Device as Device
+import com.detroitlabs.katalonmobileutil.testobject.Button as Button
+
+def timeout = 10
 
 /*
  * Prerequisites:
+
  * 1- On HC Admin: User must create few Event Categories with Thumbnail Images
  * 2- On HC Admin: User must set the Priorities of the Event Categories created in step 1 above
  *
@@ -38,17 +46,32 @@ import org.openqa.selenium.Keys as Keys
  * 13. Verify that user can view ALL Events under each Category
  * 14. Re-Execute the TC steps above with a logged out user
  */
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.scrollToText('Worship', FailureHandling.STOP_ON_FAILURE)
+if (ShouldLogin.toBoolean()) {
+    'Open existing app by logging into the app bundle id'
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    'Open existing app while logged out by the app bundle id'
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Worship Service Category'), 
-    0)
+Boolean deviceIsiOS = Device.isIOS()
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Home Icon'), 0)
+' need driver to get lists and close app'
+AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Adult Ministries Category'), 
     0)
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Home Icon'), 0)
+'Navigate to Home'
+Button.tap('Nav/Home Navigation Button', timeout)
+
+'Log out'
+WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+
+if (deviceIsiOS) {
+    Mobile.closeApplication()
+} else {
+    driver.terminateApp('com.healthychurch.companion.stage')
+}
 

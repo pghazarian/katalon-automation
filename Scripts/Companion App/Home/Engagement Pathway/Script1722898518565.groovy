@@ -16,33 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.detroitlabs.katalonmobileutil.device.App as App
-import com.detroitlabs.katalonmobileutil.device.Device as Device
-import com.detroitlabs.katalonmobileutil.testobject.Finder as Finder
-import com.detroitlabs.katalonmobileutil.testobject.Button as Button
-import com.detroitlabs.katalonmobileutil.testobject.TextField as TextField
 
-def timeout = 10
-
-'Tap on the Profile button - WAITING ON ELEMENT ID'
-if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
-	
-	// If the user is logged in 
-	if (Mobile.verifyElementVisible(Finder.findButton('Nav/Profile Avatar Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
-		'Tap on the profile avatar in the navigation'
-		Button.tap('Nav/Profile Avatar Navigation Button')
-		
-		'Tap on the settings gear button'
-		Button.tap('Profile/Settings Gear')
-		
-		'Tap on the Logout button'
-		Button.tap('Profile/Settings/Logout')
-	}
-	else {
-		// if the user is not logged in 
-		'Tap on the generic profile avatar in the navigation'
-		Button.tap('Nav/Profile No Avatar Navigation Button')
-	}
-}
-
+WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 

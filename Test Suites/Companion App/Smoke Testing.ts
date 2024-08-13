@@ -50,8 +50,14 @@
       <guid>4eb4abc2-5e5c-462e-9e46-d6c38c0b024c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Companion App/Home/News and Events</testCaseId>
+      <testCaseId>Test Cases/Companion App/Home/Events</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ca90a4f9-c16f-4347-8801-41f0998805d4</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e42cce0c-dc18-4188-ad45-e6cd592f0d3d</guid>
