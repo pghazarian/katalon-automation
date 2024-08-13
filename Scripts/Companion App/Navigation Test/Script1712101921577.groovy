@@ -33,14 +33,16 @@ Mobile.delay(3)
 'Navigate to Resources'
 Button.tap('Nav/Resources Navigation Button', timeout)
 
+Mobile.delay(3)
+
 Mobile.verifyElementText(Finder.findLabel('Resources Heading'), "Resources")
 
 Mobile.delay(3)
 
 'Navigate to Profile'
-Button.tap('Nav/Profile Navigation Button', timeout)
+Button.tap('Nav/Profile No Avatar Navigation Button', timeout)
 
-Mobile.verifyElementText(Finder.findLabel('Profile Heading'), "Profile")
+Mobile.verifyElementExist(Finder.findButton('Profile/Translation'), timeout)   
 
 Mobile.delay(3)
 
@@ -55,18 +57,23 @@ Button.tap('Nav/Discover Navigation Button', timeout)
 Mobile.verifyElementText(Finder.findLabel('Discover Heading'), "Discover")
 
 'Navigate to Settings'
-Button.tap('Nav/Settings Navigation Button', timeout)
+Button.tap('Nav/Profile No Avatar Navigation Button', timeout)
+Button.tap('Profile/Settings Gear', timeout)
 
 Mobile.verifyElementText(Finder.findLabel('Settings Heading'), "Settings", FailureHandling.CONTINUE_ON_FAILURE)
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
 
-Mobile.verifyElementText(Finder.findLabel('Home Heading'), "Home")
+Mobile.verifyElementText(Finder.findLabel('Home Heading'), "SADDLEBACK CHURCH")
 
 // add test for that
 'Log out'
-Button.tap('Logout Button', timeout)
+Button.tap('Nav/Profile No Avatar Navigation Button', timeout)
+Button.tap('Profile/Settings Gear', timeout)
+Button.tap('Profile/Settings/Logout', timeout)
+
+Mobile.delay(3)
 
 'Verify that the Splash Screen loads'
 Mobile.verifyElementVisible(Finder.findLabel('Splash/Description'), timeout)

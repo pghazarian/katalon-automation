@@ -4,5 +4,6 @@
    <name>Navigation Test</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>206b8513-21cf-4828-9c12-62a7c3362867</testCaseGuid>
 </TestCaseEntity>

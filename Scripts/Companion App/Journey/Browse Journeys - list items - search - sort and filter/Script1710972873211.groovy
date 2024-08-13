@@ -57,8 +57,8 @@ def timeout = 3
 def UniqueJourneyName = '21 DAYS OF PRAYER & FASTING'
 
 'Open existing app by the app bundle id'
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), ['UserName':'markh@saddleback.com', 'Password':(CryptoUtil.encode(CryptoUtil.getDefault('P@$$w0rd!')))], FailureHandling.STOP_ON_FAILURE)
-//WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), ['UserName':'markh@saddleback.com', 'Password':(CryptoUtil.encode(CryptoUtil.getDefault('P@$$w0rd!')))], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Navigate to Journey'
 Button.tap('Nav/Journey Navigation Button', timeout)
@@ -96,6 +96,8 @@ Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Sort B
 
 'Tap on the Sort By button'
 Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
+
+Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Sort Relevance"), timeout)
 
 'Tap on the Sort A-Z button'
 if (Device.isIOS()) {
@@ -150,6 +152,8 @@ Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Clear 
 
 'Tap on the Sort By button'
 Button.tap("Journey/Browse/SortFilter/Sort By", timeout)
+
+Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Sort Relevance"), timeout)
 
 'Tap on the Sort Z-A button'
 if (Device.isIOS()) {
@@ -253,13 +257,8 @@ Button.tap("Journey/Browse/SortFilter/Apply", timeout)
 'Search for a unique journey name' 
 TextField.typeText(Finder.findTextField('Journey/Browse/Search'), UniqueJourneyName + Keys.ENTER, timeout)
 
-Mobile.delay(3)
-Button.tap('Journey/Browse Tab', timeout)
-
 'tap on the found journey to show details page'
 Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
-
-Mobile.delay(3)
 
 'wait for details page to fully displayed'
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
@@ -267,13 +266,26 @@ Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeou
 'Verify Journey Details header'
 Mobile.verifyElementExist(Finder.findLabel('Journey/Details/Heading'), timeout)
 
-if (Device.isIOS()) {
-	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-}
-else {
-	Mobile.scrollToText('Start Journey', FailureHandling.STOP_ON_FAILURE)
-}
+'wait for details page to fully displayed'
+if (Mobile.verifyElementVisible(Finder.findButton("Journey/Details/Stop Journey"), timeout, FailureHandling.OPTIONAL)) {
+	'tap on Stop Journey button'
+	Button.tap("Journey/Details/Stop Journey", timeout)
 	
+	'tap on Stop Journey Yes confirmation button'
+	Mobile.waitForElementPresent(Finder.findButton("Journey/Details/Prompt Stop Journey Yes"), timeout)
+	Button.tap("Journey/Details/Prompt Stop Journey Yes", timeout)
+
+	'tap on Journey Opted Out confirmation close button'
+	Mobile.waitForElementPresent(Finder.findButton("Journey/Details/Successfully Opted Out Close"), timeout)
+	Button.tap("Journey/Details/Successfully Opted Out Close", timeout)
+	
+	'Tap on Back button to get back to the Journey List'
+	Button.tap("Journey/Details/Back", timeout)
+		
+	'tap on the found journey to show details page'
+	Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
+}
+
 'tap Start button'
 Button.tap("Journey/Details/Start Journey", timeout)
 
@@ -303,14 +315,6 @@ Mobile.tap(Finder.findLabel('Journey/Browse/List Entry'), timeout)
 'wait for details page to fully displayed'
 Mobile.waitForElementPresent(Finder.findLabel("Journey/Details/Heading"), timeout)
 
-'swipe up to make stop journey button visible and accessible'
-if (Device.isIOS()) {
-	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-}
-else {
-	Mobile.scrollToText('Stop Journey', FailureHandling.STOP_ON_FAILURE)
-}
-
 'wait for details page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Journey/Details/Stop Journey"), timeout)
 	
@@ -318,10 +322,11 @@ Mobile.waitForElementPresent(Finder.findButton("Journey/Details/Stop Journey"), 
 Button.tap("Journey/Details/Stop Journey", timeout)
 
 'tap on Stop Journey Yes confirmation button'
+Mobile.waitForElementPresent(Finder.findButton("Journey/Details/Prompt Stop Journey Yes"), timeout)
 Button.tap("Journey/Details/Prompt Stop Journey Yes", timeout)
 
-Mobile.delay(3)
 'tap on Journey Opted Out confirmation close button'
+Mobile.waitForElementPresent(Finder.findButton("Journey/Details/Successfully Opted Out Close"), timeout)
 Button.tap("Journey/Details/Successfully Opted Out Close", timeout)
 
 'Tap on Back button to get back to the Journey List'
