@@ -51,7 +51,7 @@ import com.kms.katalon.core.testobject.TestObjectXpath as TestObjectXpath
 
 def timeout = 3
 
-def UniqueJourneyName = 'QA Automation Journey - Read Text'
+//def UniqueJourneyName = 'QA Automation Journey - Read Text'
 
 'Open existing app by the app bundle id'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -59,7 +59,7 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], Fail
 Mobile.delay(5)
 
 'validate campus was properly selected'
-Mobile.verifyElementText(Finder.findLabel('Home/Campus Text'), 'Lake Forest')
+Mobile.verifyElementText(Finder.findLabel('Home/Campus Text'), 'Anaheim')
 
 'validate that login or create account header message is visible'
 Mobile.verifyElementVisible(Finder.findLabel('Home/Log In'), timeout)

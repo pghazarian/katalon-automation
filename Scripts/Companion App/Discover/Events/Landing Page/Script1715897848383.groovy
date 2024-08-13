@@ -563,7 +563,24 @@ TextField.typeText(Finder.findTextField('Discover/Events/Search'), UniqueEventNa
 
 Mobile.waitForElementPresent(Finder.findLabel('Discover/Events/List Entry - Name'), timeout)
 
-Mobile.verifyElementText(Finder.findLabel('Discover/Events/List Entry - Name'), UniqueEventName)
+//Mobile.verifyElementText(Finder.findLabel('Discover/Events/List Entry - Name'), UniqueEventName)
+'Verify that sort order has been applied'
+SortOrderIsValid = true
+
+eventNames = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Discover/Events/List Entry - Name")))
+ 
+listLength = eventNames.size()
+
+for(int i = 0;i<listLength;i++) {
+	currentEventName = eventNames[i].text
+	
+	if (!currentEventName.contains(UniqueEventName))  {
+		'sorting has failed'
+		SortOrderIsValid = false
+	}
+}
+
+Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)

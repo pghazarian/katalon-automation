@@ -4,5 +4,6 @@
    <name>Browse Journeys - list items - search - sort and filter</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8eee5c19-f7de-4225-934f-a7a5ee7d3a46</testCaseGuid>
 </TestCaseEntity>
