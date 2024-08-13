@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC Covers the testing of the following PBIs:&#xd;
+   <description>TC has a prerequisite: which is making sure that there is a published DP on CA from HC admin of env. testing on &#xd;
+TC Covers the testing of the following PBIs:&#xd;
 Product Backlog Item 107947: [Digital Program > Attendee-Facing] - Ability to automatically display the minimized digital program during service&#xd;
 Product Backlog Item 107953: [Digital Program > Attendee-Facing] - Ability to minimize a digital program&#xd;
 &#xd;
