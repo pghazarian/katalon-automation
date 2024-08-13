@@ -63,7 +63,6 @@ if (CurrentlyLoggedIn) {
     'Open existing app by logging into the app bundle id'
     WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 } else {
-	return
     'Open existing app while logged out by the app bundle id'
     WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
 }
