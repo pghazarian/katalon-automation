@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC covers the testing of Product Backlog Item 110888: [Guest Experience] - Engagement Pathway &amp; For You Ribbon Home Page</description>
+   <name>Engagement Pathway</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ae5780ea-f9d2-421f-89b4-9568694b0954</testCaseGuid>
+</TestCaseEntity>
