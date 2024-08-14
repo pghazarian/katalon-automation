@@ -234,4 +234,9 @@
       <initValue>'Rick Warren'</initValue>
       <name>MessageSearch_UniqueMessageSpeaker</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Carlos Test Ministry SO'</initValue>
+      <name>ServingSearch_SearchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
