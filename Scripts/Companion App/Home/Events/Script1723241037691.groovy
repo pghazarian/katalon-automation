@@ -60,7 +60,7 @@ Boolean deviceIsiOS = Device.isIOS()
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/News and Events/Adult Ministries Category'), 
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Events/Adult Ministries Category'), 
     0)
 
 'Navigate to Home'
