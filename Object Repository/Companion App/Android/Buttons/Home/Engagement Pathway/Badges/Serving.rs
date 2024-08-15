@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Events See All</name>
+   <name>Serving</name>
    <tag></tag>
-   <elementGuidId>19204e85-bb0a-4238-a3a5-adca66f3e936</elementGuidId>
+   <elementGuidId>1ae43204-73f3-4f28-9cc0-a458ce440d23</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.TextView[@resource-id=&quot;hcds-mobile-text-default&quot; and @text=&quot;Ver todo&quot;]</locator>
+   <locator>button--pathway-house-5</locator>
    <locatorCollection>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>IMAGE</key>
+         <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -21,19 +26,14 @@
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
@@ -45,18 +45,18 @@
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Ver todo</value>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>
