@@ -39,17 +39,11 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0764df54-4ed7-466b-b50b-ee8e0f04a059</guid>
+      <guid>50f40cbc-cc6b-4d55-88fb-927126f27090</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Companion App/Home/Events</testCaseId>
+      <testCaseId>Test Cases/Companion App/Home/Home Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ca90a4f9-c16f-4347-8801-41f0998805d4</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>59e01590-7765-4575-9f6a-2810a7d02633</guid>
