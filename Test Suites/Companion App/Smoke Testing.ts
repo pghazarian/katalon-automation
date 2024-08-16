@@ -98,4 +98,17 @@
          <variableId>466567bf-afab-4818-af96-143d02d0f1e6</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4dae7157-1536-4083-a920-10378fa4ff97</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/Home/Engagement Pathway</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1cfc4cba-5f47-4c90-8f73-efd18351af04</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

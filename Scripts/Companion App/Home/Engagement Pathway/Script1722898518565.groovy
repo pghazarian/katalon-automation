@@ -13,11 +13,29 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import io.appium.java_client.MobileElement as MobileElement
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.detroitlabs.katalonmobileutil.device.Device as Device
+import com.detroitlabs.katalonmobileutil.testobject.Button as Button
 
-WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+def timeout = 10
+
+if (ShouldLogin.toBoolean()) {
+    'Open existing app by logging into the app bundle id'
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    'Open existing app while logged out by the app bundle id'
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+
+Boolean deviceIsiOS = Device.isIOS()
+
+' need driver to get lists and close app'
+AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Accepted Christ'), 0)
 
@@ -49,11 +67,9 @@ Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Back'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Serving'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Serving'), 5)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Serving - Learn More'), 0)
-
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+// Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Serving - Learn More'), 5)
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Sharing'), 0)
 
@@ -64,4 +80,21 @@ Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Give'), 0)
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Give Now'), 0)
+
+// press back on Android
+if (!(deviceIsiOS)) {
+    Mobile.pressBack()
+}
+
+'Navigate to Home'
+Button.tap('Nav/Home Navigation Button', timeout)
+
+'Log out'
+WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+
+if (deviceIsiOS) {
+    Mobile.closeApplication()
+} else {
+    driver.terminateApp('com.healthychurch.companion.stage')
+}
 
