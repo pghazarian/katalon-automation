@@ -24,7 +24,6 @@ import com.detroitlabs.katalonmobileutil.testobject.Button as Button
 
 def timeout = 10
 
-
 if (ShouldLogin.toBoolean()) {
     'Open existing app by logging into the app bundle id'
     WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -38,8 +37,11 @@ Boolean deviceIsiOS = Device.isIOS()
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Events/Adult Ministries Category'), 
-    0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Events/Adult Ministries Category'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Discover/Back Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Events/Events - See All'), 0)
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
