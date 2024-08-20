@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Home Navigation Button</name>
+   <name>Baptism</name>
    <tag></tag>
-   <elementGuidId>c7bdd4e3-7dd3-4dcb-bfd4-7bfafcddc8de</elementGuidId>
+   <elementGuidId>66ab1333-e2c3-4b85-8255-5c762e79271b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_home, Home</locator>
+   <locator>button--pathway-house-1</locator>
    <locatorCollection>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>hcds-mobile-icon-icon--nav-Home</value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -37,11 +22,30 @@
          <value></value>
       </entry>
       <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
          <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
@@ -49,11 +53,7 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>click--nav_home, Home</value>
-      </entry>
-      <entry>
-         <key>NAME</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
    </locatorCollection>
