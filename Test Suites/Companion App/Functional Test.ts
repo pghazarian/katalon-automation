@@ -85,4 +85,17 @@
       <testCaseId>Test Cases/Companion App/Journey/Browse Journeys - list items - search - sort and filter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d36e85ee-be84-4dc1-880f-284284781064</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/Discover/Serving/Landing Page</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bb5b490f-0383-40ea-bfca-e3b4396fcb18</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

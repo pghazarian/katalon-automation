@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Image</name>
+   <name>Where</name>
    <tag></tag>
-   <elementGuidId>d59cc5ca-ff6c-4772-a6f5-a62ac04fabb3</elementGuidId>
+   <elementGuidId>e53da3a5-66d5-49e4-a291-c0859bade2ac</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.ImageView[@content-desc=&quot;ui-card--servingopp-image&quot;])</locator>
+   <locator>Campus</locator>
    <locatorCollection>
       <entry>
-         <key>NAME</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.ImageView[ends-with(@content-desc,&quot;-image&quot;)]</value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -30,7 +25,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>XPATH</key>
+         <value>//android.view.ViewGroup[@content-desc=&quot;Where&quot;]</value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -38,11 +37,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -50,13 +45,18 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ACCESSIBILITY</key>
+         <value>Where</value>
       </entry>
       <entry>
          <key>CUSTOM</key>
          <value></value>
       </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

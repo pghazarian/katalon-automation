@@ -3,49 +3,58 @@
    <description></description>
    <name>List Entry - Date</name>
    <tag></tag>
-   <elementGuidId>7046b18d-c0c6-4f64-84f0-85e2f4a89b96</elementGuidId>
+   <elementGuidId>ce76ccd1-d0f9-40b1-ae9c-2574e52c3751</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.TextView[@content-desc=&quot;ui-card--events-date&quot;])</locator>
+   <locator>(//android.widget.TextView[@content-desc=&quot;ui-card--servingopp-date&quot;])</locator>
    <locatorCollection>
       <entry>
-         <key>CUSTOM</key>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[ends-with(@content-desc,&quot;-date&quot;)]</value>
       </entry>
       <entry>
          <key>ID</key>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>NAME</key>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
       </entry>
       <entry>
          <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>CUSTOM</key>
+         <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.TextView[ends-with(@content-desc,&quot;-date&quot;)]</value>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>

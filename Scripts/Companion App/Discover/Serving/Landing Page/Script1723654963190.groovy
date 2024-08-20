@@ -61,28 +61,25 @@ Button.tap('Nav/Discover Navigation Button', timeout)
 Mobile.delay(3)
 Button.tap('Discover/Serving Tab', timeout)
 
-//Mobile.delay(3)
+Mobile.delay(3)
 
 'Verify that Serving entries exist'
 Mobile.waitForElementPresent(Finder.findLabel('Discover/Serving/List Entry - Name'), timeout)
 
-'Verify that the list has entries'
-//Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry'), timeout)
-///*
 'Verify that the entries have a public name'
 Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Name'), timeout)
 
 'Verify that the entries have a category'
-//Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Category'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Category'), timeout)
 
 'Verify that the entries have an image'
-//Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Image'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Image'), timeout)
 
 'Verify that the entries have a Date and Time'
-//Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Date'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Date'), timeout)
 
 'Verify that the entries have a Locaton'
-//Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Location'), timeout)
+Mobile.verifyElementVisible(Finder.findLabel('Discover/Serving/List Entry - Location'), timeout)
 
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
@@ -207,7 +204,6 @@ Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry"), ti
 
 SortOrderIsValid = true
 
-/*
 List<MobileElement> servingOppDateStrings
 List<MobileElement> servingOppTimeStrings
 
@@ -225,7 +221,7 @@ tmpTimeString = servingOppTimeStrings[listLength-1].text
 def (lastTimeValue1, lastTimeValue2) = tmpTimeString.tokenize('-')
 
 String firstServingOppDateTime = servingOppDateStrings[1].text + " " + firstTimeValue1    
-String lastEventDateTime = servingOppDateStrings[listLength-1].text + " " + lastTimeValue1 
+String lastServingOppDateTime = servingOppDateStrings[listLength-1].text + " " + lastTimeValue1 
 
 def firstServingOppDate = Date.parse("MMM d, yyyy h:mma", firstServingOppDateTime)
 
@@ -236,7 +232,7 @@ if (firstServingOppDate.after(lastServingOppDate))
 	'sorting has failed'
 	SortOrderIsValid = false
 }
-*/
+
 Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Tap on the Sort and Filter button'
@@ -337,7 +333,6 @@ Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry - Nam
 
 SortOrderIsValid = true
 
-/*
 List<MobileElement> servingOppDaysOfWeek
 
 servingOppDates = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Discover/Serving/List Entry - Date")))
@@ -346,7 +341,7 @@ listLength = servingOppDates.size()
 
 def currentDate
 
-For(int i = 1;i<listLength;i++) {
+for(int i = 1;i<listLength;i++) {
 	currentDateString = servingOppDates[i].text
 	currentDate = Date.parse("MMM d, yyyy", currentDateString)
 	
@@ -356,7 +351,6 @@ For(int i = 1;i<listLength;i++) {
 		SortOrderIsValid = false
 	}
 }
-*/
 
 Mobile.verifyEqual(SortOrderIsValid, true)
 
@@ -384,7 +378,6 @@ Button.tap("Discover/Serving/SortFilter/Apply", timeout)
 
 SortOrderIsValid = true
 
-/*
 'Look at all items in the list'
 List<MobileElement> servingOppTimeRanges
 
@@ -398,7 +391,7 @@ def endTimeRange = Date.parse("hh:mmaa", "04:00pm")
 String startTimeValue, endTimeValue, currentTimeRange
 
 for(int i = 0;i<listLength;i++) {
-	currentTimeRange = eventTimeRanges[i].text
+	currentTimeRange = servingOppTimeRanges[i].text
 	(startTimeValue, endTimeValue) = currentTimeRange.tokenize('-')
 		 
 	currentStartTime = CustomKeywords.'StringHelper.getTimeFromString'(startTimeValue, "h:mmaa")
@@ -408,7 +401,6 @@ for(int i = 0;i<listLength;i++) {
 		SortOrderIsValid = false
 	}
 }
-*/
 
 Mobile.verifyEqual(SortOrderIsValid, true)
 
@@ -439,7 +431,6 @@ Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry - Nam
 
 SortOrderIsValid = true
 
-/*
 servingOppDateStrings = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Discover/Serving/List Entry - Date")))
 
 listLength = servingOppDateStrings.size()
@@ -457,7 +448,6 @@ for(int i = 0;i<listLength;i++) {
 		SortOrderIsValid = false
 	}
 }
-*/
 
 Mobile.verifyEqual(SortOrderIsValid, true)
 
@@ -528,7 +518,6 @@ Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry - Nam
 
 SortOrderIsValid = true
 
-/*
 servingOppTimeRanges = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Discover/Serving/List Entry - Time")))
 
 listLength = servingOppTimeRanges.size()
@@ -547,7 +536,6 @@ for(int i = 0;i<listLength;i++) {
 		SortOrderIsValid = false
 	}
 }
-*/
 
 Mobile.verifyEqual(SortOrderIsValid, true)
 
@@ -555,8 +543,8 @@ Mobile.verifyEqual(SortOrderIsValid, true)
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry"), timeout)
 
 'Verify that sort order has been applied'
-firstEventCategory = ''
-lastEventCategory = ''
+firstServingOppCategory = ''
+lastServingOppCategory = ''
 
 CategoryFilteringIsValid = true
 
@@ -601,10 +589,12 @@ for(int i = 0;i<listLength;i++) {
 Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Navigate to Home'
-Button.tap('Nav/Home Navigation Button', timeout)
+//Button.tap('Nav/Home Navigation Button', timeout)
 
 'Log out'
-Button.tap('Logout Button', timeout)
+//Button.tap('Logout Button', timeout)
+
+WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
 if (deviceIsiOS) {
 	Mobile.closeApplication()
