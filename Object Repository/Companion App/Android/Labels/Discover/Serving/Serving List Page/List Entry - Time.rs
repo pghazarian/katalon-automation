@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Image</name>
+   <name>List Entry - Time</name>
    <tag></tag>
-   <elementGuidId>d59cc5ca-ff6c-4772-a6f5-a62ac04fabb3</elementGuidId>
+   <elementGuidId>1ddc09b6-2221-4fb2-a859-e61f9fc5a685</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.ImageView[@content-desc=&quot;ui-card--servingopp-image&quot;])</locator>
+   <locator>(//android.widget.TextView[@content-desc=&quot;ui-card--servingopp-time&quot;])</locator>
    <locatorCollection>
       <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//android.widget.ImageView[ends-with(@content-desc,&quot;-image&quot;)]</value>
+         <value></value>
       </entry>
       <entry>
          <key>ID</key>
@@ -23,14 +19,6 @@
       </entry>
       <entry>
          <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
@@ -42,19 +30,31 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
          <key>CUSTOM</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>

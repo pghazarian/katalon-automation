@@ -93,10 +93,10 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		Button.tap('Nav/Profile No Avatar Navigation Button')
 	}
 	
-	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
+	//Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
 	
 	'tap on the settings gear icon button'
-	Button.tap('Profile/Settings Gear')
+	//Button.tap('Profile/Settings Gear')
 		
 	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Logout"), 7)
 	//Mobile.delay(7)

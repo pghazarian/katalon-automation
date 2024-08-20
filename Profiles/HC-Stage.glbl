@@ -239,4 +239,9 @@
       <initValue>'Carlos Test Ministry SO'</initValue>
       <name>ServingSearch_SearchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QA Test Ministry'</initValue>
+      <name>MinistrySearch_SearchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

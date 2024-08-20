@@ -3,22 +3,18 @@
    <description></description>
    <name>Logout</name>
    <tag></tag>
-   <elementGuidId>f4a8f158-fa7f-41d8-9566-2b3613c25223</elementGuidId>
+   <elementGuidId>bf392dc3-d025-4208-b8fe-cce539e80521</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--logout</locator>
+   <locator>Temp Logout</locator>
    <locatorCollection>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>ID</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>NAME</key>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -26,15 +22,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -42,19 +30,31 @@
          <value>hcds-mobile-btn-default</value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>ATTRIBUTES</key>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Image</name>
+   <name>List Entry - Name</name>
    <tag></tag>
-   <elementGuidId>d59cc5ca-ff6c-4772-a6f5-a62ac04fabb3</elementGuidId>
+   <elementGuidId>78fc4aff-2c44-448e-8c1d-f6665f686324</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.ImageView[@content-desc=&quot;ui-card--servingopp-image&quot;])</locator>
+   <locator>//android.widget.TextView[@content-desc=&quot;ui-card--ministry-title&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>NAME</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.ImageView[ends-with(@content-desc,&quot;-image&quot;)]</value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -30,7 +25,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[ends-with(@content-desc,&quot;-title&quot;)]</value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -38,11 +37,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -50,10 +45,15 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ACCESSIBILITY</key>
+         <value></value>
       </entry>
       <entry>
          <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
    </locatorCollection>

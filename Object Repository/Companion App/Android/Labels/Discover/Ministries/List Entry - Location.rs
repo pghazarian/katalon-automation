@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Image</name>
+   <name>List Entry - Location</name>
    <tag></tag>
-   <elementGuidId>d59cc5ca-ff6c-4772-a6f5-a62ac04fabb3</elementGuidId>
+   <elementGuidId>93180f4b-bd97-4b06-8608-31241cbeebef</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.ImageView[@content-desc=&quot;ui-card--servingopp-image&quot;])</locator>
+   <locator>(//android.widget.TextView[@content-desc=&quot;ui-card--ministry-campus&quot;])</locator>
    <locatorCollection>
       <entry>
          <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//android.widget.ImageView[ends-with(@content-desc,&quot;-image&quot;)]</value>
-      </entry>
-      <entry>
-         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -26,19 +18,34 @@
          <value></value>
       </entry>
       <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
          <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[ends-with(@content-desc,&quot;-location&quot;)]</value>
+      </entry>
+      <entry>
          <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
@@ -46,14 +53,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
    </locatorCollection>

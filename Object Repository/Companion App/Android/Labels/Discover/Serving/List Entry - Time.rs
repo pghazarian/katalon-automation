@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Image</name>
+   <name>List Entry - Time</name>
    <tag></tag>
-   <elementGuidId>d59cc5ca-ff6c-4772-a6f5-a62ac04fabb3</elementGuidId>
+   <elementGuidId>e6641fe0-9d67-47a9-a4e5-4d61240bd75d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.ImageView[@content-desc=&quot;ui-card--servingopp-image&quot;])</locator>
+   <locator>(//android.widget.TextView[@content-desc=&quot;ui-card--servingopp-time&quot;])</locator>
    <locatorCollection>
       <entry>
          <key>NAME</key>
@@ -15,7 +15,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.widget.ImageView[ends-with(@content-desc,&quot;-image&quot;)]</value>
+         <value></value>
       </entry>
       <entry>
          <key>ID</key>

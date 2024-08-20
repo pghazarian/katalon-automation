@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Reset Confirmation</name>
+   <name>Categories</name>
    <tag></tag>
-   <elementGuidId>4d16fdce-61cc-478e-8246-ecc5a5b27c6f</elementGuidId>
+   <elementGuidId>b52ca6d2-0d7f-4639-a34c-0809417df07e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.Button[@content-desc=&quot;hcds-mobile-btn-default&quot;])[1]</locator>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;Categories&quot;]</locator>
    <locatorCollection>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>IOS_PREDICATE_STRING</key>
-         <value></value>
       </entry>
       <entry>
          <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
       </entry>
       <entry>
          <key>IMAGE</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -34,27 +30,22 @@
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
-         <value></value>
       </entry>
       <entry>
          <key>CUSTOM</key>
-         <value></value>
       </entry>
       <entry>
          <key>NAME</key>
-         <value></value>
       </entry>
       <entry>
          <key>CLASS_NAME</key>
-         <value></value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
-         <value></value>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>right-button-ui-lower-prompt--reset-journey</value>
+         <value>Categories</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>

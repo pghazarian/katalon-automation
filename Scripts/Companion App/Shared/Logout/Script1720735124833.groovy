@@ -32,8 +32,8 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		'Tap on the profile avatar in the navigation'
 		Button.tap('Nav/Profile Avatar Navigation Button')
 		
-		'Tap on the settings gear button'
-		Button.tap('Profile/Settings Gear')
+		//'Tap on the settings gear button'
+		//Button.tap('Profile/Settings Gear')
 		
 		'Tap on the Logout button'
 		Button.tap('Profile/Settings/Logout')
@@ -42,6 +42,9 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		// if the user is not logged in 
 		'Tap on the generic profile avatar in the navigation'
 		Button.tap('Nav/Profile No Avatar Navigation Button')
+		
+		'Tap on the Logout button'
+		Button.tap('Profile/Settings/Logout')
 	}
 }
 

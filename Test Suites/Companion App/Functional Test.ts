@@ -86,7 +86,20 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0dca437a-7703-4821-a66f-17c0a8772025</guid>
+      <guid>bc543d46-1ca2-42b5-8399-133ea3666233</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/Discover/Serving/Landing Page</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bb5b490f-0383-40ea-bfca-e3b4396fcb18</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d20e056-0e6a-44be-a46b-5c7aff3d612e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Companion App/Home/Engagement Pathway</testCaseId>

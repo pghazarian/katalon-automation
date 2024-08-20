@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>List Entry - Image</name>
+   <name>Clear Filters</name>
    <tag></tag>
-   <elementGuidId>d59cc5ca-ff6c-4772-a6f5-a62ac04fabb3</elementGuidId>
+   <elementGuidId>c7fcf8cd-9b82-47c9-a769-d542367f6bd3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.ImageView[@content-desc=&quot;ui-card--servingopp-image&quot;])</locator>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;Clear Filters&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>NAME</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.ImageView[ends-with(@content-desc,&quot;-image&quot;)]</value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -30,7 +25,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[@resource-id=&quot;link-label&quot;]</value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -38,11 +37,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -50,10 +45,15 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ACCESSIBILITY</key>
+         <value>ui-event_filters--filters-clear_filters</value>
       </entry>
       <entry>
          <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
    </locatorCollection>

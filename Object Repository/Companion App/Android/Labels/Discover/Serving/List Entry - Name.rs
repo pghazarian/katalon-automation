@@ -3,33 +3,18 @@
    <description></description>
    <name>List Entry - Name</name>
    <tag></tag>
-   <elementGuidId>d0fe4b6a-b9c3-4107-b176-63702899ab8e</elementGuidId>
+   <elementGuidId>80df5d86-4f8a-4a5c-ad5f-0b116a801630</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.TextView[@content-desc=&quot;ui-card--events-title&quot;])</locator>
+   <locator>//android.widget.TextView[@content-desc=&quot;ui-card--servingopp-title&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[ends-with(@content-desc,&quot;-title&quot;)]</value>
       </entry>
       <entry>
          <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -37,11 +22,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
@@ -49,12 +34,27 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.TextView[ends-with(@content-desc,&quot;-title&quot;)]</value>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>
