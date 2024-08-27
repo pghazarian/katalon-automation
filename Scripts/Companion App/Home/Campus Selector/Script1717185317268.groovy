@@ -79,7 +79,7 @@ Mobile.verifyElementText(Finder.findLabel("Home/Campus Text"), "Anaheim")
 Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 
 'tap on a different campus'
-Mobile.tap(Finder.findLabel("Home/Campus Selector/Corona"), timeout)
+Mobile.tap(Finder.findLabel("Home/Campus Selector/Brea"), timeout)
 
 'tap on the Apply button'
 Button.tap("Home/Campus Selector/Apply", timeout)

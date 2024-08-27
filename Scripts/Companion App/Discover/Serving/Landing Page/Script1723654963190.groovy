@@ -588,12 +588,6 @@ for(int i = 0;i<listLength;i++) {
 
 Mobile.verifyEqual(SortOrderIsValid, true)
 
-'Navigate to Home'
-//Button.tap('Nav/Home Navigation Button', timeout)
-
-'Log out'
-//Button.tap('Logout Button', timeout)
-
 WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
 if (deviceIsiOS) {

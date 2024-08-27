@@ -244,4 +244,14 @@
       <initValue>'QA Test Ministry'</initValue>
       <name>MinistrySearch_SearchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'App Files/Companion App/Android/android-stage-build.apk'</initValue>
+      <name>AppFileLocation_Android</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'21 DAYS OF PRAYER &amp; FASTING'</initValue>
+      <name>JourneySearch_SearchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

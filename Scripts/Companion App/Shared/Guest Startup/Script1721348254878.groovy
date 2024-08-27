@@ -55,9 +55,9 @@ println(Device.getDeviceOS())
 
 // setup configuration for the apps
 // Android
-String androidFile = 'App Files/Companion App/Android/android-stage-build.apk'
+String androidFile = GlobalVariable.AppFileLocation_Android
 
-String androidAppId = "com.healthychurch.companion.stage" 
+String androidAppId = GlobalVariable.CompanionApp_BundleId 
 
 App androidApp = new App(androidFile, androidAppId)
 

@@ -86,7 +86,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'HC Test Private Event 2024'</initValue>
+      <initValue>'Rise and Shine Stretch'</initValue>
       <name>EventSearch_EventName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -113,5 +113,185 @@
       <description></description>
       <initValue>'https://welcome.saddleback.com'</initValue>
       <name>Saddleback_Welcome_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.healthychurch.companion'</initValue>
+      <name>CompanionApp_BundleId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QA Automation Follow Up Test'</initValue>
+      <name>Follow_Up_Connection_Form_Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QA Automation Follow Up Rule Task'</initValue>
+      <name>Follow_Up_Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QAOne'</initValue>
+      <name>Follow_Up_Task_Person_First_Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Saddleback'</initValue>
+      <name>Follow_Up_Task_Person_Last_Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'7798526'</initValue>
+      <name>PersonRecordId_Notes</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2299'</initValue>
+      <name>MinistryId_HasMembers</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'10'</initValue>
+      <name>Ministry_CampusId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27772'</initValue>
+      <name>EventId_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27471'</initValue>
+      <name>EventId_CheckIn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'crisf@saddleback.com'</initValue>
+      <name>Admin2_UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Z8nazMpc16177aX9xH8qZQ=='</initValue>
+      <name>Admin2_Password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cris Francisco'</initValue>
+      <name>Admin2_FullName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Anaheim Connection Form 1'</initValue>
+      <name>ConnectionForm_SearchName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27831'</initValue>
+      <name>EventId_OneTime_ForDuplication</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Baptism'</initValue>
+      <name>EventCategory</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27844'</initValue>
+      <name>EventId_EditEvent</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Adult Ministries'</initValue>
+      <name>EventCategory_Edited</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lake Forest'</initValue>
+      <name>EventCampus</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'9492'</initValue>
+      <name>SO_Id_Recurring_DoesNotEnd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Anaheim Main Worship Center'</initValue>
+      <name>SO_GeneralRoom</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Children\'s Room 1'</initValue>
+      <name>SO_ChildRoom_1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Children\'s Room 2'</initValue>
+      <name>SO_ChildRoom_2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'The Sacrifice You'</initValue>
+      <name>MessageSearch_Details</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2206'</initValue>
+      <name>MinistryId_SOTests</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Push Notification Test 1'</initValue>
+      <name>PushNotifications_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Communication'</initValue>
+      <name>Communications_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ST Segment 1'</initValue>
+      <name>Segments_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'9653'</initValue>
+      <name>SO_Id_CustomQuestions</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'3907'</initValue>
+      <name>ConnectionForm_ForEditing_Id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Marks Test DP 1'</initValue>
+      <name>MessageSearch_UniqueMessageName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'HG Series'</initValue>
+      <name>MessageSearch_UniqueMessageSeries</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Rick Warren'</initValue>
+      <name>MessageSearch_UniqueMessageSpeaker</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Carlos Test Ministry SO'</initValue>
+      <name>ServingSearch_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'App Files/Companion App/Android/build-1724699494391.apk'</initValue>
+      <name>AppFileLocation_Android</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Promise of Peace'</initValue>
+      <name>JourneySearch_SearchTerm</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
