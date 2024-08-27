@@ -54,7 +54,7 @@ import com.kms.katalon.core.testobject.TestObjectXpath
 
 
 def timeout = 3
-def UniqueJourneyName = '21 DAYS OF PRAYER & FASTING'
+def UniqueJourneyName = GlobalVariable.JourneySearch_SearchTerm  //'21 DAYS OF PRAYER & FASTING'
 
 'Open existing app by the app bundle id'
 //WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), ['UserName':'markh@saddleback.com', 'Password':(CryptoUtil.encode(CryptoUtil.getDefault('P@$$w0rd!')))], FailureHandling.STOP_ON_FAILURE)
@@ -200,6 +200,7 @@ Button.tap("Journey/Browse/Sort And Filter", timeout)
 
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Journey/Browse/SortFilter/Clear Filters"), timeout)
+Button.tap("Journey/Browse/SortFilter/Clear Filters", timeout)
 
 'Tap on the Categories button'
 Button.tap("Journey/Browse/SortFilter/Categories", timeout)

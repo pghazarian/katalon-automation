@@ -46,19 +46,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>59e01590-7765-4575-9f6a-2810a7d02633</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Companion App/Home/Ribbon Translations</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>075c43b2-981e-4c0e-94c9-66c4dee8bffa</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>ef02e8b0-9210-472f-ba4f-15d6f99cbffb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -109,6 +96,26 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>1cfc4cba-5f47-4c90-8f73-efd18351af04</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c208e73d-0166-4200-89f5-511a1076b78a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/User Profile/User Settings</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>59e01590-7765-4575-9f6a-2810a7d02633</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/Home/Ribbon Translations</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>075c43b2-981e-4c0e-94c9-66c4dee8bffa</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

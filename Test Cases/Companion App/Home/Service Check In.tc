@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Service Check In</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9def76e6-881d-4075-b42a-e839ae08a2e2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5b325921-67bf-488d-804e-83450b592bc7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>5b325921-67bf-488d-804e-83450b592bc7</id>
+      <masked>false</masked>
+      <name>LoggedIn</name>
+   </variable>
+</TestCaseEntity>
