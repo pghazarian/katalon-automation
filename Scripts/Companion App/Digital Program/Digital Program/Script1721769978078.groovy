@@ -16,13 +16,40 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import io.appium.java_client.MobileElement as MobileElement
+import com.detroitlabs.katalonmobileutil.device.Device as Device
+import com.detroitlabs.katalonmobileutil.testobject.Button as Button
+import com.kms.katalon.util.CryptoUtil as CryptoUtil
 
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+def timeout = 10
+
+if (ShouldLogin.toBoolean()) {
+    'Open existing app by logging into the app bundle id'
+
+    // WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+    'Open existing app by the app bundle id'
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : 'Pareng@saddleback.com', ('Password') : CryptoUtil.encode(
+                CryptoUtil.getDefault('Jahlife7&'))], FailureHandling.STOP_ON_FAILURE) // WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    'Open existing app while logged out by the app bundle id'
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+
+Boolean deviceIsiOS = Device.isIOS()
+
+' need driver to get lists and close app'
+AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
 'Open Button in the Live Digital Program Blue Banner'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Digital Program/Open Button'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Digital Program/Notes Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/X'), 0)
 
 'Minimize Arrow down icon button '
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Digital Program/Arrow Down Minimize Button'), 
