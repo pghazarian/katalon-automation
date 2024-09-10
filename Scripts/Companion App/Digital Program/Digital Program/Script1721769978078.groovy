@@ -30,8 +30,9 @@ if (ShouldLogin.toBoolean()) {
 
     // WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
     'Open existing app by the app bundle id'
-    WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : 'Pareng@saddleback.com', ('Password') : CryptoUtil.encode(
-                CryptoUtil.getDefault('Jahlife7&'))], FailureHandling.STOP_ON_FAILURE) // WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : GlobalVariable.CA_UserName, ('Password') : GlobalVariable.CA_Password], 
+        FailureHandling.STOP_ON_FAILURE // WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+        )
 } else {
     'Open existing app while logged out by the app bundle id'
     WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
