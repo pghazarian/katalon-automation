@@ -32,19 +32,31 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		'Tap on the profile avatar in the navigation'
 		Button.tap('Nav/Profile Avatar Navigation Button')
 		
-		//'Tap on the settings gear button'
-		//Button.tap('Profile/Settings Gear')
+		'Tap on the settings gear button'
+		//Mobile.waitForElementPresent(Finder.findButton('Profile/Settings Gear'), timeout)
+		Button.tap('Profile/Settings Gear')
+		
+		'Tap on the Account & Notifications button'
+		///Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Account Notifications'), timeout)
+		Button.tap('Profile/Settings/Account Notifications')
 		
 		'Tap on the Logout button'
-		Button.tap('Profile/Settings/Logout')
+		//Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Account Notifications'), timeout)
+		Button.tap('Profile/Settings/Account Notifications Page/Logout')
 	}
 	else {
 		// if the user is not logged in 
 		'Tap on the generic profile avatar in the navigation'
 		Button.tap('Nav/Profile No Avatar Navigation Button')
+				
+		'Tap on the settings gear button'
+		Button.tap('Profile/Settings Gear')
+		
+		'Tap on the Account & Notifications button'
+		Button.tap('Profile/Settings/Account Notifications')
 		
 		'Tap on the Logout button'
-		Button.tap('Profile/Settings/Logout')
+		Button.tap('Profile/Settings/Account Notifications Page/Logout')
 	}
 }
 

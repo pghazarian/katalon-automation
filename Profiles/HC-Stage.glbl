@@ -254,4 +254,74 @@
       <initValue>'21 DAYS OF PRAYER &amp; FASTING'</initValue>
       <name>JourneySearch_SearchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QA Automation'</initValue>
+      <name>Admin_FirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Admin'</initValue>
+      <name>Admin_LastName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Otto'</initValue>
+      <name>Admin_Nickname</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Sr.'</initValue>
+      <name>Profile_AboutMe_NewSuffix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Marcus'</initValue>
+      <name>Profile_AboutMe_NewFirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Roger'</initValue>
+      <name>Profile_AboutMe_NewMiddleName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Hamill'</initValue>
+      <name>Profile_AboutMe_NewLastName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Thor'</initValue>
+      <name>Profile_AboutMe_NewNickname</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Master'</initValue>
+      <name>Profile_AboutMe_NewPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(949) 456-7890'</initValue>
+      <name>Profile_ContactInfo_AddPhoneNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qatester@gmail.com'</initValue>
+      <name>Profile_ContactInfo_AddEmailAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1234 Lake Forest Blvd.'</initValue>
+      <name>Profile_ContactInfo_AddAddress1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lake Forest'</initValue>
+      <name>Profile_ContactInfo_AddCity</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'92630'</initValue>
+      <name>Profile_ContactInfo_AddZipCode</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
