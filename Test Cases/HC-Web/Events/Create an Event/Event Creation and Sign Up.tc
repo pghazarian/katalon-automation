@@ -4,6 +4,7 @@
    <name>Event Creation and Sign Up</name>
    <tag>QA,Dev,Stage2,Stage,Smoke</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b8927480-9a40-4c3b-b554-60019f45281a</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -37,7 +38,7 @@
       <name>campus</name>
    </variable>
    <variable>
-      <defaultValue>'Baptism'</defaultValue>
+      <defaultValue>'Adult Ministries'</defaultValue>
       <description></description>
       <id>65d7abbe-dd78-4376-a675-0ff067b682d9</id>
       <masked>false</masked>
