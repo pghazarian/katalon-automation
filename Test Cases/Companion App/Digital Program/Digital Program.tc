@@ -13,4 +13,26 @@ Product Backlog Item 107649: [Digital Program > Attendee-Facing] - Ability to se
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>d8edf418-09fa-49e1-ade9-05548a71eaf3</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>29e88500-b4a9-4218-a216-23ae5957a00b</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>29e88500-b4a9-4218-a216-23ae5957a00b</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>c89b0239-2e8d-4e28-b835-eea36db2f939</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>c89b0239-2e8d-4e28-b835-eea36db2f939</id>
+      <masked>false</masked>
+      <name>ShouldLogin</name>
+   </variable>
 </TestCaseEntity>

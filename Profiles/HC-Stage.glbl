@@ -324,4 +324,14 @@
       <initValue>'92630'</initValue>
       <name>Profile_ContactInfo_AddZipCode</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>CA Test User Name </description>
+      <initValue>'Pareng@Saddleback.com'</initValue>
+      <name>CA_UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>CA Test User PW</description>
+      <initValue>'bGzvpoZCcaztWWDnaA3/tA=='</initValue>
+      <name>CA_Password</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
