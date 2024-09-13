@@ -16,6 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+
+def projectDirectory = RunConfiguration.getProjectDir()
 
 'Set Local Date and Time to the variable'
 def randText = new Date().format('MM-dd-yyyy hh-mm-ss')
@@ -55,6 +58,15 @@ WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engageme
 'Set the Title field with Digital Program Title variable value'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Title Input'), 
     randText)
+
+'Upload the file'
+WebUI.uploadFile(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Upload For All Button'), projectDirectory + 
+    GlobalVariable.Stock_Image_Path)
+
+'Once the Image Uploader Modal is opened, click the Next Button to accept the image for each size (Desktop, Mobile, Thumbnail)'
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
 
 'Click on Save button to save the New Digital Program'
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Save New Digital Program Button'))
