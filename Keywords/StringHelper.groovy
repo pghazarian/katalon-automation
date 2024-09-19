@@ -3,6 +3,7 @@ import java.text.SimpleDateFormat
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
+import org.openqa.selenium.Keys as Keys
 
 
 
@@ -77,7 +78,30 @@ class StringHelper {
 		// Extract and combine major and minor versions
 		return parts[0..1].join('.')
 	}
-
+	
+	@Keyword
+	def String getOperatingSystem() {
+		def os = System.getProperty('os.name')
+		
+		println("os: $os")
+		
+		return os
+	}
+	
+	@Keyword
+	def String selectAllText() {
+		return Keys.chord(getOsCommandControlKey() + 'a')
+	}
+	
+	@Keyword
+	def String getOsCommandControlKey() {
+		switch (getOperatingSystem()) {
+			case "Mac OS X":
+				return Keys.COMMAND
+				
+			default:
+				return Keys.CONTROL
+		}
 
 	/**
 	 * convert date string to Date value

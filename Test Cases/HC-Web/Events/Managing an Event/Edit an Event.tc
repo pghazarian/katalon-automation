@@ -4,6 +4,7 @@
    <name>Edit an Event</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>5d744679-7010-4160-8bba-818c8b95e6f0</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
