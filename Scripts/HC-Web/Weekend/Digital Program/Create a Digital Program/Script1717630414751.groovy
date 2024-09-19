@@ -55,18 +55,26 @@ WebUI.waitForElementPresent(findTestObject('HC-Web/Mobile Engagement/Digital Pro
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Program Details sub Header Text'), 
     'Program Details')
 
+'Upload the file'
+WebUI.uploadFile(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Upload For All Button'), 
+    projectDirectory + GlobalVariable.Stock_Image_Path)
+
+'Once the Image Uploader Modal is opened, click the Next Button to accept the image for each size (Desktop, Mobile, Thumbnail)'
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+
 'Set the Title field with Digital Program Title variable value'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Title Input'), 
     randText)
 
-'Upload the file'
-WebUI.uploadFile(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Upload For All Button'), projectDirectory + 
-    GlobalVariable.Stock_Image_Path)
+'Select a series from the dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValue'('react-select-6--value-item', '')
 
-'Once the Image Uploader Modal is opened, click the Next Button to accept the image for each size (Desktop, Mobile, Thumbnail)'
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+'Select a speaker from the dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValue'('react-select-3--value', '')
 
 'Click on Save button to save the New Digital Program'
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Save New Digital Program Button'))

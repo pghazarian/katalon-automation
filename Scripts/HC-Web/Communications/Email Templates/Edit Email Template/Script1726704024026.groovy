@@ -34,5 +34,4 @@ import org.openqa.selenium.Keys as Keys
  * 11. After clsoing, user is not in an edit state in the email communication record
 */
 
-
-
+ 

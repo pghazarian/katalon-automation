@@ -4,6 +4,7 @@
    <name>Create Communication</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>889b37e6-4452-497e-89fe-6667bf325de2</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

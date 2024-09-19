@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='communication--create_button']/span/span</value>
+         <value>//span[(text() = 'Create Communication' or . = 'Create Communication')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>fc313aeb-eb9d-4fd5-8bb9-91443e613dd4</webElementGuid>
+      <webElementGuid>9cd444bb-f3cb-4aa2-a173-4460600e167c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Create Communication</value>
-      <webElementGuid>23e502e5-7e65-4b9f-a12d-2830701aa7e4</webElementGuid>
+      <webElementGuid>c8f6e18a-19e5-4c5a-a14f-46b0b6054445</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;communication--create_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
-      <webElementGuid>4addd8ed-1143-4266-8d63-f3d6d62d1f0d</webElementGuid>
+      <webElementGuid>733b92a9-4782-4cad-86ef-2b4acfe1388d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='communication--create_button']/span/span</value>
-      <webElementGuid>00b2c8cb-0723-43cb-8280-b322c4f41a46</webElementGuid>
+      <webElementGuid>3529009c-fb97-4036-87b1-66860d8aa07e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Log Out'])[1]/following::span[5]</value>
-      <webElementGuid>c3f28ebf-ecc5-40b0-a232-de337cbb82b6</webElementGuid>
+      <webElementGuid>953be189-e571-47ce-858c-1ba71fcf7bd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::span[5]</value>
-      <webElementGuid>17482bca-e84e-470f-82e0-4ce93e5f7c6d</webElementGuid>
+      <webElementGuid>c30983ba-202a-4ccc-9535-f8a853621682</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Target Campus'])[1]/preceding::span[1]</value>
-      <webElementGuid>dd6cddfc-ced9-48b5-9cc5-b64bc22188de</webElementGuid>
+      <webElementGuid>09eab34e-06fd-480f-9478-a92495c376af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ABCD'])[1]/preceding::span[1]</value>
-      <webElementGuid>12280fc4-3f52-4e33-8e4c-bfda112f4136</webElementGuid>
+      <webElementGuid>0afebebb-3219-4624-bbbe-734a29ef79bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Create Communication']/parent::*</value>
-      <webElementGuid>c481fb4f-f6c6-45db-a454-affb24adfa6d</webElementGuid>
+      <webElementGuid>103e6ab7-032a-4de6-b076-52e80fd05809</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/button/span/span</value>
-      <webElementGuid>52ad0671-9e5a-466e-988b-3f53bd945dd5</webElementGuid>
+      <webElementGuid>3bf84668-cdc0-4626-9113-dddae0bf3865</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Create Communication' or . = 'Create Communication')]</value>
-      <webElementGuid>84be2f99-fd77-4a80-9e92-b11b0f73a5e1</webElementGuid>
+      <webElementGuid>a9ec81b6-aec5-41d0-874f-41bee17ea4b2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

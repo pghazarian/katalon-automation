@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC Covers the testing of PBI 111624: Communication Unlayer Edit Workflow&#xd;
+&#xd;
+This is just a Script TC which will need to be automated, once the feature is ready to be tested</description>
+   <name>Edit Email Template</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ff4fdf0-5030-427c-8ba1-deff3d0f9ccc</testCaseGuid>
+</TestCaseEntity>
