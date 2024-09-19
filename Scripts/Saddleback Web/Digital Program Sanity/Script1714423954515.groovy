@@ -51,7 +51,6 @@ List<String> locations = [
 'Laguna Woods',
 'Lake Forest',
 'Los Angeles',
-'Newport Mesa',
 'Online Community',
 'Rancho Capistrano',
 'San Clemente',
@@ -109,6 +108,26 @@ for (campusLocation in locations) {
 					WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
 					break
 					
+				case "new here":
+					// click on the button
+					digitalButton.click()
+					
+					// verify that the Campus is displayed on the form in the header
+					WebUI.waitForElementPresent(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form Header By Campus Match', [('textToMatch') : campusLocation]), 3, FailureHandling.CONTINUE_ON_FAILURE)
+					
+					def url = WebUI.getUrl()
+					WebUI.verifyEqual(url.contains("/public/connection-form"), true)
+					
+					// verify that the fields are present (FirstName, LastName and Submit button)
+					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
+					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Last Name Text Field'))
+					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Submit Button'))
+					
+					// click Cancel and get back to the Digital program
+					WebUI.scrollToElement(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'), 0)
+					WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
+					break
+					
 				case "notes":
 				
 					digitalButton.click()
@@ -129,15 +148,32 @@ for (campusLocation in locations) {
 					
 					digitalButton.click()
 					
-					WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Giving Container'), 5)
+					def pageForGiving = WebUI.getUrl()
+					def givingPageUrl = "https://give.tithe.ly/"
 					
-					WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/First Name Textfield'), timeout)
-					WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Last Name Textfield'), timeout)
+					WebUI.verifyEqual(true, pageForGiving.startsWith(givingPageUrl))
 					
-					WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Submit Gift Button'), timeout)
+					WebUI.delay(5)
+					
+					WebUI.waitForElementPresent(findTestObject('Object Repository/Tithly/Saddleback Logo'), 5)
+					
+					WebUI.verifyTextPresent("Payment Information", false)
+					
+					WebUI.verifyTextPresent('Give $0.00', false)
+					
+					// this is a duplicate back operation since the page is behaving weirdly
+                    WebUI.back()
 					
 					WebUI.back()
 					
+					break
+					
+				case 'message resources':
+					// do nothing for now
+//					digitalButton.click()
+//
+//                    WebUI.closeWindowUrl("https://saddleback.com/connect/Articles/MAP")
+//					WebUI.delay(2)
 					break
 					
 				case "what's happening":

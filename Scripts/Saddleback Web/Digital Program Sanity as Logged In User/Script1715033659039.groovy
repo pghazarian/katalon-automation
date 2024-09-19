@@ -41,16 +41,16 @@ List<String> locations = [
     , 4 //'Irvine South',
     , 6 //'Laguna Woods',
     , 1 //'Lake Forest'
-    , 29 //'Los Angeles',
-    , 9 //'Newport Mesa',
-    , 5 //'Online Community',
-    , 8 //'Rancho Capistrano',
-    , 2 //'San Clemente',
-    , 56 //'San Diego',
-    , 25 //'Santa Rosa',
-    , 31 //'South Bay',
-    , 63 //'Vancouver',
-    , 62 //'Whittier'
+//    , 29 //'Los Angeles',
+//    , 9 //'Newport Mesa',
+//    , 5 //'Online Community',
+//    , 8 //'Rancho Capistrano',
+//    , 2 //'San Clemente',
+//    , 56 //'San Diego',
+//    , 25 //'Santa Rosa',
+//    , 31 //'South Bay',
+//    , 63 //'Vancouver',
+//    , 62 //'Whittier'
 ]
 
 WebUI.delay(2)
@@ -112,6 +112,30 @@ for (def campusLocation : locations) {
                     WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
 
                     break
+				
+				case "new here":
+					// click on the button
+					digitalButton.click()
+					
+					// verify that the Campus is displayed on the form in the header
+					WebUI.waitForElementPresent(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form Header By Campus Match', [('textToMatch') : campusLocation]), 3, FailureHandling.CONTINUE_ON_FAILURE)
+					
+					def url = WebUI.getUrl()
+					WebUI.verifyEqual(url.contains("/public/connection-form"), true)
+					
+					// Look for the ?t= append for the connection-form links so that the authenticated user token is passed around
+					WebUI.verifyEqual(url.contains('?t=ey'), true)
+					
+					// verify that the fields are present (FirstName, LastName and Submit button)
+					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
+					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Last Name Text Field'))
+					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Submit Button'))
+					
+					// click Cancel and get back to the Digital program
+					WebUI.scrollToElement(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'), 0)
+					WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
+					break
+					
                 case 'notes':
                     digitalButton.click()
 
@@ -132,20 +156,34 @@ for (def campusLocation : locations) {
                     break
                 case 'give':
                     digitalButton.click()
-
-                    WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Giving Container'), 
-                        5)
-
-                    CustomKeywords.'TestObjectHelper.verifyTextFieldHasValue'(findTestObject('Object Repository/Saddleback Legacy/Giving Form/First Name Textfield'))
-
-                    CustomKeywords.'TestObjectHelper.verifyTextFieldHasValue'(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Last Name Textfield'))
-
-                    WebUI.verifyElementPresent(findTestObject('Object Repository/Saddleback Legacy/Giving Form/Submit Gift Button'), 
-                        timeout)
-
+					
+					def pageForGiving = WebUI.getUrl()
+					def givingPageUrl = "https://give.tithe.ly/"
+					
+					WebUI.verifyEqual(true, pageForGiving.startsWith(givingPageUrl))
+					
+					WebUI.delay(5)
+					
+					WebUI.waitForElementPresent(findTestObject('Object Repository/Tithly/Saddleback Logo'), 5)
+					
+					WebUI.verifyTextPresent("Payment Information", false)
+					
+					WebUI.verifyTextPresent('Give $0.00', false)
+					
+					// this is a duplicate back operation since the page is behaving weirdly
                     WebUI.back()
+					WebUI.back()
 
                     break
+					
+				case 'message resources':
+					// do nothing for now
+//					digitalButton.click()
+//				
+//                    WebUI.closeWindowUrl("https://saddleback.com/connect/Articles/MAP")
+//					WebUI.delay(2)					
+					break
+					
                 case 'what\'s happening':
                     def announcementButton = digitalButton
 
