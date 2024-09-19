@@ -71,10 +71,11 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital
     randText)
 
 'Select a series from the dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValue'('react-select-6--value-item', '')
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('digital_programs_add_drawer--series', "Sreeni Series")
 
 'Select a speaker from the dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValue'('react-select-3--value', '')
+CustomKeywords.'TestObjectHelper.selectMultipleValuesInDropDownByClick'('digital_programs_add_drawer--speaker', 'Rick Warren')
+CustomKeywords.'TestObjectHelper.selectMultipleValuesInDropDownByClick'('digital_programs_add_drawer--speaker', 'Buddy Owens')
 
 'Click on Save button to save the New Digital Program'
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Save New Digital Program Button'))
