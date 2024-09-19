@@ -4,6 +4,7 @@
    <name>Duplicate an Event</name>
    <tag>QA,Dev,Stage2,Stage</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ce6fe9dd-0139-485a-8c0a-23efc82a8a58</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

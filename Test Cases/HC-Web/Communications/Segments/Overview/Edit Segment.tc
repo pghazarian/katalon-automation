@@ -4,6 +4,7 @@
    <name>Edit Segment</name>
    <tag>Dev</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8bcf928f-2736-4fd1-bb13-bebf4b58c3e8</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

@@ -49,7 +49,7 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
 
 'Select the text'
 WebUI.sendKeys(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Edit Communication Details/Email Subject Text Area'), 
-    Keys.chord(Keys.CONTROL, 'a'))
+    CustomKeywords.'StringHelper.selectAllText'())
 
 'Clear the text'
 WebUI.sendKeys(findTestObject('HC-Web/Communications/Communications/Overview/Communication Details/Edit Communication Details/Email Subject Text Area'), 
