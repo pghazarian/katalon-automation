@@ -102,6 +102,7 @@ class StringHelper {
 			default:
 				return Keys.CONTROL
 		}
+	}
 
 	/**
 	 * convert date string to Date value
