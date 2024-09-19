@@ -40,16 +40,16 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Overview/Edit D
 WebUI.waitForElementVisible(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Name Text Field'), 0)
 
 'Edit form name'
-WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Name Text Field'), (Keys.chord(Keys.CONTROL + 
+WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Name Text Field'), (Keys.chord(CustomKeywords.'StringHelper.getOsCommandControlKey'() + 
         'a') + Keys.BACK_SPACE) + editedName)
 
 'Edit form public name'
 WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Public Name Text Field'), (Keys.chord(
-        Keys.CONTROL + 'a') + Keys.BACK_SPACE) + editedName)
+        CustomKeywords.'StringHelper.getOsCommandControlKey'() + 'a') + Keys.BACK_SPACE) + editedName)
 
 'Edit form description'
 WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Public Description Text Field'), 
-    (Keys.chord(Keys.CONTROL + 'a') + Keys.BACK_SPACE) + editedDescription)
+    (Keys.chord(CustomKeywords.'StringHelper.getOsCommandControlKey'() + 'a') + Keys.BACK_SPACE) + editedDescription)
 
 'If save button is disabled, then the form already had the edited names and description at the beginning of the test. In this case, cancel initial edits. Otherwise save edits.'
 if (WebUI.waitForElementPresent(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Save Button'), 1)) {
@@ -97,16 +97,16 @@ WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Overview/Edit D
 WebUI.waitForElementVisible(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Name Text Field'), 0)
 
 'Edit form name back to original'
-WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Name Text Field'), (Keys.chord(Keys.CONTROL + 
+WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Name Text Field'), (Keys.chord(CustomKeywords.'StringHelper.getOsCommandControlKey'() + 
         'a') + Keys.BACK_SPACE) + originalName)
 
 'Edit form public name back to original'
 WebUI.setText(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Public Name Text Field'), (Keys.chord(
-        Keys.CONTROL + 'a') + Keys.BACK_SPACE) + originalName)
+        CustomKeywords.'StringHelper.getOsCommandControlKey'() + 'a') + Keys.BACK_SPACE) + originalName)
 
 'Edit form description back to original'
 WebUI.sendKeys(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Public Description Text Field'), 
-    (Keys.chord(Keys.CONTROL + 'a') + Keys.BACK_SPACE) + originalDescription)
+    (Keys.chord(CustomKeywords.'StringHelper.getOsCommandControlKey'() + 'a') + Keys.BACK_SPACE) + originalDescription)
 
 'Save edits'
 WebUI.click(findTestObject('HC-Web/Data Capture/Connection Forms/Create Form Drawer/Save Button'))

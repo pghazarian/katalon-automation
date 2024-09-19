@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Ove
 
 'Select the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
-    Keys.chord(Keys.CONTROL, 'a'))
+    CustomKeywords.'StringHelper.selectAllText'())
 
 'Clear the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
@@ -51,7 +51,7 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/O
 
 'Select the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
-    Keys.chord(Keys.CONTROL, 'a'))
+    CustomKeywords.'StringHelper.selectAllText'())
 
 'Clear the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
@@ -90,7 +90,7 @@ WebUI.verifyElementText(findTestObject('HC-Web/Communications/Segments/Overview/
 WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Return To Segment Search Button'))
 
 'Clear the search field'
-WebUI.sendKeys(findTestObject('HC-Web/Communications/Segments/Search Text Field'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.sendKeys(findTestObject('HC-Web/Communications/Segments/Search Text Field'), CustomKeywords.'StringHelper.selectAllText'())
 
 WebUI.sendKeys(findTestObject('HC-Web/Communications/Segments/Search Text Field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -108,7 +108,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Segments/Ove
 
 'Select the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
-    Keys.chord(Keys.CONTROL, 'a'))
+    CustomKeywords.'StringHelper.selectAllText'())
 
 'Clear the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Name Input Field'), 
@@ -120,7 +120,7 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Segments/O
 
 'Select the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
-    Keys.chord(Keys.CONTROL, 'a'))
+    CustomKeywords.'StringHelper.selectAllText'())
 
 'Clear the text'
 WebUI.sendKeys(findTestObject('Object Repository/HC-Web/Communications/Segments/Overview/Edit Segment Info/Edit Segment Description Text Area'), 
