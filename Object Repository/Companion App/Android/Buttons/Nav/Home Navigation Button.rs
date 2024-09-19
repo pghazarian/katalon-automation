@@ -3,33 +3,29 @@
    <description></description>
    <name>Home Navigation Button</name>
    <tag></tag>
-   <elementGuidId>8cb9d0fc-79d3-4912-8df2-d35215bd8fb2</elementGuidId>
+   <elementGuidId>c7bdd4e3-7dd3-4dcb-bfd4-7bfafcddc8de</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_home</locator>
+   <locator>click--nav_home, Home</locator>
    <locatorCollection>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>Home</value>
+         <value>hcds-mobile-icon-icon--nav-Home</value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>ID</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>NAME</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -37,23 +33,27 @@
          <value></value>
       </entry>
       <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>click--nav_home, Home</value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
+         <key>NAME</key>
          <value></value>
       </entry>
    </locatorCollection>

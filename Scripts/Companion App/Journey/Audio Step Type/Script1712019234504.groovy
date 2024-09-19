@@ -139,15 +139,11 @@ Mobile.delay(6)
 
 Button.tap("Journey/Pathway View/Audio Player/Backup 10 Seconds", timeout)
 
-//Mobile.delay(3)
-
-for (int i = 0; i < 12; i++) {
+for (int i = 0; i < 13; i++) {
 	Button.tap("Journey/Pathway View/Audio Player/Forwards 10 Seconds", timeout)
 	
 	Mobile.delay(1)
 }
-
-Button.tap("Journey/Pathway View/Audio Player/Speed Picker", timeout)
 
 Button.tap("Journey/Pathway View/Audio Player/Close", timeout)
 

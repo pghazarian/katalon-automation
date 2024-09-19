@@ -102,5 +102,39 @@ class StringHelper {
 			default:
 				return Keys.CONTROL
 		}
+
+	/**
+	 * convert date string to Date value
+	 * Args:
+	 * 	argDateString - string containing date
+	 * 	argDateFormatString - string containing format of date string
+	 */
+	@Keyword
+	def Date getDateFromString(String argDateString, String argDateFormatString) {
+
+		String tmpDateString = (argDateString).replaceAll(/(\d+)(st|nd|rd|th)/, '$1')
+
+		tmpDateString = tmpDateString.trim()
+
+		def firstMessageDate = Date.parse(argDateFormatString, tmpDateString)
+
+		return firstMessageDate
+	}
+	
+		
+	/*
+	 * convert time string to DateTime value
+	 * Args:
+	 * 	argTimeString - string containing time
+	 * 	argTimeFormatString - string containing format of time string
+	 */
+	@Keyword
+	def Date getTimeFromString(String argTimeString, String argTimeFormatString) {
+
+		String tmpTimeString = argTimeString.trim()
+
+		def messageTime = Date.parse(argTimeFormatString, tmpTimeString)
+
+		return messageTime
 	}
 }

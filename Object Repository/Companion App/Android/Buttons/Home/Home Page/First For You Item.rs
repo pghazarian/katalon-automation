@@ -3,21 +3,38 @@
    <description></description>
    <name>First For You Item</name>
    <tag></tag>
-   <elementGuidId>25169870-afb4-41ad-9790-a9e7ad173106</elementGuidId>
+   <elementGuidId>c074e0ff-be21-46ac-940b-660118cb866c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>for_you_list--card_4</locator>
+   <locator>(//android.view.ViewGroup[starts-with(@content-desc,&quot;for_you_list--card_&quot;)])[1]</locator>
    <locatorCollection>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
       <entry>
          <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ACCESSIBILITY</key>
+         <value>for_you_list--card_4</value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
+         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
@@ -25,38 +42,21 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
+         <key>XPATH</key>
+         <value>(//android.view.ViewGroup[starts-with(@content-desc,&quot;for_you_list--card_&quot;)])[1]</value>
       </entry>
       <entry>
          <key>ID</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>(//android.view.ViewGroup[starts-with(@content-desc,&quot;for_you_list--card_&quot;)])[1]</value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

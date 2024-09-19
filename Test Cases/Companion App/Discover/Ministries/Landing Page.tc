@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Landing Page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4ce25e69-bde5-4ab4-98ac-790652bcc4f6</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>d25ce397-0c8c-4856-8035-2a237c725f64</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>d25ce397-0c8c-4856-8035-2a237c725f64</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>d7bf2ced-db39-4db3-a6f6-1223a69d96aa</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>d7bf2ced-db39-4db3-a6f6-1223a69d96aa</id>
+      <masked>false</masked>
+      <name>LoggedIn</name>
+   </variable>
+</TestCaseEntity>

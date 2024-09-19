@@ -48,7 +48,6 @@ if (Device.isIOS()) {
 
 'need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
-AppiumDriver<?> driverAndroid = MobileDriverFactory.getDriver()
 
 'tap on the campus selector'
 Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
@@ -79,22 +78,8 @@ Mobile.verifyElementText(Finder.findLabel("Home/Campus Text"), "Anaheim")
 'tap on the campus selector again'
 Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 
-/*
-if (Device.isIOS()) {
-	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-}
-else {
-	'tap on a different campus'
-	Mobile.tap(Finder.findLabel("Home/Campus Selector/Anaheim"), timeout)
-	
-	//Mobile.scrollToText("Lake Forest")
-	Scroll.scrollListToElementWithText('item', 'Lake Forest', timeout)
-	//Mobile.swipe(500, 1940, 500, 761)
-}
-*/
-
 'tap on a different campus'
-Mobile.tap(Finder.findLabel("Home/Campus Selector/Corona"), timeout)
+Mobile.tap(Finder.findLabel("Home/Campus Selector/Brea"), timeout)
 
 'tap on the Apply button'
 Button.tap("Home/Campus Selector/Apply", timeout)

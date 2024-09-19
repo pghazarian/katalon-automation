@@ -51,7 +51,7 @@ import com.kms.katalon.core.testobject.TestObjectXpath as TestObjectXpath
 
 def timeout = 3
 
-def UniqueJourneyName = 'QA Automation Journey - Read Text'
+//def UniqueJourneyName = 'QA Automation Journey - Read Text'
 
 'Open existing app by the app bundle id'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)

@@ -53,9 +53,9 @@ println(Device.getDeviceOS())
 
 // setup configuration for the apps
 // Android
-String androidFile = 'App Files/Companion App/Android/android-stage-build.apk'
+String androidFile = GlobalVariable.AppFileLocation_Android //'App Files/Companion App/Android/android-stage-build.apk'
 
-String androidAppId = "com.healthychurch.companion.stage" 
+String androidAppId = GlobalVariable.CompanionApp_BundleId //"com.healthychurch.companion.stage" 
 
 App androidApp = new App(androidFile, androidAppId)
 
@@ -81,12 +81,13 @@ Mobile.delay(timeout)
 if (Mobile.verifyElementVisible(Finder.findLabel('Splash/Welcome Heading'), timeout, FailureHandling.OPTIONAL)) {
 	
 	'Click Login Button'
-	Button.tap('Create Account or Login')
+	Button.tap('Login/Create Account or Login')
 	
 	if (Device.isIOS()) {
 	    'Click the Continue Button (from the OS to approve going to an external domain)'
-	    Button.tap('Login/Continue')
+		Mobile.tap(findTestObject('Object Repository/Companion App/iOS/Buttons/Login/Continue'), timeout)
 	}
+	Mobile.delay(3)
 	
 	'Find the Email Address field'
 	TestObject emailAddress = Finder.findTextField('Login/Email Address Text Field')

@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>7876ae72-ca87-4c13-a8c4-ceafaeea95c5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4f1db409-1c99-492a-a07f-c359068fc8f1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>4f1db409-1c99-492a-a07f-c359068fc8f1</id>
+      <masked>false</masked>
+      <name>LoggedIn</name>
+   </variable>
 </TestCaseEntity>

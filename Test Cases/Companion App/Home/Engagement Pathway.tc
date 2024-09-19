@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC covers the testing of the following PBIs:&#xd;
+PBI 110888: [Guest Experience] - Engagement Pathway &amp; For You Ribbon Home Page&#xd;
+&#xd;
+PBI 109789: UI for Engagement Pathway</description>
+   <name>Engagement Pathway</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ae5780ea-f9d2-421f-89b4-9568694b0954</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>e9f8a19b-8ce2-4cb3-9216-80355a06c2a1</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value>1</value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>e9f8a19b-8ce2-4cb3-9216-80355a06c2a1</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>1cfc4cba-5f47-4c90-8f73-efd18351af04</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>1cfc4cba-5f47-4c90-8f73-efd18351af04</id>
+      <masked>false</masked>
+      <name>ShouldLogin</name>
+   </variable>
+</TestCaseEntity>

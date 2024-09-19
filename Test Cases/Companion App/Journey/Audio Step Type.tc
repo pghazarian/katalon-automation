@@ -4,5 +4,6 @@
    <name>Audio Step Type</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1d6854f4-974f-43da-88ff-fdc01672c809</testCaseGuid>
 </TestCaseEntity>

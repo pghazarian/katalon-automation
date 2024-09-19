@@ -55,9 +55,9 @@ println(Device.getDeviceOS())
 
 // setup configuration for the apps
 // Android
-String androidFile = 'App Files/Companion App/Android/android-stage-build.apk'
+String androidFile = GlobalVariable.AppFileLocation_Android
 
-String androidAppId = "com.healthychurch.companion.stage" 
+String androidAppId = GlobalVariable.CompanionApp_BundleId 
 
 App androidApp = new App(androidFile, androidAppId)
 
@@ -78,7 +78,7 @@ boolean removeAppBeforeTest = false // change this to false to keep the app stat
 
 Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 
-//Mobile.delay(timeout)
+Mobile.delay(timeout)
 Mobile.waitForElementPresent(Finder.findButton("Nav/Home Navigation Button"), 5)
 
 'if there is a user already logged in we will skip the splash screen and need to log them out'
@@ -93,10 +93,10 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		Button.tap('Nav/Profile No Avatar Navigation Button')
 	}
 	
-	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
+	//Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
 	
 	'tap on the settings gear icon button'
-	Button.tap('Profile/Settings Gear')
+	//Button.tap('Profile/Settings Gear')
 		
 	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Logout"), 7)
 	//Mobile.delay(7)

@@ -36,8 +36,22 @@ def timeout = 10
 
 String UniqueMessageName = GlobalVariable.MessageSearch_Details
 
-'Open existing app by the app bundle id'
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+boolean CurrentlyLoggedIn
+
+if (LoggedIn.toBoolean()) {
+	CurrentlyLoggedIn = true
+}
+else {
+	CurrentlyLoggedIn = false
+}
+
+if (CurrentlyLoggedIn) {
+	'Open existing app by logging into the app bundle id'
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+	'Open existing app while logged out by the app bundle id'
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 Boolean deviceIsiOS = false
 
@@ -48,11 +62,11 @@ if (Device.isIOS()) {
 'Navigate to Resource'
 Button.tap('Nav/Resources Navigation Button', timeout)
 
-'Wait for Messages landing page to display'
-Button.tap('Resources/Messages Tab', timeout)
-
 'need driver to get lists and close app' 
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
+
+'This delay is necessary in that a wait for element to be present does not work'
+Mobile.delay(5)
 
 'Search for a unique message name'
 TextField.typeText(Finder.findTextField('Resources/Messages/Search'), UniqueMessageName + Keys.ENTER, timeout)
@@ -108,57 +122,50 @@ if (!deviceIsiOS) {
 	
 	Mobile.delay(10)
 
-
 	'Stop the video playback'
 	Button.tap('Resources/Messages/Message Details/Video Show Controls', timeout)
 	Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Video Stop Play"), timeout)
 	Button.tap('Resources/Messages/Message Details/Video Stop Play', timeout)
-	
-	Mobile.delay(5)
 }
 
 'download the message notes'
 Button.tap("Resources/Messages/Message Details/Download", timeout)
 
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Download Original Notes"), timeout)
-Button.tap("Resources/Messages/Message Details/Download Original Notes", timeout)
+'Verify that the modal download selections are there'
+Mobile.verifyElementExist(Finder.findButton("Resources/Messages/Message Details/Download Original Notes"), timeout)
+Mobile.verifyElementExist(Finder.findButton("Resources/Messages/Message Details/Download Notes with my Edits"), timeout)
 
-Mobile.waitForElementPresent(Finder.findButton("Resources/Messages/Message Details/Download Close"), timeout)
-Button.tap("Resources/Messages/Message Details/Download Close", timeout)
-
-Mobile.delay(5)
-
-'Share the message notes'
-Button.tap("Resources/Messages/Message Details/Share", timeout)
-
-Button.tap("Resources/Messages/Message Details/Share Copy", timeout)
-
-Mobile.delay(5)
+'Disengage the modal, not to go to the device specific download modal'
+Mobile.pressBack()
 
 'return back to the recent message list'
 Button.tap("Resources/Messages/Message Details/Back", timeout)
 
 'if testing guest experience'
+if (!CurrentlyLoggedIn) {
+	
 	'Tap on the Log in to Save notes'
+	Button.tap("Resources/Messages/Message Details/Log In to Save", timeout)
 	'exit out of log in page'
+	Button.tap("Resources/Messages/Message Details/Cancel Log In", timeout)
+}
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)
 
-'Log out'
-if (Device.isIOS()) {
-	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+'if logged in, then log out'
+if (CurrentlyLoggedIn) {
+	'Log out'
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 }
-else {
-	Mobile.scrollToText('LOGOUT!', FailureHandling.STOP_ON_FAILURE)
-}
-Button.tap('Logout Button', timeout)
 
+'close the app'
 if (deviceIsiOS) {
 	Mobile.closeApplication()
 }
 else {
 	driver.closeApp()
 }
+
 
 

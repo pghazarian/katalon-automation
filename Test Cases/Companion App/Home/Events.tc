@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC will cover the testing of following PBIs &amp; it is a Script TC:&#xd;
+PBI 108930: [BE] - News &amp; Events Ribbon&#xd;
+PBI 110959: [News and Events][CA] Ability to view a list of Event Categories (thumbnail)&#xd;
+PBI 110960: [News and Events][Back Office] Ability to add an Image Thumbnail to an Event Category&#xd;
+PBI 110961: [News and Events][Back Office] Ability to set Event Category Priority Order&#xd;
+PBI 111048: [News and Events][CA] Ability to view Event Categories in Priority Order&#xd;
+PBI 111151: [News and Events] Tap See All takes Companion App User to Events Landing Page</description>
+   <name>Events</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e0e35b2-d7ad-4902-9a27-86adbbc85a9e</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>1fb4bb80-8226-4e3d-a712-f00dc58b226d</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>1fb4bb80-8226-4e3d-a712-f00dc58b226d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>ca90a4f9-c16f-4347-8801-41f0998805d4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>ca90a4f9-c16f-4347-8801-41f0998805d4</id>
+      <masked>false</masked>
+      <name>ShouldLogin</name>
+   </variable>
+</TestCaseEntity>
