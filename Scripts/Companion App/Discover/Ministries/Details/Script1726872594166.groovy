@@ -31,30 +31,11 @@ import io.appium.java_client.MobileElement as MobileElement
 import com.kms.katalon.core.testobject.TestObjectXpath
 import org.openqa.selenium.WebElement
 import io.appium.java_client.ios.IOSDriver
-/*
-- Launch CA App
-- Tap on Discover Navigation button
-- Enter name of QA Automation single/recurring event in search text entry and tap enter key
-- Tap on first located event in the list
-- Tap on Register button
-- If logged in skip next three steps
-- Enter First Name
-- Enter Last Name
-- Enter email address
-- Tap on submit button
-- If logged in the register button is changed 
-- if logged out attempt steps to above to register for event again
-- Verify that a message is displayed indicating logged out user is already registered
-- cancel out of already registered modal
-- if logged out, skip to the end of test
-- tap on cancel registration of single/recurring event
-- log out
-- close app
-*/
+
 
 def timeout = 10
 
-String UniqueEventName = GlobalVariable.EventSearch_SearchTerm
+String UniqueMinistryName = GlobalVariable.MinistrySearch_SearchTerm
 
 
 boolean CurrentlyLoggedIn
@@ -80,7 +61,6 @@ if (Device.isIOS()) {
 	deviceIsiOS = true
 }
 
-
 // need driver to get lists and close app
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
@@ -88,35 +68,29 @@ Mobile.waitForElementPresent(Finder.findButton('Nav/Discover Navigation Button')
 	
 'Navigate to Discover'
 Button.tap('Nav/Discover Navigation Button', timeout)
+Mobile.delay(3)
 
-'Wait for Events landing page to display'
-Mobile.waitForElementPresent(Finder.findTextField('Discover/Events/Search'), timeout)
+'Tap on Ministry tab'
+Mobile.waitForElementPresent(Finder.findButton('Discover/Ministries Tab'), timeout)
+Button.tap('Discover/Ministries Tab', timeout)
 
-'search for specific event'
-TextField.typeText(Finder.findTextField('Discover/Events/Search'), UniqueEventName + Keys.ENTER, timeout)
+'Wait for Ministry landing page to display'
+Mobile.waitForElementPresent(Finder.findTextField('Discover/Ministries/Search'), timeout)
+
+'search for specific ministry'
+TextField.typeText(Finder.findTextField('Discover/Ministries/Search'), UniqueMinistryName + Keys.ENTER, timeout)
 
 'tap on first entry located'
-Mobile.tap(Finder.findLabel('Discover/Events/Searched List Entry'), timeout)
+Mobile.tap(Finder.findLabel('Discover/Ministries/List Entry'), timeout)
 
-'tap on sign up button'
-Mobile.waitForElementPresent(Finder.findButton('Discover/Events/Event Details/Sign Up'), timeout)
-Button.tap('Discover/Events/Event Details/Sign Up', timeout)
-
-'Tap on the specific day pill button'
-Mobile.waitForElementPresent(Finder.findButton('Discover/Events/Event Details/Sign Up For Event/Specific Day'), timeout)
-Button.tap('Discover/Events/Event Details/Sign Up For Event/Specific Day', timeout)
-
-'tap on the date selection drop down box'
-Button.tap('Discover/Events/Event Details/Sign Up For Event/Date Select', timeout)
-
-'select the first date in the list'
-Mobile.waitForElementPresent(Finder.findButton('Discover/Events/Event Details/Sign Up For Event/First Date Selectable'), timeout)
-Button.tap('Discover/Events/Event Details/Sign Up For Event/First Date Selectable', timeout)
+'tap on get involved button'
+Mobile.waitForElementPresent(Finder.findButton('Discover/Ministries/Get Involved'), timeout)
+Button.tap('Discover/Ministries/Get Involved', timeout)
 
 'tap on the Submit button'
 Mobile.scrollToText('Submit')
-Mobile.waitForElementPresent(Finder.findButton('Discover/Events/Event Details/Sign Up For Event/Submit'), timeout)
-Button.tap('Discover/Events/Event Details/Sign Up For Event/Submit', timeout)
+Mobile.waitForElementPresent(Finder.findButton('Discover/Ministries/Interested In Serving/Submit'), timeout)
+Button.tap('Discover/Ministries/Interested In Serving/Submit', timeout)
 
 'Navigate to Home'
 Button.tap('Nav/Home Navigation Button', timeout)

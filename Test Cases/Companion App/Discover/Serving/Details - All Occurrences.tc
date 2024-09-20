@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Details - All Occurrences</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>27da5841-2c18-4f5a-8840-c2aa94872b4b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>761931f5-38fc-44d7-b16b-10c370d06988</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>761931f5-38fc-44d7-b16b-10c370d06988</id>
+      <masked>false</masked>
+      <name>LoggedIn</name>
+   </variable>
+</TestCaseEntity>

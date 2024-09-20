@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Searched List Entry</name>
+   <name>Sign Up</name>
    <tag></tag>
-   <elementGuidId>e6eec508-7194-4ef9-8d3c-b65867e85e9d</elementGuidId>
+   <elementGuidId>b0b1f8a0-7705-4299-a0c7-dab2afaa5c00</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-card--events-image, Release 1.43.0 - Event Category, ui-card--events-title, ui-card--events-date, ui-card--events-time, ui-card--events-location, ui-card--events-frequency</locator>
+   <locator>hcds-mobile-btn-default</locator>
    <locatorCollection>
       <entry>
          <key>ANDROID_VIEWTAG</key>
@@ -27,7 +27,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.view.ViewGroup[@content-desc=&quot;ui-card--events-image, No Category, ui-card--events-title, ui-card--events-date, ui-card--events-time, ui-card--events-location, ui-card--events-frequency&quot;]</value>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -39,7 +39,7 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value></value>
+         <value>ui-event-button--sign_up</value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
