@@ -3,26 +3,46 @@
    <description></description>
    <name>Home Navigation Button</name>
    <tag></tag>
-   <elementGuidId>c7bdd4e3-7dd3-4dcb-bfd4-7bfafcddc8de</elementGuidId>
+   <elementGuidId>9ed16773-7f80-4f8b-b705-7e974558ca8c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_home, Home</locator>
+   <locator>//android.widget.Button[@content-desc=&quot;click--nav_home&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>hcds-mobile-icon-icon--nav-Home</value>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>CUSTOM</key>
-         <value></value>
+         <key>ACCESSIBILITY</key>
+         <value>hcds-mobile-icon-icon--nav-Home</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>click--nav_home, Home</value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
       <entry>
          <key>ID</key>
@@ -36,27 +56,7 @@
          <key>CLASS_NAME</key>
          <value></value>
       </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>click--nav_home, Home</value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

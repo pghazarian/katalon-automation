@@ -17,22 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 /*
  * Prerequisite:
  * User must have a "Communication" created, with an email templete attached to it, on HC admin for environment testing on
- * 
+ *
  * 1. From your PC's browser go to HC admin for environment testing on
- * 2. Login with your admin user credentials 
+ * 2. Login with your admin user credentials
  * 3. From the left navigation pane, click on the Communications > Communications sub menu
  * 4. Find the "Communication" created in Prerequisite (above) & Open to view the Details
- * 5. From under the "Communication Layout" section, click on the Edit button below the Email Template name 
- * 6. Verify the user can perform the following functions:
- * 7. User can click the edit button
- * 8. Unlayer screen opens with the content from the record
- * 9. User can make changes
- * 10. User clicks save, and changes save and overlay closes 
- * 11. After clsoing, user is not in an edit state in the email communication record
+ * 5. From under the "Communication Details" section, click on the Edit button to the right of the "Communication Details" header text 
+ * 6. Verify the following: 
+ * 7. The "From Email" & "Reply To" pickers are removed from the UI & updated to open text fields on communication Edit screen
+ * 8. The validation of formatting emails meets the email criteria
+ * 9. User clicks save, and changes save and overlay closes
+ * 10. After clsoing, user is not in an edit state in the email communication record
 */
+
+
 
 
 

@@ -4,6 +4,7 @@
    <name>Create a Digital Program</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>49190970-5ec6-425c-9049-f24a5ba83395</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
