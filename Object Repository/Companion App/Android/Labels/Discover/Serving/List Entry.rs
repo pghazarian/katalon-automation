@@ -3,10 +3,60 @@
    <description></description>
    <name>List Entry</name>
    <tag></tag>
-   <elementGuidId>07caef6e-187c-4707-b937-e36057d47f4d</elementGuidId>
+   <elementGuidId>f50753d8-9680-4ab3-b5dd-8c1b80905dc4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>ui-list--events-this-week-item</locator>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locator>(//android.view.ViewGroup[@content-desc=&quot;ui-card--servingopp-image, ui-tags--category, ui-card--servingopp-title, ui-card--servingopp-date, ui-card--servingopp-time, ui-card--servingopp-campus-name, ui-card--servingopp-recurrence&quot;])[1]</locator>
+   <locatorCollection>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>ui-list--events-this-week-item</value>
+      </entry>
+   </locatorCollection>
+   <locatorStrategy>XPATH</locatorStrategy>
+   <platform>ANDROID</platform>
 </MobileElementEntity>

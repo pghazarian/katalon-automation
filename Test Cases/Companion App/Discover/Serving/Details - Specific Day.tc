@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Details - Specific Day</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9be23900-f3f0-4d13-a7b8-80811aa40f7c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>45e0ab0c-097c-4d06-80dd-14173d5e9e7b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>45e0ab0c-097c-4d06-80dd-14173d5e9e7b</id>
+      <masked>false</masked>
+      <name>LoggedIn</name>
+   </variable>
+</TestCaseEntity>

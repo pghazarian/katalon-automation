@@ -334,4 +334,9 @@
       <initValue>'bGzvpoZCcaztWWDnaA3/tA=='</initValue>
       <name>CA_Password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bryant Demo Serving Opp'</initValue>
+      <name>SevingOppSearch_SearchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

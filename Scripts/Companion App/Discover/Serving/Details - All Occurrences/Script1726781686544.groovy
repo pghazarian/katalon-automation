@@ -54,7 +54,7 @@ import io.appium.java_client.ios.IOSDriver
 
 def timeout = 10
 
-String UniqueEventName = GlobalVariable.EventSearch_SearchTerm
+String UniqueServingOppName = GlobalVariable.SevingOppSearch_SearchTerm
 
 
 boolean CurrentlyLoggedIn
@@ -80,7 +80,6 @@ if (Device.isIOS()) {
 	deviceIsiOS = true
 }
 
-
 // need driver to get lists and close app
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
@@ -88,30 +87,25 @@ Mobile.waitForElementPresent(Finder.findButton('Nav/Discover Navigation Button')
 	
 'Navigate to Discover'
 Button.tap('Nav/Discover Navigation Button', timeout)
+Mobile.delay(3)
 
-'Wait for Events landing page to display'
-Mobile.waitForElementPresent(Finder.findTextField('Discover/Events/Search'), timeout)
+'Tap on Serving tab'
+Mobile.waitForElementPresent(Finder.findButton('Discover/Serving Tab'), timeout)
+Button.tap('Discover/Serving Tab', timeout)
 
-'search for specific event'
-TextField.typeText(Finder.findTextField('Discover/Events/Search'), UniqueEventName + Keys.ENTER, timeout)
+'Wait for Serving landing page to display'
+Mobile.waitForElementPresent(Finder.findTextField('Discover/Serving/Search'), timeout)
+
+'search for specific serving opp'
+TextField.typeText(Finder.findTextField('Discover/Serving/Search'), UniqueServingOppName + Keys.ENTER, timeout)
 
 'tap on first entry located'
-Mobile.tap(Finder.findLabel('Discover/Events/Searched List Entry'), timeout)
+Mobile.waitForElementPresent(Finder.findLabel('Discover/Serving/List Entry'), timeout)
+Mobile.tap(Finder.findLabel('Discover/Serving/List Entry'), timeout)
 
 'tap on sign up button'
-Mobile.waitForElementPresent(Finder.findButton('Discover/Events/Event Details/Sign Up'), timeout)
-Button.tap('Discover/Events/Event Details/Sign Up', timeout)
-
-'Tap on the specific day pill button'
-Mobile.waitForElementPresent(Finder.findButton('Discover/Events/Event Details/Sign Up For Event/Specific Day'), timeout)
-Button.tap('Discover/Events/Event Details/Sign Up For Event/Specific Day', timeout)
-
-'tap on the date selection drop down box'
-Button.tap('Discover/Events/Event Details/Sign Up For Event/Date Select', timeout)
-
-'select the first date in the list'
-Mobile.waitForElementPresent(Finder.findButton('Discover/Events/Event Details/Sign Up For Event/First Date Selectable'), timeout)
-Button.tap('Discover/Events/Event Details/Sign Up For Event/First Date Selectable', timeout)
+Mobile.waitForElementPresent(Finder.findButton('Discover/Serving/Serving Details/Sign Up'), timeout)
+Button.tap('Discover/Serving/Serving Details/Sign Up', timeout)
 
 'tap on the Submit button'
 Mobile.scrollToText('Submit')
