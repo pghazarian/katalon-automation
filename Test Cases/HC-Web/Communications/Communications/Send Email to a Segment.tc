@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers the testing of Product Backlog Item 113107: [Communications] - Send Immediate Email Function -FE</description>
+   <name>Send Email to a Segment</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ed934ad1-ca9c-41b5-a778-bc8a1b5dc4de</testCaseGuid>
+</TestCaseEntity>
