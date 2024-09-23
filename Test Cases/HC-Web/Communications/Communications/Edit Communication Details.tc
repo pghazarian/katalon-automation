@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Script TC covers the testing of the following PBIs:&#xd;
+Product Backlog Item 112649: Update Communications - Remove Email Pickers - FE&#xd;
+Product Backlog Item 112597: Update Communications - Remove Email Pickers - BE</description>
    <name>Edit Communication Details</name>
    <tag></tag>
    <comment></comment>

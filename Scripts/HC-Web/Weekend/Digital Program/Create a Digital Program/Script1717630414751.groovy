@@ -71,11 +71,24 @@ WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital
     randText)
 
 'Select a series from the dropdown'
-CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('digital_programs_add_drawer--series', "Sreeni Series")
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('digital_programs_add_drawer--series', 'Sreeni Series')
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/label_Series Part Number'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/input_Series Part Number_digital_programs_a_9d1f30'), 
+    '1')
 
 'Select a speaker from the dropdown'
 CustomKeywords.'TestObjectHelper.selectMultipleValuesInDropDownByClick'('digital_programs_add_drawer--speaker', 'Rick Warren')
+
 CustomKeywords.'TestObjectHelper.selectMultipleValuesInDropDownByClick'('digital_programs_add_drawer--speaker', 'Buddy Owens')
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/div_Video URL'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/input_Video URL_digital_programs_add_drawer_5defa5'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/input_Video URL_digital_programs_add_drawer_5defa5'), 
+    'https://www.youtube.com/watch?v=E-LUBqRStkA')
 
 'Click on Save button to save the New Digital Program'
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Save New Digital Program Button'))
