@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC covers only Past DPs, for Product Backlog Item 107952: [Digital Program > Attendee-Facing] - Ability to open a digital program from a &quot;Past&quot; or &quot;Current&quot; service</description>
+   <name>Past Digital Program</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a0f5ba01-b67f-4008-8df9-c856bc9932c7</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>d7f22069-dc97-4133-867c-d18b98f1d153</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>d7f22069-dc97-4133-867c-d18b98f1d153</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>ddf9cc41-016a-48c4-b33b-36e107dec625</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>ddf9cc41-016a-48c4-b33b-36e107dec625</id>
+      <masked>false</masked>
+      <name>ShouldLogin</name>
+   </variable>
+</TestCaseEntity>
