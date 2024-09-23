@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Send</name>
+   <name>Send Button</name>
    <tag></tag>
    <elementGuidId>d7b907a2-e141-40ee-a624-47d8d6e16246</elementGuidId>
    <selectorCollection>

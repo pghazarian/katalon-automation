@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Edit</name>
+   <name>Edit Button</name>
    <tag></tag>
    <elementGuidId>d600b847-e033-4d89-beae-71d1222deb85</elementGuidId>
    <selectorCollection>

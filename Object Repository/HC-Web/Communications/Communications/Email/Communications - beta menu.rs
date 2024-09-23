@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>p_Communications(beta)</name>
+   <name>Communications - beta menu</name>
    <tag></tag>
    <elementGuidId>989d2ac2-c1c6-46aa-908e-1f73f82628ed</elementGuidId>
    <selectorCollection>

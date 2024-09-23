@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Communications</name>
+   <name>Communications sub menu</name>
    <tag></tag>
    <elementGuidId>ebd18873-5a83-406a-b50c-43a42fbe9286</elementGuidId>
    <selectorCollection>

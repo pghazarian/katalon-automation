@@ -17,29 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/communication'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://HC-Dev.Saddleback.com')
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Communications - beta menu'))
 
-WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/input_Email Address_Username'), 
-    'Pareng@saddleback.com')
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Communications sub menu'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/input_Password_Password'), 
-    'bGzvpoZCcaztWWDnaA3/tA==')
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Testing'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/button_Sign In'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Edit Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/p_Communications(beta)'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Cancel Button'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/div_Communications'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/h4_Triston Test Template 2'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/span_Edit'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/span_Cancel'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/span_Send'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Send Button'))
 
 WebUI.closeBrowser()
 

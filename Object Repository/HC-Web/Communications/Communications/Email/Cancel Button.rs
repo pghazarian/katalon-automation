@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Cancel</name>
+   <name>Cancel Button</name>
    <tag></tag>
    <elementGuidId>039f0d88-7666-4ef1-ae68-2f3bd6c135d3</elementGuidId>
    <selectorCollection>
