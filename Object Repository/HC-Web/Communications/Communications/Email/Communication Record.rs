@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Testing</name>
+   <name>Communication Record</name>
    <tag></tag>
    <elementGuidId>836cb790-d587-4c1f-8cf5-e00fd4073d60</elementGuidId>
    <selectorCollection>

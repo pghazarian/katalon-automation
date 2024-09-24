@@ -21,11 +21,7 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
         , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/communication'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Communications - beta menu'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Communications sub menu'))
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Testing'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Communication Record'))
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Edit Button'))
 

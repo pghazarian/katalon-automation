@@ -3,7 +3,7 @@
    <description>TC Covers the testing of PBI 111624: Communication Unlayer Edit Workflow&#xd;
 &#xd;
 This is just a Script TC which will need to be automated, once the feature is ready to be tested</description>
-   <name>Edit Email Template</name>
+   <name>Edit Email Primary Details</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
