@@ -17,22 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/*
- * Prerequisite:
- * User must have a "Communication" created, with an email templete attached to it, on HC admin for environment testing on
- * 
- * 1. From your PC's browser go to HC admin for environment testing on
- * 2. Login with your admin user credentials 
- * 3. From the left navigation pane, click on the Communications > Communications sub menu
- * 4. Find the "Communication" created in Prerequisite (above) & Open to view the Details
- * 5. From under the "Communication Layout" section, click on the Edit button below the Email Template name 
- * 6. Verify the user can perform the following functions:
- * 7. User can click the edit button
- * 8. Unlayer screen opens with the content from the record
- * 9. User can make changes
- * 10. User clicks save, and changes save and overlay closes 
- * 11. After clsoing, user is not in an edit state in the email communication record
-*/
+'Login'
+WebUI.callTestCase(findTestCase('HC-Web/Shared/Login'), [('HostUrl') : GlobalVariable.HC_HostUrl, ('UserName') : GlobalVariable.Admin_UserName
+        , ('Password') : GlobalVariable.Admin_Password, ('TargetPath') : '/communications-central/communication'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Email/Communication Record'))
 
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Edit Primary Details/Edit Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Edit Primary Details/Communication Name'))
+
+WebUI.setText(findTestObject('HC-Web/Communications/Communications/Edit Primary Details/Communication Name'), 'Testing 1')
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Communications/Communications/Edit Primary Details/Description'), 
+    'Testing 1 Description ')
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Edit Primary Details/Inactive'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Edit Primary Details/Save'))
+
+WebUI.closeBrowser()
 

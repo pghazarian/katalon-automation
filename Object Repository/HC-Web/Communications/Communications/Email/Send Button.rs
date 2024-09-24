@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Send Button</name>
+   <tag></tag>
+   <elementGuidId>d7b907a2-e141-40ee-a624-47d8d6e16246</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.button-inner-container.jss246 > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='communication_template--send_email_button']/span/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;send Send&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c80c4b70-83d4-4a2c-9b3c-4df4d02b784c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Send</value>
+      <webElementGuid>ea0e5cfe-780a-4198-b7e3-18f3485fde4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;communication_template--send_email_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
+      <webElementGuid>df0e836e-4fd6-4368-9a9d-bc9ecb66517b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='communication_template--send_email_button']/span/span</value>
+      <webElementGuid>2b9388d6-d2aa-4ae3-958d-89f988555f02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Test Email'])[1]/following::span[2]</value>
+      <webElementGuid>dcb1731b-d55c-4f39-9ffc-ad5cb539b1ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Template'])[1]/following::span[4]</value>
+      <webElementGuid>1b9d7bc1-5673-4aa8-8e95-cad792a426a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hello, world!'])[1]/preceding::span[1]</value>
+      <webElementGuid>60285573-1bdd-4630-b360-45d7d7d2722f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hello, world!'])[2]/preceding::span[1]</value>
+      <webElementGuid>631dfbc3-5246-48e1-98da-748682fcc2b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Send']/parent::*</value>
+      <webElementGuid>1790f47d-02e5-43ad-b69e-befccfdf5a23</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/span/span</value>
+      <webElementGuid>c9427d6f-c8c2-4003-a8e6-77f1464b60ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Send' or . = 'Send')]</value>
+      <webElementGuid>d6eab7f5-3b51-4f59-9f4e-3fba7c3842b8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

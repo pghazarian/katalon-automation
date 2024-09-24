@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Communications - beta menu</name>
+   <tag></tag>
+   <elementGuidId>989d2ac2-c1c6-46aa-908e-1f73f82628ed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Communications(beta)&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>dbf4a06c-977a-4958-bd95-e262f146eecd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root section-label MuiTypography-body1</value>
+      <webElementGuid>843843f8-7648-4246-97fc-824ef57e4504</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Communications(beta)</value>
+      <webElementGuid>a98cbb7a-b606-4068-b2d0-75b187e2bb09</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item&quot;]/div[@class=&quot;section-label-container&quot;]/p[@class=&quot;MuiTypography-root section-label MuiTypography-body1&quot;]</value>
+      <webElementGuid>c062f839-2679-4e47-9034-63e91a4b2e86</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div/p</value>
+      <webElementGuid>0424b7ac-2554-4f36-93c4-1cfbd111bb44</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Event Catalogs'])[1]/following::p[1]</value>
+      <webElementGuid>fb67f007-6c0e-4fc8-aecd-c71687d0361c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Settings &amp; Preferences'])[2]/following::p[1]</value>
+      <webElementGuid>5f604d74-6902-407f-9358-4dac41d2891c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Segments'])[1]/preceding::p[1]</value>
+      <webElementGuid>2fb2e29e-4f14-449f-9e7d-37cfbbb5212a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Communications']/parent::*</value>
+      <webElementGuid>48efa255-e79d-49e2-a78a-c41162b7c21a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[5]/div/p</value>
+      <webElementGuid>cdb606c3-39a1-4672-be3e-8359fe79c3fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Communications(beta)' or . = 'Communications(beta)')]</value>
+      <webElementGuid>71882879-5a74-492d-9df3-b4981046a989</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
