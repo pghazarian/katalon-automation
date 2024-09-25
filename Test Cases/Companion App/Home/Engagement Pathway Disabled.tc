@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Script TC covers testing PBI 113467: [Engagement Pathway] - Ability to see disabled Engagement Pathway Icons</description>
+   <name>Engagement Pathway Disabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>64a03ff7-6ba9-4973-b4ef-5700d69e3ef5</testCaseGuid>
+</TestCaseEntity>
