@@ -18,20 +18,12 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /*
- * Prerequisites: Create a new Digital Program with notes & a Service in HC Admin & publish it 
- *
- * TC:
- * 1- Open CA app & stay logged out 
- * 2- Tap open the published Digital Program
- * 3- Tap on the Notes CTA button & verify the following: 
- * 4- A Guest user can use all the same functionality as logged in user such as: 
- * 5- Taking Notes
- * 6- Filling in the Blanks for the notes outline (autofill)
- * 7- Using all formating options such as: bolding, italicizing, underlining, & highlighting the text 
- * 8- Verify that a Guest user has the ability to try the feature before saving their notes
- * 9- Verify that the Guest user's notes in the same logged out session are retained until the user logs in to save their notes 
- * 11- Verify that after logging in, the user's notes will be retained from their Guest experience 
- * 12- Verify that user will land on the Messages & Notes Page they were interacting with after logging in (where they started)
- * 13- Repeat the TC from CA home page > Messages section for a past & current Service 
- * 14- Repeat the TC from the Resources > Latest Messages section for a past & current Service 
+ * 1- Open CA app & stay Logged out or Log in 
+ * 2- Tap on the Gift icon (from the top right corener of the CA homepage)
+ * 3- User should link out to Giving page on SB.com
+ * 4- Verify If logged Out user links out: Verify that they are NOT singly signed on with their CA credentials on SB.com 
+ * 5- Verify If logged In user links out: Verify that they are singly signed on with their CA credentials on SB.com 
+ * 6- Tap on the Give Now button
+ * 7- User Should navigate to the Tithe.ly page to give 
+ * 8- Repeat the TC from everywhere there is a Gift/Giving icon in CA
 */
