@@ -6,4 +6,26 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>35213ba1-edf9-4edc-9e0e-45d72a7cc1fb</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>a11a84b4-7175-4261-af1b-e3e3f1ea7928</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>a11a84b4-7175-4261-af1b-e3e3f1ea7928</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>f940e4f9-e272-4850-bffe-8e9a27029f74</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>f940e4f9-e272-4850-bffe-8e9a27029f74</id>
+      <masked>false</masked>
+      <name>ShouldLogin</name>
+   </variable>
 </TestCaseEntity>
