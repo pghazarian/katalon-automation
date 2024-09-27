@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Script TC covers the testing of PBI 113542: [CA][Guest Experience] - Notes</description>
+   <name>Guest Experience - Notes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>86f1a4cd-c525-4af3-81ab-9a1768abdf5a</testCaseGuid>
+</TestCaseEntity>
