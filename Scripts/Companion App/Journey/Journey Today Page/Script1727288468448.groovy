@@ -17,10 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/*
- * 1- Open CA app & stay logged out
- * 2- Tap on the Journey icon in the bottom navigation menu 
- * 3- Guest user should navigate to Journey Today page
- * 4- Tap on any Journey 
- * 5- A log in prompt should be displayed 
-*/
+'Open existing app by the app bundle id'
+WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Journey/Journey Icon'), 0)
+
