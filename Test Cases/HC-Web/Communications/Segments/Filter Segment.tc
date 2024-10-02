@@ -4,6 +4,7 @@
    <name>Filter Segment</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ccd05e6a-0c4c-4687-9469-16dbc195ef54</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

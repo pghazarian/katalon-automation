@@ -41,7 +41,7 @@ WebUI.click(findTestObject('HC-Web/Communications/Segments/Overview/Demographic 
 
 'Select the text'
 WebUI.sendKeys(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Add Demographic Info/Minimum Age Input Field'), 
-    Keys.chord(Keys.CONTROL, 'a'))
+    CustomKeywords.'StringHelper.selectAllText'())
 
 'Clear the text'
 WebUI.sendKeys(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Add Demographic Info/Minimum Age Input Field'), 
@@ -53,7 +53,7 @@ WebUI.setText(findTestObject('HC-Web/Communications/Segments/Overview/Demographi
 
 'Select the text'
 WebUI.sendKeys(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Add Demographic Info/Maximum Age Input Field'), 
-    Keys.chord(Keys.CONTROL, 'a'))
+    CustomKeywords.'StringHelper.selectAllText'())
 
 'Clear the text'
 WebUI.sendKeys(findTestObject('HC-Web/Communications/Segments/Overview/Demographic Info/Add Demographic Info/Maximum Age Input Field'), 

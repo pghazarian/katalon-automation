@@ -4,6 +4,7 @@
    <name>Edit Connection Form Details</name>
    <tag>Stage</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>94349ff8-c37c-4ece-9fa9-43dbfe6be503</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

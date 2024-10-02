@@ -58,7 +58,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Event/Event Creation/First 
 WebUI.click(findTestObject('HC-Web/Event/Event Creation/Location Label'))
 
 'Set start date to the next day'
-WebUI.setText(findTestObject('HC-Web/Event/Event Creation/Start Date Text Field'), Keys.chord(Keys.CONTROL + 'a') + startDate)
+WebUI.setText(findTestObject('HC-Web/Event/Event Creation/Start Date Text Field'), CustomKeywords.'StringHelper.selectAllText'() + startDate)
 
 WebUI.click(findTestObject('HC-Web/Event/Event Creation/Create Button'))
 

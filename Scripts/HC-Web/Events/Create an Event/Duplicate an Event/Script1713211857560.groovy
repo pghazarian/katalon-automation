@@ -29,8 +29,12 @@ WebUI.click(findTestObject('HC-Web/Event/Overview/Actions Dropdown'))
 'Select duplicate option from actions dropdown'
 WebUI.click(findTestObject('HC-Web/Event/Overview/Duplicate Option'))
 
+WebUI.delay(2)
+
+
+
 'Update start time to a future date'
-WebUI.setText(findTestObject('HC-Web/Event/Event Creation/Start Date Text Field'), Keys.chord(Keys.CONTROL + 'a') + date)
+WebUI.setText(findTestObject('HC-Web/Event/Event Creation/Start Date Text Field'), CustomKeywords.'StringHelper.selectAllText'() + date)
 
 'Click button to create event'
 WebUI.click(findTestObject('HC-Web/Event/Event Creation/Create Button'))
