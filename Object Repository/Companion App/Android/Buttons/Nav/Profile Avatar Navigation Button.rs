@@ -3,36 +3,12 @@
    <description></description>
    <name>Profile Avatar Navigation Button</name>
    <tag></tag>
-   <elementGuidId>8a5b60fb-485a-4e83-b1ff-7c9335c73d3d</elementGuidId>
+   <elementGuidId>93a1366a-27a4-48a7-83d2-3ccb4864fa7e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--nav_avatar</locator>
+   <locator>//android.widget.Button[@content-desc=&quot;click--nav_avatar&quot;]</locator>
    <locatorCollection>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
       <entry>
          <key>CLASS_NAME</key>
          <value></value>
@@ -42,10 +18,22 @@
          <value>ui-icon--buttom-nav-Profile</value>
       </entry>
       <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -53,10 +41,22 @@
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>NAME</key>
          <value></value>
       </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

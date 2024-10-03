@@ -92,17 +92,18 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		'Tap on the profile avatar in the navigation'
 		Button.tap('Nav/Profile No Avatar Navigation Button')
 	}
-	
-	//Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
-	
-	'tap on the settings gear icon button'
-	//Button.tap('Profile/Settings Gear')
 		
-	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Logout"), 7)
-	//Mobile.delay(7)
+	'tap on the settings gear icon button'
+	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
+	Button.tap('Profile/Settings Gear')
 	
+	'tap on the settings Account & Notifications tile button'
+	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications"), 5)
+	Button.tap('Profile/Settings/Account Notifications')
+		
 	'tap on the logout button'
-	Button.tap('Profile/Settings/Logout')
+	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications Page/Logout"), 7)
+	Button.tap('Profile/Settings/Account Notifications Page/Logout')
 }
 
 'Click Continue as Guest Button'
