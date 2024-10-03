@@ -85,7 +85,7 @@ import org.openqa.selenium.Keys as Keys
  * 19. Event Venue
  * 20. Event Campus
  * 21. Verify once the child is checked out, event should no longer appear on the main "Check-In" screen
-s */
+ */
 /*
 *  This script navigates through the Companion App to check out a child from an event.
 *

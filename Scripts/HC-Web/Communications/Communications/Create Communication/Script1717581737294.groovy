@@ -46,7 +46,7 @@ CustomKeywords.'TestObjectHelper.setDropDownValueByXPath'('//div[@data-testid=\'
 WebUI.click(findTestObject('Object Repository/HC-Web/Communications/Communications/Create New Communication/Save Button'))
 
 'Verify communication record added toast is displayed'
-WebUI.verifyElementVisible(findTestObject('HC-Web/Communications/Communications/Overview/Communication Record Toast'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Record Toast'), '')
 
 'Verify the text in the toast message'
 WebUI.verifyElementText(findTestObject('HC-Web/Communications/Communications/Overview/Communication Record Added Toast Header'), 

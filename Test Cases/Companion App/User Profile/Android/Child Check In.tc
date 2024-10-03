@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>Child Check In</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>8a05d035-600c-4aa2-9563-80a992c683ce</testCaseGuid>
+   <testCaseGuid>87deddf0-f23d-45f9-ac61-710a92d3a431</testCaseGuid>
 </TestCaseEntity>

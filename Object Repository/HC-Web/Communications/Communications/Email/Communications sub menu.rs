@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Communications sub menu</name>
+   <tag></tag>
+   <elementGuidId>ebd18873-5a83-406a-b50c-43a42fbe9286</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div[2]/div/div/ul/li/ul/li[3]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Communications&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>2e31b1d2-59c6-411f-82a3-2dbe73d72676</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root navigation-sub-section-item-label MuiTypography-body2</value>
+      <webElementGuid>f2819f59-3ed6-4719-9db5-2b65238a7fb5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Communications</value>
+      <webElementGuid>22bbba2d-81fc-4198-94ff-45bb7e43a22f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;coreApp&quot;)/div[@class=&quot;coreApp-inner jss1&quot;]/nav[@class=&quot;navigation navigation-v3 navigation-md navigation-open&quot;]/div[@class=&quot;navigation-container&quot;]/div[@class=&quot;navigation-scrollbar&quot;]/div[@class=&quot;navigation-scrollbar-inner&quot;]/span[1]/ul[@class=&quot;navigation-main-items jss275&quot;]/li[@class=&quot;navigation-main-item is-active&quot;]/div[@class=&quot;MuiCollapse-root navigation-level-one-collapse-communications-central MuiCollapse-entered&quot;]/div[@class=&quot;MuiCollapse-wrapper&quot;]/div[@class=&quot;MuiCollapse-wrapperInner&quot;]/ul[@class=&quot;navigation-sub-items communications-central&quot;]/li[@class=&quot;navigation-sub-item&quot;]/ul[@class=&quot;navigation-sub-section-items&quot;]/li[@class=&quot;navigation-sub-section-item&quot;]/div[@class=&quot;MuiTypography-root navigation-sub-section-item-label MuiTypography-body2&quot;]</value>
+      <webElementGuid>544901c6-73eb-420c-8070-2ec8014d7032</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='coreApp']/div/nav/div[3]/div/div/span/ul/li[5]/div[2]/div/div/ul/li/ul/li[3]/div</value>
+      <webElementGuid>9d3dcce2-b091-4bba-a4f3-ec7e8f9bcc26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(beta)'])[2]/following::div[1]</value>
+      <webElementGuid>a69fc49d-f44d-4b9f-8969-7c710e08c484</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Push Notifications'])[1]/preceding::div[1]</value>
+      <webElementGuid>5247ee2c-6fd9-4fb7-aa29-30f6e09ea2f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Service Companion'])[1]/preceding::div[4]</value>
+      <webElementGuid>415481a5-f764-4168-af5f-b8d622c0c229</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[5]/div[2]/div/div/ul/li/ul/li[3]/div</value>
+      <webElementGuid>b6d5ff30-e92d-4651-bd80-6e2cba7cbfc7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Communications' or . = 'Communications')]</value>
+      <webElementGuid>92d80da6-409e-44e4-9556-50c47cdf1439</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Script TC will cover the testing of PBI 112601: Ability to link out to my giving</description>
+   <name>My Giving</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>daadbefe-451d-40ae-89b5-74849b3830d7</testCaseGuid>
+</TestCaseEntity>

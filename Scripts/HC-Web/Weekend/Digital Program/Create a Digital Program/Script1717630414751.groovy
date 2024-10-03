@@ -16,6 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+
+def projectDirectory = RunConfiguration.getProjectDir()
 
 'Set Local Date and Time to the variable'
 def randText = new Date().format('MM-dd-yyyy hh-mm-ss')
@@ -52,9 +55,40 @@ WebUI.waitForElementPresent(findTestObject('HC-Web/Mobile Engagement/Digital Pro
 WebUI.verifyElementText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Program Details sub Header Text'), 
     'Program Details')
 
+'Upload the file'
+WebUI.uploadFile(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Upload For All Button'), 
+    projectDirectory + GlobalVariable.Stock_Image_Path)
+
+'Once the Image Uploader Modal is opened, click the Next Button to accept the image for each size (Desktop, Mobile, Thumbnail)'
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Image Upload Modal/Next Button'))
+
 'Set the Title field with Digital Program Title variable value'
 WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Digital Program Title Input'), 
     randText)
+
+'Select a series from the dropdown'
+CustomKeywords.'TestObjectHelper.setDropDownValueWithClick'('digital_programs_add_drawer--series', 'Sreeni Series')
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/label_Series Part Number'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/input_Series Part Number_digital_programs_a_9d1f30'), 
+    '1')
+
+'Select a speaker from the dropdown'
+CustomKeywords.'TestObjectHelper.selectMultipleValuesInDropDownByClick'('digital_programs_add_drawer--speaker', 'Rick Warren')
+
+CustomKeywords.'TestObjectHelper.selectMultipleValuesInDropDownByClick'('digital_programs_add_drawer--speaker', 'Buddy Owens')
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/div_Video URL'))
+
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/input_Video URL_digital_programs_add_drawer_5defa5'))
+
+WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/input_Video URL_digital_programs_add_drawer_5defa5'), 
+    'https://www.youtube.com/watch?v=E-LUBqRStkA')
 
 'Click on Save button to save the New Digital Program'
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Create Digital Program/Save New Digital Program Button'))

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Create Communication Button</name>
+   <name>Send Button</name>
    <tag></tag>
-   <elementGuidId>083d04f6-9368-4cbb-bf3a-ff848cdb01f2</elementGuidId>
+   <elementGuidId>d7b907a2-e141-40ee-a624-47d8d6e16246</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,14 +11,14 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[(text() = 'Create Communication' or . = 'Create Communication')]</value>
+         <value>//button[@id='communication_template--send_email_button']/span/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;plus Create Communication&quot;i]</value>
+         <value>internal:role=button[name=&quot;send Send&quot;s]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,86 +29,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>9cd444bb-f3cb-4aa2-a173-4460600e167c</webElementGuid>
+      <webElementGuid>c80c4b70-83d4-4a2c-9b3c-4df4d02b784c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Create Communication</value>
-      <webElementGuid>c8f6e18a-19e5-4c5a-a14f-46b0b6054445</webElementGuid>
+      <value>Send</value>
+      <webElementGuid>ea0e5cfe-780a-4198-b7e3-18f3485fde4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;communication--create_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
-      <webElementGuid>733b92a9-4782-4cad-86ef-2b4acfe1388d</webElementGuid>
+      <value>id(&quot;communication_template--send_email_button&quot;)/span[@class=&quot;button-inner-container jss246&quot;]/span[1]</value>
+      <webElementGuid>df0e836e-4fd6-4368-9a9d-bc9ecb66517b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='communication--create_button']/span/span</value>
-      <webElementGuid>3529009c-fb97-4036-87b1-66860d8aa07e</webElementGuid>
+      <value>//button[@id='communication_template--send_email_button']/span/span</value>
+      <webElementGuid>2b9388d6-d2aa-4ae3-958d-89f988555f02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log Out'])[1]/following::span[5]</value>
-      <webElementGuid>953be189-e571-47ce-858c-1ba71fcf7bd4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Test Email'])[1]/following::span[2]</value>
+      <webElementGuid>dcb1731b-d55c-4f39-9ffc-ad5cb539b1ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::span[5]</value>
-      <webElementGuid>c30983ba-202a-4ccc-9535-f8a853621682</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Template'])[1]/following::span[4]</value>
+      <webElementGuid>1b9d7bc1-5673-4aa8-8e95-cad792a426a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Target Campus'])[1]/preceding::span[1]</value>
-      <webElementGuid>09eab34e-06fd-480f-9478-a92495c376af</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hello, world!'])[1]/preceding::span[1]</value>
+      <webElementGuid>60285573-1bdd-4630-b360-45d7d7d2722f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ABCD'])[1]/preceding::span[1]</value>
-      <webElementGuid>0afebebb-3219-4624-bbbe-734a29ef79bc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hello, world!'])[2]/preceding::span[1]</value>
+      <webElementGuid>631dfbc3-5246-48e1-98da-748682fcc2b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Create Communication']/parent::*</value>
-      <webElementGuid>103e6ab7-032a-4de6-b076-52e80fd05809</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Send']/parent::*</value>
+      <webElementGuid>1790f47d-02e5-43ad-b69e-befccfdf5a23</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/button/span/span</value>
-      <webElementGuid>3bf84668-cdc0-4626-9113-dddae0bf3865</webElementGuid>
+      <value>//button[2]/span/span</value>
+      <webElementGuid>c9427d6f-c8c2-4003-a8e6-77f1464b60ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Create Communication' or . = 'Create Communication')]</value>
-      <webElementGuid>a9ec81b6-aec5-41d0-874f-41bee17ea4b2</webElementGuid>
+      <value>//span[(text() = 'Send' or . = 'Send')]</value>
+      <webElementGuid>d6eab7f5-3b51-4f59-9f4e-3fba7c3842b8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

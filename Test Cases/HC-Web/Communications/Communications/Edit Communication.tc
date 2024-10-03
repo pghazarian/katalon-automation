@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit Communication</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d8f0f77b-9839-4245-9f27-b96ac6703b56</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>45229179-95bb-48c0-ac80-61da510f130c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1c9fb963-e4ff-4648-b756-5063726fe063</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>267879af-e38e-42f6-9698-7f20ec2af36d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ba79b646-242c-406d-80ad-88241d4d548d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9ccc5d1c-a74f-4c3f-bc10-5fe38978a6a4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'ST Communication'</defaultValue>
+      <description></description>
+      <id>45229179-95bb-48c0-ac80-61da510f130c</id>
+      <masked>false</masked>
+      <name>SearchTerm</name>
+   </variable>
+   <variable>
+      <defaultValue>'JamesTest@saddleback.com'</defaultValue>
+      <description></description>
+      <id>1c9fb963-e4ff-4648-b756-5063726fe063</id>
+      <masked>false</masked>
+      <name>FromEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>'ST Segment for Communications'</defaultValue>
+      <description></description>
+      <id>267879af-e38e-42f6-9698-7f20ec2af36d</id>
+      <masked>false</masked>
+      <name>Recipients</name>
+   </variable>
+   <variable>
+      <defaultValue>'JamesTest@saddleback.com'</defaultValue>
+      <description></description>
+      <id>ba79b646-242c-406d-80ad-88241d4d548d</id>
+      <masked>false</masked>
+      <name>ReplyToEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>'New Email!'</defaultValue>
+      <description></description>
+      <id>9ccc5d1c-a74f-4c3f-bc10-5fe38978a6a4</id>
+      <masked>false</masked>
+      <name>EmailSubject</name>
+   </variable>
+</TestCaseEntity>
