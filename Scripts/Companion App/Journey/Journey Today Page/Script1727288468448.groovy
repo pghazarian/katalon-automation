@@ -22,3 +22,10 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Guest Startup'), [:], Fail
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Journey/Journey Icon'), 0)
 
+/*
+ * 1- Open CA app & stay logged out
+ * 2- Tap on the Journey icon in the bottom navigation menu
+ * 3- Guest user should navigate to Journey Today page
+ * 4- Tap on any Journey
+ * 5- A log in prompt should be displayed
+*/
