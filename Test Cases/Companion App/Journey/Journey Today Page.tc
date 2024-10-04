@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC covers the testing of PBI 111639: [Guest Experience] - Journey Today Page</description>
    <name>Journey Today Page</name>
    <tag></tag>
    <comment></comment>
