@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Gift Icon</name>
+   <name>My QR code</name>
    <tag></tag>
-   <elementGuidId>68cd16da-49fb-4f27-a6dd-99c482871134</elementGuidId>
+   <elementGuidId>2e6fcf2c-6365-467b-a996-3c4ee84bd6c3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]</locator>
+   <locator>button--header_qr_code</locator>
    <locatorCollection>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
       <entry>
          <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>ACCESSIBILITY</key>
-         <value>button--header_giving</value>
+         <value>button--header_qr_code</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -46,17 +54,9 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]</value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

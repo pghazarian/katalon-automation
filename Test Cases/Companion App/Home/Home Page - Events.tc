@@ -7,7 +7,7 @@ PBI 110960: [News and Events][Back Office] Ability to add an Image Thumbnail to 
 PBI 110961: [News and Events][Back Office] Ability to set Event Category Priority Order&#xd;
 PBI 111048: [News and Events][CA] Ability to view Event Categories in Priority Order&#xd;
 PBI 111151: [News and Events] Tap See All takes Companion App User to Events Landing Page</description>
-   <name>Events</name>
+   <name>Home Page - Events</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
