@@ -33,15 +33,12 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		Button.tap('Nav/Profile Avatar Navigation Button')
 		
 		'Tap on the settings gear button'
-		//Mobile.waitForElementPresent(Finder.findButton('Profile/Settings Gear'), timeout)
 		Button.tap('Profile/Settings Gear')
 		
 		'Tap on the Account & Notifications button'
-		///Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Account Notifications'), timeout)
 		Button.tap('Profile/Settings/Account Notifications')
 		
 		'Tap on the Logout button'
-		//Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Account Notifications'), timeout)
 		Button.tap('Profile/Settings/Account Notifications Page/Logout')
 	}
 	else {
