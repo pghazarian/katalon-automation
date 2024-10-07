@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CA Smoke Test Script</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>237bb0c0-f3bb-41d0-9bc9-ac1c6ae1090d</testCaseGuid>
+</TestCaseEntity>

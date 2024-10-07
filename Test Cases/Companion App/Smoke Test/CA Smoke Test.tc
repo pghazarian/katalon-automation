@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CA Smoke Test</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2996b0ea-f7ee-48fd-b829-e94e8b5f6207</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>ef9e0f17-b237-45d3-9ab4-f994faa0a7cd</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>ef9e0f17-b237-45d3-9ab4-f994faa0a7cd</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>fb7d4d81-4d49-4c10-a84e-51dfd9584c9a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>fb7d4d81-4d49-4c10-a84e-51dfd9584c9a</id>
+      <masked>false</masked>
+      <name>ShouldLogin</name>
+   </variable>
+</TestCaseEntity>

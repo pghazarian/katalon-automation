@@ -31,28 +31,33 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 	if (Mobile.verifyElementVisible(Finder.findButton('Nav/Profile Avatar Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
 		'Tap on the profile avatar in the navigation'
 		Button.tap('Nav/Profile Avatar Navigation Button')
-		
-		'Tap on the settings gear button'
+				
+		'tap on the settings gear icon button'
+		Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
 		Button.tap('Profile/Settings Gear')
 		
-		'Tap on the Account & Notifications button'
+		'tap on the settings Account & Notifications tile button'
+		Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications"), 5)
 		Button.tap('Profile/Settings/Account Notifications')
-		
-		'Tap on the Logout button'
-		Button.tap('Profile/Settings/Account Notifications Page/Logout')
-	}
+			
+		'tap on the logout button'
+		Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications Page/Logout"), 7)
+		Button.tap('Profile/Settings/Account Notifications Page/Logout')	}
 	else {
 		// if the user is not logged in 
 		'Tap on the generic profile avatar in the navigation'
 		Button.tap('Nav/Profile No Avatar Navigation Button')
-				
-		'Tap on the settings gear button'
+		
+		'tap on the settings gear icon button'
+		Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
 		Button.tap('Profile/Settings Gear')
 		
-		'Tap on the Account & Notifications button'
+		'tap on the settings Account & Notifications tile button'
+		Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications"), 5)
 		Button.tap('Profile/Settings/Account Notifications')
-		
-		'Tap on the Logout button'
+			
+		'tap on the logout button'
+		Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications Page/Logout"), 7)
 		Button.tap('Profile/Settings/Account Notifications Page/Logout')
 	}
 }

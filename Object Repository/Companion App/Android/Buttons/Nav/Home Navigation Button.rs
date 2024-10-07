@@ -3,50 +3,26 @@
    <description></description>
    <name>Home Navigation Button</name>
    <tag></tag>
-   <elementGuidId>9ed16773-7f80-4f8b-b705-7e974558ca8c</elementGuidId>
+   <elementGuidId>387c0e68-00e9-4399-abf2-fb7ec7b8f49b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.Button[@content-desc=&quot;click--nav_home&quot;]</locator>
+   <locator>//android.widget.Button[@content-desc='click--nav_home']</locator>
    <locatorCollection>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
       <entry>
          <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>hcds-mobile-icon-icon--nav-Home</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>click--nav_home, Home</value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
@@ -54,6 +30,30 @@
       </entry>
       <entry>
          <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//android.widget.Button[@content-desc='click--nav_home']</value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
          <value></value>
       </entry>
    </locatorCollection>

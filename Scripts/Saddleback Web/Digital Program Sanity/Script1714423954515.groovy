@@ -88,6 +88,53 @@ for (campusLocation in locations) {
 			KeywordUtil.logInfo("processing button: ${buttonText}")
 			
 			switch (buttonText) {
+				case "activate":
+				case "activa":
+				
+					// For buttons that lead to a URL external from this page
+					if (buttonTarget != null && buttonTarget.startsWith('http'))
+					{
+						KeywordUtil.logInfo("processing button: ${buttonText} (${buttonTarget})")
+						
+						// click button
+						digitalButton.click()
+					
+						def url = WebUI.getUrl()
+						// inspect URL
+						
+						if (url.contains("/public/connection-form/")) {
+							
+							// verify that the fields are present (FirstName, LastName and Submit button)
+							WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
+							WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Last Name Text Field'))
+							WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Submit Button'))
+							
+							WebUI.scrollToElement(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'), 0)
+							
+							// click Cancel and get back to the Digital program
+							WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
+							
+						} else if (url.contains("saddleback.com/events/")) {
+							
+							//digitalButton.click()
+							WebUI.back()
+							
+						}
+						
+						else {
+							
+							//digitalButton.click()
+							WebUI.back()
+							
+						}
+					} else {
+						
+						// do nothing
+						KeywordUtil.logInfo("processing button: ${buttonText} which has no URL target")
+						
+					}
+					break;
+				
 				case "check-in":
 					// click on the check in button
 					digitalButton.click()
@@ -109,23 +156,35 @@ for (campusLocation in locations) {
 					break
 					
 				case "new here":
+					// san c, lw, eastvalue go to events
+					// rancho calendar event calendar
+				
 					// click on the button
 					digitalButton.click()
 					
-					// verify that the Campus is displayed on the form in the header
-					WebUI.waitForElementPresent(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form Header By Campus Match', [('textToMatch') : campusLocation]), 3, FailureHandling.CONTINUE_ON_FAILURE)
-					
 					def url = WebUI.getUrl()
-					WebUI.verifyEqual(url.contains("/public/connection-form"), true)
 					
-					// verify that the fields are present (FirstName, LastName and Submit button)
-					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
-					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Last Name Text Field'))
-					WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Submit Button'))
+					if (url.contains("saddleback.com/event")) {
+							
+						WebUI.back()
+							
+					}
+					else {
 					
-					// click Cancel and get back to the Digital program
-					WebUI.scrollToElement(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'), 0)
-					WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
+						// verify that the Campus is displayed on the form in the header
+						WebUI.waitForElementPresent(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form Header By Campus Match', [('textToMatch') : campusLocation]), 3, FailureHandling.CONTINUE_ON_FAILURE)
+						
+						WebUI.verifyEqual(url.contains("/public/connection-form"), true)
+						
+						// verify that the fields are present (FirstName, LastName and Submit button)
+						WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/First Name Text Field'))
+						WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Last Name Text Field'))
+						WebUI.verifyElementVisible(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Submit Button'))
+						
+						// click Cancel and get back to the Digital program
+						WebUI.scrollToElement(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'), 0)
+						WebUI.click(findTestObject('Object Repository/Saddleback Legacy/Digital Program/Check In Form/Cancel Button'))
+					}
 					break
 					
 				case "notes":
@@ -145,26 +204,49 @@ for (campusLocation in locations) {
 					break
 					
 				case "give":
+				case "relief fund":
 					
 					digitalButton.click()
 					
+					def tithelyPageUrl = "https://give.tithe.ly/"
+					def srGivingPageUrl = "https://srgive.online/"
 					def pageForGiving = WebUI.getUrl()
-					def givingPageUrl = "https://give.tithe.ly/"
 					
-					WebUI.verifyEqual(true, pageForGiving.startsWith(givingPageUrl))
+					if (campusLocation != "Santa Rosa") {
 					
-					WebUI.delay(5)
-					
-					WebUI.waitForElementPresent(findTestObject('Object Repository/Tithly/Saddleback Logo'), 5)
-					
-					WebUI.verifyTextPresent("Payment Information", false)
-					
-					WebUI.verifyTextPresent('Give $0.00', false)
-					
-					// this is a duplicate back operation since the page is behaving weirdly
-                    WebUI.back()
-					
-					WebUI.back()
+						KeywordUtil.logInfo("processing url: ${pageForGiving}")
+						
+						WebUI.verifyEqual(true, pageForGiving.startsWith(tithelyPageUrl))
+						
+						WebUI.delay(5)
+						
+						//WebUI.waitForElementPresent(findTestObject('Object Repository/Tithly/Saddleback Logo'), 5)
+						
+						WebUI.verifyTextPresent("Payment Information", false)
+						
+						WebUI.verifyTextPresent('Give $0.00', false)
+						
+						// this is a duplicate back operation since the page is behaving weirdly
+						
+						
+	                    def currentUrl = WebUI.getUrl()
+						
+						while (currentUrl.startsWith(tithelyPageUrl)) {
+							WebUI.delay(2)
+							
+							WebUI.back()
+							WebUI.back()
+							currentUrl = WebUI.getUrl()
+						}
+					}
+					else {
+						
+						KeywordUtil.logInfo("processing url: ${pageForGiving}")
+						
+						WebUI.verifyEqual(true, pageForGiving.startsWith(srGivingPageUrl))
+						
+						WebUI.back()
+					}
 					
 					break
 					

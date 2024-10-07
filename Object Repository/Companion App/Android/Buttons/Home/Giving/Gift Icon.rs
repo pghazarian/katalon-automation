@@ -3,29 +3,14 @@
    <description></description>
    <name>Gift Icon</name>
    <tag></tag>
-   <elementGuidId>e3ad8f3b-4c4b-49e5-a0f5-0397648521ec</elementGuidId>
+   <elementGuidId>68cd16da-49fb-4f27-a6dd-99c482871134</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--header_giving</locator>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
@@ -33,30 +18,45 @@
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
+         <key>ACCESSIBILITY</key>
+         <value>button--header_giving</value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]</value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

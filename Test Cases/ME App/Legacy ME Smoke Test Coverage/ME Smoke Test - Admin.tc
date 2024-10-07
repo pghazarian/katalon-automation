@@ -4,5 +4,6 @@
    <name>ME Smoke Test - Admin</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>4771bab8-cef3-47be-a0c0-458f4fb048ed</testCaseGuid>
 </TestCaseEntity>

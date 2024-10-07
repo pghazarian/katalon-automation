@@ -101,7 +101,12 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 	'Tap on the Account & Notifications button'
 	Button.tap('Profile/Settings/Account Notifications')
 	
+	'tap on the settings Account & Notifications tile button'
+	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications"), 5)
+	Button.tap('Profile/Settings/Account Notifications')
+		
 	'tap on the logout button'
+	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications Page/Logout"), 7)
 	Button.tap('Profile/Settings/Account Notifications Page/Logout')
 }
 
