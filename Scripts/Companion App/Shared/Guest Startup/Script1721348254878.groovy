@@ -92,10 +92,14 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		'Tap on the profile avatar in the navigation'
 		Button.tap('Nav/Profile No Avatar Navigation Button')
 	}
-		
-	'tap on the settings gear icon button'
+	
 	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
+		
+	'Tap on the settings gear button'
 	Button.tap('Profile/Settings Gear')
+	
+	'Tap on the Account & Notifications button'
+	Button.tap('Profile/Settings/Account Notifications')
 	
 	'tap on the settings Account & Notifications tile button'
 	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications"), 5)
@@ -109,8 +113,12 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 'Click Continue as Guest Button'
 Button.tap('Continue as Guest')
 
+Mobile.scrollToText('Lake Forest')
+
 'set the default campus to Anaheim'
-Mobile.tap(Finder.findLabel("Home/Campus Selector/Anaheim"), timeout)
+//Mobile.tap(Finder.findLabel("Home/Campus Selector/Anaheim"), timeout)
+Mobile.tap(Finder.findLabel("Home/Campus Selector/Lake Forest"), timeout)
+
 
 'tap on the Apply button'
 Button.tap("Home/Campus Selector/Apply", timeout)

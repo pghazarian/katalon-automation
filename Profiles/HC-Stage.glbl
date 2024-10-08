@@ -339,4 +339,44 @@
       <initValue>'Bryant Demo Serving Opp'</initValue>
       <name>SevingOppSearch_SearchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cris'</initValue>
+      <name>ServingSignUp_FirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Francisco'</initValue>
+      <name>ServingSignUp_LastName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'crisf@saddleback.com'</initValue>
+      <name>ServingSignUp_EmailAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QA Automation One Time Event'</initValue>
+      <name>EventSearch_OneTime_SearchTerm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cris'</initValue>
+      <name>EventSignUp_FirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Francisco'</initValue>
+      <name>EventSignUp_LastName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'crisf@saddleback.com'</initValue>
+      <name>EventSignUp_EmailAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QA Automation Ministry One Time SO'</initValue>
+      <name>ServingSearch_OneTime_SearchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
