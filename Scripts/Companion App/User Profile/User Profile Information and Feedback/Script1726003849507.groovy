@@ -71,6 +71,7 @@ Button.tap('Profile/Settings/Information and Feedback Page/Terms Of Service')
 Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Information and Feedback Page/Webview Page Return'), timeout)
 Button.tap('Profile/Settings/Information and Feedback Page/Webview Page Return')
 
+/*
 // Tap on Profile navigation button
 if (Mobile.verifyElementVisible(Finder.findButton('Nav/Profile Avatar Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
 	'Tap on the profile avatar in the navigation'
@@ -80,6 +81,7 @@ else { 	// if no avatar then different nav button
 	'Tap on the generic profile avatar in the navigation'
 	Button.tap('Nav/Profile No Avatar Navigation Button')
 }
+*/
 
 // Tap on the Privacy Policy tile button
 Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Information and Feedback Page/Privacy Policy'), timeout)
@@ -89,11 +91,21 @@ Button.tap('Profile/Settings/Information and Feedback Page/Privacy Policy')
 Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Information and Feedback Page/Webview Page Return'), timeout)
 Button.tap('Profile/Settings/Information and Feedback Page/Webview Page Return')
 
+// Tap on the Give Feedback tile button
+Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Information and Feedback Page/Give Feedback'), timeout)
+Button.tap('Profile/Settings/Information and Feedback Page/Give Feedback')
+
+// Tap on the return from webview button
+Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Information and Feedback Page/Webview Page Return'), timeout)
+Button.tap('Profile/Settings/Information and Feedback Page/Webview Page Return')
+
 'Navigate to Home'
-Button.tap('Nav/Home Navigation Button', timeout)
+Button.tap('Profile/Settings/Information and Feedback Page/Back', timeout)
 
 'Log out'
-Button.tap('Logout Button', timeout)
+//Button.tap('Logout Button', timeout)
+WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+
 
 if (deviceIsiOS) {
 	Mobile.closeApplication()

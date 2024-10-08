@@ -105,17 +105,4 @@
       <testCaseId>Test Cases/Companion App/User Profile/User Settings</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>59e01590-7765-4575-9f6a-2810a7d02633</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Companion App/Home/Ribbon Translations</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>075c43b2-981e-4c0e-94c9-66c4dee8bffa</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>

@@ -39,8 +39,15 @@ Mobile.verifyElementText(Finder.findLabel('Resources Heading'), "Resources")
 
 Mobile.delay(3)
 
-'Navigate to Profile'
-Button.tap('Nav/Profile No Avatar Navigation Button', timeout)
+'Tap on Profile navigation button'
+if (Mobile.verifyElementVisible(Finder.findButton('Nav/Profile Avatar Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
+	'Tap on the profile avatar in the navigation'
+	Button.tap('Nav/Profile Avatar Navigation Button')
+}
+else { 	// if no avatar then different nav button
+	'Tap on the generic profile avatar in the navigation'
+	Button.tap('Nav/Profile No Avatar Navigation Button')
+}
 
 Mobile.verifyElementExist(Finder.findButton('Profile/Translation'), timeout)   
 
@@ -57,7 +64,15 @@ Button.tap('Nav/Discover Navigation Button', timeout)
 Mobile.verifyElementText(Finder.findLabel('Discover Heading'), "Discover")
 
 'Navigate to Settings'
-Button.tap('Nav/Profile No Avatar Navigation Button', timeout)
+if (Mobile.verifyElementVisible(Finder.findButton('Nav/Profile Avatar Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
+	'Tap on the profile avatar in the navigation'
+	Button.tap('Nav/Profile Avatar Navigation Button')
+}
+else { 	// if no avatar then different nav button
+	'Tap on the generic profile avatar in the navigation'
+	Button.tap('Nav/Profile No Avatar Navigation Button')
+}
+
 Button.tap('Profile/Settings Gear', timeout)
 
 Mobile.verifyElementText(Finder.findLabel('Settings Heading'), "Settings", FailureHandling.CONTINUE_ON_FAILURE)
@@ -69,9 +84,22 @@ Mobile.verifyElementText(Finder.findLabel('Home Heading'), "SADDLEBACK CHURCH")
 
 // add test for that
 'Log out'
-Button.tap('Nav/Profile No Avatar Navigation Button', timeout)
-Button.tap('Profile/Settings Gear', timeout)
-Button.tap('Profile/Settings/Logout', timeout)
+if (Mobile.verifyElementVisible(Finder.findButton('Nav/Profile Avatar Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
+	'Tap on the profile avatar in the navigation'
+	Button.tap('Nav/Profile Avatar Navigation Button')
+}
+else { 	// if no avatar then different nav button
+	'Tap on the generic profile avatar in the navigation'
+	Button.tap('Nav/Profile No Avatar Navigation Button')
+}
+		
+'tap on the settings Account & Notifications tile button'
+Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications"), 5)
+Button.tap('Profile/Settings/Account Notifications')
+	
+'tap on the logout button'
+Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications Page/Logout"), 7)
+Button.tap('Profile/Settings/Account Notifications Page/Logout')
 
 Mobile.delay(3)
 

@@ -8,9 +8,9 @@
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>9.6.0</modifiedVersion>
+   <modifiedVersion>9.5.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/crisfrancisco/Documents/GitHub/katalon-automation/Saddleback Automation.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\markh\Documents\GitHub\katalon-automation\Saddleback Automation.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

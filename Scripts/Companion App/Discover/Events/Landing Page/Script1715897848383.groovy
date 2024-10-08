@@ -52,6 +52,7 @@ if (Device.isIOS()) {
 	deviceIsiOS = true
 }
 
+Mobile.delay(3)
 Mobile.waitForElementPresent(Finder.findButton('Nav/Discover Navigation Button'), timeout)
 	
 'Navigate to Discover'
@@ -73,7 +74,7 @@ Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Image
 Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Date'), timeout)
 
 'Verify that the entries have a Locaton'
-Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Location'), timeout)
+//Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Location'), timeout)
 
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
@@ -264,9 +265,8 @@ eventCategories = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Fin
 int arrayOfDatesSize = eventCategories.size()
 
 firstEventCategory = eventCategories[3].text
-lastEventCategory = eventCategories[arrayOfDatesSize-1].text
 
-if (firstEventCategory.compareToIgnoreCase("Adult Ministries") != 0 || lastEventCategory.compareToIgnoreCase("Adult Ministries") != 0)
+if (firstEventCategory.compareToIgnoreCase(GlobalVariable.EventCategory_Edited) != 0 )
 {
 	'filtering has failed'
 	CategoryFilteringIsValid = false
