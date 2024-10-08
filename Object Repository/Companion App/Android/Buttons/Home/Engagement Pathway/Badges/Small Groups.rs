@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Accepted Christ</name>
+   <name>Small Groups</name>
    <tag></tag>
-   <elementGuidId>d02f0f6d-617d-4758-b694-92e402e83d78</elementGuidId>
+   <elementGuidId>2838e41a-4f92-4d4e-9ba8-afab6b9eed97</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--pathway-house-0</locator>
+   <locator>button--pathway-house-3</locator>
    <locatorCollection>
-      <entry>
-         <key>IMAGE</key>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
-      </entry>
-      <entry>
-         <key>ID</key>
-      </entry>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
@@ -28,7 +16,26 @@
          <key>ANDROID_VIEWTAG</key>
       </entry>
       <entry>
+         <key>CLASS_NAME</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>ID</key>
+      </entry>
+      <entry>
          <key>ACCESSIBILITY</key>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
       </entry>
       <entry>
          <key>CUSTOM</key>
@@ -37,15 +44,7 @@
          <key>NAME</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.view.ViewGroup[@content-desc=&quot;button--pathway-house-0&quot;]</value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>IOS_CLASS_CHAIN</key>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>
