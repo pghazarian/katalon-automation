@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Give Tithe Button</name>
+   <name>Close Browser</name>
    <tag></tag>
-   <elementGuidId>e671b1b4-88a3-46ed-97db-09b5e74c8a6b</elementGuidId>
+   <elementGuidId>f4eac8e2-c322-4f3d-8554-b3346f6fac6f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Give Tithe</locator>
+   <locator>Close Saddleback Church: Add tab</locator>
    <locatorCollection>
       <entry>
          <key>CLASS_NAME</key>
@@ -18,8 +18,15 @@
          <value></value>
       </entry>
       <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//android.widget.Button[@resource-id=&quot;tithelyGiveTitheButton&quot;]</value>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>IMAGE</key>
@@ -30,26 +37,19 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Give Tithe</value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
          <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Close Saddleback Church: Add tab</value>
+      </entry>
+      <entry>
          <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
