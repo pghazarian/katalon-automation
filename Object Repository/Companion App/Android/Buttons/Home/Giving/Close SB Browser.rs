@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Close SB Browser</name>
+   <name>Close SB browser</name>
    <tag></tag>
-   <elementGuidId>b3e70113-e038-4cd4-ae70-2958a672b223</elementGuidId>
+   <elementGuidId>34c478cf-32d6-4798-9ec0-b23fedfffe94</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Close saddleback.com/Invalid-sign-in-attempt tab</locator>
+   <locator>Close Tithing is More Than Giving tab</locator>
    <locatorCollection>
       <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -26,10 +25,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>ACCESSIBILITY</key>
+         <value>Close Tithing is More Than Giving tab</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -37,15 +37,11 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Close saddleback.com/Invalid-sign-in-attempt tab</value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -53,7 +49,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
    </locatorCollection>

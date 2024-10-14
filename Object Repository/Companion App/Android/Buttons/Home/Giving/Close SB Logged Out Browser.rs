@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Back</name>
+   <name>Close SB Logged Out Browser</name>
    <tag></tag>
-   <elementGuidId>04d696d9-44d8-40f3-9de7-2db6e3672daa</elementGuidId>
+   <elementGuidId>ef1527a0-525c-4b51-a66f-f9e1bff0e114</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.view.ViewGroup[@content-desc=&quot;custom-header-webview-back&quot;]</locator>
+   <locator>Close saddleback.com/Invalid-sign-in-attempt tab</locator>
    <locatorCollection>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>custom-header-webview-back&#xd;
-</value>
-      </entry>
-      <entry>
-         <key>ID</key>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -35,29 +26,37 @@
          <value></value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
+         <key>CUSTOM</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//android.view.ViewGroup[@content-desc=&quot;custom-header-webview-back&quot;]</value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
+         <key>ACCESSIBILITY</key>
+         <value>Close saddleback.com/Invalid-sign-in-attempt tab</value>
+      </entry>
+      <entry>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
-         <key>NAME</key>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>
