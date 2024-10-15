@@ -109,6 +109,7 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 'Click Continue as Guest Button'
 Button.tap('Continue as Guest')
 
+Mobile.waitForElementPresent(Finder.findLabel("Home/Campus Selector/Anaheim"), 5)
 Mobile.scrollToText('Lake Forest')
 
 'set the default campus to Anaheim'

@@ -105,4 +105,17 @@
       <testCaseId>Test Cases/Companion App/User Profile/User Settings</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6ccef647-bb63-481f-9fea-bdffd1324732</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Companion App/Discover/Ministries/Landing Page</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d7bf2ced-db39-4db3-a6f6-1223a69d96aa</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

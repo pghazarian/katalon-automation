@@ -31,7 +31,7 @@ import io.appium.java_client.MobileElement as MobileElement
 import com.kms.katalon.core.testobject.TestObjectXpath
 import org.openqa.selenium.WebElement
 import io.appium.java_client.ios.IOSDriver
-
+import groovy.time.TimeCategory
 
 def timeout = 10
 def UniqueEventName = GlobalVariable.EventSearch_EventName
@@ -72,9 +72,6 @@ Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Image
 
 'Verify that the entries have a Date and Time'
 Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Date'), timeout)
-
-'Verify that the entries have a Locaton'
-//Mobile.verifyElementVisible(Finder.findLabel('Discover/Events/List Entry - Location'), timeout)
 
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
@@ -215,11 +212,10 @@ tmpTimeString = eventTimeStrings[listLength-1].text
 
 def (lastTimeValue1, lastTimeValue2) = tmpTimeString.tokenize('-')
 
-String firstEventDateTime = eventDateStrings[1].text + " " + firstTimeValue1    //eventTimeStrings[1].text
-String lastEventDateTime = eventDateStrings[listLength-1].text + " " + lastTimeValue1 //eventTimeStrings[listLength-1].text
+String firstEventDateTime = eventDateStrings[1].text + " " + firstTimeValue1.trim()    
+String lastEventDateTime = eventDateStrings[listLength-1].text + " " + lastTimeValue1.trim() 
 
 def firstEventDate = Date.parse("MMM d, yyyy h:mma", firstEventDateTime)
-
 def lastEventDate = Date.parse("MMM d, yyyy h:mma", lastEventDateTime)
 
 if (firstEventDate.after(lastEventDate))
@@ -563,7 +559,6 @@ TextField.typeText(Finder.findTextField('Discover/Events/Search'), UniqueEventNa
 
 Mobile.waitForElementPresent(Finder.findLabel('Discover/Events/List Entry - Name'), timeout)
 
-//Mobile.verifyElementText(Finder.findLabel('Discover/Events/List Entry - Name'), UniqueEventName)
 'Verify that sort order has been applied'
 SortOrderIsValid = true
 
