@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 import com.detroitlabs.katalonmobileutil.device.Device as Device
 import com.detroitlabs.katalonmobileutil.testobject.Button as Button
 
-def timeout = 10
+def timeout = 7
 
 if (ShouldLogin.toBoolean()) {
     'Open existing app by logging into the app bundle id'
@@ -45,13 +45,15 @@ if (ShouldLogin.toBoolean()) {
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Gift Icon'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Give Tithe Button'), 0)
-
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Minimize Browser'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close Browser'), 0)
+if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close SB Logged In Browser'), 0)
+} else {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close Tithe.ly page'), 0)
+}
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Decision'), 0)
 
@@ -97,22 +99,18 @@ Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Minimize Browser'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
 if (ShouldLogin.toBoolean()) {
-	Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close SB Logged In'), 0)
-}
-else { 
-	Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close SB Browser'), 0)
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close SB Browser'), 0)
+} else {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close SB Logged Out Browser'), 0)
 }
 
 'tap on the left most For You tile'
 Button.tap('Home/Home Page/First For You Item')
 
-Mobile.delay(5)
-
-'tap on the CTA button'
-Button.tap('Home/Home Page/For You Detail/CTA')
+Mobile.delay(7)
 
 'tap on the back button from For You details page'
 Button.tap('Home/Home Page/For You Detail/Back')
