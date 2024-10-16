@@ -3,30 +3,26 @@
    <description></description>
    <name>My QR code X button</name>
    <tag></tag>
-   <elementGuidId>84cfe7e3-ccee-4d2c-8cc3-e30375efefd3</elementGuidId>
+   <elementGuidId>c8321fd5-b475-4dba-be9e-f601367664fb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>bottom_sheet-header--close</locator>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;bottom_sheet-header--close&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//android.view.ViewGroup[@content-desc=&quot;bottom_sheet-header--close&quot;]</value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>bottom_sheet-header--close</value>
-      </entry>
-      <entry>
-         <key>NAME</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -34,29 +30,34 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>ACCESSIBILITY</key>
+         <value>bottom_sheet-header--close&#xd;
+</value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

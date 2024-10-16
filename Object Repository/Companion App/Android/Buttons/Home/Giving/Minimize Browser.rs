@@ -1,60 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Give Tithe Button</name>
+   <name>Minimize Browser</name>
    <tag></tag>
-   <elementGuidId>e671b1b4-88a3-46ed-97db-09b5e74c8a6b</elementGuidId>
+   <elementGuidId>cbac6670-a433-4377-acf9-93cd979c38ca</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Give Tithe</locator>
+   <locator>Switch or close tabs</locator>
    <locatorCollection>
       <entry>
          <key>CLASS_NAME</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
       </entry>
       <entry>
          <key>ID</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.widget.Button[@resource-id=&quot;tithelyGiveTitheButton&quot;]</value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>IMAGE</key>
-         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Give Tithe</value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
          <key>ANDROID_VIEWTAG</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Switch or close tabs</value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
       </entry>
       <entry>
          <key>IOS_PREDICATE_STRING</key>
-         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

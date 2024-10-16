@@ -3,18 +3,30 @@
    <description></description>
    <name>Gift Icon</name>
    <tag></tag>
-   <elementGuidId>68cd16da-49fb-4f27-a6dd-99c482871134</elementGuidId>
+   <elementGuidId>e1fdeee3-c34a-4a23-af57-4b5f78303a03</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]</locator>
+   <locator>button--header_giving</locator>
    <locatorCollection>
       <entry>
-         <key>CUSTOM</key>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
@@ -30,33 +42,21 @@
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]</value>
       </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

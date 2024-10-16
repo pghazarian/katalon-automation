@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Give Tithe Button</name>
+   <name>Close SB Logged Out Browser</name>
    <tag></tag>
-   <elementGuidId>e671b1b4-88a3-46ed-97db-09b5e74c8a6b</elementGuidId>
+   <elementGuidId>0de50941-fe9b-474d-8e9c-559010258a9a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>Give Tithe</locator>
+   <locator>Close Tithing is More Than Giving tab</locator>
    <locatorCollection>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Close Tithing is More Than Giving tab</value>
+      </entry>
       <entry>
          <key>CLASS_NAME</key>
          <value></value>
@@ -18,34 +25,15 @@
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.Button[@resource-id=&quot;tithelyGiveTitheButton&quot;]</value>
+         <key>NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Give Tithe</value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
@@ -53,7 +41,19 @@
          <value></value>
       </entry>
       <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
          <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
    </locatorCollection>
