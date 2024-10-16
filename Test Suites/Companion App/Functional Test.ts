@@ -106,16 +106,16 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>59e01590-7765-4575-9f6a-2810a7d02633</guid>
+      <guid>6ccef647-bb63-481f-9fea-bdffd1324732</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Companion App/Home/Ribbon Translations</testCaseId>
+      <testCaseId>Test Cases/Companion App/Discover/Ministries/Landing Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>075c43b2-981e-4c0e-94c9-66c4dee8bffa</variableId>
+         <variableId>d7bf2ced-db39-4db3-a6f6-1223a69d96aa</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

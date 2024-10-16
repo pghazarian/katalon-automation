@@ -584,7 +584,9 @@ Mobile.verifyEqual(SortOrderIsValid, true)
 Button.tap('Nav/Home Navigation Button', timeout)
 
 'Log out'
-WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+if (CurrentlyLoggedIn) {
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 if (deviceIsiOS) {
     Mobile.closeApplication()
