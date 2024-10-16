@@ -38,80 +38,84 @@ Boolean deviceIsiOS = Device.isIOS()
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
 if (ShouldLogin.toBoolean()) {
-    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/My QR code'), 0)
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/My QR code'), 0)
 
-    Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/My QR code X button'), 0)
+    Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/My QR code X button'), 0)
 }
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Gift Icon'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Gift Icon'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Minimize Browser'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Minimize Browser'), 0)
 
 Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
 if (ShouldLogin.toBoolean()) {
-    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close SB Logged In Browser'), 0)
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Logged In Browser'), 0)
 } else {
-    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close Tithe.ly page'), 0)
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close Tithe.ly page'), 0)
 }
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Decision'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Decision'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Decision - Learn More'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Decision - Learn More'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Back'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Back'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Baptism'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Baptism'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Baptism - Learn More'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Baptism - Learn More'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Back'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Back'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Worship'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Worship'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Find a Service'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Find a Service'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Back'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Back'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Small Groups'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Small Groups'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Find A Group'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Find A Group'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Back'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Back'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Activate'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Activate'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Register Today'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Register Today'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Back'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Back'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Serving'), 5)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Serving'), 5)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Sharing'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Sharing'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Submit Your One Life'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Submit Your One Life'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/X'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/X'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Badges/Giving'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Giving'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/Give Now'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Give Now'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Minimize Browser'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Minimize Browser'), 0)
 
 Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
 if (ShouldLogin.toBoolean()) {
-    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close SB Browser'), 0)
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Browser'), 0)
 } else {
-    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Giving/Close SB Logged Out Browser'), 0)
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Logged Out Browser'), 0)
 }
 
 'tap on the left most For You tile'
-Button.tap('Home/Home Page/First For You Item')
+not_run: Button.tap('Home Page/For You/First For You Item')
 
-Mobile.delay(7)
+not_run: Mobile.delay(7)
 
 'tap on the back button from For You details page'
-Button.tap('Home/Home Page/For You Detail/Back')
+not_run: Button.tap('Home Page/For You/For You Detail/Back')
+
+not_run: Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/First For You Item'), 0)
+
+not_run: Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/Back Button'), 0)
 

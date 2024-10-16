@@ -1,60 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Back</name>
+   <name>CTA</name>
    <tag></tag>
-   <elementGuidId>53664dc8-bdba-4738-9980-cc309c3eb613</elementGuidId>
+   <elementGuidId>d1400988-4070-4084-856f-dd7af14c8ae2</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--header_back</locator>
+   <locator>button--pathway-cta</locator>
    <locatorCollection>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>NAME</key>
       </entry>
       <entry>
          <key>IMAGE</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
+         <key>ACCESSIBILITY</key>
+         <value>hcds-mobile-btn-button--pathway-cta</value>
       </entry>
       <entry>
          <key>CUSTOM</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

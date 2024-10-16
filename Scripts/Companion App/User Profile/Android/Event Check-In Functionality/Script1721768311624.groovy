@@ -96,9 +96,9 @@ import org.openqa.selenium.Keys as Keys
 // Login
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Profile Web Avatar - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home Page/Profile Web Avatar - Element'), 1)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Profile Web Avatar - Icon'), 0)
 
 Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/Check-In - Button'), 0)
 

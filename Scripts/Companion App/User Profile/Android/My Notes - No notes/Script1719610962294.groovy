@@ -19,10 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Profile Web Avatar - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home Page/Profile Web Avatar - Element'), 1)
 
 'Profile photo icon - on lower navigation menu '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Profile Web Avatar - Icon'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Notes Header'), 1)
 
