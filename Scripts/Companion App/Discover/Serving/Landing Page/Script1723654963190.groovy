@@ -31,7 +31,7 @@ import io.appium.java_client.MobileElement as MobileElement
 import com.kms.katalon.core.testobject.TestObjectXpath
 import org.openqa.selenium.WebElement
 import io.appium.java_client.ios.IOSDriver
-
+import java.text.SimpleDateFormat
 
 def timeout = 10
 def UniqueServingOppName = GlobalVariable.ServingSearch_SearchTerm
@@ -61,7 +61,7 @@ Button.tap('Nav/Discover Navigation Button', timeout)
 Mobile.delay(3)
 Button.tap('Discover/Serving Tab', timeout)
 
-Mobile.delay(3)
+//Mobile.delay(3)
 
 'Verify that Serving entries exist'
 Mobile.waitForElementPresent(Finder.findLabel('Discover/Serving/List Entry - Name'), timeout)
@@ -340,6 +340,7 @@ servingOppDates = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Fin
 listLength = servingOppDates.size()
 
 def currentDate
+int currentDayOfWeek
 
 for(int i = 1;i<listLength;i++) {
 	currentDateString = servingOppDates[i].text
@@ -387,7 +388,9 @@ listLength = servingOppTimeRanges.size()
 
 Date currentStartTime
 def startTimeRange = Date.parse("hh:mmaa", "12:00pm")
+
 def endTimeRange = Date.parse("hh:mmaa", "04:00pm")
+
 String startTimeValue, endTimeValue, currentTimeRange
 
 for(int i = 0;i<listLength;i++) {
@@ -472,7 +475,7 @@ Button.tap("Discover/Serving/SortFilter/When Page/From Time", timeout)
 'tap on the keyboard entry icon button'
 Button.tap("Discover/Serving/SortFilter/When Page/Time Keyboard Entry", timeout)
 
-Mobile.delay(3)
+//Mobile.delay(3)
 'Enter 3 into hour entry'
 TextField.typeText(Finder.findTextField('Discover/Serving/SortFilter/When Page/Custom Time Hour'), "3" + Keys.ENTER, timeout)
 
@@ -492,7 +495,7 @@ Button.tap("Discover/Serving/SortFilter/When Page/To Time", timeout)
 'tap on the keyboard entry icon button'
 Button.tap("Discover/Serving/SortFilter/When Page/Time Keyboard Entry", timeout)
 
-Mobile.delay(3)
+//Mobile.delay(3)
 'Enter 7 into hour entry'
 TextField.typeText(Finder.findTextField('Discover/Serving/SortFilter/When Page/Custom Time Hour'), "7" + Keys.ENTER, timeout)
 
@@ -588,7 +591,9 @@ for(int i = 0;i<listLength;i++) {
 
 Mobile.verifyEqual(SortOrderIsValid, true)
 
-WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+if (CurrentlyLoggedIn) {
+	WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 if (deviceIsiOS) {
 	Mobile.closeApplication()

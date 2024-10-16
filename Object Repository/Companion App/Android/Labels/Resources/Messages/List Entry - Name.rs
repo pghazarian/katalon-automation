@@ -3,22 +3,33 @@
    <description></description>
    <name>List Entry - Name</name>
    <tag></tag>
-   <elementGuidId>e8dc5a88-cf34-4b03-a97c-b96905b4f164</elementGuidId>
+   <elementGuidId>207df267-2ac5-4e0b-a764-feb730db3c4a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.TextView[ends-with(@content-desc,&quot;-series_name&quot;)])</locator>
+   <locator>(//android.widget.TextView[ends-with(@content-desc,&quot;-title&quot;)])</locator>
    <locatorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//android.widget.TextView[@resource-id=&quot;item-title&quot;]</value>
-      </entry>
-      <entry>
-         <key>ID</key>
+         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
-         <key>NAME</key>
+         <key>XPATH</key>
+         <value>(//android.widget.TextView[ends-with(@content-desc,&quot;-title&quot;)])</value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -26,7 +37,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
+         <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -39,21 +54,6 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
          <value></value>
       </entry>
    </locatorCollection>

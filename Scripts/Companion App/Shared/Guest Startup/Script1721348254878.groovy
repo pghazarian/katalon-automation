@@ -92,14 +92,10 @@ if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'),
 		'Tap on the profile avatar in the navigation'
 		Button.tap('Nav/Profile No Avatar Navigation Button')
 	}
-	
-	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
 		
 	'Tap on the settings gear button'
+	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
 	Button.tap('Profile/Settings Gear')
-	
-//	'Tap on the Account & Notifications button'
-//	Button.tap('Profile/Settings/Account Notifications')
 	
 	'tap on the settings Account & Notifications tile button'
 	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications"), 5)

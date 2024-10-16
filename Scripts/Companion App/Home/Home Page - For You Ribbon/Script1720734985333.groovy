@@ -74,7 +74,7 @@ Button.tap('Home/Home Page/For You Detail/Back')
 Mobile.delay(5)
 
 'Log out of the app'
-//WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Close the app'
 Mobile.closeApplication()
