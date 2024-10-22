@@ -37,7 +37,7 @@ Boolean deviceIsiOS = Device.isIOS()
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
-if (ShouldLogin.toBoolean()) {
+not_run: if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/My QR code'), 0)
 
     Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/My QR code X button'), 0)
@@ -107,15 +107,19 @@ if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Logged Out Browser'), 0)
 }
 
-'tap on the left most For You tile'
-not_run: Button.tap('Home Page/For You/First For You Item')
+Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.delay(7)
+if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/LI_First For You Item'), 0)
+} else {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/LO_First For You Item'), 0)
+}
 
-'tap on the back button from For You details page'
-not_run: Button.tap('Home Page/For You/For You Detail/Back')
+Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/First For You Item'), 0)
-
-not_run: Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/Back Button'), 0)
+if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/LI_Back Button'), 0)
+} else {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/LO_Back Button'), 0)
+}
 

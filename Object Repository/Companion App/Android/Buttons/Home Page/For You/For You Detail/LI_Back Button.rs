@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description></description>
-   <name>Gift Icon</name>
+   <description>Back Button for logged out users</description>
+   <name>LI_Back Button</name>
    <tag></tag>
-   <elementGuidId>192747a1-80f3-4007-a6c5-20e18edd79ed</elementGuidId>
+   <elementGuidId>3fa2825c-f289-4e83-aeff-8c2ddcabe740</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--header_giving</locator>
+   <locator>click--header_back_button</locator>
    <locatorCollection>
       <entry>
          <key>ID</key>
@@ -26,7 +26,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]</value>
+         <value>//android.view.ViewGroup[@content-desc=&quot;button--header_back&quot;]/android.view.ViewGroup</value>
       </entry>
       <entry>
          <key>NAME</key>
@@ -37,20 +37,20 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>button--header_giving</value>
+         <value>click--header_back_button</value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>CUSTOM</key>
