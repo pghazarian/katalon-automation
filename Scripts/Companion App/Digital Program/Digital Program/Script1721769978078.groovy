@@ -44,15 +44,15 @@ Boolean deviceIsiOS = Device.isIOS()
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
 'Open Button in the Live Digital Program Blue Banner'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Digital Program/Open Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Digital Program/Open Button'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Digital Program/Notes Button'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Digital Program/Notes Button'), 0)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Engagement Pathway/Buttons/X'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/X'), 0)
 
 'Minimize Arrow down icon button '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Digital Program/Arrow Down Minimize Button'), 
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Digital Program/Arrow Down Minimize Button'), 
     0)
 

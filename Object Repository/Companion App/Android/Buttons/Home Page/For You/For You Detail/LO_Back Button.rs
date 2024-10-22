@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Gift Icon</name>
+   <name>LO_Back Button</name>
    <tag></tag>
-   <elementGuidId>e1fdeee3-c34a-4a23-af57-4b5f78303a03</elementGuidId>
+   <elementGuidId>80624340-c6ae-49e9-8d4b-1be89eff7816</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--header_giving</locator>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;button--header_back&quot;]/android.view.ViewGroup</locator>
    <locatorCollection>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>ID</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//android.view.ViewGroup[@content-desc=&quot;button--header_back&quot;]/android.view.ViewGroup</value>
       </entry>
       <entry>
          <key>NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -26,37 +30,33 @@
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>button--header_giving</value>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
       </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//android.view.ViewGroup[@content-desc=&quot;button--header_giving&quot;]</value>
-      </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

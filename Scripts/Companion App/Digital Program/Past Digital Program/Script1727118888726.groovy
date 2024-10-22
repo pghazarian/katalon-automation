@@ -51,15 +51,15 @@ Button.tap('Home/Home Page/First Message Item')
 Mobile.delay(5)
 
 'Service Companion Button, in Messages (Notes) page '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Digital Program/Past Digital Program/Service Companion'), 
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Digital Program/Past Digital Program/Service Companion'), 
     0)
 
 Mobile.delay(5)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Digital Program/Arrow Down Minimize Button'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Digital Program/Arrow Down Minimize Button'), 0, FailureHandling.STOP_ON_FAILURE)
 
 'Back Button in Messages (Notes) page '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Digital Program/Past Digital Program/Back Button'), 
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Digital Program/Past Digital Program/Back Button'), 
     0)
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
