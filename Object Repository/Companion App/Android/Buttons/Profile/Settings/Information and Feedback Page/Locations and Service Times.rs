@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Back</name>
+   <name>Locations and Service Times</name>
    <tag></tag>
-   <elementGuidId>dd52c497-c9ef-401c-86ec-12eec5ce80b2</elementGuidId>
+   <elementGuidId>6c9a5799-cd2b-4dc8-8306-49d813ed38bd</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--header_back_button</locator>
+   <locator>click-info-feedback_location-dot</locator>
    <locatorCollection>
       <entry>
-         <key>XPATH</key>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -18,11 +22,11 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -34,27 +38,23 @@
          <value></value>
       </entry>
       <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Back</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

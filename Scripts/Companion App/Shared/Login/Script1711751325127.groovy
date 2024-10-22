@@ -36,7 +36,7 @@ if (!Password?.trim()) {
 	Password = GlobalVariable.Admin_Password
 }
 
-int timeout = 3
+int timeout = 7
 
 Button.initialize(timeout, FailureHandling.OPTIONAL)
 

@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Back</name>
+   <name>Close SB Logged Out Browser</name>
    <tag></tag>
-   <elementGuidId>dd52c497-c9ef-401c-86ec-12eec5ce80b2</elementGuidId>
+   <elementGuidId>0de50941-fe9b-474d-8e9c-559010258a9a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--header_back_button</locator>
+   <locator>Close Tithing is More Than Giving tab</locator>
    <locatorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
+         <key>ACCESSIBILITY</key>
+         <value>Close Tithing is More Than Giving tab</value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
@@ -30,19 +29,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
@@ -50,11 +41,20 @@
          <value></value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>CUSTOM</key>
+         <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Back</value>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

@@ -65,7 +65,7 @@
       <name>ServingOppName</name>
    </variable>
    <variable>
-      <defaultValue>GlobalVariable.EventSearch_EventName</defaultValue>
+      <defaultValue>GlobalVariable.EventSearch_SearchTerm</defaultValue>
       <description></description>
       <id>4420bab7-2bd9-4251-8c61-c4bcab5e98ea</id>
       <masked>false</masked>

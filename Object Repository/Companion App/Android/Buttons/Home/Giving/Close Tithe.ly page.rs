@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Back</name>
+   <name>Close Tithe.ly page</name>
    <tag></tag>
-   <elementGuidId>dd52c497-c9ef-401c-86ec-12eec5ce80b2</elementGuidId>
+   <elementGuidId>0fa9155f-f4df-401d-bd8f-99ed7591524f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--header_back_button</locator>
+   <locator>Close Tithe.ly Giving tab</locator>
    <locatorCollection>
       <entry>
          <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Close Tithe.ly Giving tab</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -34,27 +45,16 @@
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Back</value>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

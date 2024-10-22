@@ -201,7 +201,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Adult Ministries'</initValue>
+      <initValue>'Adult Studies, Trainings &amp; Gatherings'</initValue>
       <name>EventCategory_Edited</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -266,17 +266,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Marks Test DP 1'</initValue>
+      <initValue>'You Can Be Restored'</initValue>
       <name>MessageSearch_UniqueMessageName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'HG Series'</initValue>
+      <initValue>'You Can Do This'</initValue>
       <name>MessageSearch_UniqueMessageSeries</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Rick Warren'</initValue>
+      <initValue>'Andy Wood'</initValue>
       <name>MessageSearch_UniqueMessageSpeaker</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

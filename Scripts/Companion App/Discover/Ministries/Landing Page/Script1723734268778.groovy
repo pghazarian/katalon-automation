@@ -32,7 +32,6 @@ import com.kms.katalon.core.testobject.TestObjectXpath
 import org.openqa.selenium.WebElement
 import io.appium.java_client.ios.IOSDriver
 
-
 def timeout = 10
 def UniqueMinistryName = GlobalVariable.MinistrySearch_SearchTerm
 
@@ -58,7 +57,7 @@ Mobile.waitForElementPresent(Finder.findButton('Nav/Discover Navigation Button')
 Button.tap('Nav/Discover Navigation Button', timeout)
 
 'tap on the Ministries tab'
-Mobile.delay(2)
+Mobile.delay(5)
 Mobile.waitForElementPresent(Finder.findButton('Discover/Ministries Tab'), timeout)
 Button.tap('Discover/Ministries Tab', timeout)
 
@@ -103,7 +102,7 @@ Button.tap("Discover/Ministries/SortFilter/Apply", timeout)
 
 'Verify that Ministries browse page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Ministries/List Entry - Name"), timeout)
-Mobile.delay(3)
+
 'Verify that sort order has been applied'
 String firstMinistryName = ''
 String lastMinistryName = ''
@@ -141,13 +140,13 @@ if (lastMinistryName.compareToIgnoreCase(firstMinistryName) < 0)
 
 'verify that sorting is correct'
 Mobile.verifyEqual(SortOrderIsValid, true)
-//Mobile.delay(3)
+
 'Tap on the Sort and Filter button'
 Button.tap("Discover/Ministries/Sort And Filter", timeout)
-//Mobile.delay(3)
+
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Ministries/SortFilter/Clear Filters"), timeout)
-//Mobile.delay(3)
+
 'Tap on the Sort By button'
 Button.tap("Discover/Ministries/SortFilter/Sort By", timeout)
 
@@ -159,13 +158,12 @@ if (deviceIsiOS) {
 else {
 	Button.tap("Discover/Ministries/SortFilter/Sort Z-A", timeout)
 }
-//Mobile.delay(3)
+
 'Tap on the Apply button'
 Button.tap("Discover/Ministries/SortFilter/Apply", timeout)
-//Mobile.delay(3)
+
 'Verify that serving opps list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Ministries/List Entry - Name"), timeout)
-Mobile.delay(3)
 
 'Verify that sort order has been applied'
 firstMinistryName = ''
@@ -175,7 +173,6 @@ SortOrderIsValid = true
 
 ministryNames = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Discover/Ministries/List Entry - Name")))
  
-//Mobile.delay(3)
 listLength = ministryNames.size()
 
 firstMinistryName = ministryNames[0].text
@@ -186,7 +183,7 @@ if (lastMinistryName.compareToIgnoreCase(firstMinistryName) > 0)
 	'sorting has failed'
 	SortOrderIsValid = false
 }
-//Mobile.delay(3)
+
 Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Tap on the Sort and Filter button'
@@ -195,7 +192,7 @@ Button.tap("Discover/Ministries/Sort And Filter", timeout)
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Ministries/SortFilter/Clear Filters"), timeout)
 Button.tap("Discover/Ministries/SortFilter/Clear Filters", timeout)
-Mobile.delay(3)
+
 
 'Tap on the Categories button'
 Button.tap("Discover/Ministries/SortFilter/Categories", timeout)
@@ -257,10 +254,10 @@ Button.tap("Discover/Ministries/SortFilter/Category/Back", timeout)
 'Tap on the Apply button'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Ministries/SortFilter/Apply"), timeout)
 Button.tap("Discover/Ministries/SortFilter/Apply", timeout)
-//Mobile.delay(3)
+
 'Verify that ministries list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Ministries/List Entry - Name"), timeout)
-//Mobile.delay(3)
+
 'go through all the ministries in the list to make sure they are for selected campus'
 Boolean CampusFilteringIsValid = true
 
@@ -282,7 +279,7 @@ for(int i = 0;i<listLength;i++) {
 	}
 }
 
-//Mobile.verifyEqual(CampusFilteringIsValid, true)
+Mobile.verifyEqual(CampusFilteringIsValid, true)
 
 'Verify that ministries list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Ministries/List Entry - Name"), timeout)
@@ -292,14 +289,14 @@ Button.tap("Discover/Ministries/Sort And Filter", timeout)
 
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Ministries/SortFilter/Clear Filters"), timeout)
-Mobile.delay(3)
+
 
 'Tap on the Sort Relevance button'
 Button.tap("Discover/Ministries/SortFilter/Clear Filters", timeout)
 
 'Tap on the Apply button'
 Button.tap("Discover/Ministries/SortFilter/Apply", timeout)
-Mobile.delay(3)
+
 Mobile.waitForElementPresent(Finder.findLabel('Discover/Ministries/List Entry - Name'), timeout)
 
 'Search for a unique Ministry name'

@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Back</name>
+   <name>Close SB Logged In Browser</name>
    <tag></tag>
-   <elementGuidId>dd52c497-c9ef-401c-86ec-12eec5ce80b2</elementGuidId>
+   <elementGuidId>de81d691-2d22-4169-b9cf-c3db9fe63d14</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>click--header_back_button</locator>
+   <locator>Close  tab</locator>
    <locatorCollection>
       <entry>
          <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Close  tab</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -34,27 +45,16 @@
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Back</value>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ACCESSIBILITY</locatorStrategy>

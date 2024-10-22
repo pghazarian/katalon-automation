@@ -50,12 +50,14 @@ if (Device.isIOS()) {
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
 'tap on the campus selector'
+Mobile.waitForElementPresent(Finder.findLabel("Home/Campus"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 
 'close the campus selector'
 Button.tap("Home/Campus Selector/Close")
 
 'tap on the campus selector again'
+Mobile.waitForElementPresent(Finder.findLabel("Home/Campus"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 
 'tap on a different campus'
@@ -65,6 +67,7 @@ Mobile.tap(Finder.findLabel("Home/Campus Selector/Anaheim"), timeout)
 Button.tap("Home/Campus Selector/Cancel", timeout)
 
 'tap on the campus selector again'
+Mobile.waitForElementPresent(Finder.findLabel("Home/Campus"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 
 'tap on a different campus'
@@ -76,6 +79,7 @@ Button.tap("Home/Campus Selector/Apply", timeout)
 Mobile.verifyElementText(Finder.findLabel("Home/Campus Text"), "Anaheim")
 
 'tap on the campus selector again'
+Mobile.waitForElementPresent(Finder.findLabel("Home/Campus"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 
 'tap on a different campus'

@@ -3,47 +3,12 @@
    <description></description>
    <name>Give Tithe Button</name>
    <tag></tag>
-   <elementGuidId>32316a6a-34fb-4e6b-8fbe-bba76bf554f1</elementGuidId>
+   <elementGuidId>e671b1b4-88a3-46ed-97db-09b5e74c8a6b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.Button[@resource-id=&quot;tithelyGiveTitheButton&quot;]</locator>
+   <locator>Give Tithe</locator>
    <locatorCollection>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
       <entry>
          <key>CLASS_NAME</key>
          <value></value>
@@ -53,10 +18,45 @@
          <value></value>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>//android.widget.Button[@resource-id=&quot;tithelyGiveTitheButton&quot;]</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Give Tithe</value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
          <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value></value>
+      </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>
