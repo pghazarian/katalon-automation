@@ -47,7 +47,7 @@ Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Gift I
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Minimize Browser'), 0)
 
-Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Logged In Browser'), 0)
@@ -99,7 +99,7 @@ Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pa
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Minimize Browser'), 0)
 
-Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Browser'), 0)
@@ -107,7 +107,7 @@ if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Logged Out Browser'), 0)
 }
 
-Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/LI_First For You Item'), 0)
@@ -115,11 +115,21 @@ if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/LO_First For You Item'), 0)
 }
 
-Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/LI_Back Button'), 0)
 } else {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/LO_Back Button'), 0)
 }
+
+Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events Element'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Worship Service Category'), 0)
+
+Mobile.tap(findTestObject('Companion App/iOS/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events - See All'), 0)
+
+Mobile.tap(findTestObject('Companion App/iOS/Buttons/Nav/Home Navigation Button'), 0)
 

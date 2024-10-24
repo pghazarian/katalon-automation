@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>This was the original CA Smoke Test TC, now the name changed to cover only the &quot;CA Home Page&quot; smoke test, which could be ran with our Test Suites, whenever needed!</description>
+   <description></description>
    <name>CA Home Page</name>
    <tag></tag>
    <comment></comment>
