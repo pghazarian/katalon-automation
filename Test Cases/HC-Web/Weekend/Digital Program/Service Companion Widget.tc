@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This is AKA the Digital Program View Page testing, for both of the following PBIs:&#xd;
+Product Backlog Item 113830: [Back Office][ME>DP/SC - Widget] - Ability to complete a &quot;Connection Form&quot; from the Service Companion widget&#xd;
+Product Backlog Item 113831: [Back Office][ME>DP/SC - Widget] - Ability to follow an &quot;External Link&quot; from the Service Companion widget</description>
+   <name>Service Companion Widget</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>800cf72c-3229-4c7e-be31-4c7d8eb4c593</testCaseGuid>
+</TestCaseEntity>
