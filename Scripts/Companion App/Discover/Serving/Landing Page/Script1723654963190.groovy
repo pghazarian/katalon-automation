@@ -197,7 +197,7 @@ else {
 'Tap on the Apply button'
 Button.tap("Discover/Serving/SortFilter/Apply", timeout)
 
-'Verify that events list page visible'
+'Verify that serving opps list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry"), timeout)
 
 'Verify that sort order has been applied'
@@ -240,7 +240,7 @@ Button.tap("Discover/Serving/Sort And Filter", timeout)
 
 'wait for Sort and Filter page to fully displayed'
 Mobile.waitForElementPresent(Finder.findButton("Discover/Serving/SortFilter/Clear Filters"), timeout)
-Button.tap("Discover/Events/SortFilter/Clear Filters", timeout)
+Button.tap("Discover/Serving/SortFilter/Clear Filters", timeout)
 
 'Tap on the Categories button'
 Button.tap("Discover/Serving/SortFilter/Categories", timeout)
@@ -299,10 +299,10 @@ Button.tap("Discover/Serving/SortFilter/Category/Back", timeout)
 'Tap on the Apply button'
 Button.tap("Discover/Serving/SortFilter/Apply", timeout)
 
-'Verify that events list page visible'
+'Verify that Serving Opps list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry - Name"), timeout)
 
-'go through all the events in the list to make sure they are for selected campus'
+'go through all the serving opps in the list to make sure they are for selected campus'
 CategoryFilteringIsValid = true
 
 Mobile.verifyEqual(CategoryFilteringIsValid, true)
@@ -429,7 +429,7 @@ Button.tap("Discover/Serving/SortFilter/Category/Back", timeout)
 'Tap on the Apply button'
 Button.tap("Discover/Serving/SortFilter/Apply", timeout)
 
-'Verify that events list page visible'
+'Verify that serving opps list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry - Name"), timeout)
 
 SortOrderIsValid = true
@@ -516,7 +516,7 @@ Button.tap("Discover/Serving/SortFilter/Category/Back", timeout)
 'Tap on the Apply button'
 Button.tap("Discover/Serving/SortFilter/Apply", timeout)
 
-'Verify that events list page visible'
+'Verify that serving opps list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry - Name"), timeout)
 
 SortOrderIsValid = true
@@ -542,7 +542,7 @@ for(int i = 0;i<listLength;i++) {
 
 Mobile.verifyEqual(SortOrderIsValid, true)
 
-'Verify that events list page visible'
+'Verify that serving opps list page visible'
 Mobile.waitForElementPresent(Finder.findLabel("Discover/Serving/List Entry"), timeout)
 
 'Verify that sort order has been applied'
@@ -568,7 +568,7 @@ Button.tap("Discover/Serving/SortFilter/Apply", timeout)
 Mobile.waitForElementPresent(Finder.findLabel('Discover/Serving/List Entry - Name'), timeout)
 
 'Search for a unique journey name'
-Mobile.waitForElementPresent(Finder.findTextField('Discover/Events/Search'), timeout)
+Mobile.waitForElementPresent(Finder.findTextField('Discover/Serving/Search'), timeout)
 TextField.typeText(Finder.findTextField('Discover/Serving/Search'), UniqueServingOppName + Keys.ENTER, timeout)
 
 Mobile.waitForElementPresent(Finder.findLabel('Discover/Serving/List Entry - Name'), timeout)

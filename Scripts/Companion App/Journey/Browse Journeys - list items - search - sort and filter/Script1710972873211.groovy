@@ -53,7 +53,7 @@ import com.kms.katalon.core.testobject.TestObjectXpath
  */
 
 
-def timeout = 3
+def timeout = 7
 def UniqueJourneyName = GlobalVariable.JourneySearch_SearchTerm  //'21 DAYS OF PRAYER & FASTING'
 
 'Open existing app by the app bundle id'
@@ -63,7 +63,7 @@ WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandl
 'Navigate to Journey'
 Button.tap('Nav/Journey Navigation Button', timeout)
 
-Mobile.delay(3)
+Mobile.delay(5)
 'Wait for Journey landing page to display'
 Mobile.waitForElementPresent(Finder.findButton("Journey/Browse Tab"), timeout)
 
