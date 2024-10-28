@@ -72,7 +72,8 @@ else { 	// if no avatar then different nav button
 	'Tap on the generic profile avatar in the navigation'
 	Button.tap('Nav/Profile No Avatar Navigation Button')
 }
-
+Mobile.delay(5)
+Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
 Button.tap('Profile/Settings Gear', timeout)
 
 Mobile.verifyElementText(Finder.findLabel('Settings Heading'), "Settings", FailureHandling.CONTINUE_ON_FAILURE)
