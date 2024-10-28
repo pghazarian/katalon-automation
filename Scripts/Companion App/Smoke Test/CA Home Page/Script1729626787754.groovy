@@ -127,9 +127,5 @@ Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home Pag
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Worship Service Category'), 0)
 
-Mobile.tap(findTestObject('Companion App/iOS/Buttons/Nav/Home Navigation Button'), 0)
-
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events - See All'), 0)
-
-Mobile.tap(findTestObject('Companion App/iOS/Buttons/Nav/Home Navigation Button'), 0)
 
