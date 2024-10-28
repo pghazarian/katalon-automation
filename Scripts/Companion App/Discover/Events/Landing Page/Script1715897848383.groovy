@@ -98,7 +98,8 @@ else {
 Button.tap("Discover/Events/SortFilter/Apply", timeout)
 
 'Verify that journey browse page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+//Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry - Name"), timeout)
 
 'Verify that sort order has been applied'
 String firstEventName = ''
@@ -145,7 +146,8 @@ else {
 Button.tap("Discover/Events/SortFilter/Apply", timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+//Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry - Name"), timeout)
 
 'Verify that sort order has been applied'
 firstEventName = ''
@@ -190,7 +192,8 @@ else {
 Button.tap("Discover/Events/SortFilter/Apply", timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+//Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry - Name"), timeout)
 
 'Verify that sort order has been applied'
 
@@ -246,7 +249,8 @@ Button.tap("Discover/Events/SortFilter/Category/Back", timeout)
 Button.tap("Discover/Events/SortFilter/Apply", timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+//Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry - Name"), timeout)
 
 'Verify that sort order has been applied'
 String firstEventCategory = ''
@@ -260,7 +264,7 @@ eventCategories = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Fin
 
 int arrayOfDatesSize = eventCategories.size()
 
-firstEventCategory = eventCategories[3].text
+firstEventCategory = eventCategories[2].text
 
 if (firstEventCategory.compareToIgnoreCase(GlobalVariable.EventCategory_Edited) != 0 )
 {
@@ -290,7 +294,8 @@ Button.tap("Discover/Events/SortFilter/Category/Back", timeout)
 Button.tap("Discover/Events/SortFilter/Apply", timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+//Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry - Name"), timeout)
 
 'go through all the events in the list to make sure they are for selected campus'
 CategoryFilteringIsValid = true
@@ -418,7 +423,8 @@ Button.tap("Discover/Events/SortFilter/Category/Back", timeout)
 Button.tap("Discover/Events/SortFilter/Apply", timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+//Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry - Name"), timeout)
 
 SortOrderIsValid = true
 
@@ -503,7 +509,8 @@ Button.tap("Discover/Events/SortFilter/Category/Back", timeout)
 Button.tap("Discover/Events/SortFilter/Apply", timeout)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+//Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry - Name"), timeout)
 
 eventTimeRanges = driver.findElementsByXPath(MobileTestObjectHelper.getXPath(Finder.findLabel("Discover/Events/List Entry - Time")))
 
@@ -529,7 +536,8 @@ for(int i = 0;i<listLength;i++) {
 Mobile.verifyEqual(SortOrderIsValid, true)
 
 'Verify that events list page visible'
-Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+//Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry"), timeout)
+Mobile.waitForElementPresent(Finder.findLabel("Discover/Events/List Entry - Name"), timeout)
 
 'Verify that sort order has been applied'
 firstEventCategory = ''

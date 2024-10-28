@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Home Page - Series Ribbon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>44eba0d9-d42c-48f8-85b7-bd0b8be3bdc5</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>213c4955-bca4-41dc-a845-54c8523e6252</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>213c4955-bca4-41dc-a845-54c8523e6252</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>90b787ee-fb9a-41a9-a4ce-8d47135d1975</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>90b787ee-fb9a-41a9-a4ce-8d47135d1975</id>
+      <masked>false</masked>
+      <name>LoggedIn</name>
+   </variable>
+</TestCaseEntity>

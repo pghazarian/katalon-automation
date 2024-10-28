@@ -3,14 +3,33 @@
    <description></description>
    <name>First Phone Number</name>
    <tag></tag>
-   <elementGuidId>528c4df3-29a5-4bf7-93b0-b647e6cce560</elementGuidId>
+   <elementGuidId>eac2181a-f9ad-42fc-b893-eb7a43067cf0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.widget.TextView[@resource-id=&quot;hcds-mobile-text-default&quot;])[5]</locator>
+   <locator>(//android.widget.TextView[@resource-id=&quot;hcds-mobile-text-default&quot;])[7]</locator>
    <locatorCollection>
       <entry>
-         <key>ACCESSIBILITY</key>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -22,11 +41,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
@@ -34,27 +49,12 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>(//android.widget.TextView[@resource-id=&quot;hcds-mobile-text-default&quot;])[7]</value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>
