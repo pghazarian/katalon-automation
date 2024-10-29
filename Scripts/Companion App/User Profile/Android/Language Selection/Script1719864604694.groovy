@@ -41,10 +41,10 @@ import org.openqa.selenium.Keys as Keys
 */
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home/Profile Web Avatar - Element'), 1)
+Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home Page/Profile Web Avatar - Element'), 1)
 
 'Profile photo icon - on lower navigation menu '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Profile Web Avatar - Icon'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Language selection/Language'), 1)
 
@@ -57,7 +57,7 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Apply Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Profile Web Avatar - Icon'), 0)
 
 Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Settings/Settings'), 1)
 
@@ -112,7 +112,7 @@ Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/Language selection/Apply Button'), 0)
 
 'Settings icon, top right of User Profile page'
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home/Profile Web Avatar - Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Profile Web Avatar - Icon'), 0)
 
 Mobile.closeApplication()
 

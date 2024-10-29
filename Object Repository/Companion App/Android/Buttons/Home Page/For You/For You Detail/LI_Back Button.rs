@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description></description>
-   <name>Back</name>
+   <description>Back Button for logged out users</description>
+   <name>LI_Back Button</name>
    <tag></tag>
-   <elementGuidId>53664dc8-bdba-4738-9980-cc309c3eb613</elementGuidId>
+   <elementGuidId>3fa2825c-f289-4e83-aeff-8c2ddcabe740</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--header_back</locator>
+   <locator>click--header_back_button</locator>
    <locatorCollection>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -29,15 +25,11 @@
          <key>ATTRIBUTES</key>
       </entry>
       <entry>
-         <key>ID</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//android.view.ViewGroup[@content-desc=&quot;button--header_back&quot;]/android.view.ViewGroup</value>
       </entry>
       <entry>
          <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
@@ -45,8 +37,16 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>IMAGE</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>click--header_back_button</value>
       </entry>
       <entry>
          <key>CLASS_NAME</key>

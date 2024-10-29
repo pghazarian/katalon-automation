@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 import com.detroitlabs.katalonmobileutil.device.Device as Device
 import com.detroitlabs.katalonmobileutil.testobject.Button as Button
 
-def timeout = 10
+def timeout = 7
 
 if (ShouldLogin.toBoolean()) {
     'Open existing app by logging into the app bundle id'
@@ -36,6 +36,24 @@ Boolean deviceIsiOS = Device.isIOS()
 
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
+
+not_run: if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/My QR code'), 0)
+
+    Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/My QR code X button'), 0)
+}
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Gift Icon'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Minimize Browser'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Logged In Browser'), 0)
+} else {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close Tithe.ly page'), 0)
+}
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Decision'), 0)
 
@@ -69,7 +87,6 @@ Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pa
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Serving'), 5)
 
-// Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Serving - Learn More'), 5)
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Sharing'), 0)
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Submit Your One Life'), 0)
@@ -78,20 +95,37 @@ Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pa
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Badges/Giving'), 0)
 
-// press back on Android
-if (!(deviceIsiOS)) {
-    Mobile.pressBack()
-}
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Engagement Pathway/Buttons/Give Now'), 0)
 
-'Navigate to Home'
-Button.tap('Nav/Home Navigation Button', timeout)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Minimize Browser'), 0)
 
-'Log out'
-WebUI.callTestCase(findTestCase('Companion App/Shared/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-if (deviceIsiOS) {
-    Mobile.closeApplication()
+if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Browser'), 0)
 } else {
-    driver.terminateApp('com.healthychurch.companion.stage')
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Giving/Close SB Logged Out Browser'), 0)
 }
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/LI_First For You Item'), 0)
+} else {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/LO_First For You Item'), 0)
+}
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/LI_Back Button'), 0)
+} else {
+    Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/LO_Back Button'), 0)
+}
+
+Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events Element'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Worship Service Category'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events - See All'), 0)
 

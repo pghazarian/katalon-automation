@@ -17,18 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [('UserName') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home Page/Profile Web Avatar - Element'), 1)
-
-'Profile photo icon - on lower navigation menu '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Profile Web Avatar - Icon'), 0)
-
-Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/My Tiles/Elements/My Notes Header'), 1)
-
-'My Notes Tile '
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/My Notes Tile'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Companion App/Android/User Profile/My Tiles/Buttons/Browse Recent Messages'), 
-    0)
-
+/*
+ 1  Prerequisites:
+	 - On HC Admin, publish a Service on a published Digital Program
+	 - Make sure that there is an External Link setup for the Digital Program, before publishing it
+	 - Make sure that there is an Connection Form setup for the Digital Program, before publishing it
+	 - Which both can be done from the Builder tab of the Digital Program
+ 2	Goto HC Admin ME > Digital Program 
+ 3	Select any DP and navigate to its Builder tab
+ 4	From the Builder tab, Make sure that the DP has an External Link & Connection Form setup on it 
+ 5	From the Action bar Select a Campus
+ 6 	From the Action click on the View Page button to the left of the Edit Details button 
+ 7	User should navigate to the DP SC widget page, to test the "browser" and the "widget" versions of the widget 
+ 8	For now test only the browser, until (TBD) the widget is embedded in SB.com  
+ 9	Verify that the widget can be tested from various channels 
+ 10 Verify that user can complete a "Connection Form" from the Service Companion widget
+ 11 Verify that user can follow a "External Link" from the Service Companion widget
+ */
+ 
