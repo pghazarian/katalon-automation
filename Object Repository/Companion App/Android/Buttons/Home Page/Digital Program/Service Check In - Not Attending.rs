@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>Notes CTA Button in published DP SC</description>
-   <name>Notes Button</name>
+   <description></description>
+   <name>Service Check In - Not Attending</name>
    <tag></tag>
-   <elementGuidId>8293cbd1-7274-4395-8990-877ab9e92dae</elementGuidId>
+   <elementGuidId>7a976860-d3bf-485f-84ec-0bc948d9a848</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.Button[@resource-id=&quot;112&quot;]</locator>
+   <locator>ui-button--check_in_modal--not_attending</locator>
    <locatorCollection>
       <entry>
          <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
+         <key>ACCESSIBILITY</key>
+         <value>ui-button--check_in_modal--not_attending</value>
+      </entry>
+      <entry>
          <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
@@ -29,7 +37,15 @@
          <value></value>
       </entry>
       <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
          <key>CLASS_NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -40,23 +56,7 @@
          <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//android.widget.Button[@resource-id=&quot;112&quot;]</value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
    </locatorCollection>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>
