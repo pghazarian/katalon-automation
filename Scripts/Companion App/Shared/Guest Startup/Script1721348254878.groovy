@@ -114,12 +114,10 @@ Mobile.waitForElementPresent(Finder.findLabel("Home/Campus Selector/Anaheim"), 5
 Mobile.scrollToText('Lake Forest')
 
 'set the default campus to Anaheim'
-//Mobile.tap(Finder.findLabel("Home/Campus Selector/Anaheim"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus Selector/Lake Forest"), timeout)
 
-
 'tap on the Apply button'
-Button.tap("Home/Campus Selector/Apply", timeout)
+Button.tap("Home Page/Campus Selector/Apply", timeout)
 
 
 
