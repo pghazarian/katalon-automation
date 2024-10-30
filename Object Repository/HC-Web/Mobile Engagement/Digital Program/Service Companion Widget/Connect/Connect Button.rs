@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>External link Button</name>
+   <name>Connect Button</name>
    <tag></tag>
-   <elementGuidId>ec43070c-2256-453a-b84c-d800991d9029</elementGuidId>
+   <elementGuidId>d13472b6-de76-49c1-989e-f7fc8f412b4e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='234']/div</value>
+         <value>//button[@id='233']/div</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.MuiBox-root.jss211.button_preview--title_container.jss201</value>
+         <value>div.MuiBox-root.jss210.button_preview--title_container.jss201</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;External link&quot;i]</value>
+         <value>internal:role=button[name=&quot;Brea Connect&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,15 +29,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>87df1f51-160d-469d-961b-2168cb7ccbcc</webElementGuid>
+      <webElementGuid>75396717-ea44-4740-a3a5-07058bcc6386</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiBox-root jss211 button_preview--title_container jss201</value>
-      <webElementGuid>ad7269a2-5385-46ce-adb5-fa36c9ebc41d</webElementGuid>
+      <value>MuiBox-root jss210 button_preview--title_container jss201</value>
+      <webElementGuid>27576c6b-0c80-4e19-90c5-bf4edcc24078</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,62 +45,62 @@
       <name>accessibilitylabel</name>
       <type>Main</type>
       <value>container--button_preview-title</value>
-      <webElementGuid>47de6ae0-16f1-4305-b1a2-7bbaa1142c57</webElementGuid>
+      <webElementGuid>601d7896-93d3-4ab6-b768-24b34f0935c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>External link </value>
-      <webElementGuid>0eecb122-967a-4666-a42e-d7bb04fd3eb7</webElementGuid>
+      <value>Brea Connect </value>
+      <webElementGuid>e5fcf815-5dd8-4bef-ad4d-d4533d748d32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;234&quot;)/div[@class=&quot;MuiBox-root jss211 button_preview--title_container jss201&quot;]</value>
-      <webElementGuid>134778d0-f823-497b-a9c8-61a46805a21f</webElementGuid>
+      <value>id(&quot;233&quot;)/div[@class=&quot;MuiBox-root jss210 button_preview--title_container jss201&quot;]</value>
+      <webElementGuid>36f7345a-5c6b-4d8c-9e21-cf1918142eab</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='234']/div</value>
-      <webElementGuid>55f24be1-7af1-4153-8afc-03dc821700df</webElementGuid>
+      <value>//button[@id='233']/div</value>
+      <webElementGuid>7ba5a78d-770d-4e12-a380-8ed09d4a3997</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kay Warren'])[1]/following::div[8]</value>
-      <webElementGuid>2ca64ec2-39c4-4704-94a1-4424afcef119</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kay Warren'])[1]/following::div[5]</value>
+      <webElementGuid>d5c4b093-36e7-4bca-8283-61a9e3e1020b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paren DP'])[1]/following::div[8]</value>
-      <webElementGuid>f39d9e0d-4ab4-47d9-a19f-4e845b6a214c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paren DP'])[1]/following::div[5]</value>
+      <webElementGuid>326a427b-4ff7-41db-8b94-9ec7719db764</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[3]/div</value>
-      <webElementGuid>b4a97633-c4f7-46ca-a421-d80352cb932e</webElementGuid>
+      <value>//button[2]/div</value>
+      <webElementGuid>58292759-47e8-443a-8de3-33408917c9ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'External link ' or . = 'External link ')]</value>
-      <webElementGuid>118574fc-ee83-4850-a57e-65c6a1c54ad4</webElementGuid>
+      <value>//div[(text() = 'Brea Connect ' or . = 'Brea Connect ')]</value>
+      <webElementGuid>190d6879-06c6-4130-b350-d607b70f51f4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Digital Programs(beta)</name>
+   <name>Digital Programs (beta)</name>
    <tag></tag>
    <elementGuidId>c36287b0-cce9-4fe0-b862-a2dfba564f94</elementGuidId>
    <selectorCollection>
@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

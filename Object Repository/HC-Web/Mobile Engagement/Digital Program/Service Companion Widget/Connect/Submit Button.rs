@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>External link Button</name>
+   <name>Submit Button</name>
    <tag></tag>
-   <elementGuidId>ec43070c-2256-453a-b84c-d800991d9029</elementGuidId>
+   <elementGuidId>7c43a5e4-a7d2-445f-87a5-3297a557c1ca</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='234']/div</value>
+         <value>//button[@id='connection_form_public--submit_btn']/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.MuiBox-root.jss211.button_preview--title_container.jss201</value>
+         <value>#connection_form_public--submit_btn > span.button-inner-container.jss346</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;External link&quot;i]</value>
+         <value>[data-testid=&quot;connection_form_public--submit_btn&quot;]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,79 +28,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>87df1f51-160d-469d-961b-2168cb7ccbcc</webElementGuid>
+      <value>span</value>
+      <webElementGuid>5915dc43-86ee-42da-9dd6-491bb95bc57c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiBox-root jss211 button_preview--title_container jss201</value>
-      <webElementGuid>ad7269a2-5385-46ce-adb5-fa36c9ebc41d</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>accessibilitylabel</name>
-      <type>Main</type>
-      <value>container--button_preview-title</value>
-      <webElementGuid>47de6ae0-16f1-4305-b1a2-7bbaa1142c57</webElementGuid>
+      <value>button-inner-container jss346</value>
+      <webElementGuid>2a832ee1-10dd-493b-ae3b-72877ba2cf98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>External link </value>
-      <webElementGuid>0eecb122-967a-4666-a42e-d7bb04fd3eb7</webElementGuid>
+      <value>Submit</value>
+      <webElementGuid>d12aaf99-bcc6-49a5-b824-bb824364f554</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;234&quot;)/div[@class=&quot;MuiBox-root jss211 button_preview--title_container jss201&quot;]</value>
-      <webElementGuid>134778d0-f823-497b-a9c8-61a46805a21f</webElementGuid>
+      <value>id(&quot;connection_form_public--submit_btn&quot;)/span[@class=&quot;button-inner-container jss346&quot;]</value>
+      <webElementGuid>620cd9bb-90e2-4d1d-a3a3-29185a338887</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='234']/div</value>
-      <webElementGuid>55f24be1-7af1-4153-8afc-03dc821700df</webElementGuid>
+      <value>//button[@id='connection_form_public--submit_btn']/span</value>
+      <webElementGuid>a331c170-5a74-4c36-87d6-9ca739391eb8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kay Warren'])[1]/following::div[8]</value>
-      <webElementGuid>2ca64ec2-39c4-4704-94a1-4424afcef119</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[1]</value>
+      <webElementGuid>167bb406-3253-40f1-a57a-8bd1393058a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paren DP'])[1]/following::div[8]</value>
-      <webElementGuid>f39d9e0d-4ab4-47d9-a19f-4e845b6a214c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Signup for CLASS 401'])[1]/following::span[2]</value>
+      <webElementGuid>8e245360-3d3b-456a-8cc9-d5fbe666c131</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Submit']/parent::*</value>
+      <webElementGuid>d36c3862-9816-4ac0-b5c1-3b8174e9c0ec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[3]/div</value>
-      <webElementGuid>b4a97633-c4f7-46ca-a421-d80352cb932e</webElementGuid>
+      <value>//button[2]/span</value>
+      <webElementGuid>f332407d-4f3a-4d0b-83ad-3fbdcf570c00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'External link ' or . = 'External link ')]</value>
-      <webElementGuid>118574fc-ee83-4850-a57e-65c6a1c54ad4</webElementGuid>
+      <value>//span[(text() = 'Submit' or . = 'Submit')]</value>
+      <webElementGuid>df5a8775-052b-465b-841b-35b53e2e41b0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

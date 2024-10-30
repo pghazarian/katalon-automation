@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@id='react-select-6--list']/div/div/div/div[4])[2]</value>
+         <value>//div[3]/div/div/div/div/div[4]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>50babad9-8ca8-4160-9c6c-ccd40c5b04c5</webElementGuid>
+      <webElementGuid>3ca6db92-b961-43e9-bc44-f94ce9cbe300</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>3c27d62c-5d31-4810-9aa1-e5d019418dce</webElementGuid>
+      <webElementGuid>f8a5269d-f535-4b03-89f2-9181ddc5faf9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Select-option is-focused</value>
-      <webElementGuid>8d469275-7c4c-4660-91a4-30f75c45efcc</webElementGuid>
+      <webElementGuid>30740169-a27c-40c9-9a67-88e57d6dc4f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>a94445bc-21d9-4067-8c59-ffbf7e0179da</webElementGuid>
+      <webElementGuid>5993a1e6-251c-40ae-b93a-a4b74e5c0c61</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>a699103d-a8a0-4e45-8132-4b26860b9cd5</webElementGuid>
+      <webElementGuid>d687c917-13b5-4275-8206-7f3a3679e498</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Brea</value>
-      <webElementGuid>37659986-37c6-42f9-97dd-66a502c74c66</webElementGuid>
+      <webElementGuid>0782801d-1ea5-412e-8eb3-493230f19b47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;digital-program-builder--select_campus&quot;)/div[@class=&quot;Select is-focused is-open Select--single&quot;]/div[@class=&quot;Select-menu-outer&quot;]/div[@id=&quot;react-select-6--list&quot;]/div[1]/div[@class=&quot;select-menu-scrollbar&quot;]/div[1]/div[@class=&quot;Select-option is-focused&quot;]</value>
-      <webElementGuid>c06f7c32-2d73-4d5a-bd6e-d96a03b95818</webElementGuid>
+      <webElementGuid>8ea1db79-dcb8-4697-a1cc-ec096b8917ec</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='react-select-6--list']/div/div/div/div[4])[2]</value>
-      <webElementGuid>c31daf6c-2c6e-43d9-b1cb-d2566780928f</webElementGuid>
+      <webElementGuid>7892c4da-6dee-4d3b-b752-c3d390773e33</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Berlin'])[2]/following::div[1]</value>
-      <webElementGuid>d6688c7e-ee5a-4db4-8a60-bfb1a543b101</webElementGuid>
+      <webElementGuid>0c86dd19-47fb-4e84-a9bb-eb4d240af2ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='AutomatedCampus'])[2]/following::div[2]</value>
-      <webElementGuid>05f94460-f4be-45be-bc19-60e78c2f49e6</webElementGuid>
+      <webElementGuid>9f15f67d-13ed-4e99-a1e9-dfa03ad2528d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Buena Park'])[2]/preceding::div[2]</value>
-      <webElementGuid>0fed0da7-5570-4e37-a436-e6eda1267d4a</webElementGuid>
+      <webElementGuid>b8aa9adc-0b39-4e7b-a7f3-a22a3b1bcaf8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div/div/div/div[4]</value>
-      <webElementGuid>66d18160-9c74-433e-87e4-0d7b3bf94d45</webElementGuid>
+      <webElementGuid>db216e24-5331-4d7c-b121-f72607cc0013</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +125,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Brea' or . = 'Brea')]</value>
-      <webElementGuid>a5f63abe-bef0-4b32-a993-8e69c92f7e26</webElementGuid>
+      <webElementGuid>c59f392d-99cd-44b2-8b20-f3926cc3fe82</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

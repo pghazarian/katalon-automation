@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>External link Button</name>
+   <name>Update my info checkbox</name>
    <tag></tag>
-   <elementGuidId>ec43070c-2256-453a-b84c-d800991d9029</elementGuidId>
+   <elementGuidId>869d68dc-35c3-486e-bab9-354ca8aa3e99</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='234']/div</value>
+         <value>//div[@id='connection_form_public--question_field_11793']/label</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.MuiBox-root.jss211.button_preview--title_container.jss201</value>
+         <value>label.checkbox-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;External link&quot;i]</value>
+         <value>internal:text=&quot;Update my infocheck&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,79 +28,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>87df1f51-160d-469d-961b-2168cb7ccbcc</webElementGuid>
+      <value>label</value>
+      <webElementGuid>2ad39bc1-5aa9-4545-8608-962188f9f671</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiBox-root jss211 button_preview--title_container jss201</value>
-      <webElementGuid>ad7269a2-5385-46ce-adb5-fa36c9ebc41d</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>accessibilitylabel</name>
-      <type>Main</type>
-      <value>container--button_preview-title</value>
-      <webElementGuid>47de6ae0-16f1-4305-b1a2-7bbaa1142c57</webElementGuid>
+      <value>checkbox-label</value>
+      <webElementGuid>8417dc8c-1d1b-4021-bc37-5d7f9dffaff3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>External link </value>
-      <webElementGuid>0eecb122-967a-4666-a42e-d7bb04fd3eb7</webElementGuid>
+      <value>Update my infocheck</value>
+      <webElementGuid>ec026bf1-371c-47a5-a041-dd944d081868</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;234&quot;)/div[@class=&quot;MuiBox-root jss211 button_preview--title_container jss201&quot;]</value>
-      <webElementGuid>134778d0-f823-497b-a9c8-61a46805a21f</webElementGuid>
+      <value>id(&quot;connection_form_public--question_field_11793&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>0550c2be-0235-4856-9fe3-ca30125e00e3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='234']/div</value>
-      <webElementGuid>55f24be1-7af1-4153-8afc-03dc821700df</webElementGuid>
+      <value>//div[@id='connection_form_public--question_field_11793']/label</value>
+      <webElementGuid>28ad044e-1311-486a-8213-4c1184dc554f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kay Warren'])[1]/following::div[8]</value>
-      <webElementGuid>2ca64ec2-39c4-4704-94a1-4424afcef119</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Update my info'])[1]/following::label[1]</value>
+      <webElementGuid>f6d6501e-0e7c-4e48-9e31-0c1316c86137</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paren DP'])[1]/following::div[8]</value>
-      <webElementGuid>f39d9e0d-4ab4-47d9-a19f-4e845b6a214c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Work'])[1]/following::label[1]</value>
+      <webElementGuid>477bc177-e4bd-4f6a-811f-2bc76902c5bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Visitor'])[1]/preceding::label[1]</value>
+      <webElementGuid>9aed07c1-b747-44cf-b39e-340fe7a3eb79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[3]/div</value>
-      <webElementGuid>b4a97633-c4f7-46ca-a421-d80352cb932e</webElementGuid>
+      <value>//div[5]/div/div/div/div/label</value>
+      <webElementGuid>3f500cf8-c7ba-4494-b192-87c34a2b219d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'External link ' or . = 'External link ')]</value>
-      <webElementGuid>118574fc-ee83-4850-a57e-65c6a1c54ad4</webElementGuid>
+      <value>//label[(text() = 'Update my infocheck' or . = 'Update my infocheck')]</value>
+      <webElementGuid>17ec45f2-bd44-48fa-807c-aace4aedbfe9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

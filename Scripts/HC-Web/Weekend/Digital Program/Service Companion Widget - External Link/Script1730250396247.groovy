@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital P
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Mobile Engagement'))
 
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Digital Programs(beta)'))
+WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Digital Programs (beta)'))
 
 WebUI.setText(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Digital Program Name'), 
     'Paren DP')
@@ -60,22 +60,20 @@ WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital P
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Builder Tab'))
 
+WebUI.delay(3)
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Template Drop Menu'), 
     0)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Template Drop Menu'))
 
-not_run: WebUI.delay(5)
-
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Brea Campus'))
 
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/Connect Button'))
-
-WebUI.delay(5)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/HC-Web/Mobile Engagement/Digital Program/Service Companion Widget/View Page Button'))
+
+WebUI.delay(5)
 
 WebUI.switchToWindowTitle('Healthy Church')
 
