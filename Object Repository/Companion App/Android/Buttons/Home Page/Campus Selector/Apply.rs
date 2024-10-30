@@ -3,34 +3,38 @@
    <description></description>
    <name>Apply</name>
    <tag></tag>
-   <elementGuidId>0943600f-cde0-4613-a67a-55e3620ff313</elementGuidId>
+   <elementGuidId>41be1695-1cf6-4ec0-9036-092aacdbb2eb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <locator>ui-button--select-campus-apply</locator>
    <locatorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>ui-button--select-campus-continue</value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
+         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>ui-button--select-campus-apply</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
       </entry>
       <entry>
          <key>IOS_PREDICATE_STRING</key>
@@ -41,19 +45,15 @@
          <value></value>
       </entry>
       <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>NAME</key>
          <value></value>
       </entry>
    </locatorCollection>

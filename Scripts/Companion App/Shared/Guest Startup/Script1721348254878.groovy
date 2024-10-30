@@ -119,5 +119,5 @@ Mobile.scrollToText('Lake Forest')
 Mobile.tap(Finder.findLabel('Home/Campus Selector/Lake Forest'), timeout)
 
 'tap on the Apply button'
-Button.tap('Home/Campus Selector/Apply', timeout)
+Button.tap('Home Page/Campus Selector/Apply', timeout)
 

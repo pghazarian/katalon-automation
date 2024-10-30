@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Template Drop Menu</name>
+   <tag></tag>
+   <elementGuidId>b47fabbf-b075-45cb-88b7-baaf1d2202b6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;digital-program-builder--select_campus&quot;)/div[@class=&quot;Select is-focused is-open Select--single&quot;]/div[@class=&quot;Select-control&quot;]/span[@class=&quot;Select-arrow-zone&quot;]/div[1]/div[@class=&quot;cmui ui icon icon-caret-down icon-align-left icon-color-primary icon-compact&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;layout&quot;]/div[2]/div/main/header/div/div/div[3]/button/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.cmui.ui.icon.icon-caret-down.icon-align-left.icon-color-primary.icon-compact > svg > g > use.icon-use-path</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.page-content</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>use</value>
+      <webElementGuid>6399734a-b4c4-493b-b12c-cae7a51a803e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-use-path</value>
+      <webElementGuid>973ce058-abff-4aeb-8dea-fe692d014f9b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xlink:href</name>
+      <type>Main</type>
+      <value>#icon-svg-polygon-caret-down-6902671206</value>
+      <webElementGuid>657fa247-39be-42af-829e-bb59191c46b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;digital-program-builder--select_campus&quot;)/div[@class=&quot;Select is-focused is-open Select--single&quot;]/div[@class=&quot;Select-control&quot;]/span[@class=&quot;Select-arrow-zone&quot;]/div[1]/div[@class=&quot;cmui ui icon icon-caret-down icon-align-left icon-color-primary icon-compact&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
+      <webElementGuid>02971161-6f4a-4f58-b298-df585d8fa1c9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
