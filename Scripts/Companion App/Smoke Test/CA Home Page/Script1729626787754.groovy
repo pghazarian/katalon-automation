@@ -129,13 +129,49 @@ Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Worshi
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
 
-Mobile.waitForElementPresent(findTestObject(null), 0)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.waitForElementPresent(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events - See All'), 0)
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events - See All'), 0)
 
-Mobile.waitForElementPresent(findTestObject(null), 0)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events - See All'), 0)
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.scrollToText('Series', FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Home Page/First Series Item'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Resources/Messages/Series Details Page/Back'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.waitForElementPresent(findTestObject('Companion App/Android/Buttons/Resources/Messages/Series See All'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Resources/Messages/Series See All'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Profile Web Avatar - Icon'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Journey/Journey Icon'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Discover Navigation Button'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
 

@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Series See All</name>
+   <name>Resources Button</name>
    <tag></tag>
-   <elementGuidId>69e735d1-b8cf-4cfb-9b92-ed6aad4619c5</elementGuidId>
+   <elementGuidId>af016b3d-23f9-47d5-9faf-43f6e3360628</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.view.ViewGroup[@content-desc=&quot;link&quot;])[1]&#xd;
-</locator>
+   <locator>//android.widget.Button[@content-desc=&quot;click--nav_resources&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
@@ -39,11 +26,15 @@
          <value></value>
       </entry>
       <entry>
+         <key>ID</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
@@ -51,12 +42,19 @@
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//android.view.ViewGroup[@content-desc=&quot;link&quot;])[1]&#xd;
-</value>
+         <key>IOS_CLASS_CHAIN</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value></value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//android.widget.Button[@content-desc=&quot;click--nav_resources&quot;]</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>
