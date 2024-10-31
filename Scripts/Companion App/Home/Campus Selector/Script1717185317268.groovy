@@ -54,7 +54,7 @@ Mobile.waitForElementPresent(Finder.findLabel("Home/Campus"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 
 'close the campus selector'
-Button.tap("Home/Campus Selector/Close")
+Button.tap("Home Page/Campus Selector/Close")
 
 'tap on the campus selector again'
 Mobile.waitForElementPresent(Finder.findLabel("Home/Campus"), timeout)
@@ -64,7 +64,7 @@ Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus Selector/Anaheim"), timeout)
 
 'tap on the cancel button'
-Button.tap("Home/Campus Selector/Cancel", timeout)
+Button.tap("Home Page/Campus Selector/Cancel", timeout)
 
 'tap on the campus selector again'
 Mobile.waitForElementPresent(Finder.findLabel("Home/Campus"), timeout)
@@ -74,7 +74,7 @@ Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus Selector/Anaheim"), timeout)
 
 'tap on the Apply button'
-Button.tap("Home/Campus Selector/Apply", timeout)
+Button.tap("Home Page/Campus Selector/Apply", timeout)
 
 Mobile.verifyElementText(Finder.findLabel("Home/Campus Text"), "Anaheim")
 
@@ -86,7 +86,7 @@ Mobile.tap(Finder.findLabel("Home/Campus"), timeout)
 Mobile.tap(Finder.findLabel("Home/Campus Selector/Brea"), timeout)
 
 'tap on the Apply button'
-Button.tap("Home/Campus Selector/Apply", timeout)
+Button.tap("Home Page/Campus Selector/Apply", timeout)
 
 if (deviceIsiOS) {
 	Mobile.closeApplication()
