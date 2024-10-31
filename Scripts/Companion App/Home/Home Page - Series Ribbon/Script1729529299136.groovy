@@ -44,7 +44,7 @@ if (CurrentlyLoggedIn) {
 'Open existing app by the app bundle id'
 WebUI.callTestCase(findTestCase('Companion App/Shared/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.waitForElementPresent(Finder.findButton('Home/Engagement Pathway/Badges/Decision'), timeout)
+Mobile.waitForElementPresent(Finder.findButton('Home Page/Engagement Pathway/Badges/Decision'), timeout)
 
 Mobile.scrollToText('Series')
 
