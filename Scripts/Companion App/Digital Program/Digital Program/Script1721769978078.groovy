@@ -43,7 +43,9 @@ Boolean deviceIsiOS = Device.isIOS()
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
-'Open Button in the Live Digital Program Blue Banner'
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Digital Program/Service Check In - Not Attending'), 0)
+
+'Open Button in the Live DP SC Blue Banner'
 Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/Digital Program/Open Button'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)

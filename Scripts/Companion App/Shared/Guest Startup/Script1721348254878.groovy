@@ -29,13 +29,12 @@ import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDire
 /*
  * Documentation for the DetroitLabs library: https://github.com/detroit-labs/katalon-mobile-util?tab=readme-ov-file#textfield
  */
-
-if (!UserName?.trim()) {
- 	UserName = GlobalVariable.Admin_UserName
+if (!(UserName.trim())) {
+    UserName = GlobalVariable.Admin_UserName
 }
 
-if (!Password?.trim()) {
-	Password = GlobalVariable.Admin_Password
+if (!(Password.trim())) {
+    Password = GlobalVariable.Admin_Password
 }
 
 int timeout = 7
@@ -57,7 +56,7 @@ println(Device.getDeviceOS())
 // Android
 String androidFile = GlobalVariable.AppFileLocation_Android
 
-String androidAppId = GlobalVariable.CompanionApp_BundleId 
+String androidAppId = GlobalVariable.CompanionApp_BundleId
 
 App androidApp = new App(androidFile, androidAppId)
 
@@ -79,37 +78,39 @@ boolean removeAppBeforeTest = false // change this to false to keep the app stat
 Device.startApp([iosApp, androidApp], removeAppBeforeTest)
 
 Mobile.delay(timeout)
-Mobile.waitForElementPresent(Finder.findButton("Nav/Home Navigation Button"), 5)
+
+Mobile.waitForElementPresent(Finder.findButton('Nav/Home Navigation Button'), 5)
 
 'if there is a user already logged in we will skip the splash screen and need to log them out'
 if (Mobile.verifyElementVisible(Finder.findButton('Nav/Home Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
-	
-	if (Mobile.verifyElementVisible(Finder.findButton('Nav/Profile Avatar Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
-		'Tap on the profile avatar in the navigation'
-		Button.tap('Nav/Profile Avatar Navigation Button')
-	}
-	else {
-		'Tap on the profile avatar in the navigation'
-		Button.tap('Nav/Profile No Avatar Navigation Button')
-	}
-		
-	'Tap on the settings gear button'
-	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings Gear"), 5)
-	Button.tap('Profile/Settings Gear')
-	
-	'tap on the settings Account & Notifications tile button'
-	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications"), 5)
-	Button.tap('Profile/Settings/Account Notifications')
-		
-	'tap on the logout button'
-	Mobile.waitForElementPresent(Finder.findButton("Profile/Settings/Account Notifications Page/Logout"), 7)
-	Button.tap('Profile/Settings/Account Notifications Page/Logout')
+    if (Mobile.verifyElementVisible(Finder.findButton('Nav/Profile Avatar Navigation Button'), timeout, FailureHandling.OPTIONAL)) {
+        'Tap on the profile avatar in the navigation'
+        Button.tap('Nav/Profile Avatar Navigation Button')
+    } else {
+        'Tap on the profile avatar in the navigation'
+        Button.tap('Nav/Profile No Avatar Navigation Button')
+    }
+    
+    'Tap on the settings gear button'
+    Mobile.waitForElementPresent(Finder.findButton('Profile/Settings Gear'), 5)
+
+    Button.tap('Profile/Settings Gear')
+
+    'tap on the settings Account & Notifications tile button'
+    Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Account Notifications'), 5)
+
+    Button.tap('Profile/Settings/Account Notifications')
+
+    'tap on the logout button'
+    Mobile.waitForElementPresent(Finder.findButton('Profile/Settings/Account Notifications Page/Logout'), 7)
+
+    Button.tap('Profile/Settings/Account Notifications Page/Logout')
 }
 
 'Click Continue as Guest Button'
 Button.tap('Continue as Guest')
 
-Mobile.waitForElementPresent(Finder.findLabel("Home/Campus Selector/Anaheim"), 5)
+Mobile.waitForElementPresent(Finder.findLabel('Home/Campus Selector/Anaheim'), 5)
 
 Mobile.scrollToText('Lake Forest')
 

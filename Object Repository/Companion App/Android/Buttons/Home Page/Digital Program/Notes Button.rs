@@ -3,45 +3,33 @@
    <description>Notes CTA Button in published DP SC</description>
    <name>Notes Button</name>
    <tag></tag>
-   <elementGuidId>39ec991c-a994-49b0-b7f3-7d3c0be37d89</elementGuidId>
+   <elementGuidId>8293cbd1-7274-4395-8990-877ab9e92dae</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>//android.widget.Button[3]</locator>
+   <locator>//android.widget.Button[@resource-id=&quot;112&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>ATTRIBUTES</key>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value></value>
       </entry>
       <entry>
          <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
+         <key>ATTRIBUTES</key>
+      </entry>
+      <entry>
          <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
          <key>CLASS_NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//android.widget.Button[6]</value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
@@ -53,7 +41,19 @@
          <value></value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//android.widget.Button[@resource-id=&quot;112&quot;]</value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
          <value></value>
       </entry>
    </locatorCollection>

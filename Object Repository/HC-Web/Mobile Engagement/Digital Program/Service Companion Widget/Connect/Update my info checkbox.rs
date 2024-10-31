@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Update my info checkbox</name>
+   <tag></tag>
+   <elementGuidId>869d68dc-35c3-486e-bab9-354ca8aa3e99</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='connection_form_public--question_field_11793']/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label.checkbox-label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Update my infocheck&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>2ad39bc1-5aa9-4545-8608-962188f9f671</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>checkbox-label</value>
+      <webElementGuid>8417dc8c-1d1b-4021-bc37-5d7f9dffaff3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Update my infocheck</value>
+      <webElementGuid>ec026bf1-371c-47a5-a041-dd944d081868</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;connection_form_public--question_field_11793&quot;)/label[@class=&quot;checkbox-label&quot;]</value>
+      <webElementGuid>0550c2be-0235-4856-9fe3-ca30125e00e3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='connection_form_public--question_field_11793']/label</value>
+      <webElementGuid>28ad044e-1311-486a-8213-4c1184dc554f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Update my info'])[1]/following::label[1]</value>
+      <webElementGuid>f6d6501e-0e7c-4e48-9e31-0c1316c86137</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Work'])[1]/following::label[1]</value>
+      <webElementGuid>477bc177-e4bd-4f6a-811f-2bc76902c5bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Visitor'])[1]/preceding::label[1]</value>
+      <webElementGuid>9aed07c1-b747-44cf-b39e-340fe7a3eb79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div/div/div/label</value>
+      <webElementGuid>3f500cf8-c7ba-4494-b192-87c34a2b219d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Update my infocheck' or . = 'Update my infocheck')]</value>
+      <webElementGuid>17ec45f2-bd44-48fa-807c-aace4aedbfe9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

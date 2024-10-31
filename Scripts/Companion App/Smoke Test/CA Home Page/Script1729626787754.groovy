@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 import com.detroitlabs.katalonmobileutil.device.Device as Device
 import com.detroitlabs.katalonmobileutil.testobject.Button as Button
 
-def timeout = 7
+def timeout = 3
 
 if (ShouldLogin.toBoolean()) {
     'Open existing app by logging into the app bundle id'
@@ -37,7 +37,7 @@ Boolean deviceIsiOS = Device.isIOS()
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 
-not_run: if (ShouldLogin.toBoolean()) {
+if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/My QR code'), 0)
 
     Mobile.tap(findTestObject('Object Repository/Companion App/Android/Buttons/Home Page/My QR code X button'), 0)
@@ -123,9 +123,55 @@ if (ShouldLogin.toBoolean()) {
     Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/For You/For You Detail/LO_Back Button'), 0)
 }
 
-Mobile.verifyElementExist(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events Element'), 0)
+Mobile.scrollToText('Events', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Worship Service Category'), 0)
 
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.waitForElementPresent(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events - See All'), 0)
+
 Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Events/Events - See All'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.scrollToText('Series', FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home/Home Page/First Series Item'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Resources/Messages/Series Details Page/Back'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.waitForElementPresent(findTestObject('Companion App/Android/Buttons/Resources/Messages/Series See All'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Resources/Messages/Series See All'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Home Page/Profile Web Avatar - Icon'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Journey/Journey Icon'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Discover Navigation Button'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
 

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>View Page Button</name>
+   <tag></tag>
+   <elementGuidId>95c01956-40d0-4d2c-b9af-f71966981d07</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='layout']/div[2]/div/main/header/div/div/div[2]/button/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.button-inner-container.jss246</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[data-testid=&quot;digital-program-builder--preview_button&quot;]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c40b4036-3e8b-437a-bd51-3182e030424f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button-inner-container jss246</value>
+      <webElementGuid>02cc5ff0-f149-45dc-a96d-d88851e89681</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>View Page</value>
+      <webElementGuid>37d955d3-bee9-4fe4-ba19-5bf7d7e1515f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;layout&quot;)/div[@class=&quot;page-content&quot;]/div[1]/main[@class=&quot;ui page jss280 jss556 jss531 page-has_action_bar&quot;]/header[@class=&quot;ui page--action_bar action_bar&quot;]/div[1]/div[@class=&quot;cmui grid jss7 action_bar--grid jss13 jss35&quot;]/div[@class=&quot;cmui grid--column jss45 action_bar--grid_column&quot;]/button[@class=&quot;ui button jss245 jss567 jss254&quot;]/span[@class=&quot;button-inner-container jss246&quot;]</value>
+      <webElementGuid>a65b098a-ff4f-46cc-8a6e-77d98bcff49a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/main/header/div/div/div[2]/button/span</value>
+      <webElementGuid>f196cc54-e516-4644-9907-995f446d967e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Connect'])[1]/following::span[1]</value>
+      <webElementGuid>93cb938f-84d3-437d-9c21-8059fcf6cee8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Associated Services: 1'])[1]/following::span[2]</value>
+      <webElementGuid>18092340-124a-46c6-bfdc-6fd15722a588</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Details'])[1]/preceding::span[1]</value>
+      <webElementGuid>62c0cb5c-44a5-44da-8987-4ce80cd107f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Builder'])[2]/preceding::span[4]</value>
+      <webElementGuid>9066ef96-7638-40ba-b8f8-0d1df8841e4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='View Page']/parent::*</value>
+      <webElementGuid>1bd354ed-7a73-4844-a446-107b0cac3216</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button/span</value>
+      <webElementGuid>ab6f6bc0-9db0-41e1-b3be-6b91a231bf84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'View Page' or . = 'View Page')]</value>
+      <webElementGuid>cc2daf48-ff4b-479f-a2fc-8ef4422b8b03</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

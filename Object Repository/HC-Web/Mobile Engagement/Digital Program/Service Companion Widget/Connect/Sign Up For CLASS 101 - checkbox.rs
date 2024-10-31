@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Sign Up For CLASS 101 - checkbox</name>
+   <tag></tag>
+   <elementGuidId>644d7741-62a4-41aa-bb60-ada4b4a3ad7a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.cmui.ui.icon.icon-caret-down.icon-align-left.icon-color-primary.icon-compact > svg > g > use.icon-use-path</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.page-content</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>use</value>
+      <webElementGuid>279b1a6c-ecdc-4aaa-b847-390b1943e9c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-use-path</value>
+      <webElementGuid>694a2985-155b-4653-ae8d-f7ac98fb812d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xlink:href</name>
+      <type>Main</type>
+      <value>#icon-svg-polygon-caret-down-4218871206</value>
+      <webElementGuid>5aa25ce9-2f19-4dd7-974b-586cada424f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;digital-program-builder--select_campus&quot;)/div[@class=&quot;Select is-focused is-open Select--single&quot;]/div[@class=&quot;Select-control&quot;]/span[@class=&quot;Select-arrow-zone&quot;]/div[1]/div[@class=&quot;cmui ui icon icon-caret-down icon-align-left icon-color-primary icon-compact&quot;]/svg[1]/g[1]/use[@class=&quot;icon-use-path&quot;]</value>
+      <webElementGuid>1b6f8073-a31e-4976-8ec4-8d5ef8594c17</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -3,34 +3,19 @@
    <description></description>
    <name>Discover Navigation Button</name>
    <tag></tag>
-   <elementGuidId>ab8f47a8-8f82-4a48-a1af-a7828195a346</elementGuidId>
+   <elementGuidId>d4910261-edf1-42a0-ab16-fe520842dc65</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <locator>//android.widget.Button[@content-desc=&quot;click--nav_discover&quot;]</locator>
    <locatorCollection>
       <entry>
-         <key>XPATH</key>
+         <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
          <key>ID</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector()</value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
       </entry>
       <entry>
          <key>NAME</key>
@@ -41,11 +26,11 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -53,8 +38,23 @@
          <value></value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector()</value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//android.widget.Button[@content-desc=&quot;click--nav_discover&quot;]</value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
       </entry>
    </locatorCollection>
    <locatorStrategy>XPATH</locatorStrategy>

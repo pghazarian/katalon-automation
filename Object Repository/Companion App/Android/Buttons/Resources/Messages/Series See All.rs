@@ -3,14 +3,19 @@
    <description></description>
    <name>Series See All</name>
    <tag></tag>
-   <elementGuidId>6b0a6591-8528-420d-b713-284f0b20e35a</elementGuidId>
+   <elementGuidId>69e735d1-b8cf-4cfb-9b92-ed6aad4619c5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>(//android.view.ViewGroup[@content-desc=&quot;link&quot;])[1]</locator>
+   <locator>(//android.view.ViewGroup[@content-desc=&quot;link&quot;])[1]&#xd;
+</locator>
    <locatorCollection>
       <entry>
-         <key>CUSTOM</key>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
          <value></value>
       </entry>
       <entry>
@@ -18,11 +23,15 @@
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>CLASS_NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>CLASS_NAME</key>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -34,15 +43,7 @@
          <value>new UiSelector()</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
       <entry>
@@ -51,7 +52,8 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//android.view.ViewGroup[@content-desc=&quot;See All&quot;])[1]</value>
+         <value>(//android.view.ViewGroup[@content-desc=&quot;link&quot;])[1]&#xd;
+</value>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
