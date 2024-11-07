@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>PBI 114015: Ability to view quick scan in the navigation (and profile in header)</description>
+   <name>Quick Scan - User Profile</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>682b624e-0c8f-4331-a04c-0526dcf62779</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>3b61cad0-fa33-4ca7-b6a7-efa2fb3acac1</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Companion App/LoggedInIterations</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>3b61cad0-fa33-4ca7-b6a7-efa2fb3acac1</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>LoggedIn</value>
+      <variableId>292db8ee-af3d-4d76-8927-32db0d959dd5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>292db8ee-af3d-4d76-8927-32db0d959dd5</id>
+      <masked>false</masked>
+      <name>ShouldLogin</name>
+   </variable>
+</TestCaseEntity>
