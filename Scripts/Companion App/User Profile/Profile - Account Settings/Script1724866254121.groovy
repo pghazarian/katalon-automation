@@ -52,14 +52,25 @@ Go to Home
 Go to Profile Photo
 Go to Account Settings
 Verify Verse of the Day, Daily Devotional and Mobile Announcement toggles are all on again
-// Open Companion App
-Mobile.startApplication('companion.app.package')
+*/
 
-// Login
-Mobile.tap(findTestObject('login_button'))
+// Open Companion App
+//String androidFile = GlobalVariable.AppFileLocation_Android //'App Files/Companion App/Android/android-stage-build.apk'
+//String androidAppId = GlobalVariable.CompanionApp_BundleId //"com.healthychurch.companion.stage"
+Mobile.startExistingApplication('com.healthychurch.companion.stage')
+
+// Login Button
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Login/Login Button'), 0)
+
+// Enter Credentials and Submit
+Mobile.verifyElementText(findTestObject('Object Repository/Hagop_Testing/Login/Sign in Header'), 'Sign In')
+Mobile.setText(findTestObject('Object Repository/Hagop_Testing/Login/Email Address Text Field'), 'hagopgsb@gmail.com', 0)
+Mobile.setEncryptedText(findTestObject('Object Repository/Hagop_Testing/Login/Password Text Field'), 'p4y+y39Ir5OTdtOb306gDg==', 0)
+Mobile.hideKeyboard()
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Login/Sign in Button'), 0)
 
 // Go to Profile Photo
-Mobile.tap(findTestObject('profile_photo_button'))
+Mobile.tap(findTestObject('profile_photo_button'),0)
 
 // Go to Account Settings
 Mobile.tap(findTestObject('account_settings_button'))
@@ -157,4 +168,3 @@ Mobile.tap(findTestObject('account_settings_button'))
 Mobile.verifyElementAttributeValue(findTestObject('verse_of_the_day_toggle'), 'checked', 'true')
 Mobile.verifyElementAttributeValue(findTestObject('daily_devotional_toggle'), 'checked', 'true')
 Mobile.verifyElementAttributeValue(findTestObject('mobile_announcement_toggle'), 'checked', 'true')
-*/
