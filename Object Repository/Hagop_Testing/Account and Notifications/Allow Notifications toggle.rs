@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Allow Notifications toggle</name>
+   <name>Allow Notifications Toggle</name>
    <tag></tag>
    <elementGuidId>5744b06c-b689-4a60-b33d-069a02c44995</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
