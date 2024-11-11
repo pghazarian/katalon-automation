@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Profile Avatar Navigation Button</name>
+   <name>Cancel Button - Login modal</name>
    <tag></tag>
-   <elementGuidId>c0649292-07ab-43a2-a436-c94cc582ed1b</elementGuidId>
+   <elementGuidId>aa891f83-4329-43dd-8c2d-c130817c1d6c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--header_profile</locator>
+   <locator>//android.widget.Button[@resource-id=&quot;android:id/button2&quot;]</locator>
    <locatorCollection>
       <entry>
          <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
@@ -26,7 +18,7 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>button--header_profile</value>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
@@ -50,13 +42,21 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.widget.Button[@content-desc=&quot;click--nav_avatar&quot;]</value>
+         <value>//android.widget.Button[@resource-id=&quot;android:id/button2&quot;]</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value></value>
       </entry>
       <entry>
          <key>IMAGE</key>
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

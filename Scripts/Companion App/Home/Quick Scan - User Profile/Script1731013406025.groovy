@@ -34,8 +34,6 @@ Introduction: We're switching the QR code in the header and the profile section 
 8 Verify when the logged in user has no child checked in, users personal QR code drawer should be displayed
 9 Verify when the logged in user has a child or childern checked in, user's personal QR code (Quick Check In) and each checked in child's QR code will be displayed in a new page
  */
- 
-
 def timeout = 3
 
 if (ShouldLogin.toBoolean()) {
@@ -50,4 +48,24 @@ Boolean deviceIsiOS = Device.isIOS()
 
 ' need driver to get lists and close app'
 AppiumDriver<MobileElement> driver = MobileDriverFactory.getDriver()
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Profile Avatar Navigation Button'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Companion App/Android/Buttons/Nav/Home Navigation Button'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Companion App/Android/User Profile/Check-In/Check-In Button'), 0)
+
+Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/Check-In Button'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+if (ShouldLogin.toBoolean()) {
+    Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/X button - My QR Code'), 0)
+} else {
+    Mobile.tap(findTestObject('Companion App/Android/User Profile/Check-In/Cancel Button - Login modal'), 0)
+}
 

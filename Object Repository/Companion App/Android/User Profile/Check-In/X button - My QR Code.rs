@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>Profile Avatar Navigation Button</name>
+   <name>X button - My QR Code</name>
    <tag></tag>
-   <elementGuidId>c0649292-07ab-43a2-a436-c94cc582ed1b</elementGuidId>
+   <elementGuidId>2788c60a-0da1-4773-81d6-f2c8153a9a5b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <locator>button--header_profile</locator>
+   <locator>bottom_sheet-header--close</locator>
    <locatorCollection>
       <entry>
          <key>ATTRIBUTES</key>
-      </entry>
-      <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
@@ -26,7 +18,7 @@
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value>button--header_profile</value>
+         <value>bottom_sheet-header--close</value>
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
@@ -50,7 +42,15 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//android.widget.Button[@content-desc=&quot;click--nav_avatar&quot;]</value>
+         <value></value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value></value>
       </entry>
       <entry>
          <key>IMAGE</key>
