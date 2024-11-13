@@ -71,6 +71,7 @@ Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Login/Sign in Button'
 
 // Go to Profile Settings
 Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Login/Profile Button'),0)
+Mobile.delay(1)
 Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Login/My Profile Image Button'),0)
 
 // Go to Account & Notifications Tile
