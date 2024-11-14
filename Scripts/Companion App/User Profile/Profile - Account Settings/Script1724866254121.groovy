@@ -75,20 +75,20 @@ Mobile.delay(1)
 Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Login/My Profile Image Button'),0)
 
 // Go to Account & Notifications Tile
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Account and Notifications Tile'),0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Account and Notifications Tile'),0)
 
 // Verify Text Present - Login Credentials
-Mobile.verifyElementText(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Account Settings Header'), 'Login Credentials')
+Mobile.verifyElementText(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Account Settings Header'), 'Login Credentials')
 
 // Verify Log Out Button Present
 Mobile.verifyElementExist(findTestObject('Object Repository/Hagop_Testing/Login/Log Out Button'), 0)
 
 // Verify Text Present - Notification Preferences
-Mobile.verifyElementText(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Account Settings Notification Header'), 'Notification Preferences')
+Mobile.verifyElementText(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Account Settings Notification Header'), 'Notification Preferences')
 
 // Verify Text Present - About and App Name
 Mobile.scrollToText('About')
-Mobile.verifyElementText(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/App Name'), 'Companion App')
+Mobile.verifyElementText(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/App Name'), 'Companion App')
 
 // Verify Account Removal Button Present
 Mobile.verifyElementExist(findTestObject('Object Repository/Hagop_Testing/Login/Account Removal Button'), 0)
@@ -96,52 +96,52 @@ Mobile.verifyElementExist(findTestObject('Object Repository/Hagop_Testing/Login/
 // Under Notification Preferences
 // Verify Toggle on - Allow Notification
 Mobile.scrollToText('Login Credentials')
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Allow Notifications toggle'), 'checked', 'true', 0)
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Allow Notifications toggle'), 0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Allow Notifications toggle'), 'checked', 'true', 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Allow Notifications toggle'), 0)
 
 // Verify Allow Notification is off
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Account Settings Back button'), 0)
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Account and Notifications Tile'),0)
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Allow Notifications toggle'), 'checked', 'false', 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Account Settings Back button'), 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Account and Notifications Tile'),0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Allow Notifications toggle'), 'checked', 'false', 0)
 
 // Toggle on - Allow Notification
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Allow Notifications toggle'), 0)
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Allow Notifications toggle'), 'checked', 'true', 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Allow Notifications toggle'), 0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Allow Notifications toggle'), 'checked', 'true', 0)
 
 // Toggle off - Daily Devotional
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Daily Devotional Toggle'), 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Daily Devotional Toggle'), 0)
 
 // Toggle off - Mobile Announcement
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Mobile Announcement Toggle'), 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Mobile Announcement Toggle'), 0)
 
 // Toggle off - Verse of the Day
 Mobile.scrollToText('Verse of the Day')
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Verse of the Day Toggle'), 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Verse of the Day Toggle'), 0)
 Mobile.scrollToText('Notification Preferences')
 
 // Verify Verse of the Day, Daily Devotional and Mobile Announcement toggles are all off
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Account Settings Back button'), 0)
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Account and Notifications Tile'),0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Account Settings Back button'), 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Account and Notifications Tile'),0)
 Mobile.scrollToText('Daily Devotional')
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Daily Devotional Toggle'), 'checked', 'false', 0)
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Mobile Announcement Toggle'), 'checked', 'false', 0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Daily Devotional Toggle'), 'checked', 'false', 0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Mobile Announcement Toggle'), 'checked', 'false', 0)
 Mobile.scrollToText('Verse of the Day')
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Verse of the Day Toggle'), 'checked', 'false', 0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Verse of the Day Toggle'), 'checked', 'false', 0)
 Mobile.scrollToText('Login Credentials')
 
 // Toggle on - Daily Devotional
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Daily Devotional Toggle'), 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Daily Devotional Toggle'), 0)
 
 // Toggle on - Mobile Announcement
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Mobile Announcement Toggle'), 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Mobile Announcement Toggle'), 0)
 // Toggle on - Verse of the Day
 Mobile.scrollToText('Verse of the Day')
-Mobile.tap(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Verse of the Day Toggle'), 0)
+Mobile.tap(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Verse of the Day Toggle'), 0)
 
 // Verify Verse of the Day, Daily Devotional and Mobile Announcement toggles are all on again
 Mobile.scrollToText('Notification Preferences')
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Daily Devotional Toggle'), 'checked', 'true', 0)
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Mobile Announcement Toggle'), 'checked', 'true', 0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Daily Devotional Toggle'), 'checked', 'true', 0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Mobile Announcement Toggle'), 'checked', 'true', 0)
 Mobile.scrollToText('Verse of the Day')
-Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/Account and Notifications/Verse of the Day Toggle'), 'checked', 'true', 0)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Hagop_Testing/CA APP - Account and Notifications/Verse of the Day Toggle'), 'checked', 'true', 0)
 

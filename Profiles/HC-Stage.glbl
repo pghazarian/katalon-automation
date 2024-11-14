@@ -379,4 +379,9 @@
       <initValue>'QA Automation Ministry One Time SO'</initValue>
       <name>ServingSearch_OneTime_SearchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Hagop Ghazarian'</initValue>
+      <name>PersonSearch_Term</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

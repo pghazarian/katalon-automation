@@ -159,4 +159,9 @@
       <initValue>'Test Paren'</initValue>
       <name>FollowUp_TaskName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Default'</initValue>
+      <name>PersonSearch_Term</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HG People Search</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9fc6ab92-251c-43d9-9fba-fb8bf94f1aff</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c3553e10-b7d9-4312-846f-bd0d35dcd3b2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.PersonSearch_Term</defaultValue>
+      <description></description>
+      <id>c3553e10-b7d9-4312-846f-bd0d35dcd3b2</id>
+      <masked>false</masked>
+      <name>SearchTermValue</name>
+   </variable>
+</TestCaseEntity>
